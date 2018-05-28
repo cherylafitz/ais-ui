@@ -331,7 +331,7 @@ body .divider {
   border: none;
 }
 #tippyTopOfPage + .divider {
-  height: .75rem;
+  height: .5rem;
   background: #29353d;
 }
 #cssmenu ul {
@@ -396,7 +396,6 @@ div.MultiSearcher input[type="text"] {
   margin: 0 .5rem 0 0;
   padding: 1px 0 1px 4px;
   display: block;
-  text-transform:
 }
 
 .MultiSearcher .showLink,
@@ -415,9 +414,6 @@ div.MultiSearcher input[type="submit"] {
 div.MultiSearcher input[type="submit"]:last-of-type {
   margin-right: .25rem;
 }
-div.MultiSearcher input[type="submit"]:hover {
-  /*padding: 2px 5px 2px;*/
-}
 td.logo img {
   padding-top: .5rem;
 }
@@ -432,7 +428,6 @@ td.logo img {
   width: 260px;
 }
 #tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
-  /*border-bottom: 3px solid #f4ab33;*/
   background: #ffffff;
   font-weight: bold;
   margin: .125rem 0 .25rem .25rem;
@@ -611,7 +606,8 @@ table.pageStructure .inLeftNav {
 table.pageStructure tr.contentArea td.leftNav .Body dd a:hover,
 table.pageStructure tr.contentArea td.leftNav .Body dd a:active,
 table.pageStructure tr.contentArea td.leftNav .Body dd a:focus,
-.inLeftNav li a:hover, .inLeftNav li a:active,
+.inLeftNav li a:hover,
+.inLeftNav li a:active,
 .inLeftNav li a:focus,
 table.pageStructure .leftNav a:hover,
 table.pageStructure .leftNav a:active,
@@ -899,8 +895,9 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   position: relative;
   height: 100%;
 }
-.ArticleViewer,
-.AlumnusEmailSearch {
+
+.SystemAnnouncementsWrapper + div.ArticleViewer,
+.SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
   position: relative;
 }
 #alumnusSearch table table {
@@ -919,7 +916,10 @@ table.rolodex .alumnusSection + tr td {
 }
 .SystemAnnouncementsWrapper + div.AlumnusSearch,
 .SystemAnnouncementsWrapper + div.AlumnusSummary,
-.SystemAnnouncementsWrapper + div.AlumnusRowDisplay {
+.SystemAnnouncementsWrapper + div.AlumnusRowDisplay,
+.SystemAnnouncementsWrapper + div.ArticleViewer,
+.SystemAnnouncementsWrapper + div.ArticleSearch,
+.SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
   height: initial;
 }
 /* alumnus summary --> */
@@ -1071,8 +1071,12 @@ div.ArticleSearch div.SearchPhrasesContainer {
   width: 100%;
   border-collapse: collapse;
 }
-#alumnusSearch form {
-  margin-top: -2rem;
+.SearchButtonCell {
+  text-align: left;
+  padding-top: .5rem;
+}
+div#navMenu div.PriorPage {
+  padding: .25rem;
 }
 /*table.pageStructure tr.footerArea td.leftNav,
 .footer {
@@ -1122,6 +1126,9 @@ td.SearchButtonCell input {
 div.ArticleViewer div.AlumniList {
   margin: .5rem 2rem;
 }
+.ArticleViewer .articleImage img {
+  border: 4px solid #fff;
+}
 
 /*ALUMNI ARTICLES resets -->*/
 
@@ -1147,6 +1154,11 @@ div.ArticleViewer div.AlumniList {
 }
 div.ArticleViewer fieldset {
   background-color: #fff;
+}
+.articleImage {
+  margin: .25rem;
+  border: none;
+  padding: 0;
 }
 div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
 .article .header .status table {
@@ -1476,6 +1488,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   position: relative;
   color: #222222;
   font-family: "proxima-nova-bold", sans-serif;
@@ -2012,27 +2026,22 @@ form.FilterForm table.filter {
   border: none;
 }
 
-span.ApplicantReplied {
-  background-color: lightgreen;
-}
-
-span.WaitingForApplicant {
-  background-color: lightsalmon;
-}
-
 /* <-- HEALTH QUEUE */
 
 /* HEALTH INBOX --> */
 
-span.ApplicantReplied {
-  background-color: lightgreen;
-  background-color: #A9D4A1;
+span.QuestionnaireNotSent {
+  background-color: #ffeeb3;
   padding: 0.125rem 0.25rem;
 }
 
 span.WaitingForApplicant {
-  background-color: lightsalmon;
   background-color: #ffb699;
+  padding: 0.125rem 0.25rem;
+}
+
+span.ApplicantReplied {
+  background-color: #A9D4A1;
   padding: 0.125rem 0.25rem;
 }
 
@@ -2140,8 +2149,11 @@ div.HealthQuestionnaireEditor form#outerFormID fieldset {
   border: 1px solid #c2c2c2;
   background: #eff3f5;
   background: #fff;
-  padding: .125rem 0 0;
+  padding: .125rem 0 .5rem;
   border-spacing: 0;
+}
+#CreateQuestionnaire {
+  margin: .5rem 0;
 }
 table.RowDisplay td .Answer {
   white-space: normal;
@@ -2275,9 +2287,19 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr td {
   vertical-align: top;
   padding: .125rem .5rem;
 }
+#ProgramStaffQuestionnaire .AnswerLabel,
+.TranscribedQuestionsForApplicant .AnswerLabel {
+  display: inline-block;
+  width: 2%;
+  margin: 0;
+  vertical-align: top;
+  font-weight: bold;
+  padding: .25rem 0;
+}
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr.Answer td:nth-child(2),
 #ProgramStaffQuestionnaire .Answer .Text,
 #ProgramStaffQuestionnaire .Answer > .File,
+#ProgramStaffQuestionnaire .Answer .HasNoFile,
 div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
   background-color: #d2dbe2;
   -webkit-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
@@ -2285,13 +2307,23 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
   box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
   padding: .25rem .5rem;
 }
+#ProgramStaffQuestionnaire .Answer .Text,
+#ProgramStaffQuestionnaire .Answer > .File,
+#ProgramStaffQuestionnaire .Answer .HasNoFile {
+  display: inline-block;
+  width: 96%;
+  margin: 0;
+}
+
 #ProgramStaffQuestionnaire .Answer,
 .TranscribedQuestionsForApplicant .Answer {
-  padding: .5rem 1rem;
+  padding: .5rem 0;
 }
 #ProgramStaffQuestionnaire .QuestionLabel,
 .TranscribedQuestionsForApplicant .QuestionLabel {
   font-weight: bold;
+  width: 2%;
+  display: inline-block;
 }
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
   background-color: transparent;
@@ -2302,14 +2334,13 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
 }
 #ProgramStaffQuestionnaire table.RowDisplay tr th,
 .TranscribedQuestionsForApplicant table.RowDisplay tr th {
-  background-color: #e0e6eb;
+  background-color: #f0f2f5;
 }
-#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2),
-table.RowDisplay tbody tr:nth-child(2n+2) {
+#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2) {
   background-color: #fff;
 }
 #ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+3),
-table.RowDisplay tbody tr:nth-child(2n+3) {
+.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3) {
   background-color:  #eff2f5;
 }
 #ProgramStaffQuestionnaire table.RowDisplay {
@@ -2335,20 +2366,12 @@ div.StudentDisplayForHealthReviewer table caption,
 div.HealthQuestionnaireEditor table caption {
   background-color: transparent;
   border: none;
+  padding-bottom: .25rem;
 }
 div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay,
 .TranscribedQuestionsForApplicant table.RowDisplay {
-  margin: .25rem 0;
   border: 1px solid #c2c2c2;
 }
-#ProgramStaffQuestionarre table.RowDisplay tr th {
-  /*background-color: ;*/
-}
-/*div.StudentDisplayForHealthReviewer table tr,
-div.StudentDisplayForHealthReviewer table tr th,
-div.StudentDisplayForHealthReviewer table tr td {
-  border-bottom: 1px solid #c2c2c2;
-}*/
 /* <-- HEALTH INBOX */
 
 
@@ -2492,6 +2515,13 @@ div#SchoolDisplay p {
   margin-right: 1rem;
 }
 
+td.dataEntryIsEnabled {
+  background-color: #A9D4A1;
+}
+td.dataEntryIsDisabled {
+  background-color: #ffb699;
+}
+
 /* <-- PAGE: PROGRAM SETTINGS */
 
 /* PAGE: APPLICATION SEARCH --> */
@@ -2625,6 +2655,299 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 
 /* <-- PAGE: COUNTRY */
 
+/* PAGE: BADGES --> */
+
+#ProgramBadges {
+  height: 100%;
+  background: #33424d;
+}
+#ProgramBadges #Banner {
+  background: #29353d;
+  position: relative;
+  color: #fff;
+  text-align: right;
+}
+#ProgramBadges #Banner:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+#ProgramBadges #Badges {
+  background: #33424d;
+}
+#ProgramBadges #Banner a
+{
+  color: #c4dcee;
+}
+#ProgramBadges .title
+{
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 44px;
+  vertical-align: top;
+  padding-left: .5rem;
+}
+#ProgramBadges .choose
+{
+  padding: .875rem 1rem 0 1rem;
+  margin-bottom: 1rem;
+}
+#ProgramBadges #Badges {
+  padding: 1rem;
+}
+#ProgramBadges #Banner .logo
+{
+  background-color: #29353d;
+  float: left;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+#ProgramBadges #Banner .logo img
+{
+  padding: .125rem 0 .125rem .5rem;
+  height: 60px;
+}
+
+#ProgramBadges #Banner .instanceID
+{
+  font-size: .75rem;
+  padding: 1rem 1rem .5rem;
+}
+
+#ProgramBadges #Badges fieldset.CurrentProgramBadges,
+#ProgramBadges #Badges fieldset.NonCurrentProgramBadges
+{
+  border: 1px solid #33424d;
+  background-color: #33424d;/*alt blue*/
+  border-radius: 2px;
+  margin: 0 0 .75rem;
+  padding-bottom: .75rem;
+  padding: 0 0 .75rem;
+  margin: 1rem 0 1rem;
+  border-radius: 2px;
+  background-color: #33424d;
+  border-top: 2px solid #94a8b887;
+  padding-top: 1rem;
+}
+
+#ProgramBadges #Badges fieldset.CurrentProgramBadges legend,
+#ProgramBadges #Badges fieldset.NonCurrentProgramBadges legend
+{
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: .5rem;
+  padding: 4px 1rem;
+  color: #fff;
+  font-weight: normal;
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1.125rem;
+  text-align: center;
+  border-radius: 2px;
+}
+#ProgramBadges #Badges ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#ProgramBadges #Badges li
+{
+  color: #000;
+  background-color: #fff;
+}
+#ProgramBadges #Badges ul#programBadgesCurrent li:hover,
+#ProgramBadges #Badges ul#programBadgesNonCurrent li:hover
+{
+  cursor: pointer;
+  transform: scale(1);
+}
+#ProgramBadges #Badges ul#programBadgesCurrent img,
+#ProgramBadges #Badges ul#programBadgesCurrent a img,
+#ProgramBadges #Badges ul#programBadgesNonCurrent img,
+#ProgramBadges #Badges ul#programBadgesNonCurrent a img
+{
+  border: 0;
+  position: absolute;
+  position: absolute;top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+}
+#ProgramBadges .BadgeIconDescription {
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  padding: .5rem;
+  line-height: initial;
+}
+
+#ProgramBadges #Badges ul#gallery:after
+{
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility:hidden;
+}
+
+#ProgramBadges #Badges li
+{
+  width: 140px;
+  height: 140px;
+  float: left;
+  text-align: center;
+  border-radius: 50%;
+  margin: .5rem;
+  padding: .5rem;
+  line-height: 120px;
+  position:  relative;
+  display: inline-block;
+  transition: transform .25s;
+  transform: scale(.95);
+}
+
+#ProgramBadges #Badges li.programCellAIS img
+{
+  max-width: 100%;
+}
+
+
+
+/* <-- PAGE: BADGES */
+
+/* PAGE: LOGIN --> */
+
+#LoginPage {
+  background: #33424d;
+  height: 100%;
+  position: relative;
+  padding: .25rem;
+}
+#LoginPage #banner {
+  color: white;
+  padding: .5rem;
+}
+#LoginPage #LoginBox {
+  display: block;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-box-shadow: 10px 10px 12px 0px rgba(170,170,170,1);
+  background-color: #33424d;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: 2rem;
+}
+#LoginPage #boxBanner {
+  background: #29353d;
+  padding: .75rem .5rem;
+}
+#LoginPage #boxBanner img {
+  height: 62px;
+  padding: 0 .75rem 0 .5rem;
+  text-align: right;
+  float: left;
+}
+#LoginPage #boxBanner h2 {
+  display: block;
+  margin: 0;
+  white-space: normal;
+  text-transform: unset;
+  padding: .75rem .125rem .125rem;
+  font-size: 1.325rem;
+  color: #fff;
+  font-weight: normal;
+}
+#UserNameSection,
+#PasswordSection,
+#LoginButtonSection,
+#ResetPasswordSection {
+  margin-top: 0.5em;
+}
+#UserNameLabel,
+#PasswordLabel {
+  width: 5em;
+}
+#LoginButtonSection,
+#ResetPasswordSection {
+  margin-left: 0em;
+  padding-left: 0px;
+}
+#LoginPage #content {
+  padding: 1em;
+  font-size: 1.4em;
+  background: #e0e6ed;
+
+}
+#LoginPage .errorMessage {
+  color: red;
+  font-weight: bold;
+  background-color: #e6e6e6;
+  text-align: center;
+  font-weight: normal;
+  margin-top: .5rem;
+}
+#LoginPage #content input {
+  font-size: 1.3em;
+  width: 10em;
+}
+#LoginPage #content input[type="submit"] {
+  border: 1px solid black;
+  cursor:pointer;
+  margin-top: .5em;
+}
+#LoginPage #ResetPasswordLinkContainer {
+  text-align: center;color: #296089;
+}
+
+#LoginPage .label::after
+{
+  content: ":";
+}
+#UserNameLabel,
+#UserNameValue,
+#PasswordLabel,
+#PasswordValue
+{
+  display:inline-block;
+  /* color: white; */
+}
+#BuildAndInstance {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background: #33424d;
+}
+#BuildAndInstance #BuildNumber,
+#BuildAndInstance #InstanceNumber
+{
+  font-size: 0.4em;
+  color: #b9b8b8;
+  vertical-align: top;
+  margin-left: 1em;
+}
+
+#LinkToResetPassword {
+  color: #296089;
+  font-size: .875rem;
+}
+
+/* <-- PAGE: LOGIN */
+
 .column-s {
   width: 33%;
   float: left;
@@ -2639,11 +2962,69 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 
 
+
+
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (max-width : 480px) {
 
+}
+
+
+/* 28.75em = medium displays and bigger (like mobile phones in landscape or smaller tablets)*/
+@media screen and (min-width: 32.5em) { /* 28.75em */
+  div#LoginPage div#LoginBox {
+    margin-top: 0;
+  }
+  div#LoginPage div#LoginBox div#content,
+  div#LoginPage div#LoginBox div#content input
+  {
+    font-size: 1em;
+    color: black;
+  }
+
+  div#LoginPage div#LoginBox div#content
+  {
+    background: #e0e6ed;
+    width: 24rem;
+    padding: 1rem 4.25rem 1.5rem;
+  }
+
+  div#LoginPage div#LoginBox div#content input[type="submit"]
+  {
+    border: none;
+    background: #204156;
+    background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+    background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+    background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
+    border: 1px solid #214155;
+    color: #fff;
+    border-radius: 2px;
+  }
+  div#LoginPage div#banner h2
+  {
+    font-weight: normal;
+    display: inline-block;
+  }
+  div#UserNameSection,
+  div#PasswordSection,
+  div#LoginButtonSection,
+  div#ResetPasswordSection
+  {
+    margin-top: .75rem;
+  }
+  div#LoginButtonSection,
+  div#ResetPasswordSection
+  {
+    text-align: center;
+  }
+  div#LoginPage div#LoginBox div#content div#ResetPasswordLinkContainer
+  {
+    /* text-align:left; */
+    /* margin-left: 87px; */
+  }
 }
 
 @media only screen
@@ -2664,8 +3045,14 @@ and (max-width : 896px) {
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen
-and (min-width : 768px)
-and (max-width : 1024px) {
+and (min-width : 768px) {
+
+  #ProgramBadges #Banner .instanceID {
+    /* remove after banner html updated */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 
 }
 
