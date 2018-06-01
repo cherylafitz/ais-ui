@@ -1309,14 +1309,15 @@ div.FSAAppFullDisplay fieldset.Section legend,
 .HealthReviewerComments legend,
 div.AlumnusSummary fieldset.Section legend,
 div.StudentDisplayForHealthReviewer fieldset#ProgramStaffQuestionnaire legend,
-div.HealthQuestionnaireEditor fieldset legend {
-  padding: 4px 16px 3px;
+div.HealthQuestionnaireEditor fieldset legend,
+.UserFullDisplay legend {
+  padding: 5px 16px 4px;
   border-radius: 5px 5px 0 0;
   border: none;
   background-color: #415467;
   color: #fff;
   font-weight: normal;
-  top: -10px;
+  top: -11px;
   position: relative;
   font-size: 1.25rem;
   line-height: 1.125rem;
@@ -1329,7 +1330,8 @@ fieldset legend select {
 }
 
 div.FSAAppFullDisplay fieldset.Section,
-div.AlumnusSummary fieldset.Section {
+div.AlumnusSummary fieldset.Section,
+div.UserFullDisplay fieldset {
   border-top: 5px solid #415461;
   position: relative;
 }
@@ -2908,7 +2910,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   margin-top: .5em;
 }
 #LoginPage #ResetPasswordLinkContainer {
-  text-align: center;color: #296089;
+
 }
 
 #LoginPage .label::after
@@ -2942,11 +2944,40 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 
 #LinkToResetPassword {
-  color: #296089;
-  font-size: .875rem;
+  font-size: .75rem;
+}
+#PrivacyPolicy,
+#CookiesPolicy {
+  font-size: .75rem;
 }
 
 /* <-- PAGE: LOGIN */
+
+/* PAGE: USER DISPLAY --> */
+
+.UserFullDisplay .linkToPreviousPage {
+  margin: 0 0 1rem 0;
+}
+.UserFullDisplay .UserInformation {
+  margin-top: 1.5rem;
+}
+.UserFullDisplay .UserInformation legend a {
+  color: #ffd58f;
+  font-size: .95rem;
+}
+/* Blue legends containing dropdown --> */
+div.UserFullDisplay fieldset.UserPermissions {
+  margin-top: 2rem;
+}
+
+.UserFullDisplay .UserPermissions legend {
+  padding-bottom: 0;
+  top: -15px;
+}
+/* <-- Blue legends containing dropdown */
+
+/* <-- PAGE: USER DISPLAY */
+
 
 .column-s {
   width: 33%;
@@ -3022,8 +3053,26 @@ and (max-width : 480px) {
   }
   div#LoginPage div#LoginBox div#content div#ResetPasswordLinkContainer
   {
-    /* text-align:left; */
-    /* margin-left: 87px; */
+     text-align:center; 
+  }
+  #PrivacyPolicy,
+  #CookiesPolicy {
+    display: inline-block;
+  }
+  #PrivacyPolicy {
+    margin: .5rem .5rem 0 1px;
+  }
+
+  #CookiesPolicy {
+    margin: .5rem 0 0;
+  }
+  #PrivacyPolicy a,
+  #CookiesPolicy a {
+    color: #34424c;
+  }
+  #Policies {
+    text-align: center;
+    margin-top: .5rem;
   }
 }
 
