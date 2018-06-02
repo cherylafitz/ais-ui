@@ -2664,9 +2664,6 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   background: #33424d;
 }
 #ProgramBadges #Banner {
-  background: #29353d;
-  position: relative;
-  color: #fff;
   text-align: right;
 }
 #ProgramBadges #Banner:after {
@@ -2974,6 +2971,22 @@ div.UserFullDisplay fieldset.UserPermissions {
 /* <-- Blue legends containing dropdown */
 
 /* <-- PAGE: USER DISPLAY */
+
+/* SHARED ELEMENTS --> */
+
+/* BANNERS -> */
+
+#BannerAC_AIS,
+#ProgramBadges #Banner {
+  background: #29353d;
+  position: relative;
+  color: #fff;
+}
+
+/* <- BANNERS */
+
+/* <-- SHARED ELEMENTS */
+
 
 
 .column-s {
