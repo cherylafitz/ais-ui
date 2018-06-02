@@ -1,0 +1,33 @@
+<div id="content">
+	<form name="loginForm" method="post" action="/cgi-bin/WebObjects/ais.woa/wa/com.amagavi.ac.DirectAction/login">
+		<div id="UserNameSection" class="section">
+			<div id="UserNameLabel" class="label">Username</div>
+			<div id="UserNameValue"><input autofocus="autofocus" id="UsernameTextField" type="text" name="username"></div>
+		</div>
+		<div id="PasswordSection" class="section">
+			<div id="PasswordLabel" class="label">Password</div>
+			<div id="PasswordValue"><input id="PasswordTextField" type="password" name="password"></div>
+		</div>
+		<div id="LoginButtonSection" class="section">
+			<div id="LoginButtonContainer">
+				<input id="Login" type="submit" value="Login" name="com.amagavi.ac.DirectAction/login">
+				<input type="hidden" name="WOSubmitAction" value="com.amagavi.ac.DirectAction/login">
+			</div>
+		</div>
+		<div id="ResetPasswordSection" class="section">
+			<div id="ResetPasswordLinkContainer">
+				<a id="LinkToResetPassword" href="/cgi-bin/WebObjects/ais.woa/wo/2.2.1.9.1.7">Reset Password</a>
+			</div>
+		</div>
+		<input type="hidden" name="raction">
+		<input type="hidden" name="rbindings">
+	</form>
+	<div id="Policies">
+		<div id="PrivacyPolicy">
+			<a href="/cgi-bin/WebObjects/ais.woa/wo/0.13">Privacy Policy</a>
+		</div>
+		<div id="CookiesPolicy">
+			<a href="/cgi-bin/WebObjects/ais.woa/wo/0.15">Cookie Declaration</a>
+		</div>
+	</div>
+</div>

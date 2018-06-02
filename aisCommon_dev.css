@@ -2909,9 +2909,6 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   cursor:pointer;
   margin-top: .5em;
 }
-#LoginPage #ResetPasswordLinkContainer {
-  text-align: center;color: #296089;
-}
 
 #LoginPage .label::after
 {
@@ -2944,8 +2941,11 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 
 #LinkToResetPassword {
-  color: #296089;
-  font-size: .875rem;
+  font-size: .75rem;
+}
+#PrivacyPolicy,
+#CookiesPolicy {
+  font-size: .75rem;
 }
 
 /* <-- PAGE: LOGIN */
@@ -3050,8 +3050,26 @@ and (max-width : 480px) {
   }
   div#LoginPage div#LoginBox div#content div#ResetPasswordLinkContainer
   {
-    /* text-align:left; */
-    /* margin-left: 87px; */
+     text-align:center;
+  }
+  #PrivacyPolicy,
+  #CookiesPolicy {
+    display: inline-block;
+  }
+  #PrivacyPolicy {
+    margin: .5rem .5rem 0 1px;
+  }
+
+  #CookiesPolicy {
+    margin: .5rem 0 0;
+  }
+  #PrivacyPolicy a,
+  #CookiesPolicy a {
+    color: #34424c;
+  }
+  #Policies {
+    text-align: center;
+    margin-top: .5rem;
   }
 }
 
