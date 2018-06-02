@@ -1,0 +1,3142 @@
+@charset "UTF-8";
+/*@import url("https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css");*/
+/*
+COLOR PALETTE:
+red : #981727;
+light yellow: #FFD590;
+lighter yellow: #ffe2b3;
+dark blue: #29353d;
+medium dark blue: #33424d;
+light blue: #e3e8e8; (old: #e0ebeb)
+light green: #c8d295;
+lighter green: #E8EBD9;
+*/
+
+/* RESET CSS --> */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}*/
+
+/* HTML5 display-role reset for older browsers */
+
+/*article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}*/
+
+/* <-- RESET */
+
+/* OVERRIDES (REMOVE FROM AMAGAVI STYLESHEETS -->*/
+
+  /* TOPNAV --> */
+  .topNavInTable .infoBlock .serverInfo .serverLocation, .instanceID {
+      font-size: 1em;
+  }
+  /* <-- TOPNAV */
+
+  /* PAGEWRAPPER --> */
+  .leftNav {
+    background-color: transparent;
+  }
+
+  .Chapter,
+  .leftNav h1 {
+    background-color: transparent;
+  }
+
+  table.applicantSearch {
+      border: 0;
+  }
+  div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value,
+  div.PlacementReportSearch .Scope .LimitToFundingSource > .value,
+  div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value,
+  div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
+      position: absolute;
+      top: 0;
+      left: 8em;
+  }
+
+  .InPlacementReportEditor th,
+  table.PlacementReportDisplay th,
+  table.PlacementReportEditor th {
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      background-color: #E6E6E6;
+      text-transform: uppercase;
+      width: 10em;
+  }
+table.report,
+table.TravelVendorExplanation {
+  border: none;
+}
+div#alumnusSummary table.CountryRelationships tr th,
+div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
+div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
+  border-right-color: #fff;
+}
+/* <-- OVERRIDES */
+
+body #PageWrapperNavUpdate {
+  background: #fff;
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* Animation Keyframes -->*/
+
+/*<--*/
+
+
+
+/* SIMPLE GRID --> */
+
+/*.row > [class^="column"]:last-of-type {
+  padding-right: 16px;
+}*/
+
+.row:after,
+.applicantSearch .sectionDivider:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* remove after adding .column */
+[class^="column"] {
+  float: left;
+  padding-right: 16px;
+}
+
+[class^="column"]:last-of-type {
+  padding-right: 0;
+}
+
+.column {
+  width: 100%;
+  float: left;
+  padding-right: 1rem;
+}
+
+.column-2-3 {
+  width: 66.66%;
+}
+
+.column-1-3 {
+  width: 33.33%
+}
+
+.column-1-4 {
+  width: 25%;
+}
+
+.column-2-4,
+.column-1-2 {
+  width: 50%;
+}
+
+.column-3-4 {
+  width: 75%;
+}
+/* <-- SIMPLE GRID */
+
+/* NAVIGATION --> */
+.navigation {
+  padding: 0;
+}
+.navigation li {
+  list-style-type: none;
+}
+
+.sidenav {
+  background: #cbd2d6;
+  padding: 1rem;
+}
+/* <-- NAVIGATION */
+
+/* CONTAINERS --> */
+.tile {
+  background: #cbd2d6;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.card {
+  background-color: #e3e8e8;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cecece;
+  border-radius: 2px;
+}
+/* <-- TILES AND CARDS */
+
+/* TYPOGRAPHY --> */
+p {
+  margin-bottom: .5rem;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* warning text ----> */
+.warning,
+span.StudentEntryDisabled {
+  font-size: .875rem;
+  border-radius: 2px;
+  background: #2a363e;
+  padding: .125rem .25rem;
+  color: rgb(255, 149, 149);
+  font-style: italic;
+}
+div.NoEntries,
+div.StudentsRequiringHealthAnswers h4.PendingCancellationForHealthReasons {
+  color: #981727;
+}
+
+a {
+  color: #296089;
+}
+/* <---- warning text */
+
+/* <-- TYPOGRAPHY */
+
+/* MEDIA --> */
+.label.primary {
+  float: left;
+  padding: .5rem 1rem;
+  background-color: #feca76;
+  border: 1px solid #feb947;
+  font-weight: normal;
+  border-radius: 2px;
+}
+
+.artboard {
+  background-color: #fff;
+}
+/* <-- MEDIA */
+
+
+.erxHoverArea div.erxToolTip,
+.erxHoverArea div.erxToolTipJS,
+#erxToolTipContents {
+  border: 1px solid #f4ab33;
+  background-color: #fad58f;
+  padding: .125rem .25rem;
+  border-radius: 2px;
+  font-size: .875rem;
+  width: 10rem;
+  opacity: .9;
+}
+
+.showHoverable.erxHoverArea {
+  margin-left: 18px !important;
+  padding: 0 .125rem;
+}
+
+.information,
+.showHoverable.erxHoverArea:before {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=1, OffY=0, Color='#fff')";
+  -webkit-filter: drop-shadow(2px 0 0 #fff);
+  filter: drop-shadow(2px 0 0 #fff);
+}
+
+
+/* HEADER --> */
+.topNavInTable td.infoBlock {
+    padding-top: .2rem;
+}
+.topNavInTable .infoBlock a.logoutLink,
+.userLink,
+.topNavInTable .localizificatinator a.suggestLocalization {
+  color: #FFD590;
+  font-weight: normal;
+  font-size: .75rem;
+  margin-right: .5rem;
+}
+.userLink,
+.topNavInTable .localizificatinator a.suggestLocalization {
+color: #c4dcee;
+}
+.localizificatinator select {
+  font-size: .75rem;
+  margin-top: .25rem;
+}
+.logoutLink {
+  padding-right: 0;
+}
+
+.leftNav .Body .header {
+  display: block;
+}
+.topNavInTable .infoBlock .serverInfo,
+.topNavInTable .infoBlock .instanceID,
+.topNavInTable .infoBlock .instanceID a {
+    font-size: .6875rem;
+    font-weight: normal;
+}
+.topNavInTable .infoBlock .instanceID,
+.topNavInTable .infoBlock .instanceID a {
+    color: #cecece;
+}
+.TopNavTableStructure {
+  background-color: #29353d !important;
+}
+body .divider {
+  border: none;
+}
+#tippyTopOfPage + .divider {
+  height: .5rem;
+  background: #29353d;
+}
+#cssmenu ul {
+  background: #444;
+  background: -moz-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
+  background: -webkit-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
+  background: -o-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
+  background: -ms-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
+  background: linear-gradient(to top, #333 0, #444 50%, #333 100%);
+  background: transparent linear-gradient(to top, #333 0, #444 50%, #333 100%) repeat scroll 0 0;
+  -webkit-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
+  -moz-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
+  box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
+}
+#cssmenu ul li {
+    -webkit-transition: background ease-out 100ms;
+    -moz-transition: background ease-out 100ms;
+    -ms-transition: background ease-out 100ms;
+    -o-transition: background ease-out 100ms;
+    transition: background 100ms ease-out;
+}
+#cssmenu ul li::after {
+  height: 0;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li:active {
+  background: #34677f;
+}
+#tippyTopOfPage table a:hover,
+#tippyTopOfPagefieldset a:hover,
+#tippyTopOfPage a.showLink:hover,
+#tippyTopOfPage a.hideLink:hover,
+.topNavInTable .infoBlock a.logoutLink:hover {
+  color: #3b89c4;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.topNavInTable .infoBlock a.logoutLink:hover {
+  color: #f4ab33;
+}
+
+.topNavInTable td.nameBlock {
+  background-image: url('https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg');
+  background-repeat: no-repeat;
+  background-size: 72px;
+  text-align: left;
+  padding-top: .5rem;
+  width: 360px;
+  vertical-align: top;
+  background-position: 0 .5rem;
+}
+.topNavInTable td.nameBlock > div {
+  margin-left: 90px;
+}
+div.MultiSearcher {
+  margin-top: .5rem;
+}
+div.MultiSearcher input {
+  font-size: .75rem;
+}
+div.MultiSearcher input[type="text"] {
+  margin: 0 .5rem 0 0;
+  padding: 1px 0 1px 4px;
+  display: block;
+}
+
+.MultiSearcher .showLink,
+.MultiSearcher .hideLink {
+  color: #FFD590;
+  color: #c4dcee;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+div.MultiSearcher input[type="submit"] {
+  padding: 1px 5px 1px;
+  border-radius: 2px;
+  margin-top: .25rem;
+}
+div.MultiSearcher input[type="submit"]:last-of-type {
+  margin-right: .25rem;
+}
+td.logo img {
+  padding-top: .5rem;
+}
+.topNavInTable .title {
+  font-weight: normal;
+}
+.topNavInTable td.logo {
+  padding-right: 1rem;
+  vertical-align: top;
+}
+.topNavInTable td.logo {
+  width: 260px;
+}
+#tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
+  background: #ffffff;
+  font-weight: bold;
+  margin: .125rem 0 .25rem .25rem;
+  border: 3px solid #2a353d;
+  box-shadow: 0 0 0px 2px #f6b844;
+}
+/* <--HEADER */
+
+/* MAP --> */
+#ex {
+  margin: 1rem;
+  border: 1px solid #999
+}
+/* <-- MAP */
+
+/* NAVIGATION--> */
+div.leftNav div.Body {
+  padding: .75rem;
+}
+div.AuditTrailRowDisplay {
+  padding: 0;
+  position: relative;
+}
+.leftNav p {
+  margin: .5rem 0;
+}.leftNav p:first-of-type {
+  margin: 0 0 .5rem;
+}
+table.pageStructure tr.contentArea td.leftNav .Body dl
+{
+  padding-bottom: 1px;
+  padding: .25rem;
+  margin: .5rem 0 1rem 0;
+  display: block;
+}
+table.pageStructure tr.contentArea td.leftNav .Body dl:first-of-type {
+  margin-top: 0;
+}
+table.pageStructure .leftNav a {
+  text-decoration: none;
+  padding: .0625rem .125rem .0625rem 0;
+}
+table.pageStructure .leftNav dd a,
+.inLeftNav li a {
+  border: none;
+}
+.CreateAppsForRelevantPIPYs,
+.Body div.actionGroup {
+  margin-top: 1rem;
+}
+table.pageStructure .leftNav dd a {
+  display: block;
+}
+.Chapter {
+  padding: 0;
+  font-size: .875rem;
+}
+.Chapter div {
+  text-align: right;
+  margin: .25rem 0;
+}
+table .Chapter div a {
+  font-size: .75rem;
+}
+.ListAndOrPriorPageLinks {
+  text-align: right;
+  margin: -.25rem 0 .5rem;
+}
+table.pageStructure .leftNav .PriorPage,
+table.pageStructure .leftNav .ListPage {
+  display: inline;
+}
+table.pageStructure .leftNav .ListPage {
+  margin-right: .5rem;
+}
+table.pageStructure .leftNav .PriorPage a,
+table.pageStructure .leftNav .ListPage a {
+  font-size: 0.75rem;
+  border-radius: 2px;
+}
+.PreviousPage {
+  margin-bottom: 1rem;
+  font-size: .875rem;
+}
+table.pageStructure .leftNav .PriorPage a:hover,
+table.pageStructure .leftNav .ListPage a:hover {
+  background-color: #e0e6eb;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+}
+dl.inLeftNav dt {
+  font-weight: bold;
+  color: #000;
+  padding-left: .25rem;
+}
+dl.inLeftNav dd {
+  margin-left: 0;
+  padding-left: .25rem;
+  padding-bottom: .125rem;
+}
+.Body ul.inLeftNav li,
+.Body ul.inLeftNav li ul li {
+  padding: .1rem 0;
+}
+.forceWrap {
+  white-space: initial !important;
+}
+/* <-- NAVIGATION */
+
+#cssmenu ul li a {
+  padding: 7px 14px 6px;
+}
+#cssmenu ul {
+  background: transparent linear-gradient(to top, #94a8b8 0, #b3c1cc 35%, #b3c1cc 65%, #859cad 100%) repeat scroll 0 0; /* alt blue */
+}
+#cssmenu ul li a {
+  color: #000;
+}
+table.pageStructure .leftNav dd a,
+.inLeftNav li a,
+table .leftNav a {
+  color: #c4dcee;
+  font-size: .875rem;
+}
+.Chapter {
+  color: #fff;
+  padding: 1rem .75rem .5rem .75rem;
+  background: rgba(41, 53, 61, 0.7);
+}
+
+/* dark leftnav --> */
+
+.leftNav {
+  color: #fff;
+}
+.leftNav h1 {
+  color: #c8d295;
+  padding-top: 0;
+  /*padding-bottom: .25rem;*/
+  margin-bottom: .5rem;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+.leftNav .Body .header {
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: .0625rem 0 .065rem;
+}
+table.pageStructure tr.contentArea td.leftNav .Body dl {
+  background: #29353d;
+  background: rgba(41, 53, 61, 0.7);
+  border-radius: 2px;
+}
+table.pageStructure tr.contentArea td.leftNav {
+  background: #33424d;
+  -webkit-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  -moz-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+}
+dl.inLeftNav dt,
+.Body ul.inLeftNav li.header,
+.Body ul.inLeftNav li .programYearName {
+  font-style: normal;
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid #34434e;
+  padding-bottom: .25rem;
+}
+.Body ul.inLeftNav li.header {
+  padding-top: .25rem;
+}
+table.pageStructure tr.contentArea td.leftNav .Body dl,
+table.pageStructure .inLeftNav {
+    color: #fff;
+}
+table.pageStructure tr.contentArea td.leftNav .Body dd a:hover,
+table.pageStructure tr.contentArea td.leftNav .Body dd a:active,
+table.pageStructure tr.contentArea td.leftNav .Body dd a:focus,
+.inLeftNav li a:hover,
+.inLeftNav li a:active,
+.inLeftNav li a:focus,
+table.pageStructure .leftNav a:hover,
+table.pageStructure .leftNav a:active,
+table.pageStructure .leftNav a:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #c8d295;
+  border-radius: 2px;
+  padding: .0625rem .125rem .0625rem 0;
+}
+/* <-- dark leftnav */
+
+/* MAIN CONTENT --> */
+#contentPage h1, #contentPageProportional h1 {
+  font-size: 1.25rem;
+  text-align: left;
+  padding: .25rem 0 .5rem 0;
+}
+.sectionDivider {
+  font-weight: bold;
+  margin: .5rem 0;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+div.AttachmentDisplay div.sectionDivider {
+  margin-top: 0;
+}
+.reportHeader2 h3 {
+  border-top: none;
+  padding: 0;
+  background-color: transparent;
+}
+.AlumnusSearch form > table > tbody > tr:last-child > th {
+  padding-bottom: 1rem;
+}
+.ArticleSearch form > table {
+  width: 100%;
+}
+#contentPageProportional {
+  margin: 0;
+  padding: 0;
+}
+
+table.pageStructure tr.contentArea > td.content {
+  background-color: #FFF;
+  color: #000;
+  width: 100%;
+  padding: 1rem 1.25rem;
+}
+table.rolodex tr td {
+  white-space: nowrap;
+  padding: .125rem;
+}
+table.rolodex tr.Programs td {
+  white-space: normal;
+}
+th {
+  padding: .125rem .5rem;
+}
+table.applicantSearch {
+  border: 0 none;
+  width: 100%;
+}
+table.applicantSearch > tbody > tr > td {
+  padding-left: 0;
+}
+tr.ApplicationName td div.EntryArea,
+tr.PassportName td div.EntryArea {
+  background-color: transparent;
+}
+table tr.ApplicationName td div.EntryArea,
+table tr.PassportName td div.EntryArea {
+  border: none;
+  background-color: transparent;
+  color: #000;
+}
+textarea,
+input {
+  border-radius: 2px;
+}
+
+#contentPageProportional table.RowDisplay,
+#contentPageProportional tr.headerRow,
+#contentPageProportionaltr.headerRow,
+#contentPageProportional tr.headerRow th a,
+table.report th,
+table.TravelVendorExplanation tr.headerRow th,
+div.DescribeColumns table.ColumnDescriptions tr.Titles {
+  background-color: #cdd3ab;
+  color: #000;
+  font-style: normal;
+}
+#contentPageProportional #ApplicationSearchForm tr.headerRow {
+  background-color: transparent;
+}
+#contentPageProportional table.RowDisplay {
+  background-color: transparent;
+/*  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
+  -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);*/
+
+}
+div.HomePageForAll fieldset,
+td.content fieldset,
+fieldset,
+div.AlumnusSummary fieldset,
+div.ArticleViewer fieldset {
+  border: 1px solid #cecece;
+  background-color: #e0e6eb;/*alt blue*/
+  border-radius: 2px;
+  margin: 0 0 .75rem;
+  padding-bottom: .75rem;
+}
+
+div.HomePageForAll fieldset fieldset,
+fieldset fieldset,
+td.content fieldset fieldset  {
+  border-color: #fff
+}
+fieldset label {
+  width: initial;
+}
+#contentPageProportional table.ERXMatrixTable {
+  font-size: .75rem;
+}
+#contentPageProportional table.ERXMatrixTable tr td {
+  padding: .1rem .2rem;
+}
+.ShowHideSectionsInApplicationCell {
+    float: right;
+}
+#contentPageProportional input[type="submit"]:not([value="Clear Filters"]),
+#contentPageProportional input[type="button"] {
+  font-size: .875rem;
+  border-radius: 2px;
+  margin: 0 .5rem .25rem 0;
+}
+
+/* Placement Report --> */
+
+div.PlacementReport {
+  border: none;
+  font-family: "proxima-nova-bold", sans-serif;
+}
+table.PlacementReportDisplay,
+table.PlacementReportDisplay table.siblings,
+table.PlacementReportEditor table.siblings {
+  border: 1px solid #cecece;
+  margin: .5rem 0;
+  border-collapse: collapse;
+}
+table.PlacementReportDisplay table.rolodex {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.PlacementReportDisplay table.rolodex tr:nth-child(2n + 3) {
+    background-color: #F9FAF5;
+    background-color: #fff;
+}
+table.PlacementReportDisplay table.rolodex tr:nth-child(2n + 2) {
+    background-color: #E8EBD9;
+    background-color: #fff;
+}
+table.PlacementReportDisplay table.rolodex th.miniSectionHeader,
+table.PlacementReportEditor table.rolodex th.miniSectionHeader {
+  background-color: #fff;
+  font-weight: bold;
+}
+table.PlacementReportDisplay th,
+table.PlacementReportDisplay td {
+  padding: 0;
+  border-bottom: 1px solid #bfbfbf;
+  text-align: left;
+}
+table.PlacementReportDisplay table.siblings th,
+table.PlacementReportDisplay table.siblings td,
+table.PlacementReportEditor table.siblings th,
+table.PlacementReportEditor table.siblings td {
+  border: 1px solid #cecece;
+}
+table.PlacementReportDisplay table.rolodex th,
+table.PlacementReportDisplay table.rolodex td {
+  white-space: normal;
+}
+.InPlacementReportEditor table.rolodex .siblings th,
+table.PlacementReportDisplay table.rolodex .siblings th,
+table.PlacementReportEditor table.rolodex .siblings th {
+  border: none;
+}
+table.PlacementReportDisplay table.rolodex .siblings td {
+  background-color: #fff;
+}
+.InPlacementReportEditor th,
+table.PlacementReportEditor th,
+.InPlacementReportEditor td,
+table.PlacementReportEditor td,
+table.PlacementReportDisplay table.rolodex td {
+    padding: .2rem .5rem;
+}
+.InPlacementReportEditor th,
+table.PlacementReportDisplay th,
+table.PlacementReportEditor th {
+    font-weight: bold;
+    font-style: normal;
+    background-color: #fff;
+    text-transform: uppercase;
+    width: 10rem;
+    text-align: left;
+    padding: .5rem;
+}
+table.PlacementReportDisplay > tbody > tr > th {
+  background-color: #fff;
+  padding-left: 1rem;
+}
+div.PlacementReportSearch table.PlacementReportDisplay tr.section th,
+div.PlacementReportSearch table.PlacementReportDisplay tr.section td {
+  border: 1px solid #cecece;
+}
+.PlacementType > td > div {
+  font-weight: bold;
+  padding: .5rem;
+  border-top: none;
+}
+table.PlacementReportDisplay table.siblings tr.headerRow {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #cecece;
+  padding: .2rem;
+}
+.siblings tr:nth-child(2n+3) {
+    background-color: #F9FAF5;
+}
+.siblings tr:nth-child(2n+2) {
+    background-color: #E8EBD9;
+}
+table.PlacementReportDisplay table.rolodex .siblings th {
+  vertical-align: bottom;
+  padding: .2rem .5rem;
+}
+table.PlacementReportDisplay table.rolodex th {
+  font-style: normal;
+  text-align: left;
+}
+.InPlacementReportEditor table.rolodex th,
+table.PlacementReportDisplay table.rolodex th,
+table.PlacementReportEditor table.rolodex th {
+    width: 12rem;
+    text-transform: none;
+    background-color: #ebedde;
+    padding: .2rem .5rem;
+}
+.InPlacementReportEditor table.rolodex tbody tr:first-child th:first-child,
+.InPlacementReportEditor table.rolodex tbody tr:first-child td:first-of-type,
+table.PlacementReportDisplay table.rolodex tbody tr:first-child:not(.headerRow) th:first-child,
+table.PlacementReportDisplay table.rolodex tbody tr:first-child td:first-of-type,
+table.PlacementReportEditor table.rolodex tbody tr:first-child td:first-of-type,
+table.PlacementReportEditor table.rolodex tbody tr:first-child th:first-child {
+  padding-top: .5rem;
+}
+
+.InPlacementReportEditor table.rolodex tbody tr:last-child th:last-child,
+.InPlacementReportEditor table.rolodex tbody tr:last-child td:last-of-type,
+table.PlacementReportDisplay table.rolodex tbody tr:last-child:not(.headerRow) th:last-child,
+table.PlacementReportDisplay table.rolodex tbody tr:last-child td:last-of-type,
+table.PlacementReportEditor table.rolodex tbody tr:last-child td:last-of-type,
+table.PlacementReportEditor table.rolodex tbody tr:last-child th:last-child,
+table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
+  padding-bottom: .5rem;
+  border-bottom: none;
+}
+
+/* <-- placement report*/
+
+/*ALUMNI only-->*/
+.AlumniHome,
+.ArticleSearch,
+.AlumnusNameList,
+.ArticleRowDisplay,
+.AlumnusAddressList,
+.AlumnusEmailRowDisplay,
+.Main,
+.AlumnusEmailList,
+.AlumnusSocialMediaList,
+.SystemAnnouncementsWrapper + div {
+  position: relative;
+  height: 100%;
+}
+
+.SystemAnnouncementsWrapper + div.ArticleViewer,
+.SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
+  position: relative;
+}
+#alumnusSearch table table {
+  width: initial;
+}
+div#alumniSearchResults span.reportLabel {
+  font-style: normal;
+}
+div#alumniSearchResults h2.ReportName {
+  border-top: none;
+  margin-top: .5rem;
+}
+table.rolodex .alumnusSection + tr th,
+table.rolodex .alumnusSection + tr td {
+  padding-top: .5rem;
+}
+.SystemAnnouncementsWrapper + div.AlumnusSearch,
+.SystemAnnouncementsWrapper + div.AlumnusSummary,
+.SystemAnnouncementsWrapper + div.AlumnusRowDisplay,
+.SystemAnnouncementsWrapper + div.ArticleViewer,
+.SystemAnnouncementsWrapper + div.ArticleSearch,
+.SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
+  height: initial;
+}
+/* alumnus summary --> */
+.AddressHistory .English,
+.AddressHistory .Label {
+  background-color: #d7ddbc;
+}
+.AddressHistory .subTable {
+  background-color: #F9FAF5;
+}
+div#alumnusSummary a.PriorPage {
+  font-size: 0.75rem;
+  font-style: normal;
+  padding: 0.5rem 0 0;
+  display: block;
+}
+div#alumnusSummary h1 {
+  padding: initial;
+  margin: initial;
+  font-weight: normal;
+}
+/* <-- alumnus summary */
+
+#navMenu {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  background: #33424d;
+  -webkit-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  -moz-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  margin: 0;
+}
+#nav li a {
+  display: block;
+  padding: .25rem .25rem;
+  text-decoration: none;
+  color: #c4dcee;
+  font-size: .875rem;
+  margin: 0 .75rem;
+  /* to reset --> */
+  background: transparent;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  /* end reset */
+}
+
+#nav li a:hover {
+  color: #c8d295;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+#nav {
+  background: transparent;
+}
+/* to reset --> */
+#nav:after,
+#nav:before {
+  content:none;
+}
+/* end reset */
+
+#nav li.selected {
+  /* to reset --> */
+  display: block;
+  font-size: .875rem;
+  font-family: "proxima-nova-bold", sans-serif;
+  font-style: normal;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  color: #c8d295;
+  /* end reset */
+  font-weight: bold;
+  background-color: transparent;
+  padding: .25rem 1rem;
+}
+
+#nav li.title {
+  /* to reset --> */
+  font-size: 1rem;
+  display: block;
+  text-align: left;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: "proxima-nova-bold", sans-serif;
+  font-weight: bold;
+  /* end reset */
+  margin-bottom: .25rem;
+  color: #c8d295;
+  padding: 1rem .75rem .5rem .75rem;
+  background: rgba(41, 53, 61, 0.7);
+}
+#navMenu + div {
+  padding: 1rem 1rem 1rem 180px !important;
+}
+.AuditTrailRowDisplay a,
+.ArticleSearch .ArticleSearch a {
+  color: #000;
+}
+.ArticleSearch h1,
+.AlumniHome h1 {
+  margin-top: 0;
+}
+.ArticleSearch tbody > tr > th,
+.ArticleSearch tbody > tr > th ~ td,
+.AlumnusSearch tbody > tr > th,
+.AlumnusSearch tbody > tr > th ~ td {
+    border-bottom: 1px solid #c2c2c2;
+    background-color: #e3e8e8;
+}
+.ArticleSearch table.rolodex tr td,
+.AlumnusSearch table.rolodex tr th ~ td {
+  background-color: #cbd2d6;
+  padding-left: .5rem;
+  border-right: .75rem solid #e3e8e8;
+}
+.AlumnusSearch th {
+  border-left: .75rem solid #e3e8e8;
+}
+.ArticleSearch table.rolodex tr:first-of-type td {
+  padding-top: .25rem;
+}
+.ArticleSearch table.rolodex tr:last-of-type td {
+  padding-bottom: .25rem;
+}
+.ArticleSearch form > table {
+  width: 100%;
+  border-collapse: collapse;
+  border: .75rem solid #e3e8e8;
+}
+tr.alumnusSection {
+  border-bottom: .75rem solid #e3e8e8;
+}
+table.rolodex tr.alumnusSection td {
+    font-weight: bold;
+    margin: .5rem 0;
+    border: none;
+    padding: .5rem 0 .25rem;
+    background-color: transparent;
+}
+div.ArticleSearch div.SearchPhrasesContainer {
+    max-height: initial;
+}
+#alumnusSearch table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.SearchButtonCell {
+  text-align: left;
+  padding-top: .5rem;
+}
+div#navMenu div.PriorPage {
+  padding: .25rem;
+}
+/*table.pageStructure tr.footerArea td.leftNav,
+.footer {
+  background-color: #29353d;
+  border: none;
+  bottom: 0;
+}*/
+#PageWrapperNavUpdate > .footer,
+table.pageStructure tr.footerArea td.leftNav .byline {
+  background-color: #2c3942;
+  font-size: .625rem;
+  padding: .25rem .25rem .5rem;
+  font-style: normal;
+}
+.footerArea img,
+#PageWrapperNavUpdate > .footer img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff')";
+  -webkit-filter: drop-shadow(0 0 1px #fff);
+  filter: drop-shadow(0 0 1px #fff);
+}
+#PageWrapperNavUpdate > .footer {
+  width: 10rem;
+  text-align: center;
+}
+table.pageStructure tr.footerArea td.leftNav {
+  padding: 0;
+}
+table .footerArea .leftNav a {
+  line-height: 28px;
+  font-size: .75rem;
+}
+#PageWrapperNavUpdate > .footer a {
+  color: #c4dcee;
+}
+table.rolodex tr td.NameCellHeading {
+  padding: 0 .5rem;
+}
+td.SearchButtonCell input {
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+.AlumniHome fieldset.Downloads {
+  clear: both;
+}
+
+div.ArticleViewer div.AlumniList {
+  margin: .5rem 2rem;
+}
+.ArticleViewer .articleImage img {
+  border: 4px solid #fff;
+}
+
+/*ALUMNI ARTICLES resets -->*/
+
+.article {
+  border: 1px solid #cecece;
+  background: #e0e6ec;
+  padding: .5rem 1rem;
+  margin-bottom: 1rem;
+}
+.article .header,
+.article .footer {
+  border: none;
+  background-color: #e0e6ed;
+  padding: .5rem 0 0;
+}
+
+.article table {
+  background-color: transparent;
+}
+
+.article .textBody {
+  padding: 0;
+}
+div.ArticleViewer fieldset {
+  background-color: #fff;
+}
+.articleImage {
+  margin: .25rem;
+  border: none;
+  padding: 0;
+}
+div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
+.article .header .status table {
+  border: none;
+}
+
+/*<-- ALUMNI resets */
+
+/*<--ALUMNI only*/
+
+/* ARTICLE BOXES --> */
+
+
+
+/* <-- ARTICLE BOXES */
+
+
+/*MISC ALIGNMENT -->*/
+
+div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value, div.PlacementReportSearch .Scope .LimitToFundingSource > .value, div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value, div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
+    position: absolute;
+    top: 0;
+    left: 8rem;
+}
+
+/* <-- MISC ALIGNMENT */
+
+/* PIPY --> */
+div.PIPYDisplay h3 {
+  border: none;
+  background-color: transparent;
+}
+
+/* <-- PIPY */
+
+
+
+
+/* TEXT --> */
+
+/* <-- TEXT */
+
+/* <-- MAIN CONTENT */
+
+/* <-- OVERRIDES */
+
+/* Participant summary page */
+
+  /* nav --> */
+.NextStudent,
+.PreviousStudent  {
+  border-color: #c8d295;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  height: 10px;
+  width: 10px;
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  margin: 0 0 1px 1px;
+}
+.PreviousStudent {
+  border-width: 0 0 2px 2px;
+}
+table.pageStructure .leftNav .NextStudent:hover,
+table.pageStructure .leftNav .PreviousStudent:hover  {
+  border-color: #818f3d;
+  background-color: transparent;
+  border-radius: 0;
+}
+.NextStudent img,
+.PreviousStudent img {
+  display: none;
+}
+table.pageStructure .leftNav .StudentSummary {
+  display: inline-block;
+  color: #fff;
+  /*margin: .5rem 0;*/
+}
+  /* <-- nav */
+
+.ParticipantSummaryPage .Section,
+.AlumnusSummary .Section {
+  max-width: 700px;
+  margin: 2rem 0;
+}
+
+.ParticipantSummaryPage .Section:first-of-type {
+  margin-top: 2rem;
+}
+
+.ParticipantSummaryPage .ShowHideAll {
+  padding: .25rem;
+}
+
+.ParticipantSummaryPage#contentPageProportional h1 {
+    margin: 0 2rem 0 0;
+    border-radius: 2px;
+    float: left;
+    font-weight: normal;
+}
+div.FSAAppFullDisplay a#HideContentsOfAllSections {
+  margin-left: 1rem;
+}
+/*#contentPageProportional .StudentLastNameEmphasis {
+  font-weight: normal;
+}*/
+
+.StudentLastNameEmphasis {
+  font-weight: bold;
+}
+
+.ParticipantSummaryPage {
+  border-collapse: collapse;
+}
+
+.ParticipantSummaryPage table,
+.AlumnusSummary table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ParticipantSummaryPage table.RowDisplay {
+  margin: 0;
+}
+/* OVERRIDES ONLY --> */
+div#alumnusSummary table.ProgramParticipation {
+    border: none;
+}
+div#alumnusSummary fieldset table.ProgramParticipation caption,
+div#alumnusSummary fieldset table caption {
+  background-color: transparent;
+  color: black;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  padding-bottom: .5rem;
+  text-align: left;
+}
+/* <-- OVERRIDES ONLY */
+div.FSAAppFullDisplay fieldset.Section legend,
+.HealthGroup legend,
+.QuestionsAndAnswers legend,
+.HealthReviewerComments legend,
+div.AlumnusSummary fieldset.Section legend,
+div.StudentDisplayForHealthReviewer fieldset#ProgramStaffQuestionnaire legend,
+div.HealthQuestionnaireEditor fieldset legend,
+.UserFullDisplay legend {
+  padding: 5px 16px 4px;
+  border-radius: 5px 5px 0 0;
+  border: none;
+  background-color: #415467;
+  color: #fff;
+  font-weight: normal;
+  top: -11px;
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1.125rem;
+}
+
+fieldset legend select {
+  background: #33424d;
+  color: #fff;
+  border: 3px solid #33424d;
+}
+
+div.FSAAppFullDisplay fieldset.Section,
+div.AlumnusSummary fieldset.Section,
+div.UserFullDisplay fieldset {
+  border-top: 5px solid #415461;
+  position: relative;
+}
+
+div.FSAAppFullDisplay fieldset.Section legend a,
+div.AlumnusSummary fieldset.Section legend a {
+  color: #fff;
+  font-style: italic;
+}
+div.FSAAppFullDisplay fieldset.Section legend a:hover,
+div.AlumnusSummary fieldset.Section legend a:hover {
+  color: #89b8dc;
+}
+
+div.FSAAppFullDisplay fieldset table caption {
+  background-color: #fff;
+  font-weight: normal;
+}
+
+div.FSAAppFullDisplay table.rolodex > tbody > tr > th,
+div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > th {
+  padding-left: 0;
+}
+
+div.FSAAppFullDisplay table.rolodex tr td,
+div.AlumnusSummary fieldset.Section table.rolodex tr td {
+  white-space: initial;
+}
+div.AlumnusSummary fieldset.Section table.rolodex tr td.Account {
+  word-break: break-word;
+}
+
+div.FSAAppFullDisplay table.rolodex > tbody > tr > td,
+div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td {
+  background-color: #cbd2d6;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+#alumnusSummary table.RowDisplay tr.headerRow,
+/*table.RowDisplay tr.totalsRow,*/
+#alumnusSummary table.RowDisplay tr th,
+div#alumnusSummary table.CountryRelationships tr th,
+div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
+div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
+  background-color: #cdd3ab;
+}
+#alumnusSummary table.RowDisplay td,
+#alumnusSummary table.RowDisplay tr.headerRow th,
+#alumnusSummary table.RowDisplay tr th,
+div#alumnusSummary table.AlternateContacts tr th,
+div#alumnusSummary table.AlternateContacts tr td  {
+  border: 1px solid #fff;
+}
+.FSAAppFullDisplay table.rolodex tr th,
+.FSAAppFullDisplay table.rolodex tr td,
+.FSAAppFullDisplay table.TravelInboundDisplay tr td,
+.FSAAppFullDisplay table.TravelInboundDisplay tr th,
+.FSAAppFullDisplay table.TravelOutboundDisplay tr td,
+.FSAAppFullDisplay table.TravelOutboundDisplay tr th,
+div.AlumnusSummary table.rolodex tr th,
+div.AlumnusSummary table.rolodex tr td {
+  text-align: left;
+  font-style: normal;
+  border-bottom: 1px solid #B4B4B4;
+}
+.FSAAppFullDisplay table.rolodex tr td th,
+.FSAAppFullDisplay table.rolodex tr td td {
+  border-bottom: none;
+}
+.FSAAppFullDisplay table.TravelInboundDisplay tr td,
+.FSAAppFullDisplay table.TravelInboundDisplay tr th,
+.FSAAppFullDisplay table.TravelOutboundDisplay tr td,
+.FSAAppFullDisplay table.TravelOutboundDisplay tr th {
+  border: 1px solid #fff;
+}
+.FSAAppFullDisplay table.TravelInboundDisplay tr th[colspan="2"],
+.FSAAppFullDisplay table.TravelOutboundDisplay tr th[colspan="2"] {
+  background-color: #cdd3ab;
+
+}
+.FSAAppFullDisplay table.TravelInboundDisplay tr th:not([colspan="2"]),
+.FSAAppFullDisplay table.TravelOutboundDisplay tr th:not([colspan="2"]) {
+  padding-left: 2rem;
+}
+
+div.FSAAppFullDisplay fieldset.Section div.ShowHideSection,
+div.AlumnusSummary fieldset.Section div.ShowHideSection {
+  margin-top: -3rem;
+}
+div.FSAAppFullDisplay fieldset.Section div.ShowHideSection,
+div.AlumnusSummary fieldset.Section div.ShowHideSection {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: initial;
+  float: right;
+}
+div.FSAAppFullDisplay fieldset.Section legend a.Edit,
+div.FSAAppFullDisplay fieldset.Section legend a.Update {
+  margin-left: 1rem;
+  padding-left: 0;
+  font-size: 0.75rem;
+}
+
+/* POST SELECTION UPDATE --> */
+
+table.rolodex.StatusUpdate {
+  border: none;
+  background-color: #e3e8e8;
+  border-radius: 2px;
+  border-collapse: collapse;
+}
+
+table.rolodex.StatusUpdate tr th,
+table.rolodex.StatusUpdate tr td {
+  text-align: left;
+  font-style: normal;
+  border-bottom: 1px solid #B4B4B4;
+}
+table.rolodex.StatusUpdate tr th {
+  padding-left: .75rem;
+  width: 20%;
+  white-space: nowrap;
+}
+table.rolodex.StatusUpdate tr:first-child th,
+table.rolodex.StatusUpdate tr:first-child td {
+  padding-top: .75rem;
+}
+table.rolodex.StatusUpdate tr:last-child th,
+table.rolodex.StatusUpdate tr:last-child td {
+  padding-bottom: .75rem;
+}
+table.rolodex.StatusUpdate tr td {
+  background-color: #cbd2d6;
+  padding-left: .5rem;
+}
+table.rolodex.StatusUpdate > tbody > tr > td:first-child,
+table.rolodex.StatusUpdate > tbody > tr > td ~ td {
+  padding: 0;
+  border: 4px solid #fff;
+}
+
+/* <-- POST SELECTION UPDATE */
+
+
+
+
+/* FROM AISFORMSCOMMON--> */
+
+/* MAIN STRUCTURE--> */
+
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: #222222;
+  font-family: "proxima-nova-bold", sans-serif;
+  width: 100%;
+  height:100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table.pageStructure,
+table.pageStructure tr.contentArea {
+  height: 100%;
+}
+
+.AlumnusSummary,
+.AlumnusContactList {
+  position: relative;
+  /*height: 100%;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  color: #000;
+  line-height: 1.2rem;
+  padding: 0;
+
+}
+
+h1 {
+  padding: .25rem 0 .5rem 0;
+  /*font-weight: normal;*/
+}
+
+/* TABLES-->*/
+table,
+div.AIRAdminSearchForApplications form div#outerTableContainerID table.Search.rolodex,
+table.ChoiceCategories {
+  background-color: #fff;
+}
+div.LoginOrNewAccount table, table.templates,
+div.MenuOfSections table,
+div.GroupedItem table,
+table table {
+  background-color: transparent;
+}
+div.LoginOrNewAccount table {
+  margin-top: 1rem;
+}
+table tr th,
+table tr td {
+  font-style: normal;
+}
+
+table.RowDisplay tr th {
+  background-color: #fff;
+  background-color: #cdd3ab;
+}
+div.CMSBatchNavigation table {
+  background-color: transparent;
+  margin-top: .25rem;
+}
+div.CMSBatchNavigation td {
+  /*padding-left: .5rem;*/
+  font-size: .75rem;
+}
+.CMSBatchNavigation .MultipleBatches .RightArrow,
+.CMSBatchNavigation .MultipleBatches .LeftArrow {
+  border-color: #224154;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  height: 11px;
+  width: 11px;
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin: 0 0 0 1px;
+}
+.CMSBatchNavigation .MultipleBatches .LeftArrow {
+  border-width: 0 0 3px 3px;
+}
+.CMSBatchNavigation .MultipleBatches img:hover {
+  border-color: #296089;
+}
+.DownloadAsExcel {
+  font-size: .875rem;
+}
+table.rolodex,
+div.CheckboxMatrix table {
+  background-color: transparent;
+}
+
+.MenuRowDisplay .RowDisplay,
+form table.RowDisplay,
+table.RowDisplay,
+div.generateReportsWrapper,
+table.report,
+table.TravelVendorExplanation,
+table.TravelInboundDisplay,
+table.TravelOutboundDisplay,
+.ColumnDescriptions  {
+/*  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
+  -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);*/
+  margin: .5rem 0;
+  border-collapse: collapse;
+}
+div.generateReportsWrapper {
+background: #ffffff;
+}
+table#login,
+table#CreateAccount {
+  margin: .1rem 0;
+  padding: 0.5rem;
+}
+table.PageCommands {
+  -webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
+  -moz-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid #c7c7c7;
+}
+table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+2),
+table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+3) {
+  background-color: transparent;
+}
+table.PageCommands tr td,
+table.PageCommands tr th {
+  padding: .5rem;
+}
+div.SectionEditor, table.Choices.RowDisplay {
+  margin: 1rem 0;
+}
+tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td.ERXMatrixTableCell {
+  background-color: #ffffff;
+  font-size: 1rem;
+  white-space: normal;
+  max-width: 450px;
+}
+td.noTableBordersBelowMe table.RowDisplay {
+  margin: 0;
+}
+tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td  {
+  background-color: #fff;
+}
+.M-sp-d-cc-sp-Y {
+  max-width: 7rem;
+}
+
+table.Search,
+div.AIRAdminSearchForApplications table.Search.rolodex {
+  border-left: .6rem solid #fff;
+  border: 1px solid #FFD590;
+}
+table.RowDisplay tr.headerRow th,
+table.RowDisplay td,
+table.report td,
+table.TravelVendorExplanation tr td,
+table.report th,
+table.TravelVendorExplanation tr.headerRow th,
+table.TravelInboundDisplay th,
+table.TravelInboundDisplay td,
+table.TravelOutboundDisplay th,
+table.TravelOutboundDisplay td,
+.subTable th,
+.subTable td {
+  font-size: .875rem;
+  white-space: nowrap;
+  padding: 0.125rem 0.25rem .25rem;
+  border: 1px solid #B4B4B4;
+  border: 1px solid #c2c2c2;
+  border: 1px solid #929292;
+  border: 1px solid #fff;
+  text-align: left;
+  font-family: "proxima-nova-bold", sans-serif;
+}
+td input {
+  font-size: .875rem;
+}
+table.RowDisplay tr.headerRow th,
+table.report th,
+table.TravelVendorExplanation tr.headerRow th,
+table.TravelInboundDisplay th,
+table.TravelOutboundDisplay th {
+  padding: .25rem .3rem .25rem;
+}
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
+  max-width: 1200px;
+}
+table.RowDisplay tr.headerRow {
+  font-style: normal;
+  font-size: 1rem;
+}
+table.RowDisplay tr.headerRow th a,
+table.RowDisplay td a {
+  color: #000000;
+  text-decoration: underline;
+  border-bottom: none;
+}
+table.RowDisplay tr.headerRow th a:hover,
+table.RowDisplay td a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  color: #C75D48;
+}
+table.RowDisplay tr.headerRow th a:active,
+table.RowDisplay td a:active {
+  color: #73382C;
+}
+table a,
+fieldset a {
+  color: #296089;
+}
+table th a {
+  color: #000;
+}
+table a:hover,
+fieldset a:hover,
+a.showLink:hover,
+a.hideLink:hover {
+  color: #3b89c4;
+  text-decoration: none;
+}
+#AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+3),
+#AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+3),
+table.RowDisplay tr:nth-child(2n+2),
+table.RowDisplay tbody tr:nth-child(2n+2),
+table.report tr:nth-child(2n+2),
+tr.PassportName td div.EntryArea,
+.evenRow,
+table.TravelInboundDisplay tr:nth-child(2n+2),
+table.TravelOutboundDisplay tr:nth-child(2n+2),
+/*.HealthQuestions tr:nth-child(2n+2),*/
+div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n) {
+  background-color: #F9FAF5;
+}
+#AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+2),
+#AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+2),
+table.RowDisplay tr:nth-child(2n+3),
+table.report tr:nth-child(2n+3),
+table.RowDisplay tbody tr:nth-child(2n+3),
+tr.ApplicationName td div.EntryArea,
+.oddRow,
+table.TravelInboundDisplay tr:nth-child(2n+3),
+table.TravelOutboundDisplay tr:nth-child(2n+3),
+/*.HealthQuestions tr:nth-child(2n+3),
+.HealthQuestions tr:nth-child(2n + 1),*/
+div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n+1) {
+  background-color: #E8EBD9;
+}
+table.RowDisplay tbody tr.submitted_odd /* .submitted_odd, table.RowDisplay tr:nth-child(2n+3), table.RowDisplay tbody tr:nth-child(2n+3) */  {
+  color: #000;
+  background-color: #A5B56B;
+}
+table.RowDisplay  tbody tr.submitted_even /* .submitted_even, table.RowDisplay tr:nth-child(2n+2), table.RowDisplay tbody tr:nth-child(2n+2) */ {
+  background-color: #B8C977;
+  color: #000;
+}
+table.RowDisplay tr.submitted_odd a:hover,
+.submitted_odd a:hover,
+table.RowDisplay tr.submitted_even a:hover,
+.submitted_even a:hover {
+  color: #A14C3A;
+  border-bottom: 1px solid #A14C3A;
+}
+tbody tr.sectionDivider {
+  background-color: transparent;
+  -moz-box-shadow: inset 0 8px 6px -6px #CDCDCD;
+  -webkit-box-shadow: inset 0 8px 6px -6px #CDCDCD;
+  box-shadow: inset 0 8px 6px -6px #CDCDCD;
+  color: #5D663C;
+}
+table.Search tbody tr.sectionDivider th {
+  padding-top: .7rem;
+  font-style: normal;
+  font-variant: small-caps;
+  font-size: 1.25rem;
+  border-bottom: none;
+}
+
+table.Search tr th {
+  border-bottom: none;
+}
+
+/* <--TABLES*/
+
+/* FORMS --> */
+td input[type="text"],
+textarea,
+input,
+td input[type="password"],
+td input[type="search"] {
+  background-color: #fff;
+  border: none;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
+  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
+  padding: 0 2px;
+  font-size: .875rem;
+  border: 1px solid #c0bfbf;
+  /*margin: 0 .125rem;*/
+}
+select {
+  margin-bottom: .25rem;
+  font-size: .875rem;
+/*  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.5);
+  box-shadow: 0 0 1px rgba(0,0,0,0.5);*/
+  border: 1px solid #c0bfbf;
+}
+#tippyTopOfPage select,
+#tippyTopOfPage input {
+  border: none;
+}
+input[type="file"] {
+  border: none;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+input[type="submit"],
+input[type="button"]{
+  vertical-align: middle;
+  cursor: pointer;
+}
+select {
+  max-width: 100%;
+}
+input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  /*text-shadow: 0 0 0 #222;*/
+  color : #ffffff;
+  padding : .0625rem .5rem .125rem .5rem;
+  background: #204156; /* Old browsers */
+  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #336789 10%,  #204156 60%, #204156 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #214155;
+}
+input.SaveChanges {
+  margin: 1.5rem 0;
+}
+input[type="submit"]:hover:not([value="Clear Filters"]),
+input[type="button"]:hover {
+  /*text-shadow: 0 0 0 #222;*/
+  color : #ffffff;
+  background: #336789;
+}
+input[type="submit"]:disabled,
+input[type="button"]:disabled {
+  background: #99acbb;
+  cursor: not-allowed;
+  border-color: #8ca2b2;
+}
+#filteringButtonContainer {
+  margin-bottom: .5rem;
+}
+div .Button {
+  border-bottom: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/* <-- FORMS */
+
+table.RowDisplay td {
+  margin: 0.25rem 0 0.25rem 0;
+}
+table.rolodex tr td {
+    white-space: nowrap;
+}
+table.rolodex .RowDisplay td,
+table.rolodex .subTable td > div > div {
+  padding: 0.2rem;
+}
+
+div.CheckboxMatrix tr td {
+  padding: .1rem;
+}
+
+/*WARNINGS and NOTICES-->*/
+
+div.hint {
+    font-size: 0.875rem;
+    font-style: italic;
+}
+.TechHint {
+    font-size: 1rem;
+    font-style: normal;
+    color: #cecece;
+}
+.TechHint:hover {
+  color: #444444;
+}
+div.NoPermissions,
+div.NoObjects,
+div.NoRoles,
+div.NoSections,
+div.NoSiteContentItems,
+div.NoUsers,
+.DeveloperCaution,
+.ValidationError,
+.DoNotUseBrowserBackButton,
+.NoItems  {
+  color: #C75D48;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 0.125rem .5rem;
+  font-style: normal;
+  font-size: .875rem;
+}
+div#Growler {
+  position: fixed;
+  padding: 10px;
+  width: 50%;
+  top: 0;
+  left: 25%;
+  z-index: 1000;
+}
+div.Content div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+  padding: .5rem;
+  border: 1px solid #C75D48;
+  margin-bottom: 1rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #E8EBD9;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  -moz-box-shadow: 0 0 5px #777;
+  -webkit-box-shadow: 0 0 5px #777;
+  box-shadow: 0 0 5px #777;
+}
+div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+  border: none;
+}
+body div.SystemAnnouncementsWrapper div.SystemAnnouncement div.message {
+  margin: .5rem;
+  color: #000;
+  font-weight: normal;
+}
+div.SystemAnnouncementsWrapper div.SystemAnnouncement .byline {
+  color: #777;
+  text-align: right;
+  font-size: .875rem;
+  margin-right: 1rem;
+}
+.SecurityStamp {
+  color: #999;
+  font-size: .75rem;
+}
+.Alert {
+  border-left: 5px solid #FFB039;
+  padding: 1rem;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.arrow {
+  color: #FFB039;
+  font-size: 1.25rem;
+  vertical-align: baseline;
+}
+
+/* DESCRIPTIVE STYLES--> */
+.clear-left {
+  clear: left;
+}
+
+legend {
+  font-size: 1rem;
+}
+span.aisEmail {
+  word-wrap: break-word;
+  font-weight: bold;
+}
+a.website {
+  word-wrap: break-word;
+}
+span.noBreak {
+  white-space: nowrap;
+}
+.clear {
+  clear: left;
+}
+/*<--DESCRIPTIVE STYLES*/
+
+/* HEALTH QUEUE --> */
+
+
+form.FilterForm table.filter caption {
+  margin-top: 0;
+  padding-bottom: .25rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+#contentPageProportional .HealthQueueDisplayForPIPY .filter tr.headerRow {
+  background-color: transparent;
+  font-size: .875rem;
+}
+
+#contentPageProportional .HealthQueueDisplayForPIPY {
+  margin-top: .75rem;
+}
+
+.HealthQueueDisplayForPIPY .filter th,
+.HealthQueueDisplayForPIPY .filter td,
+.HealthQueueDisplayForPIPY .filter td input {
+  font-weight: normal;
+  padding: 0 .25rem .125rem 0;
+  margin: 0;
+}
+
+form.FilterForm table.filter {
+  border-collapse: collapse;
+  border: none;
+}
+
+/* <-- HEALTH QUEUE */
+
+/* HEALTH INBOX --> */
+
+span.QuestionnaireNotSent {
+  background-color: #ffeeb3;
+  padding: 0.125rem 0.25rem;
+}
+
+span.WaitingForApplicant {
+  background-color: #ffb699;
+  padding: 0.125rem 0.25rem;
+}
+
+span.ApplicantReplied {
+  background-color: #A9D4A1;
+  padding: 0.125rem 0.25rem;
+}
+
+div.StudentDisplayForHealthReviewer table.DocumentsList,
+div.StudentDisplayForHealthReviewer table.DocumentsList caption {
+  border: 1px solid #cecece;
+  background-color: #e3e8e8;
+}
+div.StudentDisplayForHealthReviewer table.DocumentsList caption {
+  border-bottom: none;
+}
+div.StudentDisplayForHealthReviewer table.DocumentsList caption,
+div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
+  font-style: normal;
+  padding: .5rem;
+}
+div.StudentDisplayForHealthReviewer table.DocumentsList {
+  width: 49%;
+  border-top: none;
+}
+div.StudentDisplayForHealthReviewer table.DocumentsList tr td {
+  padding-left: 2rem;
+}
+div.StudentDisplayForHealthReviewer table.DocumentsList tr:last-child td {
+  padding-bottom: .5rem;
+}
+div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow {
+  width: 49%;
+}
+div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow,
+div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
+    border: 1px solid #cecece;
+}
+div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
+  font-size: initial;
+  background-color: #e3e8e8;
+  border-bottom: none;
+}
+.HealthBioHeader td:first-of-type {
+  width: 50%;
+}
+.HealthStatusAndWorkflow th {
+  text-align: left;
+}
+.healthLabel {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: bold;
+  font-size: .875rem;
+  padding: 0;
+}
+div.HealthDataForm td.ThreadHeader {
+  font-size: .875rem;
+}
+div.HealthBioHeader {
+    clear: both;
+    border: 1px solid #cecece;
+}
+div.HealthBioHeader table.Row2,
+div.HealthBioHeader table.Row3,
+div.HealthBioHeader table.Row4 {
+    border-top: 1px solid #cecece;
+}
+.HealthBioHeader .StudentLastNameEmphasis {
+  font-weight: normal;
+  background-color: #ffd590;
+  padding: 0 .25rem;
+}
+div.HealthDataFormExpertEditor fieldset.HealthConditionWithAttributes label,
+div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes label {
+  white-space: initial;
+  padding: 0;
+  overflow: auto;
+  display: block;
+}
+div.HealthDataFormExpertEditor fieldset.HealthConditionWithAttributes,
+div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: .2rem 0;
+  width: 50%;
+  float: left;
+}
+div.HealthDataFormExpertEditor .HealthGroup .SaveCancelButtons {
+  clear: both;
+}
+div.StudentDisplayForHealthReviewer fieldset.HealthGroup,
+div.StudentDisplayForHealthReviewer fieldset.HealthReviewerComments,
+div.StudentDisplayForHealthReviewer fieldset.QuestionsAndAnswers,
+div.HealthDataFormExpertEditor fieldset.HealthGroup,
+div.HealthDataFormExpertEditor fieldset.HealthReviewerComments,
+div.HealthDataFormExpertEditor fieldset.QuestionsAndAnswers,
+div.HealthQuestionnaireEditor form#outerFormID fieldset {
+  margin: 2rem 0 1rem;
+  border: 1px solid #cecece;
+  border-radius: 2px;
+  border-top: 5px solid #415461;
+}
+.HealthQuestions,
+.NewQuestion,
+#ProgramStaffQuestionnaire table.RowDisplay {
+  margin-top: .5rem;
+  border-collapse: separate;
+  border: 1px solid #c2c2c2;
+  background: #eff3f5;
+  background: #fff;
+  padding: .125rem 0 .5rem;
+  border-spacing: 0;
+}
+#CreateQuestionnaire {
+  margin: .5rem 0;
+}
+table.RowDisplay td .Answer {
+  white-space: normal;
+}
+/*.HealthQuestions tbody {
+  border: .5rem solid transparent;
+}*/
+.NewQuestion td {
+  padding: .5rem;
+}
+/*div.StudentDisplayForHealthReviewer table.HealthQuestions tr:first-of-type td {
+  padding-top: .75rem;
+}
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr:last-of-type td {
+  padding-bottom: .75rem;
+}*/
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr.Question td,
+div.HealthQuestionnaireEditor table.HealthQuestions tr.Question td {
+  padding: .5rem;
+  color: #000;
+}
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr.Note td,
+div.HealthQuestionnaireEditor table.HealthQuestions tr.Note td {
+  border: 5px solid #eff3f5;
+  border: 5px solid #fff;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: .75rem;
+}
+.HealthQuestions tr td:first-child,
+.HealthQuestions tr.Question td {
+  /*font-weight: bold;*/
+  color: #415266;
+}
+.HealthQuestions tr.Answer td:first-child,
+.HealthQuestions tr.Note td:first-child {
+  text-align: right;
+}
+.HealthQuestions tr.Note td:nth-child(2) {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .5);
+  -moz-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .5);
+  padding: .25rem .5rem;
+}
+.HealthQuestions tr td:last-of-type {
+    font-weight: bold;
+    font-size: .875rem;
+}
+div.HealthDataForm table.HealthQuestions td.QuestionNumber {
+  width: 4rem;
+}
+.HealthQuestionStamp {
+    font-weight: normal;
+    font-size: .75rem;
+    color: #333;
+    font-style: normal;
+}
+.HealthNextStep {
+  margin: .5rem 0 0;
+  background: #eff3f5;
+  background: #fff;
+  /*padding: .375rem .5rem .25rem;*/
+  border: 1px solid #c2c2c2;
+}
+.HealthNextStep h2 {
+  background-color: transparent;
+  padding: .5rem .5rem 0;
+}
+.HealthNextStep div {
+  padding: 0 .5rem .5rem;
+}
+#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
+  margin: 0 .5em .5em;
+}
+div.HealthDataFormExpertEditor fieldset.HealthConditionWithAttributes legend,
+div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes legend {
+  font-style: normal;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: transparent;
+}
+fieldset[data-dev-reference="KnownIssues"] fieldset.HealthConditionWithAttributes legend {
+  display: none;
+}
+fieldset[data-dev-reference*="Immunization"] fieldset.HealthConditionWithAttributes {
+  margin: 1rem 0;
+  width: 49%;
+  float: left;
+}
+div.StudentDisplayForHealthReviewer div.IMRequestByPOClosed {
+  color: #C75D48;
+  clear: both;
+}
+div.HealthDataFormExpertEditor fieldset.HealthGroup div.Explanation,
+div.StudentDisplayForHealthReviewer fieldset.HealthGroup div.Explanation {
+  margin-top: 0.5rem;
+  margin-left: 0;
+  float: left;
+  width: 100%;
+}
+div.HealthDataFormExpertEditor fieldset.HealthGroup div.Explanation .ReadOnly,
+div.StudentDisplayForHealthReviewer fieldset.HealthGroup div.Explanation .ReadOnly {
+  line-height: 1.25rem;
+}
+.HealthCommentsSubTitle,
+.HealthQuestionsSubTitle {
+  margin-top: initial;
+  border-top: none;
+}
+
+.StudentDisplayForHealthReviewer .Explanation .ReadOnly,
+.ListOfHealthComments .Comment,
+div.HealthDataForm div.HealthComment div.Comment {
+  padding: .5rem;
+  border: 1px solid #c2c2c2;
+  background-color:  #eff3f5;
+  background-color: #fff;
+}
+.StudentDisplayForHealthReviewer .Explanation .ReadOnly,
+div.HealthDataForm div.HealthComment div.Comment {
+  margin-top: 0.5rem;
+}
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr,
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr th,
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr td,
+div.HealthQuestionnaireEditor table.HealthQuestions tr,
+div.HealthQuestionnaireEditor table.HealthQuestions tr th,
+div.HealthQuestionnaireEditor table.HealthQuestions tr td {
+  vertical-align: top;
+  padding: .125rem .5rem;
+}
+#ProgramStaffQuestionnaire .AnswerLabel,
+.TranscribedQuestionsForApplicant .AnswerLabel {
+  display: inline-block;
+  width: 2%;
+  margin: 0;
+  vertical-align: top;
+  font-weight: bold;
+  padding: .25rem 0;
+}
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr.Answer td:nth-child(2),
+#ProgramStaffQuestionnaire .Answer .Text,
+#ProgramStaffQuestionnaire .Answer > .File,
+#ProgramStaffQuestionnaire .Answer .HasNoFile,
+div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
+  background-color: #d2dbe2;
+  -webkit-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
+  -moz-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
+  padding: .25rem .5rem;
+}
+#ProgramStaffQuestionnaire .Answer .Text,
+#ProgramStaffQuestionnaire .Answer > .File,
+#ProgramStaffQuestionnaire .Answer .HasNoFile {
+  display: inline-block;
+  width: 96%;
+  margin: 0;
+}
+
+#ProgramStaffQuestionnaire .Answer,
+.TranscribedQuestionsForApplicant .Answer {
+  padding: .5rem 0;
+}
+#ProgramStaffQuestionnaire .QuestionLabel,
+.TranscribedQuestionsForApplicant .QuestionLabel {
+  font-weight: bold;
+  width: 2%;
+  display: inline-block;
+}
+div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
+  background-color: transparent;
+  padding: .25rem;
+  border-top: 1px solid #415366;
+  border-left: 10rem solid #fff;
+  border-right: 10rem solid #fff;
+}
+#ProgramStaffQuestionnaire table.RowDisplay tr th,
+.TranscribedQuestionsForApplicant table.RowDisplay tr th {
+  background-color: #f0f2f5;
+}
+#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2) {
+  background-color: #fff;
+}
+#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+3),
+.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3) {
+  background-color:  #eff2f5;
+}
+#ProgramStaffQuestionnaire table.RowDisplay {
+  border-collapse: collapse;
+}
+div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay tr.Header th,
+div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay tr table tr th,
+div.HealthQuestionnaireEditor table.RowDisplay tr table tr th,
+div.HealthQuestionnaireEditor table.RowDisplay tr.Header th {
+  text-align: left;
+}
+div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr th,
+.TranscribedQuestionsForApplicant table tr th {
+  padding: .5rem;
+}
+div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
+.TranscribedQuestionsForApplicant table tr td{
+  padding: .25rem .5rem;
+  border: none;
+  white-space: normal;
+}
+div.StudentDisplayForHealthReviewer table caption,
+div.HealthQuestionnaireEditor table caption {
+  background-color: transparent;
+  border: none;
+  padding-bottom: .25rem;
+}
+div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay,
+.TranscribedQuestionsForApplicant table.RowDisplay {
+  border: 1px solid #c2c2c2;
+}
+/* <-- HEALTH INBOX */
+
+
+.CheckboxedConditionItem {
+  padding-bottom: 3px;
+}
+input[type=checkbox] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  vertical-align: bottom;
+  position: relative;
+  padding: 0;
+  float: left;
+  margin: 0 .5rem;
+}
+input[type=checkbox][disabled=disabled] {
+  cursor: not-allowed;
+}
+input[type=checkbox][disabled=disabled]:before {
+  opacity: .6;
+}
+input[type=checkbox]:before {
+  padding-right: 3px;
+  top: 1px;
+  font-size: 1.2rem;
+  content: '';
+  width: 14px;
+  height: 14px;
+  color: #333;
+  display:block;
+  /*border: 1px solid #a6a6a6;*/
+  border-radius: 2px;
+  box-shadow: inset 0px 1px 1px white, 1px 1px 1px rgba(0,0,0,0.2);
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(153,153,153,.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(153,153,153,.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(153,153,153,.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#999999',GradientType=.8 ); /* IE6-9 fallback on horizontal gradient */
+}
+input[type=checkbox]:after {
+  content: '';
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  border: 3px solid #000;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+input[type=checkbox]:checked:after {
+  opacity: 1;
+}
+input[type=checkbox][disabled=disabled]:checked:after {
+  opacity: .7;
+}
+input[type=checkbox]:checked + label {
+  font-weight: bold;
+}
+
+/* COMMUNITIES AND SCHOOLS --> */
+div#CommunityProfile,
+div#SchoolDisplay {
+  padding: 0;
+}
+
+div#CommunityProfile h1,
+div#SchoolDisplay h1 {
+  /* resets --> */
+  margin: initial;
+  border-top: none;
+  padding: initial;
+  background-color: transparent;
+  font-style: normal;
+  /* <-- resets */
+  border-bottom: 2px solid #33424d;
+  margin-bottom: 1rem;
+  padding-bottom: .3rem;
+}
+div#CommunityProfile h2,
+div#SchoolDisplay h2 {
+  /* keep padding to override pageWrapper for now; add .label to element */
+  padding: .5rem 1rem;
+  margin: 0 0 1rem;
+}
+div#CommunityProfile h3,
+div#CommunityEditor h3,
+div#SchoolDisplay h3,
+div#SchoolEditor h3 {
+  /* resets --> */
+  border-top: none;
+  padding: initial;
+  background-color: transparent;
+  font-style: normal;
+  margin: 0 0 .4rem 0;
+  /* <-- resets */
+}
+div#CommunityProfile p,
+div#SchoolDisplay p {
+  margin: 0 0 .5rem 0;
+}
+
+.printerFriendly-img {
+  float: right;
+  text-align: right;
+  padding: 0 .5rem 0 1rem;
+}
+.printerFriendly-img:hover {
+  border: none; /* remove when svg is updated */
+}
+
+/* <-- COMMUNITIES */
+
+
+
+
+/* HEALTH INBOX QUEUE --> */
+
+#contentPageProportional div.StudentsRequiringHealthAnswers fieldset.HealthInboxQueue h2 {
+  background-color: transparent;
+  padding-top: .5rem;
+  padding-left: .75rem;
+  border-radius: 2px 2px 0 0;
+}
+
+/* <-- HEALTH INBOX QUEUE */
+
+
+/* PAGE: PROGRAM SETTINGS --> */
+
+.ProgramViewEditDetail fieldset:not(:first-of-type) {
+  margin-top: 1rem;
+}
+.ProgramViewEditDetail input[value="Save"] {
+  margin-right: 1rem;
+}
+
+td.dataEntryIsEnabled {
+  background-color: #A9D4A1;
+}
+td.dataEntryIsDisabled {
+  background-color: #ffb699;
+}
+
+/* <-- PAGE: PROGRAM SETTINGS */
+
+/* PAGE: APPLICATION SEARCH --> */
+
+
+.rolodex.applicantSearch {
+  border-collapse: collapse;
+}
+.applicantSearch > tbody > tr > th,
+.applicantSearch > tbody > tr > td:first-child {
+  border-left: .75rem solid #e3e8e8;
+}
+.applicantSearch > tbody > tr > th,
+.applicantSearch > tbody > tr > th ~ td {
+  border-bottom: 1px solid #c2c2c2;
+  background-color: #e3e8e8;
+}
+.applicantSearch > tbody > tr > th ~ td {
+  background-color: #cbd2d6;
+  border-right: .75rem solid #e3e8e8;
+  padding-left: .5rem;
+}
+.applicantSearch > tbody > tr:not(.TravelInfo) > td:first-child {
+  background: white;
+  border-right: none;
+  border-left-color: transparent;
+  border-bottom: .75rem solid #e3e8e8;
+  padding: 0;
+  padding-top: 1rem;
+}
+/*.applicantSearch > tbody > tr:not(.TravelInfo):not(:first-child) > td:first-child {
+}*/
+.applicantSearch .TravelInfo {
+  background-color: #e3e8e8;
+}
+tr.AISStudentNumber table.outerTable {
+  border: none;
+}
+table.rolodex tr th {
+  font-style: normal;
+  text-align: left;
+}
+
+div.sectionDivider span.SearchButtonWrapper {
+  padding: .4375rem .25rem .25rem .5rem;
+  background: #415467;
+  border-radius: 6px 0 0 0;
+  color: #fff;
+  font-weight: normal;
+  margin: 0 -.25rem 0 .75rem;
+}
+div.sectionDivider span.SearchButtonWrapper ~ span {
+  padding: .4375rem .5rem .25rem .25rem;
+  background: #415467;
+  border-radius: 0 6px 0 0;
+  color: #fff;
+  font-weight: normal;
+}
+#contentPageProportional #ApplicationSearchForm input[type="submit"] {
+  margin: 0 0 .0625rem;
+  background: #96b9cf; /* Old browsers */
+  background: -moz-linear-gradient(top, #A6D7F7 10%, #a8c5d7 60%, #487d9d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #A6D7F7 10%, #a8c5d7 60%, #487d9d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #A6D7F7 10%, #a8c5d7 60%, #487d9d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A6D7F7', endColorstr='#487d9d',GradientType=0 ); /* IE6-9 */
+  color: #000;
+}
+#contentPageProportional #ApplicationSearchForm input[type="submit"]:hover {
+  background: #99C6E3;
+}
+.applicantSearch .ShowHideSectionsInApplicationCell {
+  display: contents;
+  margin-top: -.25rem;
+}
+.applicantSearch .sectionDivider {
+  margin: 0 -.375rem 0 -.75rem;
+  border-bottom: 5px solid #415467;
+}
+.embedded tr.headerRow th {
+  text-align: left;
+}
+/* <-- PAGE: APPLICATION SEARCH */
+
+/* PAGE: HUB/ADJUDICATION --> */
+
+#PendingStatusCountsContainer,
+div.TestCenterAdjudicationEditor div#MessageThatSortLosesUnsavedPendingStatuses {
+  float: left;
+}
+
+div.TestCenterAdjudicationEditor div#MessageThatSortLosesUnsavedPendingStatuses {
+  position: static;
+}
+
+div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Recipients tr.SectionTitle th.CurrentRecipients,
+div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Recipients tr.SectionTitle th {
+  border-color: #fff;
+  padding: 1rem .25rem .25rem;
+}
+
+div.HubFullDisplay table tr td.AdjudicationEnabled,
+div.HubFullDisplay table tr th.AdjudicationEnabled {
+  text-align: left;
+}
+
+div.HubFullDisplay table tr th.AdjudicationEnabled input {
+  margin-top: .25rem;
+}
+
+/* <-- PAGE: HUB/ADJUDICATION; */
+
+/* PAGE: DOWNLOADS --> */
+
+#DownloadsID .headerRow {
+  margin: 0 0 .5rem 0;
+  background-color: transparent;
+  color: black;
+  font-style: normal;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+/* <-- PAGE: DOWNLOADS */
+
+/* PAGE: COUNTRY --> */
+
+.CountryRegions label {
+  float: none;
+  display: inline-block;
+}
+
+/* <-- PAGE: COUNTRY */
+
+/* PAGE: BADGES --> */
+
+#ProgramBadges {
+  height: 100%;
+  background: #33424d;
+}
+#ProgramBadges #Banner {
+  text-align: right;
+}
+#ProgramBadges #Banner:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+#ProgramBadges #Badges {
+  background: #33424d;
+}
+#ProgramBadges #Banner a
+{
+  color: #c4dcee;
+}
+#ProgramBadges .title
+{
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 44px;
+  vertical-align: top;
+  padding-left: .5rem;
+}
+#ProgramBadges .choose
+{
+  padding: .875rem 1rem 0 1rem;
+  margin-bottom: 1rem;
+}
+#ProgramBadges #Badges {
+  padding: 1rem;
+}
+#ProgramBadges #Banner .logo
+{
+  background-color: #29353d;
+  float: left;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+#ProgramBadges #Banner .logo img
+{
+  padding: .125rem 0 .125rem .5rem;
+  height: 60px;
+}
+
+#ProgramBadges #Banner .instanceID
+{
+  font-size: .75rem;
+  padding: 1rem 1rem .5rem;
+}
+
+#ProgramBadges #Badges fieldset.CurrentProgramBadges,
+#ProgramBadges #Badges fieldset.NonCurrentProgramBadges
+{
+  border: 1px solid #33424d;
+  background-color: #33424d;/*alt blue*/
+  border-radius: 2px;
+  margin: 0 0 .75rem;
+  padding-bottom: .75rem;
+  padding: 0 0 .75rem;
+  margin: 1rem 0 1rem;
+  border-radius: 2px;
+  background-color: #33424d;
+  border-top: 2px solid #94a8b887;
+  padding-top: 1rem;
+}
+
+#ProgramBadges #Badges fieldset.CurrentProgramBadges legend,
+#ProgramBadges #Badges fieldset.NonCurrentProgramBadges legend
+{
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: .5rem;
+  padding: 4px 1rem;
+  color: #fff;
+  font-weight: normal;
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1.125rem;
+  text-align: center;
+  border-radius: 2px;
+}
+#ProgramBadges #Badges ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#ProgramBadges #Badges li
+{
+  color: #000;
+  background-color: #fff;
+}
+#ProgramBadges #Badges ul#programBadgesCurrent li:hover,
+#ProgramBadges #Badges ul#programBadgesNonCurrent li:hover
+{
+  cursor: pointer;
+  transform: scale(1);
+}
+#ProgramBadges #Badges ul#programBadgesCurrent img,
+#ProgramBadges #Badges ul#programBadgesCurrent a img,
+#ProgramBadges #Badges ul#programBadgesNonCurrent img,
+#ProgramBadges #Badges ul#programBadgesNonCurrent a img
+{
+  border: 0;
+  position: absolute;
+  position: absolute;top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+}
+#ProgramBadges .BadgeIconDescription {
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  padding: .5rem;
+  line-height: initial;
+}
+
+#ProgramBadges #Badges ul#gallery:after
+{
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility:hidden;
+}
+
+#ProgramBadges #Badges li
+{
+  width: 140px;
+  height: 140px;
+  float: left;
+  text-align: center;
+  border-radius: 50%;
+  margin: .5rem;
+  padding: .5rem;
+  line-height: 120px;
+  position:  relative;
+  display: inline-block;
+  transition: transform .25s;
+  transform: scale(.95);
+}
+
+#ProgramBadges #Badges li.programCellAIS img
+{
+  max-width: 100%;
+}
+
+
+
+/* <-- PAGE: BADGES */
+
+/* PAGE: LOGIN --> */
+
+#LoginPage {
+  background: #33424d;
+  height: 100%;
+  position: relative;
+  padding: .25rem;
+}
+#LoginPage #banner {
+  color: white;
+  padding: .5rem;
+}
+#LoginPage #LoginBox {
+  display: block;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+  -moz-box-shadow: 10px 10px 12px 0px rgba(170,170,170,1);
+  background-color: #33424d;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: 2rem;
+}
+#LoginPage #boxBanner {
+  background: #29353d;
+  padding: .75rem .5rem;
+}
+#LoginPage #boxBanner img {
+  height: 62px;
+  padding: 0 .75rem 0 .5rem;
+  text-align: right;
+  float: left;
+}
+#LoginPage #boxBanner h2 {
+  display: block;
+  margin: 0;
+  white-space: normal;
+  text-transform: unset;
+  padding: .75rem .125rem .125rem;
+  font-size: 1.325rem;
+  color: #fff;
+  font-weight: normal;
+}
+#UserNameSection,
+#PasswordSection,
+#LoginButtonSection,
+#ResetPasswordSection {
+  margin-top: 0.5em;
+}
+#UserNameLabel,
+#PasswordLabel {
+  width: 5em;
+}
+#LoginButtonSection,
+#ResetPasswordSection {
+  margin-left: 0em;
+  padding-left: 0px;
+}
+#LoginPage #content {
+  padding: 1em;
+  font-size: 1.4em;
+  background: #e0e6ed;
+
+}
+#LoginPage .errorMessage {
+  color: red;
+  font-weight: bold;
+  background-color: #e6e6e6;
+  text-align: center;
+  font-weight: normal;
+  margin-top: .5rem;
+}
+#LoginPage #content input {
+  font-size: 1.3em;
+  width: 10em;
+}
+#LoginPage #content input[type="submit"] {
+  border: 1px solid black;
+  cursor:pointer;
+  margin-top: .5em;
+}
+
+#LoginPage .label::after
+{
+  content: ":";
+}
+#UserNameLabel,
+#UserNameValue,
+#PasswordLabel,
+#PasswordValue
+{
+  display:inline-block;
+  /* color: white; */
+}
+#BuildAndInstance {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background: #33424d;
+}
+#BuildAndInstance #BuildNumber,
+#BuildAndInstance #InstanceNumber
+{
+  font-size: 0.4em;
+  color: #b9b8b8;
+  vertical-align: top;
+  margin-left: 1em;
+}
+
+#LinkToResetPassword {
+  font-size: .75rem;
+}
+#PrivacyPolicy,
+#CookiesPolicy {
+  font-size: .75rem;
+}
+
+/* <-- PAGE: LOGIN */
+
+/* PAGE: USER DISPLAY --> */
+
+.UserFullDisplay .linkToPreviousPage {
+  margin: 0 0 1rem 0;
+}
+.UserFullDisplay .UserInformation {
+  margin-top: 1.5rem;
+}
+.UserFullDisplay .UserInformation legend a {
+  color: #ffd58f;
+  font-size: .95rem;
+}
+/* Blue legends containing dropdown --> */
+div.UserFullDisplay fieldset.UserPermissions {
+  margin-top: 2rem;
+}
+
+.UserFullDisplay .UserPermissions legend {
+  padding-bottom: 0;
+  top: -15px;
+}
+/* <-- Blue legends containing dropdown */
+
+/* <-- PAGE: USER DISPLAY */
+
+/* SHARED ELEMENTS --> */
+
+/* BANNERS -> */
+
+#BannerAC_AIS,
+#ProgramBadges #Banner {
+  background: #29353d;
+  position: relative;
+  color: #fff;
+}
+
+/* <- BANNERS */
+
+/* <-- SHARED ELEMENTS */
+
+
+
+.column-s {
+  width: 33%;
+  float: left;
+}
+.column-m {
+  width: 50%;
+  float: left;
+}
+.column-l {
+  width: 66%;
+  float: left;
+}
+
+
+
+
+/* MEDIA QUERIES-->*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 480px) {
+
+}
+
+
+/* 28.75em = medium displays and bigger (like mobile phones in landscape or smaller tablets)*/
+@media screen and (min-width: 32.5em) { /* 28.75em */
+  div#LoginPage div#LoginBox {
+    margin-top: 0;
+  }
+  div#LoginPage div#LoginBox div#content,
+  div#LoginPage div#LoginBox div#content input
+  {
+    font-size: 1em;
+    color: black;
+  }
+
+  div#LoginPage div#LoginBox div#content
+  {
+    background: #e0e6ed;
+    width: 24rem;
+    padding: 1rem 4.25rem 1.5rem;
+  }
+
+  div#LoginPage div#LoginBox div#content input[type="submit"]
+  {
+    border: none;
+    background: #204156;
+    background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+    background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+    background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
+    border: 1px solid #214155;
+    color: #fff;
+    border-radius: 2px;
+  }
+  div#LoginPage div#banner h2
+  {
+    font-weight: normal;
+    display: inline-block;
+  }
+  div#UserNameSection,
+  div#PasswordSection,
+  div#LoginButtonSection,
+  div#ResetPasswordSection
+  {
+    margin-top: .75rem;
+  }
+  div#LoginButtonSection,
+  div#ResetPasswordSection
+  {
+    text-align: center;
+  }
+  div#LoginPage div#LoginBox div#content div#ResetPasswordLinkContainer
+  {
+     text-align:center;
+  }
+  #PrivacyPolicy,
+  #CookiesPolicy {
+    display: inline-block;
+  }
+  #PrivacyPolicy {
+    margin: .5rem .5rem 0 1px;
+  }
+
+  #CookiesPolicy {
+    margin: .5rem 0 0;
+  }
+  #PrivacyPolicy a,
+  #CookiesPolicy a {
+    color: #34424c;
+  }
+  #Policies {
+    text-align: center;
+    margin-top: .5rem;
+  }
+}
+
+@media only screen
+and (min-width: 480px)
+and (max-width: 568px) {
+
+}
+
+@media only screen
+and (min-width : 568px)
+and (max-width : 767px) {
+
+}
+@media only screen
+and (min-width : 768px)
+and (max-width : 896px) {
+
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px) {
+
+  #ProgramBadges #Banner .instanceID {
+    /* remove after banner html updated */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+}
+
+/* desktops and laptops */
+@media only screen
+and (min-width: 897px)
+and (max-width: 1150px) {
+}
+/* Desktops and laptops ----------- probably AC size */
+@media only screen
+and (min-width : 1151px) {
+  fieldset[data-dev-reference*="Immunization"] fieldset.HealthConditionWithAttributes {
+    width: 33%;
+  }
+}
+
+/* Desktops and laptops ----------- probably AC size */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+
+}
+

@@ -2909,6 +2909,9 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   cursor:pointer;
   margin-top: .5em;
 }
+#LoginPage #ResetPasswordLinkContainer {
+
+}
 
 #LoginPage .label::after
 {
