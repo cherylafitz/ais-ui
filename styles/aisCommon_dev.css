@@ -400,7 +400,6 @@ div.MultiSearcher input[type="text"] {
 
 .MultiSearcher .showLink,
 .MultiSearcher .hideLink {
-  color: #FFD590;
   color: #c4dcee;
   font-weight: normal;
   white-space: nowrap;
@@ -2678,14 +2677,6 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 {
   color: #c4dcee;
 }
-#ProgramBadges .title
-{
-  display: inline-block;
-  font-size: 1.25rem;
-  line-height: 44px;
-  vertical-align: top;
-  padding-left: .5rem;
-}
 #ProgramBadges .choose
 {
   padding: .875rem 1rem 0 1rem;
@@ -2700,12 +2691,6 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   float: left;
   text-align: left;
   padding-right: 1rem;
-}
-
-#ProgramBadges #Banner .logo img
-{
-  padding: .125rem 0 .125rem .5rem;
-  height: 60px;
 }
 
 #ProgramBadges #Banner .instanceID
@@ -2981,9 +2966,45 @@ div.UserFullDisplay fieldset.UserPermissions {
   background: #29353d;
   position: relative;
   color: #fff;
+  padding: .125rem;
+}
+#BannerAC_AIS img,
+#ProgramBadges img {
+  margin-right: .5rem;
+  height: 54px;
+}
+
+#BannerAC_AIS .title,
+#ProgramBadges .title {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 40px;
+  vertical-align: top;
 }
 
 /* <- BANNERS */
+#DeclarationPage {
+  padding: 1rem;
+  background: #33424d;
+  color: #fff;
+}
+
+#DeclarationPage h1 {
+  padding-top: 1rem;
+}
+
+body > #priorPage {
+  position: absolute;
+  top: 65px;
+  left: 1rem;
+  color: #fff;
+  z-index: 1;
+  font-size: .875rem;
+}
+body > #priorPage a {
+  color: #c4dcee;
+}
+
 
 /* <-- SHARED ELEMENTS */
 
