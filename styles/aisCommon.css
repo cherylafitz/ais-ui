@@ -147,6 +147,12 @@ body #PageWrapperNavUpdate {
   display: table;
   clear: both;
 }
+.row-size1 {
+  margin-top: .75rem;
+}
+.row-size2 {
+  margin-top: 1rem;
+}
 /* remove after adding .column */
 [class^="column"] {
   float: left;
@@ -1514,14 +1520,15 @@ table.pageStructure tr.contentArea {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  color: #000;
+  /* seeing if this rule can be removed - in testing --> */
+  /*color: #000;*/
   line-height: 1.2rem;
   padding: 0;
-
 }
 
+/* seeing if these h1 rules can be removed - in testing --> */
 h1 {
-  padding: .25rem 0 .5rem 0;
+  /*padding: .25rem 0 .5rem 0;*/
   /*font-weight: normal;*/
 }
 
@@ -2990,8 +2997,9 @@ div.UserFullDisplay fieldset.UserPermissions {
   color: #fff;
 }
 
-#DeclarationPage h1 {
-  padding-top: 1rem;
+#DeclarationPage .content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 body > #priorPage {
