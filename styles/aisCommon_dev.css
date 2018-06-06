@@ -147,6 +147,15 @@ body #PageWrapperNavUpdate {
   display: table;
   clear: both;
 }
+.row-size1 {
+  margin-top: .75rem;
+}
+.row-size2 {
+  margin-top: 1.25rem;
+}
+.row-size3 {
+  margin-top: 1.5rem;
+}
 /* remove after adding .column */
 [class^="column"] {
   float: left;
@@ -162,7 +171,6 @@ body #PageWrapperNavUpdate {
   float: left;
   padding-right: 1rem;
 }
-
 .column-2-3 {
   width: 66.66%;
 }
@@ -184,6 +192,9 @@ body #PageWrapperNavUpdate {
   width: 75%;
 }
 /* <-- SIMPLE GRID */
+
+
+
 
 /* NAVIGATION --> */
 .navigation {
@@ -1514,23 +1525,30 @@ table.pageStructure tr.contentArea {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  color: #000;
-  line-height: 1.2rem;
+  /* seeing if this rule can be removed - in testing --> */
+  /*color: #000;*/
+  line-height: 1.25rem;
   padding: 0;
-
 }
 
+p {
+  line-height: 1.25rem;
+}
+
+/* seeing if these h1 rules can be removed - in testing --> */
 h1 {
-  padding: .25rem 0 .5rem 0;
+  /*padding: .25rem 0 .5rem 0;*/
   /*font-weight: normal;*/
 }
 
 /* TABLES-->*/
+
 table,
 div.AIRAdminSearchForApplications form div#outerTableContainerID table.Search.rolodex,
 table.ChoiceCategories {
   background-color: #fff;
 }
+
 div.LoginOrNewAccount table, table.templates,
 div.MenuOfSections table,
 div.GroupedItem table,
@@ -1664,9 +1682,6 @@ table.TravelOutboundDisplay td,
   font-size: .875rem;
   white-space: nowrap;
   padding: 0.125rem 0.25rem .25rem;
-  border: 1px solid #B4B4B4;
-  border: 1px solid #c2c2c2;
-  border: 1px solid #929292;
   border: 1px solid #fff;
   text-align: left;
   font-family: "proxima-nova-bold", sans-serif;
@@ -1679,7 +1694,7 @@ table.report th,
 table.TravelVendorExplanation tr.headerRow th,
 table.TravelInboundDisplay th,
 table.TravelOutboundDisplay th {
-  padding: .25rem .3rem .25rem;
+  padding: .25rem .325rem .25rem;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
@@ -2755,10 +2770,11 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 {
   border: 0;
   position: absolute;
-  position: absolute;top: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 70%;
+  height: auto;
 }
 #ProgramBadges .BadgeIconDescription {
   border: 0;
@@ -2963,10 +2979,10 @@ div.UserFullDisplay fieldset.UserPermissions {
 
 #BannerAC_AIS,
 #ProgramBadges #Banner {
-  background: #29353d;
   position: relative;
-  color: #fff;
   padding: .125rem;
+  background-color: #29353d;
+  color: #fff;
 }
 #BannerAC_AIS img,
 #ProgramBadges img {
@@ -2984,19 +3000,20 @@ div.UserFullDisplay fieldset.UserPermissions {
 
 /* <- BANNERS */
 #DeclarationPage {
-  padding: 1rem;
   background: #33424d;
   color: #fff;
 }
 
-#DeclarationPage h1 {
-  padding-top: 1rem;
+#DeclarationPage .content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
 body > #priorPage {
   position: absolute;
-  top: 65px;
-  left: 1rem;
+  top: 68px;
+  left: .5rem;
   color: #fff;
   z-index: 1;
   font-size: .875rem;
@@ -3005,6 +3022,71 @@ body > #priorPage a {
   color: #c4dcee;
 }
 
+/* bg color classes -> */
+
+/* darkest blue = 1 */
+.bg-blue01 {
+  background-color: #29353d;
+  color: #fff;
+}
+.bg-blue01 a {
+  color: #c4dcee;
+}
+.bg-blue02 {
+  background-color: #33424d;
+  color: #fff;
+}
+.bg-blue02 a {
+  color: #c4dcee;
+}
+
+/* <- bg color classes */
+
+/* typography classes -> */
+
+/* light green (for dark bg) */
+.text-highlight01 {
+  color: #c8d295;
+}
+.text-highlight02 {
+
+}
+/* <- text-size classes */
+
+/* tables -> */
+/* for dark bg */
+table.transparent {
+  background-color: transparent;
+  border-collapse: collapse;
+  font-size: .875rem;
+  margin: 1rem 0;
+}
+table.transparent th,
+table.transparent td {
+  text-align: left;
+  padding: .5rem;
+  vertical-align: top;
+  border: 1px solid #59666f;
+}
+table.transparent th {
+  font-size: 1rem;
+}
+table.transparent tr > td:first-child,
+table.transparent tr th:first-child {
+  border-left: none;
+}
+table.transparent tr > td:last-child,
+table.transparent tr th:last-child {
+  border-right: none;
+}
+table.transparent tr:last-child > td {
+  border-bottom: none;
+}
+table.transparent tr:first-child th {
+  border-top: none;
+}
+
+/* <- tables */
 
 /* <-- SHARED ELEMENTS */
 
