@@ -3022,12 +3022,66 @@ body > #priorPage a {
   padding: 1rem;
 }
 
+
+
+/* tables -> */
+/* for dark bg */
+.inner-grid {
+  background-color: transparent;
+  border-collapse: collapse;
+  font-size: .875rem;
+  margin: 1rem .75rem;
+  border: .75rem solid transparent;
+}
+.inner-grid th,
+.inner-grid td {
+  text-align: left;
+  padding: .5rem;
+  vertical-align: top;
+  border: 1px solid #59666f;
+}
+.inner-grid th {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  /*background: #34424c;*/
+}
+.inner-grid tr > td:first-child,
+.inner-grid tr th:first-child {
+  border-left: none;
+}
+.inner-grid tr > td:last-child,
+.inner-grid tr th:last-child {
+  border-right: none;
+}
+.inner-grid tr:last-child td {
+  border-bottom: none;
+}
+.inner-grid tr:first-of-type th,
+.inner-grid.vertical-header tr:first-of-type td {
+  border-top: none;
+}
+.inner-grid.vertical-header th {
+  border-bottom: none;
+  border-right: 1px solid;
+}
+.inner-grid.bg-blue01 {
+  border-color: #29353d;
+}
+.inner-grid.bg-blue02 {
+  border-color: #33424d;
+}
+
+/* <- tables */
+
 /* bg color classes -> */
 
 /* darkest blue = 1 */
 .bg-blue01 {
   background-color: #29353d;
   color: #fff;
+}
+.transparent {
+  background-color: transparent;
 }
 .bg-blue01 a {
   color: #c4dcee;
@@ -3052,48 +3106,6 @@ body > #priorPage a {
 
 }
 /* <- text-size classes */
-
-/* tables -> */
-/* for dark bg */
-table.transparent {
-  background-color: transparent;
-  border-collapse: collapse;
-  font-size: .875rem;
-  margin: 1.5rem 0;
-}
-table.transparent th,
-table.transparent td {
-  text-align: left;
-  padding: .5rem;
-  vertical-align: top;
-  border: 1px solid #59666f;
-}
-table.transparent th {
-  text-transform: uppercase;
-  border-bottom: 1px solid;
-  /*background: #34424c;*/
-}
-table.transparent tr > td:first-child,
-table.transparent tr th:first-child {
-  border-left: none;
-}
-table.transparent tr > td:last-child,
-table.transparent tr th:last-child {
-  border-right: none;
-}
-table.transparent tr:last-child td {
-  border-bottom: none;
-}
-table.transparent tr:first-of-type th,
-table.transparent.vertical-header tr:first-of-type td {
-  border-top: none;
-}
-table.transparent.vertical-header th {
-  border-bottom: none;
-  border-right: 1px solid;
-}
-
-/* <- tables */
 
 /* <-- SHARED ELEMENTS */
 
