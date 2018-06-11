@@ -1527,7 +1527,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   /* seeing if this rule can be removed - in testing --> */
   /*color: #000;*/
-  line-height: 1.5rem;
+  line-height: 1;
   padding: 0;
 }
 
@@ -3002,7 +3002,7 @@ div.UserFullDisplay fieldset.UserPermissions {
 .info-page .content {
   max-width: 800px;
   margin: 2.5rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 /* this is not a good selector - discuss other options */
@@ -3030,7 +3030,7 @@ body > #priorPage a {
   background-color: transparent;
   border-collapse: collapse;
   font-size: .875rem;
-  margin: 1rem .75rem;
+  margin: .75rem;
   border: .75rem solid transparent;
 }
 .inner-grid th,
