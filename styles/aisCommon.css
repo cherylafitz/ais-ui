@@ -151,7 +151,10 @@ body #PageWrapperNavUpdate {
   margin-top: .75rem;
 }
 .row-size2 {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+}
+.row-size3 {
+  margin-top: 1.5rem;
 }
 /* remove after adding .column */
 [class^="column"] {
@@ -1324,7 +1327,7 @@ div.HealthQuestionnaireEditor fieldset legend,
   top: -11px;
   position: relative;
   font-size: 1.25rem;
-  line-height: 1.125rem;
+  line-height: 1.125;
 }
 
 fieldset legend select {
@@ -1521,8 +1524,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   /* seeing if this rule can be removed - in testing --> */
   /*color: #000;*/
-  line-height: 1.2rem;
+  line-height: 1.2;
   padding: 0;
+}
+
+p {
+  line-height: 1.25rem;
 }
 
 /* seeing if these h1 rules can be removed - in testing --> */
@@ -1550,7 +1557,6 @@ table tr th,
 table tr td {
   font-style: normal;
 }
-
 table.RowDisplay tr th {
   background-color: #fff;
   background-color: #cdd3ab;
@@ -1649,7 +1655,6 @@ tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td  {
 .M-sp-d-cc-sp-Y {
   max-width: 7rem;
 }
-
 table.Search,
 div.AIRAdminSearchForApplications table.Search.rolodex {
   border-left: .6rem solid #fff;
@@ -1670,9 +1675,6 @@ table.TravelOutboundDisplay td,
   font-size: .875rem;
   white-space: nowrap;
   padding: 0.125rem 0.25rem .25rem;
-  border: 1px solid #B4B4B4;
-  border: 1px solid #c2c2c2;
-  border: 1px solid #929292;
   border: 1px solid #fff;
   text-align: left;
   font-family: "proxima-nova-bold", sans-serif;
@@ -1685,7 +1687,7 @@ table.report th,
 table.TravelVendorExplanation tr.headerRow th,
 table.TravelInboundDisplay th,
 table.TravelOutboundDisplay th {
-  padding: .25rem .3rem .25rem;
+  padding: .25rem .325rem .25rem;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
@@ -2265,7 +2267,7 @@ div.StudentDisplayForHealthReviewer fieldset.HealthGroup div.Explanation {
 }
 div.HealthDataFormExpertEditor fieldset.HealthGroup div.Explanation .ReadOnly,
 div.StudentDisplayForHealthReviewer fieldset.HealthGroup div.Explanation .ReadOnly {
-  line-height: 1.25rem;
+  line-height: 1.25;
 }
 .HealthCommentsSubTitle,
 .HealthQuestionsSubTitle {
@@ -2733,7 +2735,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   font-weight: normal;
   position: relative;
   font-size: 1.25rem;
-  line-height: 1.125rem;
+  line-height: 1.125;
   text-align: center;
   border-radius: 2px;
 }
@@ -2970,10 +2972,10 @@ div.UserFullDisplay fieldset.UserPermissions {
 
 #BannerAC_AIS,
 #ProgramBadges #Banner {
-  background: #29353d;
   position: relative;
-  color: #fff;
   padding: .125rem;
+  background-color: #29353d;
+  color: #fff;
 }
 #BannerAC_AIS img,
 #ProgramBadges img {
@@ -2990,20 +2992,17 @@ div.UserFullDisplay fieldset.UserPermissions {
 }
 
 /* <- BANNERS */
-#DeclarationPage {
-  background: #33424d;
-  color: #fff;
-}
-
-#DeclarationPage .content {
+.info-page .content {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
 }
 
+/* this is not a good selector - discuss other options */
 body > #priorPage {
   position: absolute;
-  top: 65px;
-  left: 1rem;
+  top: 68px;
+  left: .5rem;
   color: #fff;
   z-index: 1;
   font-size: .875rem;
@@ -3012,9 +3011,95 @@ body > #priorPage a {
   color: #c4dcee;
 }
 
+.info-page footer {
+  padding: 1rem;
+}
+
+
+
+/* tables -> */
+/* for dark bg */
+.inner-grid {
+  background-color: transparent;
+  border-collapse: collapse;
+  font-size: .875rem;
+  margin: .75rem;
+  border: .75rem solid transparent;
+}
+.inner-grid th,
+.inner-grid td {
+  text-align: left;
+  padding: .5rem;
+  vertical-align: top;
+  border: 1px solid #59666f;
+}
+.inner-grid th {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+.inner-grid tr > td:first-child,
+.inner-grid tr th:first-child {
+  border-left: none;
+}
+.inner-grid tr > td:last-child,
+.inner-grid tr th:last-child {
+  border-right: none;
+}
+.inner-grid tr:last-child td {
+  border-bottom: none;
+}
+.inner-grid tr:first-of-type th,
+.inner-grid.vertical-header tr:first-of-type td {
+  border-top: none;
+}
+.inner-grid.vertical-header th {
+  border-bottom: none;
+  border-right: 1px solid;
+}
+.inner-grid.bg-blue01 {
+  border-color: #29353d;
+}
+.inner-grid.bg-blue02 {
+  border-color: #33424d;
+}
+
+/* <- tables */
+
+/* bg color classes -> */
+
+/* darkest blue = 1 */
+.bg-blue01 {
+  background-color: #29353d;
+  color: #fff;
+}
+.transparent {
+  background-color: transparent;
+}
+.bg-blue01 a {
+  color: #c4dcee;
+}
+.bg-blue02 {
+  background-color: #33424d;
+  color: #fff;
+}
+.bg-blue02 a {
+  color: #c4dcee;
+}
+
+/* <- bg color classes */
+
+/* typography classes -> */
+
+/* light green (for dark bg) */
+.text-highlight01 {
+  color: #c8d295;
+}
+.text-highlight02 {
+
+}
+/* <- text-size classes */
 
 /* <-- SHARED ELEMENTS */
-
 
 
 .column-s {
@@ -3029,7 +3114,6 @@ body > #priorPage a {
   width: 66%;
   float: left;
 }
-
 
 
 
