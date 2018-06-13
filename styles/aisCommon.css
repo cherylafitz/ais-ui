@@ -1272,10 +1272,6 @@ table.pageStructure .leftNav .StudentSummary {
 div.FSAAppFullDisplay a#HideContentsOfAllSections {
   margin-left: 1rem;
 }
-/*#contentPageProportional .StudentLastNameEmphasis {
-  font-weight: normal;
-}*/
-
 .StudentLastNameEmphasis {
   font-weight: bold;
 }
@@ -1443,6 +1439,13 @@ div.FSAAppFullDisplay fieldset.Section legend a.Update {
   padding-left: 0;
   font-size: 0.75rem;
 }
+
+/* STUDENT SCHOOL INFO EDITOR -> */
+.StudentSchoolInfoEditor input[type="text"] {
+  width: 20rem;
+  max-width: 100%;
+}
+/* <- STUDENT SCHOOL INFO EDITOR */
 
 /* POST SELECTION UPDATE --> */
 
@@ -1811,14 +1814,10 @@ td input[type="search"] {
   padding: 0 2px;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
-  /*margin: 0 .125rem;*/
 }
 select {
   margin-bottom: .25rem;
   font-size: .875rem;
-/*  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.5);
-  box-shadow: 0 0 1px rgba(0,0,0,0.5);*/
   border: 1px solid #c0bfbf;
 }
 #tippyTopOfPage select,
