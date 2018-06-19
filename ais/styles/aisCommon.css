@@ -2516,6 +2516,11 @@ div#SchoolDisplay p {
 
 /* <-- HEALTH INBOX QUEUE */
 
+/* PAGE: PIPY EDITOR --> */
+/* override -> */
+div.PIPYDisplay .PlacementReportReasonSortOrder {
+  width: initial;
+}
 
 /* PAGE: PROGRAM SETTINGS --> */
 
