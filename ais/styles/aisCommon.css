@@ -156,6 +156,9 @@ body #PageWrapperNavUpdate {
 .row-size3 {
   margin-top: 1.5rem;
 }
+.row-break-size1 {
+  margin-bottom: .75rem;
+}
 /* remove after adding .column */
 [class^="column"] {
   float: left;
@@ -3008,6 +3011,9 @@ div.UserFullDisplay fieldset.UserPermissions {
   margin: 2.5rem auto;
   padding: 1.5rem;
 }
+.info-section {
+  max-width: 700px;
+}
 
 /* this is not a good selector - discuss other options */
 body > #priorPage {
@@ -3109,6 +3115,36 @@ body > #priorPage a {
 
 }
 /* <- text-size classes */
+
+/* LISTS -> */
+
+
+.instruction-steps {
+  list-style-type: none;
+}
+.instruction-steps li {
+  counter-increment: step-counter;
+  margin: 2rem 1rem;
+  position: relative;
+  padding: 0 4rem;
+}
+.instruction-steps li::before {
+  content: counter(step-counter);
+  background-color: rgb(255, 185, 69);
+  color: #2a353d;
+  font-weight: bold;
+  padding: .75rem 1rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* <- LISTS */
 
 /* <-- SHARED ELEMENTS */
 
