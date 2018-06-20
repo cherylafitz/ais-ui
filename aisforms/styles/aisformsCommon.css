@@ -1860,8 +1860,8 @@ span.fax {
     white-space: nowrap;
 }
 
-#AClogoFooter {
-	padding-right: 1em;
+.IsNotLoggedIn #AClogoFooter img {
+	width: 250px;
 }
 #footer #footer2 {
 	background-color: transparent;
