@@ -358,7 +358,7 @@ body.IsNotLoggedIn .Content {
     width: 90%;
     max-width: 1100px;
     margin: -1em auto -2em auto;
-    padding: 1em;
+    padding: 1rem 1rem 5rem;
 	border-top: none;
 	border-bottom: none;
 	border-right: 1px solid #c7c7c7;
@@ -1897,7 +1897,7 @@ div#footer2 .ACaddressBlock {
 	background: -webkit-linear-gradient(top, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* Chrome10+,Safari5.1+ */
 	background: linear-gradient(to bottom, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29353d', endColorstr='#0029353d',GradientType=0 ); /* IE6-8 */
-	padding: 1em 0;
+	padding: 2.5rem 0;
 	border-top: 0.15em solid #29353d;
 	height: 250px;
 }
