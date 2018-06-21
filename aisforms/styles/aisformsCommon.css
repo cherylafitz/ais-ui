@@ -358,7 +358,7 @@ body.IsNotLoggedIn .Content {
     width: 90%;
     max-width: 1100px;
     margin: -1em auto -2em auto;
-    padding: 1rem 1rem 5rem;
+    padding: 1rem 1rem 2rem;
 	border-top: none;
 	border-bottom: none;
 	border-right: 1px solid #c7c7c7;
@@ -380,6 +380,9 @@ body.IsNotLoggedIn .Content {
 }
 #footer.IsNotLoggedIn div#footer2 a:hover {
 	color: #FF7F67
+}
+#footer.IsLoggedIn img {
+	width: 250px;
 }
 #footer.IsLoggedIn img#LoginPage {
 	display: none;
@@ -1861,7 +1864,7 @@ span.fax {
 }
 
 .IsNotLoggedIn #AClogoFooter img {
-	width: 250px;
+	width: 200px;
 }
 #footer #footer2 {
 	background-color: transparent;
@@ -1876,7 +1879,11 @@ span.fax {
 	margin: .5em auto;
 }
 .AClogoAddressFooter {
+	text-align: right;
 	line-height: 1.25rem;
+}
+#AClogoFooter {
+	float: left;
 }
 .AClogoAddressFooter .contact1 > span:not(:last-child):after,
 .AClogoAddressFooter .contact2 > span:not(:last-child):after,
