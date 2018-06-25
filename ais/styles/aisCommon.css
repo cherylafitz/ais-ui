@@ -10,6 +10,12 @@ medium dark blue: #33424d;
 light blue: #e3e8e8; (old: #e0ebeb)
 light green: #c8d295;
 lighter green: #E8EBD9;
+
+Highlights:
+salmon: #ffb699;
+green: #A9D4A1;
+light-yellow: #ffeeb3;
+medium-yellow: #f8c76d;
 */
 
 /* RESET CSS --> */
@@ -1188,7 +1194,10 @@ div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
 
 /*MISC ALIGNMENT -->*/
 
-div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value, div.PlacementReportSearch .Scope .LimitToFundingSource > .value, div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value, div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
+div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value,
+div.PlacementReportSearch .Scope .LimitToFundingSource > .value,
+div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value,
+div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
     position: absolute;
     top: 0;
     left: 8rem;
@@ -2984,6 +2993,41 @@ div.UserFullDisplay fieldset.UserPermissions {
 /* <-- Blue legends containing dropdown */
 
 /* <-- PAGE: USER DISPLAY */
+
+/* PAGE: FORM TRACKER --> */
+.FormTrackerReport .SubmissionName {
+  padding-top: .25rem;
+  font-weight: bold;
+}
+div.FormTrackerReport table tr th.isActive.isNotOverdue {
+  background-color: #f8c76d;
+}
+div.FormTrackerReport table tr td.isActive.isNotOverdue {
+  background-color: rgba(255, 233, 153, 0.6);
+}
+.FormTrackerReport .isMissing {
+  background: #ffb699;
+  padding: 0 .125rem;
+}
+.FormTrackerReport .FlaggedCount {
+  color: #981727;
+  font-size: 1.125rem;
+}
+.FormTrackerReport .FlaggedCount::before {
+  content: 'x';
+  font-size: .875rem;
+  font-weight: bold;
+  border:  1px solid;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* <-- PAGE: FORM TRACKER */
+
+/* <--- END PAGES */
 
 /* SHARED ELEMENTS --> */
 
