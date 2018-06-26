@@ -766,7 +766,7 @@ fieldset label {
 
 div.PlacementReport {
   border: none;
-  font-family: "Gotham SSm A","Gotham SSm B","Gotham",Helvetica,Arial,sans-serif;
+  font-family: "proxima-nova-bold", sans-serif;
 }
 table.PlacementReportDisplay,
 table.PlacementReportDisplay table.siblings,
@@ -1005,7 +1005,7 @@ div#alumnusSummary h1 {
   /* to reset --> */
   display: block;
   font-size: .875rem;
-  font-family: "Gotham SSm A","Gotham SSm B","Gotham",Helvetica,Arial,sans-serif;
+  font-family: "proxima-nova-bold", sans-serif;
   font-style: normal;
   border-top: none;
   border-bottom: none;
@@ -1024,7 +1024,7 @@ div#alumnusSummary h1 {
   text-align: left;
   background-color: transparent;
   text-transform: uppercase;
-  font-family: "Gotham SSm A","Gotham SSm B","Gotham",Helvetica,Arial,sans-serif;
+  font-family: "proxima-nova-bold", sans-serif;
   font-weight: bold;
   /* end reset */
   margin-bottom: .25rem;
@@ -1516,7 +1516,7 @@ body {
   padding: 0;
   position: relative;
   color: #222222;
-  font-family: "Gotham SSm A","Gotham SSm B","Gotham",Helvetica,Arial,sans-serif;
+  font-family: "proxima-nova-bold", sans-serif;
   width: 100%;
   height:100%;
   -webkit-font-smoothing: antialiased;
@@ -1692,7 +1692,7 @@ table.TravelOutboundDisplay td,
   padding: 0.125rem 0.25rem .25rem;
   border: 1px solid #fff;
   text-align: left;
-  font-family: "Gotham SSm A","Gotham SSm B","Gotham",Helvetica,Arial,sans-serif;
+  font-family: "proxima-nova-bold", sans-serif;
 }
 td input {
   font-size: .875rem;
@@ -3005,25 +3005,53 @@ div.FormTrackerReport table tr th.isActive.isNotOverdue {
 div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background-color: rgba(255, 233, 153, 0.6);
 }
-.FormTrackerReport .isMissing {
-  background: #ffb699;
-  padding: 0 .125rem;
-}
 .FormTrackerReport .FlaggedCount {
   color: #981727;
   font-size: 1.125rem;
+  padding-left: 1rem;
+  position: relative;
 }
-.FormTrackerReport .FlaggedCount::before {
-  content: 'x';
-  font-size: .875rem;
-  font-weight: bold;
-  border:  1px solid;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  vertical-align: top;
+.FormTrackerReport .FlaggedCount::before,
+.FormTrackerReport .FlaggedCount::after {
+  content: '';
+  width: .75rem;
+  height: .75rem;
+  position: absolute;
+  width: 2px;
+  background: #981727;
+  transform: rotate(45deg);
+  top: 25%;
+  left: .25rem;
 }
+.FormTrackerReport .FlaggedCount::after {
+  transform: rotate(-45deg);
+}
+.FormTrackerReport .Clean img {
+  display: none;
+}
+.FormTrackerReport .Clean {
+    width: 1.25rem;
+    height: 1.25rem;
+    position: relative;
+    display: inline-block;
+    margin-right: .25rem;
+    background: #000;
+    border-radius: 50%;
+    vertical-align: bottom;
+}
+.FormTrackerReport .Clean::before {
+    content: '';
+    width: .75rem;
+    height: .5rem;
+    position: absolute;
+    border-left: 2px solid #A9D4A1;
+    border-bottom: 2px solid #A9D4A1;
+    transform: rotate(-45deg);
+    top: .25rem;
+    left: .25rem;
+}
+
+
 
 /* <-- PAGE: FORM TRACKER */
 
