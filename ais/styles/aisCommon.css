@@ -321,7 +321,7 @@ a {
 color: #c4dcee;
 }
 .localizificatinator select {
-  font-size: .75rem;
+  font-size: .675rem;
   margin-top: .25rem;
 }
 .logoutLink {
@@ -393,12 +393,12 @@ body .divider {
 .topNavInTable td.nameBlock {
   background-image: url('https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg');
   background-repeat: no-repeat;
-  background-size: 72px;
+  background-size: 74px;
   text-align: left;
   padding-top: .5rem;
   width: 360px;
   vertical-align: top;
-  background-position: 0 .5rem;
+  background-position: 0;
 }
 .topNavInTable td.nameBlock > div {
   margin-left: 90px;
@@ -437,7 +437,8 @@ td.logo img {
   font-weight: normal;
 }
 .topNavInTable td.logo {
-  padding-right: 1rem;
+  padding-right: .75rem;
+  padding-left: .5rem;
   vertical-align: top;
 }
 .topNavInTable td.logo {
@@ -2714,7 +2715,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   background-color: #29353d;
   float: left;
   text-align: left;
-  padding-right: 1rem;
+  padding: .25rem 1rem .25rem .25rem;
 }
 
 #ProgramBadges #Banner .instanceID
