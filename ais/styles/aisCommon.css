@@ -2,7 +2,8 @@
 /*@import url("https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css");*/
 /*
 COLOR PALETTE:
-red : #981727;
+dark red : #981727;
+bright red: #c81e32;
 light yellow: #FFD590;
 lighter yellow: #ffe2b3;
 dark blue: #29353d;
@@ -2996,6 +2997,10 @@ div.UserFullDisplay fieldset.UserPermissions {
 /* <-- PAGE: USER DISPLAY */
 
 /* PAGE: FORM TRACKER --> */
+.FormTrackerReport td,
+.FormTrackerReport th {
+  vertical-align: middle;
+}
 .FormTrackerReport .SubmissionName {
   padding-top: .25rem;
   font-weight: bold;
@@ -3007,22 +3012,30 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background-color: rgba(255, 233, 153, 0.6);
 }
 .FormTrackerReport .FlaggedCount {
-  color: #981727;
-  font-size: 1.125rem;
-  padding-left: 1rem;
+  color: #000;
+  display: inline-block;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  background: #c81e32;
+  background: #FF9970;
   position: relative;
+  padding-left: 5px;
 }
 .FormTrackerReport .FlaggedCount::before,
 .FormTrackerReport .FlaggedCount::after {
   content: '';
-  width: .75rem;
-  height: .75rem;
+  width: 6px;
+  height: 6px;
   position: absolute;
-  width: 2px;
-  background: #981727;
+  width: 1px;
+  background: #000;
+  /*border-left: : 1px solid #000;*/
   transform: rotate(45deg);
-  top: 25%;
-  left: .25rem;
+  top: 9px;
+  left: 7px;
 }
 .FormTrackerReport .FlaggedCount::after {
   transform: rotate(-45deg);
@@ -3031,25 +3044,40 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   display: none;
 }
 .FormTrackerReport .Clean {
-    width: 1.25rem;
-    height: 1.25rem;
-    position: relative;
-    display: inline-block;
-    margin-right: .25rem;
-    background: #000;
-    border-radius: 50%;
-    vertical-align: bottom;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  margin-right: .25rem;
+  background: #4c8c40;
+  background: #8fc785;
+  border-radius: 50%;
+  vertical-align: bottom;
 }
 .FormTrackerReport .Clean::before {
-    content: '';
-    width: .75rem;
-    height: .5rem;
-    position: absolute;
-    border-left: 2px solid #A9D4A1;
-    border-bottom: 2px solid #A9D4A1;
-    transform: rotate(-45deg);
-    top: .25rem;
-    left: .25rem;
+  content: '';
+  width: .75rem;
+  height: .5rem;
+  position: absolute;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-color: #000;
+  transform: rotate(-45deg);
+  top: 6px;
+  left: 6px;
+}
+.FormTrackerReport .isLate {
+  color: #981727;
+  font-size: .875rem;
+}
+.FormTrackerReport .isMissing {
+  font-style: italic;
+  margin-left: .5rem;
+  display: inline-block;
+}
+.FormTrackerReport .isMissing::before {
+  content: '- ';
+  font-weight: bold;
 }
 
 
