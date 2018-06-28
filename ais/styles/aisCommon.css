@@ -3018,6 +3018,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   width: 24px;
   height: 24px;
   line-height: 24px;
+  font-size: 1rem;
   border-radius: 50%;
   background: #c81e32;
   background: #FF9970;
@@ -3027,12 +3028,10 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 .FormTrackerReport .FlaggedCount::before,
 .FormTrackerReport .FlaggedCount::after {
   content: '';
-  width: 6px;
+  width: 1px;
   height: 6px;
   position: absolute;
-  width: 1px;
   background: #000;
-  /*border-left: : 1px solid #000;*/
   transform: rotate(45deg);
   top: 9px;
   left: 7px;
@@ -3071,15 +3070,29 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   font-size: .875rem;
 }
 .FormTrackerReport .isMissing {
-  font-style: italic;
-  margin-left: .5rem;
-  display: inline-block;
+  padding-left: 16px;
+  font-size: .875rem;
+  position: relative;
 }
 .FormTrackerReport .isMissing::before {
-  content: '- ';
-  font-weight: bold;
+  content: '';
+  width: 6px;
+  height: 2px;
+  position: absolute;
+  background: #a96f0e;
+  left: 3px;
+  top: 7px;
 }
-
+.FormTrackerReport .isMissing::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border: 1px solid #777;
+  border-radius: 50%;
+}
 
 
 /* <-- PAGE: FORM TRACKER */
