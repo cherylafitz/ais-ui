@@ -1264,7 +1264,8 @@ table.pageStructure .leftNav .StudentSummary {
   /* <-- nav */
 
 .ParticipantSummaryPage .Section,
-.AlumnusSummary .Section {
+.AlumnusSummary .Section,
+.AIRAppSummaryDisplayInAIS .Section {
   max-width: 700px;
   margin: 2rem 0;
 }
@@ -1327,16 +1328,18 @@ div.FSAAppFullDisplay fieldset.Section legend,
 div.AlumnusSummary fieldset.Section legend,
 div.StudentDisplayForHealthReviewer fieldset#ProgramStaffQuestionnaire legend,
 div.HealthQuestionnaireEditor fieldset legend,
-.UserFullDisplay legend {
-  padding: 5px 16px 4px;
+.UserFullDisplay legend,
+div.AIRAppSummaryDisplayInAIS fieldset.Section legend,
+fieldset.Section legend {
+  padding: 5px 10px 4px;
   border-radius: 5px 5px 0 0;
   border: none;
   background-color: #415467;
   color: #fff;
   font-weight: normal;
-  top: -13px;
+  top: -12px;
   position: relative;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.125;
 }
 
@@ -1348,7 +1351,9 @@ fieldset legend select {
 
 div.FSAAppFullDisplay fieldset.Section,
 div.AlumnusSummary fieldset.Section,
-div.UserFullDisplay fieldset {
+div.UserFullDisplay fieldset,
+div.AIRAppSummaryDisplayInAIS fieldset.Section,
+fieldset.Section {
   border-top: 5px solid #415461;
   position: relative;
 }
@@ -1382,7 +1387,8 @@ div.AlumnusSummary fieldset.Section table.rolodex tr td.Account {
 }
 
 div.FSAAppFullDisplay table.rolodex > tbody > tr > td,
-div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td {
+div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td,
+fieldset.Section table.rolodex > tbody > tr > td {
   background-color: #cbd2d6;
   padding-left: .5rem;
   padding-right: .5rem;
@@ -2997,6 +3003,21 @@ div.UserFullDisplay fieldset.UserPermissions {
 /* <-- PAGE: USER DISPLAY */
 
 /* PAGE: FORM TRACKER --> */
+.FormTrackerReport caption {
+  padding-bottom: .5rem;
+  text-align: left;
+  position: relative;
+  width: 375px;
+}
+/*.FormTrackerReport .paginatorContainer {
+  margin: 1rem 1rem 1rem 0;
+}
+.FormTrackerReport .paginatorContainer,
+div.FormTrackerReport #RefreshID {
+  position: sticky;
+  left: 120px;
+  display: inline-block;
+}*/
 .FormTrackerReport td,
 .FormTrackerReport th {
   vertical-align: middle;
@@ -3034,7 +3055,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background: #000;
   transform: rotate(45deg);
   top: 9px;
-  left: 7px;
+  left: 6px;
 }
 .FormTrackerReport .FlaggedCount::after {
   transform: rotate(-45deg);
@@ -3096,6 +3117,13 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 
 
 /* <-- PAGE: FORM TRACKER */
+
+/* PAGE: AIS FORMS SUMMARY --> */
+
+
+
+/* <-- PAGE: AIS FORMS SUMMARY */
+
 
 /* <--- END PAGES */
 
