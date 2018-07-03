@@ -2,7 +2,8 @@
 /*@import url("https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css");*/
 /*
 COLOR PALETTE:
-red : #981727;
+dark red : #981727;
+bright red: #c81e32;
 light yellow: #FFD590;
 lighter yellow: #ffe2b3;
 dark blue: #29353d;
@@ -10,6 +11,12 @@ medium dark blue: #33424d;
 light blue: #e3e8e8; (old: #e0ebeb)
 light green: #c8d295;
 lighter green: #E8EBD9;
+
+Highlights:
+salmon: #ffb699;
+green: #A9D4A1;
+light-yellow: #ffeeb3;
+medium-yellow: #f8c76d;
 */
 
 /* RESET CSS --> */
@@ -1189,7 +1196,10 @@ div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
 
 /*MISC ALIGNMENT -->*/
 
-div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value, div.PlacementReportSearch .Scope .LimitToFundingSource > .value, div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value, div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
+div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value,
+div.PlacementReportSearch .Scope .LimitToFundingSource > .value,
+div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value,
+div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
     position: absolute;
     top: 0;
     left: 8rem;
@@ -1254,7 +1264,8 @@ table.pageStructure .leftNav .StudentSummary {
   /* <-- nav */
 
 .ParticipantSummaryPage .Section,
-.AlumnusSummary .Section {
+.AlumnusSummary .Section,
+.AIRAppSummaryDisplayInAIS .Section {
   max-width: 700px;
   margin: 2rem 0;
 }
@@ -1317,16 +1328,18 @@ div.FSAAppFullDisplay fieldset.Section legend,
 div.AlumnusSummary fieldset.Section legend,
 div.StudentDisplayForHealthReviewer fieldset#ProgramStaffQuestionnaire legend,
 div.HealthQuestionnaireEditor fieldset legend,
-.UserFullDisplay legend {
-  padding: 5px 16px 4px;
+.UserFullDisplay legend,
+div.AIRAppSummaryDisplayInAIS fieldset.Section legend,
+fieldset.Section legend {
+  padding: 5px 10px 4px;
   border-radius: 5px 5px 0 0;
   border: none;
   background-color: #415467;
   color: #fff;
   font-weight: normal;
-  top: -13px;
+  top: -12px;
   position: relative;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.125;
 }
 
@@ -1338,7 +1351,9 @@ fieldset legend select {
 
 div.FSAAppFullDisplay fieldset.Section,
 div.AlumnusSummary fieldset.Section,
-div.UserFullDisplay fieldset {
+div.UserFullDisplay fieldset,
+div.AIRAppSummaryDisplayInAIS fieldset.Section,
+fieldset.Section {
   border-top: 5px solid #415461;
   position: relative;
 }
@@ -1372,7 +1387,8 @@ div.AlumnusSummary fieldset.Section table.rolodex tr td.Account {
 }
 
 div.FSAAppFullDisplay table.rolodex > tbody > tr > td,
-div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td {
+div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td,
+fieldset.Section table.rolodex > tbody > tr > td {
   background-color: #cbd2d6;
   padding-left: .5rem;
   padding-right: .5rem;
@@ -2985,6 +3001,131 @@ div.UserFullDisplay fieldset.UserPermissions {
 /* <-- Blue legends containing dropdown */
 
 /* <-- PAGE: USER DISPLAY */
+
+/* PAGE: FORM TRACKER --> */
+.FormTrackerReport caption {
+  padding-bottom: .5rem;
+  text-align: left;
+  position: relative;
+  width: 375px;
+}
+/*.FormTrackerReport .paginatorContainer {
+  margin: 1rem 1rem 1rem 0;
+}
+.FormTrackerReport .paginatorContainer,
+div.FormTrackerReport #RefreshID {
+  position: sticky;
+  left: 120px;
+  display: inline-block;
+}*/
+.FormTrackerReport td,
+.FormTrackerReport th {
+  vertical-align: middle;
+}
+.FormTrackerReport .SubmissionName {
+  padding-top: .25rem;
+  font-weight: bold;
+}
+div.FormTrackerReport table tr th.isActive.isNotOverdue {
+  background-color: #f8c76d;
+}
+div.FormTrackerReport table tr td.isActive.isNotOverdue {
+  background-color: rgba(255, 233, 153, 0.6);
+}
+.FormTrackerReport .FlaggedCount {
+  color: #000;
+  display: inline-block;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: #c81e32;
+  background: #FF9970;
+  position: relative;
+  padding-left: 5px;
+}
+.FormTrackerReport .FlaggedCount::before,
+.FormTrackerReport .FlaggedCount::after {
+  content: '';
+  width: 1px;
+  height: 6px;
+  position: absolute;
+  background: #000;
+  transform: rotate(45deg);
+  top: 9px;
+  left: 6px;
+}
+.FormTrackerReport .FlaggedCount::after {
+  transform: rotate(-45deg);
+}
+.FormTrackerReport .Clean img {
+  display: none;
+}
+.FormTrackerReport .Clean {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  margin-right: .25rem;
+  background: #4c8c40;
+  background: #8fc785;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+.FormTrackerReport .Clean::before {
+  content: '';
+  width: .75rem;
+  height: .5rem;
+  position: absolute;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-color: #000;
+  transform: rotate(-45deg);
+  top: 6px;
+  left: 6px;
+}
+.FormTrackerReport .isLate {
+  color: #981727;
+  font-size: .875rem;
+}
+.FormTrackerReport .isMissing {
+  padding-left: 16px;
+  font-size: .875rem;
+  position: relative;
+}
+.FormTrackerReport .isMissing::before {
+  content: '';
+  width: 6px;
+  height: 2px;
+  position: absolute;
+  background: #a96f0e;
+  left: 3px;
+  top: 7px;
+}
+.FormTrackerReport .isMissing::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border: 1px solid #777;
+  border-radius: 50%;
+}
+
+
+/* <-- PAGE: FORM TRACKER */
+
+/* PAGE: AIS FORMS SUMMARY --> */
+
+
+
+/* <-- PAGE: AIS FORMS SUMMARY */
+
+
+/* <--- END PAGES */
 
 /* SHARED ELEMENTS --> */
 
