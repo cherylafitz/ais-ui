@@ -328,7 +328,10 @@ color: #c4dcee;
 .logoutLink {
   padding-right: 0;
 }
-
+#AddAuthorizedUserButtonID {
+  line-height: .75rem;
+  margin: .25rem 0;
+}
 .leftNav .Body .header {
   display: block;
 }
@@ -451,6 +454,9 @@ td.logo img {
   margin: .125rem 0 .25rem .25rem;
   border: 3px solid #2a353d;
   box-shadow: 0 0 0px 2px #f6b844;
+}
+.programName {
+  vertical-align: middle;
 }
 /* <--HEADER */
 
@@ -584,6 +590,7 @@ table .leftNav a {
 .leftNav h1 {
   color: #c8d295;
   padding-top: 0;
+  text-transform: uppercase;
   /*padding-bottom: .25rem;*/
   margin-bottom: .5rem;
   font-size: 1.125rem;
@@ -764,6 +771,21 @@ fieldset label {
   margin: 0 .5rem .25rem 0;
 }
 
+table.pageStructure {
+    border-collapse: collapse;
+}table.pageStructure tr.contentArea {
+    vertical-align: top;
+}
+table.pageStructure tr.contentArea td.leftNav {
+    width: 153px;
+}
+table.pageStructure tr.footerArea td.leftNav
+{
+  white-space: nowrap;
+  background-color: #d9d9d9;
+  font-size: .75rem;
+  text-align: center;
+}
 /* Placement Report --> */
 
 div.PlacementReport {
@@ -1356,6 +1378,7 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section,
 fieldset.Section {
   border-top: 5px solid #415461;
   position: relative;
+  max-width: 700px
 }
 
 div.FSAAppFullDisplay fieldset.Section legend a,
@@ -1559,6 +1582,7 @@ p {
 h1 {
   /*padding: .25rem 0 .5rem 0;*/
   /*font-weight: normal;*/
+  font-size: 1.25rem;
 }
 
 /* TABLES-->*/
@@ -1701,6 +1725,15 @@ table.TravelOutboundDisplay td,
   border: 1px solid #fff;
   text-align: left;
   font-family: "proxima-nova-bold", sans-serif;
+  font-weight: normal;
+}
+td.RowNumber,
+table.RowDisplay td.RowNumber,
+table.RowDisplay tr.headerRow th.RowNumber,
+table.RowDisplay thead tr th.RowNumber,
+table.report td.RowNumber,
+div.AuditTrailRowDisplay td.RowNumber {
+    text-align: right;
 }
 td input {
   font-size: .875rem;
@@ -1821,6 +1854,9 @@ table.Search tr th {
 /* <--TABLES*/
 
 /* FORMS --> */
+form {
+  margin-bottom: 0;
+}
 td input[type="text"],
 textarea,
 input,
@@ -2006,6 +2042,7 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement .byline {
 
 legend {
   font-size: 1rem;
+  font-weight: bold;
 }
 span.aisEmail {
   word-wrap: break-word;
@@ -3007,17 +3044,13 @@ div.UserFullDisplay fieldset.UserPermissions {
   padding-bottom: .5rem;
   text-align: left;
   position: relative;
-  width: 375px;
+  width: 400px;
 }
-/*.FormTrackerReport .paginatorContainer {
-  margin: 1rem 1rem 1rem 0;
+div.FormTrackerReport table tr th.SubmissionDate,
+div.FormTrackerReport table tr td.SubmissionDate,
+div.FormTrackerReport table tr td.ReferenceCode {
+  text-align: center;
 }
-.FormTrackerReport .paginatorContainer,
-div.FormTrackerReport #RefreshID {
-  position: sticky;
-  left: 120px;
-  display: inline-block;
-}*/
 .FormTrackerReport td,
 .FormTrackerReport th {
   vertical-align: middle;
@@ -3030,7 +3063,7 @@ div.FormTrackerReport table tr th.isActive.isNotOverdue {
   background-color: #f8c76d;
 }
 div.FormTrackerReport table tr td.isActive.isNotOverdue {
-  background-color: rgba(255, 233, 153, 0.6);
+  background-color: rgba(255, 233, 153, 0.5);
 }
 .FormTrackerReport .FlaggedCount {
   color: #000;
@@ -3057,6 +3090,9 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   top: 9px;
   left: 6px;
 }
+.FlaggedCount:empty {
+  color: red;
+}
 .FormTrackerReport .FlaggedCount::after {
   transform: rotate(-45deg);
 }
@@ -3068,11 +3104,10 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   height: 24px;
   position: relative;
   display: inline-block;
-  margin-right: .25rem;
-  background: #4c8c40;
+  /*margin-right: .25rem;*/
   background: #8fc785;
   border-radius: 50%;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .FormTrackerReport .Clean::before {
   content: '';
@@ -3085,6 +3120,49 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   transform: rotate(-45deg);
   top: 6px;
   left: 6px;
+}
+.FormTrackerReport .inProgress {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  background: #f6b844;
+  background: #f8c76d;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.FormTrackerReport .inProgress::before {
+  content: '...';
+  letter-spacing: -1px;
+  line-height: 9px;
+  font-family: serif;
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  font-size: 28px;
+}
+.FormTrackerReport .requested {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  background: #ffb699;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: transparent;
+}
+.FormTrackerReport .requested::before {
+  content: 'r';
+  line-height: 24px;
+  position: absolute;
+  left: 7px;
+  top: 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+}
+.requested {
+  font-weight: bold;
 }
 .FormTrackerReport .isLate {
   color: #981727;
@@ -3120,7 +3198,27 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 
 /* PAGE: AIS FORMS SUMMARY --> */
 
-
+.AIRAppSummaryDisplayInAIS .Question {
+    white-space: normal;
+    max-width: 25em;
+    min-width: 15em;
+}
+.AIRAppSummaryDisplayInAIS .Value {
+    white-space: normal;
+}
+.AIRAppSummaryDisplayInAIS th,
+.AIRAppSummaryDisplayInAIS td {
+  vertical-align: top;
+}
+.AIRAppSummaryDisplayInAIS #QuestionDisplayPreferenceWrapper {
+    margin-top: 1em;
+}
+.AIRAppSummaryDisplayInAIS .Section .ShowHideSection {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -1rem;
+}
 
 /* <-- PAGE: AIS FORMS SUMMARY */
 
@@ -3262,6 +3360,23 @@ body > #priorPage a {
 
 }
 /* <- text-size classes */
+
+/* flexbox --> */
+.HomePageForAll #FlexBoxedItems
+  {
+    display: flex; /* or inline-flex */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* nowrap */
+    justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
+  }
+
+.HomePageForAll #FlexBoxedItems fieldset {
+  min-width: 30%;
+  flex-grow: 0;
+}
+/* <-- flexbox */
 
 /* LISTS -> */
 
