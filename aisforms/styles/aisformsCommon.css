@@ -380,7 +380,7 @@ body.IsNotLoggedIn .Content {
 #footer.IsNotLoggedIn div#footer2 a:hover {
 	color: #FF7F67
 }
-#footer.IsLoggedIn img {
+#footer.IsLoggedIn #AClogoFooter img {
 	width: 250px;
 }
 #footer.IsLoggedIn img#LoginPage {
@@ -1910,7 +1910,7 @@ div#footer2 .ACaddressBlock {
 	height: 100px;
 }
 div#footer.IsLoggedIn div#amagavi {
-     display: none;
+     /*display: none;*/
 }
 #footer #amagavi {
 	width: 95%;
@@ -1920,12 +1920,13 @@ div#footer.IsLoggedIn div#amagavi {
 	font-size: .75em;
 	float: right;
 	margin: 0;
+	background: transparent;
 }
-#footer #amagavi .byline {
-	color: #777;
+#footer.IsLoggedIn #amagavi .byline {
+	color: #fff;
 }
-#footer2 a{
-	/* color: #B8C977; */
+#footer2 a,
+.IsLoggedIn #amagavi a {
 	color: #E8EBD9;
 }
 #footer2 a:hover {
