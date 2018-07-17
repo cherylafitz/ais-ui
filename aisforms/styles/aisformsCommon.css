@@ -369,7 +369,7 @@ body.IsNotLoggedIn .Content {
   z-index: 3;
 }
 #footer.IsNotLoggedIn  div#footer2,
-.IsNotLoggedIn #amagavi {
+.IsNotLoggedIn #amagavi .byline {
 	color: #777;
 }
 #footer.IsNotLoggedIn img#HomePage {
