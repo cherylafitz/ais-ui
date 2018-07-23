@@ -680,7 +680,7 @@ table.pageStructure tr.contentArea > td.content {
   background-color: #FFF;
   color: #000;
   width: 100%;
-  padding: .5rem .75rem;
+  padding: 1rem 1.25rem;
 }
 table.rolodex tr td {
   white-space: nowrap;
@@ -3362,23 +3362,21 @@ body > #priorPage a {
 /* <- text-size classes */
 
 /* flexbox --> */
-div.HomePageForAll div#FlexBoxedItems
-  {
-    display: flex; /* or inline-flex */
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* nowrap */
-    justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
-  }
+div.HomePageForAll div#FlexBoxedItems {
+  display: flex; /* or inline-flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* nowrap */
+  justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
+  margin-right: -1rem;
+}
 
 div.HomePageForAll div#FlexBoxedItems fieldset {
   flex-basis: auto;
   flex-grow: 1;
   min-width: initial;
-}
-div.HomePageForAll fieldset {
-  margin: .5rem;
+  margin-right: 1rem;
 }
 /* <-- flexbox */
 
