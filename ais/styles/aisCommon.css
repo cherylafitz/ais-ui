@@ -3074,8 +3074,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   line-height: 24px;
   font-size: 1rem;
   border-radius: 50%;
-  background: #c81e32;
-  background: #FF9970;
+  background: #ffa480;
   position: relative;
   padding-left: 5px;
 }
@@ -3104,7 +3103,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   height: 24px;
   position: relative;
   display: inline-block;
-  /*margin-right: .25rem;*/
   background: #8fc785;
   border-radius: 50%;
   vertical-align: middle;
@@ -3126,7 +3124,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   height: 24px;
   position: relative;
   display: inline-block;
-  background: #f6b844;
   background: #f8c76d;
   border-radius: 50%;
   vertical-align: middle;
