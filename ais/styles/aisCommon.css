@@ -3362,19 +3362,21 @@ body > #priorPage a {
 /* <- text-size classes */
 
 /* flexbox --> */
-.HomePageForAll #FlexBoxedItems
-  {
-    display: flex; /* or inline-flex */
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* nowrap */
-    justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
-  }
+div.HomePageForAll div#FlexBoxedItems {
+  display: flex; /* or inline-flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* nowrap */
+  justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
+  margin-right: -1rem;
+}
 
-.HomePageForAll #FlexBoxedItems fieldset {
-  min-width: 30%;
-  flex-grow: 0;
+div.HomePageForAll div#FlexBoxedItems fieldset {
+  flex-basis: auto;
+  flex-grow: 1;
+  min-width: initial;
+  margin-right: 1rem;
 }
 /* <-- flexbox */
 
