@@ -402,7 +402,7 @@ body .divider {
   padding-top: .5rem;
   width: 360px;
   vertical-align: top;
-  background-position: 0;
+  background-position: 0 .25rem;
 }
 .topNavInTable td.nameBlock > div {
   margin-left: 90px;
