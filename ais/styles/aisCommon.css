@@ -906,7 +906,6 @@ table.PlacementReportEditor table.rolodex th {
 .InPlacementReportEditor table.rolodex tbody tr:first-child th:first-child,
 .InPlacementReportEditor table.rolodex tbody tr:first-child td:first-of-type,
 table.PlacementReportDisplay table.rolodex tbody tr:first-child:not(.headerRow) th:first-child,
-table.PlacementReportDisplay table.rolodex tbody tr:first-child:not(thead tr) th:first-child,
 table.PlacementReportDisplay table.rolodex tbody tr:first-child td:first-of-type,
 table.PlacementReportEditor table.rolodex tbody tr:first-child td:first-of-type,
 table.PlacementReportEditor table.rolodex tbody tr:first-child th:first-child {
@@ -916,7 +915,6 @@ table.PlacementReportEditor table.rolodex tbody tr:first-child th:first-child {
 .InPlacementReportEditor table.rolodex tbody tr:last-child th:last-child,
 .InPlacementReportEditor table.rolodex tbody tr:last-child td:last-of-type,
 table.PlacementReportDisplay table.rolodex tbody tr:last-child:not(.headerRow) th:last-child,
-table.PlacementReportDisplay table.rolodex tbody tr:last-child:not(thead tr) th:last-child,
 table.PlacementReportDisplay table.rolodex tbody tr:last-child td:last-of-type,
 table.PlacementReportEditor table.rolodex tbody tr:last-child td:last-of-type,
 table.PlacementReportEditor table.rolodex tbody tr:last-child th:last-child,
