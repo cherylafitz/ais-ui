@@ -6,7 +6,7 @@ gulp.task('concat-ais-css', function() {
 });
 
 gulp.task('concat-aisforms-css', function() {
-  return gulp.src('./app/aisforms/styles/aisforms-common/*.css')
+  return gulp.src('./assets/aisforms/styles/aisforms-common/*.css')
     .pipe(concat('aisformsCommon.css'))
-    .pipe(gulp.dest('./dist/aisforms/styles/'));
+    .pipe(gulp.dest('./static/aisforms/styles/'));
 });

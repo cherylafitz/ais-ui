@@ -1,3 +1,9 @@
+/* PAGE: LOGIN --> */
+
+.IsNotLoggedIn .header {
+  padding: 1rem 1rem 1rem 6rem;
+  background: #33424d;
+}
 .IsNotLoggedIn .main {
   padding: 2rem 6rem;
   display: flex;
@@ -10,9 +16,33 @@
   flex-wrap: wrap;
   text-align: center;
 }
-
 .IsNotLoggedIn .LoginForms {
   margin: 1rem;
   float: none;
   clear: none;
 }
+.IsNotLoggedIn #loginHeading {
+  background: #29353d;
+  border-radius: 2px 2px 0 0;
+}
+.IsNotLoggedIn #aisLogo {
+  width: 180px;
+  padding: .75rem .75rem .75rem;
+  margin-bottom: -1.5rem;
+  display: block;
+}
+.IsNotLoggedIn #login tr th,
+.IsNotLoggedIn #login tr td,
+.IsNotLoggedIn#CreateAccount tr th,
+.IsNotLoggedIn #CreateAccount tr td {
+  padding: .2em 0;
+  text-align: left;
+  font-weight: normal;
+}
+.IsNotLoggedIn #login,
+.IsNotLoggedIn #CreateAccount {
+  padding: 0;
+  background: #e0e6ee;
+}
+
+/* <-- PAGE: LOGIN */

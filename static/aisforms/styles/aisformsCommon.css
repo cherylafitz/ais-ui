@@ -712,12 +712,6 @@ div.generateReportsWrapper {
 div.generateReportsWrapper {
 background: #ffffff;
 }
-table#login,
-table#CreateAccount {
-	margin: .1em 0;
-	padding: 0.5em;
-  border: 1px solid #cecece;
-}
 table.PageCommands {
 	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
 	-moz-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
@@ -1951,21 +1945,6 @@ table#CreateAccount tr.header th {
 	font-size: 1.2em;
 	padding: .5em 0;
 }
-table#login tr th,
-table#login tr td,
-table#CreateAccount tr th,
-table#CreateAccount tr td {
-	padding: .2em 0;
-}
-.LoginOrNewAccount .baseStyle,
-/* #UserHomePage .baseStyle {
-	color: #1C2332;
-	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-}
-.baseStyle {
-	padding: 0;
-	margin: 0;
-}*/
 table.RowDisplay td {
 margin: 0.25em 0 0.25em 0;
 }
@@ -2991,4 +2970,51 @@ div.Main .SharedLegend {
 }
 
 div.Main .SharedPeople { }
-hello this is a test
+/* PAGE: LOGIN --> */
+
+.IsNotLoggedIn .header {
+  padding: 1rem 1rem 1rem 6rem;
+  background: #33424d;
+}
+.IsNotLoggedIn .main {
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.IsNotLoggedIn .LoginForms {
+  margin: 1rem;
+  float: none;
+  clear: none;
+}
+.IsNotLoggedIn #loginHeading {
+  background: #29353d;
+  border-radius: 2px 2px 0 0;
+}
+.IsNotLoggedIn #aisLogo {
+  width: 180px;
+  padding: .75rem .75rem .75rem;
+  margin-bottom: -1.5rem;
+  display: block;
+}
+.IsNotLoggedIn #login tr th,
+.IsNotLoggedIn #login tr td,
+.IsNotLoggedIn#CreateAccount tr th,
+.IsNotLoggedIn #CreateAccount tr td {
+  padding: .2em 0;
+  text-align: left;
+  font-weight: normal;
+}
+.IsNotLoggedIn #login,
+.IsNotLoggedIn #CreateAccount {
+  padding: 0;
+  background: #e0e6ee;
+}
+
+/* <-- PAGE: LOGIN */

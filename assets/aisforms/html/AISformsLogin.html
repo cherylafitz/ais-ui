@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../../static/aisforms/styles/aisformsCommon.css">
+  </head>
+<body class="IsNotLoggedIn">
+  <div class="header">
+    <img alt="American Councils Logo" id="logo" src="https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png" width="200">
+  </div>
+  <div class="main">
+  <div class="LoginForms">
+    <div id="loginHeading">
+    <img id="aisLogo" alt="AIS Logo" src="https://aisforms.s3.amazonaws.com/ais/common/AISformsLogo_top.svg">
+    <div class="actions" style="
+    float: right;
+    color: #cbd2d7;
+    text-align: center;
+    margin-top: -2.25rem;
+    padding-bottom: 2rem;
+    color: white;
+"><span style="
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+">Sign in</span></div>
+    </div>
+
+  <form name="loginForm" method="post" id="LoginForm" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin" style="
+    margin: 0;
+    padding: 0 1.5rem 1.5rem;
+    background: #e0e6ef;
+    width: 100%;
+    box-sizing: border-box;
+"><table id="login" style="border: none;background: #e0e6ee;text-align: right;/* vertical-align:  top; */width: 100%;">
+        <tbody><tr class="header">
+          <th colspan="2" class="SignIn" style="
+          vertical-align: bottom;
+          /* color: white; */
+          text-align: left;
+          padding-top: 1rem;
+          display: none;
+          ">Sign in</th>
+        </tr>
+        <tr class="UserName">
+          <th>User name:</th>
+          <td><input id="Username" type="text" name="membernameLogin"></td>
+        </tr>
+        <tr class="Password">
+          <th style="color: black;text-align: left;">Password:</th>
+          <td><input id="Password" type="password" name="passwordLogin"></td>
+        </tr>
+        <tr><th></th>
+
+        </tr>
+      </tbody></table>
+    <div id="loginDiv" style="background: #e0e6ed;/* color: #fff; *//* border: 1px solid #cbd2d7; */border-radius:  0 2px 2px 0;/* padding: 0 1rem 1rem; */text-align: center;">
+      <div style="
+    padding-top: 1rem;
+">
+    <span style="
+    border: 1px solid #82909a;
+    padding: .25rem .5rem;
+    border-radius: 2px;
+    color: black;
+    padding: .25rem .75rem;
+    background: #e0e6f0;
+    border-radius: 2px;
+    border: 1px solid #2a353d;
+    margin-right: 1rem;
+    display: inline-block;
+">Create account</span><input id="Login" type="submit" value="Login" name="attemptLogin" style="
+    border-radius: 2px;
+    background: transparent;
+    margin-right: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: .0625rem .5rem;
+    border-color: #82909a;
+    border: 1px solid #82909a;
+    padding: .25rem .5rem;
+    border-radius: 2px;
+    padding: .25rem .75rem;
+    background: #33424d;
+    border-radius: 2px;
+    border: 1px solid #2a353d;
+    float: none;
+    text-shadow: none;
+"><input type="hidden" name="WOSubmitAction" value="attemptLogin">
+            <div class="ForgotPassword" style="
+    float: none;
+    display: block;
+    padding: .5rem .5rem 0 0;
+    margin: .5rem 0 0;
+">
+              <a class="ForgotPassword" href="/cgi-bin/WebObjects/AIR.woa/wa/forgottenPassword?brand=general" style="
+    font-size: .875rem;
+    color: #33424d;
+">Help Logging In</a>
+            </div>
+          </div>
+    <div class="LoginActions" style="
+    text-align: left;
+">
+          </div>
+    </div>
+    <input type="hidden" name="brand" value="general">
+  </form>
+  <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
+    <div id="CreateAccountDiv" style="
+    display: none;
+">
+      <table id="CreateAccount" style="
+      background: #e0e6ed;
+      border: none;
+      ">
+      <tbody><tr class="header">
+        <th colspan="2" style="
+        background: transparent;
+        ">Create New Account</th>
+      </tr>
+      <tr class="UserName">
+        <th>User name: </th>
+        <td><input type="text" name="membername"></td>
+      </tr>
+
+      <tr class="Password">
+        <th>Password:</th>
+        <td><input type="password" name="password"></td>
+      </tr>
+
+      <tr class="VerifyPassword">
+        <th>Verify password:</th>
+        <td><input type="password" name="passwordRetyped"></td>
+      </tr>
+
+      <tr class="FirstName">
+        <th>First name:</th>
+        <td><input type="text" name="firstName"></td>
+      </tr>
+
+      <tr class="LastName">
+        <th>Last name:</th>
+        <td><input type="text" name="lastName"></td>
+      </tr>
+
+      <tr class="EmailAddress">
+        <th>Email address:</th>
+        <td><input type="text" name="emailAddress"></td>
+      </tr>
+      <tr class="ReCaptcha">
+        <td colspan="2">
+          <div id="CaptchaExplanation">Help Stop Spam! Check the box below to tell us you are not a robot.</div>
+          <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+          <div data-sitekey="6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni&amp;co=aHR0cHM6Ly9haXMuYW1lcmljYW5jb3VuY2lscy5vcmc6NDQz&amp;hl=en&amp;v=v1528855115741&amp;size=normal&amp;cb=x2rhejan3v10" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><input escapehtml="false" class="createAccount" type="submit" value="Create new account" name="createNewAccount"><input type="hidden" name="WOSubmitAction" value="createNewAccount"></td>
+      </tr>
+    </tbody></table>
+  </div>
+  <input type="hidden" name="brand" value="general">
+</form>
+</div>
+  <div class="CustomContent" style="
+    background: #33424d;
+    background:  white;
+    flex-basis: 500px;
+    flex-grow: 1;
+    width: calc(100% - 24rem);
+    margin: 1rem;
+">
+  <!-- BEGIN Login Info and Tips -->
+  <div class="LoginWrapper LoginProgramWrapper">
+
+    <!-- BEGIN Login Info -->
+    <div class="LoginText">
+
+      <!-- BEGIN Program Info and Welcome -->
+      <div class="LoginWelcome" style="
+      /* color: #e0e6ee; */
+      ">
+
+      <!-- BEGIN Program Name and Logo -->
+      <div class="PageTitle">
+
+        <h1 style="
+        /* display: none; */
+        color: #2e6a9b;
+        /* color: #81B2D9; */
+        ">National Security Language Initiative for Youth (NSLI-Y) – Application</h1>
+
+
+
+      </div>
+    <div class="logos" style="
+    /* display: block; */
+    /* background: #fff; */
+    border-radius: 2px;
+    /* padding: .5rem 1rem; */
+    margin: 1rem 0;
+">        <img class="ProgramLogo" src="https://aisforms.s3.amazonaws.com/ais/NSLI-Y/NSLI-Y-logo_color_200w.png" alt="American Councils Logo" width="200" style="
+        /* display: inline; */
+        background:  #fff;
+        border-radius:  2px;
+        padding: .5rem;
+        /* float: none; */
+        margin: 0 1rem;
+        "></div>
+      <!-- END Program Name and Logo -->
+
+      <!-- BEGIN Use after application or forms close -->
+<!--
+<h2 class="AppClosed">Application Closed</h2>
+
+<p>The deadline for submitting an application to an American Councils has passed. If you submitted or started an application prior to the deadline, you can log in to view your application form.</p>
+-->
+<!-- END Use after application or forms close -->
+
+<!-- BEGIN Use while application or forms are open (live) -->
+
+<p style="/* font-size:  1.25em; */line-height: 1.5;max-width: 600px;margin-top: 0;">AIS Forms will connect you to online applications and other forms for programs administered by <span class="noWrap"><a href="http://www.americancouncils.org/" target="_blank" style="
+    color: #777;
+">American Councils</a>.</span> These can include scholarship applications, program registration forms, and other opportunities such as alumni grant requests.</p>
+
+<!-- END Use while application or forms are open (live) -->
+
+<!--BEGIN Program Info and Welcome Subcontent -->
+<div class="LoginWelcomeSubContent">
+
+  <p style="
+  font-size: 1.25em;
+  ">For information about <span class="noWrap">American Councils</span> programs, please visit <a href="http://www.americancouncils.org" target="_blank" style="
+    color: #777;
+">www.americancouncils.org</a>.</p>
+
+</div>
+<!--END Program Info and Welcome Subcontent -->
+
+</div>
+<!-- END Program Info and Welcome -->
+
+</div>
+<!-- END Login Info -->
+
+<!-- BEGIN Usage Tips -->
+
+<!-- END Usage Tips -->
+
+</div>
+<!-- END Login Info and Tips -->
+<div class="afterLoginPageNotice" style="
+    clear: both;
+"></div>
+</div>
+
+</div>
+
+<div class="TipsLogin" style="/* width: 80%; *//* color: black; *//* border-radius: 25px 0; */background: #cbd2d6;/* width: 450px; */padding: 1rem 6rem;/* margin-top: 2rem; */color: black;">
+
+<h3>Tips for Using this Website</h3>
+
+<!-- BEGIN Usage Tips Content -->
+<div class="TipsLoginContentWrapper">
+
+  <!-- BEGIN Usage Tips Content Left Column -->
+  <div class="TipsLoginContent left">
+
+    <p>
+      <b>Enable Cookies and JavaScript</b><br>
+      This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+    </p>
+
+    <p>
+      <b>Times Displayed on this Site</b><br>
+      Unless otherwise noted, all times displayed on this site are U.S. Eastern/Washington, D.C., time.
+    </p>
+
+    <p>
+      <b>Questions?</b><br>
+      Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+    </p>
+
+  </div>
+  <!-- END Usage Tips Content Left Column -->
+
+  <!-- BEGIN Usage Tips Content Right Column -->
+  <div class="TipsLoginContent">
+
+    <p>
+      <b>Allow Emails from AIS Forms</b><br>
+      All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this email address to your address book/approved senders list to help prevent messages from being blocked as spam or junk mail. </p>
+
+    </div>
+    <!-- END Usage Tips Content Right Column -->
+
+    <div class="clear"></div>
+
+  </div>
+  <!-- Usage Tips Content -->
+
+</div>
+<div class="IsNotLoggedIn" id="footer" style="
+    background: #33424d;
+    /* padding-left: 10rem; */
+    /* padding-right: 10rem; */
+">
+    <div id="footer2" style="
+    padding: 1rem 6rem;
+">
+        <div class="logo"></div>
+        <div class="AClogoAddressFooter" style="
+    color: white;
+">
+  <div id="AClogoFooter">
+    <img id="HomePage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
+    <img id="LoginPage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
+  </div>
+  <div class="ACaddressBlock" style="
+    color: white;
+">
+    <span class="contact1"><span class="street" style="
+    color: white;
+">1828 L St NW Ste 1200</span> <span class="state-zip">Washington DC 20036-5136</span> <span class="country">USA</span></span>
+    <span class="contact2"> <span class="telephone">tel: (+1) 202.833.7522</span> <span class="fax">fax: (+1) 202.833.7523</span> <span class="website"><span class="www">www:</span> <a href="http://www.americancouncils.org/" target="_blank" style="
+    color: rgb(232,235,217);
+">www.americancouncils.org</a></span></span>
+  </div>
+  <div class="legal">
+    <span class="copyright">© American Councils for International Education</span> <span class="rights-reserved">All rights reserved.</span>
+  </div>
+  <div class="policies">
+    <div id="PrivacyPolicy">
+            <a href="/cgi-bin/WebObjects/AIR.woa/wo/0.0.0.21.11">Privacy Policy</a>
+        </div>
+        <div id="CookieDeclaration">
+            <a href="/cgi-bin/WebObjects/AIR.woa/wo/0.0.0.21.13">Cookie Declaration</a>
+        </div>
+  </div>
+</div>
+    </div>
+  <div id="amagavi" style="
+    background: #33424d;
+    width: initial;
+    text-align: right;
+    padding:  0 10rem;
+">
+    <table style="
+    float: none;
+    display:  inline-block;
+"><tbody><tr><td class="logoCell"><a href="http://www.codivus.com/"><img width="28" height="25" src="/WebObjects/AIR1.woa/Contents/WebServerResources/amagavi/amagavi-butler-transBG.gif"></a></td>
+    <td class="byline"><span class="byline" style="
+    color: white;
+">Web development and hosting by <a href="http://www.codivus.com/">Codivus Corporation</a></span></td>
+    </tr></tbody></table>
+  </div>
+</div>
+</body>
+</html>
