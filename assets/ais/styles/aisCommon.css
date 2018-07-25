@@ -3095,6 +3095,8 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background: #ffa480;
   position: relative;
   padding-left: 5px;
+  float: right;
+  margin: 0 .125rem 0 0;
 }
 .FormTrackerReport .FlaggedCount::before,
 .FormTrackerReport .FlaggedCount::after {
@@ -3124,6 +3126,8 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background: #8fc785;
   border-radius: 50%;
   vertical-align: middle;
+  float: right;
+  margin: 0 .125rem 0 0;
 }
 .FormTrackerReport .Clean::before {
   content: '';
@@ -3182,6 +3186,9 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 .FormTrackerReport .isLate {
   color: #981727;
   font-size: .875rem;
+  float: left;
+  padding: 0 .25rem;
+  line-height: 24px;
 }
 .FormTrackerReport .isMissing {
   padding-left: 16px;
