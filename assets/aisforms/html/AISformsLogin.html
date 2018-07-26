@@ -5,24 +5,27 @@
   </head>
 <body class="IsNotLoggedIn">
   <div class="header">
-    <img alt="American Councils Logo" id="logo" src="https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png" width="200">
-  </div>
-  <div class="main">
-  <div class="LoginForms">
-    <div id="loginHeading">
-    <img id="aisLogo" alt="AIS Logo" src="https://aisforms.s3.amazonaws.com/ais/common/AISformsLogo_top.svg">
-    <div class="actions" style="
-    float: right;
-    color: #cbd2d7;
-    text-align: center;
-    margin-top: -2.25rem;
-    padding-bottom: 2rem;
-    color: white;
-"><span style="
-    margin-right: 1.5rem;
-    font-size: 1.5rem;
-">Sign in</span></div>
+    <div class="wrapper">
+      <img alt="American Councils Logo" id="AClogo" src="https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png" width="200">
     </div>
+  </div>
+  <div class="wrapper">
+    <div class="main">
+      <div class="LoginForms">
+        <div id="loginHeading">
+        <img id="aisLogo" alt="AIS Logo" src="https://aisforms.s3.amazonaws.com/ais/common/AISformsLogo_top.svg">
+          <div class="actions" style="
+            float: right;
+            color: #cbd2d7;
+            text-align: center;
+            margin-top: -2.25rem;
+            padding-bottom: 2rem;
+            color: white;
+        "><span style="
+            margin-right: 1.5rem;
+            font-size: 1.5rem;
+        ">Sign in</span></div>
+            </div>
 
   <form name="loginForm" method="post" id="LoginForm" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin" style="
     margin: 0;
@@ -162,14 +165,7 @@
   <input type="hidden" name="brand" value="general">
 </form>
 </div>
-  <div class="CustomContent" style="
-    background: #33424d;
-    background:  white;
-    flex-basis: 500px;
-    flex-grow: 1;
-    width: calc(100% - 24rem);
-    margin: 1rem;
-">
+  <div class="CustomContent">
   <!-- BEGIN Login Info and Tips -->
   <div class="LoginWrapper LoginProgramWrapper">
 
@@ -240,6 +236,7 @@
 </div>
 <!-- END Program Info and Welcome -->
 
+</div>
 </div>
 <!-- END Login Info -->
 

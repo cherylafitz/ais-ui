@@ -460,21 +460,7 @@ body table#login tr.LoginActions span.ForgotPassword {
 	padding: 0;
 	font-size: .8em;
 }
-div.LoginOrNewAccount div.CustomContent {
-	padding: 0 2em 0 0;
-	margin-right: 0;
-}
-.LoginWrapper {
-    margin: 1em 400px 1em 3em;
-    background-color: #EDF2DE;
-    padding: 1em;
-	border: 1px solid #e6e6e6;
-}
-.LoginWrapper.LoginProgramWrapper {
-	background-color: transparent;
-    margin: 1em;
-	border: 0;
-}
+
 .LoginWrapper.LoginProgramWrapper  .TipsLogin {
 	background-color: #EFF1E4;
 	border: 1px solid #e6e6e6;
@@ -488,9 +474,6 @@ div.LoginOrNewAccount div.CustomContent {
 	-moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.40);
 	box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.40);
 } */
-.LoginWrapper.LoginProgramWrapper .LoginWelcome {
-	margin: -2em 0 0;
-}
 .LoginWrapper.LoginProgramWrapper .LoginWelcome img {
 	padding: 0 1.5em 1em .5em;
 	float: right;
@@ -504,10 +487,7 @@ div.LoginOrNewAccount div.CustomContent {
 	padding-top: 0;
 	/* padding-bottom: .5em; */
 }
-.LoginText {
-	margin: 1em 20px 1em 2em;
-	text-align: left;
-}
+
 .AClogo {
 	margin: 0 auto;
 	max-width: 400px;
@@ -529,20 +509,8 @@ a img {
 input#Username, input#Password {
     width: 15em;
 }
-.LoginWelcome {
-	clear: none;
-	margin: 0;
-	min-height: 170px;
-}
 
-.LoginWelcome .PageTitle h1 {
-	color: #2E6B9B;
-	font-weight: normal;
-	font-size: 1.5em;
-	clear: none;
-	font-variant: normal;
-	margin-bottom: .5em;
-}
+
 .LoginWelcome h2 {
 	text-align: left;
 }
@@ -2976,6 +2944,10 @@ div.Main .SharedPeople { }
   padding: 1rem 1rem 1rem 6rem;
   background: #33424d;
 }
+.IsNotLoggedIn .wrapper {
+  max-width: 1100px;
+  padding: 1rem;
+}
 .IsNotLoggedIn .main {
   padding: 2rem 6rem;
   display: flex;
@@ -2987,11 +2959,6 @@ div.Main .SharedPeople { }
   font-family: sans-serif;
   flex-wrap: wrap;
   text-align: center;
-}
-.IsNotLoggedIn .LoginForms {
-  margin: 1rem;
-  float: none;
-  clear: none;
 }
 .IsNotLoggedIn #loginHeading {
   background: #29353d;
@@ -3015,6 +2982,19 @@ div.Main .SharedPeople { }
 .IsNotLoggedIn #CreateAccount {
   padding: 0;
   background: #e0e6ee;
+}
+.IsNotLoggedIn .LoginText {
+  text-align: left;
+}
+.IsNotLoggedIn .CustomContent {
+  flex-basis: 500px;
+  flex-grow: 1;
+  margin-right: 1rem;
+}
+.IsNotLoggedIn .LoginWelcome .PageTitle h1 {
+  color: #2e6a9b;
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 /* <-- PAGE: LOGIN */
