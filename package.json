@@ -1,0 +1,23 @@
+{
+  "name": "ais-ui",
+  "version": "1.0.0",
+  "description": "This is a repository for styles, html snippets, and assets for the front end development of AIS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cherylafitz/ais-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cherylafitz/ais-ui/issues"
+  },
+  "homepage": "https://github.com/cherylafitz/ais-ui#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
+}

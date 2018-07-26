@@ -403,7 +403,7 @@ body .divider {
   padding-top: .5rem;
   width: 360px;
   vertical-align: top;
-  background-position: 0;
+  background-position: 0 .25rem;
 }
 .topNavInTable td.nameBlock > div {
   margin-left: 90px;
@@ -717,16 +717,19 @@ input {
 
 #contentPageProportional table.RowDisplay,
 #contentPageProportional tr.headerRow,
-#contentPageProportionaltr.headerRow,
+#contentPageProportional thead tr,
 #contentPageProportional tr.headerRow th a,
+#contentPageProportional thead tr th a,
 table.report th,
 table.TravelVendorExplanation tr.headerRow th,
+table.TravelVendorExplanation thead tr th,
 div.DescribeColumns table.ColumnDescriptions tr.Titles {
   background-color: #cdd3ab;
   color: #000;
   font-style: normal;
 }
-#contentPageProportional #ApplicationSearchForm tr.headerRow {
+#contentPageProportional #ApplicationSearchForm tr.headerRow,
+#contentPageProportional #ApplicationSearchForm thead tr {
   background-color: transparent;
 }
 #contentPageProportional table.RowDisplay {
@@ -872,7 +875,8 @@ div.PlacementReportSearch table.PlacementReportDisplay tr.section td {
   padding: .5rem;
   border-top: none;
 }
-table.PlacementReportDisplay table.siblings tr.headerRow {
+table.PlacementReportDisplay table.siblings tr.headerRow,
+table.PlacementReportDisplay table.siblings thead tr {
   background-color: #fff;
   color: #000;
   border: 1px solid #cecece;
@@ -1419,7 +1423,7 @@ fieldset.Section table.rolodex > tbody > tr > td {
 }
 
 #alumnusSummary table.RowDisplay tr.headerRow,
-/*table.RowDisplay tr.totalsRow,*/
+#alumnusSummary table.RowDisplay thead tr,
 #alumnusSummary table.RowDisplay tr th,
 div#alumnusSummary table.CountryRelationships tr th,
 div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
@@ -1428,6 +1432,7 @@ div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
 }
 #alumnusSummary table.RowDisplay td,
 #alumnusSummary table.RowDisplay tr.headerRow th,
+#alumnusSummary table.RowDisplay thead tr th,
 #alumnusSummary table.RowDisplay tr th,
 div#alumnusSummary table.AlternateContacts tr th,
 div#alumnusSummary table.AlternateContacts tr td  {
@@ -1709,11 +1714,13 @@ div.AIRAdminSearchForApplications table.Search.rolodex {
   border: 1px solid #FFD590;
 }
 table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
 table.RowDisplay td,
 table.report td,
 table.TravelVendorExplanation tr td,
 table.report th,
 table.TravelVendorExplanation tr.headerRow th,
+table.TravelVendorExplanation thead tr th,
 table.TravelInboundDisplay th,
 table.TravelInboundDisplay td,
 table.TravelOutboundDisplay th,
@@ -1740,13 +1747,16 @@ td input {
   font-size: .875rem;
 }
 table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
 table.report th,
 table.TravelVendorExplanation tr.headerRow th,
+table.TravelVendorExplanation thead tr th,
 table.TravelInboundDisplay th,
 table.TravelOutboundDisplay th {
   padding: .25rem .325rem .25rem;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay thead tr th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
   max-width: 200px;
   text-overflow: ellipsis;
@@ -1754,26 +1764,31 @@ div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
   white-space: nowrap;
 }
 div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay thead tr th,
 div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
   max-width: 1200px;
 }
-table.RowDisplay tr.headerRow {
+table.RowDisplay tr.headerRow,
+table.RowDisplay thead tr {
   font-style: normal;
   font-size: 1rem;
 }
 table.RowDisplay tr.headerRow th a,
+table.RowDisplay thead tr th a,
 table.RowDisplay td a {
   color: #000000;
   text-decoration: underline;
   border-bottom: none;
 }
 table.RowDisplay tr.headerRow th a:hover,
+table.RowDisplay thead tr th a:hover,
 table.RowDisplay td a:hover {
   text-decoration: none;
   border-bottom: none;
   color: #C75D48;
 }
 table.RowDisplay tr.headerRow th a:active,
+table.RowDisplay thead tr th a:active,
 table.RowDisplay td a:active {
   color: #73382C;
 }
@@ -2070,7 +2085,8 @@ form.FilterForm table.filter caption {
   text-align: left;
 }
 
-#contentPageProportional .HealthQueueDisplayForPIPY .filter tr.headerRow {
+#contentPageProportional .HealthQueueDisplayForPIPY .filter tr.headerRow,
+#contentPageProportional .HealthQueueDisplayForPIPY .filter thead tr {
   background-color: transparent;
   font-size: .875rem;
 }
@@ -2671,7 +2687,8 @@ div.sectionDivider span.SearchButtonWrapper ~ span {
   margin: 0 -.375rem 0 -.75rem;
   border-bottom: 5px solid #415467;
 }
-.embedded tr.headerRow th {
+.embedded tr.headerRow th,
+.embedded thead tr th {
   text-align: left;
 }
 /* <-- PAGE: APPLICATION SEARCH */
@@ -2706,7 +2723,8 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 
 /* PAGE: DOWNLOADS --> */
 
-#DownloadsID .headerRow {
+#DownloadsID .headerRow,
+#DownloadsID thead tr {
   margin: 0 0 .5rem 0;
   background-color: transparent;
   color: black;
@@ -3075,10 +3093,11 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   line-height: 24px;
   font-size: 1rem;
   border-radius: 50%;
-  background: #c81e32;
-  background: #FF9970;
+  background: #ffa480;
   position: relative;
   padding-left: 5px;
+  float: right;
+  margin: 0 .125rem 0 0;
 }
 .FormTrackerReport .FlaggedCount::before,
 .FormTrackerReport .FlaggedCount::after {
@@ -3105,10 +3124,11 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   height: 24px;
   position: relative;
   display: inline-block;
-  /*margin-right: .25rem;*/
   background: #8fc785;
   border-radius: 50%;
   vertical-align: middle;
+  float: right;
+  margin: 0 .125rem 0 0;
 }
 .FormTrackerReport .Clean::before {
   content: '';
@@ -3127,7 +3147,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   height: 24px;
   position: relative;
   display: inline-block;
-  background: #f6b844;
   background: #f8c76d;
   border-radius: 50%;
   vertical-align: middle;
@@ -3168,6 +3187,9 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 .FormTrackerReport .isLate {
   color: #981727;
   font-size: .875rem;
+  float: left;
+  padding: 0 .25rem;
+  line-height: 24px;
 }
 .FormTrackerReport .isMissing {
   padding-left: 16px;
@@ -3394,19 +3416,21 @@ body > #priorPage a {
 /* <- text-size classes */
 
 /* flexbox --> */
-.HomePageForAll #FlexBoxedItems
-  {
-    display: flex; /* or inline-flex */
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* nowrap */
-    justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
-  }
+div.HomePageForAll div#FlexBoxedItems {
+  display: flex; /* or inline-flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* nowrap */
+  justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
+  margin-right: -1rem;
+}
 
-.HomePageForAll #FlexBoxedItems fieldset {
-  min-width: 30%;
-  flex-grow: 0;
+div.HomePageForAll div#FlexBoxedItems fieldset {
+  flex-basis: auto;
+  flex-grow: 1;
+  min-width: initial;
+  margin-right: 1rem;
 }
 /* <-- flexbox */
 

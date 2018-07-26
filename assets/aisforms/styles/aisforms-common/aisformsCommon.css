@@ -1,0 +1,2993 @@
+@charset "UTF-8";
+
+div#PrivacyPolicy,
+div#CookieDeclaration {
+  display: none;
+}
+
+/* ADD THIS SUMMER!! -->
+
+#TopMenu a:hover, .menu a:hover, .menu a:active, #TopMenu a:active {
+    background: #EEF5F8;
+    box-shadow: none;
+    border: none;
+    color: #000;
+    : 1px solid #444;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+
+WORK WITH MARCO TO ADD IDs TO PAGES TO ALLOW ME TO IMITATE TAB VISUALIZATION??? NEED TO CONSIDER HOW IT WILL LOOK ON NON-MAIN PAGES
+
+<--ADD THIS SUMMER!!
+ */
+/* MAIN STRUCTURE--> */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-size: 100%;
+}
+input[type="button"]::-moz-focus-inner {
+	outline: 0;
+}
+input[type="radio"]:focus,
+a:focus,
+input:focus,
+textarea:focus,
+input::-moz-focus-inner {
+	outline: 1px solid #cecece;
+}
+body {
+	background-repeat: repeat-x;
+	color: #222222;
+	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	width: 100%;
+	background-color: #e0e6eb;
+	min-height:100%;
+}
+div.Content {
+	margin: 0 0 0 0;
+	padding: 1.5em 1.2em;
+	position: relative;
+	background-color: transparent;
+}
+.Content:after {
+	content: " ";
+	display: block;
+}
+.Content p {
+	margin: .7em 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+}
+
+/*<--MAIN STRUCTURE */
+/* To Overwrite Amagavi CSS--> */
+#DisplayGroupUpdateContainerID .fromToWrapper ,
+#DisplayGroupUpdateContainerID .batchNavigation,
+#DisplayGroupUpdateContainerID .findDeadlinesWrapper {
+	display: initial;
+}
+/* <--To Overwrite Amagavi CSS */
+/* LIST OF SECTIONS--> */
+div.Content div.Rowdisplay {
+	margin: 0 auto;
+}
+.SectionDisplay {
+	background-color: #fff;
+	padding: 2em;
+	margin: 1.2em auto .5em auto;
+	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.40);
+	-moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.40);
+	box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.40);
+	border: 1px solid #C7C7C7;
+	text-align: left;
+	max-width: 950px;
+}
+.SectionItemsList {
+  border-bottom: 1px double #cecece;
+  padding-bottom: .5em;
+}
+#pageHeader .ApplicationRefCode {
+	font-weight: bold;
+}
+#pageHeader .ApplicationRefCode:before {
+	content: "Reference Code: ";
+	font-weight: normal;
+}
+#pageHeader .ApplicationRefCode:after {
+	content: ",";
+}
+/* <--LIST OF SECTIONS */
+/* HEADER--> */
+#Header {
+	padding: .5em 1em 3em 1em;
+	background-color: #33424d;
+	height: .7em;
+	z-index: 11;
+	border-bottom: 0.15em solid #444;
+}
+/*NAV-->*/
+#TopMenu a,
+.menu a {
+	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-size: .9em;
+	width: 10%;
+	min-width: 20px;
+	float: left;
+	text-align: center;
+	background: #B7E0EA; /* Old browsers */
+	background: -moz-linear-gradient(top,  #B7E0EA 20%, #88A6AE 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(122,210,239,1)), color-stop(50%,rgba(151,217,237,1)), color-stop(100%,rgba(122,210,239,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #B7E0EA 20%, #88A6AE 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #B7E0EA 20%, #88A6AE 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #B7E0EA 20%, #88A6AE 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #B7E0EA 20%, #88A6AE 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B7E0EA', endColorstr='#88A6AE',GradientType=0 ); /* IE6-9 */
+	font-weight: normal;
+	padding: .1em 0 .1em 0;
+	margin: 0 .2em 0 0;
+	color: #222;
+	-webkit-box-shadow: 0 0 4px 0 rgba(50, 50, 50, 0.30);
+	-moz-box-shadow:    0 0 4px 0 rgba(50, 50, 50, 0.30);
+	box-shadow:         0 0 4px 0 rgba(50, 50, 50, 0.30);
+	border: 1px solid #437686;
+}
+#TopMenu a:hover,
+.menu a:hover,
+.menu a:active,
+#TopMenu a:active {
+	background: #4c8c9e;
+}
+.menu a:active,
+#TopMenu a:active {
+	background-color: #437686;
+	color: #F2F2F2;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:    none;
+	box-shadow:         none;
+}
+#TopMenu {
+	background-color: transparent;
+	height: 1.2em;
+	padding: 0 0 0 0;
+	position: relative;
+	z-index: 12;
+	margin-top: -.8em;
+	margin-right: 8em;
+	margin-right: 8%;
+	margin-left: 15%;
+}
+/* <--NAV */
+#Header .UserNameBlock .Username .userIsAdministrator,
+#Header .UserNameBlock .Username,
+#Header .UserNameBlock .Username .userIsStaff  {
+	color: #FFD590;
+	text-shadow:1px 1px 1px #222222;
+}
+#Header .UserNameBlock {
+    right: 1.5em;
+    top: 0.4em;
+    font-style: normal;
+    color: #FFF;
+	text-shadow: 1px 1px 1px #222;
+}
+#Header .UserNameBlock select {
+	max-width: 150px;
+}
+#Header .UserNameBlock,
+#Header #serverInfo,
+#Header #buildAndInstance {
+	position: absolute;
+	text-align: right;
+	background-color: transparent;
+}
+#Header #serverInfo,
+#Header #buildAndInstance .build,
+#Header #buildAndInstance .brand,
+#Header #buildAndInstance .instance {
+	color: #e6e6e6;
+	font-size:0.6em;
+	right: 1.5em;
+	font-style: normal;
+}
+#Header #buildAndInstance  .instance {
+	color: #999;
+}
+.brand .name:after {
+	content: " |";
+	color: #FFD590;
+	font-size: 1.1em;
+}
+#Header #serverInfo {
+	top: 3.75em;
+	right: 1.8em;
+}
+#Header #buildAndInstance {
+	top: 1.97em;
+	line-height: 100%;
+	margin-bottom: 0.2em;
+	right: 17.5em;
+}
+#Header.IsLoggedIn #buildAndInstance .build {
+	display: none;
+}
+.instance {
+	margin-bottom: .4em;
+}
+#Header .Title {
+  width: 12%;
+  float: left;
+  background-color: #29353d;
+  margin: -.35em .75em 0 -1em;
+  background-image: url('../../../ais/common/AISformsLogo_flat.svg');
+  background-image: url('../../../ais/common/AISformsLogo_flat.png')\9;
+  background-repeat: no-repeat;
+  background-position: 8px 20px;
+  -webkit-box-shadow: 0 0 4px 0 rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0 0 4px 0 rgba(50, 50, 50, 0.3);
+  box-shadow: 0 0 4px 0 rgba(50, 50, 50, 0.3);
+  padding: .375em .75em;
+  font-size: 2em;
+  min-width: 200px;
+  height: 70px;
+  background-position: .5em;
+  background-size: 94%;
+}
+#Header .LoginLogoutLink {
+	clear: both;
+	padding: 0;
+	position: absolute;
+	top: 3.4em;
+	right: 1em;
+	-webkit-box-shadow: 0 0 4px 0 rgba(50, 50, 50, 0.30);
+	-moz-box-shadow:    0 0 4px 0 rgba(50, 50, 50, 0.30);
+	box-shadow:         0 0 4px 0 rgba(50, 50, 50, 0.30);
+}
+#Header .LoginLogoutLink a {
+	display: block;
+	text-align: center;
+	color: #FFD590;
+	font-weight: normal;
+	padding: .4em .5em;
+	background-color: #29353d ;
+	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-size: 0.8em;
+}
+#Header .LoginLogoutLink a:hover,
+#Header .LoginLogoutLink a:active {
+	background-color: #AAE8FF;
+	color: #222222;
+	text-shadow:0px 0 #222222;
+}
+/* <--HEADER */
+/* TITLES-->*/
+.Content h1 {
+	font-size: 1.5em;
+	font-variant: small-caps;
+	color: #2a353d;
+	font-weight: normal;
+	clear: both;
+	text-align: center;
+	line-height: 1.5em;
+}
+div.SectionsRowDisplay h1 {
+	margin-bottom: .25em;
+}
+.Content .SectionDisplay h1 {
+	text-align: left;
+}
+.Content h2 {
+	font-size: 1.2em;
+	/* padding-bottom: .2em; */
+	text-align: center;
+}
+h2, h3, h4, h5, h6, h7 {
+	margin-top: .6em;
+	margin-bottom: .4em;
+	color: #33424d;
+	line-height: 1.2em;
+}
+a.LinkToPreviousPage {
+	margin-right: 2em;
+	margin-top: -2em;
+}
+/*<--TITLES*/
+/* LOGIN-->*/
+body.IsNotLoggedIn {
+	background-color: #EEF5F8;
+}
+body.IsNotLoggedIn .Content {
+	-webkit-box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25);
+	-moz-box-shadow:    0 30px 30px 0 rgba(62, 62, 62, .25);
+	box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25);
+	border-right: 1px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	background-color: #fff;
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto 0 auto;
+	padding: 1em;
+	z-index: 2;
+}
+#Header.IsNotLoggedIn #buildAndInstance {
+	display: none;
+}
+#Header.IsNotLoggedIn {
+	width: 90%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 1em 1em 0;
+	border-top: none;
+	border-bottom: none;
+	border-right: 1px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	-webkit-box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25), 0 -80px 30px 0 rgba(62, 62, 62, .25);
+	-moz-box-shadow:    0 30px 30px 0 rgba(62, 62, 62, .25), 0 -80px 30px 0 rgba(62, 62, 62, .25);
+	box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25), 0 -80px 30px 0 rgba(62, 62, 62, .25);
+	z-index: 1;
+	height:  100px;
+	color: #fff;
+	background-color: #fff;
+}
+#Header.IsLoggedIn #LoginHeader,
+#Header.IsLoggedIn img#headerbg {
+	display: none;
+}
+#Header.IsNotLoggedIn #LoginHeader {
+	max-width: 700px;
+	margin: 0 auto;
+}
+#Header.IsNotLoggedIn img#headerbg.mobile {
+	display: none;
+}
+#Header.IsNotLoggedIn #logo {
+	float: none;
+	margin: 0 auto;
+	display: inherit;
+	width: 50%;
+}
+#Header.IsNotLoggedIn .Title {
+	display: none;
+}
+#footer.IsNotLoggedIn {
+  background-color: #FFF;
+	background: #fff;
+  width: 90%;
+  max-width: 1100px;
+  margin: -1em auto -2em auto;
+  padding: 1rem 1rem 2rem;
+	border-top: none;
+	border-bottom: none;
+	border-right: 1px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	-webkit-box-shadow: 0 40px 30px 0 rgba(62, 62, 62, .25);
+	-moz-box-shadow:    0 40px 30px 0 rgba(62, 62, 62, .25);
+	box-shadow: 0 40px 30px 0 rgba(62, 62, 62, .25);
+  z-index: 3;
+}
+#footer.IsNotLoggedIn  div#footer2,
+.IsNotLoggedIn #amagavi {
+	color: #777;
+}
+#footer.IsNotLoggedIn img#HomePage {
+	display: none;
+}
+#footer.IsNotLoggedIn div#footer2 a {
+	color: #5A752D;
+}
+#footer.IsNotLoggedIn div#footer2 a:hover {
+	color: #FF7F67
+}
+#footer.IsLoggedIn #AClogoFooter img {
+	width: 250px;
+}
+#footer.IsLoggedIn img#LoginPage {
+	display: none;
+}
+div.LoginOrNewAccount div.Content {
+	padding-top: 0;
+}
+.InstructionsLogin {
+	font-style: italic;
+	padding-top: .5em;
+}
+.LoginWrapper.LoginProgramWrapper .LoginWelcome .PDFDownload {
+	margin: .5em 0;
+}
+.LoginWrapper.LoginProgramWrapper .LoginWelcome .PDFDownload img {
+	padding: 0 .5em 0 0;
+}
+input#Username:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: #fff;
+	background-image: none;
+	color: rgb(0, 0, 0);
+}
+#CreateAccountForm, #LoginForm {
+	background-color: #fff;
+	width: 320px;
+}
+#LoginForm {
+	margin-bottom: 20px;
+}
+table#CreateAccount tr.VerifyPassword th,
+#CaptchaExplanation {
+	padding-left: 1em;
+}
+tr.VerifyPassword th {
+	padding-left: 1em;
+}
+input.createAccount {
+	margin-bottom: .5em;
+}
+tr.UserName td  input{
+	margin-top: .5em;
+}
+table#login tr.UserName th,
+table#CreateAccount tr.UserName th {
+	padding-top: .5em;
+}
+tr.Username td {
+	padding-right: .5em;
+}
+tr.LoginActions td {
+	padding-bottom: .5em;
+}
+input#Login[type="submit"],
+input.RequestNewPassword[type="submit"] {
+	float: right;
+	margin-right: 1em;
+	font-size: 1em;
+}
+div.ResetPasswordInstructions {
+    max-width:550px;
+    margin:0 auto;
+    padding:0.5em 0 2em;
+}
+div.ResetPasswordNext {
+    color:#981727;
+}
+p.ResetPasswordAlert {
+    background-color:#FFFFDD;
+    color:#981727;
+    font-weight:bold;
+}
+body table#login tr.LoginActions span.ForgotPassword {
+	float: left;
+	margin-left: .5em;
+	padding: 0;
+	font-size: .8em;
+}
+div.LoginOrNewAccount div.CustomContent {
+	padding: 0 2em 0 0;
+	margin-right: 0;
+}
+.LoginWrapper {
+    margin: 1em 400px 1em 3em;
+    background-color: #EDF2DE;
+    padding: 1em;
+	border: 1px solid #e6e6e6;
+}
+.LoginWrapper.LoginProgramWrapper {
+	background-color: transparent;
+    margin: 1em;
+	border: 0;
+}
+.LoginWrapper.LoginProgramWrapper  .TipsLogin {
+	background-color: #EFF1E4;
+	border: 1px solid #e6e6e6;
+	max-width: 600px;
+    margin: 4em 400px 1em 2em;
+	padding: 0 1em 1em 2em;
+}
+/* .LoginWrapper.LoginProgramWrapper  .TipsLogin.CreateAccountemoved {
+	margin: 3em auto 0;
+	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.40);
+	-moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.40);
+	box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.40);
+} */
+.LoginWrapper.LoginProgramWrapper .LoginWelcome {
+	margin: -2em 0 0;
+}
+.LoginWrapper.LoginProgramWrapper .LoginWelcome img {
+	padding: 0 1.5em 1em .5em;
+	float: right;
+}
+.LoginWrapper.LoginProgramWrapper .LoginWelcome .HomeBanner img {
+	float: none;
+	padding-bottom: .5em;
+}
+.LoginWrapper.LoginProgramWrapper  .TipsLogin h3 {
+	border: none;
+	padding-top: 0;
+	/* padding-bottom: .5em; */
+}
+.LoginText {
+	margin: 1em 20px 1em 2em;
+	text-align: left;
+}
+.AClogo {
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 2em;
+}
+img {
+	max-width: 100%;
+}
+a img {
+	max-width: inherit;
+}
+
+.ValidationAndForms .LoginForms {
+	float: right;
+	clear: right;
+	margin: 0 3em 0 1em;
+	width: inherit;
+}
+input#Username, input#Password {
+    width: 15em;
+}
+.LoginWelcome {
+	clear: none;
+	margin: 0;
+	min-height: 170px;
+}
+
+.LoginWelcome .PageTitle h1 {
+	color: #2E6B9B;
+	font-weight: normal;
+	font-size: 1.5em;
+	clear: none;
+	font-variant: normal;
+	margin-bottom: .5em;
+}
+.LoginWelcome h2 {
+	text-align: left;
+}
+h2.AppClosed {
+	width: 10;
+	text-align: center;
+	border: 1px solid #DA2238;
+	display: table-cell;
+	padding: .2em .5em;
+}
+h2.PortalAlert {
+    color: #981727;
+    background-color: #FFFFDD;
+    font-size: 0.9em;
+    font-weight: normal;
+/*	width: 10; */
+	text-align: left;
+	border: 1px solid #DA2238;
+    border-radius: 1em;
+    display: table-cell;
+	padding: .2em .5em;
+    margin: 1em 0;
+    clear: both;
+}
+p.LoginWelcomeAlertText {
+    color: #981727 !important;
+    font-weight: bold;
+}
+.LoginWelcome .PageTitle h1 img {
+	padding-left: .4em;
+}
+.LoginGetStarted {
+	color: #fff;
+	float: right;
+	font-size: 0.9em;
+	background-image: url('https://ais.americancouncils.org/ais/common/GetStartedBlurb.png');
+	background-repeat: no-repeat;
+	height: 305px;
+	width: 249px;
+	margin: -1.5em -2.5em -1em -1em;
+	position: relative;
+}
+/* .LoginGetStarted.CreateAccountemoved {
+	background-image: url('https://ais.americancouncils.org/ais/common/GetStartedBlurb_horizontal.png');
+	height: 300px;
+	width: 250px;
+	float: right;
+	clear: right;
+	margin: -3em 3em;
+	padding: 0 1em 0 1.3em;
+} */
+.LoginGetStarted p {
+	margin: 85px 55px 10px 55px;
+}
+.LoginWelcome p {
+	color: #000;
+	font-size: 1em;
+	text-align: left;
+}
+.LoginGetStarted h2 {
+	color: #FFD590;
+	text-align: left;
+	margin: 10px 45px 10px 15px;
+	display: none;
+}
+/* VERIFY PASSWORD--> */
+div.ForgottenPassword,
+div.PasswordHasBeenSent {
+	max-width: 800px;
+	margin: 0 auto;
+	border: 5px solid #D3DDAC;
+	padding: 1em;
+}
+div.ForgottenPassword table#login {
+	border: none;
+}
+div.ForgottenPassword table#login tr.header th {
+	white-space: normal;
+	font-size: 1em;
+	text-align: left;
+	background-color: #fff;
+}
+/* <--LOGIN */
+/* GENERIC LOGIN WRAPPER--> */
+/* FORMS AND USERS SEARCH--> */
+#AirApplicationSearchFormID table.Search.rolodex,
+#UserSearch table.Search.rolodex {
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+	-moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
+	margin: 1em auto;
+	border-collapse: initial;
+}
+div.Content div.ListOfUsers td.IsLoggedIn {
+	color: #fff;
+	background-color: #5A752D;
+}
+div.Content div.AIRAdminSearchForApplications div.instructions {
+	font-size: .8em;
+	margin: 0 auto;
+	color: #999;
+}
+.applicationTemplateIsLive {
+	background-color: #FFE6BC;
+	padding: .1em .3em;
+}
+.OptionalPercentageTitle {
+	max-width: 26em;
+	white-space: normal;
+}
+/* <--FORMS AND USERS SEARCH */
+/* TABLES-->*/
+table,
+div.AIRAdminSearchForApplications form div#outerTableContainerID table.Search.rolodex,
+table.ChoiceCategories {
+	background-color: #fff;
+}
+table.RowDisplay {
+    border-collapse: collapse;
+}
+div.LoginOrNewAccount table, table.templates,
+div.MenuOfSections table,
+div.GroupedItem table {
+	background-color: transparent;
+}
+div.LoginOrNewAccount table {
+	margin-top: 1em;
+}
+table tr th,
+table tr td {
+	font-style: normal;
+	/* padding: .3em; */
+}
+div.CMSBatchNavigation table {
+	background-color: transparent;
+	margin-top: 1em;
+}
+div.CMSBatchNavigation td {
+	padding-left: .5em;
+}
+table.rolodex,
+div.CheckboxMatrix table {
+	background-color: transparent;
+}
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay,
+div.AIRAdminSearchForApplications table.Search.rolodex,
+div#TemplateListingContainer table.RowDisplay,
+.MenuRowDisplay .RowDisplay,
+div.AIRAdminSearchForApplicants table.RowDisplay,
+table.Rowdisplay.Deadlines,
+table.Rowdisplay.QueueList,
+div#DisplayGroupUpdateContainerID table.RowDisplay,
+div#SessionDisplay table.rolodex,
+div.EvaluationQueueList table.QueueList,
+table.ChoiceCategories,
+form table.RowDisplay,
+div.EvaluationQueueDisplay table.rolodex,
+table.RowDisplay,
+div.generateReportsWrapper {
+/*	-webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.30);
+	-moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.30);
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.30);*/
+	margin: 1em auto;
+	border: 1px solid #A7A7A7;
+}
+div.generateReportsWrapper {
+background: #ffffff;
+}
+table#login,
+table#CreateAccount {
+	margin: .1em 0;
+	padding: 0.5em;
+  border: 1px solid #cecece;
+}
+table.PageCommands {
+	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
+	-moz-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
+	box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
+	margin: 0 auto;
+	padding: 0.5em;
+	border: 1px solid #c7c7c7;
+}
+table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+2),
+table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+3) {
+	background-color: transparent;
+}
+table.PageCommands tr td,
+table.PageCommands tr th {
+	padding: .5em;
+}
+div.SectionEditor, table.Choices.RowDisplay {
+	margin: 1em 0;
+}
+tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td.ERXMatrixTableCell {
+	background-color: #ffffff;
+	font-size: .95em;
+	white-space: normal;
+	max-width: 450px;
+}
+td.noTableBordersBelowMe table.RowDisplay {
+	margin: 0;
+}
+tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td  {
+	background-color: #fff;
+}
+.M-sp-d-cc-sp-Y {
+  max-width: 7em;
+}
+
+table.Search,
+div.AIRAdminSearchForApplications table.Search.rolodex {
+	border-left: .6em solid #fff;
+	border: 1px solid #FFD590;
+}
+table.RowDisplay tr.headerRow th,
+table.RowDisplay td {
+	font-size: .9em;
+	white-space: nowrap;
+	padding: 0.3em 0.3em;
+	border: 0.1em solid #fff;
+	text-align: left;
+	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-weight: normal;
+}
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
+	max-width: 200px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.PlacedQuestions table.RowDisplay tr.headerRow th,
+.PlacedQuestions  table.RowDisplay td,
+table.RowDisplay.Data tr.headerRow th {
+	white-space: initial;
+}
+
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
+	max-width: 1200px;
+}
+table.RowDisplay tr.headerRow {
+	font-style: normal;
+	font-size: 1em;
+}
+table.RowDisplay tr.headerRow th a,
+table.RowDisplay td a {
+	color: #000000;
+	text-decoration: underline;
+	border-bottom: none;
+}
+
+table.RowDisplay tr.headerRow th a:hover,
+table.RowDisplay td a:hover {
+	text-decoration: none;
+	border-bottom: none;
+	color: #C75D48;
+}
+table.RowDisplay tr.headerRow th a:active,
+table.RowDisplay td a:active {
+	color: #73382C;
+}
+table.RowDisplay tr.headerRow,
+tr.headerRow, tr.headerRow th a {
+	background-color: #c3ca9b;
+	color: #000;
+}
+
+.ListOfForms table.RowDisplay tr.headerRow,
+.ListOfForms tr.headerRow, tr.headerRow th a {
+	background-color: #a5b069;
+}
+table a {
+	color: #222222;
+}
+table.RowDisplay tr:nth-child(2n+2),
+table.RowDisplay tbody tr:nth-child(2n+2) {
+	background-color: #E8EBD9;
+}
+table.RowDisplay tr:nth-child(2n+3),
+table.RowDisplay tbody tr:nth-child(2n+3) {
+	background-color: #F9FAF5;
+}
+table.RowDisplay tbody tr.submitted_odd,
+body table.Brands td.Active /* .submitted_odd, table.RowDisplay tr:nth-child(2n+3), table.RowDisplay tbody tr:nth-child(2n+3) */  {
+	color: #000;
+	background-color: #c3ca9b;
+}
+table.RowDisplay  tbody tr.submitted_even /* .submitted_even, table.RowDisplay tr:nth-child(2n+2), table.RowDisplay tbody tr:nth-child(2n+2) */ {
+	background-color: #d7dcbc;
+	color: #000;
+}
+table.RowDisplay tr.submitted_odd a:hover,
+.submitted_odd a:hover,
+table.RowDisplay tr.submitted_even a:hover,
+.submitted_even a:hover {
+	color: #A14C3A;
+	border-bottom: 1px solid #A14C3A;
+}
+tbody tr.sectionDivider {
+	background-color: transparent;
+	color: #222;
+	-moz-box-shadow: inset 0 8px 6px -6px #CDCDCD;
+	-webkit-box-shadow: inset 0 8px 6px -6px #CDCDCD;
+	box-shadow: inset 0 8px 6px -6px #CDCDCD;
+	color: #5D663C;
+}
+table.Search tbody tr.sectionDivider th {
+	padding-top: .7em;
+	font-style: normal;
+	font-variant: small-caps;
+	font-size: 1.2em;
+	border-bottom: none;
+}
+
+table.Search tr th {
+	border-bottom: none;
+}
+
+/* <--TABLES*/
+/* FORMS SEARCH RESULTS--> */
+.Content .ApplicantApplicationRowDisplay  table.RowDisplay td {
+	border: 0.1em solid #fff;
+}
+
+.ApplicantApplicationRowDisplay table.RowDisplay {
+	margin: 1em 0;
+}
+.PDFPrint,
+.searchResultActionLink {
+	/*float: left;*/
+  margin: 0 1em .5em 0;
+  border: none;
+  padding: 0 .5em;
+}
+/*.sendMassEmailWrapper {
+	clear: left;
+}*/
+.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
+	background-color: #e0e6ec;
+}
+/* <--FORMS SEARCH RESULTS */
+/* HOMEPAGE--> */
+.Greeting {
+	font-size: 1.5em;
+	text-align: center;
+	font-variant: small-caps;
+}
+div.Greeting span.Username {
+	font-variant: normal;
+	font-size: 0.7em;
+	color: #999;
+	display: none;
+}
+.welcomeWord:after {
+	content: ',';
+}
+.LiveTemplatesTitle,
+.UpcomingDeadlinesHeader,
+.RecentlyClosedTemplatesTitle   {
+	font-size: 1.2em;
+}
+table caption {
+	border: none;
+	background-color: transparent;
+	text-align: left;
+	padding-bottom: .5em;
+}
+.UpcomingDeadlinesHeader .showDeadlinesPage {
+	color: #999;
+}
+.LiveTemplates .paginatorContainer,
+.Deadlines .paginatorContainer {
+	display: none;
+}
+
+.LiveAcrossAllProgramsNotSpecificToLoggedInUserActivityStatus {
+	float: right;
+	padding-right: 0.5em;
+	font-size: .9em;
+}
+
+.LiveTemplates {
+	float: right;
+	clear: both;
+	/*border-left: 1px solid #cecece;*/
+	padding-left: 1.2em;
+	width: 86%;
+}
+div.FileInboxLink {
+	border-left: none;
+	width: 86%
+}
+.LiveTemplates table.RowDisplay {
+	margin: .5em 0;
+}
+th.TemplateName a.SortColumn,
+th.TemplateName div {
+	float: left;
+}
+th.TemplateName div {
+	margin-right: .5em;
+}
+.LiveTemplates table.RowDisplay td,
+.LiveTemplates table.RowDisplay tr.headerRow th {
+	white-space: normal;
+}
+.LiveTemplates table.RowDisplay tr.headerRow th,
+.Deadlines table.RowDisplay tr.headerRow th{
+	font-size: .9em;
+}
+.LiveTemplates table.RowDisplay tr.headerRow th.Available,
+.LiveTemplates table.RowDisplay tr.headerRow th.DeadlineToApply,
+.LiveTemplates table.RowDisplay tr.headerRow th.ExtendedDeadlineToApply,
+.LiveTemplates table.RowDisplay tr.headerRow th.StartedFormCount,
+.LiveTemplates table.RowDisplay tr.headerRow th.SubmittedFormCount {
+	width: 2.5em;
+}
+th.ProgramName,
+th.ProgramName input {
+	width: 6em;
+}
+th.ProgramYear,
+th.ProgramYear input {
+	width: 4em;
+}
+.LiveTemplates table.RowDisplay td.Available,
+.LiveTemplates table.RowDisplay td.DeadlineToApply,
+.LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
+	white-space: nowrap;
+}
+.infoIconOnRight .showHoverable.erxHoverArea:after {
+    right: -24px;
+    position: absolute;
+    top: 0;
+}
+.infoIconOnRight .showHoverable.erxHoverArea {
+margin-left: 0 !important;
+margin-right: 24px !important;
+}
+table.RowDisplay td.DeadlineToApply,
+table.RowDisplay td.Available {
+	font-size: .9em;
+}
+div.Main div.staffHome div.Deadlines {
+	width: 86%;
+	clear: both;
+	float: right;
+	padding: 1em 0 0 1.2em;
+	margin-bottom: 1.2em;
+}
+.Content table.Deadlines table.templates tr td.time {
+	width: 12em;
+}
+.staffHome h1 {
+	display: none;
+}
+.Content .AdminHomeLinks div {
+	/*text-align: center;*/
+	/*margin-bottom: .4em;*/
+/*	-webkit-box-shadow: -1px 1px 2px 0 rgba(100, 100, 100, 0.30);
+	-moz-box-shadow: -1px 1px 2px 0 rgba(100, 100, 100, 0.30);
+	box-shadow: -1px 1px 2px 0 rgba(100, 100, 100, 0.30);*/
+	/*background-color: #fff;*/
+	/*border: 1px solid #FFD590;*/
+}
+.Content .AdminHomeLinks div:hover {
+	/*background-color: #FFD590;*/
+	/*border: 1px solid #cecece;*/
+}
+.Content .AdminHomeLinks div:active {
+/*	-webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+	-moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+	box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);*/
+}
+.Content .AdminHomeLinks a {
+	font-size: .875em;
+	text-decoration: none;
+	border-bottom: none;
+	display: block;
+	padding: .125em .125em .25em;
+	text-align: left;
+	color: #296089;
+	margin: .125em 0;
+}
+/* .Content .AdminHomeLinks a:before  {
+	content: ">  ";
+	color: #FFB946;
+	font-size: 1.1em;
+	font-weight: bold;
+} */
+/*.Content .AdminHomeLinks a:hover:before {
+	color: #999;
+}
+.Content .AdminHomeLinks a:active:before  {
+	color: #222;
+}*/
+.Content .AdminHomeLinks a span.adminHomeLinksDescription,
+.Content .AdminHomeLinks a span.description {
+	font-size: .6em;
+}
+.Content .AdminHomeLinks a:hover,
+.Content .AdminHomeLinks a:active {
+	border-bottom: none;
+	color: #2a353d;
+	background-color: rgba(76,140,158, 0.1);
+}
+.Content .AdminHomeLinks {
+	width: 11%;
+  background: #ffffff;
+  padding: .5em;
+  border-radius: 2px;
+  border: 1px solid #a6ccd5;
+}
+.Content .AdminHomeLinks:after {
+	clear: both;
+}
+.Content div.AdminHomeLinks a.adminHomeLinksDescription {
+	font-size: .6em;
+}
+/* ADMIN VIEW ONLY-->*/
+/* CREATE USERS--> */
+.ERXTabPanel div.TabContent {
+	margin-top: 0;
+	border: 0.1em solid #CFCFCF;
+	padding: 1em;
+	background-color: #fff;
+}
+/* <--CREATE USERS */
+/* LIST OF QUESTIONS--> */
+.Content a.addQuestion {
+    padding-right: 0;
+    margin-right: 2.5em;
+}
+/* <--ADMIN VIEW ONLY*/
+/* APPLICANT HOMEPAGE--> */
+.InstructionsBadge {
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 4px double #999;
+	font-size: 1.2em;
+	color: #000;
+	padding: .3em .5em;
+	float: right;
+	margin-right: 1em;
+}
+
+div.MyForms h1,
+div.AvailableForms h1,
+div.MyEvaluationQueuesAsEvaluator h1 {
+	background-color: transparent;
+	border-bottom: 1px solid #777;
+	text-align: left;
+}
+table.PendingApplications td.Form,
+table.AvailablePrograms td.Form,
+table.SubmittedApplications td.Form {
+/* width: 15em; */
+white-space: normal;
+}
+.Explanation {
+	color: #777777;
+	font-style: italic;
+}
+.Noteworthy {
+	background-color: #FFF7EB;
+	padding: .5em;
+	border: 1px solid #e6e6e6;
+	clear: both;
+}
+
+div.Content PDFDownloadLinkWrapper:before {
+    content:'Download your form: ';
+}
+
+div.MyForms h1,
+div.MyForms h2,
+div.MyForms div,
+div.AvailableForms h1,
+div.AvailableForms h2,
+div.AvailableForms div,
+.MyEvaluationQueuesAsEvaluator h1,
+div.MyEvaluationQueuesAsEvaluator h1  {
+    padding-left: 0;
+}
+div.AvailableForms {
+    margin-top: 1em;
+}
+div.MyForms,
+div.AvailableForms,
+div.MyEvaluationQueuesAsEvaluator {
+	border: 0;
+	width: 77%;
+	float: left;
+}
+div.MyForms {
+	margin-top: 0;
+}
+div.MyForms table,
+div.AvailableForms table,
+div.MyEvaluationQueuesAsEvaluator table {
+	margin-left: 1.6em;
+}
+table.BrandTable {
+	border: 1px solid #cecece;
+	font-size: .9em;
+	width: 100%;
+}
+table.BrandTable  td,
+table.BrandTable  th {
+	border: 1px solid #cecece;
+}
+table.BrandTable  td {
+	vertical-align: top;
+}
+table.BrandTable th {
+	background-color: #2E6B9B;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+table.TemplateTable {
+	margin: 1em 1em 1em 0;
+}
+table.TemplateTable td.sideTH {
+	font-weight: bold;
+	background-color: #e6e6e6;
+}
+table.TemplateTable td ul {
+     list-style-type:circle;
+     padding-left:1.1em;
+}
+table.TemplateTable tr td,
+table.TemplateTable tr th {
+  border: 1px solid #999;
+  padding: .3em;
+}
+table.TemplateTable tr th {
+  background-color: #444;
+  color: #FFFFFF;
+  font-size: 1em;
+  text-align: center;
+}
+table.TemplateTable tr td {
+	font-size: 0.9em;
+	 text-align: left;
+}
+
+#UserHomeIntro ul#leftContent,
+#UserHomeIntro ul#rightContent,
+#UserHomeIntro #leftContent,
+#UserHomeIntro #rightContent,
+#UserHomeAfterFormsInfo ul#leftContent,
+#UserHomeAfterFormsInfo ul#rightContent,
+#UserHomeAfterFormsInfo #leftContent,
+#UserHomeAfterFormsInfo #rightContent {
+	width: 42%;
+	float: left;
+	margin-right: 2%;
+	font-size: .9em;
+	line-height: 1.5em;
+	margin-top: 0;
+}
+#UserHomeIntro h2,
+#UserHomeAfterFormsInfo h2 {
+	text-align: left;
+    clear: both;
+}
+.HomeProgramContent,
+.HomeProgramAfterContent {
+	width: 73%;
+	float: left;
+	padding: 1% 2% 2%;
+	background-color: #fff;
+	margin-right: 2%;
+	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.40);
+	-moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.40);
+	box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.40);
+}
+.HomeProgramAfterContent {
+    margin:2.5em 0 2.5em 0;
+}
+.HomeProgramSubContent,
+.LoginWelcomeSubContent {
+	font-size: .8em;
+}
+.HomeEvalContent,
+.HomeProgramContent_NoTips {
+	width: 95%;
+	float: none;
+	margin: 0 auto;
+		padding: 1% 2%;
+	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.40);
+	-moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.40);
+	box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.40);
+	background-color: #fff;
+}
+.ProgramInstructionsHeaders {
+	margin-top: 1em;
+}
+.ProgramLogoHome {
+	float: right;
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+.ProgramLogoHomeLeft {
+	float: left;
+    margin-right: 1em;
+	margin-bottom: .5em;
+}
+
+.ProgramLogo {
+	float: right;
+}
+.ProgramLogoLeft {
+	float: left !important;
+}
+.topImage {
+	float: right;
+}
+.bottomImage {
+	clear: right;
+	float: right;
+}
+.HomeProgramContent h1,
+.HomeProgramAfterContent h1 {
+	clear: none;
+	text-align: left;
+	color: #2E6B9B;
+}
+.HomeProgramContent h2,
+.HomeProgramAfterContent h2 {
+	text-align: left;
+}
+.Tips {
+	float: right;
+	font-size: 0.9em;
+	color: #ededed;
+	padding: 1em;
+	/* background-color: #999; */
+	background-color: #658296;
+	border: 1px solid #222;
+	width: 17%;
+	border-radius: 20px;
+	margin-bottom: 2em;
+}
+.TipsLoginContent {
+	width: 45%;
+	float: left;
+}
+.TipsLoginContent.left {
+	padding-right: 5%;
+}
+.TipsLogin {
+	font-size: .8em;
+	color: #777777;
+	margin: 1em auto 0 auto;
+	padding-left: 5%;
+}
+.Tips strong,
+.Tips h3 {
+	color: #fff;
+}
+.TipsLogin strong {
+	color: #222;
+}
+.Tips h3 {
+	color: #FFD590;
+	border-bottom: 1px solid #b1b1b1;
+	padding-bottom: 0.4em;
+	text-align: center;
+	margin-top: .5em;
+}
+.TipsLogin h3 {
+	color: #2E6B9B;
+	padding-top: 1em;
+	font-weight: normal;
+	font-size: 1.4em;
+	border-top: 1px solid #999;
+	width: 70%;
+}
+.Content .Tips a {
+	color: #E8EBD9;
+	border-bottom: 1px solid #E8EBD9;
+}
+.Content .Tips a:hover {
+	color: #FFA391;
+	border-bottom: 1px solid #FFA391;
+}
+span.aisEmail {
+	word-wrap: break-word;
+	font-weight: bold;
+}
+a.website {
+	word-wrap: break-word;
+}
+span.noBreak,
+span.noWrap {
+	white-space: nowrap;
+}
+.clear {
+	clear: left;
+}
+div.MyForms div {
+	padding-left: .5em;
+}
+
+
+/*EVALUATOR AND EVALUATION VIEW-->*/
+div.EvaluatorNSLIYAppilcations .Tips,
+div.EvaluatorCLS .Tips,
+div.EvaluatorFlagshipTurkish .Tips,
+div.EvaluatorFLEXAlumni .Tips,
+div.EvaluatorGYSD .Tips,
+div.EvaluatorTestUser .Tips,
+div.EvaluatorFlagshipRussian .Tips,
+div.EvaluatorFlagshipChinese .Tips,
+div.EvaluatorFlagshipArabic .Tips,
+div.EvaluatorYESAlumni .Tips,
+div.EvaluatorLFP .Tips,
+div.EvaluatorFlagshipPersian .Tips,
+div.EvaluatorFlagshipSwahili .Tips,
+div.EvaluatorFLEXAlumniGrant .Tips,
+div.EvaluatorFLEXAlumniGrantUkraine .Tips,
+div.EvaluatorNSLIYFieldScreening .Tips,
+div.Evaluator .Tips
+ {
+	display: none;
+}
+div.NoDisplayExceptEvaluatorCLS {
+	display: none;
+}
+div.EvaluatorCLS div.NoDisplayExceptEvaluatorCLS {
+    display: block;
+    font-size: 1.2em;
+    width: 80%;
+    margin: 1em auto;
+    text-align: center;
+	padding: 1% 2% 2%;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.40);
+	-moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.40);
+	box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.40);
+}
+div.EvaluatorNSLIYAppilcations .HomeProgramContent,
+div.EvaluatorCLS .HomeProgramContent,
+div.EvaluatorFlagshipTurkish .HomeProgramContent,
+div.EvaluatorFLEXAlumni .HomeProgramContent,
+div.EvaluatorGYSD .HomeProgramContent,
+div.EvaluatorTestUser .HomeProgramContent,
+div.EvaluatorFlagshipRussian .HomeProgramContent,
+div.EvaluatorFlagshipChinese .HomeProgramContent,
+div.EvaluatorFlagshipArabic .HomeProgramContent,
+div.EvaluatorYESAlumni .HomeProgramContent,
+div.EvaluatorLFP .HomeProgramContent,
+div.EvaluatorFlagshipPersian .HomeProgramContent,
+div.EvaluatorFlagshipSwahili .HomeProgramContent,
+div.EvaluatorFLEXAlumniGrant .HomeProgramContent,
+div.EvaluatorFLEXAlumniGrantUkraine .HomeProgramContent,
+div.EvaluatorNSLIYFieldScreening .HomeProgramContent,
+div.Evaluator .HomeProgramContent {
+	width: 95%;
+}
+div.MyEvaluationQueuesAsEvaluator div {
+	color: #c75d48;
+	padding-left: .5em;
+}
+div.MyForms fieldset div table {
+	margin: 0;
+}
+div.EvaluationQueueDisplay table.rolodex th {
+	background-color: #E8EBD9;
+}
+/*<--EVALUATOR AND EVALUATION VIEW*/
+/* EVALUATION QUEUE MANAGEMENT--> */
+
+.evaluatorManagement .ajaxTabbedPanelPanes {
+	margin: 0;
+}
+form table.RowDisplay.Evaluators,
+table.RowDisplay.Evaluators {
+	margin: 1em;
+}
+
+/* <--EVALUATION QUEUE MANAGEMENT */
+div#UserHomePage table.RowDisplay tr.headerRow th,
+div#UserHomePage table.RowDisplay td  {
+	font-size: 1em;
+	white-space: normal;
+}
+th.Deadline {
+	/* min-width: 103px; */
+}
+.HeaderDescription {
+	font-size: 0.6em;
+}
+/* <--HOMEPAGE */
+/* UserDisplay--> */
+div.Content div.UserDisplay table.rolodex .menu a {
+	width: 25%;
+}
+body div.UserDisplay table tr.MenuPreview td {
+border: 0;
+}
+/* <--UserDisplay */
+/* <--UserDisplay */
+/* <--UserDisplay */
+/* <--UserDisplay */
+/* TEMPLATES--> */
+div.AdminFormNav span.AdminEditSection,
+div.AdminFormNav span.AdminEditTemplate {
+    float: right;
+    padding-right: 1em;
+	padding-bottom: .5em;
+}
+div.MenuOfSections td.div.input {
+	background-color: #FFE3B5;
+	-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+padding: .1em .4em .1em .4em;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+div.ApplicationTemplateDisplay div.templateContent {
+position: relative;
+width: 100%;
+clear: both;
+}
+
+div#ApplicationTemplateDisplayAUC h1 {
+	font-variant: normal;
+	font-size: 1.3em;
+	margin: 0 auto .5em;
+	/* max-width: 950px; */
+}
+.AdminFormNav {
+	font-size: .875em;
+}
+.SectionDisplay h1 {
+	margin: .5em 0;
+}
+h1.FormViewHeader .TemplateName {
+	font-weight: bold;
+}
+h1.FormViewHeader :not(.TemplateName)
+ {
+	font-size: .9em;
+}
+h1.FormViewHeader .ProgramName {
+	font-weight: bold;
+}
+div#TemplateListingContainer table.RowDisplay td {
+	max-width: 500px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+input#SubmitForEvaluation, input#SubmitForEvaluation:hover {
+    font-size: 1.2em;
+    padding: 0.2em 0.5em;
+}
+/* <--TEMPLATES */
+/* TEMPLATE EDITOR--> */
+.SectionItemCustomization .QuestionText textarea {
+	max-width: 350px;
+}
+.QuestionCustomizer  input[type="submit"], input[type="button"] {
+	font-size: .8em;
+}
+table.RowDisplay td.SectionItemSequenceNumber + td {
+  max-width:5em;
+  white-space: normal;
+}
+#SectionItemsUpdateContainerID {
+	/* font-size: .9em; */
+}
+#SectionListUpdateContainer table.RowDisplay {
+	margin: 1em;
+}
+table.rolodex tr.ItemXMLTag th {
+  white-space: normal;
+  max-width: 10;
+}
+/* <--TEMPLATE EDITOR */
+/* DEADLINES--> */
+#DisplayGroupUpdateContainerID .findDeadlinesWrapper  {
+	max-width: 733px;
+	margin: 0 auto;
+	float: right;
+}
+#DisplayGroupUpdateContainerID {
+	max-width: 733px;
+	margin: 0 auto;
+}
+.QuestionRowDisplay #DisplayGroupUpdateContainerID {
+	max-width: initial;
+}
+table.RowDisplay.Deadlines tbody tr td {
+	white-space: normal;
+}
+/* <--DEADLINES */
+/* div.Content .MenuOfSections input  {
+	border : solid 1px #666;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	color : #ffffff;
+	padding : .1em .3em;
+	background : #7F8185;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7F8185), color-stop(100%,#666));
+	background : -moz-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : -webkit-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : -o-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : -ms-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : linear-gradient(top, #7F8185 0%, #666 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8185', endColorstr='#666',GradientType=0 );
+} */
+/* div.Content .MenuOfSections input:hover {
+	border : solid 1px #000000;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	color : #ffffff;
+	padding : .1em .3em;
+	background : #7F8185;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7F8185), color-stop(100%,#222));
+	background : -moz-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : -webkit-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : -o-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : -ms-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : linear-gradient(top, #7F8185 0%, #222 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8185', endColorstr='#222',GradientType=0 );
+} */
+div.Content .MenuOfSections input[type="button"]:disabled {
+/* 	background: #A5A7AA;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A5A7AA), color-stop(100%,#A5A7AA));
+	background : -moz-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
+	background : -webkit-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
+	background : -o-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
+	background : -ms-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
+	background : linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#A5A7AA', endColorstr='#A5A7AA',GradientType=0 );	 */
+}
+.MenuOfSections {
+	/* margin: .5em 0; */
+	vertical-align: middle;
+	max-width: 1050px;
+	/* margin: .5em auto; */
+}
+.MenuOfSections table {
+	margin: 0 auto;
+}
+.MenuOfSections select {
+	padding: 0.1em;
+	font-size: 1em;
+	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+}
+div.bottomButtons {
+	display: none;
+}
+div.SectionNavigator.vertical #menu3 a {
+	font-size: 0.84em;
+	display: block;
+	padding: 3px 8px;
+	border-bottom: 1px solid #FFF;
+}
+div.SectionNavigator.vertical #menu3 a:hover,
+div.SectionNavigator.vertical #menu3 li a.current {
+	padding-left: 5px;
+}
+div.SectionNavigator.vertical {
+	position: absolute;
+	-webkit-box-shadow: 0 0 4px 0 rgba(50, 50, 50, 0.30);
+	-moz-box-shadow:    0 0 4px 0 rgba(50, 50, 50, 0.30);
+	box-shadow:         0 0 4px 0 rgba(50, 50, 50, 0.30);
+	margin: 0;
+	background-color: #E8EBD9;
+	z-index: 999;
+}
+div#menu3 ul {
+	font: 100% 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+div#menu3 li, div#menu3 a {
+	background-color: transparent;
+}
+div.NextSectionNearSaveChanges {
+    display: inline-block;
+    float: right;
+	margin-top: .5em;
+}
+div.PreviousSectionNearSaveChanges {
+    display: inline-block;
+    margin: .5em 2em .5em 0;
+}
+.SectionNavigator div.SectionTitle div.SectionTitleText {
+	border-radius: 10px 10px 0 0;
+	background-color: #75824d;
+	color: #fff;
+	text-align: center;
+	padding: .3em;
+	font-variant: small-caps;
+	font-size: 1.5em;
+}
+.SectionNavigator input[type="button"],
+.PreviousSectionNearSaveChanges input[type="button"],
+.NextSectionNearSaveChanges input[type="button"] {
+	margin-top: .2em;
+	color: #444444;
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 42px;
+	background-position: 0 top;
+	border: 0;
+	color: transparent;
+	text-shadow: none;
+}
+.SectionNavigator .next input[type="button"],
+.SectionNavigator input[value="next >"],
+.NextSectionNearSaveChanges .next input[type="button"] {
+	background-image: url('https://ais.americancouncils.org/ais/common/NextArrow.png');
+}
+.SectionNavigator .previous input[type="button"],
+.SectionNavigator input[value="< previous"],
+.PreviousSectionNearSaveChanges .previous input[type="button"] {
+	background-image: url('https://ais.americancouncils.org/ais/common/BackArrow.png');
+	background-repeat: no-repeat;
+}
+
+.SectionNavigator input[type="button"]:hover,
+.PreviousSectionNearSaveChanges input[type="button"]:hover,
+.NextSectionNearSaveChanges input[type="button"]:hover {
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	border: 0;
+	color: transparent;
+	text-shadow: none;
+}
+.SectionNavigator input[type="button"]:active,
+.PreviousSectionNearSaveChanges input[type="button"]:active,
+.NextSectionNearSaveChanges input[type="button"]:active
+/* .SectionNavigator input[type="button"]:focus,
+.SectionNavigator input[type="button"]:focus  */ {
+	background-position: 0 bottom;
+}
+.SectionNavigator input[type="button"]:disabled,
+.PreviousSectionNearSaveChanges input[type="button"]:disabled,
+.NextSectionNearSaveChanges input[type="button"]:disabled,
+.SectionNavigator input[type="button"]:disabled {
+	opacity: .5;
+}
+.SectionNavigator .previous input[type="button"]:hover,
+.SectionNavigator input[value="< previous"]:hover {
+	background-image: url('https://ais.americancouncils.org/ais/common/BackArrow.png');
+}
+td input[type="text"],
+textarea,
+td input[type="password"] {
+	background-color: #fff;
+	border: 1px solid #C7C7C7;
+	-webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+	-moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+	box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
+	padding: 2px;
+	margin: 0 .5em;
+}
+select {
+	margin-bottom: .25em;
+}
+input[type="file"] {
+	border: none;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+input[type="submit"],
+input[type="button"]{
+	vertical-align: middle;
+	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	padding-bottom: .1em;
+	cursor: pointer;
+}
+select {
+	max-width: 100%;
+}
+input[type="submit"][value="Clear Filters"] {
+	border: 1px solid #999;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+input[type="submit"][value="Clear Filters"]:hover {
+	opacity: .7;
+}
+input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
+	border : solid 1px #222;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-shadow: 0 0 0 #222;
+	color : #ffffff;
+	padding : 0 .4em .1em .4em;
+	background : #7F8185;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7F8185), color-stop(100%,#666));
+	background : -moz-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : -webkit-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : -o-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : -ms-linear-gradient(top, #7F8185 0%, #666 100%);
+	background : linear-gradient(top, #7F8185 0%, #666 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8185', endColorstr='#666',GradientType=0 );
+}
+input.SaveChanges {
+	margin: 1.5em 0;
+}
+input#CannedSearch {
+	margin-left: .3em;
+}
+input[type="submit"]:hover:not([value="Clear Filters"]),
+input[type="button"]:hover {
+	border : solid 1px #000000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-shadow: 0 0 0 #222;
+	color : #ffffff;
+	padding : 0 .4em .1em .4em;
+	background : #7F8185;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7F8185), color-stop(100%,#222));
+	background : -moz-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : -webkit-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : -o-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : -ms-linear-gradient(top, #7F8185 0%, #222 100%);
+	background : linear-gradient(top, #7F8185 0%, #222 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8185', endColorstr='#222',GradientType=0 );
+}
+.BackToTopBookmark {
+	margin-top: 1em;
+}
+.NotifyReferenceButtonWrapper input[type="button"] {
+	padding: .2em;
+	margin: .5em;
+	font-size: 1em;
+}
+input[type="submit"]:disabled,
+input#SubmitForEvaluation[type="submit"]:disabled,
+input[type="button"]:disabled {
+	background: #cecece;
+	background-color: #cecece;
+	border: 1px solid #999;
+	cursor: default;
+}
+.previous input[type="button"]:disabled,
+.NextSection input[type="button"]:disabled {
+  background-color: transparent;
+  border: 0
+}
+.ReferenceNotified input[type="submit"]:disabled {
+	cursor: not-allowed;
+}
+div .Button {
+	border-bottom: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* TEMPORARILY HIDDEN FOR ALL FORMS UNTIL BUGS RESOLVED */
+.ShowAllSectionsAtOnce {
+	height: 35px;
+  display:none !important;
+}
+div.templateContent div.ShowAllSectionsAtOnce > input,
+input.ShowAllSectionsAtOnce[type="submit"],
+input[type="submit"][value="Show All Sections at Once"]:hover,
+input[type="submit"][value="Show Each Section Individually"],
+input[type="submit"][value="Show Each Section Individually"]:hover {
+  margin: 0.6em auto;
+	background: #fff;
+	border-color: #777;
+	color: #444444;
+	text-shadow: none;
+	height: 25px;
+	display: block;
+	font-size: .9em;
+}
+input[type="submit"][value="Show All Sections at Once"]:hover,
+input[type="submit"][value="Show Each Section Individually"]:hover {
+	background: #FAFBF7;
+	color: #000;
+}
+input[type="submit"][value="Show Each Section Individually"] {
+	background: #FAFCFD;
+	}
+
+input[value="Show All Sections at Once"] {
+	background: transparent;
+}
+
+
+input#CannedSearch {
+	margin-left: .5em;
+}
+#outerTableContainerID {
+	width: 100%;
+}
+
+span.telephone,
+span.fax {
+    white-space: nowrap;
+}
+
+.IsNotLoggedIn #AClogoFooter img {
+	width: 200px;
+}
+#footer #footer2 {
+	background-color: transparent;
+	border: none;
+	width: 95%;
+	margin: 0 auto;
+	text-align: center;
+}
+#footer2 {
+	padding: 0;
+	background-color: transparent;
+	margin: .5em auto;
+}
+.AClogoAddressFooter {
+	text-align: right;
+	line-height: 1.25rem;
+}
+#AClogoFooter {
+	float: left;
+}
+.AClogoAddressFooter .contact1 > span:not(:last-child):after,
+.AClogoAddressFooter .contact2 > span:not(:last-child):after,
+.AClogoAddressFooter .legal > span:not(:last-child):after     {
+	content: " • ";
+}
+.AClogoAddressFooter .contact1 {
+	display: block;
+}
+div#footer2 .ACaddressBlock {
+	margin: .5em 0 0 0;
+}
+#footer {
+	background-color: transparent;
+	width: 100%;
+	position: relative;
+	background: -moz-linear-gradient(top, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(to bottom, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29353d', endColorstr='#0029353d',GradientType=0 ); /* IE6-8 */
+	padding: 2.5rem 0;
+	border-top: 0.15em solid #29353d;
+	height: 100px;
+}
+div#footer.IsLoggedIn div#amagavi {
+     /*display: none;*/
+}
+#footer #amagavi {
+	width: 95%;
+	margin: 0 auto;
+}
+#footer #amagavi table {
+	font-size: .75em;
+	float: right;
+	margin: 0;
+	background: transparent;
+}
+#footer.IsLoggedIn #amagavi .byline {
+	color: #fff;
+}
+#footer2 a,
+.IsLoggedIn #amagavi a {
+	color: #E8EBD9;
+}
+#footer2 a:hover {
+	color: #FFC8BD;
+}
+#amagavi a {
+	color: #5A752D;
+}
+td.logoCell a {
+	border-bottom: none;
+}
+#amagavi a:hover, #footer a:active {
+	color: #FF7F67;
+}
+table#login tr.header th,
+table#CreateAccount tr.header th {
+	background-color: #D3DDAC;
+	color: #444;
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.2em;
+	padding: .5em 0;
+}
+table#login tr th,
+table#login tr td,
+table#CreateAccount tr th,
+table#CreateAccount tr td {
+	padding: .2em 0;
+}
+.LoginOrNewAccount .baseStyle,
+/* #UserHomePage .baseStyle {
+	color: #1C2332;
+	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+}
+.baseStyle {
+	padding: 0;
+	margin: 0;
+}*/
+table.RowDisplay td {
+margin: 0.25em 0 0.25em 0;
+}
+table.rolodex tr td {
+    white-space: nowrap;
+    padding-top: 0.2em;
+    padding-bottom: .2em;
+}
+div.CheckboxMatrix tr td {
+	padding: .1em;
+}
+.DeadlineUpdate {
+	background-color: #4BA9DC;
+	color: #FFFFFF;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 2px 10px 2px 10px;
+	margin-top: 0.5em;
+}
+.byline {
+	color: #323232;
+}
+.Content a {
+	color: #435721;
+	text-decoration: none;
+	border-bottom: 1px solid #5a752d;
+}
+.Content a:hover  {
+	color: #c75d48;
+	border-bottom: 2px solid #c75d48;
+}
+.Content a:active {
+	color: #9F4A3A;
+	border-bottom: 2px solid #9F4A3A;
+}
+
+.Content a:visited,
+.Content a:hover input,
+.Content a:active input,
+.Content a:hover img,
+.Content a:active img {
+	border: none;
+}
+
+.UserHomePage a:visited,
+.SectionDisplay a:visited {
+	color: #7B8964;
+	border-bottom-color: #7B8964;
+}
+
+a.imgLink,
+a.imgLink:hover {
+	border: none;
+}
+#columnLeft {
+	float: left;
+	padding: 0 2% 0 0;
+}
+#ACtag {
+	clear: both;
+}
+#CaptchaExplanation {
+	font-size: .8em;
+	color: #5D663C;
+}
+#aisEmail {
+	font-weight: bold;
+	-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+#FloatingGoToTopID {
+    width: 42px;
+    height: 42px;
+    background: url('../img/totop.png') repeat scroll center center transparent;
+    text-align: center;
+    position: fixed;
+    bottom: 60px;
+    right: 42px;
+	cursor: pointer;
+}
+/*WARNINGS and NOTICES-->*/
+tr.LoginSearch th.UserName div.hint,
+tr.LoginSearch th.Email div.hint,
+div.hint {
+    font-size: 0.8em;
+    font-style: italic;
+}
+.TechHint {
+    font-size: .875em;
+    font-style: normal;
+    color: #000;
+}
+.TechHint:hover {
+	color: #444444;
+}
+div.NoAssignmentsPendingConfirmation,
+div.ToUnassignFromEvaluators,
+div.NoEvaluationQueuesAvailable,
+div.NoAvailableForms,
+div.NoApplicationsAvailable,
+div.NoTemplatesAvailable,
+div.ListOfBrands .NoBrands,
+div.NoDateItemsToCustomize,
+div.NoDeadlines,
+div.NoDomains,
+div.NoEvaluationQueuesMatchFilter,
+div.NoMenuItems,
+div.NoMenus,
+div.NoPacketTemplates,
+div.NoPermissions,
+div.NoQuestions,
+div.NoAnswers,
+div.NoObjects,
+div.NoRoles,
+div.NoSections,
+div.NoSiteContentItems,
+div.NoForms,
+div.NoUsers,
+div.NoFormsAvailable,
+div.NoFormsStartedOrSubmitted,
+div.NoEvaluationForms,
+.HasFormsInOtherBrandsWarning,
+div.AvailableForms div,
+.DeveloperCaution,
+div.OtherBrands
+div.HasFormsInOtherBrandsWarning,
+.ValidationError,
+div.MyForms div.NoFormsStartedOrSubmitted  {
+	font-style: italic;
+	color: #C75D48;
+	background-color: transparent;
+	font-weight: bold;
+	padding-left: 1.5em;
+	padding-top: 1em;
+	padding-top: 1em;
+}
+body.IsLoggedIn .ValidationError {
+	padding-top: 0;
+}
+body.IsNotLoggedIn .ValidationError {
+	text-align: right;
+	padding-right: 3em;
+	margin: -1.5em 0 -0.8em 0;
+}
+body.IsNotLoggedIn ul.ErrorOnLoginPage {
+  list-style-type:none;
+}
+
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div {
+	color: #CD0000;
+}
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after {
+	content: " * INCOMPLETE";
+	font-size: 0.9em;
+	font-weight: bold;
+}
+div#Growler {
+	position: fixed;
+	padding: 10px;
+	width: 50%;
+	top: 0;
+	left: 25%;
+	z-index: 1000;
+}
+
+.SecurityStamp {
+	color: #999;
+	font-size: .8em;
+}
+.Alert {
+	border-left: 5px solid #FFB039;
+	padding: 1em;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+}
+.arrow {
+				color: #FFB039;
+				font-size: 1.2em;
+				vertical-align: baseline;
+			}
+
+/* DESCRIPTIVE STYLES--> */
+.clear-left {
+	clear: left;
+}
+
+div.NoDisplayExceptPDF.HeaderEvalAppVersion,
+.NoDisplayExceptPDF {
+	display: none;
+}
+legend:not(.SaveButton) {
+	font-weight: bold;
+}
+/*<--DESCRIPTIVE STYLES*/
+/* MEDIA QUERIES-->*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 480px) {
+	body div.Content {
+		padding: .5em 1em;
+	}
+	body.IsNotLoggedIn {
+		background-color: #fff;
+	}
+	body.IsNotLoggedIn .Content {
+		width: 100%;
+		padding: 0;
+	}
+	#Header.IsNotLoggedIn img#headerbg.nonmobile {
+	display: none;
+	}
+	#Header.IsNotLoggedIn img#headerbg.mobile {
+		display: initial;
+	}
+	.LoginWelcome .PageTitle h1 {
+		padding-top: 1em;
+	}
+	h2.AppClosed  {
+		display: inherit;
+		margin: 0 auto;
+		clear: both;
+	}
+	.LoginWrapper.LoginProgramWrapper .LoginWelcome img {
+		width: 200px;
+		margin: auto;
+		display: block;
+		padding: 0;
+		float: none;
+	}
+	.LoginWrapper.LoginProgramWrapper .TipsLogin {
+		margin: 2em auto 0;
+	}
+	div.Content input[type='text'] {
+		max-width: 12em;
+	}
+	#Header .Title {
+		background-image: url('https://ais.americancouncils.org/ais/common/AISformsLogo_COLOR_reversedOut_100w.png');
+		height: 65px;
+		background-position: 0.5em 1.1em;
+	}
+	#TopMenu a, .menu a {
+		width: 100%;
+		clear: both;
+		font-size: 1em;
+	}
+	#TopMenu {
+		background-color: transparent;
+		margin: 0 auto;
+		margin: 5% auto;
+	}
+	.menuItem a#Roles_ID {
+		margin-bottom: 3%;
+	}
+	#Header #serverInfo,
+	#Header #buildAndInstance  {
+		display: none;
+	}
+	#Header {
+		height: .1em;
+	}
+	#Header .Title {
+		font-size: 1.5em;
+		width: 20%;
+		line-height: .9em;
+		display: none;
+	}
+	#Header.IsNotLoggedIn {
+		display: initial;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		height: 70px;
+		width: 100%;
+		border: none;
+	}
+	#Header .UserNameBlock {
+		top: .5em;
+		right: .3em;
+		text-align: right;
+		font-size: .9em;
+	}
+	#Header .LoginLogoutLink {
+		right: 0.2em;
+		top: 3.1em;
+	}
+	.Content .AdminHomeLinks a {
+		font-size: 1.5em;
+	}
+	.Content .AdminHomeLinks {
+		margin: 0 auto;
+		width: 100%;
+	}
+	div#AClogoFooter img, div#footer {
+		width: 100%;
+	}
+	.Content div.AdminHomeLinks {
+		margin-bottom: 0;
+		clear: both;
+	}
+	div.ValidationAndForms .LoginForms, div.ValidationError {
+		float: none;
+		clear: none;
+		margin: 1.5em auto;
+	}
+
+	div.ValidationAndForms .ValidationError {
+		margin: -3em 2em 6em 0;
+	}
+	div.Main div.LoginOrNewAccount div.CustomContent {
+		max-width: 100%;
+		margin: 4em;
+	}
+	.Content .mainInstructions  {
+		float: none;
+		margin: 1em auto;
+	}
+	.LiveTemplates, div.Main div.staffHome div.Deadlines  {
+		float: none;
+		width: 98%;
+		margin: 1%;
+		padding: 0;
+		border-left: none;
+	}
+	.LiveTemplates table.RowDisplay td.Available,
+	.LiveTemplates table.RowDisplay td.DeadlineToApply,
+	.LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
+	white-space: normal;
+	}
+	.infoIconOnRight .showHoverable.erxHoverArea {
+		margin-left: 0 !important;
+		margin-right: 24px !important;
+	}
+	div.MyForms table,
+	div.AvailableForms table,
+	div.MyEvaluationQueuesAsEvaluator table {
+		margin: 1em 0;
+	}
+	th.Request {
+		width: 15em;
+	}
+	th.QueueName {
+		width: 17em;
+	}
+	.Tips {
+		display: none;
+	}
+	.HomeProgramContent,
+    .HomeProgramAfterContent {
+		width: 95%;
+		padding: 0 4%;
+	}
+	#UserHomeIntro ul#leftContent,
+	#UserHomeIntro ul#rightContent,
+    #UserHomeAfterFormsInfo ul#leftContent,
+	#UserHomeAfterFormsInfo ul#rightContent
+     {
+	width: initial;
+	float: none;
+	margin-right: 0;
+	}
+	div.MyForms,
+	div.AvailableForms {
+		width: 100%;
+	}
+	.LoginGetStarted {
+		display: none;
+	}
+	.ValidationAndForms .LoginForms {
+		width: 320px;
+		margin: 0 auto;
+		clear: none;
+		float: none;
+}
+	.LoginWrapper {
+		margin: 0;
+		background-color: transparent;
+		padding: 0;
+		border: none;
+	}
+	.LoginWelcome .PageTitle h1,
+	.TipsLogin h3  {
+		text-align: center;
+	}
+	.TipsLogin h3  {
+		width: 100%;
+	}
+	.LoginText {
+		margin: 0 auto;
+		clear: both;
+	}
+	.LoginWelcome p {
+		margin-top: 1em;
+		text-align: center;
+	}
+	.TipsLoginContent {
+		width: 100%;
+		float: none;
+	}
+	.LoginForms {
+		float: right;
+		clear: right;
+		margin: 5em 1em;
+	}
+	div.Main div.LoginOrNewAccount div.CustomContent  {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	div.LoginOrNewAccount div.AfterCustomContent {
+    clear: both;
+    padding: 1em 0;
+	}
+	#footer.IsNotLoggedIn {
+		padding: 1em 0 5em;
+		border-top: 1px solid #777;
+		width: 100%;
+	}
+	div#ApplicationTemplateDisplayAUC h1 {
+		padding: 0.5em 0;
+		font-size: 1.1em;
+	}
+
+	div.ApplicationTemplateDisplay h2 {
+		padding: 0 0 1em;
+		font-size: 1em;
+	}
+	a.LinkToPreviousPage {
+		float: none;
+	}
+	div.SectionDisplay {
+		padding: 1em;
+	}
+	input[value="Show All Sections at Once"], input[value="Show Each Section Individually"] {
+		margin-top: 1em;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 568px) {
+	div.Content {
+		padding: .2em;
+	}
+	#Header {
+		height: 2em;
+	}
+	#Header .Title {
+		background-image: url('https://ais.americancouncils.org/ais/common/AISformsLogo_COLOR_reversedOut_100w.png');
+		height: 65px;
+		background-position: 0.5em 1em;
+		background-color: transparent;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	#Header #serverInfo, #Header #buildAndInstance  {
+		display: none;
+	}
+	#Header .UserNameBlock {
+		top: .5em;
+		right: .3em;
+		font-size: .9em;
+	}
+	#Header .LoginLogoutLink {
+		right: 0.2em;
+		top: 3.1em;
+	}
+	#TopMenu a, .menu a {
+		width: 15%;
+		padding: .2em;
+		margin: 0;
+	}
+	#TopMenu {
+		background-color: transparent;
+		margin: 5% auto;
+		margin: -0.8em 0;
+		clear: both;
+	}
+	.menuItem a#Roles_ID {
+		margin-bottom: 3%;
+	}
+	.Greeting {
+		width: 100%;
+	}
+	.LiveTemplates,
+	div.Main div.staffHome div.Deadlines {
+		float: none;
+		width: 98%;
+		margin: 1%;
+		border-left: none;
+		padding-left: 0;
+	}
+	.LiveTemplates table.RowDisplay td.Available,
+	.LiveTemplates table.RowDisplay td.DeadlineToApply,
+	.LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
+		white-space: normal;
+	}
+	.infoIconOnRight .showHoverable.erxHoverArea {
+		margin-left: 0 !important;
+		margin-right: 24px !important;
+	}
+	.Content .AdminHomeLinks {
+		clear: both;
+		width: 100%;
+		margin: 0 aut0;
+
+	}
+	.Content .AdminHomeLinks div {
+		float: left;
+		width: 48%;
+		height: 4em;
+	}
+	.Content .AdminHomeLinks a {
+		font-size: 120%;
+	}
+	.MenuOfSections select, div.Content .MenuOfSections input  {
+		font-size: .8em;
+	}
+	div.SectionNavigator .MenuOfSections .label {
+		display: none;
+	}
+	div#AClogoFooter img, div#footer {
+		width: 100%;
+	}
+	div.ValidationAndForms .LoginForms {
+		float: none;
+		clear: none;
+		margin: 0 auto;
+	}
+	div.ValidationAndForms .ValidationError {
+		margin: -3em 8em 0 0;
+	}
+	div.Main div.LoginOrNewAccount div.CustomContent  {
+		max-width: 100%;
+		margin: 4em;
+		padding: 2em;
+	}
+	.Content .mainInstructions  {
+		float: none;
+		margin: 1em auto;
+		height: inherit;
+		width: inherit;
+	}
+		div.MyForms table,
+		div.AvailableForms table,
+		div.MyEvaluationQueuesAsEvaluator table {
+		margin: 0;
+	}
+	.Tips {
+		display: none;
+	}
+	.HomeProgramContent,
+    .HomeProgramAfterContent {
+    width: 95%;
+	}
+	#UserHomeIntro ul#leftContent,
+	#UserHomeIntro ul#rightContent,
+    #UserHomeAfterFormsInfo ul#leftContent,
+	#UserHomeAfterFormsInfo ul#rightContent {
+	width: initial;
+	float: none;
+	margin-right: 0;
+	}
+	div.MyForms,
+	div.AvailableForms {
+		width: 100%;
+	}
+		.LoginGetStarted {
+		display: none;
+	}
+
+	.ValidationAndForms .LoginForms {
+		width: 350px;
+		margin: 0 auto;
+		clear: none;
+		float: none;
+	}
+	.LoginWrapper {
+		margin: 0;
+		background-color: transparent;
+		padding: 0;
+		border: none;
+	}
+
+	.LoginWelcome .PageTitle h1 {
+		text-align: center;
+	}
+	.LoginText {
+		margin: 0 auto;
+		clear: both;
+	}
+	.LoginWelcome p {
+		/* text-align: center; */
+	}
+	.TipsLogin {
+		padding: 0;
+		text-align: left;
+	}
+	.TipsLogin h3 {
+		margin: 0 auto;
+	}
+	.TipsLoginContent {
+		width: 100%;
+		float: none;
+	}
+	.LoginForms {
+		float: right;
+		clear: right;
+		margin: 5em 1em;
+	}
+	div.Main div.LoginOrNewAccount div.CustomContent  {
+		max-width: 100%;
+		margin: 0;
+	}
+}
+@media only screen and (min-width : 568px) and (max-width : 767px) {
+	#Header.IsLoggedIn {
+		height: 2em;
+	}
+	#Header .Title {
+		background-image: url('https://ais.americancouncils.org/ais/common/AISformsLogo_COLOR_reversedOut_100w.png');
+		height: 65px;
+		background-position: 0.5em 1em;
+		background-color: transparent;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	#Header .UserNameBlock  {
+		font-size: .9em;
+	}
+	#Header #buildAndInstance .brand {
+		display: none;
+	}
+	#TopMenu {
+		margin: -.8em 1em;
+		clear: both;
+	}
+	#TopMenu a,
+	.menu a {
+		font-size: .8em;
+		width: 13%;
+		margin: 0;
+	}
+	.Content .AdminHomeLinks {
+		width: 18%;
+		font-size: .9em;
+	}
+	div.ValidationAndForms .ValidationError {
+		text-align: center;
+	}
+	div.Main div.LoginOrNewAccount div.CustomContent  {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.Content .mainInstructions  {
+		float: none;
+		margin: 1em auto;
+	}
+	.LiveTemplates, div.Main div.staffHome div.Deadlines {
+		width: 75%;
+	}
+	.LiveTemplates, div.Main div.staffHome div.Deadlines  div {
+		clear: both;
+	}
+	.UpcomingDeadlinesHeader span:nth-child(2)  {
+		float: left;
+		font-size: .8em;
+		padding: .4em;
+	}
+	.infoIconOnRight .showHoverable.erxHoverArea {
+		margin-left: 0 !important;
+		margin-right: 24px !important;
+	}
+	div.MyForms table,
+	div.AvailableForms table,
+	div.MyEvaluationQueuesAsEvaluator table {
+		margin: 0;
+	}
+	.MenuOfSections select {
+		font-size: .8em;
+	}
+	div.SectionNavigator .MenuOfSections .label {
+		font-size: .9em;
+	}
+	div.Content .MenuOfSections input {
+		font-size: .9em;
+	}
+	.Tips {
+		display: none;
+	}
+	.HomeProgramContent,
+    .HomeProgramAfterContent {
+        width: 95%;
+	}
+	#UserHomeIntro ul#leftContent,
+	#UserHomeIntro ul#rightContent,
+    #UserHomeAfterFormsInfo ul#leftContent,
+	#UserHomeAfterFormsInfo ul#rightContent {
+	width: initial;
+	float: none;
+	margin-right: 0;
+}
+	div.MyForms,
+	div.AvailableForms {
+		width: 100%;
+	}
+	.LoginGetStarted {
+		display: none;
+	}
+	#Header.IsNotLoggedIn {
+		height: 80px;
+	}
+	.ValidationAndForms .LoginForms {
+		width: 350px;
+		margin: 0 auto;
+		clear: none;
+		float: none;
+	}
+	.LoginWrapper {
+		margin: 0 auto;
+		background-color: transparent;
+		padding: 0;
+		border: none;
+		width: 90%;
+	}
+	.LoginWrapper.LoginProgramWrapper .LoginWelcome {
+		margin: 0;
+}
+	.LoginText {
+		margin: 0 auto;
+		clear: both;
+		width: 90%;
+	}
+	.LoginWelcome .PageTitle h1 {
+		margin-top: 1em;
+		text-align: center;
+	}
+	.LoginWelcome p {
+		margin: 0 auto;
+		/* width: 80%; */
+	}
+	.TipsLogin {
+		padding: 0;
+		text-align: left;
+		width: 80%;
+	}
+	.TipsLogin h3 {
+		margin: 0 auto;
+	}
+	.TipsLoginContent {
+		width: 100%;
+		float: none;
+	}
+	.LoginForms {
+		float: right;
+		clear: right;
+		margin: 5em 1em;
+	}
+}
+@media only screen
+and (min-width : 768px)
+and (max-width : 896px) {
+	.LoginText {
+		clear: both;
+		margin: 0 auto;
+	}
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+	.Content .AdminHomeLinks  {
+		font-size: .9em;
+		width: 14%;
+	}
+	.LiveTemplates,
+	div.Main div.staffHome div.Deadlines {
+		width: 83%;
+	}
+	#TopMenu a,
+	.menu a {
+		margin: 0;
+		width: 12%;
+		padding: 0.2em .1em;
+	}
+	div.Main div.LoginOrNewAccount div.CustomContent  {
+		/* width: 90%; */
+		margin: 0 auto;
+		padding: 2em;
+	}
+	.LoginGetStarted {
+		margin: -3.5em -2.5em -1em -1em;
+	}
+
+	.ValidationAndForms .LoginForms {
+		clear: right;
+		/* width: 400px; */
+		margin: 1em 4em 2em 1em;
+		clear: none;
+	}
+	.LoginWrapper {
+		margin: 0 auto;
+		background-color: transparent;
+		/* padding: 0; */
+		border: none;
+		width: 90%;
+	}
+	.LoginText {
+		margin: 0 auto;
+		background-color: transparent;
+		border: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow:    none;
+		box-shadow: none;
+	}
+	.LoginGetStarted {
+		margin: -1.5em -2.5em -1em -1em;
+	}
+	.LoginWrapper.LoginProgramWrapper .TipsLogin {
+		margin: 2em auto -5em;
+
+	}
+	.Content .mainInstructions {
+		height: inherit;
+		width: inherit;
+	}
+	.Tips {
+		display: none;
+	}
+	.HomeProgramContent {
+		width: 95%;
+	}
+	div.MyForms,
+	div.AvailableForms {
+		/* margin-top: -820px; */
+		width: 100%;
+	}
+}
+/* desktops and laptops */
+@media only screen and (min-width: 897px) and (max-width: 1150px) {
+	div.Main div.LoginOrNewAccount div.CustomContent  {
+		/* max-width: 65%; */
+		margin: 0;
+		padding: 0;
+	}
+	.LoginWrapper {
+	border: none;
+	}
+	.LoginGetStarted {
+		margin: -1.5em -2.5em -1em -1em;
+	}
+	.LoginWelcome,
+	.TipsLogin {
+		padding-left: 2%;
+	}
+	.TipsLogin {
+		border: none;
+	}
+	.TipsLogin h3 {
+		border-top: 1px solid #CECECE;
+		padding-top: 1em;
+	}
+	.ValidationAndForms .LoginForms {
+		/* margin: 0 1em 3em 1em; */
+}
+	.LoginText {
+		margin: 0;
+	}
+	.LoginWelcome .PageTitle h1,
+	.LoginWelcome p {
+		text-align: left;
+	}
+	.TipsLoginContent {
+		width: 100%;
+		float: none;
+	}
+	.LoginForms {
+		float: right;
+		clear: right;
+		margin: 5em 1em;
+	}
+}
+.erxHoverArea div.erxToolTip,
+.erxHoverArea div.erxToolTipJS,
+#erxToolTipContents {
+  border: 1px solid #f4ab33;
+  background-color: #fad58f;
+  padding: .125em .25em;
+  border-radius: 2px;
+  font-size: .875em;
+  width: 10;
+  opacity: .9;
+}
+
+/* Desktops and laptops ----------- probably AC size?!! */
+@media only screen and (min-width : 1151px) and (max-width : 1223px) {
+	.LoginGetStarted {
+		margin: -1.5em -2.5em -1em -1em;
+	}
+	/* ADMIN LIST OF SECTIONS --> */
+
+	div.SectionsRowDisplay div.AdminEditTemplate,
+	div.SectionsRowDisplay div.AdminListSectionQuestions,
+	div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+	div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+	div.SectionsRowDisplay div.SectionOperations a.AddSection,
+	div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+	div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
+	div.SectionsRowDisplay div.SectionOperations a {
+		display: block;
+		line-height: 1.5em;
+		padding-left: 1em;
+	}
+	div.SectionsRowDisplay div.SectionOperations a {
+		border-bottom: 0;
+		text-decoration: underline;
+	}
+	div.SectionsRowDisplay div.TemplateOperations,
+	div.SectionsRowDisplay div.SectionOperations {
+		display: inline-block;
+		width: 28%;
+		float: right;
+		clear: right;
+		margin-left: 1.5em;
+	}
+
+	div.SectionsRowDisplay div.SectionOperations span.label,
+	div.SectionsRowDisplay div.TemplateOperations span.label {
+		padding-bottom: .25em;
+		display: block;
+    font-weight: bold;
+    color: #33424d;
+    font-style: normal;
+	}
+
+	/* <-- ADMIN LIST OF SECTIONS */
+}
+
+/* Desktops and laptops ----------- probably AC size?!! */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+	.mainInstructions {
+		max-width: 240px;
+		min-height: 280px;
+	}
+	.Notes {
+		clear: none;
+	}
+	/* ADMIN LIST OF SECTIONS --> */
+
+	div.SectionsRowDisplay div.AdminEditTemplate,
+	div.SectionsRowDisplay div.AdminListSectionQuestions,
+	div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+	div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+	div.SectionsRowDisplay div.SectionOperations a,
+	div.SectionsRowDisplay div.SectionOperations a.AddSection,
+	div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+	div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
+		display: block;
+		line-height: 1.5em;
+		padding-left: 1em;
+	}
+	div.SectionsRowDisplay div.SectionOperations a {
+		border-bottom: 0;
+		text-decoration: underline;
+	}
+	div.SectionsRowDisplay div.TemplateOperations,
+	div.SectionsRowDisplay div.SectionOperations {
+		display: inline-block;
+		width: 28%;
+		float: right;
+		clear: right;
+		margin-left: 1.5em;
+	}
+
+	div.SectionsRowDisplay div.SectionOperations span.label,
+	div.SectionsRowDisplay div.TemplateOperations span.label {
+		padding-bottom: .25em;
+		display: block;
+    font-weight: bold;
+    font-style: normal;
+	}
+
+/* <-- ADMIN LIST OF SECTIONS */
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+	.LoginForms {
+		float: right;
+		clear: right;
+		margin: 5em 10;
+	}
+}
+
+
+/* Shared Forms */
+div.TeamInviteLandingPage h1.LoginOrCreateAccountLink {
+border: 5px solid #D3DDAC;
+max-width:530px;
+margin:10px auto 0;
+padding:1em;
+}
+
+div.Main .JoinSharedForm,
+div.Main .SharedWithExplanation,
+div.Content span.TrackChanges,
+div.Content span.TrackRecentChanges,
+div.Content span.SharedTeamManagement {
+  background-color:#FFFFFF;
+  border: medium solid #de6846;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 1em 0;
+}
+
+div.Main .SharedLegend {
+    font-style: normal;
+    font-weight: normal;
+}
+
+div.Main .SharedPeople { }

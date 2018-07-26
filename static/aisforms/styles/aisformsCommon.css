@@ -368,7 +368,8 @@ body.IsNotLoggedIn .Content {
 	box-shadow: 0 40px 30px 0 rgba(62, 62, 62, .25);
   z-index: 3;
 }
-#footer.IsNotLoggedIn  div#footer2 {
+#footer.IsNotLoggedIn  div#footer2,
+.IsNotLoggedIn #amagavi {
 	color: #777;
 }
 #footer.IsNotLoggedIn img#HomePage {
@@ -2990,3 +2991,4 @@ div.Main .SharedLegend {
 }
 
 div.Main .SharedPeople { }
+hello this is a test
