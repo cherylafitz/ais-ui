@@ -3098,6 +3098,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   padding-left: 5px;
   float: right;
   margin: 0 .125rem 0 0;
+  text-align: center;
 }
 .FormTrackerReport .FlaggedCount::before,
 .FormTrackerReport .FlaggedCount::after {
@@ -3217,6 +3218,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 }
 
 
+
 /* <-- PAGE: FORM TRACKER */
 
 /* PAGE: AIS FORMS SUMMARY --> */
@@ -3236,6 +3238,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background-color: #cbd2d6;
   border-right: .75rem solid #e0e6eb;
   padding-left: .5rem;
+  padding-right: .5rem;
   background: #cbd2d6;
   border: none;
   border-bottom: 1px solid #B4B4B4;
@@ -3246,12 +3249,16 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background: #e0e6eb;
   border: none;
   border-bottom: 1px solid #B4B4B4;
+  padding: .25rem .5rem;
+}
+.AIRAppSummaryDisplayInAIS .QuestionNumber {
+  background-color: #cbd2d6;
 }
 
 .AIRAppSummaryDisplayInAIS .RowNumber,
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.RowNumber {
   color: #777;
-  padding-right: .5rem;
+  padding-right: 1rem;
   border: none;
 }
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.QuestionNumber,
@@ -3273,6 +3280,17 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
     right: 5px;
     top: -1rem;
 }
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .Value {
+  background-color: #ffb699;
+  border-bottom: 1px solid #ffb699;
+}
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .RowNumber,
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .Question {
+  background-color: #ffc8b3;
+  border-bottom: 1px solid #ffb699;
+}
+
 
 /* <-- PAGE: AIS FORMS SUMMARY */
 
