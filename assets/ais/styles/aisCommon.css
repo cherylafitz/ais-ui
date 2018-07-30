@@ -1754,6 +1754,7 @@ table.TravelVendorExplanation thead tr th,
 table.TravelInboundDisplay th,
 table.TravelOutboundDisplay th {
   padding: .25rem .325rem .25rem;
+  border-color: #e8ecda;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay thead tr th,
@@ -1821,9 +1822,9 @@ div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n) {
 }
 #AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+2),
 #AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+2),
-table.RowDisplay tr:nth-child(2n+3),
-table.report tr:nth-child(2n+3),
-table.RowDisplay tbody tr:nth-child(2n+3),
+table.RowDisplay tr:nth-child(2n+1),
+table.report tr:nth-child(2n+1),
+table.RowDisplay tbody tr:nth-child(2n+1),
 tr.ApplicationName td div.EntryArea,
 .oddRow,
 table.TravelInboundDisplay tr:nth-child(2n+3),
