@@ -3188,7 +3188,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 }
 .FormTrackerReport .isLate {
   color: #981727;
-  font-size: .875rem;
+  font-size: .75rem;
   float: left;
   padding: 0 0 0 .25rem;
   line-height: 24px;
@@ -3196,9 +3196,10 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 }
 .FormTrackerReport .isMissing {
   padding-left: 16px;
-  font-size: .875rem;
+  font-size: .75rem;
   position: relative;
   font-weight: bold;
+  color: #222;
 }
 .FormTrackerReport .isMissing::before {
   content: '';
@@ -3207,7 +3208,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   position: absolute;
   background: #a96f0e;
   left: 3px;
-  top: 7px;
+  top: 5px;
 }
 .FormTrackerReport .isMissing::after {
   content: '';
@@ -3215,7 +3216,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   height: 12px;
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 0;
   border: 1px solid #777;
   border-radius: 50%;
 }
