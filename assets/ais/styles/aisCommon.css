@@ -3189,10 +3189,11 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 .FormTrackerReport .isLate {
   color: #981727;
   font-size: .75rem;
-  float: left;
   padding: 0 .25rem 0 0;
   line-height: 24px;
   font-weight: bold;
+  display: inline-block;
+  margin-right: 26px;
 }
 .FormTrackerReport .isMissing {
   padding-left: 16px;
