@@ -3190,7 +3190,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   color: #981727;
   font-size: .75rem;
   float: left;
-  padding: 0 0 0 .25rem;
+  padding: 0 .25rem;
   line-height: 24px;
   font-weight: bold;
 }
@@ -3233,7 +3233,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 }
 .FormTrackerReport.legend span {
   margin-left: .5rem;
-  /*font-weight: bold;*/
 }
 
 
