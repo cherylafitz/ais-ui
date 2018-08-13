@@ -22,7 +22,11 @@ WORK WITH MARCO TO ADD IDs TO PAGES TO ALLOW ME TO IMITATE TAB VISUALIZATION??? 
 <--ADD THIS SUMMER!!
  */
 /* MAIN STRUCTURE--> */
-
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 html, body {
 	height: 100%;
 	margin: 0;
@@ -45,6 +49,9 @@ body {
 	width: 100%;
 	background-color: #e0e6eb;
 	min-height:100%;
+}
+body.IsNotLoggedIn {
+	background-color: #fff;
 }
 div.Content {
 	margin: 0 0 0 0;
@@ -296,9 +303,6 @@ a.LinkToPreviousPage {
 }
 /*<--TITLES*/
 /* LOGIN-->*/
-body.IsNotLoggedIn {
-	background-color: #EEF5F8;
-}
 body.IsNotLoggedIn .Content {
 	-webkit-box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25);
 	-moz-box-shadow:    0 30px 30px 0 rgba(62, 62, 62, .25);
@@ -352,22 +356,6 @@ body.IsNotLoggedIn .Content {
 #Header.IsNotLoggedIn .Title {
 	display: none;
 }
-#footer.IsNotLoggedIn {
-  background-color: #FFF;
-	background: #fff;
-  width: 90%;
-  max-width: 1100px;
-  margin: -1em auto -2em auto;
-  padding: 1rem 1rem 2rem;
-	border-top: none;
-	border-bottom: none;
-	border-right: 1px solid #e6e6e6;
-	border-left: 1px solid #e6e6e6;
-	-webkit-box-shadow: 0 40px 30px 0 rgba(62, 62, 62, .25);
-	-moz-box-shadow:    0 40px 30px 0 rgba(62, 62, 62, .25);
-	box-shadow: 0 40px 30px 0 rgba(62, 62, 62, .25);
-  z-index: 3;
-}
 #footer.IsNotLoggedIn  div#footer2,
 .IsNotLoggedIn #amagavi {
 	color: #777;
@@ -397,17 +385,18 @@ div.LoginOrNewAccount div.Content {
 .LoginWrapper.LoginProgramWrapper .LoginWelcome .PDFDownload {
 	margin: .5em 0;
 }
+.IsLoggedIn #footer img#LoginPage {
+    display: none;
+}
 .LoginWrapper.LoginProgramWrapper .LoginWelcome .PDFDownload img {
 	padding: 0 .5em 0 0;
 }
-input#Username:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+input#Username:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
 	background-color: #fff;
 	background-image: none;
 	color: rgb(0, 0, 0);
-}
-#CreateAccountForm, #LoginForm {
-	background-color: #fff;
-	width: 320px;
 }
 #LoginForm {
 	margin-bottom: 20px;
@@ -418,9 +407,6 @@ table#CreateAccount tr.VerifyPassword th,
 }
 tr.VerifyPassword th {
 	padding-left: 1em;
-}
-input.createAccount {
-	margin-bottom: .5em;
 }
 tr.UserName td  input{
 	margin-top: .5em;
@@ -461,19 +447,13 @@ body table#login tr.LoginActions span.ForgotPassword {
 	font-size: .8em;
 }
 
-.LoginWrapper.LoginProgramWrapper  .TipsLogin {
+/*.LoginWrapper.LoginProgramWrapper  .TipsLogin {
 	background-color: #EFF1E4;
 	border: 1px solid #e6e6e6;
 	max-width: 600px;
     margin: 4em 400px 1em 2em;
 	padding: 0 1em 1em 2em;
 }
-/* .LoginWrapper.LoginProgramWrapper  .TipsLogin.CreateAccountemoved {
-	margin: 3em auto 0;
-	-webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.40);
-	-moz-box-shadow:    0 0 10px 0 rgba(50, 50, 50, 0.40);
-	box-shadow:         0 0 10px 0 rgba(50, 50, 50, 0.40);
-} */
 .LoginWrapper.LoginProgramWrapper .LoginWelcome img {
 	padding: 0 1.5em 1em .5em;
 	float: right;
@@ -485,8 +465,7 @@ body table#login tr.LoginActions span.ForgotPassword {
 .LoginWrapper.LoginProgramWrapper  .TipsLogin h3 {
 	border: none;
 	padding-top: 0;
-	/* padding-bottom: .5em; */
-}
+}*/
 
 .AClogo {
 	margin: 0 auto;
@@ -506,11 +485,6 @@ a img {
 	margin: 0 3em 0 1em;
 	width: inherit;
 }
-input#Username, input#Password {
-    width: 15em;
-}
-
-
 .LoginWelcome h2 {
 	text-align: left;
 }
@@ -562,20 +536,7 @@ p.LoginWelcomeAlertText {
 	margin: -3em 3em;
 	padding: 0 1em 0 1.3em;
 } */
-.LoginGetStarted p {
-	margin: 85px 55px 10px 55px;
-}
-.LoginWelcome p {
-	color: #000;
-	font-size: 1em;
-	text-align: left;
-}
-.LoginGetStarted h2 {
-	color: #FFD590;
-	text-align: left;
-	margin: 10px 45px 10px 15px;
-	display: none;
-}
+
 /* VERIFY PASSWORD--> */
 div.ForgottenPassword,
 div.PasswordHasBeenSent {
@@ -1220,7 +1181,7 @@ table.TemplateTable tr td {
 	margin-bottom: .5em;
 }
 
-.ProgramLogo {
+.IsLoggedIn .ProgramLogo {
 	float: right;
 }
 .ProgramLogoLeft {
@@ -1255,19 +1216,6 @@ table.TemplateTable tr td {
 	border-radius: 20px;
 	margin-bottom: 2em;
 }
-.TipsLoginContent {
-	width: 45%;
-	float: left;
-}
-.TipsLoginContent.left {
-	padding-right: 5%;
-}
-.TipsLogin {
-	font-size: .8em;
-	color: #777777;
-	margin: 1em auto 0 auto;
-	padding-left: 5%;
-}
 .Tips strong,
 .Tips h3 {
 	color: #fff;
@@ -1281,14 +1229,6 @@ table.TemplateTable tr td {
 	padding-bottom: 0.4em;
 	text-align: center;
 	margin-top: .5em;
-}
-.TipsLogin h3 {
-	color: #2E6B9B;
-	padding-top: 1em;
-	font-weight: normal;
-	font-size: 1.4em;
-	border-top: 1px solid #999;
-	width: 70%;
 }
 .Content .Tips a {
 	color: #E8EBD9;
@@ -1861,16 +1801,12 @@ div#footer2 .ACaddressBlock {
 	margin: .5em 0 0 0;
 }
 #footer {
-	background-color: transparent;
 	width: 100%;
 	position: relative;
-	background: -moz-linear-gradient(top, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* FF3.6+ */
-	background: -webkit-linear-gradient(top, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: linear-gradient(to bottom, #29353d 0%,#33424d 15%, #3d505c 30%, #475d6b 40%, rgba(85,85,85,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29353d', endColorstr='#0029353d',GradientType=0 ); /* IE6-8 */
-	padding: 2.5rem 0;
-	border-top: 0.15em solid #29353d;
-	height: 100px;
+	background-color: #33424d;
+	padding: 2rem;
+	font-size: .875rem;
+	color: #fff;
 }
 div#footer.IsLoggedIn div#amagavi {
      /*display: none;*/
@@ -1878,12 +1814,13 @@ div#footer.IsLoggedIn div#amagavi {
 #footer #amagavi {
 	width: 95%;
 	margin: 0 auto;
+	text-align: right;
 }
 #footer #amagavi table {
-	font-size: .75em;
-	float: right;
+	font-size: .75rem;
 	margin: 0;
 	background: transparent;
+	display: inline-block;
 }
 #footer.IsLoggedIn #amagavi .byline {
 	color: #fff;
@@ -1974,10 +1911,6 @@ a.imgLink:hover {
 }
 #ACtag {
 	clear: both;
-}
-#CaptchaExplanation {
-	font-size: .8em;
-	color: #5D663C;
 }
 #aisEmail {
 	font-weight: bold;
@@ -2118,10 +2051,7 @@ legend:not(.SaveButton) {
 	body div.Content {
 		padding: .5em 1em;
 	}
-	body.IsNotLoggedIn {
-		background-color: #fff;
-	}
-	body.IsNotLoggedIn .Content {
+/*	body.IsNotLoggedIn .Content {
 		width: 100%;
 		padding: 0;
 	}
@@ -2130,16 +2060,16 @@ legend:not(.SaveButton) {
 	}
 	#Header.IsNotLoggedIn img#headerbg.mobile {
 		display: initial;
-	}
-	.LoginWelcome .PageTitle h1 {
+	}*/
+/*	.LoginWelcome .PageTitle h1 {
 		padding-top: 1em;
-	}
+	}*/
 	h2.AppClosed  {
 		display: inherit;
 		margin: 0 auto;
 		clear: both;
 	}
-	.LoginWrapper.LoginProgramWrapper .LoginWelcome img {
+/*	.LoginWrapper.LoginProgramWrapper .LoginWelcome img {
 		width: 200px;
 		margin: auto;
 		display: block;
@@ -2148,7 +2078,7 @@ legend:not(.SaveButton) {
 	}
 	.LoginWrapper.LoginProgramWrapper .TipsLogin {
 		margin: 2em auto 0;
-	}
+	}*/
 	div.Content input[type='text'] {
 		max-width: 12em;
 	}
@@ -2216,7 +2146,7 @@ legend:not(.SaveButton) {
 		margin-bottom: 0;
 		clear: both;
 	}
-	div.ValidationAndForms .LoginForms, div.ValidationError {
+/*	div.ValidationAndForms .LoginForms, div.ValidationError {
 		float: none;
 		clear: none;
 		margin: 1.5em auto;
@@ -2229,7 +2159,7 @@ legend:not(.SaveButton) {
 		max-width: 100%;
 		margin: 4em;
 	}
-	.Content .mainInstructions  {
+*/	.Content .mainInstructions  {
 		float: none;
 		margin: 1em auto;
 	}
@@ -2281,9 +2211,8 @@ legend:not(.SaveButton) {
 	div.AvailableForms {
 		width: 100%;
 	}
-	.LoginGetStarted {
-		display: none;
-	}
+
+/*
 	.ValidationAndForms .LoginForms {
 		width: 320px;
 		margin: 0 auto;
@@ -2315,11 +2244,6 @@ legend:not(.SaveButton) {
 		width: 100%;
 		float: none;
 	}
-	.LoginForms {
-		float: right;
-		clear: right;
-		margin: 5em 1em;
-	}
 	div.Main div.LoginOrNewAccount div.CustomContent  {
 		max-width: 100%;
 		margin: 0;
@@ -2333,7 +2257,7 @@ legend:not(.SaveButton) {
 		padding: 1em 0 5em;
 		border-top: 1px solid #777;
 		width: 100%;
-	}
+	}*/
 	div#ApplicationTemplateDisplayAUC h1 {
 		padding: 0.5em 0;
 		font-size: 1.1em;
@@ -2481,11 +2405,11 @@ legend:not(.SaveButton) {
 	div.AvailableForms {
 		width: 100%;
 	}
-		.LoginGetStarted {
+/*		.LoginGetStarted {
 		display: none;
-	}
+	}*/
 
-	.ValidationAndForms .LoginForms {
+/*	.ValidationAndForms .LoginForms {
 		width: 350px;
 		margin: 0 auto;
 		clear: none;
@@ -2500,13 +2424,12 @@ legend:not(.SaveButton) {
 
 	.LoginWelcome .PageTitle h1 {
 		text-align: center;
-	}
-	.LoginText {
+	}*/
+/*	.LoginText {
 		margin: 0 auto;
 		clear: both;
 	}
 	.LoginWelcome p {
-		/* text-align: center; */
 	}
 	.TipsLogin {
 		padding: 0;
@@ -2523,11 +2446,11 @@ legend:not(.SaveButton) {
 		float: right;
 		clear: right;
 		margin: 5em 1em;
-	}
-	div.Main div.LoginOrNewAccount div.CustomContent  {
+	}*/
+/*	div.Main div.LoginOrNewAccount div.CustomContent  {
 		max-width: 100%;
 		margin: 0;
-	}
+	}*/
 }
 @media only screen and (min-width : 568px) and (max-width : 767px) {
 	#Header.IsLoggedIn {
@@ -2622,7 +2545,7 @@ legend:not(.SaveButton) {
 	div.AvailableForms {
 		width: 100%;
 	}
-	.LoginGetStarted {
+/*	.LoginGetStarted {
 		display: none;
 	}
 	#Header.IsNotLoggedIn {
@@ -2643,8 +2566,8 @@ legend:not(.SaveButton) {
 	}
 	.LoginWrapper.LoginProgramWrapper .LoginWelcome {
 		margin: 0;
-}
-	.LoginText {
+}*/
+/*	.LoginText {
 		margin: 0 auto;
 		clear: both;
 		width: 90%;
@@ -2655,7 +2578,6 @@ legend:not(.SaveButton) {
 	}
 	.LoginWelcome p {
 		margin: 0 auto;
-		/* width: 80%; */
 	}
 	.TipsLogin {
 		padding: 0;
@@ -2668,20 +2590,15 @@ legend:not(.SaveButton) {
 	.TipsLoginContent {
 		width: 100%;
 		float: none;
-	}
-	.LoginForms {
-		float: right;
-		clear: right;
-		margin: 5em 1em;
-	}
+	}*/
 }
 @media only screen
 and (min-width : 768px)
 and (max-width : 896px) {
-	.LoginText {
+/*	.LoginText {
 		clear: both;
 		margin: 0 auto;
-	}
+	}*/
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen
@@ -2703,23 +2620,21 @@ and (max-width : 1024px) {
 	}
 	div.Main div.LoginOrNewAccount div.CustomContent  {
 		/* width: 90%; */
-		margin: 0 auto;
-		padding: 2em;
+/*		margin: 0 auto;
+		padding: 2em;*/
 	}
-	.LoginGetStarted {
+/*	.LoginGetStarted {
 		margin: -3.5em -2.5em -1em -1em;
-	}
+	}*/
 
-	.ValidationAndForms .LoginForms {
+/*	.ValidationAndForms .LoginForms {
 		clear: right;
-		/* width: 400px; */
 		margin: 1em 4em 2em 1em;
 		clear: none;
 	}
 	.LoginWrapper {
 		margin: 0 auto;
 		background-color: transparent;
-		/* padding: 0; */
 		border: none;
 		width: 90%;
 	}
@@ -2737,7 +2652,7 @@ and (max-width : 1024px) {
 	.LoginWrapper.LoginProgramWrapper .TipsLogin {
 		margin: 2em auto -5em;
 
-	}
+	}*/
 	.Content .mainInstructions {
 		height: inherit;
 		width: inherit;
@@ -2756,8 +2671,7 @@ and (max-width : 1024px) {
 }
 /* desktops and laptops */
 @media only screen and (min-width: 897px) and (max-width: 1150px) {
-	div.Main div.LoginOrNewAccount div.CustomContent  {
-		/* max-width: 65%; */
+/*	div.Main div.LoginOrNewAccount div.CustomContent  {
 		margin: 0;
 		padding: 0;
 	}
@@ -2779,12 +2693,11 @@ and (max-width : 1024px) {
 		padding-top: 1em;
 	}
 	.ValidationAndForms .LoginForms {
-		/* margin: 0 1em 3em 1em; */
 }
 	.LoginText {
 		margin: 0;
-	}
-	.LoginWelcome .PageTitle h1,
+	}*/
+/*	.LoginWelcome .PageTitle h1,
 	.LoginWelcome p {
 		text-align: left;
 	}
@@ -2796,7 +2709,7 @@ and (max-width : 1024px) {
 		float: right;
 		clear: right;
 		margin: 5em 1em;
-	}
+	}*/
 }
 .erxHoverArea div.erxToolTip,
 .erxHoverArea div.erxToolTipJS,
@@ -2904,11 +2817,11 @@ and (max-width : 1024px) {
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 /* Styles */
-	.LoginForms {
+/*	.LoginForms {
 		float: right;
 		clear: right;
 		margin: 5em 10;
-	}
+	}*/
 }
 
 
@@ -2938,3 +2851,105 @@ div.Main .SharedLegend {
 }
 
 div.Main .SharedPeople { }
+
+/* CATEGORY: SIMPLE GRID --> */
+.row:after,
+.applicantSearch .sectionDivider:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row-size1 {
+  margin-top: .75rem;
+}
+.row-size2 {
+  margin-top: 1.25rem;
+}
+.row-size3 {
+  margin-top: 1.5rem;
+}
+.row-break-size1 {
+  margin-bottom: .75rem;
+}
+/* remove after adding .column */
+[class^="column"] {
+  float: left;
+  padding-right: 16px;
+}
+
+[class^="column"]:last-of-type {
+  padding-right: 0;
+}
+
+.column {
+  width: 100%;
+  float: left;
+  padding-right: 1rem;
+}
+.column-2-3 {
+  width: 66.66%;
+}
+
+.column-1-3 {
+  width: 33.33%
+}
+
+.column-1-4 {
+  width: 25%;
+}
+
+.column-2-4,
+.column-1-2 {
+  width: 50%;
+}
+
+.column-3-4 {
+  width: 75%;
+}
+/* <-- SIMPLE GRID */
+/* CATEGORY: bg color classes -> */
+
+/* darkest blue = 1 */
+.bg-blue01 {
+  background-color: #29353d;
+  color: #fff;
+}
+.bg-blue01 a {
+  color: #c4dcee;
+}
+.bg-blue01 button.bare {
+	color: #fff;
+}
+.transparent {
+  background-color: transparent;
+}
+.bg-blue02 {
+  background-color: #33424d;
+  color: #fff;
+}
+.bg-blue02 a {
+  color: #c4dcee;
+}
+.bg-blue03 {
+	background-color: #415467;
+	color: #fff;
+}
+.bg-blue03 h1,
+.bg-blue03 h2,
+.bg-blue03 h3,
+.bg-blue03 h4,
+.bg-blue03 h5,
+.bg-blue03 h6 {
+	color: #fff;
+	font-weight: normal;
+}
+
+/* <- bg color classes */
+
+/* buttons --> */
+
+	button {
+		font-size: 1rem;
+	}
+
+/* <-- buttons */
