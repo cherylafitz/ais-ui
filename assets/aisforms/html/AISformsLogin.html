@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="../styles/aisforms-common/loginPage.css">
 </head>
 <body class="IsNotLoggedIn">
-  <header class="bg-blue02">
+  <header class="section bg-blue02">
     <div class="ac-brand">
       <img alt="American Councils Logo" id="AClogo" src="https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png">
     </div>
@@ -16,7 +16,7 @@
       <div><a href="#Login">Sign in</a></div>
     </div>
   </header>
-  <div class="main">
+  <div class="main section">
     <div class="CustomContent">
       <!-- BEGIN Login Info and Tips -->
       <div class="LoginWrapper LoginProgramWrapper">
@@ -34,7 +34,7 @@
             <img class="ProgramLogo" src="https://aisforms.s3.amazonaws.com/ais/NSLI-Y/NSLI-Y-logo_color_200w.png" alt="American Councils Logo" width="200">
           </div>
           <div class="PageTitle">
-            <h1>National Security Language Initiative for Youth (NSLI-Y) – Application</h1>
+            <h1>National Security Language Initiative for Youth <span class="nowrap">(NSLI-Y)</span> &mdash; Application</h1>
           </div>
 
           <!-- END Program Name and Logo -->
@@ -93,8 +93,8 @@
       </div>
       <!-- </div> -->
       <div id="LoginActions">
-        <button id="showCreateAccount">Create account</button>
         <input id="loginButton" type="submit" value="Login" name="attemptLogin"><input type="hidden" name="WOSubmitAction" value="attemptLogin">
+        <button id="showCreateAccount">Create account</button>
         <div class="ForgotPassword">
           <a class="ForgotPassword" href="/cgi-bin/WebObjects/AIR.woa/wa/forgottenPassword?brand=general">Help Logging In</a>
         </div>
@@ -156,95 +156,94 @@
 </div>
 
 
-<div class="TipsLogin bg-blue03">
+<div class="section bg-blue03">
+  <div class="row">
+    <div class="column column-1-2">
 
-  <h3>Tips for Using this Website</h3>
+      <!-- BEGIN Usage Tips -->
 
-  <!-- BEGIN Usage Tips Content -->
-  <div class="TipsLoginContentWrapper">
-
-    <!-- BEGIN Usage Tips Content Left Column -->
-    <div class="TipsLoginContent left">
-
-      <div class="row row-size2"><h4>Enable Cookies and JavaScript</h4></div>
-      <p>
-        This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
-      </p>
-
-      <div class="row row-size2"><h4>Times Displayed on this Site</h4></div>
-      <p>
-        Unless otherwise noted, all times displayed on this site are U.S. Eastern/Washington, D.C., time.
-      </p>
-
-      <div class="row row-size2"><h4>Questions?</h4></div>
-      <p>
-        Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
-      </p>
-
-    </div>
-    <!-- END Usage Tips Content Left Column -->
-
-    <!-- BEGIN Usage Tips Content Right Column -->
-    <div class="TipsLoginContent">
-
-      <div class="row row-size2"><h4>Allow Emails from AIS Forms</h4></div>
-      <p>
-        All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this email address to your address book/approved senders list to help prevent messages from being blocked as spam or junk mail. </p>
-
-      </div>
-      <!-- END Usage Tips Content Right Column -->
-
-      <div class="clear"></div>
-
-    </div>
-    <!-- Usage Tips Content -->
-
-  </div>
-  <div id="footer">
-    <div id="footer2">
-      <div class="logo"></div>
-      <div class="AClogoAddressFooter">
-        <div id="AClogoFooter">
-          <img id="HomePage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
-          <img id="LoginPage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
-        </div>
-        <div class="ACaddressBlock">
-          <span class="contact1"><span class="street">1828 L St NW Ste 1200</span> <span class="state-zip">Washington DC 20036-5136</span> <span class="country">USA</span></span>
-          <span class="contact2"> <span class="telephone">tel: (+1) 202.833.7522</span> <span class="fax">fax: (+1) 202.833.7523</span> <span class="website"><span class="www">www:</span> <a href="http://www.americancouncils.org/" target="_blank">www.americancouncils.org</a></span></span>
-        </div>
-        <div class="legal">
-          <span class="copyright">© American Councils for International Education</span> <span class="rights-reserved">All rights reserved.</span>
-        </div>
-        <div class="policies">
-          <div id="PrivacyPolicy">
-            <a href="/cgi-bin/WebObjects/AIR.woa/wo/0.0.0.21.11">Privacy Policy</a>
+      <h3>Tips for Using this Website</h3>
+      <div class="TipsLoginContent">
+        <div class="row row-size1">
+          <div class="column column-1-2">
+            <h4>Enable Cookies and JavaScript</h4>
+            <p>
+              This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+            </p>
           </div>
-          <div id="CookieDeclaration">
-            <a href="/cgi-bin/WebObjects/AIR.woa/wo/0.0.0.21.13">Cookie Declaration</a>
+          <div class="column column-1-2"><h4>Times Displayed on this Site</h4>
+            <p>
+              Unless otherwise noted, all times displayed on this site are U.S. Eastern/Washington, D.C., time.
+            </p>
           </div>
         </div>
+        <div class="row row-size1">
+          <div class="column column-1-2">
+            <h4>Allow Emails from AIS Forms</h4>
+            <p>
+              All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this email address to your address book/approved senders list to help prevent messages from being blocked as spam or junk mail. </p>
+            </div>
+          <div class="column column-1-2">
+            <h4>Questions?</h4>
+            <p>
+              Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+            </p>
+          </div>
+          </div>
+          </div>
+          <!-- END Usage Tips Content Right Column -->
+
+          <div class="clear"></div>
+        </div>
+        <!-- Usage Tips Content -->
+
       </div>
     </div>
-    <div id="amagavi">
-      <table><tbody><tr><td class="logoCell"><a href="http://www.codivus.com/"><img width="28" height="25" src="/WebObjects/AIR2.woa/Contents/WebServerResources/amagavi/amagavi-butler-transBG.gif"></a></td>
-        <td class="byline"><span class="byline">Web development and hosting by <a href="http://www.codivus.com/">Codivus Corporation</a></span></td>
-      </tr></tbody></table>
+    <div id="footer" class="section">
+      <div id="footer2">
+        <div class="logo"></div>
+        <div class="AClogoAddressFooter">
+          <div id="AClogoFooter">
+            <img id="HomePage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
+            <img id="LoginPage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
+          </div>
+          <div class="ACaddressBlock">
+            <span class="contact1"><span class="street">1828 L St NW Ste 1200</span> <span class="state-zip">Washington DC 20036-5136</span> <span class="country">USA</span></span>
+            <span class="contact2"> <span class="telephone">tel: (+1) 202.833.7522</span> <span class="fax">fax: (+1) 202.833.7523</span> <span class="website"><span class="www">www:</span> <a href="http://www.americancouncils.org/" target="_blank">www.americancouncils.org</a></span></span>
+          </div>
+          <div class="legal">
+            <span class="copyright">© American Councils for International Education</span> <span class="rights-reserved">All rights reserved.</span>
+          </div>
+          <div class="policies">
+            <div id="PrivacyPolicy">
+              <a href="/cgi-bin/WebObjects/AIR.woa/wo/0.0.0.21.11">Privacy Policy</a>
+            </div>
+            <div id="CookieDeclaration">
+              <a href="/cgi-bin/WebObjects/AIR.woa/wo/0.0.0.21.13">Cookie Declaration</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="amagavi">
+        <table><tbody><tr><td class="logoCell"><a href="http://www.codivus.com/"><img width="28" height="25" src="/WebObjects/AIR2.woa/Contents/WebServerResources/amagavi/amagavi-butler-transBG.gif"></a></td>
+          <td class="byline"><span class="byline">Web development and hosting by <a href="http://www.codivus.com/">Codivus Corporation</a></span></td>
+        </tr></tbody></table>
+      </div>
     </div>
-  </div>
-  <script type="text/javascript">
-    var button = document.getElementById("showCreateAccount");
-    var elementToShow = document.getElementById("CreateAccountForm");
+    <script type="text/javascript">
+      var button = document.getElementById("showCreateAccount");
+      var elementToShow = document.getElementById("CreateAccountForm");
 
-    var showCreateAccountForm = function(event,form,input) {
-      form.classList.add("show-element");
-    }
-    button.addEventListener("click", function(event) {
-      event.preventDefault();
-      showCreateAccountForm(event, elementToShow);
-      setTimeout(function() {
-        document.getElementById("Membername").focus();
-      },400);
-    });
+      var showCreateAccountForm = function(event,form,input) {
+        form.classList.add("show-element");
+      }
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        showCreateAccountForm(event, elementToShow);
+        setTimeout(function() {
+          document.getElementById("Membername").focus();
+        },400);
+      });
     // elementToShow.classList.add("showElement");
   </script>
 </body>

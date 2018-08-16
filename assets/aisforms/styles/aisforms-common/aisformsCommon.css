@@ -45,10 +45,12 @@ input::-moz-focus-inner {
 body {
 	background-repeat: repeat-x;
 	color: #222222;
-	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	width: 100%;
 	background-color: #e0e6eb;
 	min-height:100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body.IsNotLoggedIn {
 	background-color: #fff;
@@ -68,6 +70,15 @@ div.Content {
 }
 h1, h2, h3, h4, h5, h6 {
 	padding: 0;
+}
+h1, h2 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
 }
 
 /*<--MAIN STRUCTURE */
@@ -119,7 +130,7 @@ div.Content div.Rowdisplay {
 /*NAV-->*/
 #TopMenu a,
 .menu a {
-	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: .9em;
 	width: 10%;
 	min-width: 20px;
@@ -260,7 +271,7 @@ div.Content div.Rowdisplay {
 	font-weight: normal;
 	padding: .4em .5em;
 	background-color: #29353d ;
-	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.8em;
 }
 #Header .LoginLogoutLink a:hover,
@@ -688,7 +699,7 @@ table.RowDisplay td {
 	padding: 0.3em 0.3em;
 	border: 0.1em solid #fff;
 	text-align: left;
-	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
@@ -1504,7 +1515,7 @@ div.Content .MenuOfSections input[type="button"]:disabled {
 .MenuOfSections select {
 	padding: 0.1em;
 	font-size: 1em;
-	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 div.bottomButtons {
 	display: none;
@@ -1630,7 +1641,7 @@ input[type="file"] {
 input[type="submit"],
 input[type="button"]{
 	vertical-align: middle;
-	font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	padding-bottom: .1em;
 	cursor: pointer;
 }
@@ -1773,7 +1784,6 @@ span.fax {
 #footer #footer2 {
 	background-color: transparent;
 	border: none;
-	width: 95%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -1804,15 +1814,16 @@ div#footer2 .ACaddressBlock {
 	width: 100%;
 	position: relative;
 	background-color: #33424d;
-	padding: 2rem;
 	font-size: .875rem;
 	color: #fff;
+}
+.IsLoggedIn #footer {
+	padding: 2rem;
 }
 div#footer.IsLoggedIn div#amagavi {
      /*display: none;*/
 }
 #footer #amagavi {
-	width: 95%;
 	margin: 0 auto;
 	text-align: right;
 }
@@ -1872,6 +1883,9 @@ div.CheckboxMatrix tr td {
 }
 .byline {
 	color: #323232;
+}
+#footer .byline {
+	color: #fff;
 }
 .Content a {
 	color: #435721;
@@ -2880,7 +2894,8 @@ div.Main .SharedPeople { }
 [class^="column"]:last-of-type {
   padding-right: 0;
 }
-
+@media screen
+  and (min-device-width: 55.25em) {
 .column {
   width: 100%;
   float: left;
@@ -2906,6 +2921,7 @@ div.Main .SharedPeople { }
 .column-3-4 {
   width: 75%;
 }
+}
 /* <-- SIMPLE GRID */
 /* CATEGORY: bg color classes -> */
 
@@ -2927,7 +2943,8 @@ div.Main .SharedPeople { }
   background-color: #33424d;
   color: #fff;
 }
-.bg-blue02 a {
+.bg-blue02 a,
+.bg-blue03 a {
   color: #c4dcee;
 }
 .bg-blue03 {
@@ -2944,6 +2961,8 @@ div.Main .SharedPeople { }
 	font-weight: normal;
 }
 
+
+
 /* <- bg color classes */
 
 /* buttons --> */
@@ -2951,5 +2970,11 @@ div.Main .SharedPeople { }
 	button {
 		font-size: 1rem;
 	}
+	button:hover {
+		cursor: pointer;
+	}
 
 /* <-- buttons */
+.nowrap {
+	white-space: nowrap;
+}
