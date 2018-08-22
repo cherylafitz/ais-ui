@@ -152,35 +152,37 @@ div.recommendeeBox {
 
 div.helpBox {
   display: inline-block;
-  color:#981727;
-  background-color: #FFD590;
-  text-shadow: 1px 1px 1px #FFD590;
-  font-size:0.8em;
+  color: #000;
+  background-color: #ffe2b3;
+  font-size: 0.75rem;
   font-weight: normal;
   text-align: left;
-  width:15em;
-  padding: .25rem .5rem .5rem;
-  border:1px solid #444444;
+  width: 15em;
+  padding: .25rem .5rem;
+  border: 1px solid #f6b844;
   border-radius: 2px;
-  margin: 0 0 0 1em;
-  float:right;
+  margin: 0 0 1.25rem 1rem;;
+  float: right;
+  line-height: 1.0675rem;
 }
 
 div.alertBox {
-  color: #981727;
-  background-color: #FFFFDD;
-  font-size: 0.9em;
+  color: #000;
+  background-color: #ffdacc;
+  font-size: 0.875rem;
   font-weight: normal;
   text-align: left;
-  border: 1px solid #DA2238;
+  border: 1px solid #ffc8b3;
   border-radius: 2px;
-  padding: .25rem .5rem .5rem;
+  padding: .25rem .5rem;
   margin: 1em 0;
-  clear: both;
+  clear: right;
 }
 div.helpBox img,
 div.alertBox img {
   padding-right: .25rem;
+  float: left;
+  height: 17px;
 }
 
 
@@ -261,9 +263,12 @@ div.QuestionText div.Instruction ul {
 
 /* Section Name and Headers--> */
 div.SectionDisplay div.SectionName {
-  font-size: 2em;
+  font-size: 1.75rem;
   color: #2E6B9B;
-  border-bottom:medium solid #2E6B9B;
+  border-bottom: 2px solid #2E6B9B;
+  margin-bottom: 1rem;
+  padding-bottom: .125rem;
+  font-weight: normal;
 }
 .filespecs {
   font-size: .8em;
@@ -783,7 +788,7 @@ div.SectionDisplay h6 {
 
 div.Content div.Divider,
 div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
-  font-size: 1.5em;
+  font-size: 1.375em;
   color: #025689;
   margin-bottom: 0.5em;
   margin-top: 0.5em;

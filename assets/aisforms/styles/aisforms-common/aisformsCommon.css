@@ -57,7 +57,7 @@ div.Content {
   display: block;
 }
 .Content p {
-  margin: .7em 0;
+  margin: .25rem 0 .5rem;
 }
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
@@ -1220,7 +1220,7 @@ table.TemplateTable tr td {
   font-size: .875rem;
   color: #ededed;
   padding: 1em;
-  background-color: #33424d;
+  background-color: #475c6b;
   border: 1px solid #222;
   width: 17%;
   margin-bottom: 2em;
