@@ -159,9 +159,9 @@ div.helpBox {
   font-weight: normal;
   text-align: left;
   width:15em;
-  padding: 0.2em 0.5em;
+  padding: .25rem .5rem .5rem;
   border:1px solid #444444;
-  border-radius: 1em;
+  border-radius: 2px;
   margin: 0 0 0 1em;
   float:right;
 }
@@ -173,23 +173,35 @@ div.alertBox {
   font-weight: normal;
   text-align: left;
   border: 1px solid #DA2238;
-  border-radius: 1em;
+  border-radius: 2px;
+  padding: .25rem .5rem .5rem;
+  margin: 1em 0;
+  clear: both;
+}
+div.helpBox img,
+div.alertBox img {
+  padding-right: .25rem;
+}
+
+
+div.deadlineBox {
+  background-color: #ffc8b3;
+  font-size: 1.2em;
+  text-align: left;
+  border-radius: 2px;
   padding: .2em .5em;
   margin: 1em 0;
   clear: both;
 }
-
-div.deadlineBox {
-  color: #981727;
-  background-color: #FFFFDD;
-  font-size: 1.2em;
+div.deadlineBox span {
   font-weight: bold;
-  text-align: left;
-  border: 1px solid #DA2238;
-  border-radius: 1em;
-  padding: .2em .5em;
-  margin: 1em 0;
-  clear: both;
+}
+div.deadlineBox span.timeZone {
+  font-weight: normal;
+}
+div.deadlineBox span.dayOfWeek:after,
+div.deadlineBox span.dayMonthYear:after {
+  content: ",";
 }
 
 /* <--Notice Blocks */
@@ -416,13 +428,15 @@ table.TemplateTable td ul {
    list-style-type:circle;
    padding-left:1.1em;
 }
-div.Content table.AnswerTable tr.odd {
-  background-color: #E9F1F7;
+div.Content table.AnswerTable tr.odd,
+div.SectionDisplay table.RowDisplay tr:nth-child(2n+1),
+div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
 }
 div.Content table.AnswerTable tr.even,
 div.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
 div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
-  background-color: #c1d1e3;
+  background-color: #c4dced;
 }
 table.Attachments {
   margin-left:0 !important;
@@ -446,21 +460,29 @@ div.Content table.ContrastBox {
   background-color: #2E6B9B;
 }
 div.SectionDisplay table th,
-div.Content table.AnswerTable tr.headerRow th {
+div.Content table.AnswerTable tr.headerRow th,
+div.Content table.AnswerTable thead tr th {
   background-color: #444;
   font-style: normal;
   color: #FFFFFF;
-  font-size: 1em;
+  font-size: .875rem;
   text-align: center;
   font-weight: bold;
-  padding: 0.3em;
+  padding: 0.25rem;
 }
 div.SectionDisplay table.AnswerTable tr td,
 div.SectionDisplay table th  {
-  border: thin solid #999;
+  border: 1px solid #fff;
   vertical-align: top;
 }
+div.SectionDisplay .ItemAddress th {
+  text-align: left;
+  font-weight: normal;
+  background-color: #2E6B9B;
+}
+div.SectionDisplay .ItemAddress td {
 
+}
 div.SectionDisplay table.ERXMatrixTable tr td,
 div.SectionDisplay  table.AnswerTable div.RadioButtonMatrix tr td,
 div.SectionDisplay  table.AnswerTable div.CheckboxMatrix tr td  {
@@ -494,10 +516,16 @@ table.AnswerTable {
   margin: .5em 0em;
 }
 
-div.SectionDisplay table.AnswerTable tr.headerRow th {
+div.SectionDisplay table.AnswerTable tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
   font-style:normal;
+  font-weight: normal;
   background-color: #2E6B9B;
   color: #FFFFFF;
+  font-size: 1rem;
+  border-color: #fff;
+  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
 }
 div.Content table.AnswerTable tr td div{
   margin-top:5px;
@@ -510,19 +538,27 @@ table.TemplateTable tr td,
 div.SectionIntroductionText table tr th,
 div.BeforeQuestion table tr th,
 table.TemplateTable tr th {
-  border: 1px solid #999;
-  padding: .3em;
+  border: 1px solid #cecece;
+  padding: .25rem .5rem;
+}
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th,
+table.TemplateTable tr th {
+  border-color: #222;
 }
 div.SectionIntroductionText table tr td,
 div.BeforeQuestion table tr td,
 table.TemplateTable tr td {
-  font-size: 0.9em;
-   text-align: left;
+  font-size: 0.875rem;
+  text-align: left;
 }
 
 div.SectionDisplay table.TemplateTable tr td,
 div.SectionDisplay table.TemplateTable tr th {
   vertical-align: middle;
+}
+div.SectionDisplay table.TemplateTable tr th {
+  font-weight: normal;
 }
 
 div.SectionIntroductionText table tr th,
@@ -557,7 +593,7 @@ td ul, td ol {
 /* Alignment/Spacing */
 
 div.SectionDisplay {
-  padding-bottom: 0.5em;
+  padding-bottom: 1rem;
 }
 
 div.Content div.QuestionNumber {
@@ -601,9 +637,9 @@ input#SubmitForEvaluation {
   padding: 0.2em 0.4em 0.3em;
   text-shadow: 0px 0px 0px #222;
   font-size: 1em;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 input[value="Save Changes"]:hover,
 input#SubmitForEvaluation:hover {
@@ -781,13 +817,13 @@ div.Content div.AfterQuestion {
 
 
 div.Content div.GroupedItem {
-  padding: .5em 0 1em 0;
+  padding: .75rem;
   margin: .5em 0 1em 0;
   background-color: #F3F3F3;
   border: none;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 div.Content div.GroupedItem div.RadioButtonMatrix table{
   background-color: #F3F3F3;
