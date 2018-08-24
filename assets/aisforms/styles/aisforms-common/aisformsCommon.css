@@ -4,23 +4,6 @@ div#PrivacyPolicy,
 div#CookieDeclaration {
   display: none;
 }
-
-/* ADD THIS SUMMER!! -->
-
-#TopMenu a:hover, .menu a:hover, .menu a:active, #TopMenu a:active {
-    background: #EEF5F8;
-    box-shadow: none;
-    border: none;
-    color: #000;
-    : 1px solid #444;
-    border-left: 1px solid #777;
-    border-right: 1px solid #777;
-}
-
-WORK WITH MARCO TO ADD IDs TO PAGES TO ALLOW ME TO IMITATE TAB VISUALIZATION??? NEED TO CONSIDER HOW IT WILL LOOK ON NON-MAIN PAGES
-
-<--ADD THIS SUMMER!!
- */
 /* MAIN STRUCTURE--> */
 *,
 *:after,
@@ -49,11 +32,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-  /*  font-family: Arial, Calibri, Helvetica;*/
+    font-family: "Open Sans", Arial, Calibri, Helvetica;
 }
 body.IsNotLoggedIn {
 	background-color: #fff;
-} 
+}
 div.Content {
   margin: 0 0 0 0;
   padding: 1.5em 1.2em;
@@ -129,7 +112,7 @@ div.Content div.Rowdisplay {
 #TopMenu a,
 .menu a {
   font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-  /*  font-family: Arial, Calibri, Helvetica;*/
+    font-family: "Open Sans", Arial, Calibri, Helvetica;
   font-size: .875rem;
   width: 10%;
   min-width: 20px;
@@ -252,7 +235,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   padding: .25rem .5rem;
   background-color: #29353d ;
   font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Arial, Calibri, Helvetica;
   font-size: 0.8em;
 }
 #Header .LoginLogoutLink a:hover,
@@ -683,7 +666,7 @@ table.RowDisplay td {
   border: 0.1em solid #fff;
   text-align: left;
   font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Arial, Calibri, Helvetica;
   font-weight: normal;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
@@ -1466,7 +1449,7 @@ div.Content .MenuOfSections input[type="button"]:disabled {
   padding: 0.1em;
   font-size: 1em;
   font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Arial, Calibri, Helvetica;
 }
 div.bottomButtons {
   display: none;
@@ -1613,7 +1596,7 @@ input[type="submit"],
 input[type="button"]{
   vertical-align: middle;
   font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Arial, Calibri, Helvetica;
   padding-bottom: .1em;
   cursor: pointer;
 }
