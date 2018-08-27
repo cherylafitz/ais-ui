@@ -1572,7 +1572,7 @@ div.SectionNavigator.vertical {
   border: none;
 }
 div#menu3 ul {
-  font: 100% 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: transparent;
