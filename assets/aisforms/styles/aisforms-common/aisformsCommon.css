@@ -44,7 +44,6 @@ body {
   background-repeat: repeat-x;
   color: #222222;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
   width: 100%;
   min-height: 100%;
 }
@@ -115,7 +114,7 @@ div.Content div.Rowdisplay {
 #TopMenu a,
 .menu a {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  /*  font-family: Arial, Calibri, Helvetica;*/
+
   font-size: .875rem;
   width: 10%;
   min-width: 20px;
@@ -238,7 +237,6 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   padding: .25rem .5rem;
   background-color: #29353d ;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
   font-size: 0.8em;
 }
 #Header .LoginLogoutLink a:hover,
@@ -748,7 +746,6 @@ table.RowDisplay td {
   border: 0.1em solid #fff;
   text-align: left;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
   font-weight: normal;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
@@ -1552,7 +1549,6 @@ div.Content .MenuOfSections input[type="button"]:disabled {
   padding: 0.1em;
   font-size: 1em;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
 }
 div.bottomButtons {
   display: none;
@@ -1699,7 +1695,6 @@ input[type="submit"],
 input[type="button"]{
   vertical-align: middle;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
   padding-bottom: .1em;
   cursor: pointer;
 }
@@ -1907,6 +1902,7 @@ table#CreateAccount tr.header th {
   background-color: #D3DDAC;
   color: #444;
   text-align: center;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 1.2em;
   padding: .5em 0;
