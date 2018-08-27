@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
 div#PrivacyPolicy,
 div#CookieDeclaration {
   display: none;
@@ -41,8 +43,7 @@ input::-moz-focus-inner {
 body {
   background-repeat: repeat-x;
   color: #222222;
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
   min-height: 100%;
 }
@@ -61,6 +62,7 @@ div.Content {
 }
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 /*<--MAIN STRUCTURE */
@@ -111,8 +113,8 @@ div.Content div.Rowdisplay {
 /*NAV-->*/
 #TopMenu a,
 .menu a {
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-  /*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
   font-size: .875rem;
   width: 10%;
   min-width: 20px;
@@ -234,8 +236,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   font-weight: normal;
   padding: .25rem .5rem;
   background-color: #29353d ;
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 0.8em;
 }
 #Header .LoginLogoutLink a:hover,
@@ -744,8 +745,7 @@ table.RowDisplay td {
   padding: 0.3em 0.3em;
   border: 0.1em solid #fff;
   text-align: left;
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
@@ -1548,8 +1548,7 @@ div.Content .MenuOfSections input[type="button"]:disabled {
 .MenuOfSections select {
   padding: 0.1em;
   font-size: 1em;
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 div.bottomButtons {
   display: none;
@@ -1573,7 +1572,7 @@ div.SectionNavigator.vertical {
   border: none;
 }
 div#menu3 ul {
-  font: 100% 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -1695,8 +1694,7 @@ input[type="file"] {
 input[type="submit"],
 input[type="button"]{
   vertical-align: middle;
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
-/*  font-family: Arial, Calibri, Helvetica;*/
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   padding-bottom: .1em;
   cursor: pointer;
 }
@@ -1904,6 +1902,7 @@ table#CreateAccount tr.header th {
   background-color: #D3DDAC;
   color: #444;
   text-align: center;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 1.2em;
   padding: .5em 0;
@@ -1917,7 +1916,7 @@ table#CreateAccount tr td {
 .LoginOrNewAccount .baseStyle,
 /* #UserHomePage .baseStyle {
   color: #1C2332;
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .baseStyle {
   padding: 0;
