@@ -49,7 +49,7 @@ body {
 }
 div.Content {
   margin: 0 0 0 0;
-  padding: 1.5em 1.2em;
+  padding: 1.5rem;
   position: relative;
   background-color: transparent;
 }
@@ -78,9 +78,8 @@ div.Content div.Rowdisplay {
   margin: 0 auto;
 }
 .SectionDisplay {
-  background-color: #fff;
   padding: 2em;
-  margin: 1.2em auto .5em auto;
+  margin: 0;
   -webkit-box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);
   -moz-box-shadow:    0 0 6px 0 rgba(50, 50, 50, 0.25);
   box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);
@@ -1395,9 +1394,7 @@ body div.UserDisplay table tr.MenuPreview td {
 border: 0;
 }
 /* <--UserDisplay */
-/* <--UserDisplay */
-/* <--UserDisplay */
-/* <--UserDisplay */
+
 /* TEMPLATES--> */
 div.AdminFormNav span.AdminEditSection,
 div.AdminFormNav span.AdminEditTemplate {
@@ -1416,9 +1413,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 div.ApplicationTemplateDisplay div.templateContent {
-position: relative;
-width: 100%;
-clear: both;
+  display: flex;
 }
 
 div#ApplicationTemplateDisplayAUC h1 {
@@ -1564,12 +1559,16 @@ div.SectionNavigator.vertical #menu3 li a.current {
   padding-left: 5px;
 }
 div.SectionNavigator.vertical {
-  position: absolute;
   margin: 0;
+  flex-basis: 14rem;
   background-color: #E8EBD9;
   z-index: 999;
   border-radius: 2px 2px 0px 0px;
   border: none;
+}
+.sectionBodyBelowTopNavBar {
+  margin-left: 2rem !important;
+  flex-grow: 1;
 }
 div#menu3 ul {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1761,6 +1760,7 @@ input[type="button"]:hover {
 */}
 .BackToTopBookmark {
   margin-top: 1em;
+  display: inline-block;
 }
 .NotifyReferenceButtonWrapper input[type="button"] {
   padding: .2em;
