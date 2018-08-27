@@ -1670,17 +1670,22 @@ div.PreviousSection {
 .SectionNavigator input[value="< previous"]:hover {
   /*background-image: url('https://ais.americancouncils.org/ais/common/BackArrow.png');*/
 }
-td input[type="text"],
+input[type="text"],
 textarea,
-td input[type="password"] {
+input[type="password"] {
   background-color: #fff;
   border: 1px solid #C7C7C7;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   padding: 2px;
+}
+td input[type="text"],
+textarea,
+td input[type="password"] {
   margin: 0 .5em;
 }
+
 select {
   margin-bottom: .25em;
 }
