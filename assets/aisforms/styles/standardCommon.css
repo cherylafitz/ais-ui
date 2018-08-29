@@ -222,12 +222,12 @@ div.deadlineBox span.dayMonthYear:after {
 
 div.Content {
   color: #000000;
-  font: 100% 'Proxima Nova','Century Gothic','Avant Garde','Helvetica Neue','Helvetica',Verdana,sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 div.SectionNavigator,
 div#menu3 ul {
-  font: 100% 'Proxima Nova','Century Gothic','Avant Garde','Helvetica Neue','Helvetica',Verdana,sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 div.SectionDisplay p {
@@ -471,7 +471,6 @@ div.Content table.AnswerTable thead tr th {
   font-style: normal;
   color: #FFFFFF;
   font-size: .875rem;
-  text-align: center;
   font-weight: bold;
   padding: 0.25rem;
 }
@@ -479,14 +478,12 @@ div.SectionDisplay table.AnswerTable tr td,
 div.SectionDisplay table th  {
   border: 1px solid #fff;
   vertical-align: top;
+  padding: .125rem .25rem;
 }
 div.SectionDisplay .ItemAddress th {
   text-align: left;
   font-weight: normal;
   background-color: #2E6B9B;
-}
-div.SectionDisplay .ItemAddress td {
-
 }
 div.SectionDisplay table.ERXMatrixTable tr td,
 div.SectionDisplay  table.AnswerTable div.RadioButtonMatrix tr td,
@@ -497,8 +494,7 @@ td.ERXMatrixTableCell {
   padding-right: 2em;
 }
 div.Content div.SectionDisplay table tr td input[type="text"] {
-  max-width: 90%;
-  font-size: .9em;
+  max-width: 95%;
 }
 
 div.SectionDisplay table td.DL,
@@ -530,7 +526,7 @@ div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
   color: #FFFFFF;
   font-size: 1rem;
   border-color: #fff;
-  font-family: 'Proxima Nova', 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 div.Content table.AnswerTable tr td div{
   margin-top:5px;
@@ -640,7 +636,6 @@ input[value="Save Changes"],
 input#SubmitForEvaluation {
   color: #FFF;
   padding: 0.2em 0.4em 0.3em;
-  text-shadow: 0px 0px 0px #222;
   font-size: 1em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -648,18 +643,21 @@ input#SubmitForEvaluation {
 }
 input[value="Save Changes"]:hover,
 input#SubmitForEvaluation:hover {
-  color: #FFF;
+/*  color: #FFF;
   padding: 0.2em 0.4em 0.3em;
   text-shadow: 0px 0px 0px #222;
   font-size: 1em;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
-  border-radius: 15px;
+  border-radius: 15px;*/
+  opacity: .9;
 }
 input#SubmitForEvaluation,
 input#SubmitForEvaluation:hover {
-  padding: 0.5em;
+  /*padding: 0.5em;*/
   font-size: 1.2em;
+}
+input#SubmitForEvaluation:hover {
 }
 input[value="Add More"] {
   background: rgb(204,204,204); /* Old browsers */
@@ -783,7 +781,7 @@ div.SectionDisplay h3,
 div.SectionDisplay h4,
 div.SectionDisplay h5,
 div.SectionDisplay h6 {
-  font-family: 'Proxima Nova','Century Gothic','Avant Garde','Helvetica Neue','Helvetica',Verdana,sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 div.Content div.Divider,
@@ -916,7 +914,8 @@ div.Content div.2digitInteger input[type='text'] {
 div.Content div.SectionDisplay table tr td div.caption input[type="text"] {
   width: 15em;
 }
-  div.Content div.SectionDisplay table tr td .LargeInputTable input[type="text"] {
+div.Content div.SectionDisplay table tr td .LargeInputTable input[type="text"],
+div.Content div.SectionDisplay .ItemAddress table tr td input[type="text"] {
   width: 15em;
 }
 div.Content div.SectionDisplay table tr td input[type="text"] {
