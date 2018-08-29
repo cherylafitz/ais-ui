@@ -1463,9 +1463,6 @@ table.RowDisplay td.SectionItemSequenceNumber + td {
   max-width:5em;
   white-space: normal;
 }
-#SectionItemsUpdateContainerID {
-  /* font-size: .9em; */
-}
 #SectionListUpdateContainer table.RowDisplay {
   margin: 1em;
 }
@@ -1491,51 +1488,14 @@ table.RowDisplay.Deadlines tbody tr td {
   white-space: normal;
 }
 /* <--DEADLINES */
-/* div.Content .MenuOfSections input  {
-  border : solid 1px #666;
-  border-radius : 3px;
-  moz-border-radius : 3px;
-  color : #ffffff;
-  padding : .1em .3em;
-  background : #7F8185;
-  background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7F8185), color-stop(100%,#666));
-  background : -moz-linear-gradient(top, #7F8185 0%, #666 100%);
-  background : -webkit-linear-gradient(top, #7F8185 0%, #666 100%);
-  background : -o-linear-gradient(top, #7F8185 0%, #666 100%);
-  background : -ms-linear-gradient(top, #7F8185 0%, #666 100%);
-  background : linear-gradient(top, #7F8185 0%, #666 100%);
-  filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8185', endColorstr='#666',GradientType=0 );
-} */
-/* div.Content .MenuOfSections input:hover {
-  border : solid 1px #000000;
-  border-radius : 3px;
-  moz-border-radius : 3px;
-  color : #ffffff;
-  padding : .1em .3em;
-  background : #7F8185;
-  background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7F8185), color-stop(100%,#222));
-  background : -moz-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : -webkit-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : -o-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : -ms-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : linear-gradient(top, #7F8185 0%, #222 100%);
-  filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8185', endColorstr='#222',GradientType=0 );
-} */
-div.Content .MenuOfSections input[type="button"]:disabled {
-/*  background: #A5A7AA;
-  background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#A5A7AA), color-stop(100%,#A5A7AA));
-  background : -moz-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
-  background : -webkit-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
-  background : -o-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
-  background : -ms-linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
-  background : linear-gradient(top, #A5A7AA 0%, #A5A7AA 100%);
-  filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#A5A7AA', endColorstr='#A5A7AA',GradientType=0 );  */
-}
-.MenuOfSections {
-  /* margin: .5em 0; */
+div.SectionNavigator .MenuOfSections {
   vertical-align: middle;
   max-width: 1050px;
-  /* margin: .5em auto; */
+}
+div.SectionNavigator.vertical .MenuOfSections {
+
+  background-color: #E8EBD9;
+  border-radius: 2px;
 }
 .MenuOfSections table {
   margin: 0 auto;
@@ -1559,15 +1519,15 @@ div.SectionNavigator.vertical #menu3 li a.current {
   padding-left: 5px;
 }
 div.SectionNavigator.vertical {
-  margin: 0;
+  margin: 0 2rem 0 0;
   flex-basis: 14rem;
-  background-color: #E8EBD9;
+  background-color: transparent;
   z-index: 999;
   border-radius: 2px 2px 0px 0px;
   border: none;
 }
 .sectionBodyBelowTopNavBar {
-  margin-left: 2rem !important;
+  margin-left: 0 !important;
   flex-grow: 1;
 }
 div#menu3 ul {
@@ -1677,12 +1637,13 @@ input[type="password"] {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: 2px;
+  padding: 2px 4px;
+  font-size: .875rem;
 }
 td input[type="text"],
 textarea,
 td input[type="password"] {
-  margin: 0 .5em;
+  /*margin: 0 .5em;*/
 }
 
 select {
@@ -1742,22 +1703,8 @@ input#CannedSearch {
 }
 input[type="submit"]:hover:not([value="Clear Filters"]),
 input[type="button"]:hover {
-/*  border : solid 1px #000000;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  text-shadow: 0 0 0 #222;
-  color : #ffffff;
-  padding : 0 .4em .1em .4em;
-  background : #7F8185;
-  background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7F8185), color-stop(100%,#222));
-  background : -moz-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : -webkit-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : -o-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : -ms-linear-gradient(top, #7F8185 0%, #222 100%);
-  background : linear-gradient(top, #7F8185 0%, #222 100%);
-  filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#7F8185', endColorstr='#222',GradientType=0 );
-*/}
+  opacity: .9;
+}
 .BackToTopBookmark {
   margin-top: 1em;
   display: inline-block;
@@ -1913,20 +1860,15 @@ table#CreateAccount tr.header th {
   padding: .5em 0;
 }
 table#login tr th,
-table#login tr td,
-table#CreateAccount tr th,
-table#CreateAccount tr td {
-  padding: .2em 0;
+table#CreateAccount tr th {
+  padding-left: .5rem;
 }
-.LoginOrNewAccount .baseStyle,
-/* #UserHomePage .baseStyle {
-  color: #1C2332;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+table#login input[type="text"],
+table#login input[type="password"],
+table#CreateAccount input[type="password"],
+table#CreateAccount input[type="text"] {
+  font-size: .75rem;
 }
-.baseStyle {
-  padding: 0;
-  margin: 0;
-}*/
 table.RowDisplay td {
 margin: 0.25em 0 0.25em 0;
 }
