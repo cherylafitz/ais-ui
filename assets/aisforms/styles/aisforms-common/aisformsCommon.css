@@ -2905,12 +2905,21 @@ div.Main .SharedPeople { }
 
 /* buttons --> */
 
-	button {
-		font-size: 1rem;
-	}
-	button:hover {
-		cursor: pointer;
-	}
+button {
+  border-radius: 2px;
+  padding: .25rem .75rem;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+button:hover {
+	cursor: pointer;
+}
+.btn-outline-1 {
+  border: 1px solid #2a353d;
+  background-color: transparent;
+  color: #222;
+}
 
 /* <-- buttons */
 .nowrap {

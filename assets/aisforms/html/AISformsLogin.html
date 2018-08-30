@@ -79,7 +79,7 @@
 <div class="LoginForms" id="Login">
   <div id="loginHeading">
     <img id="aisLogo" alt="AIS Logo" src="../media/AISformsLogo_simplified.svg">
-    <h2>Sign in
+    <h2 id="loginHeadingText">Sign in
     </h2>
   </div>
   <form name="loginForm" method="post" id="LoginForm" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin">
@@ -93,9 +93,9 @@
         <input id="Password" type="password" name="passwordLogin">
       </div>
       <!-- </div> -->
-      <div id="LoginActions">
+      <div class="LoginActions">
+        <button class="btn-outline-1" id="showCreateAccount">Create account</button>
         <input id="loginButton" type="submit" value="Login" name="attemptLogin"><input type="hidden" name="WOSubmitAction" value="attemptLogin">
-        <button id="showCreateAccount">Create account</button>
         <div class="ForgotPassword">
           <a class="ForgotPassword" href="/cgi-bin/WebObjects/AIR.woa/wa/forgottenPassword?brand=general">Help Logging In</a>
         </div>
@@ -104,11 +104,8 @@
       </div>
       <input type="hidden" name="brand" value="general">
     </form>
-    <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
+    <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" class="hide-element" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
       <div id="CreateAccount">
-        <h2>
-          Create New Account
-        </h2>
         <div class="UserName">
           <label for="Membername">User name: </label>
           <input type="text" id="Membername" name="membername">
@@ -139,12 +136,13 @@
           <input type="text" id="EmailAddress" name="emailAddress">
         </div>
         <div class="ReCaptcha">
-          <div id="CaptchaExplanation">Help Stop Spam! Check the box below to tell us you are not a robot.</div>
+          <div id="CaptchaExplanation">Check the box below to tell us you are not a robot.</div>
           <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
           <div data-sitekey="6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni&amp;co=aHR0cHM6Ly9haXMuYW1lcmljYW5jb3VuY2lscy5vcmc6NDQz&amp;hl=en&amp;v=v1528855115741&amp;size=normal&amp;cb=x2rhejan3v10" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
         </div>
-        <div>
-          <div><input escapehtml="false" id="createAccountButton" type="submit" value="Create new account" name="createNewAccount"><input type="hidden" name="WOSubmitAction" value="createNewAccount"></div>
+        <div class="LoginActions">
+          <button class="btn-outline-1" id="showLogin">Sign in</button>
+          <input escapehtml="false" id="createAccountButton" type="submit" value="Create new account" name="createNewAccount"><input type="hidden" name="WOSubmitAction" value="createNewAccount">
         </div>
       </div>
       <input type="hidden" name="brand" value="general">
@@ -217,18 +215,39 @@
       </div>
     </div>
     <script type="text/javascript">
-      var button = document.getElementById("showCreateAccount");
-      var elementToShow = document.getElementById("CreateAccountForm");
+      var showCreateAccountbtn = document.getElementById("showCreateAccount");
+      var showLoginBtn = document.getElementById("showLogin");
 
-      var showCreateAccountForm = function(event,form,input) {
-        form.classList.add("show-element");
+      var showHideForm = function(event,formToShow,formToHide) {
+        formToShow.classList.remove("hide-element");
+        formToHide.classList.add("hide-element");
       }
-      button.addEventListener("click", function(event) {
+
+      showCreateAccountbtn.addEventListener("click", function(event) {
+        var elementToShow = document.getElementById("CreateAccountForm");
+        var elementToHide = document.getElementById("LoginForm");
+
         event.preventDefault();
-        showCreateAccountForm(event, elementToShow);
+
+        showHideForm(event, elementToShow, elementToHide);
+
         setTimeout(function() {
           document.getElementById("Membername").focus();
         },400);
+        document.getElementById("loginHeadingText").innerHTML="Create account";
+      });
+      showLoginBtn.addEventListener("click", function(event) {
+        var elementToShow = document.getElementById("LoginForm");
+        var elementToHide = document.getElementById("CreateAccountForm");
+
+        event.preventDefault();
+
+        showHideForm(event, elementToShow, elementToHide);
+
+        setTimeout(function() {
+          document.getElementById("Membername").focus();
+        },400);
+        document.getElementById("loginHeadingText").innerHTML="Sign in";
       });
     // elementToShow.classList.add("showElement");
   </script>

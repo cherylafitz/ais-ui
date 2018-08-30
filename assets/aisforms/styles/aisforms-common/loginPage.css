@@ -64,15 +64,15 @@
   box-sizing: border-box;
 }
 .IsNotLoggedIn #CreateAccountForm {
-  padding-top: .5rem;
+/*  padding-top: .5rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 2s ease-out;
   -webkit-transition: max-height 2s ease-out;
-  /*position: absolute;*/
+  position: absolute;
   z-index: 1;
   opacity: 0;
-  background-color: #cdd6e5;
+  background-color: #cdd6e5;*/
 }
 /*.IsNotLoggedIn #CreateAccountForm:hover {
   max-height: 1000px;
@@ -106,22 +106,21 @@
 .IsNotLoggedIn #showCreateAccount,
 .IsNotLoggedIn #loginButton,
 .IsNotLoggedIn #createAccountButton {
-  border: 1px solid #82909a;
   border-radius: 2px;
-  padding: .25rem .75rem .125rem;
+  padding: .25rem .75rem;
   display: inline-block;
   font-size: 1rem;
-  font-family: sans-serif;
   vertical-align: top;
+  line-height: 1rem;
 }
-.IsNotLoggedIn #showCreateAccount {
+/*.IsNotLoggedIn #showCreateAccount {
   color: black;
   background: #e0e6f0;
   border-color: #2a353d;
-}
+}*/
 .IsNotLoggedIn #loginButton,
 .IsNotLoggedIn #createAccountButton {
-  margin-right: 1rem;
+  margin-left: 1rem;
   background: #33424d;
   border: 1px solid #2a353d;
 }
@@ -143,8 +142,9 @@
   -webkit-box-shadow: inset 0 1px 2px rgba(60,60,60,.1);
   border: 1px solid #999999;
 }
-.IsNotLoggedIn #LoginActions {
+.IsNotLoggedIn .LoginActions {
   margin-top: 1.5rem;
+  text-align: right;
 }
 .IsNotLoggedIn .LoginText {
   text-align: left;
@@ -176,9 +176,15 @@
   font-size: .875em;
   padding: 1rem 0;
 }
-.IsNotLoggedIn #CreateAccountForm.show-element {
+/*.IsNotLoggedIn #CreateAccountForm.show-element {
   max-height: 1000px !important;
   opacity: 1;
+}*/
+/*.show-element {
+  display: block;
+}*/
+.hide-element {
+  display: none;
 }
 @media screen
   and (min-device-width: 55.25em) {
@@ -216,7 +222,7 @@
     margin-right: 2rem;
   }
   .IsNotLoggedIn #CreateAccountForm {
-    position: absolute;
+    /*position: absolute;*/
   }
   .IsNotLoggedIn .CustomContent .logos {
     float: right;
