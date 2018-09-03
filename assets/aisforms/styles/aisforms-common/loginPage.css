@@ -1,0 +1,238 @@
+/* PAGE: LOGIN --> */
+/* MOBILE FIRST */
+.IsNotLoggedIn .section {
+  padding: 1.25rem 2rem;
+}
+.IsNotLoggedIn header {
+  /*padding: 1.25rem 1rem;*/
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.IsNotLoggedIn .branding {
+}
+.IsNotLoggedIn .ais-brand {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.IsNotLoggedIn #AClogo {
+  width: 170px;
+}
+.IsNotLoggedIn .main {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+/*  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;*/
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  }
+.IsNotLoggedIn .CustomContent {
+  flex-basis: 500px;
+  flex-grow: 1;
+  order: 1;
+}
+.IsNotLoggedIn .LoginWelcome .PageTitle h1 {
+  color: #2e6a9b;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.IsNotLoggedIn .LoginWelcome p {
+  color: #000;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  max-width: 600px;
+}
+.IsNotLoggedIn .LoginForms {
+  background: #e0e6f0;
+  order: 2;
+  flex-grow: 0;
+  padding-bottom: 2rem;
+  position: relative;
+  /*clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%);*/
+}
+.IsNotLoggedIn #LoginForm,
+.IsNotLoggedIn #CreateAccountForm {
+  margin: 0;
+  padding: 1.5rem 2rem;
+  background: #e0e6ef;
+  width: 100%;
+  box-sizing: border-box;
+}
+.IsNotLoggedIn #CreateAccountForm {
+/*  padding-top: .5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s ease-out;
+  -webkit-transition: max-height 2s ease-out;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  background-color: #cdd6e5;*/
+}
+/*.IsNotLoggedIn #CreateAccountForm:hover {
+  max-height: 1000px;
+}*/
+.IsNotLoggedIn #loginHeading {
+  background: #33424d;
+  /*background: #29353d;*/
+  /*clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
+}
+.IsNotLoggedIn #aisLogo {
+  height: 80px;
+  padding: 1rem 1rem 1.25rem 2rem;
+  display: block;
+  /*margin-left: auto;*/
+  /*background-color: #33424d;*/
+}
+.IsNotLoggedIn #loginHeading {
+  background: #29353d;
+}
+.IsNotLoggedIn #loginHeading h2 {
+  text-align: left;
+  font-weight: normal;
+  padding: 2.375rem 2rem 1rem;
+  font-size: 1.25rem;
+  background-color: #33424d;
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);
+  float: right;
+  margin-top: -5rem;
+  color: #fff;
+}
+.IsNotLoggedIn #showCreateAccount,
+.IsNotLoggedIn #loginButton,
+.IsNotLoggedIn #createAccountButton {
+  border-radius: 2px;
+  padding: .25rem .75rem;
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: top;
+  line-height: 1rem;
+}
+/*.IsNotLoggedIn #showCreateAccount {
+  color: black;
+  background: #e0e6f0;
+  border-color: #2a353d;
+}*/
+.IsNotLoggedIn #loginButton,
+.IsNotLoggedIn #createAccountButton {
+  margin-left: 1rem;
+  background: #33424d;
+  border: 1px solid #2a353d;
+}
+.IsNotLoggedIn form label,
+.IsNotLoggedIn form input[type=password],
+.IsNotLoggedIn form input[type=text] {
+  display: block;
+  /*padding-bottom: .25rem;*/
+}
+.IsNotLoggedIn form label{
+  margin-top: .75rem;
+}
+.IsNotLoggedIn form input[type=password],
+.IsNotLoggedIn form input[type=text] {
+  width: 100%;
+  max-width: 400px;
+  padding: .55rem;
+  box-shadow: inset 0 1px 2px rgba(60,60,60,.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(60,60,60,.1);
+  border: 1px solid #999999;
+}
+.IsNotLoggedIn .LoginActions {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+.IsNotLoggedIn .LoginText {
+  text-align: left;
+}
+.IsNotLoggedIn .ForgotPassword {
+  display: block;
+  margin: 1rem 0 0;
+  font-size: .875rem;
+  color: #33424d;
+}
+.TipsLogin .heading {
+  font-weight: bold;
+  padding-right: .5rem;
+}
+.TipsLogin p {
+  font-size: .875rem;
+}
+.IsNotLoggedIn .TipsLogin h3 {
+  /* make these styles apply more generally */
+  /*color: #2E6B9B;*/
+  font-weight: normal;
+  font-size: 1.4em;
+  color: #fff;
+}
+.IsNotLoggedIn #footer #HomePage {
+  display: none;
+}
+.IsNotLoggedIn #CaptchaExplanation {
+  font-size: .875em;
+  padding: 1rem 0;
+}
+/*.IsNotLoggedIn #CreateAccountForm.show-element {
+  max-height: 1000px !important;
+  opacity: 1;
+}*/
+/*.show-element {
+  display: block;
+}*/
+.hide-element {
+  display: none;
+}
+@media screen
+  and (min-device-width: 55.25em) {
+  .IsNotLoggedIn .section {
+    padding: 1rem 6rem;
+  }
+  .IsNotLoggedIn .LoginForms {
+    margin-top: -6rem;
+    margin-bottom: -1rem;
+    position: relative;
+  }
+  .IsNotLoggedIn .formTitle {
+    background-color: #e0e6f0;;
+    clip-path: none;
+    float: none;
+    color: #000;
+    margin-top: 0;
+    /*padding: 2rem 2rem 0;*/
+  }
+  .IsNotLoggedIn form label,
+  .IsNotLoggedIn form input[type=password],
+  .IsNotLoggedIn form input[type=text] {
+    display: inline-block;
+    padding: .25rem 0;
+  }
+  .IsNotLoggedIn form label {
+    width: 8rem;
+    margin-top: .25rem;
+  }
+  .IsNotLoggedIn form input[type=password],
+  .IsNotLoggedIn form input[type=text] {
+    width: 12rem;
+  }
+  .IsNotLoggedIn .CustomContent {
+    margin-right: 2rem;
+  }
+  .IsNotLoggedIn #CreateAccountForm {
+    /*position: absolute;*/
+  }
+  .IsNotLoggedIn .CustomContent .logos {
+    float: right;
+  }
+  .IsNotLoggedIn #aisLogo {
+    margin-left: auto;
+  }
+  .IsNotLoggedIn #loginHeading h2 {
+    background-color: transparent;
+    float: left;
+  }
+}
+/* <-- PAGE: LOGIN */
