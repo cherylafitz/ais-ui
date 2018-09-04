@@ -923,6 +923,11 @@ th.TemplateName div {
 th.TemplateName div {
   margin-right: .5em;
 }
+th.filtered {
+  text-shadow: none;
+  background-color: #5d6435;
+  color: #fff;
+}
 .LiveTemplates table.RowDisplay td,
 .LiveTemplates table.RowDisplay tr.headerRow th {
   white-space: normal;
