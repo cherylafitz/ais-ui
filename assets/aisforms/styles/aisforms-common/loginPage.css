@@ -1,4 +1,4 @@
-/* PAGE: LOGIN --> */
+ PAGE: LOGIN --> */
 /* MOBILE FIRST */
 .IsNotLoggedIn .section {
   padding: 1.25rem 2rem;
@@ -28,6 +28,7 @@
   text-rendering: optimizeLegibility;*/
   font-family: sans-serif;
   flex-wrap: wrap;
+  min-height: calc(100vh - 389px);
   }
 .IsNotLoggedIn .CustomContent {
   flex-basis: 500px;
@@ -62,17 +63,14 @@
   background: #e0e6ef;
   width: 100%;
   box-sizing: border-box;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+  -webkit-transition: max-height 1s ease-out;
+  z-index: 1;
+  opacity: 1;
 }
 .IsNotLoggedIn #CreateAccountForm {
-/*  padding-top: .5rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 2s ease-out;
-  -webkit-transition: max-height 2s ease-out;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  background-color: #cdd6e5;*/
 }
 /*.IsNotLoggedIn #CreateAccountForm:hover {
   max-height: 1000px;
@@ -155,12 +153,21 @@
   font-size: .875rem;
   color: #33424d;
 }
-.TipsLogin .heading {
-  font-weight: bold;
-  padding-right: .5rem;
+.tip {
+  display: flex;
+  flex-flow: row wrap;
 }
-.TipsLogin p {
+.tip h4 {
+  font-weight: bold;
+}
+.tip p {
   font-size: .875rem;
+  flex-grow: 1;
+}
+.tip h4,
+.tip p {
+  margin: 0;
+  flex-basis: 300px;
 }
 .IsNotLoggedIn .TipsLogin h3 {
   /* make these styles apply more generally */
@@ -176,18 +183,22 @@
   font-size: .875em;
   padding: 1rem 0;
 }
-/*.IsNotLoggedIn #CreateAccountForm.show-element {
-  max-height: 1000px !important;
-  opacity: 1;
-}*/
-/*.show-element {
+.IsNotLoggedIn #CreateAccountForm.show-element {
+}
+.show-element {
   display: block;
-}*/
+  max-height: 1000 !important;
+  opacity: 1 !important;
+}
 .hide-element {
-  display: none;
+  height: 0;
+  padding: 0 !important;
+  max-height: 0 !important;
+  opacity: 0 !important;
+  /*position: absolute !important;*/
 }
 @media screen
-  and (min-device-width: 55.25em) {
+  and (min-width: 64em) {
   .IsNotLoggedIn .section {
     padding: 1rem 6rem;
   }
@@ -235,4 +246,4 @@
     float: left;
   }
 }
-/* <-- PAGE: LOGIN */
+/* <-- PAGE: LOGIN

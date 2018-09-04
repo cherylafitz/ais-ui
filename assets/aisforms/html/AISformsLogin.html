@@ -156,32 +156,38 @@
 
 
 <div class="section bg-blue03">
-  <div class="row">
-
       <!-- BEGIN Usage Tips -->
 
       <div class="TipsLogin">
       <h3>Tips for Using this Website</h3>
-            <p>
-            <span class="heading">Enable Cookies and JavaScript</span>
-              This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
-            </p>
-            <p>
-            <span class="heading">Times Displayed on this Site</span>
-              Unless otherwise noted, all times displayed on this site are U.S. Eastern/Washington, D.C., time.
-            </p>
-            <p>
-            <span class="heading">Allow Emails from AIS Forms</span>
-              All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this email address to your address book/approved senders list to help prevent messages from being blocked as spam or junk mail. </p>
-            <p>
-            <span class="heading">Questions?</span>
-              Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
-            </p>
+            <div class="tip row-size1">
+              <h4>Enable Cookies and JavaScript</h4>
+              <p>
+                This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+              </p>
+            </div>
+            <div class="tip row-size1">
+              <h4>Times Displayed on this Site</h4>
+              <p>
+                Unless otherwise noted, all times displayed on this site are U.S. Eastern/Washington, D.C., time.
+              </p>
+            </div>
+            <div class="tip row-size1">
+              <h4>Allow Emails from AIS Forms</h4>
+              <p>
+                All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this email address to your address book/approved senders list to help prevent messages from being blocked as spam or junk mail.
+              </p>
+            </div>
+            <div class="tip row-size1">
+              <h4>Questions?</h4>
+              <p>
+                Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+              </p>
+            </div>
         </div>
           <!-- END Usage Tips Content Right Column -->
         <!-- Usage Tips Content -->
 
-      </div>
     </div>
     <div id="footer" class="section">
       <div id="footer2">
@@ -220,6 +226,8 @@
 
       var showHideForm = function(event,formToShow,formToHide) {
         formToShow.classList.remove("hide-element");
+        formToShow.classList.add("show-element");
+        formToHide.classList.remove("show-element");
         formToHide.classList.add("hide-element");
       }
 
@@ -245,7 +253,7 @@
         showHideForm(event, elementToShow, elementToHide);
 
         setTimeout(function() {
-          document.getElementById("Membername").focus();
+          document.getElementById("Username").focus();
         },400);
         document.getElementById("loginHeadingText").innerHTML="Sign in";
       });
