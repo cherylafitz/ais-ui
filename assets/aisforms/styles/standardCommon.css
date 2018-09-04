@@ -593,10 +593,6 @@ td ul, td ol {
 
 /* Alignment/Spacing */
 
-div.SectionDisplay {
-  padding-bottom: 1rem;
-}
-
 div.Content div.QuestionNumber {
   float:left;
 }

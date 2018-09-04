@@ -78,18 +78,16 @@ div.Content div.Rowdisplay {
   margin: 0 auto;
 }
 .SectionDisplay {
-  padding: 2em;
+  padding: 0;
   margin: 0;
-  -webkit-box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);
-  -moz-box-shadow:    0 0 6px 0 rgba(50, 50, 50, 0.25);
-  box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);
-  border: 1px solid #e6e6e6;
+  border: 0;
   text-align: left;
-  max-width: 950px;
+  max-width: 1000px;
+  height: 100%;
+  position: relative;
 }
 .SectionItemsList {
-  border-bottom: 1px double #cecece;
-  padding-bottom: .5em;
+  margin-bottom: 4rem;
 }
 #pageHeader .ApplicationRefCode {
   font-weight: bold;
@@ -1553,12 +1551,16 @@ div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   border-color: #777;
 }
 div.NextSectionNearSaveChanges {
-  float: right;
-  margin-top: 1.5em;
+  position: absolute;
+  bottom: 0;
+  right: 48%;
+  transform: translateX(50%);
 }
 div.PreviousSectionNearSaveChanges {
-	display: inline-block;
-  margin: 1.5em 2em .5em 0;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  transform: translateX(-50%);
 }
 .SectionNavigator div.SectionTitle div.SectionTitleText {
   border-radius: 2px 2px 0px 0px;
@@ -1575,7 +1577,7 @@ div.PreviousSectionNearSaveChanges {
   border-style: solid;
   border-width: 3px 3px 0 0;
   border-color: #fff;
-  height: 18px;
+  height: 19px;
   width: 14px;
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -1598,12 +1600,12 @@ div.PreviousSection {
 .SectionNavigator .next input[type="button"],
 .SectionNavigator input[value="next >"],
 .NextSectionNearSaveChanges .next input[type="button"] {
-  border-width: 3px 3px 0 0;
+  border-width: 4px 4px 0 0;
 }
 .SectionNavigator .previous input[type="button"],
 .SectionNavigator input[value="< previous"],
 .PreviousSectionNearSaveChanges .previous input[type="button"] {
-  border-width: 0 0 3px 3px;
+  border-width: 0 0 4px 4px;
 }
 
 .SectionNavigator input[type="button"]:hover,
@@ -1701,7 +1703,10 @@ input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
   font-size: .875rem;
 }
 input.SaveChanges {
-  margin: 1.5em 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 input#CannedSearch {
   margin-left: .3em;
@@ -1711,8 +1716,7 @@ input[type="button"]:hover {
   opacity: .9;
 }
 .BackToTopBookmark {
-  margin-top: 1em;
-  display: inline-block;
+  display: none;
 }
 .NotifyReferenceButtonWrapper input[type="button"] {
   padding: .2em;
