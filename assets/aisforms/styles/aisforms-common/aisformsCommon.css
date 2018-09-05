@@ -367,6 +367,13 @@ body.IsNotLoggedIn .Content {
 #footer.IsLoggedIn img#LoginPage {
   display: none;
 }
+#Policies,
+.policies {
+  margin: .5rem 0;
+}
+#Policies {
+  display: none;
+}
 div.LoginOrNewAccount div.Content {
   padding-top: 0;
 }
@@ -1550,17 +1557,14 @@ div.NextSectionNearSaveChanges input[type="button"]:hover,
 div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   border-color: #777;
 }
-div.NextSectionNearSaveChanges {
-  position: absolute;
-  bottom: 0;
-  right: 48%;
-  transform: translateX(50%);
-}
+div.NextSectionNearSaveChanges,
 div.PreviousSectionNearSaveChanges {
   position: absolute;
-  bottom: 0;
-  left: 48%;
-  transform: translateX(-50%);
+  bottom: 2px;
+  left: 200px;
+}
+div.PreviousSectionNearSaveChanges {
+  left: 165px;
 }
 .SectionNavigator div.SectionTitle div.SectionTitleText {
   border-radius: 2px 2px 0px 0px;
@@ -1577,8 +1581,8 @@ div.PreviousSectionNearSaveChanges {
   border-style: solid;
   border-width: 3px 3px 0 0;
   border-color: #fff;
-  height: 19px;
-  width: 14px;
+  height: 16px;
+  width: 16px;
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -1586,6 +1590,7 @@ div.PreviousSectionNearSaveChanges {
   margin: 0 0 0 1px;
   color: transparent;
   background: transparent;
+  padding: 0;
 }
 div.NextSection {
   position: absolute;

@@ -291,7 +291,21 @@ div.SectionDisplay div.SectionName {
   text-align: center;
 }
 .UnsubmitLink {
-  margin-bottom: .25rem;
+  margin: .5rem 0;
+  float: right;
+}
+.Content .UnsubmitLink a {
+  padding: .125rem .25rem;
+  background-color: #ffa480;
+  color: #000;
+  border-radius: 2px;
+  border: 1px solid #ff9166;
+}
+.Content .UnsubmitLink a:hover {
+  background-color: #c75d48;
+  color: #fff;
+  border-bottom-width: 1px;
+  border-color: #c75d48;
 }
 .SubmittedOn .date {
   font-weight: bold;
@@ -911,8 +925,10 @@ div.Content div.SectionDisplay table tr td div.caption input[type="text"] {
   width: 15em;
 }
 div.Content div.SectionDisplay table tr td .LargeInputTable input[type="text"],
-div.Content div.SectionDisplay .ItemAddress table tr td input[type="text"] {
-  width: 15em;
+div.Content div.SectionDisplay .ItemAddress table tr td input[type="text"],
+div.SectionDisplay .ItemAddress td select
+ {
+  width: 15rem;
 }
 div.Content div.SectionDisplay table tr td input[type="text"] {
   width: 8em;
