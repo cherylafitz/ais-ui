@@ -3036,7 +3036,8 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   display: none;
 }
 #PrivacyPolicy,
-#CookieDeclaration {
+#CookieDeclaration,
+#DataUsageGuidance {
   font-size: .75rem;
 }
 
@@ -3590,17 +3591,22 @@ and (max-width : 480px) {
     font-size: .875rem;
   }
   #PrivacyPolicy,
-  #CookieDeclaration {
+  #CookieDeclaration,
+  #DataUsageGuidance {
     display: inline-block;
   }
   #PrivacyPolicy {
     margin: .5rem .5rem 0 1px;
   }
   #CookieDeclaration {
+    margin: .5rem .5rem 0 0;
+  }
+  #DataUsageGuidance {
     margin: .5rem 0 0;
   }
   #PrivacyPolicy a,
-  #CookieDeclaration a {
+  #CookieDeclaration a,
+  #DataUsageGuidance a {
     color: #34424c;
   }
   #Policies {
