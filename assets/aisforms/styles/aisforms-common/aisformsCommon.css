@@ -373,6 +373,24 @@ body.IsNotLoggedIn .Content {
 #Policies {
   display: none;
 }
+#PrivacyPolicy,
+#CookieDeclaration,
+#DataUsageGuidance {
+  margin: 0 1rem 1rem 1rem;
+  font-size: .875rem;
+  text-align: right;
+}
+#PrivacyPolicy {
+  float: right;
+}
+.IsNotLoggedIn #PrivacyPolicy {
+  margin-right: 2rem;
+}
+#PrivacyPolicy a,
+#CookieDeclaration a,
+#DataUsageGuidance a {
+  color: #444;
+}
 div.LoginOrNewAccount div.Content {
   padding-top: 0;
 }
@@ -1568,28 +1586,30 @@ div#menu3 li, div#menu3 a {
 div.NextSectionNearSaveChanges input[type="button"],
 div.PreviousSectionNearSaveChanges input[type="button"] {
   border-color: #000;
+  display: inline-block;
+}
+div.NextSectionNearSaveChanges input[type="button"] {
+  margin-right: 2rem;
 }
 div.NextSectionNearSaveChanges input[type="button"]:hover,
 div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   border-color: #777;
 }
-div.NextSectionNearSaveChanges,
-div.PreviousSectionNearSaveChanges {
-  position: absolute;
-  bottom: 2px;
-  left: 200px;
-}
-div.PreviousSectionNearSaveChanges {
-  left: 165px;
-}
-.SectionNavigator div.SectionTitle div.SectionTitleText {
+div.SectionTitle {
+  display: flex;
+  background: #75824d;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem 1rem;
+  color: #fff;
   border-radius: 2px 2px 0px 0px;
+}
+div.SectionTitleText {
+  font-size: 1.5rem;
   background-color: #75824d;
   color: #fff;
-  text-align: center;
-  padding: .3em;
-  font-size: 1.5em;
 }
+
 .SectionNavigator input[type="button"],
 .PreviousSectionNearSaveChanges input[type="button"],
 .NextSectionNearSaveChanges input[type="button"] {
@@ -1608,15 +1628,9 @@ div.PreviousSectionNearSaveChanges {
   background: transparent;
   padding: 0;
 }
-div.NextSection {
-  position: absolute;
-  right: 23px;
-  top: 10px;
-}
+div.NextSection,
 div.PreviousSection {
-  position: absolute;
-  left: 23px;
-  top: 10px;
+  position: static;
 }
 .SectionNavigator .next input[type="button"],
 .SectionNavigator input[value="next >"],
@@ -1656,6 +1670,11 @@ div.PreviousSection {
 .SectionNavigator .previous input[type="button"]:hover,
 .SectionNavigator input[value="< previous"]:hover {
   /*background-image: url('https://ais.americancouncils.org/ais/common/BackArrow.png');*/
+}
+div.PageName {
+  text-align: right;
+  margin: 1rem;
+  font-size: 0.75rem;
 }
 input[type="text"],
 textarea,
@@ -1712,7 +1731,6 @@ input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  /*text-shadow: 0 0 0 #222;*/
   color : #ffffff;
   padding: 0 .5rem .125rem .5rem;
   background: #204156;
@@ -1723,11 +1741,9 @@ input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
   border: 1px solid #214155;
   font-size: .875rem;
 }
-input.SaveChanges {
-  margin: 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+#ApplicationTemplateDisplayAUC input.SaveChanges {
+  float: left;
+  margin-right: 2rem;
 }
 input#CannedSearch {
   margin-left: .3em;
