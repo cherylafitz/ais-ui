@@ -374,6 +374,12 @@ body.IsNotLoggedIn .Content {
 #Policies {
   display: none;
 }
+#PrivacyPolicy,
+#CookieDeclaration,
+#DataUsageGuidance {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
 div.LoginOrNewAccount div.Content {
   padding-top: 0;
 }
