@@ -1579,14 +1579,21 @@ div.NextSectionNearSaveChanges input[type="button"]:hover,
 div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   border-color: #777;
 }
-.SectionNavigator div.SectionTitle div.SectionTitleText {
+div.SectionTitle {
+  display: flex;
+  background: #75824d;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem 1rem;
+  color: #fff;
   border-radius: 2px 2px 0px 0px;
+}
+div.SectionTitleText {
+  font-size: 1.5rem;
   background-color: #75824d;
   color: #fff;
-  text-align: center;
-  padding: .3em;
-  font-size: 1.5em;
 }
+
 .SectionNavigator input[type="button"],
 .PreviousSectionNearSaveChanges input[type="button"],
 .NextSectionNearSaveChanges input[type="button"] {
@@ -1605,15 +1612,9 @@ div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   background: transparent;
   padding: 0;
 }
-div.NextSection {
-  position: absolute;
-  right: 23px;
-  top: 10px;
-}
+div.NextSection,
 div.PreviousSection {
-  position: absolute;
-  left: 23px;
-  top: 10px;
+  position: static;
 }
 .SectionNavigator .next input[type="button"],
 .SectionNavigator input[value="next >"],
