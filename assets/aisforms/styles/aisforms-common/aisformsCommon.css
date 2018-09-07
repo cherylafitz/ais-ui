@@ -377,8 +377,20 @@ body.IsNotLoggedIn .Content {
 #PrivacyPolicy,
 #CookieDeclaration,
 #DataUsageGuidance {
-  float: left;
-  margin: 0 1rem 1rem 0;
+  margin: 0 1rem 1rem 1rem;
+  font-size: .875rem;
+  text-align: right;
+}
+#PrivacyPolicy {
+  float: right;
+}
+.IsNotLoggedIn #PrivacyPolicy {
+  margin-right: 2rem;
+}
+#PrivacyPolicy a,
+#CookieDeclaration a,
+#DataUsageGuidance a {
+  color: #444;
 }
 div.LoginOrNewAccount div.Content {
   padding-top: 0;
@@ -1644,6 +1656,8 @@ div.PreviousSection {
 }
 div.PageName {
   text-align: right;
+  margin: 1rem;
+  font-size: 0.75rem;
 }
 input[type="text"],
 textarea,

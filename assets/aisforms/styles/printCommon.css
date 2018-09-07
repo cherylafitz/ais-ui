@@ -1,0 +1,769 @@
+/* PAGE SETUP */
+@import url(http://www.princexml.com/fonts/sil/index.css) all;
+
+@page
+  {
+    size: US-Letter;
+    margin: .5in;
+    font: 100% sans-serif;
+        font-size: 10pt;
+  }
+
+/* HEADER AND FOOTER SETUP */
+
+@page {
+  @top-left { content: flow(header) }
+}
+@page {
+  @top-right { content: flow(header2) }
+}
+
+
+#pageHeader {
+  flow: static(header);
+  background-color: transparent;
+    color: #474747;
+  padding-top: 0.5em;
+}
+body div.Content div.RecommendationFor {
+  flow: static(header2);
+  background-color: transparent;
+    color: #474747 !important;
+    text-align:right;
+  padding-top: 0.5em;
+}
+
+#pageHeader .LastName,
+#pageHeader .FirstName,
+#pageHeader .MiddleName,
+div.Content .LastName,
+div.Content .FirstName,
+div.Content .MiddleName {
+    text-transform: capitalize;
+}
+
+#pageHeader .LastName:after { content: ", "; }
+
+#pageHeader .MiddleName,
+#pageHeader .ApplicationRefCode,
+#pageHeader .ProgramYear
+  {
+    padding-right: 2pt;
+  }
+
+#pageHeader .MiddleName:after,
+#pageHeader .ApplicationRefCode:after,
+#pageHeader .ProgramYear:after
+  {
+    content: " |";
+  }
+
+@page { @bottom-left { content: 'Page ' counter(page) ' of ' counters(page); } }
+
+*:not(input) {
+  border: none;
+}
+/* PAGE TYPOGRAPHY */
+
+body
+  {
+    font-size: 10pt;
+    font-family: "Trebuchet MS";
+    }
+
+a { color: #000000; }
+/* COLORS */
+div.SectionDisplay div.SectionName
+  {
+    border-bottom:medium solid #025689;
+    font-size: 1.7em;
+    padding-top: .7em;
+    margin-bottom: 6pt;
+    color: #025689;
+    clear: both;
+  }
+
+body div.Content div.Divider,
+.Content div.SectionDisplay h1,
+.Content div.SectionDisplay h2,
+body div.Content div.RecommendationFor {
+  color: #025689;
+  clear: both;
+}
+div.Content table.AnswerTable tr.even, div.SectionDisplay table.RowDisplay tr:nth-child(2n+2), div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2) {
+background-color: #F9FAF5;
+}
+
+div.Content table.AnswerTable tr.odd,
+div.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
+div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
+background-color: #E8EBD9;
+}
+
+.Content div.SectionDisplay table th,
+div.Content table.AnswerTable tr.headerRow th {
+  background-color: #E8EBD9;
+  color: #000;
+  border: thin solid #999;
+}
+.small {font-size: 1em;}
+
+.big {font-size: 1.2em;}
+
+.ExtraStrong {
+  color: #CD0000;
+  font-weight: bold;
+}
+
+
+/* FLOAT LEFT FIELDS */
+
+div.Content div.FirstName,
+div.Content div.MidName,
+div.Content div.MiddleName,
+div.Content div.LastName,
+div.Content div.NameSuffix,
+div.Content div.FirstNameNativeLanguage,
+div.Content div.MiddleNameNativeLanguage,
+div.Content div.LastNameNativeLanguage,
+div.Content div.CityOfBirth,
+div.Content div.StateOfBirth,
+div.Content div.MailAddrCity,
+div.Content div.MailAddrState,
+div.Content div.MailAddrZIP,
+div.Content div.PhysAddrCity,
+div.Content div.PhysAddrState,
+div.Content div.PhysAddrZIPCode,
+div.Content div.CurrHomePhoneCountrCode,
+div.Content div.CurrHomePhonCityCode,
+div.Content div.CurrentHomePhone,
+div.Content div.OthPhoneCountryCode,
+div.Content div.OthPhoneCityCode,
+div.Content div.OthPhone,
+div.Content div.SchoolCity,
+div.Content div.SchoolUSState,
+div.Content div.SchoolZIP,
+div.Content div.SchoolPhoneCountrCode,
+div.Content div.SchoolPhoneCityCode,
+div.Content div.SchoolPhone,
+div.Content div.Parent1stName,
+div.Content div.ParentLastName,
+div.Content div.ParentCity,
+div.Content div.ParentState,
+div.Content div.ParentZIPCode
+div.Content div.Mother1stName,
+div.Content div.MotherLastName,
+div.Content div.MotherHomePhoneCountrCode,
+div.Content div.MotheHomePhoneCityCode,
+div.Content div.MotherHomePhone,
+div.Content div.MotherWorkPhoneCountrCode,
+div.Content div.MotheWorkPhoneCityCode,
+div.Content div.MotherWorkPhone,
+div.Content div.Father1stName,
+div.Content div.FatherLastName,
+div.Content div.FatherHomePhoneCountrCode,
+div.Content div.FatheHomePhoneCityCode,
+div.Content div.FatherHomePhone,
+div.Content div.FatherWorkPhoneCountrCode,
+div.Content div.FatheWorkPhoneCityCode,
+div.Content div.FatherWorkPhone,
+div.Content div.Sib1stName,
+div.Content div.SibLastName,
+div.Content div.EmergCont1stName,
+div.Content div.EmergContLastName,
+div.Content div.SchoolWebSite,
+div.Content div.ProvinceRegionNotBornUS
+  {
+    clear:left;
+  }
+
+div.QuestionItem.FirstName,
+div.QuestionItem.Sex,
+.clearPrint {
+  clear: left;
+}
+
+
+
+
+
+/* DATE FIELDS SETUP */
+input[type=text],
+.TextQuestion,
+.ChoiceQuestion,
+.DateQuestion {
+  border-bottom: thin dashed #999;
+  margin-bottom: 1pt;
+  vertical-align: top;
+}
+
+div.Formula div.QuestionAnswer {
+  border-bottom: thin dashed #999;
+  margin-bottom: 1pt;
+  vertical-align: top;
+}
+
+.AnswerTable input[type=text],
+.AnswerTable .TextQuestion,
+.AnswerTable .ChoiceQuestion,
+.AnswerTable .DateQuestion,
+.AnswerTable .Formula,
+.AnswerTable div.RadioButtonMatrix tr td,
+td .TextQuestion {
+  border: none;
+}
+.AnswerTable div.RadioButtonMatrix tr td {
+  padding-top:0;
+  margin-top:0;
+}
+
+input[type=text]:before,
+.TextQuestion:before,
+.ChoiceQuestion:before,
+.DateQuestion:before,
+.Formula:before {
+  content: " ";
+}
+
+/* PROBLEMATIC AREA-- */
+.QuestionItem.Text .QuestionText,
+.QuestionItem.Choice .QuestionText,
+.QuestionItem.Date .QuestionText,
+.QuestionItem.Formula .QuestionText,
+.QuestionItem.Integer .QuestionText,
+.DisplayItemOnly .QuestionText {
+  display: inline-block;
+  vertical-align: top;
+  color: #000;
+  max-width: 75%;
+  margin-right: 1.5em;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.QuestionItem.LongText .QuestionText {
+  display: inline-block;
+  vertical-align: top;
+  color: #000;
+  max-width: 85%;
+  margin-right: 1.5em;
+  font-weight: bold;
+  font-size: .9em;
+}
+.QuestionAnswer {
+  display: inline-block;
+  margin-top: 0;
+  color: #222;
+}
+.QuestionAnswer .GroupedItem:not(.nodisplayprint) {
+  display: block;
+}
+.LongText .QuestionAnswer  {
+  display: initial;
+}
+
+/* <--PROBLEMATIC AREA */
+
+/* PROBLEMATIC AREA FIX--> */
+
+div.GroupedItem div:not(.nodisplayprint),
+div[class*="Group"]:not(.nodisplayprint),
+div[class*="autoset"]:not(.nodisplayprint),
+div[class*="Essay"]:not(.nodisplayprint),
+div[class*="essay"]:not(.nodisplayprint),
+div[class*="Statement"]:not(.nodisplayprint),
+div[class*="LongTxt"]:not(.nodisplayprint),
+div[class*="Mult"]:not(.nodisplayprint),
+div[class*="Choice"]:not(.nodisplayprint),
+div[class*="Descrip"]:not(.nodisplayprint),
+div[class*="Expl"]:not(.nodisplayprint),
+div[class*="GroupingItem"] .QuestionAnswer {
+  display: block;
+  margin-bottom: 5pt;
+}
+div.GroupedItem div.QuestionAnswer,
+div[class*="Group"] .QuestionAnswer,
+div[class*="autoset"] .QuestionAnswer,
+div[class*="Ess"] .QuestionAnswer,
+div[class*="LongTxt"] .QuestionAnswer,
+div[class*="essay"] .QuestionAnswer,
+div[class*="Statem"] .QuestionAnswer,
+div[class*="Mult"]  .QuestionAnswer,
+div[class*="Descrip"] .QuestionAnswer,
+div[class*="Expl"] .QuestionAnswer,
+div[class*="GroupingItem"] .QuestionAnswer,
+.EVALFlagEss .QuestionAnswer {
+  display: block;
+}
+div[class*="Group"] .QuestionAnswer .QuestionAnswer {
+  margin-left: 30px;
+  margin-top: -.6em;
+}
+
+div.RadioButtonMatrix,
+div.QuestionItem[class*="Mult"]  .QuestionAnswer,
+.EVALFlagEss .QuestionAnswer {
+  margin: 2pt 0 0 30px;
+}
+/*fixes margin issue with some titles in groups*/
+div[class*="Group"] .QuestionItem.Text,
+div[class*="Group"] .QuestionText,
+div[class*="Group"] .QuestionItem.Choice .QuestionText,
+div[class*="Group"] .QuestionItem.Date .QuestionText,
+div[class*="Group"] .QuestionItem.Formula .QuestionText,
+div[class*="Group"] .QuestionItem.Integer .QuestionText {
+  display: block;
+}
+span.leftmargin-fix {
+  margin-left: 2.4em;
+}
+
+
+/* <--PROBLEMATIC AREA FIX */
+
+
+.LongTextNoEditing br {
+  margin-bottom: 0.3em;
+}
+
+
+.RadioButtonMatrix {
+  border-bottom: none;
+  margin-bottom: none;
+  padding: 0;
+}
+.RadioButtonMatrix tr {
+  display: inline-block;
+}
+.RadioButtonMatrix td {
+  padding: 0;
+}
+.RadioButtonMatrix td input {
+  margin-right: .5em;
+}
+.CheckboxMatrix td,
+.CheckboxMatrix th {
+  padding: 0;
+  font-family: "DejaVu Sans";
+}
+.itemDisplayOuterContainer {
+  clear: both;
+}
+
+
+
+/* TABLES */
+.TemplateTable {
+  border: thin solid #999;
+  margin: 12pt;
+  border-collapse: collapse;
+}
+th {
+  border-bottom: 1t solid #999;
+}
+th,
+.sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+
+td,
+th {
+  padding: 2pt;
+  vertical-align:top;
+}
+
+.SignatureTable {
+     border: thin solid #FFFFFF;
+     margin: 12pt;
+     border-collapse: collapse;
+}
+table.SignatureTable tr td {
+     border: thin solid #FFFFFF;
+     font-size:100%;
+     text-align:left;
+     padding: 1em 0.3em 0 0.3em;
+}
+table.SignatureTable tr td div {
+     height: 1.5em;
+     vertical-align:bottom;
+     padding:0;
+}
+table.SignatureTable tr td.signatureTD,
+table.SignatureTable tr td.signatureDblTD {
+     font-weight:bold;
+     border-bottom-color:#000000;
+}
+table.SignatureTable tr td.signatureTD div {
+     min-width : 350px;
+     vertical-align:bottom;
+     padding:0;
+}
+table.SignatureTable tr td.signatureDblTD div {
+     min-width : 225px;
+     vertical-align:bottom;
+     padding:0;
+}
+
+.ERXMatrixTable td {
+    margin-right: 1em;
+    padding: 0;
+  }
+td.ERXMatrixTableCell {
+  vertical-align: top;
+  padding-right: 1.5em;
+}
+input {
+  margin-right: 1em;
+}
+td input:checked {
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+div.Content div.LongTextNoEditing
+  {
+    padding: .5em;
+    margin: .5em 24pt;
+    border: 1pt dashed #4A4A4A;
+    min-width: 24pt;
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-left: 3px solid #d6d6d6;
+    border-right: 3px solid #d6d6d6;
+  }
+
+
+
+
+div.Content table tr td div.LongTextNoEditing
+  {
+    border: none;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+  }
+div.Content p:not(.nodisplay*)
+  {
+    display: block;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 1em;
+  }
+select
+  {
+    display: inline-block;
+  }
+
+.QuestionItem,
+.DisplayItemOnly  {
+    padding-bottom: 2pt;
+    width:auto;
+  }
+.AnswerTable .QuestionItem {
+  padding: 0;
+}
+.QuestionText ul li {text-decoration: none;}
+
+ul,
+ol {
+  padding-bottom: .5em;
+}
+
+div.SectionIntroductionText
+  {
+    font-size: 0.8em;
+    padding-bottom: .2em;
+  }
+
+div.QuestionItem div.QuestionText div.Title,
+div.QuestionItem div.QuestionNumber,
+div.DisplayItemOnly div.QuestionText div.Title,
+div.DisplayItemOnly div.QuestionNumber,
+div.BeforeQuestion div.QuestionText,
+div.BeforeQuestion div.QuestionNumber
+  {
+    padding-top: 0.15em;
+    color: #000;
+  }
+div.SectionItemsList {
+    border: solid medium #a1a1a1;
+    border-radius: 5px;
+    padding:0.5em;
+}
+div.QuestionItem div.QuestionText div.Instruction,
+div.BeforeQuestion div.QuestionItem .QuestionInstructions,
+div.QuestionText span.Instruction,
+div.SectionDisplay div.SectionItemsList div.Instruction,
+div.Instruction,
+a.SectionDataFill,
+a.FormDataFill,
+div.PageName {
+    display: none;
+    }
+div.BeforeQuestion div.QuestionItem div.QuestionInstructions,
+div.QuestionText span.Instruction {
+  margin: 0;
+}
+
+.EssayNonEnglish {
+  font-family: MingLiU;
+}
+.QuestionNumber
+  {
+    display: inline-block;
+    vertical-align: top;
+    width: 25px;
+    clear: both;
+    font-size: .9em;
+  }
+
+.Group .QuestionNumber
+    {
+       float:left;
+    }
+
+div.QuestionItem div.QuestionNumber,
+div.DisplayItemOnly div.QuestionNumber,
+div.BeforeQuestion div.QuestionNumber {
+  float: left;
+  width: 30px;
+}
+div.QuestionItem .GroupedItem div.QuestionNumber {
+  width: initial;
+}
+option[selected] {display: table-row;}
+
+option:not([selected]) {display: none;}
+
+div.Content div.GroupedItem
+  {
+    border: thin solid #cecece;
+    border-radius: 15px;
+    padding: 10pt 10pt 6pt;
+    margin: 6pt 0;
+    background-color: #F3F3F3;
+  }
+.AnswerTable
+  {
+    border-collapse: collapse;
+    border: thin solid #999;
+    margin: 6pt 24pt;
+}
+.AnswerTable td, .AnswerTable th
+  {
+    border: thin solid #999;
+    padding: 2pt;
+    text-align: left;
+    vertical-align: top;
+    font-size: .9em;
+
+  }
+.Content div.SectionDisplay table th,
+div.Content table.AnswerTable tr.headerRow th {
+  background-color: #5D5E57;
+  color: #ffffff;
+  border: thin solid #999;
+  word-break: keep-all;
+}
+table.QuestionItem,
+table.QuestionItem tr.QuestionItemRow,
+table.QuestionItem tr.QuestionItemRow td
+  {
+    border: 0;
+  }
+.TableNoBorder {border-style:none;}
+
+.VAlign table.QuestionItem tr {vertical-align: top;}
+
+.VAlignBottom table.QuestionItem tr {vertical-align: bottom;}
+
+div.SectionDisplay h1,
+.SectionDisplay .Divider
+  {
+    padding: 4pt 0 4pt 0;
+    margin: 0 0 0 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 12pt;
+  }
+.Divider + p {
+  margin-top: 0;
+}
+h1 + p {
+    margin-top: 0px;
+}
+
+div.SectionDisplay h1 {
+  margin-top: 4pt;
+}
+div.SectionDisplay h2 {
+    font-size: 1em;
+    padding: 3pt 0 2pt 0;
+    margin: 0 0 0 0;
+    color: #000000;
+    font-weight: bold;
+}
+
+.nowrap,
+.noWrap {
+    white-space:nowrap;
+}
+
+img {border:none;}
+
+input#SubmitForEvaluation {margin-bottom: 1em;}
+
+.SideNote,
+.helpBox,
+.deadlineBox,
+.alertBox,
+.noticeBox {
+    display: none;
+  }
+.SideNote:before {
+  content: '\2192 \0000a0';
+}
+div.SectionDisplay div.QuestionItem.subQuestion {
+  margin-left: 24pt;
+}
+div.SectionDisplay div.QuestionItem.subConditional {
+  margin-left: 48pt;
+}
+
+
+/* File Label */
+
+.docLabel {
+  color: #025689;
+  font-size:0.9em;
+  border:solid 2px #444444;
+  border-radius:0.5em;
+  margin:0 10px 10px 0;
+  padding:0.25em;
+  width:450px;
+}
+
+div.docLabel div {
+  margin-bottom:0.2em;
+}
+
+.appRefCode,
+.appGender,
+.appPrevProg {
+  float:right;
+}
+
+span.labelTitle {
+  color:#444444;
+  font-size: 0.9em;
+  font-weight:bold;
+}
+
+
+/* SYSTEMS ITEMS NOT TO PRINT */
+
+div.QuestionItem div.QuestionNumber,
+div.QuestionNumber {
+    display:none;
+}
+
+div.Content > div[style^="color"],
+#AnnouncementBlock,
+.systemMessage,
+star,
+.SubmittedOn,
+#footer,
+.policies,
+#PrivacyPolicy,
+#CookieDeclaration,
+#logo,
+#acTitle,
+#address,
+#legal,
+#amagavi,
+.BottomCommandLink,
+#Header,
+#TopMenu,
+h1.pageTitle,
+.TopCommandLink,
+#SubmitForEvaluation,
+.SystemAnnouncement,
+.filterWrapper,
+h1.editing ~ h2
+  {
+    display:none;
+  }
+
+/* HIDE PDF Generator Button */
+div.Content div.GeneratePDF {
+    display:none;
+}
+
+
+
+
+/* TEMPLATE ITEMS NOT TO PRINT */
+
+.nodisplayprint,
+.SystemAnnouncementsWrapper,
+.filespecs,
+#SubmitForEvaluation,
+.UnsubmitLink,
+input.SaveChanges,
+#brandFromServerID {
+  display: none;
+}
+
+/* .QuestionAnswer a {display:none;} */
+
+.NumberOfWords {display:none;}
+
+div.Content div.NumberOfCharacters {display: none;}
+
+.EvalLastName {
+  padding-right: 1em;
+  padding-left: 1.7em;
+}
+
+div.TotalScoreFormula {
+    border: medium solid #2E6B9B;
+    border-radius: 0.5em;
+    margin: 0.5em 1em 1em 0;
+    padding: 0.5em;
+    width: 21em;
+}
+
+.TotalScoreFormulaDuplicate .QuestionText {
+  font-size: 1em;
+}
+
+/* ITEMS NOT TO PRINT FOR EVAL */
+
+
+/* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
+div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
+table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after {
+  content: none;
+}
+
+.requiredIndicator {
+  color: #CD0000;
+  content: '*';
+  font-size:1.4em;
+  font-weight: normal;
+  left:1px;
+  right:3px;
+  line-height:0.4;
+  opacity:1;
+  position:relative;
+  top:0.1em;
+}
