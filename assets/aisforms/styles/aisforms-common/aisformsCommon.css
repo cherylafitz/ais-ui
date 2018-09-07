@@ -1552,19 +1552,14 @@ div#menu3 li, div#menu3 a {
 div.NextSectionNearSaveChanges input[type="button"],
 div.PreviousSectionNearSaveChanges input[type="button"] {
   border-color: #000;
+  display: inline-block;
+}
+div.NextSectionNearSaveChanges input[type="button"] {
+  margin-right: 2rem;
 }
 div.NextSectionNearSaveChanges input[type="button"]:hover,
 div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   border-color: #777;
-}
-div.NextSectionNearSaveChanges,
-div.PreviousSectionNearSaveChanges {
-  position: absolute;
-  bottom: 2px;
-  left: 200px;
-}
-div.PreviousSectionNearSaveChanges {
-  left: 165px;
 }
 .SectionNavigator div.SectionTitle div.SectionTitleText {
   border-radius: 2px 2px 0px 0px;
@@ -1641,6 +1636,9 @@ div.PreviousSection {
 .SectionNavigator input[value="< previous"]:hover {
   /*background-image: url('https://ais.americancouncils.org/ais/common/BackArrow.png');*/
 }
+div.PageName {
+  text-align: right;
+}
 input[type="text"],
 textarea,
 input[type="password"] {
@@ -1696,7 +1694,6 @@ input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  /*text-shadow: 0 0 0 #222;*/
   color : #ffffff;
   padding: 0 .5rem .125rem .5rem;
   background: #204156;
@@ -1707,11 +1704,9 @@ input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
   border: 1px solid #214155;
   font-size: .875rem;
 }
-input.SaveChanges {
-  margin: 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+#ApplicationTemplateDisplayAUC input.SaveChanges {
+  float: left;
+  margin-right: 2rem;
 }
 input#CannedSearch {
   margin-left: .3em;
