@@ -235,10 +235,13 @@ body #PageWrapperNavUpdate {
 
 /* TYPOGRAPHY --> */
 p {
-  margin-bottom: .5rem;
-}
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
 
-p:last-of-type {
+}
+p:last-child {
   margin-bottom: 0;
 }
 
@@ -1567,29 +1570,16 @@ table.pageStructure tr.contentArea {
 .AlumnusSummary,
 .AlumnusContactList {
   position: relative;
-  /*height: 100%;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  /* seeing if this rule can be removed - in testing --> */
-  /*color: #000;*/
-  line-height: 1.2;
+  line-height: 1.4;
   padding: 0;
 }
 
-p {
-  line-height: 1.25rem;
-}
-p:first-child {
-  margin-top: 0;
-}
-
-/* seeing if these h1 rules can be removed - in testing --> */
 h1 {
-  /*padding: .25rem 0 .5rem 0;*/
-  /*font-weight: normal;*/
   font-size: 1.75rem;
 }
 h2 {
