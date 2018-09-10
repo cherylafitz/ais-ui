@@ -235,9 +235,11 @@ body #PageWrapperNavUpdate {
 
 /* TYPOGRAPHY --> */
 p {
-  line-height: 1.25rem;
+  line-height: 1.5;
   margin-bottom: 1rem;
   margin-top: 0;
+  text-rendering: optimizeLegibility;
+
 }
 p:last-child {
   margin-bottom: 0;
