@@ -60,10 +60,6 @@ div.Content {
 .Content p {
   margin: 0 0 1rem 0;
 }
-h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
 
 /*<--MAIN STRUCTURE */
 /* To Overwrite Amagavi CSS--> */
@@ -245,7 +241,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
 /* <--HEADER */
 /* TITLES-->*/
 .Content h1 {
-  font-size: 1.5em;
+  font-size: 1.75rem;
   color: #2a353d;
   font-weight: normal;
   clear: both;
@@ -260,15 +256,15 @@ div.BrandRowDisplay h1 {
   text-align: left;
 }
 .Content h2 {
-  font-size: 1.2em;
-  /* padding-bottom: .2em; */
-  /*text-align: center;*/
+  font-size: 1.375rem;
 }
-h2, h3, h4, h5, h6, h7 {
-  margin-top: .6em;
-  margin-bottom: .4em;
-  color: #33424d;
-  line-height: 1.2em;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  line-height: 1.5;
+  font-weight: normal;
+  padding: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 a.LinkToPreviousPage {
   margin-right: 2em;
@@ -537,10 +533,8 @@ input#Username, input#Password {
 .LoginWelcome .PageTitle h1 {
   color: #2E6B9B;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.75rem;
   clear: none;
-  font-variant: normal;
-  margin-bottom: .5em;
 }
 .LoginWelcome h2 {
   text-align: left;
