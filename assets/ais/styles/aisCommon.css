@@ -3353,6 +3353,13 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
   max-width: 700px;
 }
 
+.list-multi {
+  column-count: 2;
+  column-width: 250px;
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
 /* this is not a good selector - discuss other options */
 body > #priorPage {
   position: absolute;
