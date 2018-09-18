@@ -266,6 +266,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+h3 {
+  font-size: 1.25rem;
+}
+h4{
+  font-size: 1.125rem;
+}
 a.LinkToPreviousPage {
   margin-right: 2em;
   margin-top: -2em;
@@ -1241,23 +1247,33 @@ table.TemplateTable tr td {
   font-size: .875rem;
   color: #ededed;
   padding: 1em;
-  background-color: #475c6b;
+  background-color: #33424d;
   border: 1px solid #222;
   width: 17%;
   margin-bottom: 2em;
 }
 .HomeProgramAfterContent .Tips {
-  float: none;
-  font-size: .75rem;
+  font-size: .875rem;
   color: #ededed;
   padding: 1em;
   border: none;
   width: initial;
   margin-bottom: 2em;
-  clear: both;
+  display: flex;
+  flex-flow: row wrap;
+}
+.HomeProgramAfterContent .Tips h3 {
+  flex-basis: 100%;
 }
 .HomeProgramAfterContent .Tips h4 {
   color: #fff;
+  font-size: 1rem;
+  flex-basis: 250px;
+}
+.HomeProgramAfterContent .Tips p {
+  flex-basis: calc(100% - 250px);
+  min-width: 300px;
+  flex-grow: 1;
 }
 .TipsLoginContent {
   width: 45%;
