@@ -1242,21 +1242,11 @@ table.TemplateTable tr td {
 #UserHomeIntro .Tips {
   display: none;
 }
-.Tips {
-  float: right;
-  font-size: .875rem;
-  color: #ededed;
-  padding: 1em;
-  background-color: #33424d;
-  border: 1px solid #222;
-  width: 17%;
-  margin-bottom: 2em;
-}
 .HomeProgramAfterContent .Tips {
+  background-color: #33424d;
   font-size: .875rem;
   color: #ededed;
   padding: 1em;
-  border: none;
   width: initial;
   margin-bottom: 2em;
   display: flex;
