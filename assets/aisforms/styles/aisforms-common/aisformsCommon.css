@@ -245,7 +245,6 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   color: #2a353d;
   font-weight: normal;
   clear: both;
-  line-height: 1.5em;
 }
 div.SectionsRowDisplay h1,
 div.BrandEditor h1,
@@ -1182,7 +1181,7 @@ table.TemplateTable tr td {
   float: left;
   margin-right: 2%;
   font-size: .9em;
-  line-height: 1.5em;
+  line-height: 1.5;
   margin-top: 0;
 }
 #UserHomeIntro h2,
@@ -1450,7 +1449,10 @@ div#ApplicationTemplateDisplayAUC h1 {
   margin-bottom: .5rem;
 }
 div.ApplicationTemplateDisplay h2 {
-  padding-bottom: 1rem;
+  font-size: 1.125rem;
+}
+.ApplicationTemplateDisplay form[name="sectionNavigationForm"] {
+  margin-top: 1rem;
 }
 .AdminFormNav {
   font-size: .875em;
@@ -2035,7 +2037,7 @@ div.MyForms div.NoEvaluationForms  {
   font-weight: bold;
   padding-left: 1.5em;
   padding-top: 1em;
-  padding-top: 1em;
+  max-width: 1000px;
 }
 body.IsLoggedIn .ValidationError {
   padding-top: 0;
@@ -2166,9 +2168,6 @@ legend:not(.SaveButton) {
   }
   #Header .Title {
     font-size: 1.5em;
-    width: 20%;
-    line-height: .9em;
-    /*display: none;*/
     float: none;
     margin-bottom: 1rem;
     background-color: transparent;
@@ -2820,7 +2819,7 @@ and (max-width : 1024px) {
   div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
   div.SectionsRowDisplay div.SectionOperations a {
     display: block;
-    line-height: 1.5em;
+    line-height: 1.5;
     padding-left: 1em;
   }
   div.SectionsRowDisplay div.SectionOperations a {
@@ -2869,7 +2868,7 @@ and (max-width : 1024px) {
   div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
   div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
     display: block;
-    line-height: 1.5em;
+    line-height: 1.5;
     padding-left: 1em;
   }
   div.SectionsRowDisplay div.SectionOperations a {
