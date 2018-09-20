@@ -48,7 +48,7 @@ body {
   min-height: 100%;
 }
 div.Content {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 1.5rem;
   position: relative;
   background-color: transparent;
@@ -110,7 +110,7 @@ div.Content div.Rowdisplay {
 
   font-size: .875rem;
   width: 10%;
-  min-width: 20px;
+  min-width: 70px;
   float: left;
   text-align: center;
   background: #B7E0EA; /* Old browsers */
@@ -143,14 +143,14 @@ div.Content div.Rowdisplay {
 }
 #TopMenu {
   background-color: transparent;
-  height: 1.2em;
-  padding: 0 0 0 0;
+  height: 1.375rem;
+  padding: 0;
   position: relative;
-  z-index: 12;
-  margin-top: -.8em;
+  z-index: 2;
+  margin-top: -1rem;
   margin-right: 8em;
-  margin-right: 8%;
-  margin-left: 15%;
+  margin-right: 100px;
+  margin-left: 200px;
 }
 div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   margin-left: 0;
@@ -212,7 +212,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   background-repeat: no-repeat;
   background-position: 8px 20px;
   min-width: 200px;
-  height: 84px;
+  height: 83px;
   background-position: center;
   background-size: 90%;
 }
@@ -220,7 +220,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
     clear: right;
     padding: 0;
     float: right;
-    margin-top: .75rem;
+    margin-top: .5rem;
     position: relative;
     z-index: 10;
 }
@@ -229,7 +229,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   text-align: center;
   color: #FFD590;
   font-weight: normal;
-  padding: .25rem .5rem;
+  padding: .125rem .5rem;
   background-color: #29353d ;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 0.8em;
@@ -770,10 +770,13 @@ table.RowDisplay td {
   font-size: .9em;
   white-space: nowrap;
   padding: 0.3em 0.3em;
-  border: 0.1em solid #fff;
+  border: 1px solid #fff;
   text-align: left;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
+}
+table.RowDisplay tr.headerRow th {
+  border-color: #ebedde;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
@@ -1111,9 +1114,9 @@ div.MyTrackedForms div  {
   flex-basis: 500px;
   flex-grow: 1;
   background-color: #e0e6ed;
-  margin: -2.25rem -1.5rem -2.5rem;
-  padding: 2.25rem 2rem 2.5rem;
-
+  margin: -.375rem 0 0;
+  padding: 2rem 1.5rem 2.5rem;
+  overflow: scroll;
 }
 div.MyForms,
 div.MyTrackedForms,
@@ -1183,13 +1186,14 @@ table.TemplateTable tr td {
 #UserHomePage {
   display: flex;
   flex-flow: row wrap;
+  margin: -1.5rem;
 }
 #UserHomeIntro {
-  flex-basis: 700px;
-  margin: 0 3.5rem 0 .5rem;
-  flex-grow: 1;
+  flex-basis: 550px;
+  margin: 0;
+  flex-grow: 2;
   max-width: 1100px;
-  padding-bottom: 3.5rem;
+  padding: 1.5rem 1.5rem 3.5rem;
 }
 
 #UserHomeIntro ul#leftContent,
@@ -1212,13 +1216,9 @@ table.TemplateTable tr td {
   text-align: left;
     clear: both;
 }
-.HomeProgramContent,
 .HomeProgramAfterContent {
-  padding: 0;
-}
-.HomeProgramAfterContent {
-  margin-top: 2.5em;
-  clear: both;
+  padding: 1.5rem;
+  border-top: 1px solid #cecece;
 }
 .HomeProgramSubContent,
 .LoginWelcomeSubContent {
@@ -1266,8 +1266,8 @@ table.TemplateTable tr td {
   background-color: #33424d;
   font-size: .875rem;
   color: #ededed;
-  padding: 1.5rem 2rem;
-  margin: 0 -1.5rem -1.5rem;
+  padding: 1.5rem;
+  margin: -1.5rem;
   display: flex;
   flex-flow: row wrap;
 }
@@ -1838,9 +1838,7 @@ span.fax {
 #footer #footer2 {
   background-color: transparent;
   border: none;
-  width: 95%;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0 1.5rem;
 }
 #footer2 {
   padding: 0;
@@ -2056,6 +2054,7 @@ div.MyForms div.NoEvaluationForms  {
   background-color: transparent;
   font-weight: bold;
   font-size: .875rem;
+  margin-bottom: .5rem;
 }
 div.MyForms div.OtherBrands {
   margin-top: .5rem;
@@ -2123,12 +2122,6 @@ legend:not(.SaveButton) {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  body div.Content {
-    padding: .5em 1em;
-  }
-  body.IsNotLoggedIn {
-    background-color: #fff;
-  }
   body.IsNotLoggedIn .Content {
     width: 100%;
     padding: 0;
@@ -2276,11 +2269,6 @@ legend:not(.SaveButton) {
   .Tips {
     display: none;
   }
-  .HomeProgramContent,
-    .HomeProgramAfterContent {
-    width: 95%;
-    padding: 0 4%;
-  }
   #UserHomeIntro ul#leftContent,
   #UserHomeIntro ul#rightContent,
     #UserHomeAfterFormsInfo ul#leftContent,
@@ -2368,9 +2356,6 @@ legend:not(.SaveButton) {
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 568px) {
-  div.Content {
-    padding: .25rem;
-  }
   #Header {
     /*height: 2em;*/
   }
@@ -2398,7 +2383,6 @@ legend:not(.SaveButton) {
   }*/
   #TopMenu a, .menu a {
     width: 15%;
-    padding: .2em;
     margin: 0;
   }
   #TopMenu {
@@ -2711,12 +2695,6 @@ and (max-width : 1024px) {
   .LiveTemplates,
   div.Main div.staffHome div.Deadlines {
     width: 83%;
-  }
-  #TopMenu a,
-  .menu a {
-    margin: 0;
-    width: 12%;
-    padding: 0.2em .1em;
   }
   div.Main div.LoginOrNewAccount div.CustomContent  {
     /* width: 90%; */

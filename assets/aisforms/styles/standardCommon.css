@@ -809,16 +809,14 @@ div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
   clear: both;
   font-variant: normal;
   text-align: left;
-  line-height: 1.2em;
 }
 
 .Content div.SectionDisplay h2 {
-  font-size: 1.2em;
-  color: #444;
-  margin-bottom: 0.3em;
+  font-size: 1.125rem;
+  color: #1a5689;
+  margin-bottom: 0.5rem;
   margin-top: .5em;
   padding-bottom: 0;
-  font-weight: bold;
   clear: both;
   text-align: left;
 }
