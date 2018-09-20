@@ -263,7 +263,7 @@ div.QuestionText div.Instruction ul {
 
 /* Section Name and Headers--> */
 div.SectionDisplay div.SectionName {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   color: #2E6B9B;
   border-bottom: 2px solid #2E6B9B;
   margin-bottom: 1rem;
@@ -801,9 +801,8 @@ div.SectionDisplay h6 {
 
 div.Content div.Divider,
 div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
-  font-size: 1.375em;
+  font-size: 1.5rem;
   color: #025689;
-  margin-bottom: 0.5em;
   margin-top: 0.5em;
   font-weight: normal;
   clear: both;
@@ -813,10 +812,9 @@ div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
 }
 
 .Content div.SectionDisplay h2 {
-  font-size: 1.2em;
-  color: #444;
-  margin-bottom: 0.3em;
-  margin-top: .5em;
+  font-size: 1.25rem;
+  color: #025689;
+  margin-bottom: 0.5rem;
   padding-bottom: 0;
   font-weight: bold;
   clear: both;
@@ -951,10 +949,10 @@ div.Content div.NumberOfCharacters {
 }
 
 div.Content .SideNote {
-  margin: 0 0.5em 0.5em 1.7em;
-  padding-right: 1.7em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   font-style: italic;
-  font-size: .9em;
+  font-size: .875rem;
 }
 
 /* SPECIFICATION CLASSES */
