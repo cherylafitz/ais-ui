@@ -1107,7 +1107,8 @@ div.MyTrackedForms div  {
   flex-basis: 500px;
   flex-grow: 1;
   background-color: #e0e6ed;
-  background-color: #ebebeb;
+  background-color: #f1f0ee;
+  background-color: #f7f7f7;
   margin: -.375rem 0 0;
   padding: 2rem 1.5rem 2.5rem;
   overflow: scroll;
@@ -1603,7 +1604,7 @@ div.SectionTitle {
 }
 div.SectionTitleText {
   font-size: 1.5rem;
-  background-color: #75824d;
+  background-color: transparent;
   color: #fff;
 }
 
