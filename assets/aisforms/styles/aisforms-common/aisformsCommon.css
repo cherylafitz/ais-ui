@@ -548,11 +548,7 @@ input#Username, input#Password {
   text-align: left;
 }
 h2.AppClosed {
-  width: 10;
-  text-align: center;
-  border: 1px solid #DA2238;
-  display: table-cell;
-  padding: .2em .5em;
+  color: #DA2238;
 }
 h2.PortalAlert {
   color: #981727;
@@ -1209,24 +1205,24 @@ table.TemplateTable tr td {
   line-height: 1.5;
   margin-top: 0;
 }
-#UserHomeIntro h2,
-#UserHomeAfterFormsInfo h2 {
-  text-align: left;
-    clear: both;
-}
+
 .HomeProgramAfterContent {
   padding: 1.5rem;
   border-top: 1px solid #cecece;
 }
 .HomeProgramSubContent,
 .LoginWelcomeSubContent {
-  font-size: .8em;
+  font-size: .875rem;
 }
+#userHome img.logo,
 .ProgramLogoHome {
-  float: right;
-  margin-left: 1em;
-  margin-bottom: .5em;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
   max-width: 250px;
+}
+#userHome #topLogos,
+#userHome #bottomLogos {
+  width: 100%;
 }
 .ProgramLogoHomeLeft {
   float: left;
@@ -2760,7 +2756,6 @@ and (max-width : 1024px) {
   }
   div.SectionsRowDisplay div.TemplateOperations,
   div.SectionsRowDisplay div.SectionOperations {
-    display: inline-block;
     width: 28%;
     float: right;
     clear: right;
@@ -2809,7 +2804,6 @@ and (max-width : 1024px) {
   }
   div.SectionsRowDisplay div.TemplateOperations,
   div.SectionsRowDisplay div.SectionOperations {
-    display: inline-block;
     width: 28%;
     float: right;
     clear: right;
