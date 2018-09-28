@@ -6,6 +6,17 @@ body {
 }
 h1, h2, h3, h4 {
   color: #025689;
+  margin: 0 0 .5rem;
+  font-weight: normal;
+}
+h1, h2 {
+  font-size: 1.5rem;
+}
+a {
+  color: #296089;
+}
+.nodisplaypreform {
+  display: none;
 }
 .section-form-fields-view .templateDeadlineToolbar {
   display: none;
@@ -71,7 +82,8 @@ ul {
   margin: .25rem 0;
   padding: 0 2rem;
 }
-.onyx-input-decorator {
+.onyx-input-decorator,
+.onyx-input {
   background-color: #fff;
   border: 1px solid #C7C7C7;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
@@ -79,6 +91,7 @@ ul {
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   padding: 2px 4px;
   font-size: .875rem;
+  border-radius: 2px;
 }
 div[id$="_textBefore"] .QuestionNumber {
   display: none;
@@ -91,13 +104,18 @@ div[id$="_textBefore"] .QuestionNumber {
 .PlacedQuestion .DateQuestion .datePicker button,
 .PlacedQuestion .UniversityPicker button {
   font-size: .875rem;
-  /*-webkit-appearance: menulist;*/
-  /*width: 8rem;*/
-  /*padding-right: 1rem;*/
   background-color: #fff
   min-width: 10rem;
   background: transparent;
   border-color: #a6a6a6;
+}
+.PlacedQuestion .SingleChoice button:hover,
+.PlacedQuestion .DateQuestion .datePicker button:hover,
+.PlacedQuestion .UniversityPicker button:hover {
+  cursor: pointer;
+}
+.PlacedQuestion .SingleChoice button.active {
+  background: #3e6887 url(../lib/onyx/images/gradient-invert.png) repeat-x top;
 }
 
 .PlacedQuestion .SingleChoice button:after,
