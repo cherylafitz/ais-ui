@@ -2,8 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
-div#PrivacyPolicy,
-div#CookieDeclaration {
+div#PrivacyPolicy/*,
+div#CookieDeclaration*/ {
   display: none;
 }
 
@@ -1661,10 +1661,10 @@ input[type="text"],
 textarea,
 input[type="password"] {
   background-color: #fff;
-  border: 1px solid #C7C7C7;
-  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
-  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
-  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
+  border: 1px solid #CECECE;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   padding: 2px 4px;
   font-size: .875rem;
 }
@@ -1708,9 +1708,6 @@ input[type="submit"][value="Clear Filters"]:hover {
   opacity: .7;
 }
 input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
-  border : solid 1px #222;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
   color : #ffffff;
   padding: 0 .5rem .125rem .5rem;
