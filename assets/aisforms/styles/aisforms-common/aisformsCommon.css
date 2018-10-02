@@ -112,7 +112,7 @@ div.Content div.Rowdisplay {
   font-size: .875rem;
   display: inline-block;
   text-align: center;
-  padding: .125rem 1rem .3125rem;
+  padding: .0625rem 1rem .25rem;
   color: #fff;
   background-color: #33424d;
 }
@@ -135,6 +135,8 @@ div.Content div.Rowdisplay {
   padding: 0 4rem 0 0;
   position: relative;
   z-index: 2;
+  border-top: 1px solid #3d4f5c;
+  border-bottom: 1px solid #3d4f5c;
 }
 div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   margin-left: 0;
@@ -192,8 +194,8 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   background-image: url(https://aisforms.s3.amazonaws.com/ais/common/system/AC_Logo_White_200w.png);
   margin-right: 1rem;
 }
-#Header .logo,
-#Header .Title {
+.IsLoggedIn #Header .logo,
+.IsLoggedIn #Header .Title {
   float: left;
   background-repeat: no-repeat;
   width: 180px;
@@ -202,7 +204,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   background-size: 100%;
   margin-bottom: .5rem;
 }
-#Header .Title {
+.IsLoggedIn #Header .Title {
   background-image: url(../../../ais/common/AISformsLogo_flat.svg);
   background-image: url(../../../ais/common/AISformsLogo_flat.png)\9;
   width: 162px;
@@ -877,21 +879,21 @@ table.Search tr th {
 .Greeting {
   display: none;
 }
-div.Greeting span.Username {
-  font-variant: normal;
-  font-size: 0.7em;
-  color: #999;
-  display: none;
+
+.Main.Administrator,
+.Main[class*="Staff"] {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
 }
-.welcomeWord:after {
-  content: ',';
-}
+
 .LiveTemplatesTitle,
 .UpcomingDeadlinesHeader,
 .RecentlyClosedTemplatesTitle   {
-  font-size: 1.2em;
+  font-size: 1.5rem;
 }
-.LiveTemplatesTitle .History {
+.LiveTemplatesTitle .History,
+.showDeadlinesPage {
   font-size: 1rem;
 }
 table caption {
@@ -909,23 +911,25 @@ table caption {
 }
 
 .LiveAcrossAllProgramsNotSpecificToLoggedInUserActivityStatus {
-  float: right;
-  padding-right: 0.5em;
-  font-size: .9em;
+  font-size: .875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
 .LiveTemplates {
-  float: right;
-  clear: both;
+  /*float: right;*/
+  /*clear: both;*/
   /*border-left: 1px solid #cecece;*/
-  padding-left: 1.2em;
-  width: 86%;
+  /*padding-left: 1.2em;*/
+  /*width: 86%;*/
 }
 div.FileInboxLink {
   border-left: none;
-  width: 86%;
+  /*width: 86%;*/
   text-align: right;
   font-size: .875rem;
+  width: initial;
+  padding: 0 0 .5rem 0;
 }
 /*.LiveTemplates table.RowDisplay {
   margin: .5em 0;
@@ -984,11 +988,8 @@ table.RowDisplay td.Available {
   font-size: .9em;
 }
 div.Main div.staffHome div.Deadlines {
-  width: 86%;
-  clear: both;
-  float: right;
-  padding: 1em 0 0 1.2em;
-  margin-bottom: 1.2em;
+  padding: 1rem 0 0;
+  margin-bottom: 1.5rem;
 }
 .Content table.Deadlines table.templates tr td.time {
   width: 12em;
@@ -1003,7 +1004,7 @@ div.Main div.staffHome div.Deadlines {
   display: block;
   padding: .125em .25em .25em;
   text-align: left;
-  color: #296089;
+  color: #c4dcee;
   margin: .125em 0;
 }
 .Content .AdminHomeLinks a span.adminHomeLinksDescription,
@@ -1013,13 +1014,31 @@ div.Main div.staffHome div.Deadlines {
 .Content .AdminHomeLinks a:hover,
 .Content .AdminHomeLinks a:active {
   border-bottom: none;
-  color: #2a353d;
+  color: #fff;
   background-color: rgba(76,140,158, 0.1);
 }
-.Content .AdminHomeLinks {
-  width: 11%;
-  padding-left: .5rem;
-  border-left: 1px solid #eaab46;
+.Content .Main.Administrator .AdminHomeLinks,
+.Content .Main[class*="Staff"] .AdminHomeLinks {
+  order: 1;
+  flex-basis: 130px;
+  margin: -1.5rem 0 -1.5rem -1.5rem;
+  padding: 1rem;
+  background: #29353d;
+}
+.Content .staffHome {
+  order: 2;
+  flex-basis: 600px;
+  flex-grow: 1;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+.Content div.PageName {
+  order: 3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
 }
 .Content .AdminHomeLinks:after {
   clear: both;
@@ -1104,7 +1123,7 @@ div.MyTrackedForms div  {
   background-color: #f7f7f7;
   /*background-color: #e9ebec;*/
   background-color: #cbcccd;
-  margin: -.375rem 0 0;
+  margin: -1rem 0 0;
   padding: 2rem 1.5rem 2.5rem;
 }
 div.MyForms,
@@ -1159,18 +1178,18 @@ table.TemplateTable td ul {
 table.TemplateTable tr td,
 table.TemplateTable tr th {
   border: 1px solid #999;
-  padding: .3em;
+  padding: .25rem .5rem;
 }
 table.TemplateTable tr th {
-  background-color: #444;
+  background-color: #3a3d40;
   color: #FFFFFF;
   font-size: 1em;
   text-align: center;
   border-color: #222;
 }
 table.TemplateTable tr td {
-  font-size: 0.9em;
-   text-align: left;
+  font-size: 0.875rem;
+  text-align: left;
 }
 #UserHomePage {
   display: flex;
@@ -1657,7 +1676,6 @@ div.PreviousSection {
 }
 div.PageName {
   text-align: right;
-  margin: 1rem;
   font-size: 0.75rem;
 }
 input[type="text"],
@@ -1840,6 +1858,7 @@ div#footer2 .ACaddressBlock {
   position: relative;
   background-color: #29353d;
   padding: 2.5rem 0;
+  border-top: 1px solid #3d4f5c;
 }
 #footer #amagavi {
   width: 95%;
@@ -2024,7 +2043,7 @@ div.HasFormsInOtherBrandsWarning,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms  {
   font-style: normal;
-  color: #c93028;
+  color: #000;
   background-color: transparent;
   font-weight: normal;
   font-size: .875rem;
@@ -2098,6 +2117,9 @@ legend:not(.SaveButton) {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
+  body.IsNotLoggedIn {
+    background-color: #fff;
+  }
   body.IsNotLoggedIn .Content {
     width: 100%;
     padding: 0;
@@ -2473,7 +2495,7 @@ legend:not(.SaveButton) {
     margin: 0;
   }
 }
-@media only screen and /*(min-width : 568px) and*/ (max-width : 767px) {
+@media only screen and (min-width : 568px) and (max-width : 767px) {
   #Header .UserNameBlock  {
     font-size: .875rem;
     clear: both;
@@ -2608,7 +2630,7 @@ legend:not(.SaveButton) {
   }
 }
 @media only screen
-/*and (min-width : 768px)*/
+and (min-width : 768px)
 and (max-width : 896px) {
   .LoginText {
     clear: both;
@@ -2617,7 +2639,7 @@ and (max-width : 896px) {
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen
-/*and (min-width : 768px)*/
+and (min-width : 768px)
 and (max-width : 1024px) {
   .LiveTemplates,
   div.Main div.staffHome div.Deadlines {
@@ -2668,7 +2690,7 @@ and (max-width : 1024px) {
   }
 }
 /* desktops and laptops */
-@media only screen /*and (min-width: 897px)*/ and (max-width: 1150px) {
+@media only screen and (min-width: 897px) and (max-width: 1150px) {
   div.Main div.LoginOrNewAccount div.CustomContent  {
     margin: 0;
     padding: 0;
