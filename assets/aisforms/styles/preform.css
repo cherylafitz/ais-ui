@@ -168,10 +168,13 @@ div[id$="_textBefore"] .QuestionNumber {
 .form-panels a {
   font-size: inherit;
 }
-.AClogoAddressFooter,
-.form-panels .AClogoAddressFooter a {
+.AClogoAddressFooter {
   font-size: .75rem;
 }
+.form-panels .AClogoAddressFooter a {
+  color: #c4dcee;
+}
+
 .AClogoAddressFooter img {
   width: 200px;
 }
@@ -184,4 +187,22 @@ div[id$="_textBefore"] .QuestionNumber {
 }
 .section-form-fields-view .detailScroller {
   padding: .5rem 1.5rem;
+}
+
+.onyx-checkbox {
+  background-position: 0px -130px;
+  border: 1px solid #999;
+  border-radius: 9px;
+  height: 30px;
+  width: 30px;
+}
+.onyx-checkbox[checked],
+.onyx-checkbox[disabled] {
+  border: 0;
+  height: 32px;
+  width: 32px;
+}
+#app_sectionItemsList_ownerProxy_placedQuestion_switchComponent_placed_multiChoiceList_ownerProxy_inputDecorator {
+  box-shadow: none;
+  border:0;
 }
