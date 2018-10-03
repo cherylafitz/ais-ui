@@ -10,7 +10,7 @@
       <h1>Cookie Declaration</h1>
     <div class="row row-size2">
       <p>We care about the protection and privacy of your data. To that end, we limit the number of small data files called cookies that we place on your device. We  use cookies that are necessary to make our website work properly. These necessary cookies expire after you finish your AIS Forms session. <span class="text-highlight01">We  do not store any personally-identifiable information in cookies.</span></p>
-      <p>This declaration explains how we use cookies and the choices you have. Except as otherwise stated in this declaration, our <span class="text-highlight01">Privacy Policy</span> will apply to our processing of the data we collect via cookies.</p>
+      <p>This declaration explains how we use cookies and the choices you have. Except as otherwise stated in this declaration, our [[PrivacyPolicyForAISForms|Privacy Policy]] will apply to our processing of the data we collect via cookies.</p>
     </div>
     <div class="row row-size2 bg-blue01 card">
       <h2>What Are Cookies?</h2>
@@ -28,49 +28,54 @@
       <h2>Which Cookies Do We Use and Why?</h2>
       <p>Cookies help us provide and improve AIS Forms, such as by personalizing content. The cookies that we use may change from time to time as we improve and update AIS Forms. We use cookies to verify your account and determine when you are logged in. That way, we can make it easier for you to access AIS Forms and show you the appropriate experience and features. For example, we use cookies to keep you logged in as you navigate between AIS Forms pages.</p>
           <h3>Direct, necessary, session cookies used by AIS Forms</h3>
-        <p>Our website uses direct cookies that are necessary for the operation of our website and to analyze our traffic. <span class="text-highlight01">We do not store any personally-identifiable information in cookies.</span> All direct cookies expire after you log out of your session.</p>
+        <p>Our website uses direct cookies that are necessary for the operation of our website and to analyze our traffic. <span class="text-highlight01">Most of our cookies do not collect any personally-identifiable information; the "jwt" cookie temporarily stores some personal data under certain limited conditions (see below.)</span> All direct cookies expire after you log out of your session.</p>
+
+      <p>For all cookies:</p>
+      <ul>
+        <li><b>Provider:</b> AIS Forms (direct)</li>
+        <li><b>Necessary:</b> Yes</li>
+      </ul>
+
       <table class="inner-grid">
         <thead>       <tr>
           <th>Name</th>
-          <th>Provider</th>
-          <th>Necessary</th>
           <th>Purpose</th>
           <th>Impact</th>
           <th>Expiry</th>
         </tr></thead>
         <tbody><tr>
           <td>woinst</td>
-          <td>AIS Forms (direct)</td>
-          <td>Yes</td>
           <td>Used to keep a user on the instance where they are logged in; created after login</td>
           <td>Stores the instance number the user connected to; stores no personal data</td>
-          <td>End of session</td>
+          <td>End of AIS Forms session</td>
         </tr>
         <tr>
           <td>wosid</td>
-          <td>AIS Forms (direct)</td>
-          <td>Yes</td>
           <td>Used for session maintenance; created after login</td>
           <td>Stores the user's session ID; stores no personal data</td>
-          <td>End of session</td>
+          <td>End of AIS Forms session</td>
+        </tr>
+        <tr>
+          <td>jwt</td>
+          <td>Used to manage a session for a special single-page app, also known as a pre-form; created when a pre-form is opened</td>
+          <td>Stores a session identifier and some personal data (user's first name, last name, and AIS Forms username)</td>
+          <td>End of pre-form session</td>
         </tr>
         <tr>
           <td>portal</td>
-          <td>AIS Forms (direct)</td>
-          <td>Yes</td>
           <td>Used for user interface (UI) customization</td>
           <td>Stores user's brand; stores no personal data; rarely used</td>
-          <td>End of session</td>
+          <td>End of AIS Forms session</td>
         </tr>
         <tr>
           <td>routeid_air, routeid_airreport,</td>
-          <td>AIS Forms (direct)</td>
-          <td>Yes</td>
           <td>Used by a proxy-based load balancer to direct a user back to their logged-in instance; we do not use this load-balancing method</td>
           <td>Stores the name and port number of the instance the user connected to; stores no personal data; not used</td>
-          <td>End of session</td>
+          <td>End of AIS Forms session</td>
         </tr></tbody>
       </table>
+      <h3 class="text-highlight01">Third-party cookies</h3>
+      <p>Cookies are sometimes used by third parties on our website for analytical purposes. We currently use <a class="website" href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank">Google Analytics</a> for these purposes. Google Analytics cookies are used to analyze your experience with our website. Google Analytics combines this information with other information that you might have provided to them or that they have collected from your use of their services. <span class="text-highlight01">We and our third-party analytics partners do not store any personally identifiable information in these cookies.</span> Google Analytics cookies might not expire after you log out of your session. Google Analytics cookies have names like __utma, __utmb, __utmc, __utmz, __qca, and _ga. For more information about Google Analytics cookie usage, visit its website at: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a></p>
     </div>
     <div class="row row-size2 bg-blue01 card">
       <h2 id="cookie">Your Cookie Settings</h2>
@@ -78,42 +83,73 @@
         <table class="inner-grid vertical-header">
           <tr>
             <th>Your consent applies to the following domains</th>
-            <td>ais.americancouncils.org and www.aisforms.org</td>
+            <td>
+              ais.americancouncils.org<br />
+              www.aisforms.org
+            </td>
           </tr>
           <tr>
             <th>Your current cookie settings</th>
-            <td>Use direct, necessary, session cookies, only. These cookies are required for the operation of this website and cannot be disabled.</td>
+            <td>- Use direct, necessary, session cookies. These cookies are required for the operation of this website and cannot be disabled.<br />- Use third-party cookies</td>
           </tr>
         </table>
       </div>
+      <h3>Change your consent</h3>
+      <div class="row row-size1">
+        <table class="inner-grid">
+          <thead>
+            <tr>
+              <th>Use of Cookie<br />
+              </th>
+              <th >Your Preference Setting<br />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Direct, Necessary, Session Cookies<br />
+              </td>
+              <td>These cookies are required for the operation of this website and cannot be disabled.</td>
+            </tr>
+            <tr>
+              <td>Third-Party Analytics Partner Cookies
+              </td>
+              <td>User your browser's or device's cookie controls to enable/disable third-party cookies.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row row-size1">
+        <h3>Your browser's cookie controls</h3>
+        <p>Your browser or device might also offer settings that allow you to choose whether cookies are set and to delete them. For more information about these controls, visit your browser's or device's help material. AIS Forms might not work properly if you disable necessary cookie use.</p>
+      </div>
     </div>
-    <div class="row row-size2 bg-blue01 card">
-      <h3>Your browser's cookie controls</h3>
-      <p>Your browser or device might also offer settings that allow you to choose whether cookies are set and to delete them. For more information about these controls, visit your browser's or device's help material. AIS Forms might not work properly if you disable necessary cookie use.</p>
-    <div class="row row-size2">
+  <div class="row row-size2 bg-blue01 card">
+    <div class="row">
       <h2>Questions?</h2>
-      <p>Learn more about who we are, how you can contact us, and how we process personal data in our <span class="text-highlight01">Privacy Policy</span>.</p>
+      <p>Learn more about who we are, how you can contact us, and how we process personal data in our [[PrivacyPolicyForAISForms|Privacy Policy]].</p>
     </div>
     <div class="row row-size2">
       <h3>Contact us at:</h3>
-      <div class="row">
-        <div class= "column column-1-2">
-          <h4>Email:</h4>
-          <a href="mailto:aisoperations@americancouncils.org">aisoperations@americancouncils.org</a>
-        </div>
-        <div class= "column column-1-2">
-          <h4>Postal mail:</h4>
-          ATTN: AIS Operations<br />
-          American Councils for International Education<br />
-          1828 L St NW Ste 1200<br />
-          Washington DC  20036-5136<br />
-          USA
-        </div>
-      </div>
+      <p>Gregg Detkos, Manager<br />
+      AIS Development and Operations<br /></p>
+      <h4>Email:</h4>
+      <p><a href="mailto:aisoperations@americancouncils.org">aisoperations@americancouncils.org</a></p>
+      <h4>Telephone:</h4>
+      <p><span class="noBreak">(+1) 202.833.7522</span></p>
+      <h4>Postal mail:</h4>
+      <p>ATTN: AIS Operations<br />
+      American Councils for International Education<br />
+      1828 L St NW Ste 1200<br />
+      Washington DC  20036-5136<br />
+      USA</p>
     </div>
   </div>
-    <div class="row row-size2">
-      version.2018-Sep-04
-    </div>
+  <div class="row row-size2">
+    version.2018-Oct-02
   </div>
-</div>
+  <div class="row row-size2 bg-blue01 card">
+    [[PrivacyPolicyForAISForms|Privacy Policy]]&nbsp;&nbsp;&nbsp;[[CookieDeclarationForAISForms|Cookie Declaration]]
+  </div>
+  </div>
+  </div>
