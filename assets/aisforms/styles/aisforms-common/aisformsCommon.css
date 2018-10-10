@@ -114,7 +114,8 @@ div.Content div.Rowdisplay {
   text-align: center;
   padding: .0625rem 1rem .25rem;
   color: #fff;
-  background-color: #33424d;
+  color: #000;
+  background-color: transparent;
 }
 #TopMenu a:hover,
 .menu a:hover,
@@ -132,11 +133,14 @@ div.Content div.Rowdisplay {
 }
 #TopMenu {
   background-color: #33424d;
+  background-color: #b3c1cc;
   padding: 0 4rem 0 0;
   position: relative;
   z-index: 2;
   border-top: 1px solid #3d4f5c;
   border-bottom: 1px solid #3d4f5c;
+  border-top-color: #9da9b3;
+  border-bottom-color: #9da9b3;
 }
 div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   margin-left: 0;
@@ -219,6 +223,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
 #Header .LoginLogoutLink a {
   display: block;
   color: #FFD590;
+  color: #2b353c;
   font-size: 0.875rem;
 }
 #Header .LoginLogoutLink a:hover,
@@ -781,7 +786,9 @@ div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
 }
 table.RowDisplay tr.headerRow {
   font-style: normal;
-  font-size: 1em;
+  font-size: 1rem;
+  border-bottom: 2px solid #363a3e;
+  border-top: 2px solid #363a3e;
 }
 table.RowDisplay tr.headerRow th a,
 table.RowDisplay td a {
@@ -801,11 +808,11 @@ table.RowDisplay td a:active {
   color: #73382C;
 }
 table.RowDisplay tr.headerRow,
-tr.headerRow, tr.headerRow th a {
+tr.headerRow,
+tr.headerRow th a {
   background-color: #c3ca9b;
   background-color: #fff;
   /*color: #fff;*/
-  border-bottom: 2px solid #363a3e;
 }
 table a {
   color: #222222;
@@ -1024,12 +1031,13 @@ div.Main div.staffHome div.Deadlines {
   margin: -1.5rem 0 -1.5rem -1.5rem;
   padding: 1rem;
   background: #29353d;
+  background-color: #33424d;
 }
 .Content .staffHome {
   order: 2;
   flex-basis: 600px;
   flex-grow: 1;
-  margin-left: 1.5rem;
+  margin-left: 1.75rem;
   margin-bottom: 1rem;
   overflow: auto;
 }
