@@ -2371,7 +2371,6 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr td {
 #ProgramStaffQuestionnaire .AnswerLabel,
 .TranscribedQuestionsForApplicant .AnswerLabel {
   display: inline-block;
-  width: 2%;
   margin: 0;
   vertical-align: top;
   font-weight: bold;
@@ -2403,7 +2402,6 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
 #ProgramStaffQuestionnaire .QuestionLabel,
 .TranscribedQuestionsForApplicant .QuestionLabel {
   font-weight: bold;
-  width: 2%;
   display: inline-block;
 }
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
