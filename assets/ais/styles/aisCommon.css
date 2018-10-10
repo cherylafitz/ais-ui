@@ -3131,6 +3131,9 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   float: right;
   margin: 0 .125rem 0 0;
 }
+.UniversityAdvisorTrackerReport .FormTrackerReport .Clean {
+  float: none;
+}
 .FormTrackerReport .Clean::before {
   content: '';
   width: .75rem;
@@ -3385,7 +3388,7 @@ body > #priorPage a {
   background-color: transparent;
   border-collapse: collapse;
   font-size: .875rem;
-  margin: .75rem;
+  margin: .75rem 0;
   border: .75rem solid transparent;
 }
 .inner-grid th,
