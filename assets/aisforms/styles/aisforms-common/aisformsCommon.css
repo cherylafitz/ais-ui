@@ -2069,6 +2069,8 @@ div.MyForms div.NoEvaluationForms  {
 }
 
 div.NoFormsAvailable,
+div.NoAvailableForms,
+div.AvailableForms div,
 div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
