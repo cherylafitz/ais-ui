@@ -771,15 +771,12 @@ table.RowDisplay td {
   font-size: .875rem;
   white-space: nowrap;
   padding: .25rem 0.5rem;
-  border: 1px solid #fff;
   border: 1px solid #afb2b9;
   text-align: left;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 table.RowDisplay tr.headerRow th {
-/*  border-color: #ebedde;
-  border-color: #c9ccd2;*/
   font-weight: bold;
   padding: .5rem;
 }
@@ -826,21 +823,17 @@ table.RowDisplay td a:active {
 table.RowDisplay tr.headerRow,
 tr.headerRow,
 tr.headerRow th a {
-  background-color: #c3ca9b;
   background-color: #fff;
-  /*color: #fff;*/
 }
 table a {
   color: #222222;
 }
 table.RowDisplay tr:nth-child(2n+2),
 table.RowDisplay tbody tr:nth-child(2n+2) {
-  background-color: #E8EBD9;
   background-color: #dbe8f2;
 }
 table.RowDisplay tr:nth-child(2n+3),
 table.RowDisplay tbody tr:nth-child(2n+3) {
-  background-color: #F9FAF5;
   background-color: #fff;
 }
 table.RowDisplay tbody tr.submitted_odd,
@@ -882,18 +875,14 @@ table.Search tr th {
 /* FORMS SEARCH RESULTS--> */
 .Content .ApplicantApplicationRowDisplay  table.RowDisplay td,
 .Content .ApplicantApplicationRowDisplay  table.RowDisplay th {
-  border: 0.1em solid #e6e6e6;
+  border: 1px solid #e6e6e6;
 }
 .PDFPrint,
 .searchResultActionLink {
-  /*float: left;*/
   margin: 0 1em .5em 0;
   border: none;
   padding: 0 .5em;
 }
-/*.sendMassEmailWrapper {
-  clear: left;
-}*/
 .Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
   background-color: #e0e6ec;
 }
@@ -947,9 +936,6 @@ div.FileInboxLink {
   width: initial;
   padding: 0 0 .5rem 0;
 }
-/*.LiveTemplates table.RowDisplay {
-  margin: .5em 0;
-}*/
 th.TemplateName a.SortColumn,
 th.TemplateName div {
   float: left;
@@ -965,10 +951,6 @@ th.filtered {
 .LiveTemplates table.RowDisplay td,
 .LiveTemplates table.RowDisplay tr.headerRow th {
   white-space: normal;
-}
-.LiveTemplates table.RowDisplay tr.headerRow th,
-.Deadlines table.RowDisplay tr.headerRow th{
-  /*font-size: 1rem;*/
 }
 .LiveTemplates table.RowDisplay tr.headerRow th.Available,
 .LiveTemplates table.RowDisplay tr.headerRow th.DeadlineToApply,
@@ -991,9 +973,9 @@ th.ProgramYear input {
   white-space: nowrap;
 }
 .infoIconOnRight .showHoverable.erxHoverArea:after {
-    right: -24px;
-    position: absolute;
-    top: 0;
+  right: -24px;
+  position: absolute;
+  top: 0;
 }
 .infoIconOnRight .showHoverable.erxHoverArea {
 margin-left: 0 !important;
@@ -1106,8 +1088,7 @@ div.MyTrackedForms h1 {
 table.PendingApplications td.Form,
 table.AvailablePrograms td.Form,
 table.SubmittedApplications td.Form {
-/* width: 15em; */
-white-space: normal;
+  white-space: normal;
 }
 .Explanation {
   color: #777777;
@@ -2211,36 +2192,6 @@ legend:not(.SaveButton) {
   #Header {
     padding: 1rem;
   }
-/*  div.Content input[type='text'] {
-    max-width: 12em;
-  }*/
-  #Header .Title {
-/*    background-image: url(../../../ais/common/AISformsLogo_flat.svg);
-    background-image: url(../../../ais/common/AISformsLogo_flat.png)\9;
-    height: 65px;
-    background-position: center;*/
-  }
-  #TopMenu a, .menu a {
-/*    width: 100%;
-    font-size: 1em;
-    display: block;
-    float: none;*/
-  }
-  #TopMenu {
-    /*background-color: transparent;*/
-    /*margin: 0 auto 1rem;*/
-    /*height: auto;*/
-  }
-/*  .menuItem a#Roles_ID {
-    margin-bottom: 3%;
-  }*/
-  #Header #serverInfo,
-  #Header #buildAndInstance  {
-    /*display: none;*/
-  }
-/*  #Header {
-    padding: 1rem
-  }*/
   #Header .Title,
   #Header .logo {
     width: 150px;
@@ -2258,15 +2209,9 @@ legend:not(.SaveButton) {
     width: 100%;
     border: none;
   }
-/*  .Content .AdminHomeLinks a {
-    font-size: 1.5em;
-  }*/
   .Content .AdminHomeLinks {
     width: 100%;
   }
-/*  div#AClogoFooter img, div#footer {
-    width: 100%;
-  }*/
   .ACaddressBlock {
     clear: both;
     padding-top: .5rem;
@@ -2409,12 +2354,6 @@ legend:not(.SaveButton) {
   #TopMenu a, .menu a {
     width: 15%;
     margin: 0;
-  }
-  #TopMenu {
-    /*background-color: transparent;*/
-    /*margin: 5% auto;*/
-    /*margin: -0.8em 0;*/
-    /*clear: both;*/
   }
   .menuItem a#Roles_ID {
     margin-bottom: 3%;
@@ -2627,7 +2566,6 @@ legend:not(.SaveButton) {
   }
   .LoginWelcome p {
     margin: 0 auto;
-    /* width: 80%; */
   }
   .TipsLogin {
     padding: 0;
