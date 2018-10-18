@@ -112,16 +112,18 @@ div.Content div.Rowdisplay {
   font-size: .875rem;
   display: inline-block;
   text-align: center;
-  padding: .0625rem 1rem .25rem;
-  color: #fff;
+  padding: 0 1rem .125rem;
   color: #000;
   background-color: transparent;
+  font-weight: bold;
 }
 #TopMenu a:hover,
 .menu a:hover,
 .menu a:active,
 #TopMenu a:active {
-  background: #4c8c9e;
+  background: transparent;
+  color: #466672;
+  text-decoration: underline;
 }
 .menu a:active,
 #TopMenu a:active {
@@ -132,15 +134,18 @@ div.Content div.Rowdisplay {
   box-shadow:         none;
 }
 #TopMenu {
-  background-color: #33424d;
   background-color: #b3c1cc;
-  padding: 0 4rem 0 0;
+  border-bottom: 1px solid rgb(137, 148, 158);
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 ); /* IE6-9 */
+  padding: .0625rem 4rem .0625rem 0;
   position: relative;
   z-index: 2;
-  border-top: 1px solid #3d4f5c;
-  border-bottom: 1px solid #3d4f5c;
-  border-top-color: #9da9b3;
-  border-bottom-color: #9da9b3;
+  border-top: 1px solid #8f9aa2;
+  border-bottom: 1px solid #8f9aa2;
 }
 div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   margin-left: 0;
@@ -214,17 +219,16 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   width: 162px;
 }
 #Header .LoginLogoutLink {
-  margin-top: .5rem;
+  margin-top: 1.25rem;
   position: absolute;
   right: 1rem;
-  bottom: -1.375rem;
   z-index: 10;
 }
 #Header .LoginLogoutLink a {
   display: block;
-  color: #FFD590;
-  color: #2b353c;
+  color: #000;
   font-size: 0.875rem;
+  font-weight: bold;
 }
 #Header .LoginLogoutLink a:hover,
 #Header .LoginLogoutLink a:active {
@@ -331,7 +335,7 @@ body.IsNotLoggedIn .Content {
   width: 90%;
   max-width: 1100px;
   margin: -1em auto -2em auto;
-  padding: 1rem 1rem 2rem;
+  padding: 1rem 1rem 3rem;
   border-top: none;
   border-bottom: none;
   border-right: 1px solid #e6e6e6;
@@ -356,6 +360,7 @@ body.IsNotLoggedIn .Content {
 }
 #footer.IsLoggedIn #AClogoFooter img {
   width: 250px;
+  padding: 0 1rem 1rem 0;
 }
 #footer.IsLoggedIn img#LoginPage {
   display: none;
@@ -370,12 +375,18 @@ body.IsNotLoggedIn .Content {
 #PrivacyPolicy,
 #CookieDeclaration,
 #DataUsageGuidance {
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 1.5rem 1rem 1rem;
   font-size: .875rem;
   text-align: right;
   position: relative;
   z-index: 1;
   padding-top: 3rem;
+}
+.IsLoggedIn #CookieDeclaration {
+  /*TEMP */
+    padding: 1rem 1.5rem 0;
+    margin: 1rem -1.5rem -3rem;
+    background: #2b353c;
 }
 #PrivacyPolicy {
   float: right;
@@ -387,6 +398,11 @@ body.IsNotLoggedIn .Content {
 #CookieDeclaration a,
 #DataUsageGuidance a {
   color: #444;
+}
+.IsLoggedIn #CookieDeclaration a {
+  /*TEMP */
+    color: #e9ead9;
+    border-bottom-color: #e9ead9;
 }
 div.LoginOrNewAccount div.Content {
   padding-top: 0;
@@ -752,7 +768,7 @@ div.AIRAdminSearchForApplications #outerTableContainerID table.Search.rolodex {
 }
 table.RowDisplay tr.headerRow th,
 table.RowDisplay td {
-  font-size: .9em;
+  font-size: .875rem;
   white-space: nowrap;
   padding: .25rem 0.5rem;
   border: 1px solid #fff;
@@ -888,7 +904,8 @@ table.Search tr th {
 }
 
 .Main.Administrator,
-.Main[class*="Staff"] {
+.Main[class*="Staff"],
+.Main.Developer {
   display: flex;
   flex-flow: row wrap;
   position: relative;
@@ -908,6 +925,7 @@ table caption {
   background-color: transparent;
   text-align: left;
   padding-bottom: .5em;
+  caption-side: top;
 }
 .UpcomingDeadlinesHeader .showDeadlinesPage {
   color: #999;
@@ -922,17 +940,8 @@ table caption {
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
-
-.LiveTemplates {
-  /*float: right;*/
-  /*clear: both;*/
-  /*border-left: 1px solid #cecece;*/
-  /*padding-left: 1.2em;*/
-  /*width: 86%;*/
-}
 div.FileInboxLink {
   border-left: none;
-  /*width: 86%;*/
   text-align: right;
   font-size: .875rem;
   width: initial;
@@ -1005,14 +1014,15 @@ div.Main div.staffHome div.Deadlines {
   display: none;
 }
 .Content .AdminHomeLinks a {
-  font-size: .875em;
+  font-size: .875rem;
   text-decoration: none;
   border-bottom: none;
   display: block;
-  padding: .125em .25em .25em;
+  padding: 0 .25rem 0 .5rem;
   text-align: left;
-  color: #c4dcee;
-  margin: .125em 0;
+  color: #fff;
+  margin: .5rem 0;
+  border-left: 1px solid #FFD590;
 }
 .Content .AdminHomeLinks a span.adminHomeLinksDescription,
 .Content .AdminHomeLinks a span.description {
@@ -1022,22 +1032,24 @@ div.Main div.staffHome div.Deadlines {
 .Content .AdminHomeLinks a:active {
   border-bottom: none;
   color: #fff;
-  background-color: rgba(76,140,158, 0.1);
+  background-color: rgba(76,140,158, 0.5);
 }
 .Content .Main.Administrator .AdminHomeLinks,
-.Content .Main[class*="Staff"] .AdminHomeLinks {
+.Content .Main[class*="Staff"] .AdminHomeLinks,
+.Content .Main.Developer .AdminHomeLinks {
   order: 1;
-  flex-basis: 130px;
-  margin: -1.5rem 0 -1.5rem -1.5rem;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
   padding: 1rem;
-  background: #29353d;
   background-color: #33424d;
+  flex-grow: 1;
+}
+.AdminHomeLinks div {
+  display: inline-block;
 }
 .Content .staffHome {
   order: 2;
   flex-basis: 600px;
   flex-grow: 1;
-  margin-left: 1.75rem;
   margin-bottom: 1rem;
   overflow: auto;
 }
@@ -1123,6 +1135,9 @@ div.MyEvaluationQueuesAsEvaluator h1,
 div.MyTrackedForms div  {
   padding-left: 0;
 }
+.Main[class*="Evaluator"] #UserHomeAfterFormsInfo {
+  display: none;
+}
 #FormsWrapper {
   flex-basis: 500px;
   flex-grow: 1;
@@ -1131,9 +1146,31 @@ div.MyTrackedForms div  {
   background-color: #f7f7f7;
   /*background-color: #e9ebec;*/
   background-color: #cbcccd;
+  background-color: #e4e5e7;
   margin: -1rem 0 0;
   padding: 2rem 1.5rem 2.5rem;
+  border: 1px solid #d5d5da;
 }
+#FormsWrapper fieldset {
+  margin-bottom: 1rem;
+  border: 1px solid #afb2b9;
+  background-color: #f1f2f3;
+}
+#FormsWrapper fieldset table {
+  margin: 1rem 0;
+}
+/*#FormsWrapper fieldset > div {
+  display: flex;
+}
+#FormsWrapper fieldset .paginatorContainer {
+  order: 3;
+}
+#FormsWrapper fieldset .DownloadAsExcelAbove {
+  order: 1;
+}
+#FormsWrapper fieldset .PendingApplications {
+  order: 2;
+}*/
 div.MyForms,
 div.MyTrackedForms,
 div.AvailableForms,
@@ -1204,11 +1241,15 @@ table.TemplateTable tr td {
   flex-flow: row wrap;
   margin: -1.5rem;
 }
+/*TEMP*/
+  .IsLoggedIn #CookieDeclaration {
+    padding: 1rem 1.5rem 0;
+    margin: 1.5rem -1.5rem -3rem;
+  }
 #UserHomeIntro {
-  flex-basis: 550px;
+  flex-basis: 500px;
   margin: 0;
   flex-grow: 2;
-  max-width: 1100px;
   padding: 1.5rem 1.5rem 3.5rem;
 }
 
@@ -1431,7 +1472,9 @@ table.RowDisplay.Evaluators {
 
 /* <--EVALUATION QUEUE MANAGEMENT */
 div#UserHomePage table.RowDisplay tr.headerRow th,
-div#UserHomePage table.RowDisplay td  {
+div#UserHomePage table.RowDisplay td,
+.EvaluatorHomePage table.RowDisplay td,
+.EvaluatorHomePage table.RowDisplay tr.headerRow th  {
   white-space: normal;
 }
 div#UserHomePage table.RowDisplay td {
@@ -1842,11 +1885,7 @@ span.fax {
   margin: .5em auto;
 }
 .AClogoAddressFooter {
-  text-align: right;
   line-height: 1.25rem;
-}
-#AClogoFooter {
-  float: left;
 }
 .AClogoAddressFooter .contact1 > span:not(:last-child):after,
 .AClogoAddressFooter .contact2 > span:not(:last-child):after,
@@ -1862,17 +1901,12 @@ div#footer2 .ACaddressBlock {
 #footer {
   position: relative;
   background-color: #29353d;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0 3rem;
   border-top: 1px solid #3d4f5c;
 }
-#footer #amagavi {
-  width: 95%;
-  margin: 0 auto;
-}
 #footer #amagavi table {
-  font-size: .75em;
-  float: right;
-  margin: 0;
+  font-size: .75rem;
+  margin: .5rem 1.5rem 0;
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline {
@@ -2037,9 +2071,7 @@ div.NoSiteContentItems,
 div.NoForms,
 div.NoUsers,
 div.NoFormsAvailable,
-div.NoFormsStartedOrSubmitted,
 div.NoEvaluationForms,
-.HasFormsInOtherBrandsWarning,
 div.AvailableForms div,
 .DeveloperCaution,
 div.OtherBrands
@@ -2048,12 +2080,26 @@ div.HasFormsInOtherBrandsWarning,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms  {
   font-style: normal;
-  color: #000;
+  color: #c93028;
   background-color: transparent;
   font-weight: normal;
   font-size: .875rem;
   margin-bottom: .5rem;
 }
+
+div.NoFormsAvailable,
+div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoEvaluationForms,
+div.OtherBrands div.HasFormsInOtherBrandsWarning,
+div.NoEvaluationForms,
+div.NoForms,
+div.NoAvailableForms,
+div.NoEvaluationQueuesAvailable {
+  color: #000;
+}
+
+
 div.MyForms div.OtherBrands {
   margin-top: .5rem;
   max-width: 1000px;
@@ -2117,11 +2163,22 @@ div.NoDisplayExceptPDF.HeaderEvalAppVersion,
 legend:not(.SaveButton) {
   font-weight: bold;
 }
+.list-multi {
+  column-count: 2;
+  column-width: 250px;
+  list-style-position: inside;
+  padding-left: 1rem;
+}
 /*<--DESCRIPTIVE STYLES*/
 
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
   body.IsNotLoggedIn {
     background-color: #fff;
   }
@@ -2234,15 +2291,6 @@ legend:not(.SaveButton) {
     float: none;
     margin: 1em auto;
   }
-  .LiveTemplates,
-  div.Main div.staffHome div.Deadlines,
-  div.FileInboxLink  {
-    float: none;
-    width: 98%;
-    margin: 1%;
-    padding: 0;
-    border-left: none;
-  }
   .LiveTemplates table.RowDisplay td.Available,
   .LiveTemplates table.RowDisplay td.DeadlineToApply,
   .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
@@ -2353,6 +2401,11 @@ legend:not(.SaveButton) {
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 568px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
   #TopMenu a, .menu a {
     width: 15%;
     margin: 0;
@@ -2369,14 +2422,6 @@ legend:not(.SaveButton) {
   .Greeting {
     width: 100%;
   }
-  .LiveTemplates,
-  div.Main div.staffHome div.Deadlines {
-    float: none;
-    width: 98%;
-    margin: 1%;
-    border-left: none;
-    padding-left: 0;
-  }
   .LiveTemplates table.RowDisplay td.Available,
   .LiveTemplates table.RowDisplay td.DeadlineToApply,
   .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
@@ -2385,20 +2430,6 @@ legend:not(.SaveButton) {
   .infoIconOnRight .showHoverable.erxHoverArea {
     margin-left: 0 !important;
     margin-right: 24px !important;
-  }
-  .Content .AdminHomeLinks {
-    clear: both;
-    width: 100%;
-    margin: 0 aut0;
-
-  }
-  .Content .AdminHomeLinks div {
-    float: left;
-    width: 48%;
-    height: 4em;
-  }
-  .Content .AdminHomeLinks a {
-    font-size: 120%;
   }
   .MenuOfSections select, div.Content .MenuOfSections input  {
     font-size: .8em;
@@ -2509,16 +2540,6 @@ legend:not(.SaveButton) {
   #Header #buildAndInstance .brand {
     display: none;
   }
-  #TopMenu a,
-  .menu a {
-/*    font-size: .8em;
-    width: 13%;
-    margin: 0;*/
-  }
-/*  .Content .AdminHomeLinks {
-    width: 18%;
-    font-size: .9em;
-  }*/
   div.ValidationAndForms .ValidationError {
     text-align: center;
   }
@@ -2530,14 +2551,6 @@ legend:not(.SaveButton) {
   .Content .mainInstructions  {
     float: none;
     margin: 1em auto;
-  }
-  .LiveTemplates,
-  div.Main div.staffHome div.Deadlines,
-  div.FileInboxLink {
-    width: 75%;
-  }
-  .LiveTemplates, div.Main div.staffHome div.Deadlines  div {
-    clear: both;
   }
   .UpcomingDeadlinesHeader span:nth-child(2)  {
     float: left;
@@ -2646,12 +2659,7 @@ and (max-width : 896px) {
 @media only screen
 and (min-width : 768px)
 and (max-width : 1024px) {
-  .LiveTemplates,
-  div.Main div.staffHome div.Deadlines {
-    width: 83%;
-  }
   div.Main div.LoginOrNewAccount div.CustomContent  {
-    /* width: 90%; */
     margin: 0 auto;
     padding: 2em;
   }
@@ -2869,4 +2877,32 @@ div.Content span.SharedTeamManagement {
 div.Main .SharedLegend {
     font-style: normal;
     font-weight: normal;
+}
+
+@media only screen and (min-width : 860px) {
+/* admin/staff/dev HOME PAGE --> */
+  .AdminHomeLinks div {
+    display: block;
+  }
+  .Content .Main.Administrator .AdminHomeLinks,
+  .Content .Main[class*="Staff"] .AdminHomeLinks,
+  .Content .Main.Developer .AdminHomeLinks {
+    flex-grow: 0;
+    margin: -1.5rem 0 -1.5rem -1.5rem;
+  }
+  .Content .staffHome {
+    margin-left: 1.75rem;
+  }
+/* <-- admin/staff/dev HOME PAGE */
+
+/* FOOTER --> */
+  #AClogoFooter {
+    float: left;
+  }
+  .AClogoAddressFooter {
+    text-align: right;
+  }
+  #footer #amagavi table {
+    float: right;
+  }
 }
