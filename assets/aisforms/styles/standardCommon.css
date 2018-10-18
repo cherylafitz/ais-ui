@@ -666,8 +666,6 @@ input#SubmitForEvaluation,
 input#SubmitForEvaluation:hover {
   font-size: 1.2em;
 }
-input#SubmitForEvaluation:hover {
-}
 input[value="Add More"] {
   background: rgb(204,204,204); /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -806,8 +804,9 @@ div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
 
 .Content div.SectionDisplay h2 {
   font-size: 1.25rem;
-  color: #025689;
   margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  color: #025689;
   clear: both;
   text-align: left;
 }
@@ -911,9 +910,9 @@ div.Content div.PhysAddrZIPCode input[type='text']
 div.Content div.SchoolZIP input[type='text'] {
   width: 7em;
 }
-div.Content div.2digitInteger input[type='text'] {
+/* div.Content div.2digitInteger input[type='text'] {
   width: 2em;
-}
+} */
 
 div.Content div.SectionDisplay table tr td div.caption input[type="text"] {
   width: 15em;
