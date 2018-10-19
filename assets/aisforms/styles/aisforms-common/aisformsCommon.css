@@ -1975,12 +1975,6 @@ div.CheckboxMatrix tr td {
   border: none;
 }
 
-.UserHomePage a:visited,
-.SectionDisplay a:visited {
-  color: #7B8964;
-  border-bottom-color: #7B8964;
-}
-
 a.imgLink,
 a.imgLink:hover {
   border: none;
