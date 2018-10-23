@@ -1037,10 +1037,8 @@ div.Main div.staffHome div.Deadlines {
 }
 .Content div.PageName {
   order: 3;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
+  flex-basis: 100%;
+  background: transparent;
 }
 .Content .AdminHomeLinks:after {
   clear: both;
@@ -1553,6 +1551,34 @@ table.rolodex tr.ItemXMLTag th {
   max-width: 10;
 }
 /* <--TEMPLATE EDITOR */
+
+/* PAGE: EMAIL TEMPLATE --> */
+
+div.ApplicationEmailWorkflow div#ApplicantsID {
+  position: static;
+}
+.ApplicationEmailWorkflow #contentPageProportional {
+  display: flex;
+  flex-flow: row wrap;
+}
+.ApplicationEmailWorkflow #ApplicantsID {
+  margin-right: 2rem;
+  flex-basis: 18rem;
+}
+div.ApplicationEmailWorkflow div#WorkflowID {
+  margin: 0;
+  flex-grow: 1;
+  flex-basis: 800px;
+}
+div.ApplicationEmailWorkflow div#WorkflowID pre {
+  white-space: pre-wrap;
+}
+div.ApplicationEmailWorkflow #EmailPreviewContainerID {
+  margin: 1rem 0;
+  border: 1rem solid #fff;
+}
+/* <-- PAGE: EMAIL TEMPLATE */
+
 /* DEADLINES--> */
 #DisplayGroupUpdateContainerID .findDeadlinesWrapper  {
   max-width: 733px;
@@ -2822,7 +2848,7 @@ div.Main .SharedLegend {
   .Content .Main[class*="Staff"] .AdminHomeLinks,
   .Content .Main.Developer .AdminHomeLinks {
     flex-grow: 0;
-    margin: -1.5rem 0 -1.5rem -1.5rem;
+    margin: -1.5rem 0 -4.25rem -1.5rem;
   }
   .Content .staffHome {
     margin-left: 1.75rem;
