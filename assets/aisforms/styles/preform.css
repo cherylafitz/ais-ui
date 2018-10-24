@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4 {
+  color: #025689;
+  margin: 0 0 .5rem;
+  font-weight: normal;
+}
+h1, h2 {
+  font-size: 1.5rem;
+}
+a {
+  color: #296089;
+}
+.nodisplaypreform {
+  display: none;
+}
+.section-form-fields-view .templateDeadlineToolbar {
+  display: none;
+}
+.section-form-fields-view {
+  background-color: #fff;
+}
+div.QuestionText .QuestionInstructions,
+.Instruction {
+  color: #2E6B9B;
+  font-style: italic;
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+.section-form-fields-view {
+  background-color: #fff;
+}
+
+.section-form-fields-view .detailScroller {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 0;
+  box-shadow: none;
+  border: 0;
+  text-align: left;
+  max-width: 950px;
+}
+
+.PlacedQuestion .required.questionNumber:before,
+.PlacedQuestion .required.preFormQuestionNumber:before {
+  content: '';
+}
+
+.PlacedQuestion .required.questionNumber ~ .questionText:after,
+.PlacedQuestion .required.preFormQuestionNumber ~ .questionText:after {
+  color: #CD0000;
+  content: ' *';
+}
+
+.PlacedQuestion div.preFormQuestionNumber,
+.QuestionNumber {
+  display: inline-block;
+  padding-right: 0;
+  vertical-align: top;
+  width: 1.75rem;
+}
+.QuestionText,
+.questionText {
+  display: inline-block;
+  vertical-align: top;
+}
+.switchComponent {
+  margin-left: 1.75rem;
+  margin-top: .25rem;
+}
+.PlacedQuestion {
+  margin-bottom: 1rem;
+}
+li {
+  margin: 0;
+}
+ul {
+  margin: .25rem 0;
+  padding: 0 2rem;
+}
+.onyx-input-decorator,
+.onyx-input {
+  background-color: #fff;
+  border: 1px solid #C7C7C7;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
+  padding: 2px 4px;
+  font-size: .875rem;
+  border-radius: 2px;
+}
+div[id$="_textBefore"] .QuestionNumber {
+  display: none;
+}
+.onyx-picker-decorator .onyx-button {
+  padding: 2px 4px;
+}
+
+.PlacedQuestion .SingleChoice button,
+.PlacedQuestion .DateQuestion .datePicker button,
+.PlacedQuestion .UniversityPicker button {
+  font-size: .875rem;
+  background-color: #fff
+  min-width: 10rem;
+  background: transparent;
+  border-color: #a6a6a6;
+}
+.PlacedQuestion .SingleChoice button:hover,
+.PlacedQuestion .DateQuestion .datePicker button:hover,
+.PlacedQuestion .UniversityPicker button:hover {
+  cursor: pointer;
+}
+.PlacedQuestion .SingleChoice button.active {
+  background: #3e6887 url(../lib/onyx/images/gradient-invert.png) repeat-x top;
+}
+
+.PlacedQuestion .SingleChoice button:after,
+.PlacedQuestion .DateQuestion .datePicker button:after,
+.PlacedQuestion .UniversityPicker button:after {
+  /*content: none;*/
+}
+.onyx-picker {
+  width: initial;
+  min-width: 10rem;
+  background-color: #fff;
+}
+.onyx-menu-item {
+  padding: 0 .25rem;
+}
+.filterLabel {
+  margin-bottom: .5rem;
+}
+#app_templateHeading {
+  padding: 0;
+  font-size: 1.875rem;
+  color: #2E6B9B;
+  border: 0;
+  border-bottom: 2px solid #2E6B9B;
+  margin-bottom: 1rem;
+  padding-bottom: .125rem;
+  font-weight: normal;
+  background: transparent;
+  margin: .5rem 1.5rem;
+}
+#app_saveToServerToolbar {
+  background: transparent;
+  margin: .75rem 1.5rem;
+  border: 0;
+  border-top: 2px solid #2E6B9B;
+}
+.onyx-toolbar .onyx-button {
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 0 .5rem .125rem .5rem;
+  background: #204156;
+  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
+  border: 1px solid #214155;
+  font-size: .875rem;
+}
+
+.form-panels a {
+  font-size: inherit;
+}
+.AClogoAddressFooter {
+  font-size: .75rem;
+}
+.form-panels .AClogoAddressFooter a {
+  color: #c4dcee;
+}
+
+.AClogoAddressFooter img {
+  width: 200px;
+}
+.AClogoAddressFooter #LoginPage {
+  display: none;
+}
+#app_sectionFooterToolbar,
+#app_sectionHeaderToolbar {
+  background-color: #33424d;
+}
+.section-form-fields-view .detailScroller {
+  padding: .5rem 1.5rem;
+}
+
+.onyx-checkbox {
+  background-position: 0px -130px;
+  border: 1px solid #999;
+  border-radius: 9px;
+  height: 30px;
+  width: 30px;
+}
+.onyx-checkbox[checked],
+.onyx-checkbox[disabled] {
+  border: 0;
+  height: 32px;
+  width: 32px;
+}
+#app_sectionItemsList_ownerProxy_placedQuestion_switchComponent_placed_multiChoiceList_ownerProxy_inputDecorator {
+  box-shadow: none;
+  border:0;
+}

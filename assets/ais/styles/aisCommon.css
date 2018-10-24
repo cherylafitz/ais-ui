@@ -229,17 +229,19 @@ body #PageWrapperNavUpdate {
   background-color: #e0e6eb;
   padding: 1rem;
   margin-bottom: 1rem;
-  border: 1px solid #cecece;
   border-radius: 2px;
 }
 /* <-- TILES AND CARDS */
 
 /* TYPOGRAPHY --> */
 p {
-  margin-bottom: .5rem;
-}
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
 
-p:last-of-type {
+}
+p:last-child {
   margin-bottom: 0;
 }
 
@@ -1568,26 +1570,22 @@ table.pageStructure tr.contentArea {
 .AlumnusSummary,
 .AlumnusContactList {
   position: relative;
-  /*height: 100%;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  /* seeing if this rule can be removed - in testing --> */
-  /*color: #000;*/
-  line-height: 1.2;
+  line-height: 1.5;
   padding: 0;
 }
 
-p {
-  line-height: 1.25rem;
-}
-
-/* seeing if these h1 rules can be removed - in testing --> */
 h1 {
-  /*padding: .25rem 0 .5rem 0;*/
-  /*font-weight: normal;*/
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
   font-size: 1.25rem;
 }
 
@@ -2373,7 +2371,6 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr td {
 #ProgramStaffQuestionnaire .AnswerLabel,
 .TranscribedQuestionsForApplicant .AnswerLabel {
   display: inline-block;
-  width: 2%;
   margin: 0;
   vertical-align: top;
   font-weight: bold;
@@ -2405,7 +2402,6 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
 #ProgramStaffQuestionnaire .QuestionLabel,
 .TranscribedQuestionsForApplicant .QuestionLabel {
   font-weight: bold;
-  width: 2%;
   display: inline-block;
 }
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
@@ -3028,7 +3024,8 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   display: none;
 }
 #PrivacyPolicy,
-#CookieDeclaration {
+#CookieDeclaration,
+#DataUsageGuidance {
   font-size: .75rem;
 }
 
@@ -3132,6 +3129,9 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   float: right;
   margin: 0 .125rem 0 0;
 }
+.UniversityAdvisorTrackerReport .FormTrackerReport .Clean {
+  float: none;
+}
 .FormTrackerReport .Clean::before {
   content: '';
   width: .75rem;
@@ -3233,7 +3233,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   float: initial;
 }
 .FormTrackerReport.legend span {
-  margin-left: .5rem;
+  margin: 0 0 0 .5rem;
 }
 #IDGeneratorWrapper {
   margin-bottom: .5rem;
@@ -3324,7 +3324,7 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 #BannerAC_AIS,
 #ProgramBadges #Banner {
   position: relative;
-  padding: .125rem;
+  padding: .25rem;
   background-color: #29353d;
   color: #fff;
 }
@@ -3345,11 +3345,20 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 /* <- BANNERS */
 .info-page .content {
   max-width: 800px;
-  margin: 2.5rem auto;
-  padding: 1.5rem;
+  padding: 2.5rem;
+}
+.info-page .card {
+  font-size: .875rem;
 }
 .info-section {
   max-width: 700px;
+}
+
+.list-multi {
+  column-count: 2;
+  column-width: 250px;
+  list-style-position: inside;
+  padding-left: 1rem;
 }
 
 /* this is not a good selector - discuss other options */
@@ -3377,7 +3386,7 @@ body > #priorPage a {
   background-color: transparent;
   border-collapse: collapse;
   font-size: .875rem;
-  margin: .75rem;
+  margin: .75rem 0;
   border: .75rem solid transparent;
 }
 .inner-grid th,
@@ -3580,17 +3589,22 @@ and (max-width : 480px) {
     font-size: .875rem;
   }
   #PrivacyPolicy,
-  #CookieDeclaration {
+  #CookieDeclaration,
+  #DataUsageGuidance {
     display: inline-block;
   }
   #PrivacyPolicy {
     margin: .5rem .5rem 0 1px;
   }
   #CookieDeclaration {
+    margin: .5rem .5rem 0 0;
+  }
+  #DataUsageGuidance {
     margin: .5rem 0 0;
   }
   #PrivacyPolicy a,
-  #CookieDeclaration a {
+  #CookieDeclaration a,
+  #DataUsageGuidance a {
     color: #34424c;
   }
   #Policies {

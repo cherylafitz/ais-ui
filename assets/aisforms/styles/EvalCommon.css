@@ -1,0 +1,288 @@
+ Specify QuestionItems to position in line (select by xml tag using selector div.Content div.<xmlTag>)*/
+
+table td div.PDFDownload {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+div.TotalScoreFormula {
+    border: medium solid #2E6B9B;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    margin: 0.5em 1em 1em 0;
+    padding: 0.5em;
+    width: 21em;
+}
+
+body div.Content div.FirstName,
+body div.Content div.MiddleName,
+body div.Content div.LastName,
+body div.Content div.MailAddrCity,
+body div.Content div.MailAddrState,
+body div.Content div.MailAddrZIP,
+body div.Content div.MailingAddressCountryFillIn,
+body div.Content div.CityOfBirth,
+body div.Content div.StateOfBirth,
+body div.Content div.CurrentAddressCity,
+body div.Content div.CurrentAddressState,
+body div.Content div.CurrentAddressPostalCode,
+body div.Content div.PermAddrCity,
+body div.Content div.PermAddrState,
+body div.Content div.PermAddrPostCode,
+body div.Content div.CongressioVotingDistState,
+body div.Content div.CongressionaVotingDistNum,
+body div.Content div.PassportFirstName,
+body div.Content div.PassportMiddleName,
+body div.Content div.PassportLastName,
+body div.Content div.SchoolCity,
+body div.Content div.SchoolUSState,
+body div.Content div.ProgramLanguage1,
+body div.Content div.ProgramDuration1,
+body div.Content div.ProgramLanguage2,
+body div.Content div.ProgramDuration2,
+body div.Content div.RecommenderFirstName,
+body div.Content div.RecommenderLastName,
+body div.Content div.RecommenderCity,
+body div.Content div.RecommenderStateProvince,
+body div.Content div.RecommenderZIPPostalCode,
+body div.Content div.RecSchoolCity,
+body div.Content div.RecSchoolState,
+body div.Content div.RecSchoolCountry,
+body div.Content div.ParentRecommender1FirstName,
+body div.Content div.ParentRecommender1LastName {
+  float: left;
+  clear: none;
+}
+
+div.Content div.MailAddrZIP {
+  clear: left;
+}
+
+/* Typography */
+
+.Content .SectionDisplay .LongTextNoEditing {
+  text-align: justify;
+}
+
+/* Tables */
+
+/*CHECK --> */
+/*div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th {
+  border: black thin solid;
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  font-style: normal;
+}*/
+
+
+/* Alignment/Spacing */
+
+div.Content .fromApplicant div.QuestionNumber,
+div.Content .fromRecommender div.QuestionNumber  {
+  float:left;
+  font-weight: bold;
+  padding-right: .5rem;
+  color: #3F3F3F;
+}
+
+div.Content div.BeforeQuestion.fromApplicant {
+  color: #3F3F3F;
+}
+
+.fromApplicant.MissingItemForAttemptedSubmit {
+  border: initial;
+  padding: initial;
+  background-color: initial;
+}
+.fromApplicant.Group.MissingItemForAttemptedSubmit {
+  border: none;
+  margin: initial;
+  padding: initial;
+  background-color: transparent;
+}
+
+/* CHECK --> */
+/*div.Content div.QuestionText {
+  margin-left: 2rem;
+}*/
+
+/* ISSUES --> */
+div.Content .fromRecommender .fromRecommender div.QuestionText,
+div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
+  margin-left: 1.7em;
+}
+div.Content .fromApplicant div.Title {
+  color: #3F3F3F;
+  margin-top: 0.2em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+div.Content .fromApplicant div.NumberOfWords,
+div.Content .fromRecommender div.NumberOfWords {
+  text-align: right;
+}
+
+
+/* New Additions */
+div.fromApplicant div.QuestionText div.Title,
+div.fromRecommender div.QuestionText div.Title,
+div.Content .fromApplicant div.QuestionText,
+div.Content div.BeforeQuestion.fromApplicant {
+  font-weight: bold;
+}
+div.Content .fromApplicant div.QuestionText .Instruction {
+  font-weight: normal;
+}
+
+div.fromApplicant .filespecs,
+div.fromApplicant .nodisplayeval,
+div.fromApplicant .helpBox,
+div.fromRecommender .filespecs,
+div.fromRecommender .nodisplayeval,
+div.fromRecommender .helpBox,
+div.BeforeQuestion .filespecs,
+div.BeforeQuestion .nodisplayeval,
+div.BeforeQuestion .helpBox,
+div.SectionIntroductionText .filespecs,
+div.SectionIntroductionText .nodisplayeval,
+div.SectionIntroductionText .helpBox {
+    display: none;
+}
+.LongTextNoEditing br {
+  margin-bottom: .5em;
+}
+
+.AppIDBlock {
+  float:right;
+  max-width:75%;
+  padding:0;
+  margin:0;
+}
+div.SectionIntroductionText table.AppRefCode tr td {
+  text-align: right;
+  border: thin solid #2E6B9B;
+}
+
+.AppLogo {
+  float:left;
+  max-width:25%;
+  margin-right:10px;
+}
+
+.QuestionItem.fromRecommender.RecommenderFirstName,
+.RecommendationsReceived,
+.StaffUploadRecommendation {
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #CECECE;
+  border-top: 3px solid #CECECE;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  padding: .5em;
+}
+.QuestionItem.fromRecommender {
+  padding: .5em;
+}
+div.Content div.Divider, div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
+  margin-top: 0;
+}
+select:disabled,
+td input[type="radio"]:disabled,
+td input[type="checkbox"]:disabled,
+input[type="radio"]:disabled,
+input[type="radio"]:disabled:active,
+input[type="radio"]:disabled:hover,
+input[type="radio"]:disabled:hover:active,
+input[type="checkbox"]:disabled,
+input[type="checkbox"]:disabled:active,
+input[type="checkbox"]:disabled:hover,
+input[type="checkbox"]:disabled:hover:active {
+  color: #000; ! important;
+}
+div.Content table.AnswerTable tr td:first-child {
+    padding: 6px 2px;
+}
+
+/* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
+div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
+table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after {
+  content: none;
+}
+
+/* For evaluator note fields within application and recommendation import sections that can be displayed on evaluation and scoring section */
+.evaluatorNotes {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: .5em;
+  border: 3px double #2E6B9B;
+  background-color: #FFFFDD;
+}
+
+.evaluatorNotesDisplay {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: .5em;
+  margin-bottom:1em;
+  border: 3px double #CECECE;
+  background-color: #FFFFDD;
+}
+
+/* Application Question Emphasis */
+
+div.QuestionItem.fromApplicant,
+div.QuestionItem.fromRecommender  {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0.5em;
+  border-left: 3px double #cecece;
+  margin: 0em;
+}
+td div.QuestionItem.fromApplicant,
+td div.QuestionItem.fromRecommender {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+div.BeforeQuestion.fromApplicant,
+div.BeforeQuestion.fromRecommender {
+  margin: 0em;
+  font-weight: bold;
+}
+div.QuestionItem.fromEvaluator {
+  margin-top: .5em;
+}
+
+div.fromApplicant div.QuestionText div.Title,
+div.fromRecommender div.QuestionText div.Title {
+    margin-bottom:0.5em;
+}
+
+div.Content div.fromApplicant div.QuestionNumber,
+div.Content div.fromRecommender div.QuestionNumber {
+  display: none;
+}
+div.Content .fromApplicant div.QuestionText,
+div.Content .fromApplicant div.QuestionAnswer,
+div.Content .fromRecommender div.QuestionText,
+div.Content .fromRecommender div.QuestionAnswer {
+  margin-left: 0;
+}
+
+/* END Application Question Emphasis
