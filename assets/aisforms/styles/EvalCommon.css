@@ -1,0 +1,627 @@
+/* Specify QuestionItems to position in line (select by xml tag using selector div.Content div.<xmlTag>)*/
+
+table td div.PDFDownload {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+div.TotalScoreFormula {
+    border: medium solid #2E6B9B;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    margin: 0.5em 1em 1em 0;
+    padding: 0.5em;
+    width: 21em;
+}
+
+body div.Content div.FirstName,
+body div.Content div.MiddleName,
+body div.Content div.LastName,
+body div.Content div.MailAddrCity,
+body div.Content div.MailAddrState,
+body div.Content div.MailAddrZIP,
+body div.Content div.MailingAddressCountryFillIn,
+body div.Content div.CityOfBirth,
+body div.Content div.StateOfBirth,
+body div.Content div.CurrentAddressCity,
+body div.Content div.CurrentAddressState,
+body div.Content div.CurrentAddressPostalCode,
+body div.Content div.PermAddrCity,
+body div.Content div.PermAddrState,
+body div.Content div.PermAddrPostCode,
+body div.Content div.CongressioVotingDistState,
+body div.Content div.CongressionaVotingDistNum,
+body div.Content div.PassportFirstName,
+body div.Content div.PassportMiddleName,
+body div.Content div.PassportLastName,
+body div.Content div.SchoolCity,
+body div.Content div.SchoolUSState,
+body div.Content div.ProgramLanguage1,
+body div.Content div.ProgramDuration1,
+body div.Content div.ProgramLanguage2,
+body div.Content div.ProgramDuration2,
+body div.Content div.RecommenderFirstName,
+body div.Content div.RecommenderLastName,
+body div.Content div.RecommenderCity,
+body div.Content div.RecommenderStateProvince,
+body div.Content div.RecommenderZIPPostalCode,
+body div.Content div.RecSchoolCity,
+body div.Content div.RecSchoolState,
+body div.Content div.RecSchoolCountry,
+body div.Content div.ParentRecommender1FirstName,
+body div.Content div.ParentRecommender1LastName {
+  float: left;
+  clear: none;
+}
+
+div.Content div.MailAddrZIP {
+  clear: left;
+}
+
+div.Content div.BeforeQuestion {
+  clear: both;
+  padding-top: .2em;
+}
+
+.SubmittedOn {
+  font-size: 1.25rem;
+  background-color: #cfdaa4;
+  padding: .25rem 0 .125rem;
+  margin: 0;
+  text-align: center;
+  border-bottom: 0;
+  border-radius: 2px 2px 0 0;
+}
+.PastDeadline {
+  font-size:1.2em;
+  font-weight:bold;
+  color:white;
+  background-color:#B31B1B;
+  padding-left:0.5em;
+  padding-top:0.25em;
+  padding-bottom:0.25em;
+  }
+
+
+/* Typography */
+
+div.Content {
+  color: #000000;
+  font: 100% 'Century Gothic','Avant Garde','Helvetica Neue','Helvetica',Verdana,Arial,sans-serif;
+}
+.Content .SectionDisplay .LongTextNoEditing {
+  text-align: justify;
+}
+div.Content input,
+div.Content textarea {
+  font: 100% 'Century Gothic','Avant Garde','Helvetica Neue','Helvetica',Verdana,Arial,sans-serif;
+}
+
+/* Section Name and Headers */
+
+div.SectionDisplay div.SectionName {
+  font-size: 2em;
+  color: #2E6B9B;
+  border-bottom:medium solid #2E6B9B;
+
+}
+
+.filespecs {
+  font-size: .8em;
+  color: black;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+
+/* Tables */
+
+div.MenuOfSections {
+  vertical-align: middle;
+}
+div.Content table {
+/* display: table; */
+  padding: 5px;
+}
+div.Content tr {display: table-row;}
+div.Content thead { display: table-header-group;}
+div.Content tbody {display: table-row-group;}
+div.Content tfoot {display: table-footer-group;}
+div.Content col {display: table-column;}
+div.Content colgroup {display: table-column-group;}
+div.Content td, div.Content th { /*display: table-cell;*/ vertical-align: top;}
+div.Content caption {display: table-caption;}
+/* div.Content table.AnswerTable tr.odd {background-color: #99ccff;} */
+/* div.Content table.AnswerTable tr.even {background-color: #3E93D4;} */
+div.Content table.QuestionItem,
+div.Content table.QuestionItem tr.QuestionItemRow,
+div.Content table.QuestionItem tr.QuestionItemRow td {border: 0;}
+div.Content table.InfoBox {
+  background-color: #E1F0FF;
+}
+
+div.Content table.ContrastBox {
+  background-color: #2E6B9B;
+}
+
+div.SectionDisplay table th {
+  background-color: #2E6B9B;
+  font-style: normal;
+  color: #FFFFFF;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.3em;
+  border: thin solid #000;
+}
+
+div.SectionDisplay table td.DL,
+div.SectionDisplay table td.Document {
+  background-color: #99ccff;
+  vertical-align: top;
+  text-align: center;
+  border: thin solid #2E6B9B;
+  padding: 0.2em;
+}
+
+div.SectionDisplay table td.Detail,
+div.SectionDisplay table td.Instructions,
+div.SectionDisplay table td.Link {
+  vertical-align: top;
+  border: thin solid #2E6B9B;
+  padding: 0.2em;
+  border: thin solid #2E6B9B;
+}
+
+
+div.Content table.AnswerTable tr td {
+  border: thin solid #999;
+  /*text-align: center;*/
+  /*vertical-align: top;*/
+}
+
+div.Content table.AnswerTable tr.headerRow th {
+  font-style:normal;
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  /*border-left: thin solid #2E6B9B;*/
+  /*border-right: thin solid #FFFFFF;*/
+}
+
+div.Content table.AnswerTable tr td div{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+div.SectionIntroductionText table tr td,
+div.BeforeQuestion table tr td {
+  border: 1px solid #999;
+  text-align: left;
+  vertical-align: top;
+}
+
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th {
+  border: black thin solid;
+  text-align: left;
+  vertical-align: top;
+  font-weight: bold;
+  font-style: normal;
+}
+
+div.SectionIntroductionText table.TBorderNone tr td,
+div.BeforeQuestion table.TBorderNone tr td {
+  border: none;
+}
+
+/* Alignment/Spacing */
+
+div.SectionDisplay {
+  padding-bottom: 0.5em;
+}
+
+div.Content .fromApplicant div.QuestionNumber,
+div.Content .fromRecommender div.QuestionNumber  {
+  /*position: absolute;*/
+  float:left;
+  font-weight: bold;
+  padding-right: .5em;
+  color: #3F3F3F;
+}
+
+div.Content div.BeforeQuestion.fromApplicant {
+  color: #3F3F3F;
+}
+
+.fromApplicant.MissingItemForAttemptedSubmit {
+    border: initial;
+    /* margin: -2px .5em; */
+    padding: initial;
+  background-color: initial;Farmer's
+}
+.fromApplicant.Group.MissingItemForAttemptedSubmit {
+  border: none;
+  margin: initial;
+  padding: initial;
+  background-color: transparent;
+}
+
+div.Content div.QuestionText {
+  margin-left: 1.7em;
+}
+
+div.Content div.QuestionAnswer {
+  margin-left: 1.7em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+div.Content .fromRecommender div.QuestionText,
+div.Content .fromRecommender div.QuestionAnswer {
+  margin-left: 0;
+}
+div.Content .fromRecommender .fromRecommender div.QuestionText,
+div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
+  margin-left: 1.7em;
+}
+div.Content .fromApplicant div.Title {
+  color: #3F3F3F;
+  margin-top: 0.2em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+input#SubmitForEvaluation {
+  margin: 1em;
+  background-color: #dceaf5;
+
+}
+
+/* PDF download div styling */
+
+div.Content div.PDFDownload {
+  display:block;
+  background-image: url(../../../../ais/common/pdficon_small.gif);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  padding-left: 3em;
+  margin-bottom: 1em;
+  background-position: left;
+  padding-left: 3em;
+}
+
+div.Content div.DeadlineNotice {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: .4em .2em .4em .2em;
+}
+
+
+div.Content div.RecommendationFor {
+  font-size: 1.5em;
+  /*font-weight: bold;*/
+}
+
+div.Content div.Notice,
+div.Content div.notice {
+  font-size: 1.5em;
+  text-align:center;
+}
+
+/* By default, clear float on all question items */
+
+div.QuestionItem {clear: both;}
+
+
+/* Hide QuestionAnswer divs for "Generic Text" QuestionItems (so that they can be used as question 'headers' for multi-part questions) */
+
+div.Content div.TextGen1 div.QuestionAnswer,
+div.Content div.TextGen2 div.QuestionAnswer,
+div.Content div.TextGen3 div.QuestionAnswer,
+div.Content div.TextGen4 div.QuestionAnswer,
+div.Content div.TextGen5 div.QuestionAnswer,
+div.Content div.TextGen6 div.QuestionAnswer,
+div.Content div.TextGen7 div.QuestionAnswer,
+div.Content div.TextGen8 div.QuestionAnswer,
+div.Content div.TextGen9 div.QuestionAnswer,
+div.Content div.TextGeneric10 div.QuestionAnswer {display:none;}
+
+div.Content div.TextGen1,
+div.Content div.TextGen2,
+div.Content div.TextGen3,
+div.Content div.TextGen4,
+div.Content div.TextGen5,
+div.Content div.TextGen6,
+div.Content div.TextGen7,
+div.Content div.TextGen8,
+div.Content div.TextGen9,
+div.Content div.TextGeneric10 {clear:both;}
+
+div.SectionDisplay h1,
+div.SectionDisplay h2,
+div.SectionDisplay h3,
+div.SectionDisplay h4,
+div.SectionDisplay h5,
+div.SectionDisplay h6 {font-family: 'Century Gothic','Avant Garde','Helvetica Neue','Helvetica',Verdana,Arial,sans-serif;}
+
+div.Content div.Divider,
+div.SectionDisplay h1 {
+  font-size: 1.5em;
+  color: #025689;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-weight: normal;
+  clear: both;
+}
+
+div.SectionDisplay h2 {
+  font-size: 1.2em;
+  color: #025689;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  padding-bottom: 0;
+  font-weight: normal;
+  clear: both;
+}
+
+/*Give all AfterQuestion divs clear:both, so that empty divs placed in an AfterQuestion will make the containing border wrap around the last question if it is floated. This also can be used to float four elements like so:
+1 2
+3 4
+by giving the '2' element an empty AfterQuestion div
+*/
+
+div.Content div.AfterQuestion {
+  clear:both;
+}
+
+/*
+COMMENTED OUT BECAUSE CLS UPLOADS NEEDED TO BE GROUPED AND BORDER WAS NOT APPLICABLE ~CF */
+
+body div.Content div.GroupedItem {
+  padding: .5em 1em;
+}
+
+div.Content div.QuestionItem div.GroupedItem div.QuestionText .Title:before {
+  content: '';
+}
+
+/*
+div.Content div.required div.QuestionText .Title:before {
+  content: '*';
+  color: red;
+}
+*/
+
+div.QuestionText ol {list-style-type: upper-alpha;}
+
+div.Content input[type='text'] {width: 15em;}
+
+div.Content div.NumberOfWords {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: .3em;
+  text-align: left;
+}
+
+div.Content .fromApplicant div.NumberOfWords,
+div.Content .fromRecommender div.NumberOfWords {
+  text-align: right;
+}
+
+div.Content div.SideNote {
+  margin: 0 0.5em 0.5em 0.5em;
+  padding-right: 1.7em;
+  font-style: italic;
+}
+
+
+div.Content table .AjaxFlexibleFileUpload .Button span {background-color: transparent;}
+
+div.SectionDisplay li {margin-bottom: 3px;}
+
+table div.NumberOfCharacters {
+  display: none;
+}
+
+div.QuestionText div.Instruction {
+  font-style: italic;
+}
+
+div.address {
+  margin-left: 2em;
+}
+
+div.QuestionNumber {
+  margin-right:
+}
+
+/*links*****************************/
+
+a {
+  color: #2E6B9B;
+}
+a:hover, a:active {
+  color: #B25123;
+}
+
+/*lists*****************************/
+ul {
+  list-style-type: disc;
+}
+
+
+/* New Additions */
+div.fromApplicant div.QuestionText div.Title,
+div.fromRecommender div.QuestionText div.Title,
+div.Content .fromApplicant div.QuestionText,
+div.Content div.BeforeQuestion.fromApplicant {
+  font-weight: bold;
+}
+div.Content .fromApplicant div.QuestionText .Instruction {
+  font-weight: normal;
+}
+
+/* div.Content .fromApplicant div.QuestionText,
+div.Content .fromApplicant div.QuestionAnswer {
+  margin-left: 0;
+} */
+
+
+div.fromApplicant .filespecs,
+div.fromApplicant .nodisplayeval,
+div.fromApplicant .helpBox,
+div.fromRecommender .filespecs,
+div.fromRecommender .nodisplayeval,
+div.fromRecommender .helpBox,
+div.BeforeQuestion .filespecs,
+div.BeforeQuestion .nodisplayeval,
+div.BeforeQuestion .helpBox,
+div.SectionIntroductionText .filespecs,
+div.SectionIntroductionText .nodisplayeval,
+div.SectionIntroductionText .helpBox {
+    display: none;
+}
+.LongTextNoEditing br {
+  margin-bottom: .5em;
+}
+
+.AppIDBlock {
+  float:right;
+    max-width:75%;
+    padding:0;
+    margin:0;
+}
+div.SectionIntroductionText table.AppRefCode tr td {
+  text-align: right;
+    border: thin solid #2E6B9B;
+}
+
+.AppLogo {
+    float:left;
+    max-width:25%;
+    margin-right:10px;
+}
+
+.QuestionItem.fromRecommender.RecommenderFirstName,
+.RecommendationsReceived,
+.StaffUploadRecommendation {
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  border-left: 3px solid #CECECE;
+  border-top: 3px solid #CECECE;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+  padding: .5em;
+}
+.QuestionItem.fromRecommender {
+  padding: .5em;
+}
+div.Content div.Divider, div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
+  margin-top: 0;
+}
+select:disabled,
+td input[type="radio"]:disabled,
+td input[type="checkbox"]:disabled,
+input[type="radio"]:disabled,
+input[type="radio"]:disabled:active,
+input[type="radio"]:disabled:hover,
+input[type="radio"]:disabled:hover:active,
+input[type="checkbox"]:disabled,
+input[type="checkbox"]:disabled:active,
+input[type="checkbox"]:disabled:hover,
+input[type="checkbox"]:disabled:hover:active {
+  color: #000; ! important;
+}
+div.Content table.AnswerTable tr td:first-child {
+    padding: 6px 2px;
+}
+
+/* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
+div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
+table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after {
+  content: none;
+}
+
+/* For evaluator note fields within application and recommendation import sections that can be displayed on evaluation and scoring section */
+.evaluatorNotes {
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     border-radius: 20px;
+     padding: .5em;
+     border: 3px double #2E6B9B;
+     background-color: #FFFFDD;
+}
+
+.evaluatorNotesDisplay {
+     -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+     border-radius: 20px;
+     padding: .5em;
+     margin-bottom:1em;
+     border: 3px double #CECECE;
+     background-color: #FFFFDD;
+}
+
+
+/* Application Question Emphasis */
+
+div.QuestionItem.fromApplicant,
+div.QuestionItem.fromRecommender  {
+/*  border: 1px solid #999; */
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0.5em;
+  /* background-color: #EEEEEE; */
+  border-left: 3px double #cecece;
+/*  border-right: border-left: 3px double #cecece; */
+/*  border-right: 5px solid #999; */
+/*  margin: 0em 10%; */
+  margin: 0em;
+  /* background-color: #e6e6e6; */
+}
+td div.QuestionItem.fromApplicant,
+td div.QuestionItem.fromRecommender {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+div.BeforeQuestion.fromApplicant,
+div.BeforeQuestion.fromRecommender {
+/*  width: 80%; */
+/*  margin: 1em auto 1em; */
+  margin: 0em;
+  font-weight: bold;
+}
+div.QuestionItem.fromEvaluator {
+  margin-top: .5em;
+}
+
+div.fromApplicant div.QuestionText div.Title,
+div.fromRecommender div.QuestionText div.Title {
+    margin-bottom:0.5em;
+}
+
+div.Content div.fromApplicant div.QuestionNumber,
+div.Content div.fromRecommender div.QuestionNumber {
+  display: none;
+}
+div.Content .fromApplicant div.QuestionText,
+div.Content .fromApplicant div.QuestionAnswer,
+div.Content .fromRecommender div.QuestionText,
+div.Content .fromRecommender div.QuestionAnswer {
+  margin-left: 0;
+}
+
+/* END Application Question Emphasis */
