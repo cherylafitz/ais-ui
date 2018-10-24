@@ -84,7 +84,9 @@ div.Content div.Rowdisplay {
   position: relative;
 }
 .SectionItemsList {
-  margin-bottom: 4rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #94a4b3;
 }
 #pageHeader .ApplicationRefCode {
   font-weight: bold;
@@ -1650,11 +1652,11 @@ div#menu3 li, div#menu3 a {
 }
 div.NextSectionNearSaveChanges input[type="button"],
 div.PreviousSectionNearSaveChanges input[type="button"] {
-  border-color: #000;
+  border-color: #274155;
   display: inline-block;
 }
 div.NextSectionNearSaveChanges input[type="button"] {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 div.NextSectionNearSaveChanges input[type="button"]:hover,
 div.PreviousSectionNearSaveChanges input[type="button"]:hover {
@@ -1732,6 +1734,11 @@ div.PreviousSection {
 .SectionNavigator input[type="button"]:disabled {
   opacity: .5;
 }
+.PreviousSectionNearSaveChanges .previous:after {
+  content: "Sections";
+  padding: 0 .125rem 0 .5rem;
+  vertical-align: middle;
+}
 div.PageName {
   text-align: right;
   font-size: 0.75rem;
@@ -1795,7 +1802,7 @@ input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
 }
 #ApplicationTemplateDisplayAUC input.SaveChanges {
   float: left;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 input#CannedSearch {
   margin-left: .3em;
