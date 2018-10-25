@@ -947,8 +947,7 @@ th.TemplateName div {
 }
 th.filtered {
   text-shadow: none;
-  background-color: #5d6435;
-  color: #fff;
+  background-color: #eeb753;
 }
 .LiveTemplates table.RowDisplay td,
 .LiveTemplates table.RowDisplay tr.headerRow th {
