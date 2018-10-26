@@ -1495,12 +1495,16 @@ div.ApplicationTemplateDisplay div.templateContent {
 }
 
 div#ApplicationTemplateDisplayAUC h1 {
-  font-variant: normal;
-  font-size: 1.25rem;
-  margin-bottom: .5rem;
+  font-size: .875rem;
+  margin-bottom: 1rem;
 }
 div.ApplicationTemplateDisplay h2 {
   font-size: 1.125rem;
+}
+.ApplicationTemplateDisplay h1.FormViewHeader {
+  margin: -1.5rem -1.5rem .5rem -1.5rem;
+  padding: .75rem 1rem .5rem;
+  background-color: #e4e5e7;
 }
 .ApplicationTemplateDisplay form[name="sectionNavigationForm"] {
   margin-top: 1rem;
@@ -1515,9 +1519,13 @@ div.ApplicationTemplateDisplay h2 {
 h1.FormViewHeader .TemplateName {
   font-weight: bold;
 }
-h1.FormViewHeader :not(.TemplateName)
- {
-  font-size: .9em;
+h1.FormViewHeader .FormRefCode {
+  float: right;
+}
+h1.FormViewHeader .FormRefCode:before {
+  content: "Ref code ";
+  padding-left: .5rem;
+  color: #7b7e80;
 }
 h1.FormViewHeader .ProgramName {
   font-weight: bold;
