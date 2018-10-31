@@ -77,15 +77,13 @@
 }*/
 .IsNotLoggedIn #loginHeading {
   background: #33424d;
+  padding: 1rem 2rem 1rem 1rem;
   /*background: #29353d;*/
   /*clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
 }
 .IsNotLoggedIn #aisLogo {
-  height: 80px;
-  padding: 1rem 1rem 1.25rem 2rem;
+  height: 48px;
   display: block;
-  /*margin-left: auto;*/
-  /*background-color: #33424d;*/
 }
 .IsNotLoggedIn #loginHeading {
   background: #29353d;
@@ -93,13 +91,12 @@
 .IsNotLoggedIn #loginHeading h2 {
   text-align: left;
   font-weight: normal;
-  padding: 2.375rem 2rem 1rem;
   font-size: 1.25rem;
   background-color: #33424d;
   clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);
-  float: right;
-  margin-top: -5rem;
+  margin-top: -2rem;
   color: #fff;
+  padding-left: 1rem;
 }
 .IsNotLoggedIn #showCreateAccount,
 .IsNotLoggedIn #loginButton,
@@ -231,12 +228,13 @@
   }
   .IsNotLoggedIn .CustomContent {
     margin-right: 2rem;
+    padding: 2rem 2rem 2rem 0;
   }
   .IsNotLoggedIn #CreateAccountForm {
     /*position: absolute;*/
   }
   .IsNotLoggedIn .CustomContent .logos {
-    float: right;
+    margin-bottom: 1rem;
   }
   .IsNotLoggedIn #aisLogo {
     margin-left: auto;
