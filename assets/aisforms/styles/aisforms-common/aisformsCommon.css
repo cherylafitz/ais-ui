@@ -2362,10 +2362,6 @@ legend:not(.SaveButton) {
     border-top: 1px solid #777;
     width: 100%;
   }
-  div#ApplicationTemplateDisplayAUC h1 {
-    padding: 0.5em 0;
-    font-size: 1.1em;
-  }
 
   div.ApplicationTemplateDisplay h2 {
     padding: 0 0 1em;
