@@ -45,7 +45,7 @@ div.Content {
   content: " ";
   display: block;
 }
-.Content p {
+/*.Content */p {
   margin: 0 0 1rem 0;
 }
 h1, h2 {
@@ -57,7 +57,47 @@ h1 {
 h2 {
   font-size: 1.25rem;
 }
+/* CATEGORY: bg color classes -> */
 
+/* darkest blue = 1 */
+.bg-blue01 {
+  background-color: #29353d;
+  color: #fff;
+}
+.bg-blue01 a {
+  color: #c4dcee;
+}
+.bg-blue01 button.bare {
+  color: #fff;
+}
+.transparent {
+  background-color: transparent;
+}
+.bg-blue02 {
+  background-color: #33424d;
+  color: #fff;
+}
+.bg-blue02 a,
+.bg-blue03 a {
+  color: #c4dcee;
+}
+.bg-blue03 {
+  background-color: #415467;
+  color: #fff;
+}
+.bg-blue03 h1,
+.bg-blue03 h2,
+.bg-blue03 h3,
+.bg-blue03 h4,
+.bg-blue03 h5,
+.bg-blue03 h6 {
+  color: #fff;
+  font-weight: normal;
+}
+
+
+
+/* <- bg color classes */
 /*<--MAIN STRUCTURE */
 /* To Overwrite Amagavi CSS--> */
 #DisplayGroupUpdateContainerID .fromToWrapper ,
@@ -324,19 +364,18 @@ body.IsNotLoggedIn .Content {
 #Header.IsNotLoggedIn .Title {
   display: none;
 }
-#footer.IsNotLoggedIn  div#footer2,
-.IsNotLoggedIn #amagavi {
-  color: #777;
+.IsNotLoggedIn  div#footer {
+  padding: 1.5rem 6rem;
 }
 #footer.IsNotLoggedIn img#HomePage {
   display: none;
 }
-#footer.IsNotLoggedIn div#footer2 a {
+/*#footer.IsNotLoggedIn div#footer2 a {
   color: #5A752D;
 }
 #footer.IsNotLoggedIn div#footer2 a:hover {
   color: #FF7F67
-}
+}*/
 #footer.IsLoggedIn #AClogoFooter img {
   width: 250px;
   padding: 0 1rem 1rem 0;
@@ -354,11 +393,13 @@ body.IsNotLoggedIn .Content {
 #PrivacyPolicy,
 #CookieDeclaration,
 #DataUsageGuidance {
-  margin: 0 1.5rem 1rem 1rem;
   font-size: .875rem;
   text-align: right;
   position: relative;
   z-index: 1;
+}
+.IsLoggedIn #CookieDeclaration {
+  margin: 0 1.5rem 1rem 1rem;
   padding-top: 3rem;
 }
 .IsLoggedIn #CookieDeclaration {
@@ -1221,22 +1262,24 @@ table.TemplateTable tr td {
 }
 .HomeProgramAfterContent .Tips {
   background-color: #33424d;
-  font-size: .875rem;
-  color: #ededed;
   padding: 1.5rem;
   margin: -1.5rem;
+}
+.Tips {
+  font-size: .875rem;
   display: flex;
   flex-flow: row wrap;
+  color: #ededed;
 }
-.HomeProgramAfterContent .Tips h3 {
+/*.HomeProgramAfterContent*/ .Tips h3 {
   flex-basis: 100%;
 }
-.HomeProgramAfterContent .Tips h4 {
+/*.HomeProgramAfterContent*/ .Tips h4 {
   color: #fff;
   font-size: 1rem;
   flex-basis: 250px;
 }
-.HomeProgramAfterContent .Tips p {
+/*.HomeProgramAfterContent*/ .Tips p {
   flex-basis: calc(100% - 250px);
   min-width: 300px;
   flex-grow: 1;
@@ -1253,11 +1296,11 @@ table.TemplateTable tr td {
   margin-top: 0;
   font-weight: normal;
 }
-.Content .Tips a {
-  color: #E8EBD9;
-  border-bottom: 1px solid #E8EBD9;
+/*.Content*/ .Tips a {
+  color: #c4dcee;
+  border-bottom: 1px solid #c4dcee;
 }
-.Content .Tips a:hover {
+/*.Content*/ .Tips a:hover {
   color: #FFA391;
   border-bottom: 1px solid #FFA391;
 }
@@ -1302,11 +1345,11 @@ div.NoDisplayExceptEvaluatorCLS {
   display: none;
 }
 div.EvaluatorCLS div.NoDisplayExceptEvaluatorCLS {
-    display: block;
-    font-size: 1.2em;
-    width: 80%;
-    margin: 1em auto;
-    text-align: center;
+  display: block;
+  font-size: 1.2em;
+  width: 80%;
+  margin: 1em auto;
+  text-align: center;
   padding: 1% 2% 2%;
   background-color: #fff;
   -webkit-box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);
@@ -1786,15 +1829,16 @@ span.fax {
 .IsNotLoggedIn #AClogoFooter img {
   width: 200px;
 }
-#footer #footer2 {
-  background-color: transparent;
-  border: none;
+.IsLoggedIn #footer2 {
   margin: 0 1.5rem;
 }
+
 #footer2 {
   padding: 0;
   background-color: transparent;
   margin: .5em auto;
+  color: #fff;
+  font-size: .875rem;
 }
 .AClogoAddressFooter {
   line-height: 1.25rem;
@@ -1816,9 +1860,12 @@ div#footer2 .ACaddressBlock {
   padding: 2.5rem 0 3rem;
   border-top: 1px solid #3d4f5c;
 }
+#footer #amagavi {
+  text-align: right;
+}
 #footer #amagavi table {
   font-size: .75rem;
-  margin: .5rem 1.5rem 0;
+  /*margin: .5rem 1.5rem 0;*/
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline {
@@ -1826,13 +1873,13 @@ div#footer2 .ACaddressBlock {
 }
 #footer2 a,
 .IsLoggedIn #amagavi a {
-  color: #E8EBD9;
+  color: #c4dcee;
 }
 #footer2 a:hover {
   color: #FFC8BD;
 }
 #amagavi a {
-  color: #5A752D;
+  color: #c4dcee;
 }
 td.logoCell a {
   border-bottom: none;
@@ -1886,26 +1933,25 @@ div.CheckboxMatrix tr td {
 #footer .byline {
 	color: #fff;
 }
-.Content a {
-  color: #435721;
+a {
   color: #296089;
   text-decoration: none;
   border-bottom: 1px solid #296089;
 }
-.Content a:hover  {
+/*.Content */a:hover  {
   color: #000;
   border-bottom: 2px solid #000;
 }
-.Content a:active {
+/*.Content*/ a:active {
   color: #000;
   border-bottom: 2px solid #000;
 }
 
-.Content a:visited,
-.Content a:hover input,
-.Content a:active input,
-.Content a:hover img,
-.Content a:active img {
+/*.Content*/ a:visited,
+/*.Content*/ a:hover input,
+/*.Content*/ a:active input,
+/*.Content*/ a:hover img,
+/*.Content*/ a:active img {
   border: none;
 }
 
@@ -2800,47 +2846,7 @@ div.Main .SharedLegend {
 }
 }
 /* <-- SIMPLE GRID */
-/* CATEGORY: bg color classes -> */
 
-/* darkest blue = 1 */
-.bg-blue01 {
-  background-color: #29353d;
-  color: #fff;
-}
-.bg-blue01 a {
-  color: #c4dcee;
-}
-.bg-blue01 button.bare {
-	color: #fff;
-}
-.transparent {
-  background-color: transparent;
-}
-.bg-blue02 {
-  background-color: #33424d;
-  color: #fff;
-}
-.bg-blue02 a,
-.bg-blue03 a {
-  color: #c4dcee;
-}
-.bg-blue03 {
-	background-color: #415467;
-	color: #fff;
-}
-.bg-blue03 h1,
-.bg-blue03 h2,
-.bg-blue03 h3,
-.bg-blue03 h4,
-.bg-blue03 h5,
-.bg-blue03 h6 {
-	color: #fff;
-	font-weight: normal;
-}
-
-
-
-/* <- bg color classes */
 
 /* buttons --> */
 
@@ -2888,6 +2894,6 @@ button:hover {
     text-align: right;
   }
   #footer #amagavi table {
-    float: right;
+    display: inline-block;
   }
 }

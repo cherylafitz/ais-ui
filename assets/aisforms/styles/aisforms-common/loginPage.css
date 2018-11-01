@@ -1,7 +1,7 @@
  PAGE: LOGIN --> */
 /* MOBILE FIRST */
 .IsNotLoggedIn .section {
-  padding: 1.25rem 2rem;
+  padding: 1.5rem 2rem;
 }
 .IsNotLoggedIn header {
   /*padding: 1.25rem 1rem;*/
@@ -18,7 +18,8 @@
   justify-content: space-between;
 }
 .IsNotLoggedIn #AClogo {
-  width: 170px;
+  height: 48px;
+  display: block;
 }
 .IsNotLoggedIn .main {
   display: flex;
@@ -77,7 +78,7 @@
 }*/
 .IsNotLoggedIn #loginHeading {
   background: #33424d;
-  padding: 1rem 2rem 1rem 1rem;
+  padding: 1.5rem 2rem 1.5rem 1rem;
   /*background: #29353d;*/
   /*clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
 }
@@ -87,6 +88,9 @@
 }
 .IsNotLoggedIn #loginHeading {
   background: #29353d;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .IsNotLoggedIn #loginHeading h2 {
   text-align: left;
@@ -94,9 +98,10 @@
   font-size: 1.25rem;
   background-color: #33424d;
   clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);
-  margin-top: -2rem;
   color: #fff;
   padding-left: 1rem;
+  margin: 0;
+
 }
 .IsNotLoggedIn #showCreateAccount,
 .IsNotLoggedIn #loginButton,
@@ -145,17 +150,12 @@
   text-align: left;
 }
 .IsNotLoggedIn .ForgotPassword {
-  display: block;
   margin: 1rem 0 0;
   font-size: .875rem;
-  color: #33424d;
 }
-.tip {
+/*.tip {
   display: flex;
   flex-flow: row wrap;
-}
-.tip h4 {
-  font-weight: bold;
 }
 .tip p {
   font-size: .875rem;
@@ -165,13 +165,13 @@
 .tip p {
   margin: 0;
   flex-basis: 300px;
-}
+}*/
 .IsNotLoggedIn .TipsLogin h3 {
   /* make these styles apply more generally */
   /*color: #2E6B9B;*/
-  font-weight: normal;
+/*  font-weight: normal;
   font-size: 1.4em;
-  color: #fff;
+  color: #fff;*/
 }
 .IsNotLoggedIn #footer #HomePage {
   display: none;
@@ -197,11 +197,11 @@
 @media screen
   and (min-width: 64em) {
   .IsNotLoggedIn .section {
-    padding: 1rem 6rem;
+    padding: 1.5rem 6rem;
   }
   .IsNotLoggedIn .LoginForms {
-    margin-top: -6rem;
-    margin-bottom: -1rem;
+    margin-top: -7.5rem;
+    margin-bottom: -1.5rem;
     position: relative;
   }
   .IsNotLoggedIn .formTitle {
@@ -241,7 +241,6 @@
   }
   .IsNotLoggedIn #loginHeading h2 {
     background-color: transparent;
-    float: left;
   }
 }
 /* <-- PAGE: LOGIN
