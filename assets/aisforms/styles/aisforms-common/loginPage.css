@@ -1,39 +1,41 @@
- PAGE: LOGIN --> */
+ /* PAGE: LOGIN --> */
 /* MOBILE FIRST */
-.IsNotLoggedIn .section {
-  padding: 1.5rem 2rem;
+
+.IsNotLoggedIn #Header,
+.IsNotLoggedIn .CustomContent,
+.IsNotLoggedIn .Tips,
+.IsNotLoggedIn #footer {
+  padding: 1.5rem;
 }
-.IsNotLoggedIn header {
-  /*padding: 1.25rem 1rem;*/
+.IsNotLoggedIn #Header {
   display: flex;
   justify-content: space-between;
   color: #fff;
+  background-color: #33424d;
+  align-items: center;
 }
-.IsNotLoggedIn .branding {
-}
-.IsNotLoggedIn .ais-brand {
+
+.IsNotLoggedIn .aisFormsLogo {
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .IsNotLoggedIn #AClogo {
-  height: 48px;
+  max-height: 48px;
   display: block;
 }
-.IsNotLoggedIn .main {
+.IsNotLoggedIn .ValidationAndForms {
   display: flex;
   justify-content: center;
   background: #ffffff;
-/*  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;*/
   font-family: sans-serif;
   flex-wrap: wrap;
   min-height: calc(100vh - 389px);
   }
 .IsNotLoggedIn .CustomContent {
   flex-basis: 500px;
-  flex-grow: 1;
+  flex-grow: 3;
   order: 1;
 }
 .IsNotLoggedIn .LoginWelcome .PageTitle h1 {
@@ -52,7 +54,7 @@
 .IsNotLoggedIn .LoginForms {
   background: #e0e6f0;
   order: 2;
-  flex-grow: 0;
+  flex-grow: 1;
   padding-bottom: 2rem;
   position: relative;
   /*clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%);*/
@@ -60,25 +62,21 @@
 .IsNotLoggedIn #LoginForm,
 .IsNotLoggedIn #CreateAccountForm {
   margin: 0;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem;
   background: #e0e6ef;
   width: 100%;
   box-sizing: border-box;
   max-height: 1000px;
   overflow: hidden;
   transition: max-height 1s ease-out;
-  -webkit-transition: max-height 1s ease-out;
+  /*-webkit-transition: max-height 1s ease-out;*/
   z-index: 1;
   opacity: 1;
 }
-.IsNotLoggedIn #CreateAccountForm {
-}
-/*.IsNotLoggedIn #CreateAccountForm:hover {
-  max-height: 1000px;
-}*/
 .IsNotLoggedIn #loginHeading {
   background: #33424d;
-  padding: 1.5rem 2rem 1.5rem 1rem;
+  /*padding: 1.5rem 2rem 1.5rem 1rem;*/
+  padding: 1.5rem;
   /*background: #29353d;*/
   /*clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
 }
@@ -91,44 +89,38 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 10000;
+  position: relative;
 }
 .IsNotLoggedIn #loginHeading h2 {
   text-align: left;
   font-weight: normal;
   font-size: 1.25rem;
-  background-color: #33424d;
-  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);
+  /*background-color: #33424d;*/
+  /*clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);*/
   color: #fff;
-  padding-left: 1rem;
+  /*padding-left: 1rem;*/
   margin: 0;
-
 }
-.IsNotLoggedIn #showCreateAccount,
 .IsNotLoggedIn #loginButton,
 .IsNotLoggedIn #createAccountButton {
   border-radius: 2px;
   padding: .25rem .75rem;
-  display: inline-block;
+  background: #33424d;
+  border: 1px solid #2a353d;
+  width: 100%;
   font-size: 1rem;
-  vertical-align: top;
-  line-height: 1rem;
 }
 /*.IsNotLoggedIn #showCreateAccount {
   color: black;
   background: #e0e6f0;
   border-color: #2a353d;
 }*/
-.IsNotLoggedIn #loginButton,
-.IsNotLoggedIn #createAccountButton {
-  margin-left: 1rem;
-  background: #33424d;
-  border: 1px solid #2a353d;
-}
 .IsNotLoggedIn form label,
 .IsNotLoggedIn form input[type=password],
 .IsNotLoggedIn form input[type=text] {
   display: block;
-  /*padding-bottom: .25rem;*/
+  padding-bottom: .25rem;
 }
 .IsNotLoggedIn form label{
   margin-top: .75rem;
@@ -139,12 +131,11 @@
   max-width: 400px;
   padding: .55rem;
   box-shadow: inset 0 1px 2px rgba(60,60,60,.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(60,60,60,.1);
+  /*-webkit-box-shadow: inset 0 1px 2px rgba(60,60,60,.1);*/
   border: 1px solid #999999;
 }
 .IsNotLoggedIn .LoginActions {
   margin-top: 1.5rem;
-  text-align: right;
 }
 .IsNotLoggedIn .LoginText {
   text-align: left;
@@ -166,12 +157,8 @@
   margin: 0;
   flex-basis: 300px;
 }*/
-.IsNotLoggedIn .TipsLogin h3 {
-  /* make these styles apply more generally */
-  /*color: #2E6B9B;*/
-/*  font-weight: normal;
-  font-size: 1.4em;
-  color: #fff;*/
+.IsNotLoggedIn .Tips {
+  background-color: #415467;
 }
 .IsNotLoggedIn #footer #HomePage {
   display: none;
@@ -194,9 +181,20 @@
   opacity: 0 !important;
   /*position: absolute !important;*/
 }
+/*@media screen
+  and (min-width: 44em) {
+  .IsNotLoggedIn .LoginForms {
+    margin-top: -7.5rem;
+    margin-bottom: -1.5rem;
+    position: relative;
+  }
+}*/
 @media screen
   and (min-width: 64em) {
-  .IsNotLoggedIn .section {
+  .IsNotLoggedIn #Header,
+  .IsNotLoggedIn .ValidationAndForms,
+  .IsNotLoggedIn .Tips,
+  .IsNotLoggedIn #footer  {
     padding: 1.5rem 6rem;
   }
   .IsNotLoggedIn .LoginForms {
@@ -219,12 +217,7 @@
     padding: .25rem 0;
   }
   .IsNotLoggedIn form label {
-    width: 8rem;
     margin-top: .25rem;
-  }
-  .IsNotLoggedIn form input[type=password],
-  .IsNotLoggedIn form input[type=text] {
-    width: 12rem;
   }
   .IsNotLoggedIn .CustomContent {
     margin-right: 2rem;
