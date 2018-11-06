@@ -63,11 +63,14 @@ div.Content {
 }
 
 /*<--MAIN STRUCTURE */
-/* To Overwrite Amagavi CSS--> */
+/* To Overwrite Codivus CSS--> */
 #DisplayGroupUpdateContainerID .fromToWrapper ,
 #DisplayGroupUpdateContainerID .batchNavigation,
 #DisplayGroupUpdateContainerID .findDeadlinesWrapper {
   display: initial;
+}
+div.SecureDocumentEditorRowDisplay h1 {
+  margin-top: 1rem;
 }
 /* <--To Overwrite Amagavi CSS */
 /* LIST OF SECTIONS--> */
