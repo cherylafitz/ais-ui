@@ -1633,6 +1633,13 @@ div.SectionNavigator.vertical #menu3 a {
   padding: 3px 8px;
   border-bottom: 1px solid #FFF;
 }
+.SectionNavigator.vertical #menu3 li:first-of-type a {
+  padding-top: .5rem;
+}
+.SectionNavigator.vertical #menu3 li:last-of-type a {
+  padding-bottom: .5rem;
+  border-bottom-width: 2px;
+}
 div.SectionNavigator.vertical #menu3 a:hover,
 div.SectionNavigator.vertical #menu3 li a.current {
   padding-left: 5px;
@@ -1642,7 +1649,7 @@ div.SectionNavigator.vertical #menu3 li a.current {
 div.SectionNavigator.vertical {
   margin: 0 2rem 0 0;
   flex-basis: 14rem;
-  background-color: transparent;
+  background-color: #d8e8f3;
   z-index: 999;
   border-radius: 2px 2px 0px 0px;
   border: none;
