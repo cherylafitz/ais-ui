@@ -47,6 +47,7 @@ body {
 }
 /*.Content */p {
   margin: 0 0 1rem 0;
+  line-height: 1.5;
 }
 h1, h2 {
   font-weight: normal;
@@ -116,7 +117,7 @@ a.imgLink:hover {
   color: #c4dcee;
 }
 .bg-blue03 {
-  background-color: #415467;
+  background-color: #3d4f5c;
   color: #fff;
 }
 .bg-blue03 h1,
@@ -337,7 +338,7 @@ div.BrandRowDisplay h1 {
 }
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
   line-height: 1.5;
   font-weight: normal;
   padding: 0;
@@ -1274,28 +1275,43 @@ table.TemplateTable tr td {
   flex-flow: row wrap;
   color: #ededed;
 }
-/*.HomeProgramAfterContent*/ .Tips h3 {
+.Tips h3 {
   flex-basis: 100%;
+  margin-bottom: 1rem;
 }
-/*.HomeProgramAfterContent*/ .Tips h4 {
-  color: #fff;
+.Tips h4 {
   font-size: 1rem;
-  flex-basis: 250px;
+  line-height: 1.25;
+  flex-basis: 300px;
 }
-/*.HomeProgramAfterContent*/ .Tips p {
-  flex-basis: calc(100% - 250px);
+.Tips h4::before {
+  content: '';
+  border-color: #7690a5;
+  border-color: #f1c574;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  height: 15px;
+  width: 9px;
+  -ms-transform: rotate(-145deg) scaleX(-1);
+  -o-transform: rotate(-145deg) scaleX(-1);
+  -webkit-transform: rotate(-145deg) scaleX(-1);
+  transform: rotate(-145deg) scaleX(-1);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin: 0 0 0 1px;
+  margin-right: 1.5rem;
+  margin-left: .25rem;
+}
+.Tips h4:not(:last-of-type)::after {
+  content: ':';
+}
+.Tips p {
+  flex-basis: calc(100% - 300px);
   min-width: 300px;
   flex-grow: 1;
 }
-.Tips strong,
 .Tips h3 {
   color: #fff;
-}
-.TipsLogin strong {
-  color: #222;
-}
-.Tips h3 {
-  color: #FFD590;
   margin-top: 0;
   font-weight: normal;
 }
@@ -2166,18 +2182,6 @@ legend:not(.SaveButton) {
   th.QueueName {
     width: 17em;
   }
-  .Tips {
-    display: none;
-  }
-  #UserHomeIntro ul#leftContent,
-  #UserHomeIntro ul#rightContent,
-    #UserHomeAfterFormsInfo ul#leftContent,
-  #UserHomeAfterFormsInfo ul#rightContent
-     {
-  width: initial;
-  float: none;
-  margin-right: 0;
-  }
   div.MyForms,
   div.AvailableForms {
     width: 100%;
@@ -2318,9 +2322,6 @@ legend:not(.SaveButton) {
   div.Content .MenuOfSections input {
     font-size: .9em;
   }
-  .Tips {
-    display: none;
-  }
   .HomeProgramContent,
     .HomeProgramAfterContent {
         width: 95%;
@@ -2350,21 +2351,10 @@ and (max-width : 896px) {
 @media only screen
 and (min-width : 768px)
 and (max-width : 1024px) {
-  div.Main div.LoginOrNewAccount div.CustomContent  {
-    margin: 0 auto;
-    padding: 2em;
-  }
-  .LoginGetStarted {
-    margin: -3.5em -2.5em -1em -1em;
-  }
 
   .Content .mainInstructions {
     height: inherit;
     width: inherit;
-  }
-  div.MyForms,
-  div.AvailableForms {
-    width: 100%;
   }
 }
 /* desktops and laptops */

@@ -13,7 +13,7 @@
     <div class="ACbrand">
       <img alt="American Councils Logo" id="AClogo" src="https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png">
     </div>
-    <div class="aisFormsLogo">
+    <div class="aisFormsBrand">
       <div>AIS Forms</div>
       <div><a href="#loginHeading">Log in</a></div>
     </div>
@@ -89,15 +89,15 @@
 
             <!-- ***Note to Codivus: CHANGES to HTML structure, classes, etc (table removed) -->
             <form name="loginForm" method="post" id="LoginForm" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin">
-                <p>Need an account? <a href="#" id="showCreateAccount" class="text-small">Create one</a>
+                <p>Need an AIS Forms account? </br> <a href="#" id="showCreateAccount" class="text-small">Create an account</a>
 
               <div id="Login" class="row-size3">
                 <div class="UserName">
-                  <label for="Username">User name:</label>
+                  <label for="Username">Username</label>
                   <input id="Username" type="text" name="membernameLogin">
                 </div>
                 <div class="Password">
-                  <label for="Password">Password:</label>
+                  <label for="Password">Password</label>
                   <input id="Password" type="password" name="passwordLogin">
                 </div>
                 <div class="LoginActions">
@@ -114,36 +114,36 @@
 
             <!-- CHANGES to HTML structure, classes, etc (table removed) -->
             <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" class="hide-element" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
-                <h4>Already have an account?</h4>
-                <p><a href="#" id="showLogin" class="text-small">Log in</a>
-              <div id="CreateAccount">
+                <p>Already have an account? </br><a href="#" id="showLogin" class="text-small">Log in</a></p>
+
+              <div id="CreateAccount" class="row-size3">
                 <div class="UserName">
-                  <label for="Membername">User name: </label>
+                  <label for="Membername">Username </label>
                   <input type="text" id="Membername" name="membername">
                 </div>
 
                 <div class="Password">
-                  <label for="PasswordCreate">Password:</label>
+                  <label for="PasswordCreate">Password</label>
                   <input type="password" id="PasswordCreate" name="password">
                 </div>
 
                 <div class="VerifyPassword">
-                  <label for="PasswordCreateRetyped">Verify password:</label>
+                  <label for="PasswordCreateRetyped">Verify password</label>
                   <input type="password" id="PasswordCreateRetyped" name="passwordRetyped">
                 </div>
 
                 <div class="FirstName">
-                  <label for="FirstName">First name:</label>
+                  <label for="FirstName">First name</label>
                   <input type="text" id="FirstName" name="firstName">
                 </div>
 
                 <div class="LastName">
-                  <label for="LastName">Last name:</label>
+                  <label for="LastName">Last name</label>
                   <input type="text" id="LastName" name="lastName">
                 </div>
 
                 <div class="EmailAddress">
-                  <label for="EmailAddress">Email address:</label>
+                  <label for="EmailAddress">Email address</label>
                   <input type="text" id="EmailAddress" name="emailAddress">
                 </div>
                 <div class="ReCaptcha">
@@ -152,7 +152,7 @@
                   <div data-sitekey="6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni&amp;co=aHR0cHM6Ly9haXMuYW1lcmljYW5jb3VuY2lscy5vcmc6NDQz&amp;hl=en&amp;v=v1528855115741&amp;size=normal&amp;cb=x2rhejan3v10" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
                 </div>
                 <div class="LoginActions">
-                  <input escapehtml="false" id="createAccountButton" type="submit" value="Create new account" name="createNewAccount"><input type="hidden" name="WOSubmitAction" value="createNewAccount">
+                  <input escapehtml="false" id="createAccountButton" type="submit" value="Create account" name="createNewAccount"><input type="hidden" name="WOSubmitAction" value="createNewAccount">
                 </div>
               </div>
               <input type="hidden" name="brand" value="general">
@@ -255,7 +255,7 @@
     setTimeout(function() {
       document.getElementById("Username").focus();
     },400);
-    document.getElementById("loginHeadingText").innerHTML="Sign in";
+    document.getElementById("loginHeadingText").innerHTML="Log in";
   });
     // elementToShow.classList.add("showElement");
   </script>

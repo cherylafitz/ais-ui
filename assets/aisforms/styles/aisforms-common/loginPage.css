@@ -1,28 +1,27 @@
  /* PAGE: LOGIN --> */
 /* MOBILE FIRST */
 
-.IsNotLoggedIn #Header,
-.IsNotLoggedIn .CustomContent,
+.IsNotLoggedIn .ValidationAndForms,
 .IsNotLoggedIn .Tips,
 .IsNotLoggedIn #footer {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 .IsNotLoggedIn #Header {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  background-color: #33424d;
-  align-items: center;
+  background-color: #29353d;
+  padding: 1.5rem;
 }
 
-.IsNotLoggedIn .aisFormsLogo {
+.IsNotLoggedIn .aisFormsBrand {
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .IsNotLoggedIn #AClogo {
-  max-height: 48px;
+  max-height: 40px;
   display: block;
 }
 .IsNotLoggedIn .ValidationAndForms {
@@ -34,37 +33,40 @@
   min-height: calc(100vh - 389px);
   }
 .IsNotLoggedIn .CustomContent {
-  flex-basis: 500px;
+  flex-basis: 350px;
   flex-grow: 3;
   order: 1;
+  padding-bottom: 1rem;
+}
+.IsNotLoggedIn .CustomContent .logos {
+  margin-bottom: 1rem;
+}
+.IsNotLoggedIn .CustomContent .logos img {
+  max-width: 200px;
+  max-height: 64px;
+  width: auto;
+  height: auto;
 }
 .IsNotLoggedIn .LoginWelcome .PageTitle h1 {
   color: #2e6a9b;
   font-weight: normal;
   font-size: 1.5rem;
 }
-
-.IsNotLoggedIn .LoginWelcome p {
-  color: #000;
-  font-size: 1rem;
-  text-align: left;
-  line-height: 1.5;
-  max-width: 600px;
-}
 .IsNotLoggedIn .LoginForms {
   background: #e0e6f0;
   order: 2;
   flex-grow: 1;
-  padding-bottom: 2rem;
   position: relative;
+  width: 300px;
+  max-width: 100%;
   /*clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%);*/
 }
 .IsNotLoggedIn #LoginForm,
 .IsNotLoggedIn #CreateAccountForm {
   margin: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   background: #e0e6ef;
-  width: 100%;
+  /*width: 100%;*/
   box-sizing: border-box;
   max-height: 1000px;
   overflow: hidden;
@@ -72,16 +74,18 @@
   /*-webkit-transition: max-height 1s ease-out;*/
   z-index: 1;
   opacity: 1;
+  /*max-width: 450px;*/
 }
 .IsNotLoggedIn #loginHeading {
   background: #33424d;
+  padding: 1rem;
   /*padding: 1.5rem 2rem 1.5rem 1rem;*/
-  padding: 1.5rem;
+  /*padding-bottom: 1rem;*/
   /*background: #29353d;*/
   /*clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);*/
 }
 .IsNotLoggedIn #aisLogo {
-  height: 48px;
+  height: 40px;
   display: block;
 }
 .IsNotLoggedIn #loginHeading {
@@ -93,14 +97,17 @@
   position: relative;
 }
 .IsNotLoggedIn #loginHeading h2 {
-  text-align: left;
+  text-align: right;
   font-weight: normal;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  order: 1;
+  color: #fff;
+  margin: 0;
+  line-height: 1.125;
   /*background-color: #33424d;*/
   /*clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%);*/
-  color: #fff;
-  /*padding-left: 1rem;*/
-  margin: 0;
+/*  padding: 2.75rem 1.5rem 1.5rem 2rem;*/
+  /*margin: -1.5rem;*/
 }
 .IsNotLoggedIn #loginButton,
 .IsNotLoggedIn #createAccountButton {
@@ -128,8 +135,8 @@
 .IsNotLoggedIn form input[type=password],
 .IsNotLoggedIn form input[type=text] {
   width: 100%;
-  max-width: 400px;
-  padding: .55rem;
+  /*max-width: 400px;*/
+  padding: .375rem;
   box-shadow: inset 0 1px 2px rgba(60,60,60,.1);
   /*-webkit-box-shadow: inset 0 1px 2px rgba(60,60,60,.1);*/
   border: 1px solid #999999;
@@ -138,7 +145,7 @@
   margin-top: 1.5rem;
 }
 .IsNotLoggedIn .LoginText {
-  text-align: left;
+  max-width: 750px;
 }
 .IsNotLoggedIn .ForgotPassword {
   margin: 1rem 0 0;
@@ -157,9 +164,6 @@
   margin: 0;
   flex-basis: 300px;
 }*/
-.IsNotLoggedIn .Tips {
-  background-color: #415467;
-}
 .IsNotLoggedIn #footer #HomePage {
   display: none;
 }
@@ -176,10 +180,10 @@
 }
 .hide-element {
   height: 0;
-  padding: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   max-height: 0 !important;
   opacity: 0 !important;
-  /*position: absolute !important;*/
 }
 /*@media screen
   and (min-width: 44em) {
@@ -189,51 +193,86 @@
     position: relative;
   }
 }*/
-@media screen
-  and (min-width: 64em) {
+@media only screen
+  and (min-width: 43.5em) {
+  .IsNotLoggedIn .LoginForms {
+    margin-top: -8rem;
+    margin-bottom: -2rem;
+    position: relative;
+  }
+  .IsNotLoggedIn #Header {
+    background-color: #33424d;
+  }
+  .IsNotLoggedIn #LoginForm,
+  .IsNotLoggedIn #CreateAccountForm {
+    padding: 1.5rem;
+  }
+  .IsNotLoggedIn .CustomContent {
+    padding: 0 1.5rem 0 0;
+  }
+  .IsNotLoggedIn #loginHeading h2 {
+    font-size: 1.25rem;
+  }
+    .IsNotLoggedIn #loginHeading {
+    padding: 1.5rem;
+  }
+  .IsNotLoggedIn #aisLogo {
+    height: 48px;
+  }
+  .IsNotLoggedIn #AClogo {
+    max-height: 48px;
+    display: block;
+  }
+}
+@media only screen
+  and (min-width: 50em) {
   .IsNotLoggedIn #Header,
   .IsNotLoggedIn .ValidationAndForms,
   .IsNotLoggedIn .Tips,
+  .IsNotLoggedIn #footer,
+  .IsNotLoggedIn #loginHeading  {
+    /*padding: 1.5rem;*/
+  }
+/*  .IsNotLoggedIn #Header {
+    padding: 1.5rem;
+  }*/
+
+/*  .IsNotLoggedIn .LoginForms {
+
+  }*/
+
+/*  .IsNotLoggedIn #loginHeading h2 {
+    background-color: transparent;
+  }*/
+}
+@media only screen
+  and (min-width: 56em) {
+  .IsNotLoggedIn .ValidationAndForms,
+  .IsNotLoggedIn .Tips,
   .IsNotLoggedIn #footer  {
+    padding: 2rem 6rem;
+  }
+  .IsNotLoggedIn #Header {
     padding: 1.5rem 6rem;
   }
-  .IsNotLoggedIn .LoginForms {
-    margin-top: -7.5rem;
-    margin-bottom: -1.5rem;
-    position: relative;
-  }
-  .IsNotLoggedIn .formTitle {
-    background-color: #e0e6f0;;
-    clip-path: none;
-    float: none;
-    color: #000;
-    margin-top: 0;
-    /*padding: 2rem 2rem 0;*/
-  }
-  .IsNotLoggedIn form label,
-  .IsNotLoggedIn form input[type=password],
-  .IsNotLoggedIn form input[type=text] {
-    display: inline-block;
-    padding: .25rem 0;
-  }
-  .IsNotLoggedIn form label {
-    margin-top: .25rem;
-  }
-  .IsNotLoggedIn .CustomContent {
-    margin-right: 2rem;
-    padding: 2rem 2rem 2rem 0;
-  }
-  .IsNotLoggedIn #CreateAccountForm {
-    /*position: absolute;*/
-  }
-  .IsNotLoggedIn .CustomContent .logos {
-    margin-bottom: 1rem;
-  }
+
+/*  .IsNotLoggedIn .LoginForms {
+    margin-top: -8rem;
+    margin-bottom: -2rem;
+  }*/
+}
+@media only screen
+  and (min-width: 80em) {
   .IsNotLoggedIn #aisLogo {
-    margin-left: auto;
+    height: 56px;
   }
-  .IsNotLoggedIn #loginHeading h2 {
-    background-color: transparent;
+  .IsNotLoggedIn #AClogo {
+    max-height: 56px;
+  }
+  .IsNotLoggedIn .LoginForms {
+    margin-top: -8.5rem;
+    margin-bottom: -2rem;
+    position: relative;
   }
 }
 /* <-- PAGE: LOGIN
