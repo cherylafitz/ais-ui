@@ -33,7 +33,7 @@
   min-height: calc(100vh - 389px);
   }
 .IsNotLoggedIn .CustomContent {
-  flex-basis: 350px;
+  flex-basis: 348px;
   flex-grow: 3;
   order: 1;
   padding-bottom: 1rem;
@@ -193,6 +193,14 @@
     position: relative;
   }
 }*/
+/* patch for premature collapsing on windows chrome */
+@media only screen
+  and (min-width: 43.5em)
+  and (max-width: 44.5em) {
+  .IsNotLoggedIn .CustomContent {
+    margin-bottom: 8rem;
+  }
+}
 @media only screen
   and (min-width: 43.5em) {
   .IsNotLoggedIn .LoginForms {
