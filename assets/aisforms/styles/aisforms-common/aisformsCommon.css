@@ -1632,17 +1632,29 @@ div.SectionNavigator.vertical #menu3 a {
   display: block;
   padding: 3px 8px;
   border-bottom: 1px solid #FFF;
+  border-radius: 2px 4px 4px 2px;
+}
+.SectionNavigator.vertical #menu3 li:first-of-type a {
+  padding-top: .25rem;
+}
+.SectionNavigator.vertical #menu3 li:last-of-type a,
+.SectionNavigator.vertical #menu3 li:last-of-type a:hover,
+div.SectionNavigator.vertical #menu3 li:last-of-type a.current {
+  padding-bottom: .5rem;
+  border-bottom-width: 2px;
 }
 div.SectionNavigator.vertical #menu3 a:hover,
 div.SectionNavigator.vertical #menu3 li a.current {
-  padding-left: 5px;
-  border-left: 3px solid black;
+  padding-left: 4px;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #cecece;
+  border-left: 4px solid #3b6d99;
   background: #f1f5f9;
 }
 div.SectionNavigator.vertical {
   margin: 0 2rem 0 0;
   flex-basis: 14rem;
-  background-color: transparent;
+  background-color: #d8e8f3;
   z-index: 999;
   border-radius: 2px 2px 0px 0px;
   border: none;
