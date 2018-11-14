@@ -1349,6 +1349,15 @@ div#alumnusSummary fieldset table caption {
   padding-bottom: .5rem;
   text-align: left;
 }
+.StudentAddressEditor .buttonRow {
+  max-width: 520px;
+}
+.StudentAddressEditor .buttonRow .Cancel {
+  padding-left: .5rem;
+}
+.StudentAddressEditor .buttonRow .Delete {
+  float: right;
+}
 /* <-- OVERRIDES ONLY */
 div.FSAAppFullDisplay fieldset.Section legend,
 .HealthGroup legend,
