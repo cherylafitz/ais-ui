@@ -30,6 +30,8 @@
   </div>
   <div class="Content">
   <div class="Main">
+    <div class="SystemAnnouncementsWrapper">
+    </div>
     <div class="LoginPage">
       <div class="LoginOrNewAccount">
         <div class="ValidationAndForms">
@@ -81,17 +83,18 @@
 
           <!-- ***Note to Codivus: MOVED this div to after the Custom Content -->
           <div class="LoginForms">
+            <!-- ***Note to Codivus: this is a new element -->
             <div id="loginHeading">
-              <h2 id="loginHeadingText">Log in
+              <h2 id="formTitle">Log in
               </h2>
               <img id="aisLogo" alt="AIS Logo" src="../media/AISformsLogo_simplified.svg">
             </div>
 
             <!-- ***Note to Codivus: CHANGES to HTML structure, classes, etc (table removed) -->
             <form name="loginForm" method="post" id="LoginForm" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin">
-                <p>Need an AIS Forms account? </br> <a href="#" id="showCreateAccount" class="text-small">Create an account</a>
+                <p>Need an AIS Forms account? <br> <a href="#" id="showCreateAccount" class="text-small">Create an account</a>
 
-              <div id="Login" class="row-size3">
+              <div id="login" class="row-size3">
                 <div class="UserName">
                   <label for="Username">Username</label>
                   <input id="Username" type="text" name="membernameLogin">
@@ -114,7 +117,7 @@
 
             <!-- CHANGES to HTML structure, classes, etc (table removed) -->
             <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" class="hide-element" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
-                <p>Already have an account? </br><a href="#" id="showLogin" class="text-small">Log in</a></p>
+                <p>Already have an account? <br><a href="#" id="showLogin" class="text-small">Log in</a></p>
 
               <div id="CreateAccount" class="row-size3">
                 <div class="UserName">
@@ -157,43 +160,41 @@
               </div>
               <input type="hidden" name="brand" value="general">
             </form>
-
           </div>
           <!-- END LoginForms -->
         </div>
       </div>
     </div>
 
-<!-- ***Note to Codivus: NEED a new "AfterLogin" editable area in the portal editor  -->
-<div class="AfterLoginAndForms">
-  <!-- BEGIN Usage Tips -->
-  <div class="Tips bg-blue03">
-    <h3>Tips for Using this Website</h3>
-    <h4>Enable Cookies and JavaScript</h4>
-    <p> This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and
-      JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
-    </p>
-    <h4>Times Displayed on this Site</h4>
-    <p>Unless otherwise noted, all
-    times displayed on this site are U.S. Eastern/Washington, D.C., time.</p>
-    <h4>Allow Emails from AIS Forms</h4>
-    <p>All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this
-      email address to your address book/approved senders list to help prevent
-      messages from being blocked as spam or junk mail. <b>This is particularly
-        important for university (".edu"), AOL, K12, and Yahoo email users. Each of
-      these email systems often blocks legitimate messages from reaching you.</b>
-    </p>
-    <h4>Questions?</h4>
-    <p>Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
-    </p>
-  </div>
-  <!-- END Usage Tips Content Right Column -->
-  <!-- Usage Tips Content -->
+  <!-- ***Note to Codivus: NEED a new, unified (same for each portal) "AfterLogin" editable area in the portal editor  -->
+  <div class="AfterLoginAndForms">
+    <!-- BEGIN Usage Tips -->
+    <div class="Tips bg-blue03">
+      <h3>Tips for Using this Website</h3>
+      <h4>Enable Cookies and JavaScript</h4>
+      <p> This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and
+        JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+      </p>
+      <h4>Times Displayed on this Site</h4>
+      <p>Unless otherwise noted, all
+      times displayed on this site are U.S. Eastern/Washington, D.C., time.</p>
+      <h4>Allow Emails from AIS Forms</h4>
+      <p>All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this
+        email address to your address book/approved senders list to help prevent
+        messages from being blocked as spam or junk mail. <b>This is particularly
+          important for university (".edu"), AOL, K12, and Yahoo email users. Each of
+        these email systems often blocks legitimate messages from reaching you.</b>
+      </p>
+      <h4>Questions?</h4>
+      <p>Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+      </p>
+    </div>
+    <!-- END Usage Tips Content -->
 
-</div>
-</div>
-</div>
-<!-- NO CHANGES -->
+  </div>
+  </div>
+  </div>
+<!-- ***Note to Codivus: NO CHANGES -->
 <div id="footer">
   <div id="footer2">
     <div class="logo"></div>
@@ -220,44 +221,37 @@
 
 
 <script type="text/javascript">
-  var showCreateAccountbtn = document.getElementById("showCreateAccount");
-  var showLoginBtn = document.getElementById("showLogin");
+  var showCreateAccount = document.getElementById("showCreateAccount"),
+      showLogin = document.getElementById("showLogin"),
+      createAccountForm = document.getElementById("CreateAccountForm"),
+      loginForm = document.getElementById("LoginForm"),
+      formTitle = document.getElementById("formTitle");
+
+  var focusFirstInput = function(event, form){
+    // set timeout to allow form css transition before focus
+    setTimeout(function() {
+      form.getElementsByTagName("input")[0].focus();
+    },400);
+  };
 
   var showHideForm = function(event,formToShow,formToHide) {
     formToShow.classList.remove("hide-element");
     formToShow.classList.add("show-element");
-    formToHide.classList.remove("show-element");
+    formToHide.classList.remove("show-element");fire
     formToHide.classList.add("hide-element");
-  }
+  };
 
-  showCreateAccountbtn.addEventListener("click", function(event) {
-    var elementToShow = document.getElementById("CreateAccountForm");
-    var elementToHide = document.getElementById("LoginForm");
-
-    event.preventDefault();
-
-    showHideForm(event, elementToShow, elementToHide);
-
-    setTimeout(function() {
-      document.getElementById("Membername").focus();
-    },400);
-    document.getElementById("loginHeadingText").innerHTML="Create account";
+  showCreateAccount.addEventListener("click", function(event) {
+    showHideForm(event, createAccountForm, loginForm);
+    focusFirstInput(event, createAccountForm);
+    formTitle.innerHTML="Create account";
   });
 
-  showLoginBtn.addEventListener("click", function(event) {
-    var elementToShow = document.getElementById("LoginForm");
-    var elementToHide = document.getElementById("CreateAccountForm");
-
-    event.preventDefault();
-
-    showHideForm(event, elementToShow, elementToHide);
-
-    setTimeout(function() {
-      document.getElementById("Username").focus();
-    },400);
-    document.getElementById("loginHeadingText").innerHTML="Log in";
+  showLogin.addEventListener("click", function(event) {
+    showHideForm(event, loginForm, createAccountForm);
+    focusFirstInput(event, loginForm);
+    formTitle.innerHTML="Log in";
   });
-    // elementToShow.classList.add("showElement");
   </script>
 </body>
 </html>

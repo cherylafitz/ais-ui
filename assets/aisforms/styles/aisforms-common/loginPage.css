@@ -70,7 +70,7 @@
   box-sizing: border-box;
   max-height: 1000px;
   overflow: hidden;
-  transition: max-height 1s ease-out;
+  transition: max-height 1.2s ease-out;
   /*-webkit-transition: max-height 1s ease-out;*/
   z-index: 1;
   opacity: 1;
