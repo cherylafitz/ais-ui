@@ -404,7 +404,8 @@ body.IsNotLoggedIn .Content {
 #DataUsageGuidance a {
   color: #444;
 }
-.IsLoggedIn #CookieDeclaration a {
+.IsLoggedIn #CookieDeclaration a,
+.IsLoggedIn #PrivacyPolicy a {
   /*TEMP */
     color: #e9ead9;
     border-bottom-color: #e9ead9;
@@ -1228,6 +1229,11 @@ table.TemplateTable tr td {
   .IsLoggedIn #CookieDeclaration {
     padding: 1rem 1.5rem 0;
     margin: 1.5rem -1.5rem -3rem;
+  }
+  .IsLoggedIn #PrivacyPolicy {
+    margin: 1.5rem 0 -3rem 1rem;
+    padding: 1rem 9rem 0 0;
+    z-index: 100;
   }
 #UserHomeIntro {
   flex-basis: 500px;
