@@ -571,7 +571,7 @@ dl.inLeftNav dd {
 /* <-- NAVIGATION */
 
 #cssmenu ul li a {
-  padding: .25rem 1rem;
+  padding: .125rem 1rem;
   color: #000;
   display: block;
   text-decoration: none;
