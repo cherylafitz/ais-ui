@@ -1786,7 +1786,7 @@ table.RowDisplay thead tr {
 table.RowDisplay tr.headerRow th,
 table.RowDisplay thead tr th,
 /* specific styling for tables missing thead or .headerRow -> */
-table.RowDisplay .report tr:first-child {
+table.report tr:first-of-type {
   border-top: 2px solid #363a3e;
   border-bottom: 2px solid #363a3e;
 }
