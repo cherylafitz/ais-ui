@@ -407,15 +407,15 @@ body .divider {
 .topNavInTable td.nameBlock {
   background-image: url('https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg');
   background-repeat: no-repeat;
-  background-size: 74px;
+  background-size: 66px;
   text-align: left;
-  padding-top: .5rem;
+  padding-top: .375rem;
   width: 360px;
   vertical-align: top;
-  background-position: 0 .25rem;
+  background-position: 0 .5rem;
 }
 .topNavInTable td.nameBlock > div {
-  margin-left: 90px;
+  margin-left: 84px;
 }
 div.MultiSearcher {
   margin-top: .5rem;
@@ -444,19 +444,17 @@ div.MultiSearcher input[type="submit"] {
 div.MultiSearcher input[type="submit"]:last-of-type {
   margin-right: .25rem;
 }
-td.logo img {
-  padding-top: .5rem;
+div#tippyTopOfPage table.TopNavTableStructure img.Logo {
+  padding-top: .75rem;
+  width: 225px;
 }
 .topNavInTable .title {
   font-weight: normal;
 }
 .topNavInTable td.logo {
-  padding-right: .75rem;
+  padding-right: 1rem;
   padding-left: .5rem;
   vertical-align: top;
-}
-.topNavInTable td.logo {
-  width: 260px;
 }
 #tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
   background: #ffffff;
