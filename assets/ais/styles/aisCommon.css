@@ -726,7 +726,7 @@ table.report th,
 table.TravelVendorExplanation tr.headerRow th,
 table.TravelVendorExplanation thead tr th,
 div.DescribeColumns table.ColumnDescriptions tr.Titles {
-  background-color: #cdd3ab;
+  background-color: #fff;
   color: #000;
   font-style: normal;
 }
@@ -810,7 +810,7 @@ table.PlacementReportDisplay table.rolodex {
   border-collapse: collapse;
 }
 table.PlacementReportDisplay table.rolodex tr:nth-child(2n + 3) {
-    background-color: #F9FAF5;
+    background-color: #dbe8f2;
     background-color: #fff;
 }
 table.PlacementReportDisplay table.rolodex tr:nth-child(2n + 2) {
@@ -885,7 +885,7 @@ table.PlacementReportDisplay table.siblings thead tr {
   padding: .2rem;
 }
 .siblings tr:nth-child(2n+3) {
-    background-color: #F9FAF5;
+    background-color: #dbe8f2;
 }
 .siblings tr:nth-child(2n+2) {
     background-color: #E8EBD9;
@@ -975,7 +975,7 @@ table.rolodex .alumnusSection + tr td {
   background-color: #d7ddbc;
 }
 .AddressHistory .subTable {
-  background-color: #F9FAF5;
+  background-color: #dbe8f2;
 }
 div#alumnusSummary a.PriorPage {
   font-size: 0.75rem;
@@ -1439,7 +1439,7 @@ fieldset.Section table.rolodex > tbody > tr > td {
 div#alumnusSummary table.CountryRelationships tr th,
 div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
 div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
-  background-color: #cdd3ab;
+  background-color: #fff;
 }
 #alumnusSummary table.RowDisplay td,
 #alumnusSummary table.RowDisplay tr.headerRow th,
@@ -1473,7 +1473,7 @@ div.AlumnusSummary table.rolodex tr td {
 }
 .FSAAppFullDisplay table.TravelInboundDisplay tr th[colspan="2"],
 .FSAAppFullDisplay table.TravelOutboundDisplay tr th[colspan="2"] {
-  background-color: #cdd3ab;
+  background-color: #fff;
 
 }
 .FSAAppFullDisplay table.TravelInboundDisplay tr th:not([colspan="2"]),
@@ -1619,7 +1619,6 @@ table tr td {
 }
 table.RowDisplay tr th {
   background-color: #fff;
-  background-color: #cdd3ab;
 }
 div.CMSBatchNavigation table {
   background-color: transparent;
@@ -1736,11 +1735,14 @@ table.TravelOutboundDisplay td,
 .subTable td {
   font-size: .875rem;
   white-space: nowrap;
-  padding: 0.125rem 0.25rem .25rem;
-  border: 1px solid #fff;
+  /*padding: 0.125rem 0.25rem .25rem;*/
+  /*border: 1px solid #fff;*/
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
+  padding: .25rem 0.5rem;
+  border: 1px solid #afb2b9;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 td.RowNumber,
 table.RowDisplay td.RowNumber,
@@ -1760,8 +1762,8 @@ table.TravelVendorExplanation tr.headerRow th,
 table.TravelVendorExplanation thead tr th,
 table.TravelInboundDisplay th,
 table.TravelOutboundDisplay th {
-  padding: .25rem .325rem .25rem;
-  border-color: #e8ecda;
+  /*padding: .25rem .325rem .25rem;*/
+  /*border-color: #e8ecda;*/
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay thead tr th,
@@ -1780,6 +1782,16 @@ table.RowDisplay tr.headerRow,
 table.RowDisplay thead tr {
   font-style: normal;
   font-size: 1rem;
+}
+table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
+/* specific styling for tables missing thead or .headerRow -> */
+table.RowDisplay .report tr:first-child {
+  border-top: 2px solid #363a3e;
+  border-bottom: 2px solid #363a3e;
+}
+table.RowDisplay tr.headerRow th.ApplicationCount {
+  border-bottom-color: #afb1b9;
 }
 table.RowDisplay tr.headerRow th a,
 table.RowDisplay thead tr th a,
@@ -1825,7 +1837,8 @@ table.TravelInboundDisplay tr:nth-child(2n+2),
 table.TravelOutboundDisplay tr:nth-child(2n+2),
 /*.HealthQuestions tr:nth-child(2n+2),*/
 div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n) {
-  background-color: #F9FAF5;
+  background-color: #dbe8f2;
+  background-color: #dbe8f2;
 }
 #AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+2),
 #AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+2),
@@ -1840,6 +1853,7 @@ table.TravelOutboundDisplay tr:nth-child(2n+3),
 .HealthQuestions tr:nth-child(2n + 1),*/
 div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n+1) {
   background-color: #E8EBD9;
+  background-color: #fff;
 }
 table.RowDisplay tbody tr.submitted_odd /* .submitted_odd, table.RowDisplay tr:nth-child(2n+3), table.RowDisplay tbody tr:nth-child(2n+3) */  {
   color: #000;
