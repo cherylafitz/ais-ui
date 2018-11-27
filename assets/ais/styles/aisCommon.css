@@ -409,7 +409,7 @@ body .divider {
   background-repeat: no-repeat;
   background-size: 66px;
   text-align: left;
-  padding-top: .375rem;
+  padding-top: .5rem;
   width: 360px;
   vertical-align: top;
   background-position: 0 .5rem;
@@ -450,6 +450,8 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 }
 .topNavInTable .title {
   font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.25;
 }
 .topNavInTable td.logo {
   padding-right: 1rem;
