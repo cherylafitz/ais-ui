@@ -608,11 +608,11 @@ table .leftNav a {
 .leftNav h1 {
   color: #f5d295;
   padding-top: 0;
-  text-transform: uppercase;
-  /*padding-bottom: .25rem;*/
-  margin-bottom: .5rem;
+  text-transform: none;
+  margin-bottom: .25rem;
   font-size: 1.125rem;
   white-space: nowrap;
+  font-weight: normal;
 }
 .leftNav .Body .header {
   margin-top: 1rem;
