@@ -565,13 +565,20 @@ dl.inLeftNav dd {
 /* <-- NAVIGATION */
 
 #cssmenu ul li a {
-  padding: 7px 14px 6px;
+  padding: .25rem 1rem;
+  color: #000;
+  display: block;
+  text-decoration: none;
+  font-size: .875rem;
+  text-transform: none;
+  font-weight: normal;
 }
 #cssmenu ul {
-  background: transparent linear-gradient(to top, #94a8b8 0, #b3c1cc 35%, #b3c1cc 65%, #859cad 100%) repeat scroll 0 0; /* alt blue */
-}
-#cssmenu ul li a {
-  color: #000;
+  background: -moz-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 ); /* IE6-9 */
+  line-height: initial;
 }
 table.pageStructure .leftNav dd a,
 .inLeftNav li a,
@@ -591,7 +598,7 @@ table .leftNav a {
   color: #fff;
 }
 .leftNav h1 {
-  color: #c8d295;
+  color: #f5d295;
   padding-top: 0;
   text-transform: uppercase;
   /*padding-bottom: .25rem;*/
