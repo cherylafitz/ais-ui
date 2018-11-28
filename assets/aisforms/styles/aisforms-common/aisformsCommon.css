@@ -111,13 +111,21 @@ div.Content div.Rowdisplay {
   text-align: right;
 }
 /*NAV-->*/
+#TopMenu .menuItem,
+.menu .menuItem {
+    display: inline-block;
+}
+#TopMenu .menuItem:hover,
+.menu .menuItem:hover {
+  background-color: #34677f;
+}
 #TopMenu a,
 .menu a {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: .875rem;
+  font-size: .9375rem;
   display: inline-block;
   text-align: center;
-  padding: 0 1rem .125rem;
+  padding: .125rem 1rem .1875rem;
   color: #000;
   background-color: transparent;
 }
@@ -126,8 +134,7 @@ div.Content div.Rowdisplay {
 .menu a:active,
 #TopMenu a:active {
   background: transparent;
-  color: #466672;
-  text-decoration: underline;
+  color: #FFF;
 }
 .menu a:active,
 #TopMenu a:active {
@@ -145,11 +152,10 @@ div.Content div.Rowdisplay {
   background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 ); /* IE6-9 */
-  padding: .0625rem 4rem .0625rem 0;
+  padding: 0 4rem 0 0;
   position: relative;
   z-index: 2;
-  border-top: 1px solid #8f9aa2;
-  border-bottom: 1px solid #8f9aa2;
+  border: none;
 }
 div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   margin-left: 0;
@@ -223,7 +229,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   width: 162px;
 }
 #Header .LoginLogoutLink {
-  margin-top: 1.25rem;
+  margin-top: 1.125rem;
   position: absolute;
   right: 1rem;
   z-index: 10;
@@ -784,7 +790,6 @@ table.RowDisplay td {
 }
 table.RowDisplay tr.headerRow th,
 table.RowDisplay thead tr th {
-  font-weight: bold;
   padding: .5rem;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
