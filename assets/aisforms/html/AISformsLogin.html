@@ -91,8 +91,8 @@
             </div>
 
             <!-- ***Note to Codivus: CHANGES to HTML structure, classes, etc (table removed) -->
-            <form name="loginForm" method="post" id="LoginForm" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin">
-                <p>Need an AIS Forms account? <br> <a href="#" id="showCreateAccount" class="text-small">Create an account</a>
+            <form name="loginForm" method="post" id="LoginForm" class="toggles" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin">
+                <p>Need an AIS Forms account? <br> <a href="#loginHeading" id="showCreateAccount" class="text-small">Create an account</a>
 
               <div id="login" class="row-size3">
                 <div class="UserName">
@@ -116,8 +116,8 @@
             </form>
 
             <!-- CHANGES to HTML structure, classes, etc (table removed) -->
-            <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" class="hide-element" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
-                <p>Already have an account? <br><a href="#" id="showLogin" class="text-small">Log in</a></p>
+            <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" class="hide-element toggles" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
+                <p>Already have an account? <br><a href="#loginHeading" id="showLogin" class="text-small">Log in</a></p>
 
               <div id="CreateAccount" class="row-size3">
                 <div class="UserName">
@@ -219,39 +219,39 @@
   </div>
 </div>
 
-
 <script type="text/javascript">
-  var showCreateAccount = document.getElementById("showCreateAccount"),
-      showLogin = document.getElementById("showLogin"),
-      createAccountForm = document.getElementById("CreateAccountForm"),
-      loginForm = document.getElementById("LoginForm"),
-      formTitle = document.getElementById("formTitle");
 
-  var focusFirstInput = function(event, form){
-    // set timeout to allow form css transition before focus
-    setTimeout(function() {
-      form.getElementsByTagName("input")[0].focus();
-    },400);
-  };
+var showCreateAccount = document.getElementById("showCreateAccount"),
+    showLogin = document.getElementById("showLogin"),
+    createAccountForm = document.getElementById("CreateAccountForm"),
+    loginForm = document.getElementById("LoginForm"),
+    formTitle = document.getElementById("formTitle");
 
-  var showHideForm = function(event,formToShow,formToHide) {
-    formToShow.classList.remove("hide-element");
-    formToShow.classList.add("show-element");
-    formToHide.classList.remove("show-element");fire
-    formToHide.classList.add("hide-element");
-  };
+var focusFirstInput = function(event, form){
+  // set timeout to allow form css transition before focus
+  setTimeout(function() {
+    form.getElementsByTagName("input")[0].focus();
+  },400);
+};
 
-  showCreateAccount.addEventListener("click", function(event) {
-    showHideForm(event, createAccountForm, loginForm);
-    focusFirstInput(event, createAccountForm);
-    formTitle.innerHTML="Create account";
-  });
+var showHideForm = function(event,formToShow,formToHide) {
+  formToShow.classList.toggle("hide-element");
+  formToHide.classList.toggle("hide-element");
+};
 
-  showLogin.addEventListener("click", function(event) {
-    showHideForm(event, loginForm, createAccountForm);
-    focusFirstInput(event, loginForm);
-    formTitle.innerHTML="Log in";
-  });
-  </script>
+showCreateAccount.addEventListener("click", function(event) {
+  showHideForm(event, createAccountForm, loginForm);
+  focusFirstInput(event, createAccountForm);
+  formTitle.innerHTML="Create account";
+});
+
+showLogin.addEventListener("click", function(event) {
+  showHideForm(event, loginForm, createAccountForm);
+  focusFirstInput(event, loginForm);
+  formTitle.innerHTML="Log in";
+});
+
+</script>
+
 </body>
 </html>

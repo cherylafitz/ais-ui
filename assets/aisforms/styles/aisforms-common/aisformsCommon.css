@@ -130,16 +130,15 @@ a.imgLink:hover {
   font-weight: normal;
 }
 
-/* <- bg color classes */
-
-
-/*<--MAIN STRUCTURE and STYLES */
-
-/* To Overwrite Amagavi CSS--> */
+/*<--MAIN STRUCTURE */
+/* To Overwrite Codivus CSS--> */
 #DisplayGroupUpdateContainerID .fromToWrapper ,
 #DisplayGroupUpdateContainerID .batchNavigation,
 #DisplayGroupUpdateContainerID .findDeadlinesWrapper {
   display: initial;
+}
+div.SecureDocumentEditorRowDisplay h1 {
+  margin-top: 1rem;
 }
 /* <--To Overwrite Amagavi CSS */
 /* LIST OF SECTIONS--> */
@@ -180,24 +179,30 @@ div.Content div.Rowdisplay {
   text-align: right;
 }
 /*NAV-->*/
+#TopMenu .menuItem,
+.menu .menuItem {
+    display: inline-block;
+}
+#TopMenu .menuItem:hover,
+.menu .menuItem:hover {
+  background-color: #34677f;
+}
 #TopMenu a,
 .menu a {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: .875rem;
+  font-size: .9375rem;
   display: inline-block;
   text-align: center;
-  padding: 0 1rem .125rem;
+  padding: .125rem 1rem .1875rem;
   color: #000;
   background-color: transparent;
-  font-weight: bold;
 }
 #TopMenu a:hover,
 .menu a:hover,
 .menu a:active,
 #TopMenu a:active {
   background: transparent;
-  color: #466672;
-  text-decoration: underline;
+  color: #FFF;
 }
 .menu a:active,
 #TopMenu a:active {
@@ -215,11 +220,10 @@ div.Content div.Rowdisplay {
   background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 ); /* IE6-9 */
-  padding: .0625rem 4rem .0625rem 0;
+  padding: 0 4rem 0 0;
   position: relative;
   z-index: 2;
-  border-top: 1px solid #8f9aa2;
-  border-bottom: 1px solid #8f9aa2;
+  border: none;
 }
 div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   margin-left: 0;
@@ -302,7 +306,7 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   color: #c4dcee;
 }
 #Header .LoginLogoutLink {
-  margin-top: 1.25rem;
+  margin-top: 1.125rem;
   position: absolute;
   right: 1rem;
   z-index: 10;
@@ -466,7 +470,8 @@ a.LinkToPreviousPage {
 #DataUsageGuidance a {
   color: #444;
 }
-.IsLoggedIn #CookieDeclaration a {
+.IsLoggedIn #CookieDeclaration a,
+.IsLoggedIn #PrivacyPolicy a {
   /*TEMP */
     color: #e9ead9;
     border-bottom-color: #e9ead9;
@@ -743,7 +748,6 @@ table.RowDisplay td {
   font-weight: normal;
 }
 table.RowDisplay tr.headerRow th {
-  font-weight: bold;
   padding: .5rem;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
@@ -911,8 +915,7 @@ th.TemplateName div {
 }
 th.filtered {
   text-shadow: none;
-  background-color: #5d6435;
-  color: #fff;
+  background-color: #eeb753;
 }
 .LiveTemplates table.RowDisplay td,
 .LiveTemplates table.RowDisplay tr.headerRow th {
@@ -1191,6 +1194,11 @@ table.TemplateTable tr td {
     padding: 1rem 1.5rem 0;
     margin: 1.5rem -1.5rem -3rem;
   }
+  .IsLoggedIn #PrivacyPolicy {
+    margin: 1.5rem 0 -3rem 1rem;
+    padding: 1rem 9rem 0 0;
+    z-index: 100;
+  }
 #UserHomeIntro {
   flex-basis: 500px;
   margin: 0;
@@ -1456,12 +1464,27 @@ div.ApplicationTemplateDisplay div.templateContent {
 }
 
 div#ApplicationTemplateDisplayAUC h1 {
-  font-variant: normal;
-  font-size: 1.25rem;
-  margin-bottom: .5rem;
+  font-size: .875rem;
+}
+div#ApplicationTemplateDisplayAUC h1.editing {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-right: .5rem;
 }
 div.ApplicationTemplateDisplay h2 {
   font-size: 1.125rem;
+}
+.ApplicationTemplateDisplay h2.ProgramNameLabel {
+    font-size: .875rem;
+}
+.ApplicationTemplateDisplay h1.FormViewHeader,
+.ApplicationTemplateDisplay h1.editing,
+.ApplicationTemplateDisplay h2.ProgramNameLabel {
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  padding: .75rem 1rem .5rem;
+  background-color: #e4e5e7;
 }
 .ApplicationTemplateDisplay form[name="sectionNavigationForm"] {
   margin-top: 1rem;
@@ -1476,9 +1499,13 @@ div.ApplicationTemplateDisplay h2 {
 h1.FormViewHeader .TemplateName {
   font-weight: bold;
 }
-h1.FormViewHeader :not(.TemplateName)
- {
-  font-size: .9em;
+h1.FormViewHeader .FormRefCode {
+  float: right;
+}
+h1.FormViewHeader .FormRefCode:before {
+  content: "Ref code ";
+  padding-left: .5rem;
+  color: #7b7e80;
 }
 h1.FormViewHeader .ProgramName {
   font-weight: bold;
@@ -1582,17 +1609,29 @@ div.SectionNavigator.vertical #menu3 a {
   display: block;
   padding: 3px 8px;
   border-bottom: 1px solid #FFF;
+  border-radius: 2px 4px 4px 2px;
+}
+.SectionNavigator.vertical #menu3 li:first-of-type a {
+  padding-top: .25rem;
+}
+.SectionNavigator.vertical #menu3 li:last-of-type a,
+.SectionNavigator.vertical #menu3 li:last-of-type a:hover,
+div.SectionNavigator.vertical #menu3 li:last-of-type a.current {
+  padding-bottom: .5rem;
+  border-bottom-width: 2px;
 }
 div.SectionNavigator.vertical #menu3 a:hover,
 div.SectionNavigator.vertical #menu3 li a.current {
-  padding-left: 5px;
-  border-left: 3px solid black;
+  padding-left: 4px;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #cecece;
+  border-left: 4px solid #3b6d99;
   background: #f1f5f9;
 }
 div.SectionNavigator.vertical {
   margin: 0 2rem 0 0;
   flex-basis: 14rem;
-  background-color: transparent;
+  background-color: #d8e8f3;
   z-index: 999;
   border-radius: 2px 2px 0px 0px;
   border: none;
@@ -2133,13 +2172,6 @@ legend:not(.SaveButton) {
     padding: 1rem;
   }
   #Header .Title,
-  #Header .aisFormsLogo,
-  #Header .ACLogo,
-  #Header .logo {
-    /*width: 150px;*/
-    /*margin-bottom: 1rem;*/
-  }
-  #Header .Title,
   #Header .aisFormsLogo {
     width: 135px;
   }
@@ -2189,10 +2221,6 @@ legend:not(.SaveButton) {
   }
   .LoginGetStarted {
     display: none;
-  }
-  div#ApplicationTemplateDisplayAUC h1 {
-    padding: 0.5em 0;
-    font-size: 1.1em;
   }
 
   div.ApplicationTemplateDisplay h2 {
