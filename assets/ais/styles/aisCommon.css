@@ -1853,9 +1853,7 @@ tr.PassportName td div.EntryArea,
 .evenRow,
 table.TravelInboundDisplay tr:nth-child(2n+2),
 table.TravelOutboundDisplay tr:nth-child(2n+2),
-/*.HealthQuestions tr:nth-child(2n+2),*/
 div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n) {
-  background-color: #dbe8f2;
   background-color: #dbe8f2;
 }
 #AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+2),
@@ -1870,7 +1868,6 @@ table.TravelOutboundDisplay tr:nth-child(2n+3),
 /*.HealthQuestions tr:nth-child(2n+3),
 .HealthQuestions tr:nth-child(2n + 1),*/
 div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n+1) {
-  background-color: #E8EBD9;
   background-color: #fff;
 }
 table.RowDisplay tbody tr.submitted_odd /* .submitted_odd, table.RowDisplay tr:nth-child(2n+3), table.RowDisplay tbody tr:nth-child(2n+3) */  {
