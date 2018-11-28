@@ -757,6 +757,9 @@ div.ArticleViewer fieldset {
   padding-bottom: .75rem;
 }
 
+fieldset:not(:first-child):first-of-type {
+  margin-top: .75rem;
+}
 div.HomePageForAll fieldset fieldset,
 fieldset fieldset,
 td.content fieldset fieldset  {
@@ -3253,6 +3256,14 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 }
 
 /* <-- PAGE: FORM TRACKER */
+
+/* PAGE: AISBOX --> */
+.AISMultipleFileUploadStatus .UploaderLink {
+  float: left;
+  margin-right: 1rem;
+}
+
+/* <-- PAGE: AISBOX */
 
 /* PAGE: AIS FORMS SUMMARY --> */
 
