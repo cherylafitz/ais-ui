@@ -778,6 +778,7 @@ div.AIRAdminSearchForApplications #outerTableContainerID table.Search.rolodex {
   border: none;
 }
 table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
 table.RowDisplay td {
   font-size: .875rem;
   white-space: nowrap;
@@ -787,7 +788,8 @@ table.RowDisplay td {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
-table.RowDisplay tr.headerRow th {
+table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th {
   padding: .5rem;
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
@@ -807,13 +809,15 @@ div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.he
 div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
   max-width: 1200px;
 }
-table.RowDisplay tr.headerRow {
+table.RowDisplay tr.headerRow,
+table.RowDisplay thead tr {
   font-style: normal;
   font-size: 1rem;
   border-bottom: 2px solid #363a3e;
   border-top: 2px solid #363a3e;
 }
 table.RowDisplay tr.headerRow th a,
+table.RowDisplay thead tr th a,
 table.RowDisplay td a {
   color: #000000;
   text-decoration: underline;
@@ -821,6 +825,7 @@ table.RowDisplay td a {
 }
 
 table.RowDisplay tr.headerRow th a:hover,
+table.RowDisplay thead tr th a:hover,
 table.RowDisplay td a:hover {
   text-decoration: none;
   border-bottom: none;
@@ -831,6 +836,7 @@ table.RowDisplay td a:active {
   color: #73382C;
 }
 table.RowDisplay tr.headerRow,
+table.RowDisplay thead tr,
 tr.headerRow,
 tr.headerRow th a {
   background-color: #fff;
