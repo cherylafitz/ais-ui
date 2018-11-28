@@ -1865,8 +1865,6 @@ tr.ApplicationName td div.EntryArea,
 .oddRow,
 table.TravelInboundDisplay tr:nth-child(2n+3),
 table.TravelOutboundDisplay tr:nth-child(2n+3),
-/*.HealthQuestions tr:nth-child(2n+3),
-.HealthQuestions tr:nth-child(2n + 1),*/
 div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n+1) {
   background-color: #fff;
 }
