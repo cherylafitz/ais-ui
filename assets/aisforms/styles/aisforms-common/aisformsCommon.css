@@ -1509,13 +1509,24 @@ div.ApplicationTemplateDisplay div.templateContent {
 
 div#ApplicationTemplateDisplayAUC h1 {
   font-size: .875rem;
-  margin-bottom: 1rem;
+}
+div#ApplicationTemplateDisplayAUC h1.editing {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding-right: .5rem;
 }
 div.ApplicationTemplateDisplay h2 {
   font-size: 1.125rem;
 }
-.ApplicationTemplateDisplay h1.FormViewHeader {
-  margin: -1.5rem -1.5rem .5rem -1.5rem;
+.ApplicationTemplateDisplay h2.ProgramNameLabel {
+    font-size: .875rem;
+}
+.ApplicationTemplateDisplay h1.FormViewHeader,
+.ApplicationTemplateDisplay h1.editing,
+.ApplicationTemplateDisplay h2.ProgramNameLabel {
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
   padding: .75rem 1rem .5rem;
   background-color: #e4e5e7;
 }
