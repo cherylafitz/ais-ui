@@ -1516,7 +1516,7 @@ div.ApplicationTemplateDisplay div.templateContent {
 div#ApplicationTemplateDisplayAUC h1 {
   font-size: .875rem;
 }
-div#ApplicationTemplateDisplayAUC h1.editing {
+div#ApplicationTemplateDisplayAUC h1.editing:not(.FormViewHeader) {
   float: left;
   margin-top: 0;
   margin-bottom: 0;
