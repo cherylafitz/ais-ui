@@ -4,6 +4,7 @@
 div.SystemAnnouncementsWrapper {
     padding: .5rem;
     background-color: #2b353c;
+    margin: -1.5rem -1.5rem 1.5rem;
 }
 
 div.SystemAnnouncementsWrapper div.SystemAnnouncement,
@@ -18,14 +19,16 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   z-index: 1;
   position: relative;
   flex-basis: 100%;
+  border: 1px solid #2c353a;
   border-left: .75rem solid #c93028;
+  margin: 0;
 }
 .SystemAnnouncement p {
   margin: .25rem 0;
   font-size: .875rem;
 }
 
-body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper {
   margin: 0;
 }
 
