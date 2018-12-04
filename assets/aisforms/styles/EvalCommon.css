@@ -84,6 +84,12 @@ div.BeforeQuestion table tr th {
   background-color: #e4e5e7;
   padding: .5rem 1rem;
 }
+.GroupedItem .fromApplicant {
+  background-color: #F3F3F3;
+}
+.subQuestion {
+  margin-left: 0;
+}
 
 div.Content .fromApplicant div.QuestionNumber,
 div.Content .fromRecommender div.QuestionNumber  {
@@ -251,11 +257,6 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
 
 div.QuestionItem.fromApplicant,
 div.QuestionItem.fromRecommender  {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  padding: 0.5em;
-  border-left: 3px double #cecece;
   margin: 0em;
 }
 td div.QuestionItem.fromApplicant,
