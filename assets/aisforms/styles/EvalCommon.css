@@ -7,9 +7,9 @@ table td div.PDFDownload {
 
 div.TotalScoreFormula {
     border: medium solid #2E6B9B;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
     margin: 0.5em 1em 1em 0;
     padding: 0.5em;
     width: 21em;
@@ -63,6 +63,8 @@ div.Content div.MailAddrZIP {
 
 .Content .SectionDisplay .LongTextNoEditing {
   text-align: justify;
+  padding: .5rem;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* Tables */
@@ -80,8 +82,10 @@ div.BeforeQuestion table tr th {
 
 /* Alignment/Spacing */
 
-.fromApplicant {
+.fromApplicant,
+.fromApplicant .GroupedItem {
   background-color: #e4e5e7;
+  /*background-color: #f3f3f3;*/
   padding: .5rem 1rem;
 }
 .GroupedItem .fromApplicant {
@@ -187,6 +191,10 @@ div.SectionIntroductionText table.AppRefCode tr td {
   margin-right:10px;
 }
 
+.recommendation-letters .SectionItemsList > div > .fromRecommender > .QuestionAnswer > .itemDisplayOuterContainer {
+  background-color: #e4e5e7;
+  border: 1px solid #cecece;
+}
 .QuestionItem.fromRecommender.RecommenderFirstName,
 .RecommendationsReceived,
 .StaffUploadRecommendation {
@@ -202,6 +210,11 @@ div.SectionIntroductionText table.AppRefCode tr td {
 }
 .QuestionItem.fromRecommender {
   padding: .5em;
+}
+div.Content .fromRecommender .RecOverallComments {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid #cecece;
 }
 div.Content div.Divider, div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
   margin-top: 0;
@@ -234,24 +247,25 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
 }
 
 /* For evaluator note fields within application and recommendation import sections that can be displayed on evaluation and scoring section */
-.evaluatorNotes {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+.evaluatorNotes,
+.evaluatorNotesDisplay {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   padding: .5em;
-  border: 3px double #2E6B9B;
-  background-color: #FFFFDD;
+  border: 1px solid #f6b844;
+  background-color: #ffe2b3;
 }
 
-.evaluatorNotesDisplay {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  padding: .5em;
-  margin-bottom:1em;
+/*.evaluatorNotesDisplay {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: .5rem;
+  margin-bottom:1rem;
   border: 3px double #CECECE;
   background-color: #FFFFDD;
-}
+}*/
 
 /* Application Question Emphasis */
 
