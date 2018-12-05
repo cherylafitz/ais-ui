@@ -194,7 +194,7 @@
   </div>
   </div>
   </div>
-<!-- ***Note to Codivus: NO CHANGES -->
+<!-- ***Note to Codivus: ADDED #Policies div to footer2 div, otherwise no changes; should be done throughout AIS Forms, removing #PrivacyPolicy and #CookieDeclaration from .Content div -->
 <div id="footer">
   <div id="footer2">
     <div class="logo"></div>
@@ -211,6 +211,14 @@
         <span class="copyright">© American Councils for International Education</span> <span class="rights-reserved">All rights reserved.</span>
       </div>
     </div>
+    <div id="Policies">
+      <div id="PrivacyPolicy">
+        <a href="#" onclick="Modalbox.show('/cgi-bin/WebObjects/ais.woa/wa/siteText?ref=privacyStatement&amp;modal=yes', {title: 'Privacy Statement'});">Privacy Statement</a>
+      </div>
+      <div id="CookieDeclaration">
+        <a href="#" onclick="Modalbox.show('/cgi-bin/WebObjects/ais.woa/wa/siteText?ref=CookieDeclaration&amp;modal=yes', {title: 'Cookie Declaration'});">Cookie Declaration</a>
+      </div>
+    </div>
   </div>
   <div id="amagavi">
     <table><tbody><tr><td class="logoCell"><a href="http://www.codivus.com/"><img width="28" height="25" src="/WebObjects/AIR2.woa/Contents/WebServerResources/amagavi/amagavi-butler-transBG.gif"></a></td>
@@ -221,35 +229,36 @@
 
 <script type="text/javascript">
 
-var showCreateAccount = document.getElementById("showCreateAccount"),
-    showLogin = document.getElementById("showLogin"),
-    createAccountForm = document.getElementById("CreateAccountForm"),
-    loginForm = document.getElementById("LoginForm"),
-    formTitle = document.getElementById("formTitle");
+  var showCreateAccount = document.getElementById("showCreateAccount"),
+      showLogin = document.getElementById("showLogin"),
+      createAccountForm = document.getElementById("CreateAccountForm"),
+      loginForm = document.getElementById("LoginForm"),
+      formTitle = document.getElementById("formTitle");
 
-var focusFirstInput = function(event, form){
-  // set timeout to allow form css transition before focus
-  setTimeout(function() {
-    form.getElementsByTagName("input")[0].focus();
-  },400);
-};
+  var focusFirstInput = function(event, form){
+    // set timeout to allow form css transition before focus
+    setTimeout(function() {
+      form.getElementsByTagName("input")[0].focus();
+    },400);
+  };
 
-var showHideForm = function(event,formToShow,formToHide) {
-  formToShow.classList.toggle("hide-element");
-  formToHide.classList.toggle("hide-element");
-};
+  var showHideForm = function(event,formToShow,formToHide) {
+    // only works with elements that already have the class "toggles"
+    formToShow.classList.toggle("hide-element");
+    formToHide.classList.toggle("hide-element");
+  };
 
-showCreateAccount.addEventListener("click", function(event) {
-  showHideForm(event, createAccountForm, loginForm);
-  focusFirstInput(event, createAccountForm);
-  formTitle.innerHTML="Create account";
-});
+  showCreateAccount.addEventListener("click", function(event) {
+    showHideForm(event, createAccountForm, loginForm);
+    focusFirstInput(event, createAccountForm);
+    formTitle.innerHTML="Create account";
+  });
 
-showLogin.addEventListener("click", function(event) {
-  showHideForm(event, loginForm, createAccountForm);
-  focusFirstInput(event, loginForm);
-  formTitle.innerHTML="Log in";
-});
+  showLogin.addEventListener("click", function(event) {
+    showHideForm(event, loginForm, createAccountForm);
+    focusFirstInput(event, loginForm);
+    formTitle.innerHTML="Log in";
+  });
 
 </script>
 

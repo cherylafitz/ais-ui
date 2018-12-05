@@ -438,14 +438,10 @@ a.LinkToPreviousPage {
 .policies {
   margin: .5rem 0;
 }
-#Policies {
-  display: none;
-}
 #PrivacyPolicy,
 #CookieDeclaration,
 #DataUsageGuidance {
   font-size: .875rem;
-  text-align: right;
   position: relative;
   z-index: 1;
 }
@@ -2313,7 +2309,7 @@ legend:not(.SaveButton) {
   div.AvailableForms {
     width: 100%;
   }
-    .LoginGetStarted {
+  .LoginGetStarted {
     display: none;
   }
 }
@@ -2624,7 +2620,10 @@ button:hover {
   #AClogoFooter {
     float: left;
   }
-  .AClogoAddressFooter {
+  .AClogoAddressFooter,
+  #PrivacyPolicy,
+  #CookieDeclaration,
+  #DataUsageGuidance {
     text-align: right;
   }
   #footer #amagavi table {
