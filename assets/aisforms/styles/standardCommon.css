@@ -488,7 +488,8 @@ div.Content table.AnswerTable thead tr th {
   padding: 0.25rem;
 }
 div.SectionDisplay table.AnswerTable tr td,
-div.SectionDisplay table th  {
+div.SectionDisplay table th,
+.SectionDisplay table.RowDisplay td  {
   border: 1px solid #fff;
   vertical-align: top;
   padding: .125rem .25rem;
@@ -497,6 +498,11 @@ div.SectionDisplay .ItemAddress th {
   text-align: left;
   font-weight: normal;
   background-color: #2E6B9B;
+}
+.SectionDisplay table.RowDisplay tr.headerRow,
+.SectionDisplay table.RowDisplay thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 div.SectionDisplay table.ERXMatrixTable tr td,
 div.SectionDisplay  table.AnswerTable div.RadioButtonMatrix tr td,
@@ -815,7 +821,7 @@ div.Content div.AfterQuestion {
 }
 
 
-div.Content div.GroupedItem {
+.Content .GroupedItem {
   padding: .75rem;
   margin: .5em 0 1em 0;
   background-color: #F3F3F3;
