@@ -2287,9 +2287,6 @@ legend:not(.SaveButton) {
     div.MyEvaluationQueuesAsEvaluator table {
     margin: 0;
   }
-  .Tips {
-    display: none;
-  }
   #UserHomeAfterFormsInfo {
     flex-basis: 100%;
   }

@@ -13,29 +13,24 @@
   background-color: #29353d;
   padding: 1.5rem;
 }
-
-.IsNotLoggedIn .aisFormsBrand {
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .IsNotLoggedIn #AClogo {
   max-height: 40px;
   display: block;
 }
+.IsNotLoggedIn .aisFormsBrand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Styles for custom content and forms wrapper */
 .IsNotLoggedIn .ValidationAndForms {
   display: flex;
   justify-content: center;
-  background: #ffffff;
-  font-family: sans-serif;
   flex-wrap: wrap;
-  min-height: calc(100vh - 389px);
-  }
+}
 .IsNotLoggedIn .CustomContent {
   flex-basis: 348px;
   flex-grow: 3;
-  order: 1;
   padding-bottom: 1rem;
 }
 .IsNotLoggedIn .CustomContent .logos {
@@ -49,38 +44,29 @@
 }
 .IsNotLoggedIn .LoginWelcome .PageTitle h1 {
   color: #2e6a9b;
-  font-weight: normal;
   font-size: 1.5rem;
+}
+.IsNotLoggedIn .LoginText {
+  max-width: 750px;
 }
 .IsNotLoggedIn .LoginForms {
   background: #e0e6f0;
-  order: 2;
   flex-grow: 1;
-  position: relative;
+  /*position: relative;*/
   width: 300px;
   max-width: 100%;
 }
 .IsNotLoggedIn #LoginForm,
 .IsNotLoggedIn #CreateAccountForm {
-  margin: 0;
   padding: 1rem;
   background: #e0e6ef;
-  box-sizing: border-box;
-  max-height: 1000px;
-  overflow: hidden;
-  transition: max-height 1.2s ease-out;
-  z-index: 1;
-  opacity: 1;
-}
-.IsNotLoggedIn #loginHeading {
-  background: #33424d;
-  padding: 1rem;
 }
 .IsNotLoggedIn #aisLogo {
   height: 40px;
   display: block;
 }
 .IsNotLoggedIn #loginHeading {
+  padding: 1rem;
   background: #29353d;
   display: flex;
   justify-content: space-between;
@@ -90,7 +76,6 @@
 }
 .IsNotLoggedIn #loginHeading h2 {
   text-align: right;
-  font-weight: normal;
   font-size: 1rem;
   order: 1;
   color: #fff;
@@ -125,9 +110,6 @@
 .IsNotLoggedIn .LoginActions {
   margin-top: 1.5rem;
 }
-.IsNotLoggedIn .LoginText {
-  max-width: 750px;
-}
 .IsNotLoggedIn .ForgotPassword {
   margin: 1rem 0 0;
   font-size: .875rem;
@@ -141,7 +123,10 @@
 }
 .toggles {
   display: block;
-  max-height: 1000;
+  max-height: 1000px;
+  opacity: 1;
+  overflow: hidden;
+  transition: max-height 1.2s ease-out;
   opacity: 1;
 }
 .hide-element {
