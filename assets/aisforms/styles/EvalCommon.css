@@ -41,8 +41,8 @@ body div.Content div.ProgramLanguage1,
 body div.Content div.ProgramDuration1,
 body div.Content div.ProgramLanguage2,
 body div.Content div.ProgramDuration2,
-body div.Content div.RecommenderFirstName,
-body div.Content div.RecommenderLastName,
+/*body div.Content div.RecommenderFirstName,
+body div.Content div.RecommenderLastName,*/
 body div.Content div.RecommenderCity,
 body div.Content div.RecommenderStateProvince,
 body div.Content div.RecommenderZIPPostalCode,
@@ -54,6 +54,15 @@ body div.Content div.ParentRecommender1LastName {
   float: left;
   clear: none;
 }
+body div.Content div.RecommenderFirstName,
+body div.Content div.RecommenderLastName {
+  float: none;
+}
+body div.Content div.RecommenderFirstName:not(:first-child) {
+  padding-top: 2rem;
+  border-top: 3px solid #cecece;
+  margin-top: 2rem;
+}
 
 div.Content div.MailAddrZIP {
   clear: left;
@@ -63,8 +72,11 @@ div.Content div.MailAddrZIP {
 
 .Content .SectionDisplay .LongTextNoEditing {
   text-align: justify;
-  padding: .5rem;
-  background: rgba(255, 255, 255, 0.5);
+  padding: .5rem 1rem;
+  background: rgba(255, 255, 255, .5);
+  border: 1px solid #cecece;
+  border-radius: 2px;
+  margin-bottom: .5rem;
 }
 
 /* Tables */
@@ -83,13 +95,16 @@ div.BeforeQuestion table tr th {
 /* Alignment/Spacing */
 
 .fromApplicant,
-.fromApplicant .GroupedItem {
+div.Content .fromApplicant div.GroupedItem {
   background-color: #e4e5e7;
-  /*background-color: #f3f3f3;*/
+  background-color: #f3f3f3;
+  background-color: #dfe5ec;
   padding: .5rem 1rem;
 }
+
+
 .GroupedItem .fromApplicant {
-  background-color: #F3F3F3;
+  background: rgba(255, 255, 255, .75);
 }
 .subQuestion {
   margin-left: 0;
@@ -105,6 +120,8 @@ div.Content .fromRecommender div.QuestionNumber  {
 
 div.Content div.BeforeQuestion.fromApplicant {
   color: #3F3F3F;
+  background-color: transparent;
+  padding: 0;
 }
 
 .fromApplicant.MissingItemForAttemptedSubmit {
@@ -193,9 +210,10 @@ div.SectionIntroductionText table.AppRefCode tr td {
 
 .recommendation-letters .SectionItemsList > div > .fromRecommender > .QuestionAnswer > .itemDisplayOuterContainer {
   background-color: #e4e5e7;
-  border: 1px solid #cecece;
+  background-color: #eff2f6;
+  /*border: 1px solid #cecece;*/
 }
-.QuestionItem.fromRecommender.RecommenderFirstName,
+/*.QuestionItem.fromRecommender.RecommenderFirstName,
 .RecommendationsReceived,
 .StaffUploadRecommendation {
   -webkit-border-top-left-radius: 20px;
@@ -203,11 +221,11 @@ div.SectionIntroductionText table.AppRefCode tr td {
   border-top-left-radius: 20px;
   border-left: 3px solid #CECECE;
   border-top: 3px solid #CECECE;
-  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-left-radiures: 20px;
   -moz-border-radius-topleft: 20px;
   border-top-left-radius: 20px;
   padding: .5em;
-}
+}*/
 .QuestionItem.fromRecommender {
   padding: .5em;
 }
@@ -216,8 +234,14 @@ div.Content .fromRecommender .RecOverallComments {
   margin-bottom: 2.5rem;
   border-bottom: 3px solid #cecece;
 }
-div.Content div.Divider, div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
+div.Content div.Divider,
+div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
   margin-top: 0;
+  padding-top: .5rem;
+  padding-bottom: .25rem;
+}
+div#ApplicationTemplateDisplayAUC div.SectionDisplay .DisplayItemOnly h1 {
+  /*padding-top: 1rem;*/
 }
 select:disabled,
 td input[type="radio"]:disabled,
@@ -272,6 +296,7 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
 div.QuestionItem.fromApplicant,
 div.QuestionItem.fromRecommender  {
   margin: 0em;
+  padding-right: 1rem;
 }
 td div.QuestionItem.fromApplicant,
 td div.QuestionItem.fromRecommender {
@@ -291,7 +316,9 @@ div.BeforeQuestion.fromRecommender {
 div.QuestionItem.fromEvaluator {
   margin-top: .5em;
 }
-
+.fromEvaluator .Instruction {
+  margin-top: .5rem;
+}
 div.fromApplicant div.QuestionText div.Title,
 div.fromRecommender div.QuestionText div.Title {
     margin-bottom:0.5em;
@@ -307,5 +334,8 @@ div.Content .fromRecommender div.QuestionText,
 div.Content .fromRecommender div.QuestionAnswer {
   margin-left: 0;
 }
+/*.TextQuestion {
+  border-bottom: 1px solid #000;
+}*/
 
 /* END Application Question Emphasis
