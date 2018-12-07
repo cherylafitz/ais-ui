@@ -58,10 +58,21 @@ body div.Content div.RecommenderFirstName,
 body div.Content div.RecommenderLastName {
   float: none;
 }
+body {
+  counter-reset: recommendation-increment;
+}
+body div.Content div.RecommenderFirstName {
+  counter-increment: recommendation-increment;
+}
+body div.Content div.RecommenderFirstName:before {
+  content: "Recommendation " counter(recommendation-increment);
+  font-size: 1.5rem;
+  margin: .25rem 0 1rem;
+  display: block;
+}
 body div.Content div.RecommenderFirstName:not(:first-child) {
-  padding-top: 2rem;
   border-top: 3px solid #cecece;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 div.Content div.MailAddrZIP {
@@ -95,11 +106,12 @@ div.BeforeQuestion table tr th {
 /* Alignment/Spacing */
 
 .fromApplicant,
-div.Content .fromApplicant div.GroupedItem {
+div.Content .fromApplicant div.GroupedItem,
+.QuestionItem.fromRecommender {
   background-color: #e4e5e7;
   background-color: #f3f3f3;
-  background-color: #dfe5ec;
-  padding: .5rem 1rem;
+  background-color: #e4e5e7;
+  padding: .375rem 1rem .25rem;
 }
 
 
@@ -144,7 +156,7 @@ div.Content div.BeforeQuestion.fromApplicant {
 /* ISSUES --> */
 div.Content .fromRecommender .fromRecommender div.QuestionText,
 div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
-  margin-left: 1.7em;
+  /*margin-left: 1.7em;*/
 }
 div.Content .fromApplicant div.Title {
   color: #3F3F3F;
@@ -209,8 +221,8 @@ div.SectionIntroductionText table.AppRefCode tr td {
 }
 
 .recommendation-letters .SectionItemsList > div > .fromRecommender > .QuestionAnswer > .itemDisplayOuterContainer {
-  background-color: #e4e5e7;
-  background-color: #eff2f6;
+/*  background-color: #e4e5e7;
+  background-color: #eff2f6;*/
   /*border: 1px solid #cecece;*/
 }
 /*.QuestionItem.fromRecommender.RecommenderFirstName,
@@ -226,9 +238,10 @@ div.SectionIntroductionText table.AppRefCode tr td {
   border-top-left-radius: 20px;
   padding: .5em;
 }*/
-.QuestionItem.fromRecommender {
+/*.QuestionItem.fromRecommender {
   padding: .5em;
-}
+  background-color: #e4e5e7;
+}*/
 div.Content .fromRecommender .RecOverallComments {
   padding-bottom: 2.5rem;
   margin-bottom: 2.5rem;
@@ -297,6 +310,7 @@ div.QuestionItem.fromApplicant,
 div.QuestionItem.fromRecommender  {
   margin: 0em;
   padding-right: 1rem;
+  margin-bottom: .125rem;
 }
 td div.QuestionItem.fromApplicant,
 td div.QuestionItem.fromRecommender {
@@ -334,8 +348,11 @@ div.Content .fromRecommender div.QuestionText,
 div.Content .fromRecommender div.QuestionAnswer {
   margin-left: 0;
 }
-/*.TextQuestion {
-  border-bottom: 1px solid #000;
-}*/
+.TextQuestion {
+/*  padding: .125rem .325rem;
+  background: rgba(255, 255, 255, .5);
+  border: 1px solid #cecece;
+  border-radius: 2px;*/
+}
 
 /* END Application Question Emphasis
