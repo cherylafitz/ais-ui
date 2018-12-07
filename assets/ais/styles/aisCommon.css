@@ -2627,7 +2627,12 @@ div.PIPYDisplay .PlacementReportReasonSortOrder {
 }
 
 /* PAGE: PROGRAM SETTINGS --> */
-
+.ProgramViewEditDetail fieldset img {
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 125px;
+}
 .ProgramViewEditDetail fieldset:not(:first-of-type) {
   margin-top: 1rem;
 }
