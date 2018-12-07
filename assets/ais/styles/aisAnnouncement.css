@@ -15,9 +15,9 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   position: relative;
   flex-basis: 100%;
   border-left: .75rem solid #de463d;
-  -moz-box-shadow: 0 0 0px 0.5rem #2b353c;
-  -webkit-box-shadow: 0 0 0px 0.5rem #2b353c;
-  box-shadow: 0 0 0px 0.5rem #2b353c;
+  -moz-box-shadow: 0 0 0px 0.625rem #2b353c;
+  -webkit-box-shadow: 0 0 0px 0.625rem #2b353c;
+  box-shadow: 0 0 0px 0.625rem #2b353c;
   margin: -1rem -1rem 2rem;
 }
 .SystemAnnouncement p {
