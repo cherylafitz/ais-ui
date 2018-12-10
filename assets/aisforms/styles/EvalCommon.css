@@ -7,9 +7,9 @@ table td div.PDFDownload {
 
 div.TotalScoreFormula {
     border: medium solid #2E6B9B;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
     margin: 0.5em 1em 1em 0;
     padding: 0.5em;
     width: 21em;
@@ -252,6 +252,9 @@ div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
   margin-top: 0;
   padding-top: .5rem;
   padding-bottom: .25rem;
+}
+.Content .SectionDisplay h1 {
+  font-size:
 }
 div#ApplicationTemplateDisplayAUC div.SectionDisplay .DisplayItemOnly h1 {
   /*padding-top: 1rem;*/
