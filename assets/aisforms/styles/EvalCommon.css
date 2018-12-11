@@ -105,13 +105,18 @@ div.BeforeQuestion table tr th {
 
 /* Alignment/Spacing */
 
-.fromApplicant,
+.QuestionItem.fromApplicant,
+.subQuestion.fromApplicant,
+.Group.fromApplicant,
 div.Content .fromApplicant div.GroupedItem,
 .QuestionItem.fromRecommender {
   background-color: #e4e5e7;
-  background-color: #f3f3f3;
-  background-color: #e4e5e7;
   padding: .375rem 1rem .25rem;
+  margin-bottom: .125rem;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 0 .125rem .125rem 0;
 }
 
 
@@ -148,11 +153,6 @@ div.Content div.BeforeQuestion.fromApplicant {
   background-color: transparent;
 }
 
-/* CHECK --> */
-/*div.Content div.QuestionText {
-  margin-left: 2rem;
-}*/
-
 /* ISSUES --> */
 div.Content .fromRecommender .fromRecommender div.QuestionText,
 div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
@@ -160,9 +160,9 @@ div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
 }
 div.Content .fromApplicant div.Title {
   color: #3F3F3F;
-  margin-top: 0.2em;
+  margin-top: 0.25rem;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 div.Content .fromApplicant div.NumberOfWords,
@@ -220,44 +220,20 @@ div.SectionIntroductionText table.AppRefCode tr td {
   margin-right:10px;
 }
 
-.recommendation-letters .SectionItemsList > div > .fromRecommender > .QuestionAnswer > .itemDisplayOuterContainer {
-/*  background-color: #e4e5e7;
-  background-color: #eff2f6;*/
-  /*border: 1px solid #cecece;*/
-}
-/*.QuestionItem.fromRecommender.RecommenderFirstName,
-.RecommendationsReceived,
-.StaffUploadRecommendation {
-  -webkit-border-top-left-radius: 20px;
-  -moz-border-radius-topleft: 20px;
-  border-top-left-radius: 20px;
-  border-left: 3px solid #CECECE;
-  border-top: 3px solid #CECECE;
-  -webkit-border-top-left-radiures: 20px;
-  -moz-border-radius-topleft: 20px;
-  border-top-left-radius: 20px;
-  padding: .5em;
-}*/
-/*.QuestionItem.fromRecommender {
-  padding: .5em;
-  background-color: #e4e5e7;
-}*/
 div.Content .fromRecommender .RecOverallComments {
   padding-bottom: 2.5rem;
   margin-bottom: 2.5rem;
   border-bottom: 3px solid #cecece;
 }
 div.Content div.Divider,
-div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
-  margin-top: 0;
-  padding-top: .5rem;
-  padding-bottom: .25rem;
+div#ApplicationTemplateDisplayAUC div.SectionDisplay h1,
+.Content div.SectionDisplay h2 {
+  margin: 0;
+  padding-top: .75rem;
+  padding-bottom: .325rem;
 }
 .Content .SectionDisplay h1 {
   font-size:
-}
-div#ApplicationTemplateDisplayAUC div.SectionDisplay .DisplayItemOnly h1 {
-  /*padding-top: 1rem;*/
 }
 select:disabled,
 td input[type="radio"]:disabled,
@@ -297,24 +273,8 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
   background-color: #ffe2b3;
 }
 
-/*.evaluatorNotesDisplay {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  padding: .5rem;
-  margin-bottom:1rem;
-  border: 3px double #CECECE;
-  background-color: #FFFFDD;
-}*/
-
 /* Application Question Emphasis */
 
-div.QuestionItem.fromApplicant,
-div.QuestionItem.fromRecommender  {
-  margin: 0em;
-  padding-right: 1rem;
-  margin-bottom: .125rem;
-}
 td div.QuestionItem.fromApplicant,
 td div.QuestionItem.fromRecommender {
   -webkit-border-radius: 0px;
@@ -338,7 +298,7 @@ div.QuestionItem.fromEvaluator {
 }
 div.fromApplicant div.QuestionText div.Title,
 div.fromRecommender div.QuestionText div.Title {
-    margin-bottom:0.5em;
+  margin-bottom:0.5em;
 }
 
 div.Content div.fromApplicant div.QuestionNumber,
@@ -346,6 +306,7 @@ div.Content div.fromRecommender div.QuestionNumber {
   display: none;
 }
 div.Content .fromApplicant div.QuestionText,
+div.Content div.subConditional div.QuestionText,
 div.Content .fromApplicant div.QuestionAnswer,
 div.Content .fromRecommender div.QuestionText,
 div.Content .fromRecommender div.QuestionAnswer {
