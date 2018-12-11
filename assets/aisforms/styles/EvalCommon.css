@@ -113,9 +113,9 @@ div.Content .fromApplicant div.GroupedItem,
   background-color: #e4e5e7;
   padding: .375rem 1rem .25rem;
   margin-bottom: .125rem;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   margin: 0 .125rem .125rem 0;
 }
 
