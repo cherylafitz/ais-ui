@@ -83,25 +83,36 @@ div.Content div.MailAddrZIP {
 
 .Content .SectionDisplay .LongTextNoEditing {
   text-align: justify;
-  padding: .5rem 1rem;
+  padding: .5rem .75rem;
   background: rgba(255, 255, 255, .5);
   border: 1px solid #cecece;
   border-radius: 2px;
   margin-bottom: .5rem;
+  color: #333333;
 }
 
 /* Tables */
 
-/*CHECK --> */
-/*div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th {
-  border: black thin solid;
-  text-align: left;
-  vertical-align: top;
-  font-weight: bold;
-  font-style: normal;
-}*/
+div.Content .fromApplicant table.AnswerTable tr td div,
+.fromApplicant table div.itemDisplayOuterContainer,
+div.Content .fromApplicant table.AnswerTable tr td:first-child {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
+.fromApplicant .ChoiceQuestion .SelectedChoice ~ td,
+.fromApplicant .CheckboxMatrix .SelectedChoice ~ td,
+.fromRecommender .ChoiceQuestion .SelectedChoice ~ td,
+.fromRecommender .CheckboxMatrix .SelectedChoice ~ td {
+  color: #333333;
+}
+.fromApplicant .ChoiceQuestion td,
+.fromApplicant .CheckboxMatrix td,
+.fromRecommender .ChoiceQuestion td,
+.fromRecommender .CheckboxMatrix td {
+  color: #999;
+}
 
 /* Alignment/Spacing */
 
@@ -132,11 +143,11 @@ div.Content .fromRecommender div.QuestionNumber  {
   float:left;
   font-weight: bold;
   padding-right: .5rem;
-  color: #3F3F3F;
+  color: #333333;
 }
 
 div.Content div.BeforeQuestion.fromApplicant {
-  color: #3F3F3F;
+  color: #333333;
   background-color: transparent;
   padding: 0;
 }
@@ -158,11 +169,12 @@ div.Content .fromRecommender .fromRecommender div.QuestionText,
 div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
   /*margin-left: 1.7em;*/
 }
-div.Content .fromApplicant div.Title {
-  color: #3F3F3F;
+div.Content .fromApplicant div.Title,
+div.Content .fromRecommender div.Title {
+  color: #333333;
   margin-top: 0.25rem;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: .95rem;
 }
 
 div.Content .fromApplicant div.NumberOfWords,
@@ -246,7 +258,7 @@ input[type="checkbox"]:disabled,
 input[type="checkbox"]:disabled:active,
 input[type="checkbox"]:disabled:hover,
 input[type="checkbox"]:disabled:hover:active {
-  color: #000; ! important;
+  color: #333333; ! important;
 }
 div.Content table.AnswerTable tr td:first-child {
     padding: 6px 2px;
@@ -313,10 +325,21 @@ div.Content .fromRecommender div.QuestionAnswer {
   margin-left: 0;
 }
 .TextQuestion {
-/*  padding: .125rem .325rem;
-  background: rgba(255, 255, 255, .5);
-  border: 1px solid #cecece;
-  border-radius: 2px;*/
+  color: #333333;
+}
+.fromApplicant input[type="button" i]:disabled,
+.fromApplicant input[type="submit" i]:disabled,
+.fromApplicant input[type="reset" i]:disabled,
+.fromApplicant input[type="file" i]:disabled::-webkit-file-upload-button,
+.fromApplicant button:disabled,
+.fromApplicant select:disabled,
+.fromApplicant optgroup:disabled,
+.fromApplicant option:disabled,
+.fromApplicant select[disabled] > option {
+  color: #333333 !important;
+  -webkit-text-fill-color: #333333;
+  background-color: rgba(255, 255, 255, .5);
+  font-size: 1rem;
 }
 
 /* END Application Question Emphasis
