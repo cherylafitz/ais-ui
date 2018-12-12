@@ -801,11 +801,15 @@ table a {
   color: #222222;
 }
 table.RowDisplay tr:nth-child(2n+2),
-table.RowDisplay tbody tr:nth-child(2n+2) {
+table.RowDisplay tbody tr:nth-child(2n+2),
+/* added for tables with thead */
+table.RowDisplay thead ~ tbody tr:nth-child(2n+1) {
   background-color: #dbe8f2;
 }
 table.RowDisplay tr:nth-child(2n+3),
-table.RowDisplay tbody tr:nth-child(2n+3) {
+table.RowDisplay tbody tr:nth-child(2n+3),
+/* added for tables with thead */
+table.RowDisplay thead ~ tbody tr:nth-child(2n+2) {
   background-color: #fff;
 }
 table.RowDisplay tbody tr.submitted_odd,
