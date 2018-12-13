@@ -2,10 +2,8 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <!-- <link rel="stylesheet" type="text/css" href="../../../static/aisforms/styles/aisformsCommon.css"> -->
-  <link rel="stylesheet" type="text/css" href="../styles/aisforms-common/aisformsCommon.css">
-  <link rel="stylesheet" type="text/css" href="../styles/aisforms-common/loginPage.css">
+  <!-- ***Note to Codivus: Using "dev" in name while testing new css with non-login pages on AIS Forms staging; will just pull from aisformsCommon.css in production  -->
+  <link rel="stylesheet" type="text/css" href="../styles/aisformsCommon_dev.css">
 </head>
 
 <body class="IsNotLoggedIn">
@@ -32,10 +30,12 @@
   <div class="Main">
     <div class="SystemAnnouncementsWrapper">
     </div>
+    <!-- ***Note to Codivus: Do we need these two divs - "LoginPage" and "LoginOrNewAccount"? Feel free to remove or rename as makes sense on your end, they are not necessary for the css to work as intended -->
     <div class="LoginPage">
       <div class="LoginOrNewAccount">
         <!-- ***Note to Codivus: Not sure this is the best name for this div, since it includes the custom content, but I left as-is to reduce number of changes; if you decide to change it I'll need to update my CSS so please let me (Cheryl) know  -->
         <div class="ValidationAndForms">
+
           <!-- ***Note to Codivus: NSLI-Y used for sample, no changes here, we will edit in the individual editors by program  -->
           <div class="CustomContent">
             <!-- BEGIN Login Info and Tips -->
@@ -88,6 +88,7 @@
             <div id="loginHeading">
               <h2 id="formTitle">Log in
               </h2>
+              <!-- This logo can be renamed to AISformsLogo, but I kept modifier for now to indicate it is not the same logo as in the "logged in" header -->
               <img id="aisLogo" alt="AIS Logo" src="../media/AISformsLogo_simplified.svg">
             </div>
 
@@ -116,7 +117,7 @@
               <input type="hidden" name="brand" value="general">
             </form>
 
-            <!-- CHANGES to HTML structure, classes, etc (table removed) -->
+            <!-- ***Note to Codivus: CHANGES to HTML structure, classes, etc (table removed) -->
             <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" class="hide-element toggles" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
                 <p>Already have an account? <br><a href="#loginHeading" id="showLogin" class="text-small">Log in</a></p>
 
@@ -167,7 +168,7 @@
       </div>
     </div>
 
-  <!-- ***Note to Codivus: NEED a new, unified (same for each portal) "AfterLogin" editable area in the portal editor  -->
+  <!-- ***Note to Codivus: NEED a new, unified (same for each portal) editable area for Tips, which appear on every login page and also on every applicant/eval home page; feel free to rename or remove "AfterLoginAndForms" div as needed, it won't affect css -->
   <div class="AfterLoginAndForms">
     <!-- BEGIN Usage Tips -->
     <div class="Tips bg-blue03">
@@ -195,7 +196,7 @@
   </div>
   </div>
   </div>
-<!-- ***Note to Codivus: ADDED #Policies div to footer2 div, otherwise no changes; should be common footer throughout AIS Forms, removing #PrivacyPolicy and #CookieDeclaration from .Content div -->
+<!-- ***Note to Codivus: ADDED #Policies div to footer2 div, otherwise no changes; should be common footer throughout AIS Forms (editable in one common place, not per portal), removing #PrivacyPolicy and #CookieDeclaration from .Content div after they are placed in footer -->
 <div id="footer">
   <div id="footer2">
     <div class="logo"></div>
@@ -243,20 +244,20 @@
     },400);
   };
 
-  var showHideForm = function(event,formToShow,formToHide) {
+  var toggleForm = function(event,formToShow,formToHide) {
     // only works with elements that already have the class "toggles"
     formToShow.classList.toggle("hide-element");
     formToHide.classList.toggle("hide-element");
   };
 
   showCreateAccount.addEventListener("click", function(event) {
-    showHideForm(event, createAccountForm, loginForm);
+    toggleForm(event, createAccountForm, loginForm);
     focusFirstInput(event, createAccountForm);
     formTitle.innerHTML="Create account";
   });
 
   showLogin.addEventListener("click", function(event) {
-    showHideForm(event, loginForm, createAccountForm);
+    toggleForm(event, loginForm, createAccountForm);
     focusFirstInput(event, loginForm);
     formTitle.innerHTML="Log in";
   });

@@ -481,9 +481,9 @@ a.LinkToPreviousPage {
 input#Username:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-	background-color: #fff;
-	background-image: none;
-	color: rgb(0, 0, 0);
+  background-color: #fff;
+  background-image: none;
+  color: rgb(0, 0, 0);
 }
 input#Login[type="submit"],
 input.RequestNewPassword[type="submit"] {
@@ -512,9 +512,9 @@ body table#login tr.LoginActions span.ForgotPassword {
 }
 
 /*.LoginWrapper.LoginProgramWrapper  .TipsLogin {
-	background-color: #EFF1E4;
-	border: 1px solid #e6e6e6;
-	max-width: 600px;
+  background-color: #EFF1E4;
+  border: 1px solid #e6e6e6;
+  max-width: 600px;
     margin: 4em 400px 1em 2em;
   padding: 0 1em 1em 2em;
 }
@@ -527,8 +527,8 @@ body table#login tr.LoginActions span.ForgotPassword {
   padding-bottom: .5em;
 }
 .LoginWrapper.LoginProgramWrapper  .TipsLogin h3 {
-	border: none;
-	padding-top: 0;
+  border: none;
+  padding-top: 0;
 }*/
 
 .AClogo {
@@ -1250,7 +1250,7 @@ table.TemplateTable tr td {
 }
 
 .IsLoggedIn .ProgramLogo {
-	float: right;
+  float: right;
 }
 .ProgramLogoLeft {
   float: left !important;
@@ -1985,7 +1985,7 @@ div.CheckboxMatrix tr td {
   color: #323232;
 }
 #footer .byline {
-	color: #fff;
+  color: #fff;
 }
 #columnLeft {
   float: left;
@@ -2484,11 +2484,11 @@ and (max-width : 1024px) {
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
 /* Styles */
-/*	.LoginForms {
-		float: right;
-		clear: right;
-		margin: 5em 10;
-	}*/
+/*  .LoginForms {
+    float: right;
+    clear: right;
+    margin: 5em 10;
+  }*/
 }
 
 
@@ -2586,7 +2586,7 @@ button {
   line-height: 1rem;
 }
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 .btn-outline-1 {
   border: 1px solid #2a353d;
@@ -2596,7 +2596,7 @@ button:hover {
 
 /* <-- buttons */
 .nowrap {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 @media only screen and (min-width : 860px) {
 /* admin/staff/dev HOME PAGE --> */
