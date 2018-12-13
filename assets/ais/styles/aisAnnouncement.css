@@ -14,11 +14,19 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   z-index: 1;
   position: relative;
   flex-basis: 100%;
+  border: 0;
   border-left: .75rem solid #de463d;
   -moz-box-shadow: 0 0 0px 0.625rem #2b353c;
   -webkit-box-shadow: 0 0 0px 0.625rem #2b353c;
   box-shadow: 0 0 0px 0.625rem #2b353c;
   margin: -1rem -1rem 2rem;
+}
+.IsNotLoggedIn div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+  border: 1px solid #999;
 }
 .SystemAnnouncement p {
   margin: .25rem 0;
