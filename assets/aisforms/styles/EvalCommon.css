@@ -111,7 +111,7 @@ div.Content .fromApplicant table.AnswerTable tr td:first-child {
 .fromApplicant .CheckboxMatrix td,
 .fromRecommender .ChoiceQuestion td,
 .fromRecommender .CheckboxMatrix td {
-  color: #999;
+  color: #b3b3b3;
 }
 
 /* Alignment/Spacing */
@@ -258,7 +258,7 @@ input[type="checkbox"]:disabled,
 input[type="checkbox"]:disabled:active,
 input[type="checkbox"]:disabled:hover,
 input[type="checkbox"]:disabled:hover:active {
-  color: #333333; ! important;
+  color: #333333 ! important;
 }
 div.Content table.AnswerTable tr td:first-child {
     padding: 6px 2px;
