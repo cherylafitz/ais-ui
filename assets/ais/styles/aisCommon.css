@@ -1347,6 +1347,9 @@ div.FSAAppFullDisplay a#HideContentsOfAllSections {
   width: 100%;
   border-collapse: collapse;
 }
+.ParticipantSummaryPage .StudentSummary table table {
+  width: initial;
+}
 
 .ParticipantSummaryPage table.RowDisplay {
   margin: 0;
@@ -2987,7 +2990,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 #UserNameLabel,
 #PasswordLabel {
-  width: 5em;
+  width: 5.125rem;
 }
 #LoginButtonSection,
 #ResetPasswordSection {
