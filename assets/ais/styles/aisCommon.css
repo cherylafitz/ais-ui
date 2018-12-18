@@ -1347,6 +1347,9 @@ div.FSAAppFullDisplay a#HideContentsOfAllSections {
   width: 100%;
   border-collapse: collapse;
 }
+.ParticipantSummaryPage .StudentSummary table table {
+  width: initial;
+}
 
 .ParticipantSummaryPage table.RowDisplay {
   margin: 0;
@@ -1848,6 +1851,7 @@ a.hideLink:hover {
 #AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+3),
 table.RowDisplay tr:nth-child(2n+2),
 table.RowDisplay tbody tr:nth-child(2n+2),
+table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
 table.report tr:nth-child(2n+2),
 tr.PassportName td div.EntryArea,
 .evenRow,
@@ -1859,6 +1863,7 @@ div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n) {
 #AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+2),
 #AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+2),
 table.RowDisplay tr:nth-child(2n+1),
+table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
 table.report tr:nth-child(2n+1),
 table.RowDisplay tbody tr:nth-child(2n+1),
 tr.ApplicationName td div.EntryArea,
@@ -2985,7 +2990,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 #UserNameLabel,
 #PasswordLabel {
-  width: 5em;
+  width: 5.125rem;
 }
 #LoginButtonSection,
 #ResetPasswordSection {
@@ -3285,9 +3290,28 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 /* PAGE: AISBOX --> */
 .AISMultipleFileUploadStatus .UploaderLink {
   float: left;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
-
+.AISMultipleFileUploadStatus .RefreshLink a {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: .0625rem .5rem .125rem .5rem;
+  background: #204156;
+  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
+  border: 1px solid #214155;
+  font-size: .875rem;
+}
+.AISMultipleFileUploadStatus .MoveToInbox {
+  white-space: normal;
+  width: 4rem;
+  font-size: .75rem;
+  display: inline-block;
+}
 /* <-- PAGE: AISBOX */
 
 /* PAGE: AIS FORMS SUMMARY --> */
