@@ -84,11 +84,11 @@ div.Content div.MailAddrZIP {
 .Content .SectionDisplay .LongTextNoEditing {
   text-align: justify;
   padding: .5rem .75rem;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .8);
   border: 1px solid #cecece;
   border-radius: 2px;
   margin-bottom: .5rem;
-  color: #333333;
+  color: #000;
 }
 
 /* Tables */
@@ -129,7 +129,9 @@ div.Content .fromApplicant div.GroupedItem,
   border-radius: 3px;
   margin: 0 .125rem .125rem 0;
 }
-
+.QuestionItem.fromRecommender.DisabledBecauseOfSkipPattern {
+  display: none;
+}
 
 .GroupedItem .fromApplicant {
   background: rgba(255, 255, 255, .75);
