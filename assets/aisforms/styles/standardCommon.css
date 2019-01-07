@@ -302,6 +302,7 @@ div.SectionDisplay div.SectionName {
   background: #cfdaa4;
   border-radius: 0 0 2px 2px;
   margin-bottom: .5rem;
+  margin-top: -.5rem;
   font-size: .875rem;
 }
 .Content .UnsubmitLink a {
