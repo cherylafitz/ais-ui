@@ -1918,7 +1918,6 @@ textarea,
 input,
 td input[type="password"],
 td input[type="search"] {
-  background-color: #fff;
   border: none;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
@@ -1937,7 +1936,11 @@ select {
   border: none;
 }
 input[type="file"] {
+  background-color: initial;
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   text-decoration: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -2482,7 +2485,7 @@ div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr th,
 }
 div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
 .TranscribedQuestionsForApplicant table tr td{
-  padding: .5rem;
+  padding: .75rem 1rem;
   border: none;
   white-space: normal;
 }
@@ -2507,6 +2510,30 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
   width: calc(100% - 2rem);
   vertical-align: top;
   margin-left: .25rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff {
+  display: flex;
+  flex-flow: wrap row;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff textarea,
+.TranscribedQuestionsForApplicant .AnswerByStaff .ReasonStaffAnswered {
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer {
+  margin-top: .5rem;
+  padding-top: .75rem;
+  border-top: 1px solid #ccd2d6;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer div {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Save answer"] {
+  order: 5;
+  margin-right: .5rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Cancel"]{
+  order: 6;
 }
 
 /* <-- HEALTH INBOX */
