@@ -1918,7 +1918,6 @@ textarea,
 input,
 td input[type="password"],
 td input[type="search"] {
-  background-color: #fff;
   border: none;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
@@ -1937,7 +1936,11 @@ select {
   border: none;
 }
 input[type="file"] {
+  background-color: initial;
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   text-decoration: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -2421,8 +2424,9 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr.Answer td:nth-child
 #ProgramStaffQuestionnaire .Answer .Text,
 #ProgramStaffQuestionnaire .Answer > .File,
 #ProgramStaffQuestionnaire .Answer .HasNoFile,
-div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
-  background-color: #d2dbe2;
+div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2),
+.HealthQuestionnaireEditor .Answer .Text {
+  background-color: rgba(210, 219, 226, .75);
   -webkit-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
   -moz-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
   box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
@@ -2430,10 +2434,11 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
 }
 #ProgramStaffQuestionnaire .Answer .Text,
 #ProgramStaffQuestionnaire .Answer > .File,
-#ProgramStaffQuestionnaire .Answer .HasNoFile {
+#ProgramStaffQuestionnaire .Answer .HasNoFile,
+.HealthQuestionnaireEditor .Answer .Text  {
   display: inline-block;
-  width: 96%;
-  margin: 0;
+  width: calc(100% - 2rem);
+  margin: 0 0 0 .25rem;
 }
 
 #ProgramStaffQuestionnaire .Answer,
@@ -2456,11 +2461,13 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
 .TranscribedQuestionsForApplicant table.RowDisplay tr th {
   background-color: #f0f2f5;
 }
-#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2) {
+#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2),
+.HealthQuestionnaireEditor table.RowDisplay tr:nth-child(2n+2)  {
   background-color: #fff;
 }
 #ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+3),
-.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3) {
+.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3),
+.HealthQuestionnaireEditor table.RowDisplay tbody tr:nth-child(2n+3) {
   background-color:  #eff2f5;
 }
 #ProgramStaffQuestionnaire table.RowDisplay {
@@ -2478,7 +2485,7 @@ div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr th,
 }
 div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
 .TranscribedQuestionsForApplicant table tr td{
-  padding: .25rem .5rem;
+  padding: .75rem 1rem;
   border: none;
   white-space: normal;
 }
@@ -2492,6 +2499,43 @@ div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay,
 .TranscribedQuestionsForApplicant table.RowDisplay {
   border: 1px solid #c2c2c2;
 }
+.TranscribedQuestionsForApplicant .Actions div {
+  margin-bottom: .5rem;
+}
+.TranscribedQuestionsForApplicant .ReplyBy {
+  margin-left: .5rem;
+}
+div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
+  height: 7rem;
+  width: calc(100% - 2rem);
+  vertical-align: top;
+  margin-left: .25rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff {
+  display: flex;
+  flex-flow: wrap row;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff textarea,
+.TranscribedQuestionsForApplicant .AnswerByStaff .ReasonStaffAnswered {
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer {
+  margin-top: .5rem;
+  padding-top: .75rem;
+  border-top: 1px solid #ccd2d6;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer div {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Save answer"] {
+  order: 5;
+  margin-right: .5rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Cancel"]{
+  order: 6;
+}
+
 /* <-- HEALTH INBOX */
 
 
@@ -3392,6 +3436,11 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 
 /* SHARED ELEMENTS --> */
 
+.Delete input {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
 /* BANNERS -> */
 
 #BannerAC_AIS,
