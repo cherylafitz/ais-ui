@@ -1545,7 +1545,10 @@ div.ApplicationTemplateDisplay h2 {
 }
 .AdminFormNav {
   font-size: .875em;
-  margin-bottom: 1.5rem;
+  margin: -1rem -1.5rem 1rem -1.5rem;
+  padding: .5rem 1rem .75rem;
+  background-color: #edeef0;
+  border-top: 1px solid #cecece;
 }
 .SectionDisplay h1 {
   margin: .5em 0;
