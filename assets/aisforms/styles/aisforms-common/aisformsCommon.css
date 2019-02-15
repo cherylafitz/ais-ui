@@ -2800,6 +2800,9 @@ and (max-width : 1024px) {
     clear: right;
     margin-left: 1.5em;
   }
+  div.SectionsRowDisplay div.SectionOperations ~ div .Data {
+    margin-bottom: 100px;
+  }
 
   div.SectionsRowDisplay div.SectionOperations span.label,
   div.SectionsRowDisplay div.TemplateOperations span.label {
@@ -2848,7 +2851,9 @@ and (max-width : 1024px) {
     clear: right;
     margin-left: 1.5em;
   }
-
+  div.SectionsRowDisplay div.SectionOperations ~ div .Data {
+    margin-bottom: 100px;
+  }
   div.SectionsRowDisplay div.SectionOperations span.label,
   div.SectionsRowDisplay div.TemplateOperations span.label {
     padding-bottom: .25em;
