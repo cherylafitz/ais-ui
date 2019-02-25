@@ -1,13 +1,11 @@
 /* PAGE SETUP */
-@import url(http://www.princexml.com/fonts/sil/index.css) all;
+@import url("http://www.princexml.com/fonts/sil/index.css") all;
+@import url("https://ais.americancouncils.org/ais/common/stylesheets/inlineQuestions.css");
 
-@page
-  {
-    size: US-Letter;
-    margin: .5in;
-    font: 100% sans-serif;
-        font-size: 10pt;
-  }
+@page {
+  size: US-Letter;
+  margin: .5in;
+}
 
 /* HEADER AND FOOTER SETUP */
 
@@ -22,103 +20,90 @@
 #pageHeader {
   flow: static(header);
   background-color: transparent;
-    color: #474747;
-  padding-top: 0.5em;
+  color: #474747;
+  padding-top: 0.5rem;
 }
-body div.Content div.RecommendationFor {
+body .Content .RecommendationFor {
   flow: static(header2);
   background-color: transparent;
-    color: #474747 !important;
-    text-align:right;
-  padding-top: 0.5em;
+  /*** check if necessary --> */
+  color: #474747 !important;
+  text-align:right;
+  padding-top: 0.5rem;
 }
 
 #pageHeader .LastName,
 #pageHeader .FirstName,
 #pageHeader .MiddleName,
-div.Content .LastName,
-div.Content .FirstName,
-div.Content .MiddleName {
-    text-transform: capitalize;
+.Content .LastName,
+.Content .FirstName,
+.Content .MiddleName {
+  text-transform: capitalize;
 }
-
-#pageHeader .LastName:after { content: ", "; }
-
+#pageHeader .LastName:after {
+  content: ", ";
+}
 #pageHeader .MiddleName,
 #pageHeader .ApplicationRefCode,
-#pageHeader .ProgramYear
-  {
+#pageHeader .ProgramYear {
     padding-right: 2pt;
-  }
-
+}
 #pageHeader .MiddleName:after,
 #pageHeader .ApplicationRefCode:after,
-#pageHeader .ProgramYear:after
-  {
+#pageHeader .ProgramYear:after {
     content: " |";
-  }
-
-@page { @bottom-left { content: 'Page ' counter(page) ' of ' counters(page); } }
-
-*:not(input) {
-  border: none;
+    color: #777;
 }
+#pageHeader .ApplicationRefCode:before {
+  content: "Ref code: "
+}
+
+@page {
+  @bottom-left {
+    content: 'Page ' counter(page) ' of ' counters(page);
+  }
+}
+
 /* PAGE TYPOGRAPHY */
 
-body
-  {
-    font-size: 10pt;
-    font-family: Arial;
-    }
+body {
+  font-size: 14px;
+  font-family: Arial;
+}
+a {
+  color: #000000;
+}
 
-a { color: #000000; }
 /* COLORS */
-div.SectionDisplay div.SectionName
-  {
-    border-bottom:medium solid #025689;
-    font-size: 1.7em;
-    padding-top: .7em;
-    margin-bottom: 6pt;
-    color: #025689;
-    clear: both;
-  }
-
-body div.Content div.Divider,
-.Content div.SectionDisplay h1,
-.Content div.SectionDisplay h2,
-body div.Content div.RecommendationFor {
+.SectionDisplay .SectionName {
+  border-bottom: 2px solid #025689;
+  font-size: 1.375rem;
+  padding-top: .75rem;
+  margin-bottom: .5rem;
   color: #025689;
   clear: both;
 }
-div.Content table.AnswerTable tr.even, div.SectionDisplay table.RowDisplay tr:nth-child(2n+2), div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2) {
-background-color: #F9FAF5;
+
+.Content .Divider,
+.Content .SectionDisplay h1,
+.Content .SectionDisplay h2,
+.Content .RecommendationFor {
+  color: #025689;
+  clear: both;
 }
-
-div.Content table.AnswerTable tr.odd,
-div.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
-div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
-background-color: #E8EBD9;
+.small {
+  font-size: 1rem;
 }
-
-.Content div.SectionDisplay table th,
-div.Content table.AnswerTable tr.headerRow th {
-  background-color: #E8EBD9;
-  color: #000;
-  border: thin solid #999;
+.big {
+  font-size: 1.25rem;
 }
-.small {font-size: 1em;}
-
-.big {font-size: 1.2em;}
-
 .ExtraStrong {
   color: #CD0000;
   font-weight: bold;
 }
 
-
 /* FLOAT LEFT FIELDS */
-
-div.Content div.FirstName,
+/*div.Content div.FirstName,
 div.Content div.MidName,
 div.Content div.MiddleName,
 div.Content div.LastName,
@@ -172,11 +157,14 @@ div.Content div.SibLastName,
 div.Content div.EmergCont1stName,
 div.Content div.EmergContLastName,
 div.Content div.SchoolWebSite,
-div.Content div.ProvinceRegionNotBornUS
-  {
-    clear:left;
-  }
-
+div.Content div.ProvinceRegionNotBornUS {
+  clear:left;
+}*/
+.QuestionItem,
+.DisplayItemOnly,
+.Group {
+  clear: both;
+}
 div.QuestionItem.FirstName,
 div.QuestionItem.Sex,
 .clearPrint {
@@ -184,17 +172,14 @@ div.QuestionItem.Sex,
 }
 
 
-
-
-
 /* DATE FIELDS SETUP */
 input[type=text],
 .TextQuestion,
-.ChoiceQuestion,
-.DateQuestion {
-  border-bottom: thin solid #999;
-  margin-bottom: 1pt;
-  vertical-align: top;
+select.ChoiceQuestion,
+.DateQuestion,
+.QuestionAnswer .RowDisplay td {
+  text-decoration: underline;
+  display: inline-block;
 }
 
 div.Formula div.QuestionAnswer {
@@ -226,6 +211,9 @@ input[type=text]:before,
 }
 
 /* PROBLEMATIC AREA-- */
+.QuestionItem .QuestionText .Title {
+  font-weight: bold;
+}
 .QuestionItem.Text .QuestionText,
 .QuestionItem.Choice .QuestionText,
 .QuestionItem.Date .QuestionText,
@@ -233,12 +221,11 @@ input[type=text]:before,
 .QuestionItem.Integer .QuestionText,
 .DisplayItemOnly .QuestionText {
   display: inline-block;
-  vertical-align: top;
   color: #000;
-  max-width: 75%;
-  margin-right: 1.5em;
+  /*max-width: 75%;*/
+  margin-right: .5rem;
   font-weight: bold;
-  font-size: .9em;
+  /*font-size: .9em;*/
 }
 
 .QuestionItem.LongText .QuestionText {
@@ -252,8 +239,9 @@ input[type=text]:before,
 }
 .QuestionAnswer {
   /*display: inline-block;*/
-  margin-top: 0;
+  margin-top: .125rem;
   color: #222;
+  margin-right: .5rem;
 }
 .QuestionAnswer .GroupedItem:not(.nodisplayprint) {
   display: block;
@@ -261,7 +249,9 @@ input[type=text]:before,
 .LongText .QuestionAnswer  {
   display: initial;
 }
-
+.QuestionAnswer .RowDisplay {
+  margin-left: .75rem;
+}
 /* <--PROBLEMATIC AREA */
 
 /* PROBLEMATIC AREA FIX--> */
@@ -279,7 +269,7 @@ div[class*="Descrip"]:not(.nodisplayprint),
 div[class*="Expl"]:not(.nodisplayprint),
 div[class*="GroupingItem"] .QuestionAnswer {
   display: block;
-  margin-bottom: 5pt;
+  /*margin-bottom: 5pt;*/
 }
 div.GroupedItem div.QuestionAnswer,
 div[class*="Group"] .QuestionAnswer,
@@ -296,8 +286,7 @@ div[class*="GroupingItem"] .QuestionAnswer,
   display: block;
 }
 div[class*="Group"] .QuestionAnswer .QuestionAnswer {
-  margin-left: 30px;
-  margin-top: -.6em;
+  margin: .125rem 0 .25rem;
 }
 
 div.RadioButtonMatrix,
@@ -339,12 +328,11 @@ span.leftmargin-fix {
   padding: 0;
 }
 .RadioButtonMatrix td input {
-  margin-right: .5em;
+  margin: 0 0 4px 2px;
 }
 .CheckboxMatrix td,
 .CheckboxMatrix th {
   padding: 0;
-  font-family: "DejaVu Sans";
 }
 .itemDisplayOuterContainer {
   clear: both;
@@ -353,16 +341,91 @@ span.leftmargin-fix {
 
 
 /* TABLES */
+.fromApplicant .ChoiceQuestion .ERXMatrixTable td.SelectedChoice,
+.fromApplicant .CheckboxMatrix td.SelectedChoice,
+.fromRecommender .ChoiceQuestion .ERXMatrixTable td.SelectedChoice,
+.fromRecommender .CheckboxMatrix td.SelectedChoice {
+  border: 1px solid #777;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.fromApplicant .ChoiceQuestion .ERXMatrixTable td.SelectedChoice,
+.fromRecommender .ChoiceQuestion .ERXMatrixTable td.SelectedChoice {
+  border-radius: 50%;
+}
+td input:checked {
+  border-radius: 2px;
+  -webkit-appearance: none;
+  height: 6px;
+  width: 6px;
+  background: #3a3d40;
+  padding: 0px;
+  margin: 0 0 4px 2px;
+}
+.ChoiceQuestion .ERXMatrixTable td input:checked {
+  border-radius: 50%;
+}
+.ERXMatrixTable {
+  margin-right: .5rem;
+}
+.fromApplicant .ChoiceQuestion .ERXMatrixTable .SelectedChoice ~ td,
+.fromApplicant .CheckboxMatrix .SelectedChoice ~ td,
+.fromRecommender .ChoiceQuestion .ERXMatrixTable .SelectedChoice ~ td,
+.fromRecommender .CheckboxMatrix .ERXMatrixTable .SelectedChoice ~ td {
+  color: #000;
+}
+.fromApplicant .ChoiceQuestion .ERXMatrixTable td,
+.fromApplicant .CheckboxMatrix td,
+.fromRecommender .ChoiceQuestion .ERXMatrixTable td,
+.fromRecommender .CheckboxMatrix .ERXMatrixTable td {
+  padding: 1px;
+  display: inline-block;
+  color: #b3b3b3;
+  margin: 0 3px;
+  vertical-align: inherit;
+}
+
 .TemplateTable {
-  border: thin solid #999;
-  margin: 12pt 0;
+  margin: .5rem 0;
+}
+table {
   border-collapse: collapse;
+}
+table.RowDisplay {
+  margin: .5rem 0;
+}
+table.TemplateTable td {
+  font-size: 0.875rem;
+  text-align: left;
+  font-weight: normal;
+}
+table.TemplateTable tr td,
+table.TemplateTable tr th {
+  border: 1px solid #999;
+  padding: .25rem .5rem;
+}
+table.TemplateTable tr th {
+  border: 1px solid #000;
+  padding: .25rem .5rem;
+  background-color: #3a3d40;
+  color: #FFFFFF;
+  /*font-size: 1em;*/
+  text-align: left;
+  border-color: #222;
+}
+.RowDisplay th,
+.RowDisplay td {
+  text-align: left;
+  padding: 0 .5rem 0 0;
 }
 th {
   border-bottom: 1t solid #999;
 }
-th,
-.sideTH {
+/*th,*/
+table.TemplateTable .sideTH {
   font-weight: bold;
   background-color: #e6e6e6;
 }
@@ -416,10 +479,10 @@ td.ERXMatrixTableCell {
 input {
   margin-right: 1em;
 }
-td input:checked {
+/*td input:checked {
   border: 1px solid #000;
   border-radius: 15px;
-}
+}*/
 
 div.Content div.LongTextNoEditing
   {
@@ -430,13 +493,8 @@ div.Content div.LongTextNoEditing
     border: 1px solid #d6d6d6;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
-    border-left: 3px solid #d6d6d6;
-    border-right: 3px solid #d6d6d6;
+    border-radius: 3px;
   }
-
-
-
 
 div.Content table tr td div.LongTextNoEditing
   {
@@ -461,9 +519,14 @@ select
 
 .QuestionItem,
 .DisplayItemOnly  {
-    padding-bottom: 2pt;
+    padding-bottom: .5rem;
     width:auto;
-  }
+    padding-left: .75rem;
+}
+.GroupedItem .QuestionItem,
+.GroupedItem .DisplayItemOnly {
+  padding-left: 0;
+}
 .AnswerTable .QuestionItem {
   padding: 0;
 }
@@ -476,7 +539,7 @@ ol {
 
 div.SectionIntroductionText
   {
-    font-size: 0.8em;
+    font-size: 0.875rem;
     padding-bottom: .2em;
   }
 
@@ -492,7 +555,7 @@ div.BeforeQuestion div.QuestionNumber
   }
 div.SectionItemsList {
     border-radius: 5px;
-    padding:0.5em;
+    /*padding:0.5em 0;*/
 }
 div.QuestionItem div.QuestionText div.Instruction,
 div.BeforeQuestion div.QuestionItem .QuestionInstructions,
@@ -539,11 +602,30 @@ option[selected] {display: table-row;}
 
 option:not([selected]) {display: none;}
 
+.fromApplicant input[type="button" i]:disabled,
+.fromApplicant input[type="submit" i]:disabled,
+.fromApplicant input[type="reset" i]:disabled,
+.fromApplicant input[type="file" i]:disabled::-webkit-file-upload-button,
+.fromApplicant button:disabled,
+.fromApplicant select:disabled,
+.fromApplicant optgroup:disabled,
+.fromApplicant option:disabled,
+.fromApplicant select[disabled] > option {
+  color: #333333 !important;
+  -webkit-text-fill-color: #333333;
+  border: none;
+  font-size: .875rem;
+  background: white;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+
 div.Content div.GroupedItem
   {
-    /*border-radius: 15px;*/
+    margin-left: ;
     padding: 0 10pt 6pt;
-    margin: 6pt 0;
+    margin: 1rem 0 1rem .75rem;
     border-left: 2px solid #cecece;
   }
 div.Content div.GroupedItem:before {
@@ -575,16 +657,14 @@ div.Content div.GroupedItem:after {
     padding: 2pt;
     text-align: left;
     vertical-align: top;
-    font-size: .9em;
-
   }
-.Content div.SectionDisplay table th,
+/*.Content div.SectionDisplay table th,
 div.Content table.AnswerTable tr.headerRow th {
   background-color: #5D5E57;
   color: #ffffff;
   border: thin solid #999;
   word-break: keep-all;
-}
+}*/
 table.QuestionItem,
 table.QuestionItem tr.QuestionItemRow,
 table.QuestionItem tr.QuestionItemRow td
@@ -644,7 +724,7 @@ input#SubmitForEvaluation {margin-bottom: 1em;}
   content: '\2192 \0000a0';
 }
 div.SectionDisplay div.QuestionItem.subQuestion {
-  margin-left: 24pt;
+  margin-left: 1rem;
 }
 div.SectionDisplay div.QuestionItem.subConditional {
   margin-left: 48pt;
