@@ -3675,6 +3675,9 @@ and (max-width : 480px) {
     width: 24rem;
     padding: 1rem 4.25rem 1.5rem;
   }
+  #LoginPage.ie-prohibited #content {
+    padding: 1.25rem 1.5rem .5rem;
+  }
   #LoginPage #content input[type="submit"]
   {
     border: none;
