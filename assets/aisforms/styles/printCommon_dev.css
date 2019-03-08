@@ -521,6 +521,7 @@ div.Content div.LongTextNoEditing
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 3px;
+    background-color: #0000001a;
   }
 
 div.Content table tr td div.LongTextNoEditing
@@ -658,19 +659,19 @@ div.Content div.GroupedItem
   }
 div.Content div.GroupedItem:before {
     content: "";
-    width: 24pt;
-    border-top: 2px solid #cecece;
+    width: 48pt;
+    border-top: 4px solid #3a3d40;
     height: 10px;
     display: inline-block;
-    margin-left: -10pt;
+    margin-left: -11pt;
 }
 div.Content div.GroupedItem:after {
   content: "";
-  width: 24pt;
+  width: 48pt;
   border-bottom: 2px solid #cecece;
   height: 4px;
   display: block;
-  margin-left: -10pt;
+  margin-left: -11pt;
   margin-bottom: -6pt;
 }
 .AnswerTable
