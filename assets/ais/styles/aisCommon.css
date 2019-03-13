@@ -3677,7 +3677,7 @@ and (max-width : 480px) {
   }
   #LoginPage.ie-prohibited #content,
   #LoginPage.passwordResetError #content{
-    padding: 1.25rem 1.5rem .5rem;
+    padding: 1.25rem 1.5rem;
   }
   #LoginPage #content input[type="submit"]
   {
