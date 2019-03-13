@@ -387,7 +387,7 @@ td input[checked] {
 .CheckboxMatrix .ERXMatrixTable tr:not(.SelectedChoice) td {
   padding: 1px;
   display: inline-block;
-  /*color: #b3b3b3;*/
+  color: #b3b3b3;
   margin: 0 3px;
   vertical-align: middle;
 }
@@ -409,7 +409,10 @@ td input[checked] {
   border-radius: 2px;
   display: inline-block;
   margin-left: 5px;*/
-  color: red;
+  /*color: #ff0000;*/
+}
+tr.SelectedChoice td {
+  color: #ff0000;
 }
 .fromApplicant .ChoiceQuestion .ERXMatrixTable td.SelectedChoice,
 .fromRecommender .ChoiceQuestion .ERXMatrixTable td.SelectedChoice {
