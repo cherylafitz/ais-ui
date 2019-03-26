@@ -1156,6 +1156,8 @@ footer {
   justify-content: space-between;
   padding: .75rem 1rem;
   color: #fff;
+  font-style: normal;
+  font-size: .75rem;
 }
 footer a,
 footer div.classNameDisplay {
