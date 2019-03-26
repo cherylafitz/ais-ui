@@ -104,8 +104,14 @@
 .SectionDisplay .ParentOtherTelephone,
 .SectionDisplay .EmergencyContactAlternateTelephone,
 .SectionDisplay .EmergencyContactAlternateTelephone,
-.SectionDisplay .EmergencyContactOtherTelephone {
+.SectionDisplay .EmergencyContactOtherTelephone,
+.SectionDisplay .EmergencyContactPrimaryTelephone {
   clear: left;
+}
+.SectionDisplay .PrimaryPhoneType,
+.SectionDisplay .AlternatePhoneType,
+.SectionDisplay .OthPhoneWhose {
+  clear: right;
 }
 
 .Content .BeforeQuestion {
