@@ -847,24 +847,28 @@ table a {
 table.RowDisplay tr:nth-child(2n+2),
 table.RowDisplay tbody tr:nth-child(2n+2),
 /* added for tables with thead */
-table.RowDisplay thead ~ tbody tr:nth-child(2n+1) {
+table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
+.odd {
   background-color: #dbe8f2;
 }
 table.RowDisplay tr:nth-child(2n+3),
 table.RowDisplay tbody tr:nth-child(2n+3),
 /* added for tables with thead */
-table.RowDisplay thead ~ tbody tr:nth-child(2n+2) {
+table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
+.even {
   background-color: #fff;
 }
 table.RowDisplay tbody tr.submitted_odd,
 table.RowDisplay tbody tr:nth-child(2n+1).submitted,
+div.AppRowDisplayRowColorLegend table.RowDisplay tr td.odd.submitted,
 body table.Brands td.Active {
   color: #000;
-  background-color: #8fb7d6;
+  background-color: #629BC6;
 }
 table.RowDisplay  tbody tr.submitted_even,
-table.RowDisplay tr:nth-child(2n+2).submitted {
-  background-color: #629BC6;
+table.RowDisplay tr:nth-child(2n+2).submitted,
+div.AppRowDisplayRowColorLegend table.RowDisplay tr td.even.submitted {
+  background-color: #8fb7d6;
   color: #000;
 }
 table.RowDisplay tr.submitted_odd a:hover,
