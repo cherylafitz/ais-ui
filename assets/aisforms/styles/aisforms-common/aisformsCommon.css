@@ -1016,6 +1016,12 @@ div.Main div.staffHome div.Deadlines {
 .staffHome h1 {
   display: none;
 }
+
+/* TEMPORARY HIDE BECAUSE OF PERMISSIONS ISSUE Gregg 3-26-2019 */
+.Content .AdminHomeLinks .RightToBeForgotten a {
+  display: none;
+}
+
 .Content .AdminHomeLinks a {
   font-size: .875rem;
   text-decoration: none;
@@ -1027,6 +1033,7 @@ div.Main div.staffHome div.Deadlines {
   margin: .5rem 0;
   border-left: 1px solid #FFD590;
 }
+
 .Content .AdminHomeLinks a span.adminHomeLinksDescription,
 .Content .AdminHomeLinks a span.description {
   font-size: .6em;
