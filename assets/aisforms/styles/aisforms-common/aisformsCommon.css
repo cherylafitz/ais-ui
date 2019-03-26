@@ -1336,9 +1336,12 @@ table.TemplateTable tr td {
   font-size: .875rem;
   color: #ededed;
   padding: 1.5rem;
-  margin: -1.5rem;
+  margin: 0 -1.5rem -1.5rem;
   display: flex;
   flex-flow: row wrap;
+}
+.HomeProgramAfterContent .Tips:first-child {
+  margin: -1.5rem;
 }
 .HomeProgramAfterContent .Tips h3 {
   flex-basis: 100%;
