@@ -1297,7 +1297,7 @@ table.TemplateTable tr td {
 .ProgramLogoHome {
   margin-right: 1rem;
   margin-bottom: .5rem;
-  max-height: 80px;
+  max-height: 75px;
   object-fit: scale-down;
   object-position: 0;
   max-width: 500px;
