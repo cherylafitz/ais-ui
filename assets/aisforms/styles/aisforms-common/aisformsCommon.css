@@ -1298,7 +1298,6 @@ table.TemplateTable tr td {
   margin-right: 1rem;
   margin-bottom: .5rem;
   max-height: 80px;
-  text-align: left;
   object-fit: scale-down;
   object-position: 0;
   max-width: 500px;
