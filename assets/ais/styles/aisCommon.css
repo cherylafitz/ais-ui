@@ -604,6 +604,7 @@ table .leftNav a {
 
 .leftNav {
   color: #fff;
+  min-width: 200px;
 }
 .leftNav h1 {
   color: #f5d295;
