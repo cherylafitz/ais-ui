@@ -1297,7 +1297,11 @@ table.TemplateTable tr td {
 .ProgramLogoHome {
   margin-right: 1rem;
   margin-bottom: .5rem;
-  max-width: 250px;
+  max-height: 80px;
+  object-fit: scale-down;
+  object-position: 0;
+  max-width: 500px;
+  height: auto;
 }
 #userHome #topLogos,
 #userHome #bottomLogos {
