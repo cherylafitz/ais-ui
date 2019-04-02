@@ -493,9 +493,9 @@ div.LoginOrNewAccount div.CustomContent {
   margin-right: 0;
 }
 .LoginWrapper {
-    margin: 1em 400px 1em 3em;
-    background-color: #EDF2DE;
-    padding: 1em;
+  margin: 1em 400px 1em 3em;
+  background-color: #EDF2DE;
+  padding: 0 1em;
   border: 1px solid #e6e6e6;
 }
 .LoginWrapper.LoginProgramWrapper {
@@ -509,9 +509,6 @@ div.LoginOrNewAccount div.CustomContent {
   max-width: 600px;
     margin: 4em 400px 1em 2em;
   padding: 0 1em 1em 2em;
-}
-.LoginWrapper.LoginProgramWrapper .LoginWelcome {
-  margin: -2em 0 0;
 }
 .LoginWrapper.LoginProgramWrapper .LoginWelcome img {
   padding: 0 1.5em 1em .5em;
@@ -1289,7 +1286,8 @@ table.TemplateTable tr td {
   font-size: .875rem;
 }
 #userHome img.logo,
-.ProgramLogoHome {
+.ProgramLogoHome,
+.LoginText img {
   margin-right: 1rem;
   margin-bottom: .5rem;
   max-height: 75px;
