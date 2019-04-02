@@ -1021,11 +1021,6 @@ div.Main div.staffHome div.Deadlines {
   display: none;
 }
 
-/* TEMPORARY HIDE BECAUSE OF PERMISSIONS ISSUE Gregg 3-26-2019 */
-.Content .AdminHomeLinks .RightToBeForgotten a {
-  display: none;
-}
-
 .Content .AdminHomeLinks a {
   font-size: .875rem;
   text-decoration: none;
