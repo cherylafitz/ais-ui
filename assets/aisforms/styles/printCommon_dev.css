@@ -89,11 +89,15 @@ a {
 .QuestionAnswer {
   page-break-before: avoid;
 }
-
+p,
+ul {
+  margin: .5em 0;
+  /*padding: 0;*/
+}
 /* COLORS */
 .SectionDisplay .SectionName {
   border-bottom: 2px solid #025689;
-  font-size: 1.375em;
+  font-size: 1.75em;
   padding-top: .75em;
   margin-bottom: .5em;
   color: #025689;
@@ -344,8 +348,6 @@ input[type="radio"] {
 
 
 /* TABLES */
-.ChoiceQuestion .ERXMatrixTable td input[type="radio"][checked]:after {
-}
 .ERXMatrixTable {
   margin-right: .5em;
 }
@@ -355,29 +357,9 @@ input[type="radio"] {
 .CheckboxMatrix .ERXMatrixTable td {
   padding: 1px;
   display: inline-block;
-  color: #b3b3b3;
+  color: #8c8c8c;
   margin: 0 3px;
   vertical-align: middle;
-}
-/*.ChoiceQuestion .ERXMatrixTable tr.SelectedChoice td,
-.CheckboxMatrix tr.SelectedChoice td,
-.ChoiceQuestion .ERXMatrixTable tr.SelectedChoice td,
-.CheckboxMatrix .ERXMatrixTable tr.SelectedChoice td {
-  color: #000;
-  border: 1px solid #000;
-  background-color: gray;
-}*/
-/*.fromApplicant .ChoiceQuestion .ERXMatrixTable tr.SelectedChoice td,
-.fromApplicant .CheckboxMatrix tr.SelectedChoice td,
-.fromRecommender .ChoiceQuestion .ERXMatrixTable tr.SelectedChoice td,
-.fromRecommender .CheckboxMatrix tr.SelectedChoice td*/ {
-/*  border: 1px solid #777 !important;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  display: inline-block;
-  margin-left: 5px;*/
-  /*color: #ff0000;*/
 }
 .ERXMatrixTable.Checked td {
   color: #000;
@@ -396,7 +378,6 @@ input[type="radio"] {
   position: absolute;
   display: block;
   text-align: center;
-  /*border: 1px solid #b3b3b3;*/
   -webkit-appearance: none;
   background-color: #000;
   border: none;
@@ -406,6 +387,10 @@ input[type="radio"] {
   border-radius: 50%;
   top: 2px;
   left: 2px;
+}
+.CheckboxMatrix .ERXMatrixTable.Checked td:first-of-type:after,
+.CheckboxMatrix .ERXMatrixTable td:first-of-type {
+  border-radius: 2px;
 }
 td .TextQuestion,
 td input[type=text],
@@ -553,7 +538,8 @@ select
 
 .QuestionItem,
 .DisplayItemOnly  {
-    padding-bottom: .5em;
+    padding-bottom: .25em;
+    padding-top: .25em;
     width:auto;
     padding-left: .75em;
 }
@@ -687,11 +673,14 @@ div.Content div.GroupedItem:after {
     /*border: thin solid #999;*/
     margin: 6pt;
 }
-.AnswerTable td, .AnswerTable th {
-    /*border: thin solid #999;*/
-    padding: .25em;
-    text-align: left;
-    vertical-align: top;
+.AnswerTable td,
+.AnswerTable th {
+  padding: .25em;
+  text-align: left;
+  vertical-align: top;
+}
+.AnswerTable td td {
+  padding: 0;
 }
 /*.Content div.SectionDisplay table th,
 div.Content table.AnswerTable tr.headerRow th {
@@ -715,8 +704,8 @@ table.QuestionItem tr.QuestionItemRow td
 div.SectionDisplay h1,
 .SectionDisplay .Divider
   {
-    padding: 4pt 0 4pt 0;
-    margin: 0 0 0 0;
+    margin: 1em 0 .5em 0;
+    padding: 0;
     color: #000000;
     font-weight: bold;
     font-size: 16px;
@@ -727,16 +716,12 @@ div.SectionDisplay h1,
 h1 + p {
     margin-top: 0px;
 }
-
-div.SectionDisplay h1 {
-  margin-top: 4pt;
-}
 div.SectionDisplay h2 {
-    font-size: 1em;
-    padding: 3pt 0 2pt 0;
-    margin: 0 0 0 0;
-    color: #000000;
-    font-weight: bold;
+  font-size: 1em;
+  margin: 1em 0 .5em 0;
+  padding: 0;
+  color: #000000;
+  font-weight: bold;
 }
 
 .nowrap,
@@ -759,7 +744,18 @@ input#SubmitForEvaluation {margin-bottom: 1em;}
   content: '\2192 \0000a0';
 }
 div.SectionDisplay div.QuestionItem.subQuestion {
-  margin-left: 1em;
+  margin-left: 1.25em;
+  margin-top: .5em;
+  border-left: 1px solid #cecece;
+}
+div.SectionDisplay div.QuestionItem.subQuestion:after {
+  content: "";
+  width: 2em;
+  border-bottom: 1px solid #cecece;
+  height: .5em;
+  display: block;
+  margin-left: -.75em;
+  margin-bottom: -2pt;
 }
 div.SectionDisplay div.QuestionItem.subConditional {
   margin-left: 48pt;
