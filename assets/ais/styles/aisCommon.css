@@ -132,6 +132,7 @@ div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
 body #PageWrapperNavUpdate {
   background: #fff;
   height: 100%;
+  width: 100%;
 }
 
 *,
@@ -959,7 +960,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumnusSocialMediaList,
 .SystemAnnouncementsWrapper + div {
   position: relative;
-  min-height: calc(100% - 154px);
+  min-height: calc(100% - 174px);
   display: flex;
 }
 .ArticleEditor {
@@ -1615,7 +1616,7 @@ body {
 
 table.pageStructure,
 table.pageStructure tr.contentArea {
-  height: 100%;
+  height: calc(100% - 174px);
 }
 
 .AlumnusSummary,
