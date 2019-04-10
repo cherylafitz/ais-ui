@@ -203,9 +203,6 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
 #Header #buildAndInstance {
   margin-left: 2rem;
 }
-#Header.IsLoggedIn #buildAndInstance .build {
-  display: none;
-}
 .instance {
   margin-bottom: .4em;
 }
