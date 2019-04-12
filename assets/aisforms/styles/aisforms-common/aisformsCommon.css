@@ -1242,15 +1242,17 @@ table.TemplateTable tr td {
   margin: -1.5rem;
 }
 /*TEMP*/
-  .IsLoggedIn #CookieDeclaration {
-    padding: 1rem 1.5rem 0;
-    margin: 1.5rem -1.5rem -3rem;
-  }
-  .IsLoggedIn #PrivacyPolicy {
-    margin: 1.5rem 0 -3rem 1rem;
-    padding: 1rem 9rem 0 0;
-    z-index: 100;
-  }
+.IsLoggedIn #CookieDeclaration {
+  padding: 1.5rem 1.5rem 0;
+  margin: 1.5rem -1.5rem -2.5rem;
+  background: #2b353c;
+}
+.IsLoggedIn #PrivacyPolicy {
+  margin: 1.5rem -1.5rem -1rem 0rem;
+  padding: 1.5rem 1.5rem 0;
+  z-index: 100;
+  background: #2b353c;
+}
 #UserHomeIntro {
   flex-basis: 500px;
   margin: 0;
