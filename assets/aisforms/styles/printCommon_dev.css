@@ -15,6 +15,14 @@
 @page {
   @top-right { content: flow(header2) }
 }
+@page {
+    @bottom-left {
+        content: "Page " counter(page) " of " counter(pages);
+        font-size: 10px;
+        font-family: Arial;
+        color: #474747;
+    }
+}
 
 
 #pageHeader {
@@ -58,12 +66,6 @@ body .Content .RecommendationFor {
   content: "Ref code: "
 }
 
-@page {
-  @bottom-left {
-    content: 'Page ' counter(page) ' of ' counters(page);
-  }
-}
-
 /* PAGE TYPOGRAPHY */
 
 body {
@@ -88,6 +90,10 @@ a {
 }
 .QuestionAnswer {
   page-break-before: avoid;
+}
+.nodisplayprint {
+  page-break-before: avoid;
+  page-break-after: avoid;
 }
 p,
 ul {
@@ -437,8 +443,32 @@ table.TemplateTable tr th {
   text-align: left;
   padding: 0 .5em 0 0;
 }
-th {
-  border-bottom: 1t solid #999;
+.AnswerTable {
+  border-collapse: collapse;
+  margin: 6pt;
+  widows: 5;
+  orphans: 5;
+}
+.AnswerTable td,
+.AnswerTable th {
+  padding: .25em .5em;
+  text-align: left;
+}
+.AnswerTable td td {
+  padding: 0;
+}
+.AnswerTable th {
+  vertical-align: bottom;
+  padding-bottom: .5em;
+  page-break-after: avoid;
+}
+/*.AnswerTable th:not(:last-child) {
+  border-right: thin solid #cecece;
+}*/
+.AnswerTable .headerRow + tr > td,
+.AnswerTable thead + tr > td {
+  border-top: thin solid #cecece;
+  padding-top: .75em;
 }
 /*th,*/
 table.TemplateTable .sideTH {
@@ -676,21 +706,7 @@ div.Content div.GroupedItem:after {
   margin-left: -11pt;
   margin-bottom: -6pt;
 }
-.AnswerTable
-  {
-    border-collapse: collapse;
-    /*border: thin solid #999;*/
-    margin: 6pt;
-}
-.AnswerTable td,
-.AnswerTable th {
-  padding: .25em;
-  text-align: left;
-  vertical-align: top;
-}
-.AnswerTable td td {
-  padding: 0;
-}
+
 /*.Content div.SectionDisplay table th,
 div.Content table.AnswerTable tr.headerRow th {
   background-color: #5D5E57;
