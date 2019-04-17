@@ -203,9 +203,6 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
 #Header #buildAndInstance {
   margin-left: 2rem;
 }
-#Header.IsLoggedIn #buildAndInstance .build {
-  display: none;
-}
 .instance {
   margin-bottom: .4em;
 }
@@ -493,9 +490,9 @@ div.LoginOrNewAccount div.CustomContent {
   margin-right: 0;
 }
 .LoginWrapper {
-    margin: 1em 400px 1em 3em;
-    background-color: #EDF2DE;
-    padding: 1em;
+  margin: 1em 400px 1em 3em;
+  background-color: #EDF2DE;
+  padding: 0 1em;
   border: 1px solid #e6e6e6;
 }
 .LoginWrapper.LoginProgramWrapper {
@@ -509,9 +506,6 @@ div.LoginOrNewAccount div.CustomContent {
   max-width: 600px;
     margin: 4em 400px 1em 2em;
   padding: 0 1em 1em 2em;
-}
-.LoginWrapper.LoginProgramWrapper .LoginWelcome {
-  margin: -2em 0 0;
 }
 .LoginWrapper.LoginProgramWrapper .LoginWelcome img {
   padding: 0 1.5em 1em .5em;
@@ -847,21 +841,27 @@ table a {
 table.RowDisplay tr:nth-child(2n+2),
 table.RowDisplay tbody tr:nth-child(2n+2),
 /* added for tables with thead */
-table.RowDisplay thead ~ tbody tr:nth-child(2n+1) {
+table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
+.odd {
   background-color: #dbe8f2;
 }
 table.RowDisplay tr:nth-child(2n+3),
 table.RowDisplay tbody tr:nth-child(2n+3),
 /* added for tables with thead */
-table.RowDisplay thead ~ tbody tr:nth-child(2n+2) {
+table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
+.even {
   background-color: #fff;
 }
 table.RowDisplay tbody tr.submitted_odd,
-body table.Brands td.Active /* .submitted_odd, table.RowDisplay tr:nth-child(2n+3), table.RowDisplay tbody tr:nth-child(2n+3) */  {
+table.RowDisplay tbody tr:nth-child(2n+1).submitted,
+div.AppRowDisplayRowColorLegend table.RowDisplay tr td.odd.submitted,
+body table.Brands td.Active {
   color: #000;
   background-color: #629BC6;
 }
-table.RowDisplay  tbody tr.submitted_even /* .submitted_even, table.RowDisplay tr:nth-child(2n+2), table.RowDisplay tbody tr:nth-child(2n+2) */ {
+table.RowDisplay  tbody tr.submitted_even,
+table.RowDisplay tr:nth-child(2n+2).submitted,
+div.AppRowDisplayRowColorLegend table.RowDisplay tr td.even.submitted {
   background-color: #8fb7d6;
   color: #000;
 }
@@ -1014,6 +1014,7 @@ div.Main div.staffHome div.Deadlines {
 .staffHome h1 {
   display: none;
 }
+
 .Content .AdminHomeLinks a {
   font-size: .875rem;
   text-decoration: none;
@@ -1025,6 +1026,7 @@ div.Main div.staffHome div.Deadlines {
   margin: .5rem 0;
   border-left: 1px solid #FFD590;
 }
+
 .Content .AdminHomeLinks a span.adminHomeLinksDescription,
 .Content .AdminHomeLinks a span.description {
   font-size: .6em;
@@ -1240,15 +1242,17 @@ table.TemplateTable tr td {
   margin: -1.5rem;
 }
 /*TEMP*/
-  .IsLoggedIn #CookieDeclaration {
-    padding: 1rem 1.5rem 0;
-    margin: 1.5rem -1.5rem -3rem;
-  }
-  .IsLoggedIn #PrivacyPolicy {
-    margin: 1.5rem 0 -3rem 1rem;
-    padding: 1rem 9rem 0 0;
-    z-index: 100;
-  }
+.IsLoggedIn #CookieDeclaration {
+  padding: 1.5rem 1.5rem 0;
+  margin: 1.5rem -1.5rem -2.5rem;
+  background: #2b353c;
+}
+.IsLoggedIn #PrivacyPolicy {
+  margin: 1.5rem -1.5rem -1rem 0rem;
+  padding: 1.5rem 1.5rem 0;
+  z-index: 100;
+  background: #2b353c;
+}
 #UserHomeIntro {
   flex-basis: 500px;
   margin: 0;
@@ -1281,10 +1285,15 @@ table.TemplateTable tr td {
   font-size: .875rem;
 }
 #userHome img.logo,
-.ProgramLogoHome {
+.ProgramLogoHome,
+.LoginText img {
   margin-right: 1rem;
   margin-bottom: .5rem;
-  max-width: 250px;
+  max-height: 75px;
+  object-fit: scale-down;
+  object-position: 0;
+  max-width: 500px;
+  height: auto;
 }
 #userHome #topLogos,
 #userHome #bottomLogos {
@@ -1327,9 +1336,12 @@ table.TemplateTable tr td {
   font-size: .875rem;
   color: #ededed;
   padding: 1.5rem;
-  margin: -1.5rem;
+  margin: 0 -1.5rem -1.5rem;
   display: flex;
   flex-flow: row wrap;
+}
+.HomeProgramAfterContent .Tips:first-child {
+  margin: -1.5rem;
 }
 .HomeProgramAfterContent .Tips h3 {
   flex-basis: 100%;
