@@ -16,7 +16,7 @@
   @top-right { content: flow(header2) }
 }
 @page {
-    @bottom-left {
+    @bottom {
         content: "Page " counter(page) " of " counter(pages);
         font-size: 10px;
         font-family: Arial;
@@ -66,7 +66,7 @@ body .Content .RecommendationFor {
   content: "Ref code: "
 }
 
-/* PAGE TYPOGRAPHY */
+/* BASIC STYLES */
 
 body {
   font-size: 12px;
@@ -94,12 +94,13 @@ a {
 .nodisplayprint {
   page-break-before: avoid;
   page-break-after: avoid;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 p,
 ul {
   margin-top: .5em;
   margin-bottom: .5em;
-  /*padding: 0;*/
 }
 /* COLORS */
 .SectionDisplay .SectionName {
@@ -130,7 +131,7 @@ ul {
   font-weight: bold;
 }
 
-/* FLOAT LEFT FIELDS OVERRIDES */
+/* FLOAT LEFT FIELDS OVERRIDES DUE TO LAYOUT ISSUE DURING PDF GENERATION */
 .SectionDisplay .PrimaryPhone,
 .SectionDisplay .PrimaryPhoneType,
 .SectionDisplay .AlternatePhoneType,
@@ -157,8 +158,8 @@ ul {
 .Group {
   clear: both;
 }
-div.QuestionItem.FirstName,
-div.QuestionItem.Sex,
+.QuestionItem.FirstName,
+.QuestionItem.Sex,
 .clearPrint {
   clear: left;
 }
@@ -168,11 +169,11 @@ div.QuestionItem.Sex,
 input[type=text],
 .TextQuestion,
 select.ChoiceQuestion,
-.DateQuestion/*,
-.QuestionAnswer .RowDisplay td*/ {
+.DateQuestion {
   text-decoration: underline;
   display: inline-block;
 }
+/* ANSWERS IN TABLES */
 .QuestionAnswer .RowDisplay td,
 .QuestionAnswer .RowDisplay th {
   border: 0;
@@ -187,59 +188,31 @@ div.Formula div.QuestionAnswer {
   margin-bottom: 1pt;
   vertical-align: top;
 }
-
 .AnswerTable input[type=text],
 .AnswerTable .TextQuestion,
 .AnswerTable .ChoiceQuestion,
 .AnswerTable .DateQuestion,
 .AnswerTable .Formula,
-/*.AnswerTable div.RadioButtonMatrix tr td,*/
 td .TextQuestion {
-  border: none;
-}
-/*.AnswerTable div.RadioButtonMatrix tr td {
-  padding-top:0;
-  margin-top:0;
-}*/
-
-input[type=text]:before,
-.TextQuestion:before,
-.ChoiceQuestion:before,
-.DateQuestion:before,
-.Formula:before {
-  content: " ";
+  border: 0;
 }
 
-/* PROBLEMATIC AREA-- */
+/* QUESTION AND ANSWER DISPLAY */
 .QuestionItem .QuestionText .Title {
   font-weight: bold;
   margin-top: .25em;
+  padding-top: .25em;
 }
-.QuestionItem.Text .QuestionText,
-.QuestionItem.Choice .QuestionText,
-.QuestionItem.Date .QuestionText,
-.QuestionItem.Formula .QuestionText,
-.QuestionItem.Integer .QuestionText,
-.DisplayItemOnly .QuestionText {
-  display: inline-block;
-  color: #000;
-  /*max-width: 75%;*/
+.QuestionText {
+  display: block;
   margin-right: .5em;
-  font-weight: bold;
-  /*font-size: .9em;*/
 }
-
 .QuestionItem.LongText .QuestionText {
-  display: inline-block;
-  vertical-align: top;
-  color: #000;
   max-width: 85%;
   margin-right: 1.5em;
-  font-weight: bold;
-  font-size: .9em;
+  font-size: .875em;
 }
 .QuestionAnswer {
-  /*display: inline-block;*/
   margin-top: .125em;
   color: #222;
   margin-right: .5em;
@@ -248,69 +221,18 @@ input[type=text]:before,
 .QuestionAnswer .GroupedItem:not(.nodisplayprint) {
   display: block;
 }
-.LongText .QuestionAnswer  {
-  display: initial;
-}
 .QuestionAnswer .RowDisplay {
   margin-left: .75em;
 }
-/* <--PROBLEMATIC AREA */
-
-/* PROBLEMATIC AREA FIX--> */
-
-div.GroupedItem div:not(.nodisplayprint),
-div[class*="Group"]:not(.nodisplayprint),
-div[class*="autoset"]:not(.nodisplayprint),
-div[class*="Essay"]:not(.nodisplayprint),
-div[class*="essay"]:not(.nodisplayprint),
-div[class*="Statement"]:not(.nodisplayprint),
-div[class*="LongTxt"]:not(.nodisplayprint),
-div[class*="Mult"]:not(.nodisplayprint),
-div[class*="Choice"]:not(.nodisplayprint),
-div[class*="Descrip"]:not(.nodisplayprint),
-div[class*="Expl"]:not(.nodisplayprint),
-div[class*="GroupingItem"] .QuestionAnswer {
-  display: block;
-  /*margin-bottom: 5pt;*/
-}
-div.GroupedItem div.QuestionAnswer,
-div[class*="Group"] .QuestionAnswer,
-div[class*="autoset"] .QuestionAnswer,
-div[class*="Ess"] .QuestionAnswer,
-div[class*="LongTxt"] .QuestionAnswer,
-div[class*="essay"] .QuestionAnswer,
-div[class*="Statem"] .QuestionAnswer,
-div[class*="Mult"]  .QuestionAnswer,
-div[class*="Descrip"] .QuestionAnswer,
-div[class*="Expl"] .QuestionAnswer,
-div[class*="GroupingItem"] .QuestionAnswer,
-.EVALFlagEss .QuestionAnswer {
-  display: block;
-}
 div[class*="Group"] .QuestionAnswer .QuestionAnswer {
   margin: .125em 0 .25em;
-}
-
-div.RadioButtonMatrix,
-div.QuestionItem[class*="Mult"]  .QuestionAnswer,
-.EVALFlagEss .QuestionAnswer {
-  /*margin: 2pt 0 0 0;*/
-}
-/*fixes margin issue with some titles in groups*/
-div[class*="Group"] .QuestionItem.Text,
-div[class*="Group"] .QuestionText,
-div[class*="Group"] .QuestionItem.Choice .QuestionText,
-div[class*="Group"] .QuestionItem.Date .QuestionText,
-div[class*="Group"] .QuestionItem.Formula .QuestionText,
-div[class*="Group"] .QuestionItem.Integer .QuestionText {
-  display: block;
 }
 span.leftmargin-fix {
   margin-left: 2.4em;
 }
 
 
-/* <--PROBLEMATIC AREA FIX */
+/* <--QUESTION AND ANSWER DISPLAY */
 
 
 .LongTextNoEditing br {
@@ -319,8 +241,7 @@ span.leftmargin-fix {
 
 
 .RadioButtonMatrix {
-  border-bottom: none;
-  margin-bottom: none;
+  margin-bottom: 0;
   padding: 0;
 }
 .RadioButtonMatrix tr {
@@ -390,7 +311,7 @@ input[type="radio"] {
   text-align: center;
   -webkit-appearance: none;
   background-color: #000;
-  border: none;
+  border: 0;
   vertical-align: initial;
   width: 5px;
   height: 5px;
@@ -401,13 +322,6 @@ input[type="radio"] {
 .CheckboxMatrix .ERXMatrixTable.Checked td:first-of-type:after,
 .CheckboxMatrix .ERXMatrixTable td:first-of-type {
   border-radius: 2px;
-}
-td .TextQuestion,
-td input[type=text],
-td select.ChoiceQuestion,
-td .DateQuestion,
-td .QuestionAnswer .RowDisplay td {
-  /*text-decoration: none;*/
 }
 .TemplateTable {
   margin: .5em 0;
@@ -462,15 +376,13 @@ table.TemplateTable tr th {
   padding-bottom: .5em;
   page-break-after: avoid;
 }
-/*.AnswerTable th:not(:last-child) {
-  border-right: thin solid #cecece;
-}*/
+
 .AnswerTable .headerRow + tr > td,
 .AnswerTable thead + tr > td {
-  border-top: thin solid #cecece;
+  border-top: thin solid #8c8c8c;
   padding-top: .75em;
 }
-/*th,*/
+
 table.TemplateTable .sideTH {
   font-weight: bold;
   background-color: #e6e6e6;
@@ -525,10 +437,6 @@ td.ERXMatrixTableCell {
 input {
   margin-right: 1em;
 }
-/*td input[checked] {
-  border: 1px solid #000;
-  border-radius: 15px;
-}*/
 
 div.Content div.LongTextNoEditing {
     padding: .5em;
@@ -546,12 +454,12 @@ div.Content td div.LongTextNoEditing {
 }
 div.Content table tr td div.LongTextNoEditing
   {
-    border: none;
+    border: 0;
     border-style: none;
     margin: 0;
     padding: 0;
   }
-div.Content p:not(.nodisplay*)
+div.Content p:not([class^="nodisplay"])
   {
     display: block;
     margin-top: 0.2em;
@@ -604,32 +512,31 @@ div.SectionIntroductionText
     padding-bottom: .2em;
   }
 
-div.QuestionItem div.QuestionText div.Title,
-div.QuestionItem div.QuestionNumber,
-div.DisplayItemOnly div.QuestionText div.Title,
-div.DisplayItemOnly div.QuestionNumber,
-div.BeforeQuestion div.QuestionText,
-div.BeforeQuestion div.QuestionNumber
+/*.QuestionItem .QuestionText .Title,
+.QuestionItem .QuestionNumber,
+.DisplayItemOnly .QuestionText .Title,
+.DisplayItemOnly .QuestionNumber,
+.BeforeQuestion .QuestionText,
+.BeforeQuestion .QuestionNumber
   {
     padding-top: 0.15em;
     color: #000;
-  }
-div.SectionItemsList {
+  }*/
+.SectionItemsList {
     border-radius: 5px;
-    /*padding:0.5em 0;*/
 }
-div.QuestionItem div.QuestionText div.Instruction,
-div.BeforeQuestion div.QuestionItem .QuestionInstructions,
-div.QuestionText span.Instruction,
-div.SectionDisplay div.SectionItemsList div.Instruction,
-div.Instruction,
+.QuestionItem .QuestionText .Instruction,
+.BeforeQuestion .QuestionItem .QuestionInstructions,
+.QuestionText span.Instruction,
+.SectionDisplay .SectionItemsList .Instruction,
+.Instruction,
 a.SectionDataFill,
 a.FormDataFill,
-div.PageName {
-    display: none;
-    }
-div.BeforeQuestion div.QuestionItem div.QuestionInstructions,
-div.QuestionText span.Instruction {
+.PageName {
+  display: none;
+}
+.BeforeQuestion .QuestionItem .QuestionInstructions,
+.QuestionText span.Instruction {
   margin: 0;
 }
 
@@ -650,23 +557,23 @@ div.QuestionText span.Instruction {
        float:left;
     }
 
-div.QuestionItem div.QuestionNumber,
-div.DisplayItemOnly div.QuestionNumber,
-div.BeforeQuestion div.QuestionNumber {
+.QuestionItem .QuestionNumber,
+.DisplayItemOnly .QuestionNumber,
+.BeforeQuestion .QuestionNumber {
   float: left;
   width: 30px;
 }
-div.QuestionItem .GroupedItem div.QuestionNumber {
+.QuestionItem .GroupedItem .QuestionNumber {
   width: initial;
 }
 option[selected] {display: table-row;}
 
 option:not([selected]) {display: none;}
 
-.fromApplicant input[type="button" i]:disabled,
+/*.fromApplicant input[type="button" i]:disabled,
 .fromApplicant input[type="submit" i]:disabled,
 .fromApplicant input[type="reset" i]:disabled,
-.fromApplicant input[type="file" i]:disabled::-webkit-file-upload-button,
+.fromApplicant input[type="file" i]:disabled::-webkit-file-upload-button,*/
 .fromApplicant button:disabled,
 .fromApplicant select:disabled,
 .fromApplicant optgroup:disabled,
@@ -674,7 +581,7 @@ option:not([selected]) {display: none;}
 .fromApplicant select[disabled] > option {
   color: #333333 !important;
   -webkit-text-fill-color: #333333;
-  border: none;
+  border: 0;
   font-size: .875em;
   background: white;
   border-radius: 0;
@@ -684,7 +591,6 @@ option:not([selected]) {display: none;}
 
 div.Content div.GroupedItem
   {
-    margin-left: ;
     padding: 0 10pt 6pt;
     margin: 1em 0 1em .75em;
     border-left: 2px solid #cecece;
