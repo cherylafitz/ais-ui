@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+body,
+.onyx {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+fieldset {
+  border-radius: 2px;
+  border: 1px solid #999;
+}
+.onyx-toolbar {
+  background-color: #29353d;
+}
+#app_templateHeading {
+  background-image: url(https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg);
+  background-repeat: no-repeat;
+  background-size: 48px;
+  background-position: .75rem .75rem;
+  padding: 1rem;
+}
+#app_templateHeadingContent {
+  margin: 1rem .375rem 0 3.375rem;
+}
+.onyx-toolbar .onyx-button,
+#app_upload .qq-upload-button,
+#app_overwrite .qq-upload-button {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color : #ffffff;
+  background: #204156; /* Old browsers */
+  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #336789 10%,  #204156 60%, #204156 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #214155;
+  box-shadow: none;
+}
+#app_detailScroller {
+  padding: .75rem 1rem;
+}
+
