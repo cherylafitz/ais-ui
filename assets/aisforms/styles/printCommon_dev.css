@@ -48,7 +48,7 @@ body .Content .RecommendationFor {
 .Content .MiddleName {
   text-transform: capitalize;
 }
-#pageHeader .LastName:after {
+#pageHeader .LastName:not(:empty):after {
   content: ", ";
 }
 #pageHeader .MiddleName,
@@ -56,7 +56,7 @@ body .Content .RecommendationFor {
 #pageHeader .ProgramYear {
     padding-right: 2pt;
 }
-#pageHeader .MiddleName:after,
+#pageHeader .MiddleName:not(:empty):after,
 #pageHeader .ApplicationRefCode:after,
 #pageHeader .ProgramYear:after {
     content: " |";
