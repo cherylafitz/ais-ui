@@ -171,7 +171,6 @@ input[type=text],
 select.ChoiceQuestion,
 .DateQuestion {
   text-decoration: underline;
-  display: inline-block;
 }
 /* ANSWERS IN TABLES */
 .QuestionAnswer .RowDisplay td,
@@ -725,7 +724,7 @@ span.labelTitle {
 
 div.QuestionItem div.QuestionNumber,
 div.QuestionNumber,
-.SectionDisplay.staff-only,
+.SectionDisplay[class*="staff-only"],
 .developerEyesOnly,
 .RecommendationTemplateIsExpiredRow {
     display:none !important;
