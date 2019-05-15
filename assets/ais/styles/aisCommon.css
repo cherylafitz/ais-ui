@@ -2178,18 +2178,21 @@ form.FilterForm table.filter {
 /* HEALTH INBOX --> */
 
 span.QuestionnaireNotSent,
+td[data-thread-status="QuestionnaireNotSent"],
 td[data-thread-status="No questions asked"] {
   background-color: #ffeeb3;
   padding: 0.125rem 0.25rem;
 }
 
 span.WaitingForApplicant,
+td[data-thread-status="WaitingForApplicant"],
 td[data-thread-status="Awaiting response to question"] {
   background-color: #ffb699;
   padding: 0.125rem 0.25rem;
 }
 
 span.ApplicantReplied,
+td[data-thread-status="ApplicantReplied"],
 td[data-thread-status="Responded to questions"] {
   background-color: #A9D4A1;
   padding: 0.125rem 0.25rem;
