@@ -15,14 +15,15 @@
 @page {
   @top-right { content: flow(header2) }
 }
-@page {
+/* removing page number for now, individual forms can add own page num */
+/*@page {
     @bottom {
         content: "Page " counter(page) " of " counter(pages);
         font-size: 10px;
         font-family: Arial;
         color: #474747;
     }
-}
+}*/
 
 
 #pageHeader {
@@ -73,11 +74,6 @@ body {
   font-family: Arial;
   border: none !important;
   box-sizing: border-box;
-}
-body:before,
-body:after {
-  height: 0 !important;
-  background-color: transparent !important;
 }
 a {
   color: #000000;
@@ -171,7 +167,6 @@ input[type=text],
 select.ChoiceQuestion,
 .DateQuestion {
   text-decoration: underline;
-  display: inline-block;
 }
 /* ANSWERS IN TABLES */
 .QuestionAnswer .RowDisplay td,
@@ -725,7 +720,7 @@ span.labelTitle {
 
 div.QuestionItem div.QuestionNumber,
 div.QuestionNumber,
-.SectionDisplay.staff-only,
+.SectionDisplay[class*="staff-only"],
 .developerEyesOnly,
 .RecommendationTemplateIsExpiredRow {
     display:none !important;
