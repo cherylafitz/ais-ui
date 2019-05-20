@@ -75,11 +75,6 @@ body {
   border: none !important;
   box-sizing: border-box;
 }
-body:before,
-body:after {
-  height: 0 !important;
-  background-color: transparent !important;
-}
 a {
   color: #000000;
   pointer-events: none;
