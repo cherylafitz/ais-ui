@@ -1644,6 +1644,10 @@ h4 {
   font-size: 1.125rem;
   color: #33424d;
 }
+.bg-blue01 h4,
+.bg-blue02 h4 {
+  color: #fff;
+}
 
 /* TABLES-->*/
 table,
@@ -3499,7 +3503,7 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 /* <- BANNERS */
 .info-page .content {
   max-width: 800px;
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
 .info-page .card {
   font-size: .875rem;
