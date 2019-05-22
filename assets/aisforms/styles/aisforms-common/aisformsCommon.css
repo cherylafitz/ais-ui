@@ -2,11 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
-div#PrivacyPolicy/*,
-div#CookieDeclaration*/ {
-  display: none;
-}
-
 /* ADD THIS SUMMER!! -->
 
 #TopMenu a:hover, .menu a:hover, .menu a:active, #TopMenu a:active {
@@ -397,6 +392,7 @@ body.IsNotLoggedIn .Content {
 }
 #PrivacyPolicy {
   float: right;
+  z-index: 2;
 }
 .IsNotLoggedIn #PrivacyPolicy {
   margin-right: 2rem;
