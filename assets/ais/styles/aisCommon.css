@@ -302,6 +302,7 @@ a {
 .showHoverable.erxHoverArea {
   margin-left: 18px !important;
   padding: 0 .125rem;
+  display: block;
 }
 
 .information,
