@@ -3194,10 +3194,6 @@ div.FormTrackerReport table tr td.SubmissionDate,
 div.FormTrackerReport table tr td.ReferenceCode {
   text-align: center;
 }
-.FormTrackerReport td,
-.FormTrackerReport th {
-  vertical-align: middle;
-}
 .FormTrackerReport .SubmissionName {
   padding-top: .25rem;
   font-weight: bold;
