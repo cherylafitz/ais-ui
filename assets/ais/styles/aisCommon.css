@@ -3682,6 +3682,12 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
   float: left;
 }
 
+/* MODALS --> */
+#MB_window {
+  width: 650px !important;
+}
+
+/* <-- MODALS */
 
 
 /* MEDIA QUERIES-->*/

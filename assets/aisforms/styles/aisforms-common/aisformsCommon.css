@@ -2225,6 +2225,13 @@ div#Growler {
         vertical-align: baseline;
       }
 
+/* MODALS --> */
+#MB_window {
+  width: 650px !important;
+}
+
+/* <-- MODALS */
+
 /* DESCRIPTIVE STYLES--> */
 .clear-left {
   clear: left;
@@ -2674,6 +2681,7 @@ legend:not(.SaveButton) {
     margin: 5em 1em;
   }
 }
+
 @media only screen
 and (min-width : 768px)
 and (max-width : 896px) {
