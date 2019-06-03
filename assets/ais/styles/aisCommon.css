@@ -1507,6 +1507,7 @@ div.AlumnusSummary table.rolodex tr td {
 .FSAAppFullDisplay table.rolodex tr td th,
 .FSAAppFullDisplay table.rolodex tr td td {
   border-bottom: none;
+  vertical-align: top;
 }
 .FSAAppFullDisplay table.TravelInboundDisplay tr td,
 .FSAAppFullDisplay table.TravelInboundDisplay tr th,
