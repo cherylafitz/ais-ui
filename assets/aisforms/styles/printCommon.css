@@ -16,14 +16,14 @@
   @top-right { content: flow(header2) }
 }
 /* removing page number for now, individual forms can add own page num */
-/*@page {
-    @bottom {
-        content: "Page " counter(page) " of " counter(pages);
+@page {
+    /*@bottom {*/
+        /*content: "Page " counter(page) " of " counter(pages);*/
         font-size: 10px;
         font-family: Arial;
         color: #474747;
-    }
-}*/
+    /*}*/
+}
 
 
 #pageHeader {
