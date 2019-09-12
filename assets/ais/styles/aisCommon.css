@@ -132,6 +132,7 @@ div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
 body #PageWrapperNavUpdate {
   background: #fff;
   height: 100%;
+  width: 100%;
 }
 
 *,
@@ -604,6 +605,7 @@ table .leftNav a {
 
 .leftNav {
   color: #fff;
+  min-width: 200px;
 }
 .leftNav h1 {
   color: #f5d295;
@@ -958,9 +960,12 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumnusSocialMediaList,
 .SystemAnnouncementsWrapper + div {
   position: relative;
-  height: 100%;
+  min-height: calc(100% - 174px);
+  display: flex;
 }
-
+.ArticleEditor {
+  padding-bottom: 1rem;
+}
 .SystemAnnouncementsWrapper + div.ArticleViewer,
 .SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
   position: relative;
@@ -998,7 +1003,7 @@ table.rolodex .alumnusSection + tr td {
 div#alumnusSummary a.PriorPage {
   font-size: 0.75rem;
   font-style: normal;
-  padding: 0.5rem 0 0;
+  padding: 0.5rem 0;
   display: block;
 }
 div#alumnusSummary h1 {
@@ -1009,11 +1014,11 @@ div#alumnusSummary h1 {
 /* <-- alumnus summary */
 
 #navMenu {
-  position: absolute;
+  float: none;
   bottom: 0;
   top: 0;
   width: 10rem;
-  height: 100%;
+  min-height: 100%;
   background: #33424d;
   -webkit-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
   -moz-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
@@ -1082,7 +1087,10 @@ div#alumnusSummary h1 {
   background: rgba(41, 53, 61, 0.7);
 }
 #navMenu + div {
-  padding: 1rem 1rem 1rem 180px !important;
+  padding: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  flex: 1;
 }
 .AuditTrailRowDisplay a,
 .ArticleSearch .ArticleSearch a {
@@ -1149,6 +1157,20 @@ div#navMenu div.PriorPage {
   border: none;
   bottom: 0;
 }*/
+footer {
+  background-color: #29353d;
+  border-top: 1px solid #3d4f5c;
+  display: flex;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+  color: #fff;
+  font-style: normal;
+  font-size: .75rem;
+}
+footer a,
+footer div.classNameDisplay {
+  color: #fff;
+}
 #PageWrapperNavUpdate > .footer,
 table.pageStructure tr.footerArea td.leftNav .byline {
   background-color: #2c3942;
@@ -1347,6 +1369,9 @@ div.FSAAppFullDisplay a#HideContentsOfAllSections {
   width: 100%;
   border-collapse: collapse;
 }
+.ParticipantSummaryPage .StudentSummary table table {
+  width: initial;
+}
 
 .ParticipantSummaryPage table.RowDisplay {
   margin: 0;
@@ -1482,6 +1507,7 @@ div.AlumnusSummary table.rolodex tr td {
 .FSAAppFullDisplay table.rolodex tr td th,
 .FSAAppFullDisplay table.rolodex tr td td {
   border-bottom: none;
+  vertical-align: top;
 }
 .FSAAppFullDisplay table.TravelInboundDisplay tr td,
 .FSAAppFullDisplay table.TravelInboundDisplay tr th,
@@ -1591,7 +1617,7 @@ body {
 
 table.pageStructure,
 table.pageStructure tr.contentArea {
-  height: 100%;
+  height: calc(100% - 174px);
 }
 
 .AlumnusSummary,
@@ -1614,6 +1640,14 @@ h2 {
 }
 h3 {
   font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.125rem;
+  color: #33424d;
+}
+.bg-blue01 h4,
+.bg-blue02 h4 {
+  color: #fff;
 }
 
 /* TABLES-->*/
@@ -1915,7 +1949,6 @@ textarea,
 input,
 td input[type="password"],
 td input[type="search"] {
-  background-color: #fff;
   border: none;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
@@ -1934,7 +1967,11 @@ select {
   border: none;
 }
 input[type="file"] {
+  background-color: initial;
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   text-decoration: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -2149,17 +2186,23 @@ form.FilterForm table.filter {
 
 /* HEALTH INBOX --> */
 
-span.QuestionnaireNotSent {
+span.QuestionnaireNotSent,
+td[data-thread-status="QuestionnaireNotSent"],
+td[data-thread-status="No questions asked"] {
   background-color: #ffeeb3;
   padding: 0.125rem 0.25rem;
 }
 
-span.WaitingForApplicant {
+span.WaitingForApplicant,
+td[data-thread-status="WaitingForApplicant"],
+td[data-thread-status="Awaiting response to question"] {
   background-color: #ffb699;
   padding: 0.125rem 0.25rem;
 }
 
-span.ApplicantReplied {
+span.ApplicantReplied,
+td[data-thread-status="ApplicantReplied"],
+td[data-thread-status="Responded to questions"] {
   background-color: #A9D4A1;
   padding: 0.125rem 0.25rem;
 }
@@ -2418,8 +2461,9 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr.Answer td:nth-child
 #ProgramStaffQuestionnaire .Answer .Text,
 #ProgramStaffQuestionnaire .Answer > .File,
 #ProgramStaffQuestionnaire .Answer .HasNoFile,
-div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
-  background-color: #d2dbe2;
+div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2),
+.HealthQuestionnaireEditor .Answer .Text {
+  background-color: rgba(210, 219, 226, .75);
   -webkit-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
   -moz-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
   box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
@@ -2427,10 +2471,11 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
 }
 #ProgramStaffQuestionnaire .Answer .Text,
 #ProgramStaffQuestionnaire .Answer > .File,
-#ProgramStaffQuestionnaire .Answer .HasNoFile {
+#ProgramStaffQuestionnaire .Answer .HasNoFile,
+.HealthQuestionnaireEditor .Answer .Text  {
   display: inline-block;
-  width: 96%;
-  margin: 0;
+  width: calc(100% - 2rem);
+  margin: 0 0 0 .25rem;
 }
 
 #ProgramStaffQuestionnaire .Answer,
@@ -2453,11 +2498,13 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
 .TranscribedQuestionsForApplicant table.RowDisplay tr th {
   background-color: #f0f2f5;
 }
-#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2) {
+#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2),
+.HealthQuestionnaireEditor table.RowDisplay tr:nth-child(2n+2)  {
   background-color: #fff;
 }
 #ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+3),
-.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3) {
+.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3),
+.HealthQuestionnaireEditor table.RowDisplay tbody tr:nth-child(2n+3) {
   background-color:  #eff2f5;
 }
 #ProgramStaffQuestionnaire table.RowDisplay {
@@ -2475,7 +2522,7 @@ div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr th,
 }
 div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
 .TranscribedQuestionsForApplicant table tr td{
-  padding: .25rem .5rem;
+  padding: .75rem 1rem;
   border: none;
   white-space: normal;
 }
@@ -2489,6 +2536,43 @@ div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay,
 .TranscribedQuestionsForApplicant table.RowDisplay {
   border: 1px solid #c2c2c2;
 }
+.TranscribedQuestionsForApplicant .Actions div {
+  margin-bottom: .5rem;
+}
+.TranscribedQuestionsForApplicant .ReplyBy {
+  margin-left: .5rem;
+}
+div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
+  height: 7rem;
+  width: calc(100% - 2rem);
+  vertical-align: top;
+  margin-left: .25rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff {
+  display: flex;
+  flex-flow: wrap row;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff textarea,
+.TranscribedQuestionsForApplicant .AnswerByStaff .ReasonStaffAnswered {
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer {
+  margin-top: .5rem;
+  padding-top: .75rem;
+  border-top: 1px solid #ccd2d6;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer div {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Save answer"] {
+  order: 5;
+  margin-right: .5rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Cancel"]{
+  order: 6;
+}
+
 /* <-- HEALTH INBOX */
 
 
@@ -2987,7 +3071,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 #UserNameLabel,
 #PasswordLabel {
-  width: 5em;
+  width: 5.125rem;
 }
 #LoginButtonSection,
 #ResetPasswordSection {
@@ -3110,10 +3194,6 @@ div.FormTrackerReport table tr th.SubmissionDate,
 div.FormTrackerReport table tr td.SubmissionDate,
 div.FormTrackerReport table tr td.ReferenceCode {
   text-align: center;
-}
-.FormTrackerReport td,
-.FormTrackerReport th {
-  vertical-align: middle;
 }
 .FormTrackerReport .SubmissionName {
   padding-top: .25rem;
@@ -3389,6 +3469,11 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 
 /* SHARED ELEMENTS --> */
 
+.Delete input {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
 /* BANNERS -> */
 
 #BannerAC_AIS,
@@ -3415,7 +3500,7 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 /* <- BANNERS */
 .info-page .content {
   max-width: 800px;
-  padding: 2.5rem;
+  padding: 1.5rem;
 }
 .info-page .card {
   font-size: .875rem;
@@ -3597,6 +3682,12 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
   float: left;
 }
 
+/* MODALS --> */
+#MB_window {
+  width: 650px !important;
+}
+
+/* <-- MODALS */
 
 
 /* MEDIA QUERIES-->*/
@@ -3622,6 +3713,10 @@ and (max-width : 480px) {
     background: #e0e6ed;
     width: 24rem;
     padding: 1rem 4.25rem 1.5rem;
+  }
+  #LoginPage.ie-prohibited #content,
+  #LoginPage.passwordResetError #content{
+    padding: 1.25rem 1.5rem;
   }
   #LoginPage #content input[type="submit"]
   {

@@ -7,12 +7,12 @@ table td div.PDFDownload {
 
 div.TotalScoreFormula {
     border: medium solid #2E6B9B;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    margin: 0.5em 1em 1em 0;
-    padding: 0.5em;
-    width: 21em;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    margin: 0.5rem 1rem 1rem 0;
+    padding: 0.5rem 1rem;
+    width: 21rem;
 }
 
 body div.Content div.FirstName,
@@ -41,8 +41,8 @@ body div.Content div.ProgramLanguage1,
 body div.Content div.ProgramDuration1,
 body div.Content div.ProgramLanguage2,
 body div.Content div.ProgramDuration2,
-body div.Content div.RecommenderFirstName,
-body div.Content div.RecommenderLastName,
+/*body div.Content div.RecommenderFirstName,
+body div.Content div.RecommenderLastName,*/
 body div.Content div.RecommenderCity,
 body div.Content div.RecommenderStateProvince,
 body div.Content div.RecommenderZIPPostalCode,
@@ -54,6 +54,26 @@ body div.Content div.ParentRecommender1LastName {
   float: left;
   clear: none;
 }
+body div.Content div.RecommenderFirstName,
+body div.Content div.RecommenderLastName {
+  float: none;
+}
+body {
+  counter-reset: recommendation-increment;
+}
+body div.Content div.RecommenderFirstName {
+  counter-increment: recommendation-increment;
+}
+body div.Content div.RecommenderFirstName:before {
+  content: "Recommendation " counter(recommendation-increment);
+  font-size: 1.5rem;
+  margin: .25rem 0 1rem;
+  display: block;
+}
+body div.Content div.RecommenderFirstName:not(:first-child) {
+  border-top: 3px solid #cecece;
+  margin-top: 3rem;
+}
 
 div.Content div.MailAddrZIP {
   clear: left;
@@ -63,33 +83,75 @@ div.Content div.MailAddrZIP {
 
 .Content .SectionDisplay .LongTextNoEditing {
   text-align: justify;
+  padding: .5rem .75rem;
+  background: rgba(255, 255, 255, .8);
+  border: 1px solid #cecece;
+  border-radius: 2px;
+  margin-bottom: .5rem;
+  color: #000;
 }
 
 /* Tables */
 
-/*CHECK --> */
-/*div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th {
-  border: black thin solid;
-  text-align: left;
-  vertical-align: top;
-  font-weight: bold;
-  font-style: normal;
-}*/
+div.Content .fromApplicant table.AnswerTable tr td div,
+.fromApplicant table div.itemDisplayOuterContainer,
+div.Content .fromApplicant table.AnswerTable tr td:first-child {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
+.fromApplicant .ChoiceQuestion .Checked td,
+.fromApplicant .CheckboxMatrix .Checked td,
+.fromRecommender .ChoiceQuestion .Checked td,
+.fromRecommender .CheckboxMatrix .Checked td {
+  color: #333333;
+}
+.fromApplicant .ChoiceQuestion td,
+.fromApplicant .CheckboxMatrix td,
+.fromRecommender .ChoiceQuestion td,
+.fromRecommender .CheckboxMatrix td {
+  color: #b3b3b3;
+}
 
 /* Alignment/Spacing */
+
+.QuestionItem.fromApplicant,
+.subQuestion.fromApplicant,
+.Group.fromApplicant,
+div.Content .fromApplicant div.GroupedItem,
+.QuestionItem.fromRecommender {
+  background-color: #e4e5e7;
+  padding: .375rem 1rem .25rem;
+  margin-bottom: .125rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 0 .125rem .125rem 0;
+}
+.QuestionItem.fromRecommender.DisabledBecauseOfSkipPattern {
+  display: none;
+}
+
+.GroupedItem .fromApplicant {
+  background: rgba(255, 255, 255, .75);
+}
+.subQuestion {
+  margin-left: 0;
+}
 
 div.Content .fromApplicant div.QuestionNumber,
 div.Content .fromRecommender div.QuestionNumber  {
   float:left;
   font-weight: bold;
   padding-right: .5rem;
-  color: #3F3F3F;
+  color: #333333;
 }
 
 div.Content div.BeforeQuestion.fromApplicant {
-  color: #3F3F3F;
+  color: #333333;
+  background-color: transparent;
+  padding: 0;
 }
 
 .fromApplicant.MissingItemForAttemptedSubmit {
@@ -104,21 +166,17 @@ div.Content div.BeforeQuestion.fromApplicant {
   background-color: transparent;
 }
 
-/* CHECK --> */
-/*div.Content div.QuestionText {
-  margin-left: 2rem;
-}*/
-
 /* ISSUES --> */
 div.Content .fromRecommender .fromRecommender div.QuestionText,
 div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
-  margin-left: 1.7em;
+  /*margin-left: 1.7em;*/
 }
-div.Content .fromApplicant div.Title {
-  color: #3F3F3F;
-  margin-top: 0.2em;
+div.Content .fromApplicant div.Title,
+div.Content .fromRecommender div.Title {
+  color: #333333;
+  margin-top: 0.25rem;
   font-weight: bold;
-  font-size: 1em;
+  font-size: .95rem;
 }
 
 div.Content .fromApplicant div.NumberOfWords,
@@ -162,6 +220,9 @@ div.SectionIntroductionText .helpBox {
   padding:0;
   margin:0;
 }
+.AppIDBlock table.TemplateTable {
+  margin: 0 0 1rem;
+}
 div.SectionIntroductionText table.AppRefCode tr td {
   text-align: right;
   border: thin solid #2E6B9B;
@@ -173,24 +234,20 @@ div.SectionIntroductionText table.AppRefCode tr td {
   margin-right:10px;
 }
 
-.QuestionItem.fromRecommender.RecommenderFirstName,
-.RecommendationsReceived,
-.StaffUploadRecommendation {
-  -webkit-border-top-left-radius: 20px;
-  -moz-border-radius-topleft: 20px;
-  border-top-left-radius: 20px;
-  border-left: 3px solid #CECECE;
-  border-top: 3px solid #CECECE;
-  -webkit-border-top-left-radius: 20px;
-  -moz-border-radius-topleft: 20px;
-  border-top-left-radius: 20px;
-  padding: .5em;
+div.Content .fromRecommender .RecOverallComments {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid #cecece;
 }
-.QuestionItem.fromRecommender {
-  padding: .5em;
+div.Content div.Divider,
+div#ApplicationTemplateDisplayAUC div.SectionDisplay h1,
+.Content div.SectionDisplay h2 {
+  margin: 0;
+  padding-top: .75rem;
+  padding-bottom: .325rem;
 }
-div.Content div.Divider, div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
-  margin-top: 0;
+.Content .SectionDisplay h1 {
+  font-size:
 }
 select:disabled,
 td input[type="radio"]:disabled,
@@ -203,7 +260,7 @@ input[type="checkbox"]:disabled,
 input[type="checkbox"]:disabled:active,
 input[type="checkbox"]:disabled:hover,
 input[type="checkbox"]:disabled:hover:active {
-  color: #000; ! important;
+  color: #333333 ! important;
 }
 div.Content table.AnswerTable tr td:first-child {
     padding: 6px 2px;
@@ -220,36 +277,18 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
 }
 
 /* For evaluator note fields within application and recommendation import sections that can be displayed on evaluation and scoring section */
-.evaluatorNotes {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  padding: .5em;
-  border: 3px double #2E6B9B;
-  background-color: #FFFFDD;
-}
-
+.evaluatorNotes,
 .evaluatorNotesDisplay {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   padding: .5em;
-  margin-bottom:1em;
-  border: 3px double #CECECE;
-  background-color: #FFFFDD;
+  border: 1px solid #f6b844;
+  background-color: #ffe2b3;
 }
 
 /* Application Question Emphasis */
 
-div.QuestionItem.fromApplicant,
-div.QuestionItem.fromRecommender  {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  padding: 0.5em;
-  border-left: 3px double #cecece;
-  margin: 0em;
-}
 td div.QuestionItem.fromApplicant,
 td div.QuestionItem.fromRecommender {
   -webkit-border-radius: 0px;
@@ -268,10 +307,12 @@ div.BeforeQuestion.fromRecommender {
 div.QuestionItem.fromEvaluator {
   margin-top: .5em;
 }
-
+.fromEvaluator .Instruction {
+  margin-top: .5rem;
+}
 div.fromApplicant div.QuestionText div.Title,
 div.fromRecommender div.QuestionText div.Title {
-    margin-bottom:0.5em;
+  margin-bottom:0.5em;
 }
 
 div.Content div.fromApplicant div.QuestionNumber,
@@ -279,10 +320,28 @@ div.Content div.fromRecommender div.QuestionNumber {
   display: none;
 }
 div.Content .fromApplicant div.QuestionText,
+div.Content div.subConditional div.QuestionText,
 div.Content .fromApplicant div.QuestionAnswer,
 div.Content .fromRecommender div.QuestionText,
 div.Content .fromRecommender div.QuestionAnswer {
   margin-left: 0;
+}
+.TextQuestion {
+  color: #333333;
+}
+.fromApplicant input[type="button" i]:disabled,
+.fromApplicant input[type="submit" i]:disabled,
+.fromApplicant input[type="reset" i]:disabled,
+.fromApplicant input[type="file" i]:disabled::-webkit-file-upload-button,
+.fromApplicant button:disabled,
+.fromApplicant select:disabled,
+.fromApplicant optgroup:disabled,
+.fromApplicant option:disabled,
+.fromApplicant select[disabled] > option {
+  color: #333333 !important;
+  -webkit-text-fill-color: #333333;
+  background-color: rgba(255, 255, 255, .5);
+  font-size: 1rem;
 }
 
 /* END Application Question Emphasis

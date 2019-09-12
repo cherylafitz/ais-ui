@@ -1,15 +1,26 @@
 @charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
 /*@import url("https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css");*/
 /*
 COLOR PALETTE:
-red : #981727;
+dark red : #981727;
+bright red: #c81e32;
 light yellow: #FFD590;
 lighter yellow: #ffe2b3;
 dark blue: #29353d;
 medium dark blue: #33424d;
-light blue: #e3e8e8; (old: #e0ebeb)
+light gray: #e3e8e8;
+light blue:  #e0e6eb (old: #e0ebeb);
 light green: #c8d295;
 lighter green: #E8EBD9;
+
+Highlights:
+salmon: #ffb699;
+green: #A9D4A1;
+light-yellow: #ffeeb3;
+medium-yellow: #f8c76d;
 */
 
 /* RESET CSS --> */
@@ -156,6 +167,9 @@ body #PageWrapperNavUpdate {
 .row-size3 {
   margin-top: 1.5rem;
 }
+.row-break-size1 {
+  margin-bottom: .75rem;
+}
 /* remove after adding .column */
 [class^="column"] {
   float: left;
@@ -193,9 +207,6 @@ body #PageWrapperNavUpdate {
 }
 /* <-- SIMPLE GRID */
 
-
-
-
 /* NAVIGATION --> */
 .navigation {
   padding: 0;
@@ -218,20 +229,22 @@ body #PageWrapperNavUpdate {
 }
 
 .card {
-  background-color: #e3e8e8;
+  background-color: #e0e6eb;
   padding: 1rem;
   margin-bottom: 1rem;
-  border: 1px solid #cecece;
   border-radius: 2px;
 }
 /* <-- TILES AND CARDS */
 
 /* TYPOGRAPHY --> */
 p {
-  margin-bottom: .5rem;
-}
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-rendering: optimizeLegibility;
 
-p:last-of-type {
+}
+p:last-child {
   margin-bottom: 0;
 }
 
@@ -315,13 +328,16 @@ a {
 color: #c4dcee;
 }
 .localizificatinator select {
-  font-size: .75rem;
+  font-size: .675rem;
   margin-top: .25rem;
 }
 .logoutLink {
   padding-right: 0;
 }
-
+#AddAuthorizedUserButtonID {
+  line-height: .75rem;
+  margin: .25rem 0;
+}
 .leftNav .Body .header {
   display: block;
 }
@@ -345,6 +361,9 @@ body .divider {
   height: .5rem;
   background: #29353d;
 }
+#cssmenu {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
 #cssmenu ul {
   background: #444;
   background: -moz-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
@@ -358,11 +377,12 @@ body .divider {
   box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
 }
 #cssmenu ul li {
-    -webkit-transition: background ease-out 100ms;
-    -moz-transition: background ease-out 100ms;
-    -ms-transition: background ease-out 100ms;
-    -o-transition: background ease-out 100ms;
-    transition: background 100ms ease-out;
+  -webkit-transition: background ease-out 100ms;
+  -moz-transition: background ease-out 100ms;
+  -ms-transition: background ease-out 100ms;
+  -o-transition: background ease-out 100ms;
+  transition: background 100ms ease-out;
+  border: none;
 }
 #cssmenu ul li::after {
   height: 0;
@@ -387,7 +407,7 @@ body .divider {
 .topNavInTable td.nameBlock {
   background-image: url('https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg');
   background-repeat: no-repeat;
-  background-size: 72px;
+  background-size: 66px;
   text-align: left;
   padding-top: .5rem;
   width: 360px;
@@ -395,7 +415,7 @@ body .divider {
   background-position: 0 .5rem;
 }
 .topNavInTable td.nameBlock > div {
-  margin-left: 90px;
+  margin-left: 84px;
 }
 div.MultiSearcher {
   margin-top: .5rem;
@@ -424,18 +444,19 @@ div.MultiSearcher input[type="submit"] {
 div.MultiSearcher input[type="submit"]:last-of-type {
   margin-right: .25rem;
 }
-td.logo img {
-  padding-top: .5rem;
+div#tippyTopOfPage table.TopNavTableStructure img.Logo {
+  padding-top: .75rem;
+  width: 225px;
 }
 .topNavInTable .title {
   font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.25;
 }
 .topNavInTable td.logo {
   padding-right: 1rem;
+  padding-left: .5rem;
   vertical-align: top;
-}
-.topNavInTable td.logo {
-  width: 260px;
 }
 #tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
   background: #ffffff;
@@ -443,6 +464,9 @@ td.logo img {
   margin: .125rem 0 .25rem .25rem;
   border: 3px solid #2a353d;
   box-shadow: 0 0 0px 2px #f6b844;
+}
+.programName {
+  vertical-align: middle;
 }
 /* <--HEADER */
 
@@ -548,13 +572,21 @@ dl.inLeftNav dd {
 /* <-- NAVIGATION */
 
 #cssmenu ul li a {
-  padding: 7px 14px 6px;
+  padding: .25rem 1rem .375rem;
+  color: #000;
+  display: block;
+  text-decoration: none;
+  font-size: .9375rem;
+  text-transform: none;
+  font-weight: normal;
+  border: none;
 }
 #cssmenu ul {
-  background: transparent linear-gradient(to top, #94a8b8 0, #b3c1cc 35%, #b3c1cc 65%, #859cad 100%) repeat scroll 0 0; /* alt blue */
-}
-#cssmenu ul li a {
-  color: #000;
+  background: -moz-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 ); /* IE6-9 */
+  line-height: initial;
 }
 table.pageStructure .leftNav dd a,
 .inLeftNav li a,
@@ -574,12 +606,13 @@ table .leftNav a {
   color: #fff;
 }
 .leftNav h1 {
-  color: #c8d295;
+  color: #f5d295;
   padding-top: 0;
-  /*padding-bottom: .25rem;*/
-  margin-bottom: .5rem;
+  text-transform: none;
+  margin-bottom: .25rem;
   font-size: 1.125rem;
   white-space: nowrap;
+  font-weight: normal;
 }
 .leftNav .Body .header {
   margin-top: 1rem;
@@ -701,16 +734,19 @@ input {
 
 #contentPageProportional table.RowDisplay,
 #contentPageProportional tr.headerRow,
-#contentPageProportionaltr.headerRow,
+#contentPageProportional thead tr,
 #contentPageProportional tr.headerRow th a,
+#contentPageProportional thead tr th a,
 table.report th,
 table.TravelVendorExplanation tr.headerRow th,
+table.TravelVendorExplanation thead tr th,
 div.DescribeColumns table.ColumnDescriptions tr.Titles {
-  background-color: #cdd3ab;
+  background-color: #fff;
   color: #000;
   font-style: normal;
 }
-#contentPageProportional #ApplicationSearchForm tr.headerRow {
+#contentPageProportional #ApplicationSearchForm tr.headerRow,
+#contentPageProportional #ApplicationSearchForm thead tr {
   background-color: transparent;
 }
 #contentPageProportional table.RowDisplay {
@@ -732,6 +768,9 @@ div.ArticleViewer fieldset {
   padding-bottom: .75rem;
 }
 
+fieldset:not(:first-child):first-of-type {
+  margin-top: .75rem;
+}
 div.HomePageForAll fieldset fieldset,
 fieldset fieldset,
 td.content fieldset fieldset  {
@@ -756,11 +795,26 @@ fieldset label {
   margin: 0 .5rem .25rem 0;
 }
 
+table.pageStructure {
+    border-collapse: collapse;
+}table.pageStructure tr.contentArea {
+    vertical-align: top;
+}
+table.pageStructure tr.contentArea td.leftNav {
+    width: 153px;
+}
+table.pageStructure tr.footerArea td.leftNav
+{
+  white-space: nowrap;
+  background-color: #d9d9d9;
+  font-size: .75rem;
+  text-align: center;
+}
 /* Placement Report --> */
 
 div.PlacementReport {
   border: none;
-  font-family: "proxima-nova-bold", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 table.PlacementReportDisplay,
 table.PlacementReportDisplay table.siblings,
@@ -774,7 +828,7 @@ table.PlacementReportDisplay table.rolodex {
   border-collapse: collapse;
 }
 table.PlacementReportDisplay table.rolodex tr:nth-child(2n + 3) {
-    background-color: #F9FAF5;
+    background-color: #dbe8f2;
     background-color: #fff;
 }
 table.PlacementReportDisplay table.rolodex tr:nth-child(2n + 2) {
@@ -841,14 +895,15 @@ div.PlacementReportSearch table.PlacementReportDisplay tr.section td {
   padding: .5rem;
   border-top: none;
 }
-table.PlacementReportDisplay table.siblings tr.headerRow {
+table.PlacementReportDisplay table.siblings tr.headerRow,
+table.PlacementReportDisplay table.siblings thead tr {
   background-color: #fff;
   color: #000;
   border: 1px solid #cecece;
   padding: .2rem;
 }
 .siblings tr:nth-child(2n+3) {
-    background-color: #F9FAF5;
+    background-color: #dbe8f2;
 }
 .siblings tr:nth-child(2n+2) {
     background-color: #E8EBD9;
@@ -938,7 +993,7 @@ table.rolodex .alumnusSection + tr td {
   background-color: #d7ddbc;
 }
 .AddressHistory .subTable {
-  background-color: #F9FAF5;
+  background-color: #dbe8f2;
 }
 div#alumnusSummary a.PriorPage {
   font-size: 0.75rem;
@@ -999,7 +1054,7 @@ div#alumnusSummary h1 {
   /* to reset --> */
   display: block;
   font-size: .875rem;
-  font-family: "proxima-nova-bold", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   border-top: none;
   border-bottom: none;
@@ -1018,7 +1073,7 @@ div#alumnusSummary h1 {
   text-align: left;
   background-color: transparent;
   text-transform: uppercase;
-  font-family: "proxima-nova-bold", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: bold;
   /* end reset */
   margin-bottom: .25rem;
@@ -1042,16 +1097,16 @@ div#alumnusSummary h1 {
 .AlumnusSearch tbody > tr > th,
 .AlumnusSearch tbody > tr > th ~ td {
     border-bottom: 1px solid #c2c2c2;
-    background-color: #e3e8e8;
+    background-color: #e0e6eb;
 }
 .ArticleSearch table.rolodex tr td,
 .AlumnusSearch table.rolodex tr th ~ td {
   background-color: #cbd2d6;
   padding-left: .5rem;
-  border-right: .75rem solid #e3e8e8;
+  border-right: .75rem solid #e0e6eb;
 }
 .AlumnusSearch th {
-  border-left: .75rem solid #e3e8e8;
+  border-left: .75rem solid #e0e6eb;
 }
 .ArticleSearch table.rolodex tr:first-of-type td {
   padding-top: .25rem;
@@ -1062,10 +1117,10 @@ div#alumnusSummary h1 {
 .ArticleSearch form > table {
   width: 100%;
   border-collapse: collapse;
-  border: .75rem solid #e3e8e8;
+  border: .75rem solid #e0e6eb;
 }
 tr.alumnusSection {
-  border-bottom: .75rem solid #e3e8e8;
+  border-bottom: .75rem solid #e0e6eb;
 }
 table.rolodex tr.alumnusSection td {
     font-weight: bold;
@@ -1188,7 +1243,10 @@ div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
 
 /*MISC ALIGNMENT -->*/
 
-div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value, div.PlacementReportSearch .Scope .LimitToFundingSource > .value, div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value, div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
+div.PlacementReportSearch .Scope .LimitToCurrentPlacements > .value,
+div.PlacementReportSearch .Scope .LimitToFundingSource > .value,
+div.PlacementReportSearch .Scope .ChooseProgramInProgramYearRange > .value,
+div.PlacementReportSearch .Scope .ChooseSubmissionDateRange > .value {
     position: absolute;
     top: 0;
     left: 8rem;
@@ -1253,7 +1311,8 @@ table.pageStructure .leftNav .StudentSummary {
   /* <-- nav */
 
 .ParticipantSummaryPage .Section,
-.AlumnusSummary .Section {
+.AlumnusSummary .Section,
+.AIRAppSummaryDisplayInAIS .Section {
   max-width: 700px;
   margin: 2rem 0;
 }
@@ -1275,10 +1334,6 @@ table.pageStructure .leftNav .StudentSummary {
 div.FSAAppFullDisplay a#HideContentsOfAllSections {
   margin-left: 1rem;
 }
-/*#contentPageProportional .StudentLastNameEmphasis {
-  font-weight: normal;
-}*/
-
 .StudentLastNameEmphasis {
   font-weight: bold;
 }
@@ -1291,6 +1346,9 @@ div.FSAAppFullDisplay a#HideContentsOfAllSections {
 .AlumnusSummary table {
   width: 100%;
   border-collapse: collapse;
+}
+.ParticipantSummaryPage .StudentSummary table table {
+  width: initial;
 }
 
 .ParticipantSummaryPage table.RowDisplay {
@@ -1312,6 +1370,15 @@ div#alumnusSummary fieldset table caption {
   padding-bottom: .5rem;
   text-align: left;
 }
+.StudentAddressEditor .buttonRow {
+  max-width: 520px;
+}
+.StudentAddressEditor .buttonRow .Cancel {
+  padding-left: .5rem;
+}
+.StudentAddressEditor .buttonRow .Delete {
+  float: right;
+}
 /* <-- OVERRIDES ONLY */
 div.FSAAppFullDisplay fieldset.Section legend,
 .HealthGroup legend,
@@ -1320,17 +1387,19 @@ div.FSAAppFullDisplay fieldset.Section legend,
 div.AlumnusSummary fieldset.Section legend,
 div.StudentDisplayForHealthReviewer fieldset#ProgramStaffQuestionnaire legend,
 div.HealthQuestionnaireEditor fieldset legend,
-.UserFullDisplay legend {
-  padding: 5px 16px 4px;
+.UserFullDisplay legend,
+div.AIRAppSummaryDisplayInAIS fieldset.Section legend,
+fieldset.Section legend {
+  padding: 5px 10px 4px;
   border-radius: 5px 5px 0 0;
   border: none;
   background-color: #415467;
   color: #fff;
   font-weight: normal;
-  top: -11px;
+  top: -12px;
   position: relative;
-  font-size: 1.25rem;
-  line-height: 1.125rem;
+  font-size: 1.125rem;
+  line-height: 1.125;
 }
 
 fieldset legend select {
@@ -1341,9 +1410,12 @@ fieldset legend select {
 
 div.FSAAppFullDisplay fieldset.Section,
 div.AlumnusSummary fieldset.Section,
-div.UserFullDisplay fieldset {
+div.UserFullDisplay fieldset,
+div.AIRAppSummaryDisplayInAIS fieldset.Section,
+fieldset.Section {
   border-top: 5px solid #415461;
   position: relative;
+  max-width: 700px
 }
 
 div.FSAAppFullDisplay fieldset.Section legend a,
@@ -1375,22 +1447,24 @@ div.AlumnusSummary fieldset.Section table.rolodex tr td.Account {
 }
 
 div.FSAAppFullDisplay table.rolodex > tbody > tr > td,
-div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td {
+div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td,
+fieldset.Section table.rolodex > tbody > tr > td {
   background-color: #cbd2d6;
   padding-left: .5rem;
   padding-right: .5rem;
 }
 
 #alumnusSummary table.RowDisplay tr.headerRow,
-/*table.RowDisplay tr.totalsRow,*/
+#alumnusSummary table.RowDisplay thead tr,
 #alumnusSummary table.RowDisplay tr th,
 div#alumnusSummary table.CountryRelationships tr th,
 div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
 div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
-  background-color: #cdd3ab;
+  background-color: #fff;
 }
 #alumnusSummary table.RowDisplay td,
 #alumnusSummary table.RowDisplay tr.headerRow th,
+#alumnusSummary table.RowDisplay thead tr th,
 #alumnusSummary table.RowDisplay tr th,
 div#alumnusSummary table.AlternateContacts tr th,
 div#alumnusSummary table.AlternateContacts tr td  {
@@ -1420,7 +1494,7 @@ div.AlumnusSummary table.rolodex tr td {
 }
 .FSAAppFullDisplay table.TravelInboundDisplay tr th[colspan="2"],
 .FSAAppFullDisplay table.TravelOutboundDisplay tr th[colspan="2"] {
-  background-color: #cdd3ab;
+  background-color: #fff;
 
 }
 .FSAAppFullDisplay table.TravelInboundDisplay tr th:not([colspan="2"]),
@@ -1447,11 +1521,18 @@ div.FSAAppFullDisplay fieldset.Section legend a.Update {
   font-size: 0.75rem;
 }
 
+/* STUDENT SCHOOL INFO EDITOR -> */
+.StudentSchoolInfoEditor input[type="text"] {
+  width: 20rem;
+  max-width: 100%;
+}
+/* <- STUDENT SCHOOL INFO EDITOR */
+
 /* POST SELECTION UPDATE --> */
 
 table.rolodex.StatusUpdate {
   border: none;
-  background-color: #e3e8e8;
+  background-color: #e0e6eb;
   border-radius: 2px;
   border-collapse: collapse;
 }
@@ -1504,7 +1585,7 @@ body {
   padding: 0;
   position: relative;
   color: #222222;
-  font-family: "proxima-nova-bold", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
   height:100%;
   -webkit-font-smoothing: antialiased;
@@ -1519,36 +1600,31 @@ table.pageStructure tr.contentArea {
 .AlumnusSummary,
 .AlumnusContactList {
   position: relative;
-  /*height: 100%;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  /* seeing if this rule can be removed - in testing --> */
-  /*color: #000;*/
-  line-height: 1.25rem;
+  line-height: 1.5;
   padding: 0;
 }
 
-p {
-  line-height: 1.25rem;
-}
-
-/* seeing if these h1 rules can be removed - in testing --> */
 h1 {
-  /*padding: .25rem 0 .5rem 0;*/
-  /*font-weight: normal;*/
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
+  font-size: 1.25rem;
 }
 
 /* TABLES-->*/
-
 table,
 div.AIRAdminSearchForApplications form div#outerTableContainerID table.Search.rolodex,
 table.ChoiceCategories {
   background-color: #fff;
 }
-
 div.LoginOrNewAccount table, table.templates,
 div.MenuOfSections table,
 div.GroupedItem table,
@@ -1562,10 +1638,8 @@ table tr th,
 table tr td {
   font-style: normal;
 }
-
 table.RowDisplay tr th {
   background-color: #fff;
-  background-color: #cdd3ab;
 }
 div.CMSBatchNavigation table {
   background-color: transparent;
@@ -1661,18 +1735,19 @@ tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td  {
 .M-sp-d-cc-sp-Y {
   max-width: 7rem;
 }
-
 table.Search,
 div.AIRAdminSearchForApplications table.Search.rolodex {
   border-left: .6rem solid #fff;
   border: 1px solid #FFD590;
 }
 table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
 table.RowDisplay td,
 table.report td,
 table.TravelVendorExplanation tr td,
 table.report th,
 table.TravelVendorExplanation tr.headerRow th,
+table.TravelVendorExplanation thead tr th,
 table.TravelInboundDisplay th,
 table.TravelInboundDisplay td,
 table.TravelOutboundDisplay th,
@@ -1681,22 +1756,38 @@ table.TravelOutboundDisplay td,
 .subTable td {
   font-size: .875rem;
   white-space: nowrap;
-  padding: 0.125rem 0.25rem .25rem;
-  border: 1px solid #fff;
+  /*padding: 0.125rem 0.25rem .25rem;*/
+  /*border: 1px solid #fff;*/
   text-align: left;
-  font-family: "proxima-nova-bold", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  padding: .25rem 0.5rem;
+  border: 1px solid #afb2b9;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+td.RowNumber,
+table.RowDisplay td.RowNumber,
+table.RowDisplay tr.headerRow th.RowNumber,
+table.RowDisplay thead tr th.RowNumber,
+table.report td.RowNumber,
+div.AuditTrailRowDisplay td.RowNumber {
+    text-align: right;
 }
 td input {
   font-size: .875rem;
 }
 table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
 table.report th,
 table.TravelVendorExplanation tr.headerRow th,
+table.TravelVendorExplanation thead tr th,
 table.TravelInboundDisplay th,
 table.TravelOutboundDisplay th {
-  padding: .25rem .325rem .25rem;
+  /*padding: .25rem .325rem .25rem;*/
+  /*border-color: #e8ecda;*/
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay thead tr th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
   max-width: 200px;
   text-overflow: ellipsis;
@@ -1704,26 +1795,41 @@ div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
   white-space: nowrap;
 }
 div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay thead tr th,
 div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
   max-width: 1200px;
 }
-table.RowDisplay tr.headerRow {
+table.RowDisplay tr.headerRow,
+table.RowDisplay thead tr {
   font-style: normal;
   font-size: 1rem;
 }
+table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
+/* specific styling for tables missing thead or .headerRow -> */
+table.report tr:first-of-type {
+  border-top: 2px solid #5f666d;
+  border-bottom: 2px solid #5f666d;
+}
+table.RowDisplay tr.headerRow th.ApplicationCount {
+  border-bottom-color: #afb1b9;
+}
 table.RowDisplay tr.headerRow th a,
+table.RowDisplay thead tr th a,
 table.RowDisplay td a {
   color: #000000;
   text-decoration: underline;
   border-bottom: none;
 }
 table.RowDisplay tr.headerRow th a:hover,
+table.RowDisplay thead tr th a:hover,
 table.RowDisplay td a:hover {
   text-decoration: none;
   border-bottom: none;
   color: #C75D48;
 }
 table.RowDisplay tr.headerRow th a:active,
+table.RowDisplay thead tr th a:active,
 table.RowDisplay td a:active {
   color: #73382C;
 }
@@ -1745,28 +1851,27 @@ a.hideLink:hover {
 #AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+3),
 table.RowDisplay tr:nth-child(2n+2),
 table.RowDisplay tbody tr:nth-child(2n+2),
+table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
 table.report tr:nth-child(2n+2),
 tr.PassportName td div.EntryArea,
 .evenRow,
 table.TravelInboundDisplay tr:nth-child(2n+2),
 table.TravelOutboundDisplay tr:nth-child(2n+2),
-/*.HealthQuestions tr:nth-child(2n+2),*/
 div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n) {
-  background-color: #F9FAF5;
+  background-color: #dbe8f2;
 }
 #AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+2),
 #AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+2),
-table.RowDisplay tr:nth-child(2n+3),
-table.report tr:nth-child(2n+3),
-table.RowDisplay tbody tr:nth-child(2n+3),
+table.RowDisplay tr:nth-child(2n+1),
+table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
+table.report tr:nth-child(2n+1),
+table.RowDisplay tbody tr:nth-child(2n+1),
 tr.ApplicationName td div.EntryArea,
 .oddRow,
 table.TravelInboundDisplay tr:nth-child(2n+3),
 table.TravelOutboundDisplay tr:nth-child(2n+3),
-/*.HealthQuestions tr:nth-child(2n+3),
-.HealthQuestions tr:nth-child(2n + 1),*/
 div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n+1) {
-  background-color: #E8EBD9;
+  background-color: #fff;
 }
 table.RowDisplay tbody tr.submitted_odd /* .submitted_odd, table.RowDisplay tr:nth-child(2n+3), table.RowDisplay tbody tr:nth-child(2n+3) */  {
   color: #000;
@@ -1805,12 +1910,14 @@ table.Search tr th {
 /* <--TABLES*/
 
 /* FORMS --> */
+form {
+  margin-bottom: 0;
+}
 td input[type="text"],
 textarea,
 input,
 td input[type="password"],
 td input[type="search"] {
-  background-color: #fff;
   border: none;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
@@ -1818,14 +1925,10 @@ td input[type="search"] {
   padding: 0 2px;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
-  /*margin: 0 .125rem;*/
 }
 select {
   margin-bottom: .25rem;
   font-size: .875rem;
-/*  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.5);
-  box-shadow: 0 0 1px rgba(0,0,0,0.5);*/
   border: 1px solid #c0bfbf;
 }
 #tippyTopOfPage select,
@@ -1833,7 +1936,11 @@ select {
   border: none;
 }
 input[type="file"] {
+  background-color: initial;
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   text-decoration: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1994,6 +2101,7 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement .byline {
 
 legend {
   font-size: 1rem;
+  font-weight: bold;
 }
 span.aisEmail {
   word-wrap: break-word;
@@ -2020,7 +2128,8 @@ form.FilterForm table.filter caption {
   text-align: left;
 }
 
-#contentPageProportional .HealthQueueDisplayForPIPY .filter tr.headerRow {
+#contentPageProportional .HealthQueueDisplayForPIPY .filter tr.headerRow,
+#contentPageProportional .HealthQueueDisplayForPIPY .filter thead tr {
   background-color: transparent;
   font-size: .875rem;
 }
@@ -2064,7 +2173,7 @@ span.ApplicantReplied {
 div.StudentDisplayForHealthReviewer table.DocumentsList,
 div.StudentDisplayForHealthReviewer table.DocumentsList caption {
   border: 1px solid #cecece;
-  background-color: #e3e8e8;
+  background-color: #e0e6eb;
 }
 div.StudentDisplayForHealthReviewer table.DocumentsList caption {
   border-bottom: none;
@@ -2093,7 +2202,7 @@ div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
 }
 div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
   font-size: initial;
-  background-color: #e3e8e8;
+  background-color: #e0e6eb;
   border-bottom: none;
 }
 .HealthBioHeader td:first-of-type {
@@ -2274,7 +2383,7 @@ div.StudentDisplayForHealthReviewer fieldset.HealthGroup div.Explanation {
 }
 div.HealthDataFormExpertEditor fieldset.HealthGroup div.Explanation .ReadOnly,
 div.StudentDisplayForHealthReviewer fieldset.HealthGroup div.Explanation .ReadOnly {
-  line-height: 1.25rem;
+  line-height: 1.25;
 }
 .HealthCommentsSubTitle,
 .HealthQuestionsSubTitle {
@@ -2306,7 +2415,6 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr td {
 #ProgramStaffQuestionnaire .AnswerLabel,
 .TranscribedQuestionsForApplicant .AnswerLabel {
   display: inline-block;
-  width: 2%;
   margin: 0;
   vertical-align: top;
   font-weight: bold;
@@ -2316,8 +2424,9 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr.Answer td:nth-child
 #ProgramStaffQuestionnaire .Answer .Text,
 #ProgramStaffQuestionnaire .Answer > .File,
 #ProgramStaffQuestionnaire .Answer .HasNoFile,
-div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
-  background-color: #d2dbe2;
+div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2),
+.HealthQuestionnaireEditor .Answer .Text {
+  background-color: rgba(210, 219, 226, .75);
   -webkit-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
   -moz-box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
   box-shadow: inset 0 0px 1px 0 rgba(0, 0, 0, .3);
@@ -2325,10 +2434,11 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
 }
 #ProgramStaffQuestionnaire .Answer .Text,
 #ProgramStaffQuestionnaire .Answer > .File,
-#ProgramStaffQuestionnaire .Answer .HasNoFile {
+#ProgramStaffQuestionnaire .Answer .HasNoFile,
+.HealthQuestionnaireEditor .Answer .Text  {
   display: inline-block;
-  width: 96%;
-  margin: 0;
+  width: calc(100% - 2rem);
+  margin: 0 0 0 .25rem;
 }
 
 #ProgramStaffQuestionnaire .Answer,
@@ -2338,7 +2448,6 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2) {
 #ProgramStaffQuestionnaire .QuestionLabel,
 .TranscribedQuestionsForApplicant .QuestionLabel {
   font-weight: bold;
-  width: 2%;
   display: inline-block;
 }
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
@@ -2352,11 +2461,13 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
 .TranscribedQuestionsForApplicant table.RowDisplay tr th {
   background-color: #f0f2f5;
 }
-#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2) {
+#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2),
+.HealthQuestionnaireEditor table.RowDisplay tr:nth-child(2n+2)  {
   background-color: #fff;
 }
 #ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+3),
-.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3) {
+.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3),
+.HealthQuestionnaireEditor table.RowDisplay tbody tr:nth-child(2n+3) {
   background-color:  #eff2f5;
 }
 #ProgramStaffQuestionnaire table.RowDisplay {
@@ -2374,7 +2485,7 @@ div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr th,
 }
 div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
 .TranscribedQuestionsForApplicant table tr td{
-  padding: .25rem .5rem;
+  padding: .75rem 1rem;
   border: none;
   white-space: normal;
 }
@@ -2388,6 +2499,43 @@ div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay,
 .TranscribedQuestionsForApplicant table.RowDisplay {
   border: 1px solid #c2c2c2;
 }
+.TranscribedQuestionsForApplicant .Actions div {
+  margin-bottom: .5rem;
+}
+.TranscribedQuestionsForApplicant .ReplyBy {
+  margin-left: .5rem;
+}
+div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
+  height: 7rem;
+  width: calc(100% - 2rem);
+  vertical-align: top;
+  margin-left: .25rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff {
+  display: flex;
+  flex-flow: wrap row;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff textarea,
+.TranscribedQuestionsForApplicant .AnswerByStaff .ReasonStaffAnswered {
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer {
+  margin-top: .5rem;
+  padding-top: .75rem;
+  border-top: 1px solid #ccd2d6;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff .Answer div {
+  margin-bottom: .5rem;
+  width: 100%;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Save answer"] {
+  order: 5;
+  margin-right: .5rem;
+}
+.TranscribedQuestionsForApplicant .AnswerByStaff input[value="Cancel"]{
+  order: 6;
+}
+
 /* <-- HEALTH INBOX */
 
 
@@ -2521,9 +2669,19 @@ div#SchoolDisplay p {
 
 /* <-- HEALTH INBOX QUEUE */
 
+/* PAGE: PIPY EDITOR --> */
+/* override -> */
+div.PIPYDisplay .PlacementReportReasonSortOrder {
+  width: initial;
+}
 
 /* PAGE: PROGRAM SETTINGS --> */
-
+.ProgramViewEditDetail fieldset img {
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  max-height: 125px;
+}
 .ProgramViewEditDetail fieldset:not(:first-of-type) {
   margin-top: 1rem;
 }
@@ -2548,30 +2706,30 @@ td.dataEntryIsDisabled {
 }
 .applicantSearch > tbody > tr > th,
 .applicantSearch > tbody > tr > td:first-child {
-  border-left: .75rem solid #e3e8e8;
+  border-left: .75rem solid #e0e6eb;
 }
 .applicantSearch > tbody > tr > th,
 .applicantSearch > tbody > tr > th ~ td {
   border-bottom: 1px solid #c2c2c2;
-  background-color: #e3e8e8;
+  background-color: #e0e6eb;
 }
 .applicantSearch > tbody > tr > th ~ td {
   background-color: #cbd2d6;
-  border-right: .75rem solid #e3e8e8;
+  border-right: .75rem solid #e0e6eb;
   padding-left: .5rem;
 }
 .applicantSearch > tbody > tr:not(.TravelInfo) > td:first-child {
   background: white;
   border-right: none;
   border-left-color: transparent;
-  border-bottom: .75rem solid #e3e8e8;
+  border-bottom: .75rem solid #e0e6eb;
   padding: 0;
   padding-top: 1rem;
 }
 /*.applicantSearch > tbody > tr:not(.TravelInfo):not(:first-child) > td:first-child {
 }*/
 .applicantSearch .TravelInfo {
-  background-color: #e3e8e8;
+  background-color: #e0e6eb;
 }
 tr.AISStudentNumber table.outerTable {
   border: none;
@@ -2616,7 +2774,8 @@ div.sectionDivider span.SearchButtonWrapper ~ span {
   margin: 0 -.375rem 0 -.75rem;
   border-bottom: 5px solid #415467;
 }
-.embedded tr.headerRow th {
+.embedded tr.headerRow th,
+.embedded thead tr th {
   text-align: left;
 }
 /* <-- PAGE: APPLICATION SEARCH */
@@ -2651,7 +2810,8 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 
 /* PAGE: DOWNLOADS --> */
 
-#DownloadsID .headerRow {
+#DownloadsID .headerRow,
+#DownloadsID thead tr {
   margin: 0 0 .5rem 0;
   background-color: transparent;
   color: black;
@@ -2705,7 +2865,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   background-color: #29353d;
   float: left;
   text-align: left;
-  padding-right: 1rem;
+  padding: .25rem 1rem .25rem .25rem;
 }
 
 #ProgramBadges #Banner .instanceID
@@ -2742,7 +2902,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   font-weight: normal;
   position: relative;
   font-size: 1.25rem;
-  line-height: 1.125rem;
+  line-height: 1.125;
   text-align: center;
   border-radius: 2px;
 }
@@ -2864,31 +3024,27 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   margin: 0;
   white-space: normal;
   text-transform: unset;
-  padding: .75rem .125rem .125rem;
-  font-size: 1.325rem;
+  padding: .75rem .125rem 0;
+  font-size: 1.25rem;
   color: #fff;
   font-weight: normal;
 }
-#UserNameSection,
-#PasswordSection,
-#LoginButtonSection,
-#ResetPasswordSection {
-  margin-top: 0.5em;
+#LoginPage #content .section {
+  margin-top: .75rem;
 }
 #UserNameLabel,
 #PasswordLabel {
-  width: 5em;
+  width: 5.125rem;
 }
 #LoginButtonSection,
 #ResetPasswordSection {
-  margin-left: 0em;
-  padding-left: 0px;
+  margin-left: 0;
+  padding-left: 0;
 }
 #LoginPage #content {
-  padding: 1em;
-  font-size: 1.4em;
+  padding: 1rem;
+  font-size: 1.4rem;
   background: #e0e6ed;
-
 }
 #LoginPage .errorMessage {
   color: red;
@@ -2898,16 +3054,28 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   font-weight: normal;
   margin-top: .5rem;
 }
+#LoginPage #successMessage {
+  margin: .75rem 0 0;
+  text-align: center;
+}
+#LoginPage #content form {
+  clear: both;
+}
 #LoginPage #content input {
   font-size: 1.3em;
   width: 10em;
 }
-#LoginPage #content input[type="submit"] {
-  border: 1px solid black;
-  cursor:pointer;
-  margin-top: .5em;
+#LoginPage #content #PasswordResetRequestEmail,
+#LoginPage #content #PasswordResetRequestButton {
+  width: 13rem;
 }
-
+#LoginPage #content input[type="submit"] {
+  cursor:pointer;
+  border: 1px solid #214155;
+}
+#LoginButtonContainer {
+  margin-top: 1.25rem;
+}
 #LoginPage .label::after
 {
   content: ":";
@@ -2941,8 +3109,13 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 #LinkToResetPassword {
   font-size: .75rem;
 }
+#Policies {
+  margin-top: .5rem;
+  display: none;
+}
 #PrivacyPolicy,
-#CookieDeclaration {
+#CookieDeclaration,
+#DataUsageGuidance {
   font-size: .75rem;
 }
 
@@ -2973,14 +3146,307 @@ div.UserFullDisplay fieldset.UserPermissions {
 
 /* <-- PAGE: USER DISPLAY */
 
+/* PAGE: FORM TRACKER --> */
+.FormTrackerReport caption {
+  padding-bottom: .5rem;
+  text-align: left;
+  position: relative;
+  width: 400px;
+}
+div.FormTrackerReport table tr th.SubmissionDate,
+div.FormTrackerReport table tr td.SubmissionDate,
+div.FormTrackerReport table tr td.ReferenceCode {
+  text-align: center;
+}
+.FormTrackerReport td,
+.FormTrackerReport th {
+  vertical-align: middle;
+}
+.FormTrackerReport .SubmissionName {
+  padding-top: .25rem;
+  font-weight: bold;
+}
+div.FormTrackerReport table tr th.isActive.isNotOverdue {
+  background-color: #f8c76d;
+}
+div.FormTrackerReport table tr td.isActive.isNotOverdue {
+  background-color: rgba(255, 233, 153, 0.5);
+}
+.FormTrackerReport .FlaggedCount {
+  color: #000;
+  display: inline-block;
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 1rem;
+  border-radius: 50%;
+  background: #ffa480;
+  position: relative;
+  padding-left: 5px;
+  float: right;
+  margin: 0 .125rem 0 0;
+  text-align: center;
+}
+.FormTrackerReport .FlaggedCount::before,
+.FormTrackerReport .FlaggedCount::after {
+  content: '';
+  width: 1px;
+  height: 6px;
+  position: absolute;
+  background: #000;
+  transform: rotate(45deg);
+  top: 9px;
+  left: 6px;
+}
+.FlaggedCount:empty {
+  color: red;
+}
+.FormTrackerReport .FlaggedCount::after {
+  transform: rotate(-45deg);
+}
+.FormTrackerReport .Clean img {
+  display: none;
+}
+.FormTrackerReport .Clean {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  background: #8fc785;
+  border-radius: 50%;
+  vertical-align: middle;
+  float: right;
+  margin: 0 .125rem 0 0;
+}
+.UniversityAdvisorTrackerReport .FormTrackerReport .Clean {
+  float: none;
+}
+.FormTrackerReport .Clean::before {
+  content: '';
+  width: .75rem;
+  height: .5rem;
+  position: absolute;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-color: #000;
+  transform: rotate(-45deg);
+  top: 6px;
+  left: 6px;
+}
+.FormTrackerReport .inProgress {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  background: #f8c76d;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.FormTrackerReport .inProgress::before {
+  content: '...';
+  letter-spacing: -1px;
+  line-height: 9px;
+  font-family: serif;
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  font-size: 28px;
+}
+.FormTrackerReport .requested {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  background: #ffb699;
+  border-radius: 50%;
+  vertical-align: middle;
+  color: transparent;
+}
+.FormTrackerReport .requested::before {
+  content: 'r';
+  line-height: 24px;
+  position: absolute;
+  left: 7px;
+  top: 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+}
+.requested {
+  font-weight: bold;
+}
+.FormTrackerReport .isLate {
+  color: #981727;
+  font-size: .75rem;
+  padding: 0 .25rem 0 0;
+  line-height: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 26px;
+}
+.FormTrackerReport .isMissing {
+  padding-left: 16px;
+  font-size: .75rem;
+  position: relative;
+  font-weight: bold;
+  color: #222;
+}
+.FormTrackerReport .isMissing::before {
+  content: '';
+  width: 6px;
+  height: 2px;
+  position: absolute;
+  background: #a96f0e;
+  left: 3px;
+  top: 5px;
+}
+.FormTrackerReport .isMissing::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #777;
+  border-radius: 50%;
+}
+.FormTrackerReport.legend {
+  margin: .5rem 0;
+  font-size: .875rem;
+}
+.FormTrackerReport.legend .Clean,
+.FormTrackerReport.legend .FlaggedCount,
+.FormTrackerReport.legend .isMissing,
+.FormTrackerReport.legend .inProgress,
+.FormTrackerReport.legend .isLate {
+  float: initial;
+}
+.FormTrackerReport.legend span {
+  margin: 0 0 0 .5rem;
+}
+#IDGeneratorWrapper {
+  margin-bottom: .5rem;
+}
+
+/* <-- PAGE: FORM TRACKER */
+
+/* PAGE: AISBOX --> */
+.AISMultipleFileUploadStatus .UploaderLink {
+  float: left;
+  margin-right: 2rem;
+}
+.AISMultipleFileUploadStatus .RefreshLink a {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: .0625rem .5rem .125rem .5rem;
+  background: #204156;
+  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
+  border: 1px solid #214155;
+  font-size: .875rem;
+}
+.AISMultipleFileUploadStatus .MoveToInbox {
+  white-space: normal;
+  width: 4rem;
+  font-size: .75rem;
+  display: inline-block;
+}
+/* <-- PAGE: AISBOX */
+
+/* PAGE: AIS FORMS SUMMARY --> */
+
+.AIRAppSummaryDisplayInAIS .Question {
+  white-space: normal;
+  max-width: 25em;
+  min-width: 15em;
+  padding-right: .5rem;
+}
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th {
+  border: none;
+  border-bottom: 1px solid #B4B4B4;
+}
+.AIRAppSummaryDisplayInAIS .Value {
+  white-space: normal;
+  background-color: #cbd2d6;
+  border-right: .75rem solid #e0e6eb;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background: #cbd2d6;
+  border: none;
+  border-bottom: 1px solid #B4B4B4;
+}
+.AIRAppSummaryDisplayInAIS .Question,
+.AIRAppSummaryDisplayInAIS .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .RowNumber {
+  background: #e0e6eb;
+  border: none;
+  border-bottom: 1px solid #B4B4B4;
+  padding: .25rem .5rem;
+}
+.AIRAppSummaryDisplayInAIS .QuestionNumber {
+  background-color: #cbd2d6;
+}
+
+.AIRAppSummaryDisplayInAIS .RowNumber,
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.RowNumber {
+  color: #777;
+  padding-right: 1rem;
+  border: none;
+}
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.QuestionNumber,
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.RowNumber,
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Question,
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Value {
+  font-weight: bold;
+}
+.AIRAppSummaryDisplayInAIS th,
+.AIRAppSummaryDisplayInAIS td {
+  vertical-align: top;
+}
+.AIRAppSummaryDisplayInAIS #QuestionDisplayPreferenceWrapper {
+    margin-top: 1em;
+}
+div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -1rem;
+}
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .Value {
+  background-color: #ffb699;
+  border-bottom: 1px solid #ffb699;
+}
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .RowNumber,
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .Question {
+  background-color: #ffc8b3;
+  border-bottom: 1px solid #ffb699;
+}
+
+
+/* <-- PAGE: AIS FORMS SUMMARY */
+
+
+/* <--- END PAGES */
+
 /* SHARED ELEMENTS --> */
 
+.Delete input {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
 /* BANNERS -> */
 
 #BannerAC_AIS,
 #ProgramBadges #Banner {
   position: relative;
-  padding: .125rem;
+  padding: .25rem;
   background-color: #29353d;
   color: #fff;
 }
@@ -2999,17 +3465,25 @@ div.UserFullDisplay fieldset.UserPermissions {
 }
 
 /* <- BANNERS */
-#DeclarationPage {
-  background: #33424d;
-  color: #fff;
-}
-
-#DeclarationPage .content {
+.info-page .content {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
+  padding: 2.5rem;
+}
+.info-page .card {
+  font-size: .875rem;
+}
+.info-section {
+  max-width: 700px;
 }
 
+.list-multi {
+  column-count: 2;
+  column-width: 250px;
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+/* this is not a good selector - discuss other options */
 body > #priorPage {
   position: absolute;
   top: 68px;
@@ -3022,12 +3496,69 @@ body > #priorPage a {
   color: #c4dcee;
 }
 
+.info-page footer {
+  padding: 1rem;
+}
+
+
+
+/* tables -> */
+/* for dark bg */
+.inner-grid {
+  background-color: transparent;
+  border-collapse: collapse;
+  font-size: .875rem;
+  margin: .75rem 0;
+  border: .75rem solid transparent;
+}
+.inner-grid th,
+.inner-grid td {
+  text-align: left;
+  padding: .5rem;
+  vertical-align: top;
+  border: 1px solid #59666f;
+}
+.inner-grid th {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+.inner-grid tr > td:first-child,
+.inner-grid tr th:first-child {
+  border-left: none;
+}
+.inner-grid tr > td:last-child,
+.inner-grid tr th:last-child {
+  border-right: none;
+}
+.inner-grid tr:last-child td {
+  border-bottom: none;
+}
+.inner-grid tr:first-of-type th,
+.inner-grid.vertical-header tr:first-of-type td {
+  border-top: none;
+}
+.inner-grid.vertical-header th {
+  border-bottom: none;
+  border-right: 1px solid;
+}
+.inner-grid.bg-blue01 {
+  border-color: #29353d;
+}
+.inner-grid.bg-blue02 {
+  border-color: #33424d;
+}
+
+/* <- tables */
+
 /* bg color classes -> */
 
 /* darkest blue = 1 */
 .bg-blue01 {
   background-color: #29353d;
   color: #fff;
+}
+.transparent {
+  background-color: transparent;
 }
 .bg-blue01 a {
   color: #c4dcee;
@@ -3053,43 +3584,56 @@ body > #priorPage a {
 }
 /* <- text-size classes */
 
-/* tables -> */
-/* for dark bg */
-table.transparent {
-  background-color: transparent;
-  border-collapse: collapse;
-  font-size: .875rem;
-  margin: 1rem 0;
-}
-table.transparent th,
-table.transparent td {
-  text-align: left;
-  padding: .5rem;
-  vertical-align: top;
-  border: 1px solid #59666f;
-}
-table.transparent th {
-  font-size: 1rem;
-}
-table.transparent tr > td:first-child,
-table.transparent tr th:first-child {
-  border-left: none;
-}
-table.transparent tr > td:last-child,
-table.transparent tr th:last-child {
-  border-right: none;
-}
-table.transparent tr:last-child > td {
-  border-bottom: none;
-}
-table.transparent tr:first-child th {
-  border-top: none;
+/* flexbox --> */
+div.HomePageForAll div#FlexBoxedItems {
+  display: flex; /* or inline-flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* nowrap */
+  justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
+  margin-right: -1rem;
 }
 
-/* <- tables */
+div.HomePageForAll div#FlexBoxedItems fieldset {
+  flex-basis: auto;
+  flex-grow: 1;
+  min-width: initial;
+  margin-right: 1rem;
+}
+/* <-- flexbox */
+
+/* LISTS -> */
+
+
+.instruction-steps {
+  list-style-type: none;
+}
+.instruction-steps li {
+  counter-increment: step-counter;
+  margin: 2rem 1rem;
+  position: relative;
+  padding: 0 4rem;
+}
+.instruction-steps li::before {
+  content: counter(step-counter);
+  background-color: rgb(255, 185, 69);
+  color: #2a353d;
+  font-weight: bold;
+  padding: .75rem 1rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* <- LISTS */
 
 /* <-- SHARED ELEMENTS */
-
 
 
 .column-s {
@@ -3107,7 +3651,6 @@ table.transparent tr:first-child th {
 
 
 
-
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -3118,24 +3661,21 @@ and (max-width : 480px) {
 
 /* 28.75em = medium displays and bigger (like mobile phones in landscape or smaller tablets)*/
 @media screen and (min-width: 32.5em) { /* 28.75em */
-  div#LoginPage div#LoginBox {
+  #LoginPage #LoginBox {
     margin-top: 0;
   }
-  div#LoginPage div#LoginBox div#content,
-  div#LoginPage div#LoginBox div#content input
+  #LoginPage #content,
+  #LoginPage #content input
   {
     font-size: 1em;
-    color: black;
   }
-
-  div#LoginPage div#LoginBox div#content
+  #LoginPage #content
   {
     background: #e0e6ed;
     width: 24rem;
     padding: 1rem 4.25rem 1.5rem;
   }
-
-  div#LoginPage div#LoginBox div#content input[type="submit"]
+  #LoginPage #content input[type="submit"]
   {
     border: none;
     background: #204156;
@@ -3143,50 +3683,54 @@ and (max-width : 480px) {
     background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
     background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
-    border: 1px solid #214155;
     color: #fff;
     border-radius: 2px;
   }
-  div#LoginPage div#banner h2
+  #LoginPage #banner h2
   {
     font-weight: normal;
     display: inline-block;
   }
-  div#UserNameSection,
-  div#PasswordSection,
-  div#LoginButtonSection,
-  div#ResetPasswordSection
+  #UserNameSection,
+  #PasswordSection,
+  #LoginButtonSection,
+  #ResetPasswordSection
   {
     margin-top: .75rem;
   }
-  div#LoginButtonSection,
-  div#ResetPasswordSection
+  #LoginButtonSection,
+  #ResetPasswordSection
   {
     text-align: center;
   }
-  div#LoginPage div#LoginBox div#content div#ResetPasswordLinkContainer
+  #LoginPage #LoginBox #content #ResetPasswordLinkContainer
   {
      text-align:center;
   }
+  #PasswordResetRequestEmailSection label {
+    font-size: .875rem;
+  }
   #PrivacyPolicy,
-  #CookieDeclaration {
+  #CookieDeclaration,
+  #DataUsageGuidance {
     display: inline-block;
   }
   #PrivacyPolicy {
     margin: .5rem .5rem 0 1px;
   }
-
   #CookieDeclaration {
+    margin: .5rem .5rem 0 0;
+  }
+  #DataUsageGuidance {
     margin: .5rem 0 0;
   }
   #PrivacyPolicy a,
-  #CookieDeclaration a {
+  #CookieDeclaration a,
+  #DataUsageGuidance a {
     color: #34424c;
   }
   #Policies {
     text-align: center;
-    margin-top: .5rem;
-    display: none;
   }
 }
 
