@@ -1,3 +1,16 @@
+/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
+/*                                                           */
+/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
+/* added at the bottom of your palette list below, within    */
+/* their own comment section.                                */
+/*                                                           */
+/* CSS ADDITIONS: Any CSS I added is at the bottom of this   */
+/* stylesheet in its own comment section.                    */
+/*                                                           */
+/* Please! Please! review my changes and clean them up as    */
+/* as you think appropriate. Thanks! ... Gregg                                 */
+
+
 @charset "UTF-8";
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
@@ -18,10 +31,17 @@ lighter green: #E8EBD9;
 
 Highlights:
 salmon: #ffb699;
-green: #A9D4A1;
+green: #A9D4A1; >>> USED IN THE HEALTH REVIEW FORM
 light-yellow: #ffeeb3;
 medium-yellow: #f8c76d;
 */
+/* Colours added by Gregg after 4 Jun 2019 */
+/*
+dark green: #5ba94d
+*/
+
+
+
 
 /* RESET CSS --> */
 
@@ -3831,3 +3851,67 @@ and (min-width : 1151px) {
 
 }
 
+
+
+/*                               */
+/* Added by Gregg after 4 Jun 2019 */
+/*                               */
+
+/* USED IN THE HEALTH REVIEW FORM */
+fieldset[data-dev-reference="ImmunizationPO"] div.IMRequestByPONote span.Closed,
+/* USED IN THE NEW IMMUNIZATIONS EDITOR FOR STAFF IN THE HEALTH REVIEW FORM */
+div.ImmunizationEditor div.WhyCannotEditExplanation,
+div.ImmunizationEditor div.IMRequestByPONote span.Closed {
+  background-color: transparent;
+  color: #c81e32;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+/* USED IN THE HEALTH REVIEW FORM */
+fieldset[data-dev-reference="ImmunizationPO"] div.IMRequestByPONote span.Open {
+  background-color: transparent;
+  color: #5ba94d;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+/* USED IN NON-MODULES PROGRAM APPLICANT DOCUMENT LIST */
+ul.inLeftNav.documents span.mfaLock svg {
+  fill: #FFFFFF;
+}
+
+/* USED IN APPLICANT SUMMARY */
+div.AIRAppSummaryDisplayInAIS fieldset.Section div.helpBox {
+  display: none;
+}
+
+/* 24 Jul - USED IN FLEX/YES R2 Data Entry Page */
+div.IntegratedRoundTwoDataSetRowDisplay table.Setup tr:nth-child(-n+2) th {
+    color: #FFFFFF;
+    font-weight: bold
+}
+div.IntegratedRoundTwoDataSetRowDisplay table.Setup tr:nth-child(-n+2) th,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo th.R2Cutoff,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo th.R3Date,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo th.R1NumberMales,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo th.R1NumberFemales,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo th.R1Access {
+    background-color: #5faf51;
+}
+div.IntegratedRoundTwoDataSetRowDisplay table.Setup td select#ProgramInProgramYearPopUpButton,
+div.IntegratedRoundTwoDataSetRowDisplay table.Setup td select#TestCenterPopUpButton,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R2Cutoff textarea,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R3Date input[type=text],
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1NumberMales input,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1NumberFemales input,
+div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access input {
+    background-color: #bfdfb9;
+}
+
+/* 9 Sep - USED IN AIS HOMEPAGE PORTALS */
+.nodisplayportal {
+    display: none;
+}
