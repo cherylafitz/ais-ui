@@ -1,3 +1,17 @@
+/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
+/*                                                           */
+/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
+/* added at the bottom of your palette list below, within    */
+/* their own comment section.                                */
+/*                                                           */
+/* CSS ADDITIONS: Any CSS I added or notes about changes     */
+/* are at the bottom of this stylesheet beginning at Line    */
+/* 2870) in its own section.                                 */
+/*                                                           */
+/* Please! Please! review my changes and clean them up as    */
+/* as you think appropriate. Thanks! ... Gregg               */
+
+
 /* standardCommon.css - Base, default CSS for all templates */
 
 /* */
@@ -10,6 +24,12 @@ div.SectionDisplay div.FirstName,
 div.SectionDisplay div.MiddleName,
 div.SectionDisplay div.LastName,
 div.SectionDisplay div.NameSuffix,
+div.SectionDisplay div.AdministratorHonorific,
+div.SectionDisplay div.AdministratorFirstName,
+div.SectionDisplay div.AdministratorLastName,
+div.SectionDisplay div.AdministratorNameSuffix,
+div.SectionDisplay div.TeacherLastName,
+div.SectionDisplay div.TeacherFirstName,
 div.SectionDisplay div.FirstNameNativeLanguage,
 div.SectionDisplay div.LastNameNativeLanguage,
 div.SectionDisplay div.MedProxyFirstName,
@@ -29,6 +49,8 @@ div.SectionDisplay div.RecommenderFirstName,
 div.SectionDisplay div.RecommenderLastName,
 div.SectionDisplay div.RecommenderFirstName2,
 div.SectionDisplay div.RecommenderLastName2,
+div.SectionDisplay div.SupervisorLastName,
+div.SectionDisplay div.SupervisorFirstName,
 div.SectionDisplay div.TeachRef1stName,
 div.SectionDisplay div.TeachRefLastName,
 div.SectionDisplay div.AdvisorFirstName,
@@ -63,6 +85,7 @@ div.SectionDisplay div.FatherLastName,
 div.SectionDisplay div.Sib1stName,
 div.SectionDisplay div.ParentMidName,
 div.SectionDisplay div.SibLastName,
+div.SectionDisplay div.EmergencyContactHonorific,
 div.SectionDisplay div.EmergCont1stName,
 div.SectionDisplay div.EmergContLastName,
 div.SectionDisplay div.EmergencyContact2FirstName,
@@ -75,10 +98,6 @@ div.SectionDisplay div.EmergencyContactOtherTelephone,
 div.SectionDisplay div.EmergencyContactOtherTelephoneType,
 div.SectionDisplay div.PassportMiddleName,
 div.SectionDisplay div.PassportLastName,
-div.SectionDisplay div.AdministratorHonorific,
-div.SectionDisplay div.AdministratorFirstName,
-div.SectionDisplay div.AdministratorLastName,
-div.SectionDisplay div.AdministratorNameSuffix,
 div.SectionDisplay div.Honorific,
 div.SectionDisplay div.MentorTeacherHonorific,
 div.SectionDisplay div.MentorTeacherFirstName,
@@ -90,6 +109,7 @@ div.SectionDisplay div.CommunityLiaisonLastName,
 div.SectionDisplay div.CommunityLiaisonNameSuffix,
 div.SectionDisplay div.USParticipantLastName,
 div.SectionDisplay div.USParticipantGivenName,
+div.SectionDisplay div.USParticipantMiddleName,
 div.SectionDisplay div.GroupedItem div.USParticipantLastName,
 div.SectionDisplay div.GroupedItem div.USParticipantGivenName,
 div.SectionDisplay div.SchoolDirName,
@@ -363,8 +383,9 @@ body.IsLoggedIn .QuestionAnswer .ValidationError  {
   list-style-type: none;
 }
 
-.MissingItemForAttemptedSubmit {
-  border: 2px dashed #C75D48;
+.QuestionItem.MissingItemForAttemptedSubmit {
+/*   border: 2px dashed #C75D48; */
+  border: none;
   border-left: 5px solid #C75D48;
   padding: .2em .5em;
   background-color: #F9EFED;
@@ -1093,3 +1114,65 @@ div.Content .fromQuestionnaire .File ~ .Text input[type='text'] {
 }
 
 /* <-- */
+
+
+/* GREGG'S CSS ADDITIONS AND NOTES ABOUT CHANGES AFTER 4 Jun 2019 */
+
+/* 30 Jul - New CSS program logo images, copied from aisformsCommons.css */
+div.templateContent img.ProgramLogo200w {
+  max-width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.templateContent img.ProgramLogo300w {
+  max-width: 300px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.templateContent  img.ProgramLogo400w {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.templateContent  img.ProgramLogo500w {
+  max-width: 500px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.templateContent  img.ProgramLogo600w {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* 2 Aug - Float New Name fields added to AIR */
+div.SectionDisplay div.PartnerOrgFirstName,
+div.SectionDisplay div.PartnerOrgMiddleName,
+div.SectionDisplay div.PartnerOrgLastName {
+  float: left;
+  clear: none;
+}
+
+/* 6 Aug - Override air.css for "disabled" conditional questions */
+div.QuestionItem.DisabledBecauseOfSkipPattern {
+  display: block;
+  background-color: #E4E4E4;
+}
+
+/* 6 Aug - Add additional floated question */
+div.SectionDisplay div.MiddleNameNativeLanguage {
+  float: left;
+  clear: none;
+}
+
+/* 19 Aug - Add basic border around display table for Excel file upload */
+table.ExcelDataTabulated,
+table.ExcelDataTabulated th,
+table.ExcelDataTabulated td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table.ExcelDataTabulated th,
+table.ExcelDataTabulated td {
+  padding: 2px;
+}
