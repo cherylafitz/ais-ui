@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ***Note to Codivus: Using "dev" in name while testing new css with non-login pages on AIS Forms staging; will just pull from aisformsCommon.css in production  -->
+  <link rel="stylesheet" type="text/css" href="../styles/aisformsCommon_dev.css">
+</head>
+
+<body class="IsNotLoggedIn">
+  <div id="Header">
+    <div class="ACbrand">
+      <img alt="American Councils Logo" id="AClogo" src="https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png">
+    </div>
+    <div class="aisFormsBrand">
+      <div>AIS Forms</div>
+      <div><a href="#loginHeading">Log in</a></div>
+    </div>
+    <div id="buildAndInstance">
+      <span class="build">
+        <span class="label">build:</span>
+        <span class="buildID">38ebc3d18f19419f01a2e0bec169c9fecf519ac0.jenkins-Monolithic_AIR_Manual-88</span>
+      </span>
+      <span class="instance">
+        <span class="label">instance:</span>
+        <span class="instanceNumber">1</span>
+      </span>
+    </div>
+  </div>
+  <div class="Content">
+  <div class="Main">
+    <div class="SystemAnnouncementsWrapper">
+    </div>
+    <!-- ***Note to Codivus: Do we need these two divs - "LoginPage" and "LoginOrNewAccount"? Feel free to remove or rename as makes sense on your end, they are not necessary for the css to work as intended -->
+    <div class="LoginPage">
+      <div class="LoginOrNewAccount">
+        <!-- ***Note to Codivus: Not sure this is the best name for this div, since it includes the custom content, but I left as-is to reduce number of changes; if you decide to change it I'll need to update my CSS so please let me (Cheryl) know  -->
+        <div class="ValidationAndForms">
+
+          <!-- ***Note to Codivus: NSLI-Y used for sample, no changes here, we will edit in the individual editors by program  -->
+          <div class="CustomContent">
+            <!-- BEGIN Login Info and Tips -->
+            <div class="LoginWrapper LoginProgramWrapper">
+
+              <!-- ///// BEGIN Login Info ///// -->
+              <div class="LoginText">
+
+                <!-- ///// BEGIN Program Info and Welcome ///// -->
+                <div class="LoginWelcome" style="/* color: #e0e6ee; */">
+
+                  <!-- ///// BEGIN Program Name and Logo ///// -->
+                  <div class="logos">
+                    <img class="ProgramLogo" src="https://aisforms.s3.amazonaws.com/ais/NSLI-Y/NSLI-Y-logo_color_200w.png" alt="American Councils Logo" width="200">
+                  </div>
+                  <div class="PageTitle">
+                    <h1>National Security Language Initiative for Youth <span class="nowrap">(NSLI-Y)</span> &mdash; Application</h1>
+                  </div>
+                  <!-- ///// END Program Name and Logo ///// -->
+
+                  <!--  ///// BEGIN Use after application or forms close ///// -->
+                  <!--
+                  <h2 class="AppClosed">Application Closed</h2>
+
+                  <p>The deadline for submitting an application to an American Councils has passed. If you submitted or started an application prior to the deadline, you can log in to view your application form.</p>
+                  -->
+                  <!-- ///// END Use after application or forms close ///// -->
+
+                  <!-- ///// BEGIN Use while application or forms are open (live) ///// -->
+
+                  <p>AIS Forms will connect you to online applications and other forms for programs administered by
+                    <span class="noWrap"><a href="http://www.americancouncils.org/" target="_blank">American Councils</a>.</span> These can include scholarship applications, program registration forms, and other opportunities such as alumni grant requests.</p>
+
+                    <!-- ///// END Use while application or forms are open (live) ///// -->
+
+                  <!-- ///// BEGIN Program Info and Welcome Subcontent ///// -->
+                  <div class="LoginWelcomeSubContent">
+                    <p>For information about <span class="noWrap">American Councils</span> programs, please visit <a href="http://www.americancouncils.org" target="_blank">www.americancouncils.org</a>.
+                    </p>
+                  </div>
+                  <!-- ///// END Program Info and Welcome Subcontent ///// -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ***Note to Codivus: MOVED this div to after the Custom Content -->
+          <div class="LoginForms">
+            <!-- ***Note to Codivus: this is a new element -->
+            <div id="loginHeading">
+              <h2 id="formTitle">Log in
+              </h2>
+              <!-- This logo can be renamed to AISformsLogo, but I kept modifier for now to indicate it is not the same logo as in the "logged in" header -->
+              <img id="aisLogo" alt="AIS Logo" src="../media/AISformsLogo_simplified.svg">
+            </div>
+
+            <!-- ***Note to Codivus: CHANGES to HTML structure, classes, etc (table removed) -->
+            <form name="loginForm" method="post" id="LoginForm" class="toggles" action="/cgi-bin/WebObjects/AIR.woa/wa/attemptLogin">
+                <p>Need an AIS Forms account? <br> <a href="#loginHeading" id="showCreateAccount" class="text-small">Create an account</a>
+
+              <div id="login" class="row-size3">
+                <div class="UserName">
+                  <label for="Username">Username</label>
+                  <input id="Username" type="text" name="membernameLogin">
+                </div>
+                <div class="Password">
+                  <label for="Password">Password</label>
+                  <input id="Password" type="password" name="passwordLogin">
+                </div>
+                <div class="LoginActions">
+                  <input id="loginButton" type="submit" value="Log in" name="attemptLogin"><input type="hidden" name="WOSubmitAction" value="attemptLogin">
+                  <div class="ForgotPassword">
+                    <a class="ForgotPassword" href="/cgi-bin/WebObjects/AIR.woa/wa/forgottenPassword?brand=general">Forgot your info?</a>
+                  </div>
+                  <div class="LoginActions">
+                  </div>
+                </div>
+              </div>
+              <input type="hidden" name="brand" value="general">
+            </form>
+
+            <!-- ***Note to Codivus: CHANGES to HTML structure, classes, etc (table removed) -->
+            <form name="f_0_0_21_9_1_3_1_4_3_3_1" method="post" id="CreateAccountForm" class="hide-element toggles" action="/cgi-bin/WebObjects/AIR.woa/wa/createNewAccount">
+                <p>Already have an account? <br><a href="#loginHeading" id="showLogin" class="text-small">Log in</a></p>
+
+              <div id="CreateAccount" class="row-size3">
+                <div class="UserName">
+                  <label for="Membername">Username </label>
+                  <input type="text" id="Membername" name="membername">
+                </div>
+
+                <div class="Password">
+                  <label for="PasswordCreate">Password</label>
+                  <input type="password" id="PasswordCreate" name="password">
+                </div>
+
+                <div class="VerifyPassword">
+                  <label for="PasswordCreateRetyped">Verify password</label>
+                  <input type="password" id="PasswordCreateRetyped" name="passwordRetyped">
+                </div>
+
+                <div class="FirstName">
+                  <label for="FirstName">First name</label>
+                  <input type="text" id="FirstName" name="firstName">
+                </div>
+
+                <div class="LastName">
+                  <label for="LastName">Last name</label>
+                  <input type="text" id="LastName" name="lastName">
+                </div>
+
+                <div class="EmailAddress">
+                  <label for="EmailAddress">Email address</label>
+                  <input type="text" id="EmailAddress" name="emailAddress">
+                </div>
+                <div class="ReCaptcha">
+                  <div id="CaptchaExplanation">Check the box below to tell us you are not a robot.</div>
+                  <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+                  <div data-sitekey="6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni" class="g-recaptcha"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeZ-f4SAAAAAO6GzeV3umTSHh0CMuul_E8mBOni&amp;co=aHR0cHM6Ly9haXMuYW1lcmljYW5jb3VuY2lscy5vcmc6NDQz&amp;hl=en&amp;v=v1528855115741&amp;size=normal&amp;cb=x2rhejan3v10" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                </div>
+                <div class="LoginActions">
+                  <input escapehtml="false" id="createAccountButton" type="submit" value="Create account" name="createNewAccount"><input type="hidden" name="WOSubmitAction" value="createNewAccount">
+                </div>
+              </div>
+              <input type="hidden" name="brand" value="general">
+            </form>
+          </div>
+          <!-- END LoginForms -->
+        </div>
+      </div>
+    </div>
+
+  <!-- ***Note to Codivus: NEED a new, unified (same for each portal) editable area for Tips, which appear on every login page and also on every applicant/eval home page; feel free to rename or remove "AfterLoginAndForms" div as needed, it won't affect css -->
+  <div class="AfterLoginAndForms">
+    <!-- BEGIN Usage Tips -->
+    <div class="Tips bg-blue03">
+      <h3>Tips for Using this Website</h3>
+      <h4>Enable Cookies and JavaScript</h4>
+      <p> This website requires the use of cookies and JavaScript. For instructions on how to enable cookies and
+        JavaScript, please visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+      </p>
+      <h4>Times Displayed on this Site</h4>
+      <p>Unless otherwise noted, all
+      times displayed on this site are U.S. Eastern/Washington, D.C., time.</p>
+      <h4>Allow Emails from AIS Forms</h4>
+      <p>All email you receive from this website will be sent from <span class="aisEmail">ais_accounts@americancouncils.org</span>. Please add this
+        email address to your address book/approved senders list to help prevent
+        messages from being blocked as spam or junk mail. <b>This is particularly
+          important for university (".edu"), AOL, K12, and Yahoo email users. Each of
+        these email systems often blocks legitimate messages from reaching you.</b>
+      </p>
+      <h4>Questions?</h4>
+      <p>Visit our <a href="../../../../ais/support/" target="_blank">support page</a>.
+      </p>
+    </div>
+    <!-- END Usage Tips Content -->
+
+  </div>
+  </div>
+  </div>
+<!-- ***Note to Codivus: ADDED #Policies div to footer2 div, otherwise no changes; should be common footer throughout AIS Forms (editable in one common place, not per portal), removing #PrivacyPolicy and #CookieDeclaration from .Content div after they are placed in footer -->
+<div id="footer">
+  <div id="footer2">
+    <div class="logo"></div>
+    <div class="AClogoAddressFooter">
+      <div id="AClogoFooter">
+        <img id="HomePage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
+        <img id="LoginPage" src="https://ais.americancouncils.org/ais/common/system/AC%20Logo_White.png" alt="American Councils for International Education">
+      </div>
+      <div class="ACaddressBlock">
+        <span class="contact1"><span class="street">1828 L St NW Ste 1200</span> <span class="state-zip">Washington DC 20036-5136</span> <span class="country">USA</span></span>
+        <span class="contact2"> <span class="telephone">tel: (+1) 202.833.7522</span> <span class="fax">fax: (+1) 202.833.7523</span> <span class="website"><span class="www">www:</span> <a href="http://www.americancouncils.org/" target="_blank">www.americancouncils.org</a></span></span>
+      </div>
+      <div class="legal">
+        <span class="copyright">© American Councils for International Education</span> <span class="rights-reserved">All rights reserved.</span>
+      </div>
+    </div>
+    <div id="Policies">
+      <div id="PrivacyPolicy">
+        <a href="#" onclick="Modalbox.show('/cgi-bin/WebObjects/ais.woa/wa/siteText?ref=privacyStatement&amp;modal=yes', {title: 'Privacy Statement'});">Privacy Statement</a>
+      </div>
+      <div id="CookieDeclaration">
+        <a href="#" onclick="Modalbox.show('/cgi-bin/WebObjects/ais.woa/wa/siteText?ref=CookieDeclaration&amp;modal=yes', {title: 'Cookie Declaration'});">Cookie Declaration</a>
+      </div>
+    </div>
+  </div>
+  <div id="amagavi">
+    <table><tbody><tr><td class="logoCell"><a href="http://www.codivus.com/"><img width="28" height="25" src="/WebObjects/AIR2.woa/Contents/WebServerResources/amagavi/amagavi-butler-transBG.gif"></a></td>
+      <td class="byline"><span class="byline">Web development and hosting by <a href="http://www.codivus.com/">Codivus Corporation</a></span></td>
+    </tr></tbody></table>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  var showCreateAccount = document.getElementById("showCreateAccount"),
+      showLogin = document.getElementById("showLogin"),
+      createAccountForm = document.getElementById("CreateAccountForm"),
+      loginForm = document.getElementById("LoginForm"),
+      formTitle = document.getElementById("formTitle");
+
+  var focusFirstInput = function(event, form){
+    // set timeout to allow form css transition before focus
+    setTimeout(function() {
+      form.getElementsByTagName("input")[0].focus();
+    },400);
+  };
+
+  var toggleForm = function(event,formToShow,formToHide) {
+    // only works with elements that already have the class "toggles"
+    formToShow.classList.toggle("hide-element");
+    formToHide.classList.toggle("hide-element");
+  };
+
+  showCreateAccount.addEventListener("click", function(event) {
+    toggleForm(event, createAccountForm, loginForm);
+    focusFirstInput(event, createAccountForm);
+    formTitle.innerHTML="Create account";
+  });
+
+  showLogin.addEventListener("click", function(event) {
+    toggleForm(event, loginForm, createAccountForm);
+    focusFirstInput(event, loginForm);
+    formTitle.innerHTML="Log in";
+  });
+
+</script>
+
+</body>
+</html>

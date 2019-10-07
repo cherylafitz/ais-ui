@@ -1,3 +1,17 @@
+/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
+/*                                                           */
+/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
+/* added at the bottom of your palette list below, within    */
+/* their own comment section.                                */
+/*                                                           */
+/* CSS ADDITIONS: Any CSS I added or notes about changes     */
+/* are at the bottom of this stylesheet beginning at Line    */
+/* 2870) in its own section.                                 */
+/*                                                           */
+/* Please! Please! review my changes and clean them up as    */
+/* as you think appropriate. Thanks! ... Gregg               */
+
+
 /* PAGE SETUP */
 @import url("http://www.princexml.com/fonts/sil/index.css") all;
 @import url("https://ais.americancouncils.org/ais/common/stylesheets/inlineQuestions.css");
@@ -154,7 +168,7 @@ ul {
 .Group {
   clear: both;
 }
-.QuestionItem.FirstName,
+/*.QuestionItem.FirstName,*/
 .QuestionItem.Sex,
 .clearPrint {
   clear: left;
@@ -255,8 +269,8 @@ input[type="radio"] {
   width: 0;
   visibility: hidden;
 }
-.Checked input[type="checkbox"],
-.Checked input[type="radio"] {
+.ERXMatrixTable--Checked input[type="checkbox"],
+.ERXMatrixTable--Checked input[type="radio"] {
   background: #3a3d40;
 }
 input[type="radio"] {
@@ -284,7 +298,7 @@ input[type="radio"] {
   margin: 0 3px;
   vertical-align: middle;
 }
-.ERXMatrixTable.Checked td {
+.ERXMatrixTable.ERXMatrixTable--Checked td {
   color: #000;
 }
 .ERXMatrixTable td:first-of-type {
@@ -296,10 +310,10 @@ input[type="radio"] {
 .ERXMatrixTable td:last-of-type {
   max-width: 7in;
 }
-.ERXMatrixTable.Checked td:first-of-type {
+.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type {
   position: relative;
 }
-.ERXMatrixTable.Checked td:first-of-type:after {
+.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type:after {
   content: "";
   position: absolute;
   display: block;
@@ -314,7 +328,7 @@ input[type="radio"] {
   top: 2px;
   left: 2px;
 }
-.CheckboxMatrix .ERXMatrixTable.Checked td:first-of-type:after,
+.CheckboxMatrix .ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type:after,
 .CheckboxMatrix .ERXMatrixTable td:first-of-type {
   border-radius: 2px;
 }
@@ -820,4 +834,49 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
   opacity:1;
   position:relative;
   top:0.1em;
+}
+
+
+
+
+/* GREGG'S CSS ADDITIONS AND NOTES ABOUT CHANGES AFTER 4 Jun 2019 */
+
+/* 12 Jul - For new Logo "Bundles" with 1-6 narrow and wide logos. Single, non-bundle Logos are "200px",
+"Narrow" logos in bundles count as "100px", "Wide" logos in bundles count as "200px" */
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo200w,
+div.Content img.ProgramLogo200w,
+section img.ProgramLogo200w,
+div#UserHomeIntro header img.ProgramLogo200w,
+img.ProgramLogo200w {
+  max-width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo300w,
+div.Content img.ProgramLogo300w,
+section img.ProgramLogo300w {
+  max-width: 300px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo400w,
+div.Content img.ProgramLogo400w,
+section img.ProgramLogo400w {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo500w,
+div.Content img.ProgramLogo500w,
+section img.ProgramLogo500w {
+  max-width: 500px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo600w,
+div.Content img.ProgramLogo600w,
+section img.ProgramLogo600w {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  display: block;
 }

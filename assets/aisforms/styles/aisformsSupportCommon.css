@@ -1,0 +1,90 @@
+/* AIS Forms Support Page CSS */
+
+* {
+ box-sizing: border-box;
+}
+body {
+ padding: 0;
+ margin: 0;
+}
+header .Title {
+ height: 115px;
+ font-size: 2em;
+ text-align: center;
+ vertical-align: bottom;
+}
+header img {
+}
+div.alertBox {
+  color: #000;
+  background-color: #ffdacc;
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: left;
+  border: 1px solid #ffc8b3;
+  border-radius: 2px;
+  padding: .25rem .5rem;
+  margin: 1em 0;
+  clear: right;
+}
+.SectionDisplay {
+ margin: 0 auto;
+ padding: 1em 2em 2em;
+}
+.Content h1, h2 {
+ clear: both;
+ color: #2E555F;
+ font-weight: normal;
+}
+.TOC h2 {
+ font-size: 1em;
+}
+.TOC {
+ margin-bottom: 2em;
+ padding: 0 1em 1em;
+ background-color: #F6FDFF;
+ border: 1px solid #cecece;
+}
+.SectionDisplay h1,
+.SectionDisplay h2 {
+text-align: left;
+}
+.Content h2 a {
+border-bottom: none;
+text-decoration: none;
+font-weight: normal;
+}
+.Content p,
+.Content li {
+line-height: 1.5em;
+font-size: .95em;
+margin-left: 1.5em;
+}
+.linkArrow {
+color: #FFB946;
+}
+b {
+color: #666;
+}
+.explanations h2:before {
+content: 'Q';
+border-right: .2em solid #FFB946;
+padding-right: .5em;
+margin-right: .5em;
+color: #FFAC33;
+}
+.explanations img {
+border: 2px solid #E2E3E0;
+margin: 1em 2em;
+}
+.AClogoAddressFooter {
+max-width: 900px;
+margin: 3em auto -2em auto;
+text-align: center;
+font-size: .9em;
+}
+.arrow {
+color: #4C8D9E;
+font-size: 1.5em;
+vertical-align: text-bottom;
+}

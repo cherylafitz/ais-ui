@@ -1,18 +1,23 @@
- Specify QuestionItems to position in line (select by xml tag using selector div.Content div.<xmlTag>)*/
+/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
+/*                                                           */
+/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
+/* added at the bottom of your palette list below, within    */
+/* their own comment section.                                */
+/*                                                           */
+/* CSS ADDITIONS: Any CSS I added or notes about changes     */
+/* are at the bottom of this stylesheet beginning at Line    */
+/* 2870) in its own section.                                 */
+/*                                                           */
+/* Please! Please! review my changes and clean them up as    */
+/* as you think appropriate. Thanks! ... Gregg               */
+
+
+
+Specify QuestionItems to position in line (select by xml tag using selector div.Content div.<xmlTag>)*/
 
 table td div.PDFDownload {
   margin-top: 1em;
   margin-right: 1em;
-}
-
-div.TotalScoreFormula {
-    border: medium solid #2E6B9B;
-    border-radius: 14px;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    margin: 0.5rem 1rem 1rem 0;
-    padding: 0.5rem 1rem;
-    width: 21rem;
 }
 
 body div.Content div.FirstName,
@@ -345,3 +350,22 @@ div.Content .fromRecommender div.QuestionAnswer {
 }
 
 /* END Application Question Emphasis
+
+
+
+/* GREGG'S CSS ADDITIONS AND NOTES ABOUT CHANGES AFTER 4 Jun 2019 */
+
+/* 20 Aug - Repositioned down the file from Line 23 to override EvalCommon settings above */
+/* div.TotalScoreFormula   OLD */
+div.QuestionItem.fromEvaluator.TotalScoreFormula {
+    border: medium solid #2E6B9B;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+/*    margin: 0.5rem 1rem 1rem 0;   OLD */
+    margin: 2rem 1rem 1rem 0;
+/*    padding: 0.5rem 1rem;   OLD */
+    padding: 0.5rem 1rem 0.5rem 0;
+    width: 21rem;
+}
+
