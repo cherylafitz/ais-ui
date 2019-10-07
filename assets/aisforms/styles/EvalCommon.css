@@ -106,10 +106,10 @@ div.Content .fromApplicant table.AnswerTable tr td:first-child {
   padding-bottom: 0;
 }
 
-.fromApplicant .ChoiceQuestion .Checked td,
-.fromApplicant .CheckboxMatrix .Checked td,
-.fromRecommender .ChoiceQuestion .Checked td,
-.fromRecommender .CheckboxMatrix .Checked td {
+.fromApplicant .ChoiceQuestion [class*=Checked] td,
+.fromApplicant .CheckboxMatrix [class*=Checked] td,
+.fromRecommender .ChoiceQuestion [class*=Checked] td,
+.fromRecommender .CheckboxMatrix [class*=Checked] td {
   color: #333333;
 }
 .fromApplicant .ChoiceQuestion td,
