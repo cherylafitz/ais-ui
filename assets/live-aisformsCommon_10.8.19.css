@@ -1948,7 +1948,7 @@ span.fax {
 .AClogoAddressFooter .contact1 > span:not(:last-child):after,
 .AClogoAddressFooter .contact2 > span:not(:last-child):after,
 .AClogoAddressFooter .legal > span:not(:last-child):after     {
-  content: " • ";
+  content: " â€¢ ";
 }
 .AClogoAddressFooter .contact1 {
   display: block;
@@ -2826,8 +2826,8 @@ button:hover {
 }
 @media only screen and (min-width: 43.5em) {
   .IsNotLoggedIn .LoginForms {
-    margin-top: -8rem;
-/*    margin-top: -2rem; */
+/*    margin-top: -8rem; */
+    margin-top: -2rem;
     margin-bottom: -2rem;
     position: relative;
   }
@@ -2881,8 +2881,8 @@ button:hover {
     max-height: 56px;
   }
   .IsNotLoggedIn .LoginForms {
-    margin-top: -8.5rem;
-/*    margin-top: -2rem; */
+/*    margin-top: -8.5rem; */
+    margin-top: -2rem;
     margin-bottom: -2rem;
     position: relative;
   }
@@ -3015,13 +3015,6 @@ url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
   color: #c4dcee;
 }
 /* <- bg color classes */
-
-/* Announcement styles for AIS Forms only --> */
-.IsNotLoggedIn .Content div.SystemAnnouncementsWrapper div.SystemAnnouncement {
-  margin-bottom: 6.5rem;
-}
-/* <-- Announcement styles for AIS Forms only */
-
 
 
 /* 12 Jul - New CSS for new login page div.CustomContent section */
