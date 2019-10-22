@@ -3027,6 +3027,7 @@ url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /* 12 Jul - New CSS for new login page div.CustomContent section */
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo100w,
 img.ProgramLogo100w {
+  width: 100%;
   max-width: 100px;
   margin-bottom: 1rem;
   display: block;
@@ -3034,30 +3035,35 @@ img.ProgramLogo100w {
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo200w,
 div#UserHomeIntro header img.ProgramLogo200w,
 img.ProgramLogo200w {
+  width: 100%;
   max-width: 200px;
   margin-bottom: 1rem;
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo300w,
 img.ProgramLogo300w {
+  width: 100%;
   max-width: 300px;
   margin-bottom: 1rem;
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo400w,
 img.ProgramLogo400w {
+  width: 100%;
   max-width: 400px;
   margin-bottom: 1rem;
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo500w,
 img.ProgramLogo500w {
+  width: 100%;
   max-width: 500px;
   margin-bottom: 1rem;
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo600w,
 img.ProgramLogo600w {
+  width: 100%;
   max-width: 600px;
   margin-bottom: 1rem;
   display: block;
