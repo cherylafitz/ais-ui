@@ -855,7 +855,7 @@ div.Content div.AfterQuestion {
 div.Content div.GroupedItem div.RadioButtonMatrix table{
   background-color: #F3F3F3;
 }
-.RecommendationTemplateIsExpiredRow {
+.RecommendationTemplateIsExpired {
   color: #ce362c;
 }
 .GroupedItem .RecommendationTemplateIsExpiredRow {
