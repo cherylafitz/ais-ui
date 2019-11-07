@@ -28,6 +28,7 @@ light gray: #e3e8e8;
 light blue:  #e0e6eb (old: #e0ebeb);
 light green: #c8d295;
 lighter green: #E8EBD9;
+vivid green (clean/success - form tracker icon): #8fc785;
 
 Highlights:
 salmon: #ffb699;
@@ -3699,6 +3700,15 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
 .column-l {
   width: 66%;
   float: left;
+}
+
+.SuccessAfterLongRunningTask {
+  background: #B5DBB3;
+  border: 1px solid #8fc785;
+  padding: .5rem .75rem;
+  border-radius: 2px;
+  margin-bottom: .5rem;
+  display: inline-block;
 }
 
 /* MODALS --> */
