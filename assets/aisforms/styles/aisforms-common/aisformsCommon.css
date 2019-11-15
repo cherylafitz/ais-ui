@@ -1327,7 +1327,7 @@ table.TemplateTable tr td {
   padding: 1.5rem;
   margin: -1.5rem;
 }
-.Tips {
+.Tips article {
   font-size: .875rem;
   display: flex;
   flex-flow: row wrap;
@@ -1341,7 +1341,7 @@ table.TemplateTable tr td {
 .Tips h4 {
   font-size: 1rem;
   line-height: 1.25;
-  flex-basis: 300px;
+  flex-basis: 350px;
 }
 .Tips h4::before {
   content: '';
@@ -1365,8 +1365,8 @@ table.TemplateTable tr td {
   content: ':';
 }
 .Tips p {
-  flex-basis: calc(100% - 300px);
-  min-width: 300px;
+  flex-basis: calc(100% - 350px);
+  min-width: 350px;
   flex-grow: 1;
 }
 .Tips h3 {
