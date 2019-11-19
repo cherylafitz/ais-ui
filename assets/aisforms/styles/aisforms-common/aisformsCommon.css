@@ -1327,7 +1327,7 @@ table.TemplateTable tr td {
   padding: 1.5rem;
   margin: -1.5rem;
 }
-.Tips {
+.Tips article {
   font-size: .875rem;
   display: flex;
   flex-flow: row wrap;
@@ -1339,9 +1339,9 @@ table.TemplateTable tr td {
   margin-bottom: 1rem;
 }
 .Tips h4 {
-  font-size: 1rem;
+  font-size: .875rem;
   line-height: 1.25;
-  flex-basis: 300px;
+  flex-basis: 315px;
 }
 .Tips h4::before {
   content: '';
@@ -1349,8 +1349,8 @@ table.TemplateTable tr td {
   border-color: #f1c574;
   border-style: solid;
   border-width: 3px 3px 0 0;
-  height: 15px;
-  width: 9px;
+  height: 13px;
+  width: 8px;
   -ms-transform: rotate(-145deg) scaleX(-1);
   -o-transform: rotate(-145deg) scaleX(-1);
   -webkit-transform: rotate(-145deg) scaleX(-1);
@@ -1358,15 +1358,16 @@ table.TemplateTable tr td {
   display: inline-block;
   padding-bottom: 8px;
   margin: 0 0 0 1px;
-  margin-right: 1.5rem;
+  margin-right: 1.25rem;
   margin-left: .25rem;
+  border-radius: 1px;
 }
 .Tips h4:not(:last-of-type)::after {
   content: ':';
 }
 .Tips p {
-  flex-basis: calc(100% - 300px);
-  min-width: 300px;
+  flex-basis: calc(100% - 315px);
+  min-width: 315px;
   flex-grow: 1;
 }
 .Tips h3 {
