@@ -275,6 +275,14 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
 .IsNotLoggedIn #Header #buildAndInstance {
 /*  display: none; */
 }
+/* 19 Jul - New CSS for new login page ---> */
+div#buildAndInstance {
+  color: #FFFFFF;
+  font-size: 0.5rem;
+  text-align: left;
+  margin: 0;
+}
+/* <--- */
 #Header #serverInfo,
 #Header #buildAndInstance {
   margin-top: .5rem;
@@ -463,9 +471,7 @@ a.LinkToPreviousPage {
 }
 #Policies,
 .policies {
-  margin: .5rem 0;
-  display: flex;
-  justify-content: flex-end;
+  margin: 1rem 0;
 }
 #PrivacyPolicy,
 #CookieDeclaration {
@@ -1946,13 +1952,14 @@ span.fax {
 .AClogoAddressFooter {
   line-height: 1.25rem;
 }
-.AClogoAddressFooter .contact1 > span:not(:last-child):after,
-.AClogoAddressFooter .contact2 > span:not(:last-child):after,
-.AClogoAddressFooter .legal > span:not(:last-child):after     {
-  content: " • ";
-}
-.AClogoAddressFooter .contact1 {
+.AClogoAddressFooter .contact1,
+.AClogoAddressFooter .contact2,
+.ACaddressBlock > span > span,
+.legal span {
   display: block;
+}
+.ACaddressBlock > span {
+  margin-bottom: .5rem;
 }
 div#footer2 .ACaddressBlock {
   margin: .5em 0 0 0;
@@ -1965,8 +1972,11 @@ div#footer2 .ACaddressBlock {
 }
 #footer #amagavi,
 #footer #codivus {
-  text-align: right;
   margin-top: 2rem;
+}
+div#footer div#codivus,
+div#footer div#CodivusAttribution {
+  justify-content: flex-start;
 }
 #footer #amagavi table,
 #footer #codivus table {
@@ -2663,6 +2673,10 @@ button:hover {
   .Content .staffHome {
     margin-left: 1.75rem;
   }
+  div#footer div#codivus,
+  div#footer div#CodivusAttribution {
+    justify-content: flex-end;
+  }
 /* <-- admin/staff/dev HOME PAGE */
 
 /* FOOTER --> */
@@ -2674,9 +2688,30 @@ button:hover {
   #CookieDeclaration {
     text-align: right;
   }
+  #Policies,
+  .policies {
+    margin: .5rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .AClogoAddressFooter .contact1 > span:not(:last-child):after,
+  .AClogoAddressFooter .contact2 > span:not(:last-child):after,
+  .AClogoAddressFooter .legal > span:not(:last-child):after     {
+    content: " • ";
+  }
+  .ACaddressBlock > span > span,
+   .legal span {
+    display: inline;
+  }
+  .ACaddressBlock > span {
+    margin-bottom: 0;
+  }
   #footer #amagavi table,
   #footer #codivus table {
     display: inline-block;
+  }
+  div#buildAndInstance {
+    text-align: right;
   }
 }
 
@@ -3081,12 +3116,7 @@ div#UserHomePage div.OtherBrands div.HasFormsInOtherBrandsWarning {
   padding-top: 0.75rem;
 }
 
-/* 19 Jul - New CSS for new login page */
-div#buildAndInstance {
-  color: #FFFFFF;
-  font-size: 0.5rem;
-  text-align: right;
-}
+
 
 /* 22 Jul - CSS from pre-New Login aisformsCommon */
 /* MODALS --> */
