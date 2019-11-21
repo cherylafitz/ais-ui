@@ -1972,7 +1972,6 @@ div#footer2 .ACaddressBlock {
 }
 #footer #amagavi,
 #footer #codivus {
-  /*text-align: right;*/
   margin-top: 2rem;
 }
 div#footer div#codivus,
@@ -2673,11 +2672,6 @@ button:hover {
   }
   .Content .staffHome {
     margin-left: 1.75rem;
-  }
-  #footer #amagavi,
-  #footer #codivus {
-    text-align: right;
-    margin-top: 2rem;
   }
   div#footer div#codivus,
   div#footer div#CodivusAttribution {
