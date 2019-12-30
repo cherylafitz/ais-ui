@@ -59,9 +59,6 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
   min-height: 100%;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
 }
 .IsLoggedIn .Content {
   margin: 0;
@@ -69,7 +66,6 @@ body {
   position: relative;
   background-color: transparent;
   clear: both;
-  flex: 1;
 }
 .Content:after {
   content: " ";
@@ -329,10 +325,10 @@ div#buildAndInstance {
   float: left;
   background-repeat: no-repeat;
   width: 180px;
-  height: 47px;
+  height: 50px;
   background-position: 0 center;
   background-size: 100%;
-  /*margin-bottom: .5rem;*/
+  margin-bottom: .5rem;
 }
 .IsLoggedIn #Header .Title,
 .IsLoggedIn #Header .aisFormsLogo {
@@ -1251,10 +1247,6 @@ table.TemplateTable tr td {
   z-index: 100;
   background: #2b353c; */
 }
-.IsLoggedIn #PrivacyPolicy,
-.IsLoggedIn #CookieDeclaration {
-  margin-left: 1.5rem;
-}
 #UserHomeIntro {
   flex-basis: 500px;
   margin: 0;
@@ -1966,8 +1958,11 @@ span.fax {
 }
 #footer .legal {
   order:4;
-  margin-bottom: 1rem;
+  margin: 0 1rem .75rem 0;
   flex-grow: 1;
+  flex-basis: 50%;
+  font-size: .75rem;
+  line-height: 24px;
 }
 #footer #codivus {
   order: 5;
@@ -1988,7 +1983,7 @@ div#footer2 .ACaddressBlock {
 #footer {
   position: relative;
   background-color: #29353d;
-  padding: 2rem 1.5rem 2rem;
+  padding: 2.5rem 1.5rem 3rem;
   border-top: 1px solid #3d4f5c;
   flex-flow: row wrap;
 }
@@ -1999,17 +1994,17 @@ div#footer div#codivus,
 div#footer div#CodivusAttribution {
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: .5rem;
 }
 #footer .logo {
   display: none;
 }
 #footer #Policies {
-  margin: 0 0 1rem;
+  margin: 0 1rem 1rem 0;
 }
 #footer #amagavi table,
 #footer #codivus table {
   font-size: .75rem;
-  /*margin: .5rem 1.5rem 0;*/
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline,
@@ -2081,7 +2076,7 @@ div.CheckboxMatrix tr td {
 }
 #footer .byline {
   color: #fff;
-  margin-left: .5rem;
+  margin-left: .25rem;
 }
 #columnLeft {
   float: left;
@@ -2718,14 +2713,13 @@ button:hover {
   #CookieDeclaration {
     /*text-align: right;*/
   }
-  .IsNotLoggedIn #Policies {
+  #Policies {
     display: block;
     margin: 0;
   }
   #Policies,
   .policies {
     margin: .5rem 0;
-    display: flex;
     justify-content: flex-end;
   } 
   .AClogoAddressFooter .legal > span:not(:last-child):after    {
