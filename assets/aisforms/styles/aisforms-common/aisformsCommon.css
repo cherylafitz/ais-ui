@@ -1251,10 +1251,6 @@ table.TemplateTable tr td {
   z-index: 100;
   background: #2b353c; */
 }
-.IsLoggedIn #PrivacyPolicy,
-.IsLoggedIn #CookieDeclaration {
-  margin-left: 1.5rem;
-}
 #UserHomeIntro {
   flex-basis: 500px;
   margin: 0;
@@ -1966,8 +1962,11 @@ span.fax {
 }
 #footer .legal {
   order:4;
-  margin-bottom: 1rem;
+  margin: 0 1rem .75rem 0;
   flex-grow: 1;
+  flex-basis: 50%;
+  font-size: .75rem;
+  line-height: 24px;
 }
 #footer #codivus {
   order: 5;
@@ -1999,17 +1998,17 @@ div#footer div#codivus,
 div#footer div#CodivusAttribution {
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: .5rem;
 }
 #footer .logo {
   display: none;
 }
 #footer #Policies {
-  margin: 0 0 1rem;
+  margin: 0 1rem 1rem 0;
 }
 #footer #amagavi table,
 #footer #codivus table {
   font-size: .75rem;
-  /*margin: .5rem 1.5rem 0;*/
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline,
@@ -2081,7 +2080,7 @@ div.CheckboxMatrix tr td {
 }
 #footer .byline {
   color: #fff;
-  margin-left: .5rem;
+  margin-left: .25rem;
 }
 #columnLeft {
   float: left;
@@ -2718,16 +2717,15 @@ button:hover {
   #CookieDeclaration {
     /*text-align: right;*/
   }
-  .IsNotLoggedIn #Policies {
+  #Policies {
     display: block;
     margin: 0;
   }
   #Policies,
   .policies {
     margin: .5rem 0;
-    display: flex;
     justify-content: flex-end;
-  } 
+  }
   .AClogoAddressFooter .legal > span:not(:last-child):after    {
     content: ". ";
   }
