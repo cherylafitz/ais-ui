@@ -2891,6 +2891,7 @@ button:hover {
   }
   .IsNotLoggedIn #Header {
     background-color: #33424d;
+    min-height: 96px;
   }
   .IsNotLoggedIn #LoginForm,
   .IsNotLoggedIn #CreateAccountForm {
