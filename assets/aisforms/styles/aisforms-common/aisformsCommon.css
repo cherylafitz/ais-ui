@@ -1964,7 +1964,7 @@ span.fax {
   order:4;
   margin: 0 1rem .75rem 0;
   flex-grow: 1;
-  flex-basis: 50%;
+  flex-basis: calc(100% - 600px);
   font-size: .75rem;
   line-height: 24px;
 }
@@ -2895,6 +2895,7 @@ button:hover {
   }
   .IsNotLoggedIn #Header {
     background-color: #33424d;
+    min-height: 96px;
   }
   .IsNotLoggedIn #LoginForm,
   .IsNotLoggedIn #CreateAccountForm {
