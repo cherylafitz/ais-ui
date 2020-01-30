@@ -69,6 +69,9 @@ body {
   position: relative;
   background-color: transparent;
   clear: both;
+}
+.IsLoggedIn .Content,
+.IsNotLoggedIn .Content {
   flex: 1;
 }
 .Content:after {
@@ -2741,14 +2744,14 @@ button:hover {
   }
 }
 
-
 /* PAGE: Login --> */
 
 /* MOBILE FIRST */
 
 .IsNotLoggedIn .ValidationAndForms,
 .IsNotLoggedIn .Tips,
-.IsNotLoggedIn #footer {
+.IsNotLoggedIn #footer,
+.AirAutoLogoutPage  {
   padding: 2rem 1.5rem;
 }
 .IsNotLoggedIn #Header {
@@ -2937,7 +2940,8 @@ button:hover {
 @media only screen and (min-width: 56em) {
   .IsNotLoggedIn .ValidationAndForms,
   .IsNotLoggedIn .Tips,
-  .IsNotLoggedIn #footer  {
+  .IsNotLoggedIn #footer,
+  .AirAutoLogoutPage   {
     padding: 2rem 6rem;
   }
   .IsNotLoggedIn #Header {
