@@ -1977,6 +1977,17 @@ td input[type="search"] {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
+input[type="radio"][disabled] {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}input[type="radio"] {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75) inset;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75) inset;
+}
+input[type="radio"]
 select {
   margin-bottom: .25rem;
   font-size: .875rem;
@@ -3270,7 +3281,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   border-radius: 50%;
   vertical-align: middle;
   float: right;
-  margin: 0 .125rem 0 0;
 }
 .UniversityAdvisorTrackerReport .FormTrackerReport .Clean {
   float: none;
@@ -3295,6 +3305,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background: #f8c76d;
   border-radius: 50%;
   vertical-align: middle;
+  float: right;
 }
 .FormTrackerReport .inProgress::before {
   content: '...';
@@ -3315,6 +3326,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   border-radius: 50%;
   vertical-align: middle;
   color: transparent;
+  float: right;
 }
 .FormTrackerReport .requested::before {
   content: 'r';
