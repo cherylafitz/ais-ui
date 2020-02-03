@@ -3270,7 +3270,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   border-radius: 50%;
   vertical-align: middle;
   float: right;
-  margin: 0 .125rem 0 0;
 }
 .UniversityAdvisorTrackerReport .FormTrackerReport .Clean {
   float: none;
@@ -3295,6 +3294,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   background: #f8c76d;
   border-radius: 50%;
   vertical-align: middle;
+  float: right;
 }
 .FormTrackerReport .inProgress::before {
   content: '...';
@@ -3315,6 +3315,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   border-radius: 50%;
   vertical-align: middle;
   color: transparent;
+  float: right;
 }
 .FormTrackerReport .requested::before {
   content: 'r';
