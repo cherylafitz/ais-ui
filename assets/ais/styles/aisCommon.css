@@ -3373,7 +3373,8 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 .FormTrackerReport.legend .FlaggedCount,
 .FormTrackerReport.legend .isMissing,
 .FormTrackerReport.legend .inProgress,
-.FormTrackerReport.legend .isLate {
+.FormTrackerReport.legend .isLate,
+.FormTrackerReport .requested {
   float: initial;
 }
 .FormTrackerReport.legend span {
