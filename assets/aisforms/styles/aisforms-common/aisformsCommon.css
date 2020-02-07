@@ -2263,10 +2263,10 @@ legend:not(.SaveButton) {
  /* PDF download icon styles --> */
 .Content .PDFDownload {
   display:block;
-  background-image: url(../../../../ais/common/pdficon_small.gif);
+  background-image: url(../../../../ais/common/pdficon_small.png);
   background-repeat: no-repeat;
   background-position: 1em;
-  padding-left: 2.5em;
+  padding-left: 2rem;
   margin: 1em;
   background-position: left;
 }
