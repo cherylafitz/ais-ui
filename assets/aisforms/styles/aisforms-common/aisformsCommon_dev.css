@@ -69,9 +69,6 @@ body {
   position: relative;
   background-color: transparent;
   clear: both;
-}
-.IsLoggedIn .Content,
-.IsNotLoggedIn .Content {
   flex: 1;
 }
 .Content:after {
@@ -1967,7 +1964,7 @@ span.fax {
   order:4;
   margin: 0 1rem .75rem 0;
   flex-grow: 1;
-  flex-basis: calc(100% - 600px);
+  flex-basis: 50%;
   font-size: .75rem;
   line-height: 24px;
 }
@@ -2260,17 +2257,6 @@ legend:not(.SaveButton) {
   width: 10em;
   opacity: .9;
 }
- /* PDF download icon styles --> */
-.Content .PDFDownload {
-  display:block;
-  background-image: url(../../../../ais/common/pdficon_small.gif);
-  background-repeat: no-repeat;
-  background-position: 1em;
-  padding-left: 2.5em;
-  margin: 1em;
-  background-position: left;
-}
- /* <-- PDF download icon styles  */
 
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
@@ -2755,14 +2741,14 @@ button:hover {
   }
 }
 
+
 /* PAGE: Login --> */
 
 /* MOBILE FIRST */
 
 .IsNotLoggedIn .ValidationAndForms,
 .IsNotLoggedIn .Tips,
-.IsNotLoggedIn #footer,
-.AirAutoLogoutPage  {
+.IsNotLoggedIn #footer {
   padding: 2rem 1.5rem;
 }
 .IsNotLoggedIn #Header {
@@ -2909,7 +2895,6 @@ button:hover {
   }
   .IsNotLoggedIn #Header {
     background-color: #33424d;
-    min-height: 96px;
   }
   .IsNotLoggedIn #LoginForm,
   .IsNotLoggedIn #CreateAccountForm {
@@ -2951,8 +2936,7 @@ button:hover {
 @media only screen and (min-width: 56em) {
   .IsNotLoggedIn .ValidationAndForms,
   .IsNotLoggedIn .Tips,
-  .IsNotLoggedIn #footer,
-  .AirAutoLogoutPage   {
+  .IsNotLoggedIn #footer  {
     padding: 2rem 6rem;
   }
   .IsNotLoggedIn #Header {
