@@ -2260,6 +2260,17 @@ legend:not(.SaveButton) {
   width: 10em;
   opacity: .9;
 }
+ /* PDF download icon styles --> */
+.Content .PDFDownload {
+  display:block;
+  background-image: url(../../../../ais/common/pdficon_small.gif);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  padding-left: 2.5em;
+  margin: 1em;
+  background-position: left;
+}
+ /* <-- PDF download icon styles  */
 
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
