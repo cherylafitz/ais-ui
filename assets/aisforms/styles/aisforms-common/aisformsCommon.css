@@ -2289,7 +2289,7 @@ body#body--environment-staging:after {
     left: 10px;
     right: 0px;
     height: 10px;
-    z-index: 1000;
+    z-index: 5001;
 }
 body#body--environment-staging:before {
     top: 0px;
