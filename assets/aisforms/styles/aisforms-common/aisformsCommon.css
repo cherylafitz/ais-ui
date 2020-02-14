@@ -2263,14 +2263,41 @@ legend:not(.SaveButton) {
  /* PDF download icon styles --> */
 .Content .PDFDownload {
   display:block;
-  background-image: url(../../../../ais/common/pdficon_small.gif);
+  background-image: url(../../../../ais/common/pdficon_small.png);
   background-repeat: no-repeat;
   background-position: 1em;
-  padding-left: 2.5em;
+  padding-left: 2rem;
   margin: 1em;
   background-position: left;
 }
  /* <-- PDF download icon styles  */
+
+/* STAGING --> */
+
+body#body--environment-staging {
+    border-left: 10px solid #FFE83C;
+    border-right: 10px solid #FFE83C;
+    margin-top: 0px; 
+    height: unset; 
+    width: unset;
+}
+body#body--environment-staging:before, 
+body#body--environment-staging:after {
+    content: "";
+    position: fixed;
+    background: #FFE83C;
+    left: 10px;
+    right: 0px;
+    height: 10px;
+    z-index: 5001;
+}
+body#body--environment-staging:before {
+    top: 0px;
+}
+body#body--environment-staging:after {
+    bottom: 0;
+}
+/* <-- STAGING */
 
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
