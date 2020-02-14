@@ -1969,13 +1969,18 @@ textarea,
 input,
 td input[type="password"],
 td input[type="search"] {
-  border: none;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   padding: 0 2px;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
+}
+td input[type="radio"] {
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75) inset;
+  border-radius: 50%;
 }
 select {
   margin-bottom: .25rem;
