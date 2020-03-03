@@ -2798,6 +2798,8 @@ button:hover {
 .IsNotLoggedIn .ValidationAndForms,
 .IsNotLoggedIn .Tips,
 .IsNotLoggedIn #footer,
+.AirAutoLogoutPage,
+.IsNotLoggedIn .hasAtLeastOneAnnouncement,
 .AirAutoLogoutPage  {
   padding: 2rem 1.5rem;
 }
@@ -2988,6 +2990,8 @@ button:hover {
   .IsNotLoggedIn .ValidationAndForms,
   .IsNotLoggedIn .Tips,
   .IsNotLoggedIn #footer,
+  .AirAutoLogoutPage,
+  .IsNotLoggedIn .hasAtLeastOneAnnouncement,
   .AirAutoLogoutPage   {
     padding: 2rem 6rem;
   }
@@ -3139,8 +3143,14 @@ url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /* <- bg color classes */
 
 /* Announcement styles for AIS Forms only --> */
-.IsNotLoggedIn .Content div.SystemAnnouncementsWrapper div.SystemAnnouncement {
-  margin-bottom: 6.5rem;
+.IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.IsNotLoggedIn div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+    background: #ffece6;
+    padding: .75rem .5rem .5rem;
 }
 /* <-- Announcement styles for AIS Forms only */
 

@@ -24,8 +24,8 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   -webkit-box-shadow: none;
   box-shadow: none;
   margin: 0;
-  border: 1px solid #999;
-  border-left: .5rem solid #de463d;
+  border: 1px solid #f4c0be;
+  border-left: .625rem solid #de463d;
 }
 .SystemAnnouncement p {
   margin: .25rem 0;
