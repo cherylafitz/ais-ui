@@ -3136,15 +3136,10 @@ url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /* Announcement styles for AIS Forms only --> */
 .IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .IsNotLoggedIn div.SystemAnnouncementsWrapper div.SystemAnnouncement {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    margin: 0;
-    border: 1px solid #f4c0be;
-    border-left: .75rem solid #de463d;
     background: #ffece6;
     padding: .75rem .5rem .5rem;
 }
