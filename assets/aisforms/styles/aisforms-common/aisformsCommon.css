@@ -1629,6 +1629,15 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
 }
 /* <-- PAGE: EMAIL TEMPLATE */
 
+/* PAGE: TEMPLATE EDITOR --> */
+
+div.ApplicantApplicationTemplateEditor details > summary {
+  display: list-item;
+}
+
+/* <-- PAGE: TEMPLATE EDITOR */
+
+
 /* DEADLINES--> */
 #DisplayGroupUpdateContainerID .findDeadlinesWrapper  {
   max-width: 733px;
