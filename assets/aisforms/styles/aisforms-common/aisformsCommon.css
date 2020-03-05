@@ -1399,8 +1399,8 @@ span.aisEmail {
 a.website {
   word-wrap: break-word;
 }
-span.noBreak,
-span.noWrap {
+.noBreak,
+.noWrap {
   white-space: nowrap;
 }
 .clear {
