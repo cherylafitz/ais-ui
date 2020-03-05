@@ -71,3 +71,9 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement div.byline:before,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement div.byline:before {
   content:"-- ";
 }
+
+.SystemAnnouncement .footnote {
+  color: #000; 
+  font-size:0.8125rem; 
+  font-weight: bold;
+}
