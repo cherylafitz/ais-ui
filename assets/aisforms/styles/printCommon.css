@@ -91,7 +91,6 @@ body {
 }
 a {
   color: #000000;
-  pointer-events: none;
   text-decoration: none;
 }
 .QuestionItem {
