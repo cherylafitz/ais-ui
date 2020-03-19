@@ -1628,8 +1628,29 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
 
 /* PAGE: TEMPLATE EDITOR --> */
 
-div.ApplicantApplicationTemplateEditor details > summary {
+div.ApplicantApplicationTemplateEditor div details > summary {
+  padding: .25rem .75rem .1875;
+  border-radius: 5px 5px 0 0;
+  border: none;
+  background-color: #415467;
+  color: #fff;
+  font-weight: normal;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  display: inline flow-root list-item;;
+  margin-left: .75rem;
+}
+details > summary {
   display: list-item;
+}
+details > summary ~ section {
+  border: 1px solid #cecece;
+  border-top-color: rgb(206, 206, 206);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-radius: 2px;
+  border-top: 5px solid #415461;
 }
 
 /* <-- PAGE: TEMPLATE EDITOR */
