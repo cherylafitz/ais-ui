@@ -1629,7 +1629,7 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
 /* PAGE: TEMPLATE EDITOR --> */
 
 div.ApplicantApplicationTemplateEditor div details > summary {
-  padding: .25rem .75rem .1875;
+  padding: .25rem .75rem .1875rem;
   border-radius: 5px 5px 0 0;
   border: none;
   background-color: #415467;
@@ -1644,7 +1644,7 @@ div.ApplicantApplicationTemplateEditor div details > summary {
 details > summary {
   display: list-item;
 }
-details > summary ~ section {
+div.ApplicantApplicationTemplateEditor details > summary ~ section {
   border: 1px solid #cecece;
   border-top-color: rgb(206, 206, 206);
   border-top-style: solid;
