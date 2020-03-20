@@ -1641,6 +1641,7 @@ div.ApplicantApplicationTemplateEditor div details > summary {
   display: inline flow-root list-item;;
   margin-left: .75rem;
 }
+/* remove - test first*/
 details > summary {
   display: list-item;
 }
@@ -1652,7 +1653,55 @@ div.ApplicantApplicationTemplateEditor details > summary ~ section {
   border-radius: 2px;
   border-top: 5px solid #415461;
 }
-
+details.tile {
+  margin: 1rem 0;
+  padding: 0 .75rem;
+  width: 20rem;
+  max-width: 100%;
+  position: relative;
+  border: 1px solid #90abc1;
+  border-radius: 2px;
+}
+details.tile > summary {
+  display: list-item;
+  padding: .5rem 1rem .5rem 0;
+  display: block;
+  position: relative;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+details.tile > summary::-webkit-details-marker {
+  display: none;
+}
+details.tile summary::before, 
+details.tile summary::after {
+  width: .75em;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  background-color: currentColor;
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+details.tile summary::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+details.tile[open] summary::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+} 
+details.tile:last-of-type {
+  margin-bottom: 1.5rem;
+}
 /* <-- PAGE: TEMPLATE EDITOR */
 
 
