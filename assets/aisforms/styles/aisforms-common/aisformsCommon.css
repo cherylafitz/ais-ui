@@ -1653,30 +1653,30 @@ div.ApplicantApplicationTemplateEditor details > summary ~ section {
   border-radius: 2px;
   border-top: 5px solid #415461;
 }
-details.tile {
+details.details_1 {
   margin: 1rem 0;
   padding: 0 .75rem;
-  width: 20rem;
+  width: 36rem;
   max-width: 100%;
   position: relative;
-  border: 1px solid #90abc1;
+  border-bottom: 1px solid #90abc1;
   border-radius: 2px;
 }
-details.tile > summary {
+details.details_1 > summary {
   display: list-item;
   padding: .5rem 1rem .5rem 0;
   display: block;
   position: relative;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
 }
-details.tile > summary::-webkit-details-marker {
+details.details_1 > summary::-webkit-details-marker {
   display: none;
 }
-details.tile summary::before, 
-details.tile summary::after {
-  width: .75em;
+details.details_1 summary::before, 
+details.details_1 summary::after {
+  width: .75rem;
   height: 2px;
   position: absolute;
   top: 50%;
@@ -1691,15 +1691,15 @@ details.tile summary::after {
   transition: transform .2s ease-in-out;
   transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
-details.tile summary::after {
+details.details_1 summary::after {
   -webkit-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
 }
-details.tile[open] summary::after {
+details.details_1[open] summary::after {
     -webkit-transform: translateY(-50%) rotate(180deg);
     transform: translateY(-50%) rotate(180deg);
 } 
-details.tile:last-of-type {
+details.details_1:last-of-type {
   margin-bottom: 1.5rem;
 }
 /* <-- PAGE: TEMPLATE EDITOR */
@@ -2298,7 +2298,13 @@ div#Growler {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-
+  display: inline-block;
+  color: #000;
+  padding: .5rem .75rem;
+  border-radius: 2px;
+  margin: .25rem 0 1rem;
+  border: 1px solid #ffc8b3;
+  background-color: #ffdacc;
 }
 .arrow {
         color: #FFB039;
@@ -2896,6 +2902,7 @@ button:hover {
   flex-basis: 348px;
   flex-grow: 3;
   padding-bottom: 1rem;
+  max-width: 100%;
 }
 .IsNotLoggedIn .CustomContent .logos {
   margin-bottom: 1rem;
