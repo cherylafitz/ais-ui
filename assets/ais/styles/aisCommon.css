@@ -2974,6 +2974,9 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 #ProgramBadges #Badges li
 {
@@ -2998,15 +3001,10 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   transform: translate(-50%, -50%);
   max-width: 70%;
   height: auto;
+  max-height: 70%;
 }
 #ProgramBadges .BadgeIconDescription {
   border: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 70%;
-  padding: .5rem;
   line-height: initial;
 }
 
@@ -3022,18 +3020,18 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 
 #ProgramBadges #Badges li
 {
-  width: 140px;
-  height: 140px;
-  float: left;
+  width: 100px;
+  height: 100px;
   text-align: center;
   border-radius: 50%;
   margin: .5rem;
   padding: .5rem;
   line-height: 120px;
-  position:  relative;
-  display: inline-block;
   transition: transform .25s;
   transform: scale(.95);
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 
 #ProgramBadges #Badges li.programCellAIS img
@@ -3833,7 +3831,6 @@ and (max-width : 896px) {
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-width : 768px) {
-
   #ProgramBadges #Banner .instanceID {
     /* remove after banner html updated */
     position: absolute;
@@ -3845,8 +3842,13 @@ and (min-width : 768px) {
 
 /* desktops and laptops */
 @media only screen
-and (min-width: 897px)
-and (max-width: 1150px) {
+and (min-width: 897px) {
+    /* Badges page --> */
+  #ProgramBadges #Badges li {
+    width: 140px;
+    height: 140px;
+  }
+  /* < <-- Badges page */
 }
 /* Desktops and laptops ----------- probably AC size */
 @media only screen
