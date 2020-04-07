@@ -2144,6 +2144,11 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement .byline {
   font-size: 1.25rem;
   vertical-align: baseline;
 }
+/* remove specific styles after Marco's stylesheets are gone -> */
+div.UserFullDisplay fieldset details > summary ,
+details > summary {
+  display: inline flow-root list-item;
+}
 
 /* DESCRIPTIVE STYLES--> */
 .clear-left {
@@ -2161,7 +2166,8 @@ span.aisEmail {
 a.website {
   word-wrap: break-word;
 }
-span.noBreak {
+.noBreak,
+.noWrap {
   white-space: nowrap;
 }
 .clear {

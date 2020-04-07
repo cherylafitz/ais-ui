@@ -13,7 +13,7 @@
 
 
 /* PAGE SETUP */
-@import url("http://www.princexml.com/fonts/sil/index.css") all;
+@import url("https://www.princexml.com/fonts/sil/index.css") all;
 @import url("https://ais.americancouncils.org/ais/common/stylesheets/inlineQuestions.css");
 
 @page {
@@ -91,7 +91,6 @@ body {
 }
 a {
   color: #000000;
-  pointer-events: none;
   text-decoration: none;
 }
 .QuestionItem {
