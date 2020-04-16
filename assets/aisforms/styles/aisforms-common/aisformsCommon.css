@@ -1079,6 +1079,16 @@ div.Main div.staffHome div.Deadlines {
 .Content div.AdminHomeLinks a.adminHomeLinksDescription {
   font-size: .6em;
 }
+.InTesting {
+  background-color: #62deff !important;
+}
+.InTesting td {
+  border-color: #888 !important;
+}
+.InTesting .TemplateName::before {
+  content: "IN TESTING: ";
+  font-weight: bold;
+}
 /* ADMIN VIEW ONLY-->*/
 /* CREATE USERS--> */
 .ERXTabPanel div.TabContent {
@@ -1655,6 +1665,11 @@ div.ApplicantApplicationTemplateEditor div details > summary {
   display: inline flow-root list-item;;
   margin-left: .75rem;
 }
+div.ApplicantApplicationTemplateEditor details[open] summary
+  {
+    border-radius: 5px 5px 0 0;
+    padding-bottom: .25rem;
+  }
 /* remove - test first*/
 details > summary {
   display: list-item;
