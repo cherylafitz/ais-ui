@@ -1665,11 +1665,6 @@ div.ApplicantApplicationTemplateEditor div details > summary {
   display: inline flow-root list-item;;
   margin-left: .75rem;
 }
-div.ApplicantApplicationTemplateEditor details[open] summary
-  {
-    border-radius: 5px 5px 0 0;
-    padding-bottom: .25rem;
-  }
 /* remove - test first*/
 details > summary {
   display: list-item;
