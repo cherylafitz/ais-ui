@@ -1079,6 +1079,16 @@ div.Main div.staffHome div.Deadlines {
 .Content div.AdminHomeLinks a.adminHomeLinksDescription {
   font-size: .6em;
 }
+.InTesting {
+  background-color: #62deff !important;
+}
+.InTesting td {
+  border-color: #888 !important;
+}
+.InTesting .TemplateName::before {
+  content: "IN TESTING: ";
+  font-weight: bold;
+}
 /* ADMIN VIEW ONLY-->*/
 /* CREATE USERS--> */
 .ERXTabPanel div.TabContent {
