@@ -1085,7 +1085,8 @@ div.Main div.staffHome div.Deadlines {
 .InTesting td {
   border-color: #888 !important;
 }
-.InTesting .TemplateName::before {
+.InTesting .TemplateName::before,
+.InTesting .Form::before {
   content: "IN TESTING: ";
   font-weight: bold;
 }
