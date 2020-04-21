@@ -692,6 +692,11 @@ div.Content div.AIRAdminSearchForApplications div.instructions {
 }
 /* <--FORMS AND USERS SEARCH */
 /* TABLES-->*/
+table {
+  font-size: 1rem;
+  border-collapse: collapse;
+  border: 0;
+}
 table,
 div.AIRAdminSearchForApplications form div#outerTableContainerID table.Search.rolodex,
 table.ChoiceCategories {
@@ -707,8 +712,8 @@ div.GroupedItem table {
 }
 table tr th,
 table tr td {
-  font-style: normal;
   vertical-align: top;
+  padding: .25rem 0.5rem;
 }
 div.CMSBatchNavigation table {
   background-color: transparent;
