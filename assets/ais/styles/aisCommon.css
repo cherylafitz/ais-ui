@@ -2738,6 +2738,24 @@ div.PIPYDisplay .PlacementReportReasonSortOrder {
   width: initial;
 }
 
+/* PAGE: PO FOR PIPY --> */
+
+.POForPIPY_Editor {
+
+}
+/* GLOBAL STYLES (BUT FIRST APPLIED ON THIS PAGE - MOVE LATER) */
+.Address .form-input {
+  margin-bottom: .25rem;
+}
+.Address .form-input label {
+  width: 7rem;
+  display: inline-block;
+}
+.Address .Address_Country div {
+  display: inline-block;
+}
+
+/* <-- PAGE: PO FOR PIPY */
 /* PAGE: PROGRAM SETTINGS --> */
 .ProgramViewEditDetail fieldset img {
   width: auto;
@@ -3619,14 +3637,13 @@ body > #priorPage a {
 .transparent {
   background-color: transparent;
 }
-.bg-blue01 a {
-  color: #c4dcee;
-}
 .bg-blue02 {
   background-color: #33424d;
   color: #fff;
 }
-.bg-blue02 a {
+.bg-blue01 a,
+.bg-blue02 a,
+.bg-blue03 a  {
   color: #c4dcee;
 }
 
