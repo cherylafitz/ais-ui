@@ -272,7 +272,8 @@ p:last-child {
 
 /* warning text ----> */
 .warning,
-span.StudentEntryDisabled {
+span.StudentEntryDisabled,
+#TooManyInReview_id {
   font-size: .875rem;
   border-radius: 2px;
   background: #2a363e;
@@ -502,6 +503,9 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 /* NAVIGATION--> */
 div.leftNav div.Body {
   padding: .75rem;
+}
+.leftNav .Body div {
+    margin-top: .5rem;
 }
 div.AuditTrailRowDisplay {
   padding: 0;
@@ -2210,7 +2214,7 @@ form.FilterForm table.filter {
 
 /* <-- HEALTH QUEUE */
 
-/* HEALTH INBOX --> */
+/* HEALTH INBOX --> */ 
 
 span.QuestionnaireNotSent,
 td[data-thread-status="QuestionnaireNotSent"],
