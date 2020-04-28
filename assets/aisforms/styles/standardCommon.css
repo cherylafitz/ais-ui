@@ -221,8 +221,8 @@ div.deadlineBox span {
 div.deadlineBox span.timeZone {
   font-weight: normal;
 }
-div.deadlineBox span.dayOfWeek:after,
-div.deadlineBox span.dayMonthYear:after {
+.dayOfWeek:after,
+.dayMonthYear:after {
   content: ",";
 }
 
