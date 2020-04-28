@@ -2824,11 +2824,18 @@ button:hover {
 
 /* <-- buttons */
 
-@media only screen and (min-width : 420px) { 
+@media only screen and (min-width : 480px) { 
   .noBreak,
   .noWrap,
   .nowrap {
     white-space: nowrap;
+  }
+  .Tips h4 {
+    flex-basis: 315px;
+  }
+  .Tips p {
+    flex-basis: calc(100% - 315px);
+    min-width: 315px;
   }
 }
 @media only screen and (min-width : 860px) {
