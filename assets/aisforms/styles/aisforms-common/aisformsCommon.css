@@ -1372,7 +1372,7 @@ table.TemplateTable tr td {
 .Tips h4 {
   font-size: .875rem;
   line-height: 1.25;
-  flex-basis: 315px;
+  flex-basis: 280px;
 }
 .Tips h4::before {
   content: '';
@@ -1397,8 +1397,8 @@ table.TemplateTable tr td {
   content: ':';
 }
 .Tips p {
-  flex-basis: calc(100% - 315px);
-  min-width: 315px;
+  flex-basis: calc(100% - 280px);
+  min-width: 280px;
   flex-grow: 1;
 }
 .Tips h3 {
@@ -1420,10 +1420,6 @@ span.aisEmail {
 }
 a.website {
   word-wrap: break-word;
-}
-.noBreak,
-.noWrap {
-  white-space: nowrap;
 }
 .clear {
   clear: left;
@@ -2827,8 +2823,13 @@ button:hover {
 }
 
 /* <-- buttons */
-.nowrap {
-  white-space: nowrap;
+
+@media only screen and (min-width : 420px) { 
+  .noBreak,
+  .noWrap,
+  .nowrap {
+    white-space: nowrap;
+  }
 }
 @media only screen and (min-width : 860px) {
 /* admin/staff/dev HOME PAGE --> */
@@ -2888,6 +2889,18 @@ button:hover {
 
 /* MOBILE FIRST */
 
+.IsNotLoggedIn .Content {
+  display: flex;
+}
+.IsNotLoggedIn .Content .Main {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.IsNotLoggedIn .Content .LoginOrNewAccount {
+  flex-grow: 1;
+  display: flex;
+}
 .IsNotLoggedIn .ValidationAndForms,
 .IsNotLoggedIn .Tips,
 .IsNotLoggedIn #footer,
@@ -2917,6 +2930,8 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 100%;
 }
 .IsNotLoggedIn .CustomContent {
   flex-basis: 348px;
