@@ -810,12 +810,14 @@ fieldset label {
 
 /* New form styles --> */
 .form-input,
-.dependent-input-wrapper, 
+/*.dependent-input-wrapper, */
 form .generated-field {
   margin-bottom: .25rem;
 }
 .form-input label,
-.dependent-input-wrapper label {
+/* under discussion -->*/
+/*.dependent-input-wrapper label,*/
+.generated-field .label {
   display: inline-block;
   min-width: 14rem;
   padding-right: .5rem;
