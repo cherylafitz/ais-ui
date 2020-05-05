@@ -806,6 +806,24 @@ td.content fieldset fieldset  {
 fieldset label {
   width: initial;
 }
+
+/* New form styles --> */
+.form-input,
+.generated-field {
+  margin-bottom: .25rem;
+}
+.form-input label,
+.generated-field .label {
+  display: inline-block;
+  min-width: 14rem;
+  padding-right: .5rem;
+}
+/* change!!! ask Marco to add class to div */
+.form-input label ~ div {
+  display: inline-block;
+}
+/* <-- New form styles */
+
 #contentPageProportional table.ERXMatrixTable {
   font-size: .75rem;
 }
@@ -1982,7 +2000,8 @@ td input[type="search"] {
   border: 1px solid #c0bfbf;
 }
 select {
-  margin-bottom: .25rem;
+  /* remove permanently after testing */
+  /*margin-bottom: .25rem;*/
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
