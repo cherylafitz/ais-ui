@@ -1649,6 +1649,7 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
 
 /* PAGE: TEMPLATE EDITOR --> */
 
+/* pare down */
 div.ApplicantApplicationTemplateEditor div details > summary {
   padding: .25rem .75rem .1875rem;
   border-radius: 5px 5px 0 0;
@@ -1659,14 +1660,64 @@ div.ApplicantApplicationTemplateEditor div details > summary {
   position: relative;
   font-size: 1rem;
   line-height: 1.125rem;
-  display: inline flow-root list-item;;
+  display: inline flow-root list-item;
   margin-left: .75rem;
 }
-/* remove - test first*/
-details > summary {
-  display: list-item;
+/* base details styles */
+details {
+  margin: .5rem 0;
 }
-div.ApplicantApplicationTemplateEditor details > summary ~ section {
+details > summary {
+  display: inline-block;
+  background: #e0e6eb;
+  padding: .25em 1em .25em 2em;
+  border-radius: 2px;
+  position: relative;
+}
+details section,
+details .details-content {
+  padding: .5rem 1.5rem 1.25rem;
+  background: #e0e6eb;
+  display: inline-block;
+  border-radius: 0 2px 2px 2px;
+}
+details[open] summary {
+  border-radius: 2px 2px 0 0;
+}
+details > summary:hover {
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  content: "";
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: currentColor;
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: transparent;
+  width: .625em;
+  height: .625em;
+  transition: transform .25s;
+  position: absolute;
+  /* needs to offset hidden half of square */
+  left: calc(.75em - 2px);
+  top: 33%;
+}
+details[open] summary::before {
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  /* needs to offset hidden half of square */
+  top: 30%;
+  left: .75em;
+}
+details > summary::before div.ApplicantApplicationTemplateEditor details > summary ~ section {
   border: 1px solid #cecece;
   border-top-color: rgb(206, 206, 206);
   border-top-style: solid;
@@ -1722,6 +1773,30 @@ details.details_1[open] summary::after {
 } 
 details.details_1:last-of-type {
   margin-bottom: 1.5rem;
+}
+
+/* raindrop */
+.details_2 > summary::before {
+    content: "";
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+    height: 16px;
+    width: 16px;
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 0 0 0 1px;
+    margin-right: 0px;
+    margin-left: 1px;
+    color: black;
+    background: transparent;
+    padding: 0;
+    display: inline-block;
+    margin-right: .5rem;
+    transition: transform .25s;
+    border-radius: 50% 0px 50% 50%;
 }
 /* <-- PAGE: TEMPLATE EDITOR */
 
