@@ -72,7 +72,8 @@ body {
 }
 .IsLoggedIn .Content,
 .IsNotLoggedIn .Content {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .Content:after {
   content: " ";
@@ -2824,18 +2825,11 @@ button:hover {
 
 /* <-- buttons */
 
-@media only screen and (min-width : 480px) { 
+@media only screen and (min-width : 420px) { 
   .noBreak,
   .noWrap,
   .nowrap {
     white-space: nowrap;
-  }
-  .Tips h4 {
-    flex-basis: 315px;
-  }
-  .Tips p {
-    flex-basis: calc(100% - 315px);
-    min-width: 315px;
   }
 }
 @media only screen and (min-width : 860px) {
@@ -2906,6 +2900,7 @@ button:hover {
 }
 .IsNotLoggedIn .Content .LoginOrNewAccount {
   flex-grow: 1;
+  flex-shrink: 0;
   display: flex;
 }
 .IsNotLoggedIn .ValidationAndForms,
@@ -2918,6 +2913,7 @@ button:hover {
 }
 .IsNotLoggedIn #Header {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   color: #fff;
   background-color: #29353d;
@@ -3096,6 +3092,7 @@ button:hover {
   #footer {
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
   }
   .ACaddressBlock > span {
     margin-bottom: 0;
