@@ -327,15 +327,22 @@ div#buildAndInstance {
   color: #FFD590;
   font-size: 1.1em;
 }
-#Header #buildAndInstance {
-  margin-left: 2rem;
+#Header #serverInfo {
+  margin-right: 2rem;
 }
 .instance {
   margin-bottom: .4em;
 }
-#Header .logo {
-/*  background-image: url(https://ais.americancouncils.org/ais/common/system/AC_Logo_White_200w.png);
-  margin-right: 1rem; */
+.header-logo {
+  float: left;
+}
+.header-logo img {
+  height: 47px;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+.logo ~ .ac-logo {
+  display: none;
 }
 .IsLoggedIn #Header .logo,
 .IsLoggedIn #Header .AClogo,
@@ -347,6 +354,7 @@ div#buildAndInstance {
   height: 47px;
   background-position: 0 center;
   background-size: 100%;
+  margin-right: 1rem;
   /*margin-bottom: .5rem;*/
 }
 .IsLoggedIn #Header .Title,
@@ -354,7 +362,7 @@ div#buildAndInstance {
   background-image: url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /*  background-image: url((https://ais.americancouncils.org/ais/common/AISformsLogo_flat.png)\9; */
   width: 162px;
-  margin: -0.2rem 1rem 0;
+  margin: -0.2rem 0 0;
 }
 #Header a {
   color: #c4dcee;
