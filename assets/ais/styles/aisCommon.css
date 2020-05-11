@@ -2625,6 +2625,10 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
 .CheckboxedConditionItem {
   padding-bottom: 3px;
 }
+/* new form structurem*/
+.form-input input[type=checkbox] {
+  margin: .125rem .5rem .125rem 0;
+}
 input[type=checkbox] {
   cursor: pointer;
   -webkit-appearance: none;
@@ -3711,6 +3715,72 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
 }
 
 /* <- LISTS */
+
+/* DETAILS ELEMENT -->  */
+
+/* base details styles */
+details {
+  margin: .5rem 0;
+}
+details > summary {
+  display: inline-block;
+  background: #e0e6eb;
+  padding: .25em 1em .25em 2em;
+  border-radius: 2px;
+  position: relative;
+}
+details section,
+details .details-content {
+  padding: .5rem 1.5rem 1.25rem;
+  background: #e0e6eb;
+  display: inline-block;
+  border-radius: 0 2px 2px 2px;
+}
+/* BASE DETAILS OVERRIDES --> */
+fieldset details > summary,
+fieldset details section,
+fieldset details .details-content {
+  background-color: #f7fbfd;
+} 
+/* <-- BASE DETAILS OVERRIDES */
+
+details[open] summary {
+  border-radius: 2px 2px 0 0;
+}
+details > summary:hover {
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  content: "";
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: currentColor;
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: transparent;
+  width: .625em;
+  height: .625em;
+  transition: transform .25s;
+  position: absolute;
+  /* needs to offset hidden half of square */
+  left: calc(.75em - 2px);
+  top: 33%;
+}
+details[open] summary::before {
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  /* needs to offset hidden half of square */
+  top: 30%;
+  left: .75em;
+}
+/* <-- DETAILS ELEMENT */
 
 /* <-- SHARED ELEMENTS */
 

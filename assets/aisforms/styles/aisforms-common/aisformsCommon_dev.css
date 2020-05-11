@@ -72,7 +72,8 @@ body {
 }
 .IsLoggedIn .Content,
 .IsNotLoggedIn .Content {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .Content:after {
   content: " ";
@@ -130,29 +131,43 @@ a.imgLink:hover {
 /* darkest blue = 1 */
 .bg-blue01 {
   background-color: #29353d;
-  color: #fff;
 }
-.bg-blue01 a {
+.bg-blue02 {
+  background-color: #33424d;
+}
+.bg-blue03 {
+  background-color: #3d4f5c;
+}
+.bg-blue01 a,
+.bg-blue02 a,
+.bg-blue03 a {
   color: #c4dcee;
 }
+.bg-blue01,
+.bg-blue02,
+.bg-blue03 {
+  color: #fff;
+}
+/* ???> */
 .bg-blue01 button.bare {
   color: #fff;
 }
 .transparent {
   background-color: transparent;
 }
-.bg-blue02 {
-  background-color: #33424d;
-  color: #fff;
-}
-.bg-blue02 a,
-.bg-blue03 a {
-  color: #c4dcee;
-}
-.bg-blue03 {
-  background-color: #3d4f5c;
-  color: #fff;
-}
+/* ???> */
+.bg-blue01 h1,
+.bg-blue01 h2,
+.bg-blue01 h3,
+.bg-blue01 h4,
+.bg-blue01 h5,
+.bg-blue01 h6,
+.bg-blue02 h1,
+.bg-blue02 h2,
+.bg-blue02 h3,
+.bg-blue02 h4,
+.bg-blue02 h5,
+.bg-blue02 h6,
 .bg-blue03 h1,
 .bg-blue03 h2,
 .bg-blue03 h3,
@@ -312,18 +327,22 @@ div#buildAndInstance {
   color: #FFD590;
   font-size: 1.1em;
 }
-#Header #buildAndInstance {
-  margin-left: 2rem;
-}
-#Header.IsLoggedIn #buildAndInstance .build {
-  display: none;
+#Header #serverInfo {
+  margin-right: 2rem;
 }
 .instance {
   margin-bottom: .4em;
 }
-#Header .logo {
-/*  background-image: url(https://ais.americancouncils.org/ais/common/system/AC_Logo_White_200w.png);
-  margin-right: 1rem; */
+.header-logo {
+  float: left;
+}
+.header-logo img {
+  height: 47px;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+.logo ~ .ac-logo {
+  display: none;
 }
 .IsLoggedIn #Header .logo,
 .IsLoggedIn #Header .AClogo,
@@ -335,6 +354,7 @@ div#buildAndInstance {
   height: 47px;
   background-position: 0 center;
   background-size: 100%;
+  margin-right: 1rem;
   /*margin-bottom: .5rem;*/
 }
 .IsLoggedIn #Header .Title,
@@ -342,7 +362,7 @@ div#buildAndInstance {
   background-image: url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /*  background-image: url((https://ais.americancouncils.org/ais/common/AISformsLogo_flat.png)\9; */
   width: 162px;
-  margin: -0.2rem 1rem 0;
+  margin: -0.2rem 0 0;
 }
 #Header a {
   color: #c4dcee;
@@ -1068,6 +1088,17 @@ div.Main div.staffHome div.Deadlines {
 .Content div.AdminHomeLinks a.adminHomeLinksDescription {
   font-size: .6em;
 }
+.InTesting {
+  background-color: #62deff !important;
+}
+.InTesting td {
+  border-color: #888 !important;
+}
+.InTesting .TemplateName::before,
+.InTesting .Form::before {
+  content: "IN TESTING: ";
+  font-weight: bold;
+}
 /* ADMIN VIEW ONLY-->*/
 /* CREATE USERS--> */
 .ERXTabPanel div.TabContent {
@@ -1350,7 +1381,7 @@ table.TemplateTable tr td {
 .Tips h4 {
   font-size: .875rem;
   line-height: 1.25;
-  flex-basis: 315px;
+  flex-basis: 280px;
 }
 .Tips h4::before {
   content: '';
@@ -1375,8 +1406,8 @@ table.TemplateTable tr td {
   content: ':';
 }
 .Tips p {
-  flex-basis: calc(100% - 315px);
-  min-width: 315px;
+  flex-basis: calc(100% - 280px);
+  min-width: 280px;
   flex-grow: 1;
 }
 .Tips h3 {
@@ -1398,10 +1429,6 @@ span.aisEmail {
 }
 a.website {
   word-wrap: break-word;
-}
-span.noBreak,
-span.noWrap {
-  white-space: nowrap;
 }
 .clear {
   clear: left;
@@ -1628,6 +1655,189 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
   border: 1rem solid #fff;
 }
 /* <-- PAGE: EMAIL TEMPLATE */
+
+/* PAGE: TEMPLATE EDITOR --> */
+
+/* base details styles */
+details {
+  margin: .5rem 0;
+}
+details > summary {
+  display: inline-block;
+  /*background: #e0e6eb;*/
+  background: #d0dae1;
+  padding: .25em 1em .25em 2em;
+  border-radius: 2px;
+  position: relative;
+}
+details section,
+details .details-content {
+  padding: .5rem 1.5rem 1.25rem;
+  background: #e0e6eb;
+  background: #eff3f5;
+  display: inline-block;
+  border-radius: 0 2px 2px 2px;
+  border-top: 1px solid #d0dae1;
+}
+details[open] summary {
+  border-radius: 2px 2px 0 0;
+}
+details > summary:hover {
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  content: "";
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: currentColor;
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: transparent;
+  width: .625em;
+  height: .625em;
+  transition: transform .25s;
+  position: absolute;
+  /* needs to offset hidden half of square */
+  left: calc(.75em - 2px);
+  top: 33%;
+}
+details[open] > summary::before {
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  /* needs to offset hidden half of square */
+  top: 30%;
+  left: .75em;
+}
+
+/* BASE DETAILS OVERRIDES --> */
+table.RowDisplay details {
+  margin: 0;
+}
+table.RowDisplay details > summary {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+details details .details-content,
+details details section,
+fieldset details section,
+fieldset details .details-content {
+  background-color: #f7fbfd;
+  border-top: 1px solid #c1cdd7;
+} 
+details details > summary,
+fieldset details > summary {
+  background-color: #c1cdd7;
+}
+/* <-- BASE DETAILS OVERRIDES */
+/* DELETE AFTER MARCOS CSS IS REMOVED --> */
+div.ApplicantApplicationTemplateEditor details > summary ~ section {
+  padding: .5rem 1.5rem 1.25rem;
+  background: #e0e6eb;
+  background: #eff3f5;
+  display: inline-block;
+  border-radius: 0 2px 2px 2px;
+  border: none;
+  border-top: 1px solid #d0dae1;
+}
+div.ApplicantApplicationTemplateEditor div details > summary {
+  border: none;
+  font-weight: normal;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  display: inline flow-root list-item;
+  margin-left: .75rem;
+  display: inline-block;
+  background: #d0dae1;
+  padding: .25em 1em .25em 2em;
+  border-radius: 2px;
+  position: relative;
+}
+/* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
+
+details.details_1 {
+  margin: 1rem 0;
+  padding: 0 .75rem;
+  width: 36rem;
+  max-width: 100%;
+  position: relative;
+  border-bottom: 1px solid #90abc1;
+  border-radius: 2px;
+}
+details.details_1 > summary {
+  display: list-item;
+  padding: .5rem 1rem .5rem 0;
+  display: block;
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+details.details_1 > summary::-webkit-details-marker {
+  display: none;
+}
+details.details_1 summary::before, 
+details.details_1 summary::after {
+  width: .75rem;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: '';
+  background-color: currentColor;
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+details.details_1 summary::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+details.details_1[open] summary::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+} 
+details.details_1:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+/* raindrop */
+.details_2 > summary::before {
+    content: "";
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ffffff;
+    height: 16px;
+    width: 16px;
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 0 0 0 1px;
+    margin-right: 0px;
+    margin-left: 1px;
+    color: black;
+    background: transparent;
+    padding: 0;
+    display: inline-block;
+    margin-right: .5rem;
+    transition: transform .25s;
+    border-radius: 50% 0px 50% 50%;
+}
+/* <-- PAGE: TEMPLATE EDITOR */
+
 
 /* DEADLINES--> */
 #DisplayGroupUpdateContainerID .findDeadlinesWrapper  {
@@ -2217,18 +2427,19 @@ div#Growler {
   font-size: .8em;
 }
 .Alert {
-  border-left: 5px solid #FFB039;
-  padding: 1em;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-
+  display: inline-block;
+  color: #000;
+  padding: .5rem .75rem;
+  border-radius: 2px;
+  margin: .25rem 0 1rem;
+  border: 1px solid #ffc8b3;
+  background-color: #ffdacc;
 }
 .arrow {
-        color: #FFB039;
-        font-size: 1.2em;
-        vertical-align: baseline;
-      }
+  color: #FFB039;
+  font-size: 1.2em;
+  vertical-align: baseline;
+}
 
 /* DESCRIPTIVE STYLES--> */
 .clear-left {
@@ -2289,7 +2500,7 @@ body#body--environment-staging:after {
     left: 10px;
     right: 0px;
     height: 10px;
-    z-index: 1000;
+    z-index: 5001;
 }
 body#body--environment-staging:before {
     top: 0px;
@@ -2725,8 +2936,13 @@ button:hover {
 }
 
 /* <-- buttons */
-.nowrap {
-  white-space: nowrap;
+
+@media only screen and (min-width : 420px) { 
+  .noBreak,
+  .noWrap,
+  .nowrap {
+    white-space: nowrap;
+  }
 }
 @media only screen and (min-width : 860px) {
 /* admin/staff/dev HOME PAGE --> */
@@ -2786,6 +3002,19 @@ button:hover {
 
 /* MOBILE FIRST */
 
+.IsNotLoggedIn .Content {
+  display: flex;
+}
+.IsNotLoggedIn .Content .Main {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.IsNotLoggedIn .Content .LoginOrNewAccount {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+}
 .IsNotLoggedIn .ValidationAndForms,
 .IsNotLoggedIn .Tips,
 .IsNotLoggedIn #footer,
@@ -2796,6 +3025,7 @@ button:hover {
 }
 .IsNotLoggedIn #Header {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-between;
   color: #fff;
   background-color: #29353d;
@@ -2815,11 +3045,14 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 100%;
 }
 .IsNotLoggedIn .CustomContent {
   flex-basis: 348px;
   flex-grow: 3;
   padding-bottom: 1rem;
+  max-width: 100%;
 }
 .IsNotLoggedIn .CustomContent .logos {
   margin-bottom: 1rem;
@@ -2971,6 +3204,7 @@ button:hover {
   #footer {
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
   }
   .ACaddressBlock > span {
     margin-bottom: 0;
