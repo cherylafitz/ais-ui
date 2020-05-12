@@ -357,6 +357,9 @@ div#buildAndInstance {
   margin-right: 1rem;
   /*margin-bottom: .5rem;*/
 }
+#Header .logo:empty {
+  display: none;
+}
 .IsLoggedIn #Header .Title,
 .IsLoggedIn #Header .aisFormsLogo {
   background-image: url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
