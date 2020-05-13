@@ -12,37 +12,9 @@
 /* as you think appropriate. Thanks! ... Gregg               */
 
 
-/* @charset "UTF-8"; */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-
-
-/* ADD THIS SUMMER!! -->
-#TopMenu a:hover, .menu a:hover, .menu a:active, #TopMenu a:active {
-    background: #EEF5F8;
-    box-shadow: none;
-    border: none;
-    color: #000;
-    : 1px solid #444;
-    border-left: 1px solid #777;
-    border-right: 1px solid #777;
-}
-WORK WITH MARCO TO ADD IDs TO PAGES TO ALLOW ME TO IMITATE TAB VISUALIZATION??? NEED TO CONSIDER HOW IT WILL LOOK ON NON-MAIN PAGES
-<--ADD THIS SUMMER!!
-*/
-
 
 /* MAIN STRUCTURE--> */
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-html, body {
-  height: 100%;
-  margin: 0;
-  font-size: 100%;
-}
+
 input[type="button"]::-moz-focus-inner {
   outline: 0;
 }
