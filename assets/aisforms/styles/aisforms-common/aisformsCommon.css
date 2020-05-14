@@ -558,10 +558,14 @@ input.RequestNewPassword[type="submit"] {
   margin-right: 1em;
   font-size: 1em;
 }
+/* ONE-OFF FOR CHANGE PASSWORD PAGE --> */
+.ChangePasswordAction input[type="submit"] {
+  margin-right: .5rem;
+}
+/* <-- ONE-OFF FOR CHANGE PASSWORD PAGE */
+
 div.ResetPasswordInstructions {
-    max-width:550px;
-    margin:0 auto;
-    padding:0.5em 0 2em;
+    padding: 0 0 1rem;
 }
 div.ResetPasswordNext {
     color:#981727;
@@ -655,11 +659,9 @@ p.LoginWelcomeAlertText {
 } */
 /* VERIFY PASSWORD--> */
 div.ForgottenPassword,
-div.PasswordHasBeenSent {
+div.PasswordHasBeenSent,
+.PasswordResetArea {
   max-width: 800px;
-  margin: 0 auto;
-  border: 5px solid #D3DDAC;
-  padding: 1em;
 }
 div.ForgottenPassword table#login {
   border: none;
@@ -1957,7 +1959,8 @@ input[type="submit"][value="Clear Filters"] {
 input[type="submit"][value="Clear Filters"]:hover {
   opacity: .7;
 }
-input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
+input[type="submit"]:not([value="Clear Filters"]), 
+input[type="button"] {
   border-radius: 2px;
   color : #ffffff;
   padding: 0 .5rem .125rem .5rem;
@@ -2919,7 +2922,10 @@ button:hover {
 .IsNotLoggedIn #footer,
 .AirAutoLogoutPage,
 .IsNotLoggedIn .hasAtLeastOneAnnouncement,
-.AirAutoLogoutPage  {
+.CannotResetPasswordPage,
+.PasswordResetArea,
+.ForgottenPassword,
+.PasswordHasBeenSent {
   padding: 2rem 1.5rem;
 }
 .IsNotLoggedIn #Header {
@@ -3011,10 +3017,14 @@ button:hover {
   font-size: 1rem;
 }
 .IsNotLoggedIn form label,
+.IsNotLoggedIn form .label,
 .IsNotLoggedIn form input[type=password],
 .IsNotLoggedIn form input[type=text] {
   display: block;
   padding-bottom: .25rem;
+}
+.IsNotLoggedIn input {
+  max-width: 28rem;
 }
 .IsNotLoggedIn form label{
   margin-top: .75rem;
@@ -3116,7 +3126,10 @@ button:hover {
   .IsNotLoggedIn #footer,
   .AirAutoLogoutPage,
   .IsNotLoggedIn .hasAtLeastOneAnnouncement,
-  .AirAutoLogoutPage   {
+  .CannotResetPasswordPage,
+  .PasswordResetArea,
+  .ForgottenPassword,
+  .PasswordHasBeenSent   {
     padding: 2rem 6rem;
   }
   .IsNotLoggedIn #Header {
