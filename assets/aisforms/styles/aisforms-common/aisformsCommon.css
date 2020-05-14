@@ -2412,15 +2412,6 @@ body#body--environment-staging:after {
 }
 /* <-- STAGING */
 
-/* PAGE: CannotResetPasswordPage --> */
-.CannotResetPasswordPage {
-  padding: 2rem 1.5rem;
-}
-
-/* <-- PAGE: CannotResetPasswordPage */
-
-
-
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
