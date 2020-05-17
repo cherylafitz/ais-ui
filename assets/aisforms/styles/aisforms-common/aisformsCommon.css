@@ -2221,6 +2221,24 @@ div.CheckboxMatrix tr td {
     right: 42px;
   cursor: pointer;
 }
+
+/* PAGE: EVAL QUEUE DISPLAY --> */
+.EvaluationQueueDisplay .NumberStatistic {
+  text-align: right;
+  width: 5em;
+}
+.EvaluationQueueDisplay .paginatorContainer {
+  display: inline-block;
+}
+.EvaluationQueueDisplay .deleteWrapper {
+  margin-left: 1rem;
+}
+.EvaluationQueueDisplay .RowDisplay td[rowspan="2"] {
+  background-color: #fff;
+}
+/* <--PAGE: EVAL QUEUE DISPLAY */
+
+
 /*WARNINGS and NOTICES-->*/
 tr.LoginSearch th.UserName div.hint,
 tr.LoginSearch th.Email div.hint,
