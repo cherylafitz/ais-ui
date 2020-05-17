@@ -2903,7 +2903,15 @@ button:hover {
 /* PAGE: Login --> */
 
 /* MOBILE FIRST */
-
+/* TEMP 5-17-20 --> */
+#login-header-customization-id {
+  background-image: url(https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png);
+  width: 200px;
+  height: 55px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* <-- TEMP 5-17-20 */
 .IsNotLoggedIn .Content {
   display: flex;
 }
