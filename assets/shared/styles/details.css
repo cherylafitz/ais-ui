@@ -60,8 +60,8 @@ table.RowDisplay details {
 table.RowDisplay details > summary,
 table.RowDisplay details > .details-content {
   background-color: transparent;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 details details .details-content,
 details details section,
