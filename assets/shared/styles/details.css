@@ -1,0 +1,151 @@
+/* START DETAILS STYLES --> */
+details {
+  margin: .75em 0 1em;
+}
+details > summary {
+  display: inline-block;
+  background: #d0dae1;
+  padding: .25em 1em .25em 2em;
+  border-radius: 2px;
+  position: relative;
+}
+details section,
+details .details-content {
+  padding: 1rem 1.25rem;
+  background: #eff3f5;
+  /* FIX! */
+  /*display: inline-block;*/
+  border-radius: 0 2px 2px 2px;
+}
+details[open] summary {
+  border-radius: 2px 2px 0 0;
+}
+details > summary:hover {
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  content: "";
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: currentColor;
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: transparent;
+  width: .625em;
+  height: .625em;
+  position: absolute;
+  /* needs to offset hidden half of square */
+  left: calc(.75em - 2px);
+  top: 33%;
+}
+details[open] > summary::before {
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  /* needs to offset hidden half of square */
+  top: 30%;
+  left: .75em;
+}
+
+/* BASE DETAILS OVERRIDES --> */
+table.RowDisplay details {
+  margin: 0;
+}
+table.RowDisplay details > summary {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+details details .details-content,
+details details section,
+fieldset details section,
+fieldset details .details-content {
+  background-color: #eff3f5;
+} 
+details details > summary,
+fieldset details > summary {
+  background-color: #c1cdd7;
+}
+/* <-- BASE DETAILS OVERRIDES */
+/* DELETE AFTER MARCOS CSS IS REMOVED --> */
+div.ApplicantApplicationTemplateEditor details > summary ~ section {
+  padding: .5rem 1.5rem 1.25rem;
+  background: #e0e6eb;
+  background: #eff3f5;
+  border-radius: 0 2px 2px 2px;
+  border: none;
+  border-top: 1px solid #d0dae1;
+}
+div.ApplicantApplicationTemplateEditor div details > summary {
+  border: none;
+  font-weight: normal;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  display: inline flow-root list-item;
+  margin-left: .75rem;
+  display: inline-block;
+  background: #d0dae1;
+  padding: .25em 1em .25em 2em;
+  border-radius: 2px;
+  position: relative;
+}
+/* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
+
+details.details_1 {
+  padding: 0 .75rem;
+  width: 36rem;
+  max-width: 100%;
+  border-bottom: 1px solid #90abc1;
+}
+details.details_1 > summary {
+  /* overrides for base styles --> */
+  background-color: transparent;
+  border-radius: 0;
+  padding: .5em 1em .5em 0;
+  display: block;
+  /* <-- overrides for base styles */
+  font-weight: bold;
+}
+details.details_1 summary::before, 
+details.details_1 summary::after {
+  /* overrides for base styles --> */
+  border: 0;
+  height: 2px;
+  width: .75rem;
+  top: 50%;
+  right: 0;
+  left: initial;
+  background-color: currentColor;
+  /* <-- overrides for base styles */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+details.details_1 summary::after {
+  position: absolute;
+  content: "";
+}
+details.details_1 summary::before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+details.details_1[open] summary::before {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+} 
+details.details_1:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+details.details_1 section, 
+details.details_1 .details-content {
+    background-color: transparent;
+    padding: 1rem 0;
+}
+/* <-- END DETAILS STYLES */

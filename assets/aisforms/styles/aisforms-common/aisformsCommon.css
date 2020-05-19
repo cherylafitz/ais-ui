@@ -11,38 +11,30 @@
 /* Please! Please! review my changes and clean them up as    */
 /* as you think appropriate. Thanks! ... Gregg               */
 
-
-/* @charset "UTF-8"; */
+/* START BASE STYLES --> */
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
+@charset "UTF-8";
 
-/* ADD THIS SUMMER!! -->
-#TopMenu a:hover, .menu a:hover, .menu a:active, #TopMenu a:active {
-    background: #EEF5F8;
-    box-shadow: none;
-    border: none;
-    color: #000;
-    : 1px solid #444;
-    border-left: 1px solid #777;
-    border-right: 1px solid #777;
-}
-WORK WITH MARCO TO ADD IDs TO PAGES TO ALLOW ME TO IMITATE TAB VISUALIZATION??? NEED TO CONSIDER HOW IT WILL LOOK ON NON-MAIN PAGES
-<--ADD THIS SUMMER!!
-*/
-
-
-/* MAIN STRUCTURE--> */
 *,
 *:after,
 *:before {
   box-sizing: border-box;
 }
-html, body {
+
+html, 
+body {
   height: 100%;
   margin: 0;
   font-size: 100%;
 }
+
+/* <-- END BASE STYLES */
+
+
+/* MAIN STRUCTURE--> */
+
 input[type="button"]::-moz-focus-inner {
   outline: 0;
 }
@@ -1663,80 +1655,6 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
 
 /* PAGE: TEMPLATE EDITOR --> */
 
-div.ApplicantApplicationTemplateEditor div details > summary {
-  padding: .25rem .75rem .1875rem;
-  border-radius: 5px 5px 0 0;
-  border: none;
-  background-color: #415467;
-  color: #fff;
-  font-weight: normal;
-  position: relative;
-  font-size: 1rem;
-  line-height: 1.125rem;
-  display: inline flow-root list-item;;
-  margin-left: .75rem;
-}
-/* remove - test first*/
-details > summary {
-  display: list-item;
-}
-div.ApplicantApplicationTemplateEditor details > summary ~ section {
-  border: 1px solid #cecece;
-  border-top-color: rgb(206, 206, 206);
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-radius: 2px;
-  border-top: 5px solid #415461;
-}
-details.details_1 {
-  margin: 1rem 0;
-  padding: 0 .75rem;
-  width: 36rem;
-  max-width: 100%;
-  position: relative;
-  border-bottom: 1px solid #90abc1;
-  border-radius: 2px;
-}
-details.details_1 > summary {
-  display: list-item;
-  padding: .5rem 1rem .5rem 0;
-  display: block;
-  position: relative;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-details.details_1 > summary::-webkit-details-marker {
-  display: none;
-}
-details.details_1 summary::before, 
-details.details_1 summary::after {
-  width: .75rem;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  content: '';
-  background-color: currentColor;
-  text-align: right;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-}
-details.details_1 summary::after {
-  -webkit-transform: translateY(-50%) rotate(90deg);
-  transform: translateY(-50%) rotate(90deg);
-}
-details.details_1[open] summary::after {
-    -webkit-transform: translateY(-50%) rotate(180deg);
-    transform: translateY(-50%) rotate(180deg);
-} 
-details.details_1:last-of-type {
-  margin-bottom: 1.5rem;
-}
 /* <-- PAGE: TEMPLATE EDITOR */
 
 
