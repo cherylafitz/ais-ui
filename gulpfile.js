@@ -10,7 +10,7 @@ gulp.task('concat-ais-css', function() {
 });
 
 gulp.task('concat-aisforms-css', function() {
-  return gulp.src(['./assets/shared/styles/*.css','./assets/aisforms/styles/aisforms-common/aisformsCommon.css'])
+  return gulp.src(['./assets/shared/styles/*.css','./assets/aisforms/styles/aisforms-common/_aisformsCommon.css'])
     .pipe(concat('aisformsCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
