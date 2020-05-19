@@ -13,7 +13,8 @@ details section,
 details .details-content {
   padding: 1rem 1.25rem;
   background: #eff3f5;
-  display: inline-block;
+  /* FIX! */
+  /*display: inline-block;*/
   border-radius: 0 2px 2px 2px;
 }
 details[open] summary {
@@ -37,9 +38,6 @@ details > summary::before {
   background: transparent;
   width: .625em;
   height: .625em;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
   position: absolute;
   /* needs to offset hidden half of square */
   left: calc(.75em - 2px);
@@ -80,7 +78,6 @@ div.ApplicantApplicationTemplateEditor details > summary ~ section {
   padding: .5rem 1.5rem 1.25rem;
   background: #e0e6eb;
   background: #eff3f5;
-  display: inline-block;
   border-radius: 0 2px 2px 2px;
   border: none;
   border-top: 1px solid #d0dae1;
