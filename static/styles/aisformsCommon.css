@@ -77,10 +77,11 @@ details[open] > summary::before {
 table.RowDisplay details {
   margin: 0;
 }
-table.RowDisplay details > summary {
+table.RowDisplay details > summary,
+table.RowDisplay details > .details-content {
   background-color: transparent;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 details details .details-content,
 details details section,
@@ -535,7 +536,7 @@ div#buildAndInstance {
   color: #c4dcee;
 }
 #Header .LoginLogoutLink {
-  margin-top: 1.25rem;
+  margin-top: 1.125rem;
   position: absolute;
   right: 1rem;
   z-index: 10;
@@ -1797,6 +1798,14 @@ table.rolodex tr.ItemXMLTag th {
   max-width: 10em;
 }
 /* <--TEMPLATE EDITOR */
+
+/* PAGE: #list-of-forms-page -->  */
+
+#list-of-forms-page .related-form {
+  display: block;
+}
+
+/* <-- PAGE: #list-of-forms-page  */
 
 /* PAGE: EMAIL TEMPLATE --> */
 

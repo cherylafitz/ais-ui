@@ -1626,6 +1626,14 @@ table.rolodex tr.ItemXMLTag th {
 }
 /* <--TEMPLATE EDITOR */
 
+/* PAGE: #list-of-forms-page -->  */
+
+#list-of-forms-page .related-form {
+  display: block;
+}
+
+/* <-- PAGE: #list-of-forms-page  */
+
 /* PAGE: EMAIL TEMPLATE --> */
 
 div.ApplicationEmailWorkflow div#ApplicantsID {
