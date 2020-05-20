@@ -2848,7 +2848,10 @@ button:hover {
 
 /* MOBILE FIRST */
 /* TEMP 5-17-20 --> */
-#login-header-customization-id {
+#login-header-customization-id .yesabroad {
+  display: none;
+}
+#login-header-customization-id .temp {
   background-image: url(https://ais.americancouncils.org/ais/common/system/AC_Logo_White.png);
   width: 200px;
   height: 55px;
