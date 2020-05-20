@@ -2272,15 +2272,7 @@ div#Growler {
   color: #999;
   font-size: .8em;
 }
-.Alert {
-  display: inline-block;
-  color: #000;
-  padding: .5rem .75rem;
-  border-radius: 2px;
-  margin: .25rem 0 1rem;
-  border: 1px solid #ffc8b3;
-  background-color: #ffdacc;
-}
+
 .arrow {
   color: #FFB039;
   font-size: 1.2em;
