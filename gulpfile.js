@@ -14,3 +14,9 @@ gulp.task('concat-aisforms-css', function() {
     .pipe(concat('aisformsCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
+
+gulp.task('concat-standardcommon-css', function() {
+  return gulp.src('./assets/aisforms/styles/standard-common/*.css')
+    .pipe(concat('standardCommon.css'))
+    .pipe(gulp.dest('./static/styles/'));
+});

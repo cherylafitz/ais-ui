@@ -142,91 +142,17 @@ div.Content div.BeforeQuestion {
 
 
 /* Hide Elements--> */
-
 .nodisplay,
 .nodisplayscreen {
   display:none;
 }
-
 /* <--Hide Elements */
 
-
-/* Notice Blocks--> */
-
-.noticeBox {
-  border: medium solid #de6846;
-  border-radius: 1em;
-  padding: 0.5em;
-  margin: 1em 0;
-}
-
-div.recommendeeBox {
-  color: #FFFFFF;
-  background-color:#036eb0;
-  font-size:1.2em;
-  border: thin solid #025689;
-  border-radius: 1em;
-  padding: 0.5em;
-  margin: 1em 0;
-}
-
-div.helpBox {
-  display: inline-block;
-  color: #000;
-  background-color: #ffe2b3;
-  font-size: 0.75rem;
-  font-weight: normal;
-  text-align: left;
-  width: 15em;
-  padding: .25rem .5rem;
-  border: 1px solid #f6b844;
-  border-radius: 2px;
-  margin: 0 0 1.25rem 1rem;;
-  float: right;
-  line-height: 1.0675rem;
-}
-
-div.alertBox {
-  color: #000;
-  background-color: #ffdacc;
-  font-size: 0.875rem;
-  font-weight: normal;
-  text-align: left;
-  border: 1px solid #ffc8b3;
-  border-radius: 2px;
-  padding: .25rem .5rem;
-  margin: 1em 0;
-  clear: right;
-}
-div.helpBox img,
-div.alertBox img {
-  padding-right: .25rem;
-  float: left;
-  height: 17px;
-}
-
-
-div.deadlineBox {
-  background-color: #ffc8b3;
-  font-size: 1.2em;
-  text-align: left;
-  border-radius: 2px;
-  padding: .2em .5em;
-  margin: 1em 0;
-  clear: both;
-}
-div.deadlineBox span {
-  font-weight: bold;
-}
-div.deadlineBox span.timeZone {
-  font-weight: normal;
-}
+/* used for deadlines, etc --> */
 .dayOfWeek:after,
 .dayMonthYear:after {
   content: ",";
 }
-
-/* <--Notice Blocks */
 
 
 /* */

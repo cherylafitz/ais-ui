@@ -1,0 +1,70 @@
+/* ALERTS, NOTICES, AND WARNINGS --> */
+
+.Alert {
+  display: inline-block;
+  color: #000;
+  padding: .5rem .75rem;
+  border-radius: 2px;
+  margin: .25rem 0 1rem;
+  border: 1px solid #ffc8b3;
+  background-color: #ffdacc;
+}
+
+/* note: pare down this list eventually and use general alert/warning/notice classes */
+div.NoAssignmentsPendingConfirmation,
+div.ToUnassignFromEvaluators,
+div.NoEvaluationQueuesAvailable,
+div.NoAvailableForms,
+div.NoApplicationsAvailable,
+div.NoTemplatesAvailable,
+div.ListOfBrands .NoBrands,
+div.NoDateItemsToCustomize,
+div.NoDeadlines,
+div.NoDomains,
+div.NoEvaluationQueuesMatchFilter,
+div.NoMenuItems,
+div.NoMenus,
+div.NoPacketTemplates,
+div.NoPermissions,
+div.NoQuestions,
+div.NoAnswers,
+div.NoObjects,
+div.NoRoles,
+div.NoSections,
+div.NoSiteContentItems,
+div.NoForms,
+div.NoUsers,
+div.NoFormsAvailable,
+div.NoEvaluationForms,
+div.AvailableForms div,
+.DeveloperCaution,
+div.OtherBrands
+div.HasFormsInOtherBrandsWarning,
+.ValidationError,
+div.MyForms div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoEvaluationForms  {
+  font-style: normal;
+  color: #c93028;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+
+div.NoFormsAvailable,
+div.NoAvailableForms,
+div.AvailableForms div,
+div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoEvaluationForms,
+div.OtherBrands div.HasFormsInOtherBrandsWarning,
+div.NoEvaluationForms,
+div.NoForms,
+div.NoAvailableForms,
+div.NoEvaluationQueuesAvailable {
+  color: #000;
+}
+
+/* <-- ALERTS, NOTICES, AND WARNINGS */
+
+
