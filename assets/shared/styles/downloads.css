@@ -29,7 +29,7 @@ td a.file-download {
 .Content .file-download a:active,
 .Content td a.file-download,
 .Content td a.file-download:hover,
-.Content td a.file-download:hover {
+.Content td a.file-download:active {
   text-decoration: underline;
   border-bottom-width: 0;
 }
