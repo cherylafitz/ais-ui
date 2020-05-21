@@ -265,10 +265,6 @@ details.details_1 .details-content {
   text-decoration: underline;
   border-bottom-width: 0;
 }
-.Content a.file-download:hover {
-  text-decoration: underline;
-  border-bottom-width: 0;
-}
 .Content .PDFDownload,
 .pdf-download,
 .file-download [href$=".pdf"] {
