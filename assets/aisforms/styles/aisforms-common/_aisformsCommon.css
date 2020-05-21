@@ -531,9 +531,6 @@ a.LinkToPreviousPage {
     color: #e9ead9;
     border-bottom-color: #e9ead9;
 }
-.LoginWrapper.LoginProgramWrapper .LoginWelcome .PDFDownload {
-  margin: .5em 0;
-}
 .IsLoggedIn #footer img#LoginPage {
     display: none;
 }
@@ -1147,10 +1144,6 @@ table.SubmittedApplications td.Form {
   padding: .5em;
   border: 1px solid #e6e6e6;
   clear: both;
-}
-
-div.Content PDFDownloadLinkWrapper:before {
-    content:'Download your form: ';
 }
 
 div.MyForms h1,
@@ -2309,17 +2302,6 @@ legend:not(.SaveButton) {
   width: 10em;
   opacity: .9;
 }
- /* PDF download icon styles --> */
-.Content .PDFDownload {
-  display:block;
-  background-image: url(../../../../ais/common/pdficon_small.png);
-  background-repeat: no-repeat;
-  background-position: 1em;
-  padding-left: 2rem;
-  margin: 1em;
-  background-position: left;
-}
- /* <-- PDF download icon styles  */
 
 /* STAGING --> */
 

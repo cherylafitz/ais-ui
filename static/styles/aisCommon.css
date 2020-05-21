@@ -18,6 +18,77 @@ body {
 }
 
 /* <-- END BASE STYLES */
+/* ALERTS, NOTICES, AND WARNINGS --> */
+
+.Alert {
+  display: inline-block;
+  color: #000;
+  padding: .5rem .75rem;
+  border-radius: 2px;
+  margin: .25rem 0 1rem;
+  border: 1px solid #ffc8b3;
+  background-color: #ffdacc;
+}
+
+/* note: pare down this list eventually and use general alert/warning/notice classes */
+div.NoAssignmentsPendingConfirmation,
+div.ToUnassignFromEvaluators,
+div.NoEvaluationQueuesAvailable,
+div.NoAvailableForms,
+div.NoApplicationsAvailable,
+div.NoTemplatesAvailable,
+div.ListOfBrands .NoBrands,
+div.NoDateItemsToCustomize,
+div.NoDeadlines,
+div.NoDomains,
+div.NoEvaluationQueuesMatchFilter,
+div.NoMenuItems,
+div.NoMenus,
+div.NoPacketTemplates,
+div.NoPermissions,
+div.NoQuestions,
+div.NoAnswers,
+div.NoObjects,
+div.NoRoles,
+div.NoSections,
+div.NoSiteContentItems,
+div.NoForms,
+div.NoUsers,
+div.NoFormsAvailable,
+div.NoEvaluationForms,
+div.AvailableForms div,
+.DeveloperCaution,
+div.OtherBrands
+div.HasFormsInOtherBrandsWarning,
+.ValidationError,
+div.MyForms div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoEvaluationForms  {
+  font-style: normal;
+  color: #c93028;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+
+div.NoFormsAvailable,
+div.NoAvailableForms,
+div.AvailableForms div,
+div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoEvaluationForms,
+div.OtherBrands div.HasFormsInOtherBrandsWarning,
+div.NoEvaluationForms,
+div.NoForms,
+div.NoAvailableForms,
+div.NoEvaluationQueuesAvailable {
+  color: #000;
+}
+
+/* <-- ALERTS, NOTICES, AND WARNINGS */
+
+
+
 /* START DETAILS STYLES --> */
 details {
   margin: .75em 0 1em;
@@ -77,7 +148,8 @@ details[open] > summary::before {
 table.RowDisplay details {
   margin: 0;
 }
-table.RowDisplay details > summary {
+table.RowDisplay details > summary,
+table.RowDisplay details > .details-content {
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;
@@ -169,6 +241,60 @@ details.details_1 .details-content {
     padding: 1rem 0;
 }
 /* <-- END DETAILS STYLES */
+
+/* DOWNLOADS --> */
+
+.Content .PDFDownload,
+.Content .ExcelDownload,
+.pdf-download,
+.excel-download,
+.word-download,
+.file-download a {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  display:block;
+  margin: 1em;
+  padding-left: 2.25em;
+}
+/* Need .Content to override .Content a....should make this less specific eventually */
+.Content a.file-download,
+.Content a.file-download:hover,
+.Content a.file-download:active {
+  display: initial;
+  text-decoration: underline;
+  border-bottom-width: 0;
+}
+.Content a.file-download:hover {
+  text-decoration: underline;
+  border-bottom-width: 0;
+}
+.Content .PDFDownload,
+.pdf-download,
+.file-download [href$=".pdf"] {
+  background-image: url(../../../../ais/common/pdficon_small.png);
+}
+.Content .ExcelDownload,
+.excel-download,
+.file-download [href$=".xlsx"] {
+  background-image: url(../../../../ais/common/Excelicon_small.png);
+}
+.word-download,
+.file-download [href$=".docx"] {
+  background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
+}
+
+/* REMOVE?? --> */
+table td div.PDFDownload,
+table td div.PDFDownloadDescription,
+table td div.ExcelDownload,
+table td div.ExcelDownloadDescription {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+/* <-- REMOVE?? */
+
+/* <-- DOWNLOADS */
 
 /* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
 /*                                                           */
