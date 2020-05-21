@@ -8,16 +8,16 @@
 .file-download a {
   background-repeat: no-repeat;
   background-position: left;
-  background-size: contain;
+  background-size: auto 1.5rem;
+  line-height: 1.5;
   display:block;
   margin: 1em;
-  padding-left: 2.25em;
+  padding-left: 2.25rem;
 }
 /* Need .Content to override .Content a....should make this less specific eventually */
-.Content a.file-download,
-.Content a.file-download:hover,
-.Content a.file-download:active {
-  display: initial;
+.Content .file-download a,
+.Content .file-download a:hover,
+.Content .file-download a:active {
   text-decoration: underline;
   border-bottom-width: 0;
 }
