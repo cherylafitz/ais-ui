@@ -5,7 +5,8 @@
 .pdf-download,
 .excel-download,
 .word-download,
-.file-download a {
+.file-download a,
+td a.file-download {
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto 1.5rem;
@@ -14,25 +15,39 @@
   margin: 1em;
   padding-left: 2.25rem;
 }
+.file-download a,
+td a.file-download {
+  display: inline-block;
+  margin: 0 1rem; /* inline block counts stacking margins */
+}
+td a.file-download {
+  margin: 0;
+}
 /* Need .Content to override .Content a....should make this less specific eventually */
 .Content .file-download a,
 .Content .file-download a:hover,
-.Content .file-download a:active {
+.Content .file-download a:active,
+.Content td a.file-download,
+.Content td a.file-download:hover,
+.Content td a.file-download:active {
   text-decoration: underline;
   border-bottom-width: 0;
 }
 .Content .PDFDownload,
 .pdf-download,
-.file-download [href$=".pdf"] {
+.file-download [href$=".pdf"],
+td a.file-download[href$=".pdf"] {
   background-image: url(../../../../ais/common/pdficon_small.png);
 }
 .Content .ExcelDownload,
 .excel-download,
-.file-download [href$=".xlsx"] {
+.file-download [href$=".xlsx"],
+td a.file-download[href$=".xlsx"] {
   background-image: url(../../../../ais/common/Excelicon_small.png);
 }
 .word-download,
-.file-download [href$=".docx"] {
+.file-download [href$=".docx"],
+td a.file-download[href$=".docx"] {
   background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
 }
 
