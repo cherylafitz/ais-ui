@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch');
 
 gulp.task('concat-ais-css', function() {
-  return gulp.src(['./assets/shared/styles/*.css','./assets/ais/styles/aisCommon.css'])
+  return gulp.src(['./assets/shared/styles/*.css','./assets/ais/styles/_aisCommon.css'])
     .pipe(concat('aisCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
@@ -20,3 +20,4 @@ gulp.task('concat-standardcommon-css', function() {
     .pipe(concat('standardCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
+
