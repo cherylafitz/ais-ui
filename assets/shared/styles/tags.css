@@ -1,0 +1,25 @@
+/* TAGS --> */
+
+[class*="-tag"] {
+	padding: 0 .25rem;
+	font-size: .75rem;
+	margin: 0 .25rem;
+	border-radius: 2px;
+}
+.info-tag {
+	background-color: #bfeaf7;
+}
+.info-tag-1 {
+	background-color: #f7d9fd;
+}
+.info-tag-2 {
+	background-color: #d0d0fb;
+}
+.info-tag-3 {
+	background-color: #d0fbd3;
+}
+.alert-tag {
+	background-color: #fbcec7;
+}
+
+/* <-- TAGS */
