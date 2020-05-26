@@ -1135,6 +1135,18 @@ td.content fieldset fieldset  {
 fieldset label {
   width: initial;
 }
+/* TEMP until fieldsets are repurposed --> */
+
+legend .form-input,
+legend .generated-field {
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 1rem;
+}
+fieldset legend .form-input select {
+  border: 0;
+}
+/* <-- TEMP until fieldsets are repurposed */
 
 /* New form styles --> */
 .form-input,
@@ -1148,7 +1160,7 @@ fieldset label {
   padding-right: .5rem;
 }
 /* change!!! ask Marco to add class to div */
-.form-input label ~ div {
+.form-input label ~ .ajax-observe-field {
   display: inline-block;
 }
 /* <-- New form styles */
@@ -3530,7 +3542,16 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 /* <-- PAGE: LOGIN */
 
 /* PAGE: USER DISPLAY --> */
-
+.UserFullDisplay legend a {
+  color: #b3c9da;
+  padding: 0 .25rem;
+}
+.UserFullDisplay .note td {
+  white-space: normal;
+}
+.content .UserFullDisplay fieldset {
+  margin-top: 2rem;
+}
 .UserFullDisplay .linkToPreviousPage {
   margin: 0 0 1rem 0;
 }
