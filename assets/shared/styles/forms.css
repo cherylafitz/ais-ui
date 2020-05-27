@@ -17,6 +17,7 @@
 
 .form-section {
 	padding: 1rem;
-	border: ;
+	border: 1px solid #d5d5da;
+	border-radius: 2px;
 }
 /* <-- FORMS */
