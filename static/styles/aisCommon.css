@@ -309,6 +309,28 @@ table td div.ExcelDownloadDescription {
 
 /* <-- DOWNLOADS */
 
+/* FORMS --> */
+
+.form-input,
+.generated-field {
+  margin-bottom: .25rem;
+}
+.form-input label,
+.generated-field .label,
+.generated-field .preview {
+  display: inline-block;
+  min-width: 14rem;
+  padding-right: .5rem;
+}
+.form-input label ~ .ajax-observe-field {
+  display: inline-block;
+}
+
+.form-section {
+	padding: 1rem;
+	border: ;
+}
+/* <-- FORMS */
 /* TAGS --> */
 
 [class*="-tag"] {
@@ -1150,23 +1172,6 @@ fieldset legend .form-input select {
   border: 0;
 }
 /* <-- TEMP until fieldsets are repurposed */
-
-/* New form styles --> */
-.form-input,
-.generated-field {
-  margin-bottom: .25rem;
-}
-.form-input label,
-.generated-field .label {
-  display: inline-block;
-  min-width: 14rem;
-  padding-right: .5rem;
-}
-/* change!!! ask Marco to add class to div */
-.form-input label ~ .ajax-observe-field {
-  display: inline-block;
-}
-/* <-- New form styles */
 
 #contentPageProportional table.ERXMatrixTable {
   font-size: .75rem;
