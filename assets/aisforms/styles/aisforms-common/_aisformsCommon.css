@@ -872,13 +872,15 @@ table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
 table.RowDisplay tbody tr.submitted_odd,
 table.RowDisplay tbody tr:nth-child(2n+1).submitted,
 div.AppRowDisplayRowColorLegend table.RowDisplay tr td.odd.submitted,
+td.odd.submitted,
 body table.Brands td.Active {
   color: #000;
   background-color: #629BC6;
 }
 table.RowDisplay  tbody tr.submitted_even,
 table.RowDisplay tr:nth-child(2n+2).submitted,
-div.AppRowDisplayRowColorLegend table.RowDisplay tr td.even.submitted {
+div.AppRowDisplayRowColorLegend table.RowDisplay tr td.even.submitted,
+td.even.submitted {
   background-color: #8fb7d6;
   color: #000;
 }
