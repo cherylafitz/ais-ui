@@ -154,12 +154,14 @@ table.RowDisplay details > .details-content {
   padding-top: 0;
   padding-bottom: 0;
 }
-details details .details-content,
 details details section,
 fieldset details section,
 fieldset details .details-content {
   background-color: #eff3f5;
 } 
+details details .details-content {
+  background-color: #e0e7eb;
+}
 details details > summary,
 fieldset details > summary {
   background-color: #c1cdd7;

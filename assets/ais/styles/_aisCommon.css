@@ -316,8 +316,9 @@ a {
 }
 
 .showHoverable.erxHoverArea {
-  margin-left: 18px !important;
+  margin-left: 22px !important;
   padding: 0 .125rem;
+  position: absolute;
 }
 
 .information,
