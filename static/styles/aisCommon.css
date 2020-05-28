@@ -89,6 +89,39 @@ div.NoEvaluationQueuesAvailable {
 
 
 
+/* <code> STYLES--> */
+
+.code-wrapper {
+    background-color: #bfbfbf;
+    color: #fff;
+    padding: 0;
+    margin: .75rem 0;
+    display: inline-block;
+    border-radius: 2px;
+}
+.code-wrapper code {
+	background-color: #4d4d4d;
+	border-radius: 2px;
+	color: #00ffff;
+	display: block;
+	padding: .325rem;
+}
+.code-wrapper .preview,
+.code-wrapper textarea,
+.code-wrapper input[type="text"] {
+	background-color: #fff;
+    border: 2px dashed #00cccc;
+    color: #000;
+    display: block;
+    margin: 0 1rem;
+    padding: .5rem;
+}
+.code-wrapper .preview {
+	border: none;
+	padding: 1rem;
+}
+
+/* <-- <code> STYLES */
 /* START DETAILS STYLES --> */
 details {
   margin: .75em 0 1em;
@@ -309,6 +342,30 @@ table td div.ExcelDownloadDescription {
 
 /* <-- DOWNLOADS */
 
+/* FORMS --> */
+
+.form-input,
+.generated-field {
+  margin-bottom: .25rem;
+}
+.form-input label,
+.generated-field .label,
+.generated-field .preview {
+  display: inline-block;
+  min-width: 14rem;
+  padding-right: .5rem;
+}
+.form-input label ~ .ajax-observe-field {
+  display: inline-block;
+}
+.form-section {
+	border: 1px solid #d5d5da;
+	border-radius: 2px;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+
+/* <-- FORMS */
 /* TAGS --> */
 
 [class*="-tag"] {
@@ -1149,23 +1206,6 @@ fieldset legend .form-input select {
   border: 0;
 }
 /* <-- TEMP until fieldsets are repurposed */
-
-/* New form styles --> */
-.form-input,
-.generated-field {
-  margin-bottom: .25rem;
-}
-.form-input label,
-.generated-field .label {
-  display: inline-block;
-  min-width: 14rem;
-  padding-right: .5rem;
-}
-/* change!!! ask Marco to add class to div */
-.form-input label ~ .ajax-observe-field {
-  display: inline-block;
-}
-/* <-- New form styles */
 
 #contentPageProportional table.ERXMatrixTable {
   font-size: .75rem;
