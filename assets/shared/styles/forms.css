@@ -14,10 +14,11 @@
 .form-input label ~ .ajax-observe-field {
   display: inline-block;
 }
-
 .form-section {
-	padding: 1rem;
 	border: 1px solid #d5d5da;
 	border-radius: 2px;
+	padding: 1rem;
+	margin: 1rem 0;
 }
+
 /* <-- FORMS */
