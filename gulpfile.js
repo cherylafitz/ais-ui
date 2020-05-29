@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch');
 
 gulp.task('concat-ais-css', function() {
-  return gulp.src(['./assets/shared/styles/*.css','./assets/ais/styles/_aisCommon.css'])
+  return gulp.src(['./assets/shared/styles/*.css','./assets/ais/styles/ais-common/*.css'])
     .pipe(concat('aisCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
@@ -16,8 +16,14 @@ gulp.task('concat-aisforms-css', function() {
 });
 
 gulp.task('concat-standardcommon-css', function() {
-  return gulp.src('./assets/aisforms/styles/standard-common/*.css')
+  return gulp.src('./assets/aisforms/styles/standard-common/*.css') // conly combines files in standard-common folder, not shared
     .pipe(concat('standardCommon.css'))
+    .pipe(gulp.dest('./static/styles/'));
+});
+
+gulp.task('concat-printcommon-css', function() {
+  return gulp.src('./assets/aisforms/styles/print-common/*.css') // conly combines files in print-common folder, not shared
+    .pipe(concat('printCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
 

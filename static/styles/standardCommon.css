@@ -1077,6 +1077,7 @@ table.ExcelDataTabulated td {
   padding: 2px;
 }
 /* Notice etc boxes--> */
+
 div.alertBox,
 [class$="-box"] {
   color: #000;
@@ -1088,23 +1089,28 @@ div.alertBox,
   margin: 1rem 0;
   clear: right; /* clears help-box */
 }
+
 div.alertBox,
 [class*="alert-box"] {
   background-color: #ffdacc;
   border-color: #ffc8b3;
 }
+
 [class*="warning-box"] {
   background-color: #ffc266;
   border-color: #ffad33;
 }
+
 [class*="lt-info-box"] {
   background-color: #d4f5ff;
   border-color: #b3edff;
 }
+
 [class*="dk-info-box"] {
   background-color: #98c2cd;
   border-color: #75adbd;
 }
+
 [class*="caution-box"] {
   background-color: #ffe0b3;
   border-color: #ffcc80;
@@ -1172,14 +1178,56 @@ div.deadlineBox,
   clear: both;
   border: none;
 }
+
 div.deadlineBox span,
 [class$="deadline-box"] span {
   font-weight: bold;
 }
+
 div.deadlineBox span.timeZone,
 [class$="deadline-box"] span.timeZone {
   font-weight: normal;
 }
 
-
 /* <-- notice boxes */  
+/* TABLES --> */
+
+div.Content table.AnswerTable tr.odd,
+div.SectionDisplay table.RowDisplay tr:nth-child(2n+1),
+div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
+}
+div.Content table.AnswerTable tr.even,
+div.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
+div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
+  background-color: #c4dced;
+}
+div.SectionDisplay table.AnswerTable tr td,
+div.SectionDisplay table th,
+.SectionDisplay table.RowDisplay td  {
+  border: 1px solid #fff;
+  vertical-align: top;
+  padding: .125rem .25rem;
+}
+.SectionDisplay table.RowDisplay tr.headerRow,
+.SectionDisplay table.RowDisplay thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+div.SectionDisplay table.AnswerTable tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
+  font-style:normal;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border-color: #fff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.SectionDisplay .ReferenceNotified form table.RowDisplay,
+.SectionDisplay .ReferenceNotified table.RowDisplay {
+  margin: 1em;
+}
+
+/* <-- TABLES */

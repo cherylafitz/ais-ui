@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+	<style type="text/css">
+		@import url('https://ais.americancouncils.org/ais/common/stylesheets/aisformsCommon.css');
+		@import url('https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css');
+
+		body {
+			padding: 1rem;
+		}
+		.input-group {
+			display: flex;
+		}
+		.date-picker label{
+			display: none;	
+		}
+
+		h2 {
+			margin-top: 2rem;
+		}
+
+
+	</style>
+</head>
+<html>
+	<body>
+		<h1>HTML structure options</h1>
+		<h2>Option 1</h2>
+		<fieldset class="Deadline">
+			<legend>Filter for templates</legend>
+			<div class="input-group">
+				<div class="form-input filter-deadline">
+					<input id="filter-deadline-id" type="radio" value="isDeadline" name="DateGroup">
+					<label for="filter-deadline-id">whose deadlines are between:</label>
+				</div>
+				<div class="form-input date-picker">
+					<label for="deadline-start-id">Choose deadline start</label>
+					<input id="filter-deadline-start-id" onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_3_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_3_0" type="text" name="0.0.11.9.1.5.1.1.3.3.3.0"><a href="#datebox0_0_11_9_1_5_1_1_3_3_3_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_3_0" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">Open Calendar</span></a>
+
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_3_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_3_0':'M-sp-d-cc-sp-Y'}})</script> 
+				</div>					
+				
+				and 
+
+				<div class="form-input date-picker">
+					<label for="deadline-end-id">Choose deadline end</label>
+					<input onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_5_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_5_0" type="text" name="0.0.11.9.1.5.1.1.3.3.5.0"><a href="#datebox0_0_11_9_1_5_1_1_3_3_5_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_5_0" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">Open Calendar</span></a>
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_5_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_5_0':'M-sp-d-cc-sp-Y'}})</script>
+					<span class="dateEntryExample">(ex: Dec 2, 2011)</span>
+				</div>	
+			</div>	
+			<div class="input-group">
+				<div class="form-input choose-filter-available">
+					<input id="filter-available-id" type="radio" value="isAvailable" name="DateGroup">
+					<label for="filter-available-id">or that became available between:</label>
+				</div>
+				<div class="form-input date-picker">	
+					<label for="available-start-id" class="date-picker">Became available start date</label>				
+					<input onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_9_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_9_0" type="text" name="0.0.11.9.1.5.1.1.3.3.9.0"><a href="#datebox0_0_11_9_1_5_1_1_3_3_9_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_9_0" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">Open Calendar</span></a>
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_9_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_9_0':'M-sp-d-cc-sp-Y'}})</script> 
+				</div>
+
+				and 
+
+				<div class="form-input date-picker">
+					<label for="available-end-id" class="date-picker">Became available end date</label>				
+					<input onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_11_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_11_0" type="text" name="0.0.11.9.1.5.1.1.3.3.11.0">
+					<a href="#datebox0_0_11_9_1_5_1_1_3_3_11_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_11_0" role="button" aria-haspopup="true" tabindex="0">
+						<span>&nbsp;</span>
+						<span class="fd-screen-reader">Open Calendar</span>
+					</a>
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_11_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_11_0':'M-sp-d-cc-sp-Y'}})</script>
+				</div>
+			</div>		
+			<div class="form-input choose-ignore">	
+				<input id="choose-ignore-id" type="radio" value="isIgnore" name="DateGroup" checked="checked">
+				<label for="choose-ignore-id">or ignore this filter</label>
+			</div>
+		</fieldset>
+
+		<h2>Option 2</h2>
+		<section class="form-section">
+			<h3>Filter for templates</h3>
+			<fieldset class="input-group">
+				<legend>Filter option 1:</legend>
+				<div class="form-input choose-filter-deadline">
+					<input id="choose-deadline-id" type="radio" value="isDeadline" name="DateGroup">
+					<label for="choose-deadline-id">whose deadlines are between:</label>
+				</div>
+				<div class="form-input date-picker">
+					<label for="deadline-start-id">Choose deadline start</label>
+					<input id="filter-deadline-start-id" onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_3_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_3_0" type="text" name="0.0.11.9.1.5.1.1.3.3.3.0"><a href="#datebox0_0_11_9_1_5_1_1_3_3_3_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_3_0" role="button" aria-haspopup="true" tabindex="0">
+						<span>&nbsp;</span>
+						<span class="fd-screen-reader">Open Calendar</span></a>
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_3_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_3_0':'M-sp-d-cc-sp-Y'}})</script> 
+				</div>					
+				
+				and 
+
+				<div class="form-input date-picker">
+					<label for="deadline-end-id">Pick deadline end date</label>
+					<input onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_5_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_5_0" type="text" name="0.0.11.9.1.5.1.1.3.3.5.0"><a href="#datebox0_0_11_9_1_5_1_1_3_3_5_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_5_0" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">Open Calendar</span></a>
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_5_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_5_0':'M-sp-d-cc-sp-Y'}})</script>
+					<span class="dateEntryExample">(ex: Dec 2, 2011)</span>
+				</div>	
+			</fieldset>	
+
+			<fieldset class="input-group">
+				<legend>Filter option 2:</legend>
+				<div class="form-input choose-filter-available">
+					<input id="filter-available-id" type="radio" value="isAvailable" name="DateGroup">
+					<label for="filter-available-id">or that became available between:</label>
+				</div>
+				<div class="form-input date-picker">	
+					<label for="available-start-id" class="date-picker">Became available start date</label>				
+					<input onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_9_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_9_0" type="text" name="0.0.11.9.1.5.1.1.3.3.9.0"><a href="#datebox0_0_11_9_1_5_1_1_3_3_9_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_9_0" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">Open Calendar</span></a>
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_9_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_9_0':'M-sp-d-cc-sp-Y'}})</script> 
+				</div>
+
+				and 
+
+				<div class="form-input date-picker">
+					<label for="available-end-id" class="date-picker">Became available end date</label>				
+					<input onclick="datePickerController.show('datebox0_0_11_9_1_5_1_1_3_3_11_0');" class="M-sp-d-cc-sp-Y" id="datebox0_0_11_9_1_5_1_1_3_3_11_0" type="text" name="0.0.11.9.1.5.1.1.3.3.11.0">
+					<a href="#datebox0_0_11_9_1_5_1_1_3_3_11_0" class="date-picker-control" title="Open Calendar" id="fd-but-datebox0_0_11_9_1_5_1_1_3_3_11_0" role="button" aria-haspopup="true" tabindex="0">
+						<span>&nbsp;</span>
+						<span class="fd-screen-reader">Open Calendar</span>
+					</a>
+					<script type="text/javascript">datePickerController.destroyDatePicker('datebox0_0_11_9_1_5_1_1_3_3_11_0'); datePickerController.createDatePicker({formElements:{'datebox0_0_11_9_1_5_1_1_3_3_11_0':'M-sp-d-cc-sp-Y'}})</script>
+				</div>
+			</fieldset>		
+			<div class="form-input choose-ignore">	
+				<input id="choose-ignore-id" type="radio" value="isIgnore" name="DateGroup" checked="checked">
+				<label for="choose-ignore-id">or ignore this filter</label>
+			</div>
+		</section>
+	</body>
+</html>

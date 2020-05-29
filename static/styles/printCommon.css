@@ -182,15 +182,6 @@ select.ChoiceQuestion,
   text-decoration: underline;
 }
 /* ANSWERS IN TABLES */
-.QuestionAnswer .RowDisplay td,
-.QuestionAnswer .RowDisplay th {
-  border: 0;
-}
-.QuestionAnswer .RowDisplay td {
-  padding-top: .25em;
-  text-decoration: underline;
-}
-
 div.Formula div.QuestionAnswer {
   border-bottom: thin solid #999;
   margin-bottom: 1pt;
@@ -229,9 +220,7 @@ td .TextQuestion {
 .QuestionAnswer .GroupedItem:not(.nodisplayprint) {
   display: block;
 }
-.QuestionAnswer .RowDisplay {
-  margin-left: .75em;
-}
+
 div[class*="Group"] .QuestionAnswer .QuestionAnswer {
   margin: .125em 0 .25em;
 }
@@ -337,9 +326,7 @@ input[type="radio"] {
 table {
   border-collapse: collapse;
 }
-table.RowDisplay {
-  margin: .5em 0;
-}
+
 table.TemplateTable td {
   font-size: 0.875em;
   text-align: left;
@@ -360,11 +347,7 @@ table.TemplateTable tr th {
   text-align: left;
   font-weight: normal;
 }
-.RowDisplay th,
-.RowDisplay td {
-  text-align: left;
-  padding: 0 .5em 0 0;
-}
+
 .AnswerTable {
   border-collapse: collapse;
   margin: 6pt;
@@ -879,3 +862,26 @@ section img.ProgramLogo600w {
   margin-bottom: 1rem;
   display: block;
 }
+/* TABLES --> */
+
+.QuestionAnswer .RowDisplay td,
+.QuestionAnswer .RowDisplay th {
+  border: 0;
+}
+.QuestionAnswer .RowDisplay td {
+  padding-top: .25em;
+  text-decoration: underline;
+}
+.QuestionAnswer .RowDisplay {
+  margin-left: .75em;
+}
+table.RowDisplay {
+  margin: .5em 0;
+}
+.RowDisplay th,
+.RowDisplay td {
+  text-align: left;
+  padding: 0 .5em 0 0;
+}
+
+/* <-- TABLES */
