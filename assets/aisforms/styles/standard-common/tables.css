@@ -1,0 +1,41 @@
+/* TABLES --> */
+
+div.Content table.AnswerTable tr.odd,
+div.SectionDisplay table.RowDisplay tr:nth-child(2n+1),
+div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
+}
+div.Content table.AnswerTable tr.even,
+div.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
+div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
+  background-color: #c4dced;
+}
+div.SectionDisplay table.AnswerTable tr td,
+div.SectionDisplay table th,
+.SectionDisplay table.RowDisplay td  {
+  border: 1px solid #fff;
+  vertical-align: top;
+  padding: .125rem .25rem;
+}
+.SectionDisplay table.RowDisplay tr.headerRow,
+.SectionDisplay table.RowDisplay thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+div.SectionDisplay table.AnswerTable tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
+  font-style:normal;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border-color: #fff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.SectionDisplay .ReferenceNotified form table.RowDisplay,
+.SectionDisplay .ReferenceNotified table.RowDisplay {
+  margin: 1em;
+}
+
+/* <-- TABLES */

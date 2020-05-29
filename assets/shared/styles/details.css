@@ -61,12 +61,15 @@ details[open] > summary::before {
 }
 
 /* BASE DETAILS OVERRIDES --> */
-table.RowDisplay details {
+table.RowDisplay details,
+table.row-display details {
   margin: 0;
 }
 
 table.RowDisplay details > summary,
-table.RowDisplay details > .details-content {
+table.RowDisplay details > .details-content,
+table.row-display details > summary,
+table.row-display details > .details-content  {
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;

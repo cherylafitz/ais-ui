@@ -141,11 +141,6 @@ table.report,
 table.TravelVendorExplanation {
   border: none;
 }
-div#alumnusSummary table.CountryRelationships tr th,
-div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
-div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
-  border-right-color: #fff;
-}
 /* <-- OVERRIDES */
 
 body #PageWrapperNavUpdate {
@@ -153,15 +148,6 @@ body #PageWrapperNavUpdate {
   height: 100%;
   width: 100%;
 }
-
-
-
-/* Animation Keyframes -->*/
-
-/*<--*/
-
-
-
 /* SIMPLE GRID --> */
 
 /*.row > [class^="column"]:last-of-type {
@@ -753,30 +739,11 @@ input {
   border-radius: 2px;
 }
 
-#contentPageProportional table.RowDisplay,
-#contentPageProportional tr.headerRow,
-#contentPageProportional thead tr,
-#contentPageProportional tr.headerRow th a,
-#contentPageProportional thead tr th a,
-table.report th,
-table.TravelVendorExplanation tr.headerRow th,
-table.TravelVendorExplanation thead tr th,
-div.DescribeColumns table.ColumnDescriptions tr.Titles {
-  background-color: #fff;
-  color: #000;
-  font-style: normal;
-}
 #contentPageProportional #ApplicationSearchForm tr.headerRow,
 #contentPageProportional #ApplicationSearchForm thead tr {
   background-color: transparent;
 }
-#contentPageProportional table.RowDisplay {
-  background-color: transparent;
-/*  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
-  -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);*/
 
-}
 div.HomePageForAll fieldset,
 td.content fieldset,
 fieldset,
@@ -1404,9 +1371,7 @@ div.FSAAppFullDisplay a#HideContentsOfAllSections {
   width: initial;
 }
 
-.ParticipantSummaryPage table.RowDisplay {
-  margin: 0;
-}
+
 /* OVERRIDES ONLY --> */
 div#alumnusSummary table.ProgramParticipation {
     border: none;
@@ -1507,22 +1472,6 @@ fieldset.Section table.rolodex > tbody > tr > td {
   padding-right: .5rem;
 }
 
-#alumnusSummary table.RowDisplay tr.headerRow,
-#alumnusSummary table.RowDisplay thead tr,
-#alumnusSummary table.RowDisplay tr th,
-div#alumnusSummary table.CountryRelationships tr th,
-div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
-div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
-  background-color: #fff;
-}
-#alumnusSummary table.RowDisplay td,
-#alumnusSummary table.RowDisplay tr.headerRow th,
-#alumnusSummary table.RowDisplay thead tr th,
-#alumnusSummary table.RowDisplay tr th,
-div#alumnusSummary table.AlternateContacts tr th,
-div#alumnusSummary table.AlternateContacts tr td  {
-  border: 1px solid #fff;
-}
 .FSAAppFullDisplay table.rolodex tr th,
 .FSAAppFullDisplay table.rolodex tr td,
 .FSAAppFullDisplay table.TravelInboundDisplay tr td,
@@ -1694,9 +1643,6 @@ table tr th,
 table tr td {
   font-style: normal;
 }
-table.RowDisplay tr th {
-  background-color: #fff;
-}
 div.CMSBatchNavigation table {
   background-color: transparent;
   margin-top: .25rem;
@@ -1733,22 +1679,6 @@ table.rolodex,
 div.CheckboxMatrix table {
   background-color: transparent;
 }
-
-.MenuRowDisplay .RowDisplay,
-form table.RowDisplay,
-table.RowDisplay,
-div.generateReportsWrapper,
-table.report,
-table.TravelVendorExplanation,
-table.TravelInboundDisplay,
-table.TravelOutboundDisplay,
-.ColumnDescriptions  {
-/*  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
-  -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.10);*/
-  margin: .5rem 0;
-  border-collapse: collapse;
-}
 div.generateReportsWrapper {
 background: #ffffff;
 }
@@ -1765,25 +1695,15 @@ table.PageCommands {
   padding: 0.5rem;
   border: 1px solid #c7c7c7;
 }
-table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+2),
-table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+3) {
-  background-color: transparent;
-}
 table.PageCommands tr td,
 table.PageCommands tr th {
   padding: .5rem;
-}
-div.SectionEditor, table.Choices.RowDisplay {
-  margin: 1rem 0;
 }
 tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td.ERXMatrixTableCell {
   background-color: #ffffff;
   font-size: 1rem;
   white-space: normal;
   max-width: 450px;
-}
-td.noTableBordersBelowMe table.RowDisplay {
-  margin: 0;
 }
 tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td  {
   background-color: #fff;
@@ -1796,98 +1716,8 @@ div.AIRAdminSearchForApplications table.Search.rolodex {
   border-left: .6rem solid #fff;
   border: 1px solid #FFD590;
 }
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th,
-table.RowDisplay td,
-table.report td,
-table.TravelVendorExplanation tr td,
-table.report th,
-table.TravelVendorExplanation tr.headerRow th,
-table.TravelVendorExplanation thead tr th,
-table.TravelInboundDisplay th,
-table.TravelInboundDisplay td,
-table.TravelOutboundDisplay th,
-table.TravelOutboundDisplay td,
-.subTable th,
-.subTable td {
-  font-size: .875rem;
-  white-space: nowrap;
-  /*padding: 0.125rem 0.25rem .25rem;*/
-  /*border: 1px solid #fff;*/
-  text-align: left;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  padding: .25rem 0.5rem;
-  border: 1px solid #afb2b9;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-td.RowNumber,
-table.RowDisplay td.RowNumber,
-table.RowDisplay tr.headerRow th.RowNumber,
-table.RowDisplay thead tr th.RowNumber,
-table.report td.RowNumber,
-div.AuditTrailRowDisplay td.RowNumber {
-    text-align: right;
-}
 td input {
   font-size: .875rem;
-}
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th,
-table.report th,
-table.TravelVendorExplanation tr.headerRow th,
-table.TravelVendorExplanation thead tr th,
-table.TravelInboundDisplay th,
-table.TravelOutboundDisplay th {
-  /*padding: .25rem .325rem .25rem;*/
-  /*border-color: #e8ecda;*/
-}
-div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
-div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay thead tr th,
-div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
-  max-width: 200px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.headerRow th,
-div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay thead tr th,
-div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
-  max-width: 1200px;
-}
-table.RowDisplay tr.headerRow,
-table.RowDisplay thead tr {
-  font-style: normal;
-  font-size: 1rem;
-}
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th,
-/* specific styling for tables missing thead or .headerRow -> */
-table.report tr:first-of-type {
-  border-top: 2px solid #5f666d;
-  border-bottom: 2px solid #5f666d;
-}
-table.RowDisplay tr.headerRow th.ApplicationCount {
-  border-bottom-color: #afb1b9;
-}
-table.RowDisplay tr.headerRow th a,
-table.RowDisplay thead tr th a,
-table.RowDisplay td a {
-  color: #000000;
-  text-decoration: underline;
-  border-bottom: none;
-}
-table.RowDisplay tr.headerRow th a:hover,
-table.RowDisplay thead tr th a:hover,
-table.RowDisplay td a:hover {
-  text-decoration: none;
-  border-bottom: none;
-  color: #C75D48;
-}
-table.RowDisplay tr.headerRow th a:active,
-table.RowDisplay thead tr th a:active,
-table.RowDisplay td a:active {
-  color: #73382C;
 }
 table a,
 fieldset a {
@@ -1902,47 +1732,6 @@ a.showLink:hover,
 a.hideLink:hover {
   color: #3b89c4;
   text-decoration: none;
-}
-#AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+3),
-#AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+3),
-table.RowDisplay tr:nth-child(2n+2),
-table.RowDisplay tbody tr:nth-child(2n+2),
-table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
-table.report tr:nth-child(2n+2),
-tr.PassportName td div.EntryArea,
-.evenRow,
-table.TravelInboundDisplay tr:nth-child(2n+2),
-table.TravelOutboundDisplay tr:nth-child(2n+2),
-div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n) {
-  background-color: #dbe8f2;
-}
-#AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+2),
-#AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+2),
-table.RowDisplay tr:nth-child(2n+1),
-table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
-table.report tr:nth-child(2n+1),
-table.RowDisplay tbody tr:nth-child(2n+1),
-tr.ApplicationName td div.EntryArea,
-.oddRow,
-table.TravelInboundDisplay tr:nth-child(2n+3),
-table.TravelOutboundDisplay tr:nth-child(2n+3),
-div.VisaAuditDownloadPage fieldset.SubCategory table tr:nth-child(2n+1) {
-  background-color: #fff;
-}
-table.RowDisplay tbody tr.submitted_odd /* .submitted_odd, table.RowDisplay tr:nth-child(2n+3), table.RowDisplay tbody tr:nth-child(2n+3) */  {
-  color: #000;
-  background-color: #A5B56B;
-}
-table.RowDisplay  tbody tr.submitted_even /* .submitted_even, table.RowDisplay tr:nth-child(2n+2), table.RowDisplay tbody tr:nth-child(2n+2) */ {
-  background-color: #B8C977;
-  color: #000;
-}
-table.RowDisplay tr.submitted_odd a:hover,
-.submitted_odd a:hover,
-table.RowDisplay tr.submitted_even a:hover,
-.submitted_even a:hover {
-  color: #A14C3A;
-  border-bottom: 1px solid #A14C3A;
 }
 tbody tr.sectionDivider {
   background-color: transparent;
@@ -2052,15 +1841,9 @@ div .Button {
 
 /* <-- FORMS */
 
-table.RowDisplay td {
-  margin: 0.25rem 0 0.25rem 0;
-}
+
 table.rolodex tr td {
     white-space: nowrap;
-}
-table.rolodex .RowDisplay td,
-table.rolodex .subTable td > div > div {
-  padding: 0.2rem;
 }
 
 div.CheckboxMatrix tr td {
@@ -2332,22 +2115,8 @@ div.HealthQuestionnaireEditor form#outerFormID fieldset {
   border-radius: 2px;
   border-top: 5px solid #415461;
 }
-.HealthQuestions,
-.NewQuestion,
-#ProgramStaffQuestionnaire table.RowDisplay {
-  margin-top: .5rem;
-  border-collapse: separate;
-  border: 1px solid #c2c2c2;
-  background: #eff3f5;
-  background: #fff;
-  padding: .125rem 0 .5rem;
-  border-spacing: 0;
-}
 #CreateQuestionnaire {
   margin: .5rem 0;
-}
-table.RowDisplay td .Answer {
-  white-space: normal;
 }
 /*.HealthQuestions tbody {
   border: .5rem solid transparent;
@@ -2523,28 +2292,6 @@ div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
   border-left: 10rem solid #fff;
   border-right: 10rem solid #fff;
 }
-#ProgramStaffQuestionnaire table.RowDisplay tr th,
-.TranscribedQuestionsForApplicant table.RowDisplay tr th {
-  background-color: #f0f2f5;
-}
-#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+2),
-.HealthQuestionnaireEditor table.RowDisplay tr:nth-child(2n+2)  {
-  background-color: #fff;
-}
-#ProgramStaffQuestionnaire table.RowDisplay tr:nth-child(2n+3),
-.HealthDataForm table.RowDisplay tbody tr:nth-child(2n+3),
-.HealthQuestionnaireEditor table.RowDisplay tbody tr:nth-child(2n+3) {
-  background-color:  #eff2f5;
-}
-#ProgramStaffQuestionnaire table.RowDisplay {
-  border-collapse: collapse;
-}
-div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay tr.Header th,
-div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay tr table tr th,
-div.HealthQuestionnaireEditor table.RowDisplay tr table tr th,
-div.HealthQuestionnaireEditor table.RowDisplay tr.Header th {
-  text-align: left;
-}
 div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr th,
 .TranscribedQuestionsForApplicant table tr th {
   padding: .5rem;
@@ -2560,10 +2307,6 @@ div.HealthQuestionnaireEditor table caption {
   background-color: transparent;
   border: none;
   padding-bottom: .25rem;
-}
-div.HealthDataForm fieldset#ProgramStaffQuestionnaire table.RowDisplay,
-.TranscribedQuestionsForApplicant table.RowDisplay {
-  border: 1px solid #c2c2c2;
 }
 .TranscribedQuestionsForApplicant .Actions div {
   margin-bottom: .5rem;
@@ -2860,13 +2603,6 @@ div.TestCenterAdjudicationEditor div#MessageThatSortLosesUnsavedPendingStatuses 
 div.TestCenterAdjudicationEditor div#MessageThatSortLosesUnsavedPendingStatuses {
   position: static;
 }
-
-div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Recipients tr.SectionTitle th.CurrentRecipients,
-div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Recipients tr.SectionTitle th {
-  border-color: #fff;
-  padding: 1rem .25rem .25rem;
-}
-
 div.HubFullDisplay table tr td.AdjudicationEnabled,
 div.HubFullDisplay table tr th.AdjudicationEnabled {
   text-align: left;
@@ -3441,10 +3177,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   min-width: 15em;
   padding-right: .5rem;
 }
-.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th {
-  border: none;
-  border-bottom: 1px solid #B4B4B4;
-}
 .AIRAppSummaryDisplayInAIS .Value {
   white-space: normal;
   background-color: #cbd2d6;
@@ -3465,19 +3197,6 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 }
 .AIRAppSummaryDisplayInAIS .QuestionNumber {
   background-color: #cbd2d6;
-}
-
-.AIRAppSummaryDisplayInAIS .RowNumber,
-.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.RowNumber {
-  color: #777;
-  padding-right: 1rem;
-  border: none;
-}
-.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.QuestionNumber,
-.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.RowNumber,
-.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Question,
-.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Value {
-  font-weight: bold;
 }
 .AIRAppSummaryDisplayInAIS th,
 .AIRAppSummaryDisplayInAIS td {
