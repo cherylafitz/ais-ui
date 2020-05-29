@@ -2,6 +2,7 @@
 details {
   margin: .75em 0 1em;
 }
+
 details > summary {
   display: inline-block;
   background: #d0dae1;
@@ -9,6 +10,7 @@ details > summary {
   border-radius: 2px;
   position: relative;
 }
+
 details section,
 details .details-content {
   padding: 1rem 1.25rem;
@@ -17,15 +19,19 @@ details .details-content {
   /*display: inline-block;*/
   border-radius: 0 2px 2px 2px;
 }
+
 details[open] summary {
   border-radius: 2px 2px 0 0;
 }
+
 details > summary:hover {
   cursor: pointer;
 }
+
 summary::-webkit-details-marker {
   display: none;
 }
+
 details > summary::before {
   content: "";
   border-style: solid;
@@ -43,6 +49,7 @@ details > summary::before {
   left: calc(.75em - 2px);
   top: 33%;
 }
+
 details[open] > summary::before {
   -ms-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -57,24 +64,29 @@ details[open] > summary::before {
 table.RowDisplay details {
   margin: 0;
 }
+
 table.RowDisplay details > summary,
 table.RowDisplay details > .details-content {
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;
 }
+
 details details section,
 fieldset details section,
 fieldset details .details-content {
   background-color: #eff3f5;
 } 
+
 details details .details-content {
   background-color: #e0e7eb;
 }
+
 details details > summary,
 fieldset details > summary {
   background-color: #c1cdd7;
 }
+
 /* <-- BASE DETAILS OVERRIDES */
 /* DELETE AFTER MARCOS CSS IS REMOVED --> */
 div.ApplicantApplicationTemplateEditor details > summary ~ section {
@@ -85,6 +97,7 @@ div.ApplicantApplicationTemplateEditor details > summary ~ section {
   border: none;
   border-top: 1px solid #d0dae1;
 }
+
 div.ApplicantApplicationTemplateEditor div details > summary {
   border: none;
   font-weight: normal;
@@ -99,6 +112,7 @@ div.ApplicantApplicationTemplateEditor div details > summary {
   border-radius: 2px;
   position: relative;
 }
+
 /* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
 
 details.details_1 {
@@ -107,6 +121,7 @@ details.details_1 {
   max-width: 100%;
   border-bottom: 1px solid #90abc1;
 }
+
 details.details_1 > summary {
   /* overrides for base styles --> */
   background-color: transparent;
@@ -116,6 +131,7 @@ details.details_1 > summary {
   /* <-- overrides for base styles */
   font-weight: bold;
 }
+
 details.details_1 summary::before, 
 details.details_1 summary::after {
   /* overrides for base styles --> */
@@ -130,18 +146,22 @@ details.details_1 summary::after {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 details.details_1 summary::after {
   position: absolute;
   content: "";
 }
+
 details.details_1 summary::before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
 details.details_1[open] summary::before {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 } 
+
 details.details_1:last-of-type {
   margin-bottom: 1.5rem;
 }
@@ -151,4 +171,5 @@ details.details_1 .details-content {
     background-color: transparent;
     padding: 1rem 0;
 }
+
 /* <-- END DETAILS STYLES */

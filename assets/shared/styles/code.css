@@ -8,6 +8,7 @@
     display: inline-block;
     border-radius: 2px;
 }
+
 .code-wrapper code {
 	background-color: #4d4d4d;
 	border-radius: 2px;
@@ -15,6 +16,7 @@
 	display: block;
 	padding: .325rem;
 }
+
 .code-wrapper .preview,
 .code-wrapper textarea,
 .code-wrapper input[type="text"] {
@@ -25,6 +27,7 @@
     margin: 0 1rem;
     padding: .5rem;
 }
+
 .code-wrapper .preview {
 	border: none;
 	padding: 1rem;

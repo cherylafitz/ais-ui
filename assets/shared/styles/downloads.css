@@ -15,14 +15,17 @@ td a.file-download {
   margin: 1em;
   padding-left: 2.25rem;
 }
+
 .file-download a,
 td a.file-download {
   display: inline-block;
   margin: 0 1rem; /* inline block counts stacking margins */
 }
+
 td a.file-download {
   margin: 0;
 }
+
 /* Need .Content to override .Content a....should make this less specific eventually */
 .Content .file-download a,
 .Content .file-download a:hover,
@@ -33,18 +36,21 @@ td a.file-download {
   text-decoration: underline;
   border-bottom-width: 0;
 }
+
 .Content .PDFDownload,
 .pdf-download,
 .file-download [href$=".pdf"],
 td a.file-download[href$=".pdf"] {
   background-image: url(../../../../ais/common/pdficon_small.png);
 }
+
 .Content .ExcelDownload,
 .excel-download,
 .file-download [href$=".xlsx"],
 td a.file-download[href$=".xlsx"] {
   background-image: url(../../../../ais/common/Excelicon_small.png);
 }
+
 .word-download,
 .file-download [href$=".docx"],
 td a.file-download[href$=".docx"] {

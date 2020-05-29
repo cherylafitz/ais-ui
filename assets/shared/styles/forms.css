@@ -4,6 +4,7 @@
 .generated-field {
   margin-bottom: .25rem;
 }
+
 .form-input label,
 .generated-field .label,
 .generated-field .preview {
@@ -11,9 +12,11 @@
   min-width: 14rem;
   padding-right: .5rem;
 }
+
 .form-input label ~ .ajax-observe-field {
   display: inline-block;
 }
+
 .form-section {
 	border: 1px solid #d5d5da;
 	border-radius: 2px;
