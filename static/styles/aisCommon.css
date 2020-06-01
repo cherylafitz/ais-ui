@@ -126,11 +126,6 @@ div.NoEvaluationQueuesAvailable {
 details {
   margin: .75em 0 1em;
 }
-details::after {
-  content: "";
-  display: block; 
-  clear: both;
-}
 details > summary {
   display: inline-block;
   background: #d0dae1;
@@ -142,7 +137,8 @@ details section,
 details .details-content {
   padding: 1rem 1.25rem;
   background: #eff3f5;
-  float: left;
+  /* FIX! */
+  /*display: inline-block;*/
   border-radius: 0 2px 2px 2px;
 }
 details[open] summary {
