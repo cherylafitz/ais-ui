@@ -612,9 +612,6 @@ div.SecureDocumentEditorRowDisplay h1 {
 }
 /* <--To Overwrite Amagavi CSS */
 /* LIST OF SECTIONS--> */
-div.Content div.Rowdisplay {
-  margin: 0 auto;
-}
 .SectionDisplay {
   padding: 0;
   margin: 0;
@@ -1129,9 +1126,6 @@ table,
 div.AIRAdminSearchForApplications form div#outerTableContainerID table.Search.rolodex,
 table.ChoiceCategories {
   background-color: #fff;
-}
-table.RowDisplay {
-    border-collapse: collapse;
 }
 table.templates,
 div.MenuOfSections table,

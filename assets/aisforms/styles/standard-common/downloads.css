@@ -1,0 +1,42 @@
+/* DOWNLOADS --> */
+
+.Content .PDFDownload,
+.Content .ExcelDownload,
+.pdf-download,
+.excel-download,
+.word-download,
+a.file-download {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  display:block;
+  margin: 1em;
+  padding-left: 2.5em;
+}
+/* Need .Content to override .Content a....should make this less specific eventually */
+.Content a.file-download,
+.Content a.file-download:hover,
+.Content a.file-download:active {
+  display: initial;
+  text-decoration: underline;
+  border-bottom-width: 0;
+}
+.Content a.file-download:hover {
+  text-decoration: underline;
+  border-bottom-width: 0;
+}
+.Content .PDFDownload,
+.pdf-download,
+.file-download[href$=".pdf"] {
+  background-image: url(../../../../ais/common/pdficon_small.gif);
+}
+.Content .ExcelDownload,
+.excel-download,
+.file-download[href$=".xlsx"] {
+  background-image: url(../../../../ais/common/Excelicon_small.png);
+}
+.word-download,
+.file-download[href$=".docx"] {
+  background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
+}
+/* <-- DOWNLOADS */
