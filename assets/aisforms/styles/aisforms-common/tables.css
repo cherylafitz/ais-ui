@@ -1,12 +1,52 @@
 /* TABLES --> */
 
-/* LIST OF SECTIONS--> */
 div.Content div.Rowdisplay {
   margin: 0 auto;
 }
 table.RowDisplay {
     border-collapse: collapse;
 }
+
+/* PORTED FROM MARCO'S AIR.CSS --> */
+table.row-display thead tr {
+  vertical-align: text-top;
+  white-space: nowrap;
+}
+table.row-display tr {
+  vertical-align: top;
+}
+table.row-display td {
+    white-space: nowrap;
+    padding: .2em .3em .1em .3em;
+    border: .1em solid gray;
+    text-align: left;
+}
+table.row-display td.rightAlign,
+table.row-display td.numeric,
+table.row-display td.number,
+table.row-display td.rowNumber,
+table.row-display td.RowNumber,
+td.rightAlign{
+    text-align: right;
+}
+
+table.row-display tr.headerRow th.rightAlign,
+table.row-display thead tr th.rightAlign {
+    text-align: right;
+}  
+div#ErrorPage table.row-display {
+  border-collapse: collapse;
+}
+div#ErrorPage table.row-display thead tr th,
+div#ErrorPage table.row-display thead tr td{
+  border-bottom:0.1em solid black;
+}
+div#ErrorPage table.row-display td,
+div#ErrorPage table.row-display th{
+  border: 0;
+}
+/* <--PORTED FROM MARCO'S CSS */
+
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay,
 div.AIRAdminSearchForApplications table.Search.rolodex,
 div#TemplateListingContainer table.RowDisplay,

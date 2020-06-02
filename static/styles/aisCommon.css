@@ -4067,6 +4067,24 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 }
 /* TABLES --> */
 
+/* PORTED FROM MARCO'S PAGEWRAPPER.CSS --> */
+
+table.row-display {
+  border-collapse: collapse;
+}
+
+table.row-display tr.headerRow,
+table.row-display thead tr,
+table.row-display tr.totalsRow {
+  white-space: nowrap;
+}
+.rightAlign {
+  text-align: right;
+}
+
+/* <-- PORTED FROM MARCO'S PAGEWRAPPER.CSS */
+
+
 div#alumnusSummary table.CountryRelationships tr th,
 div#alumnusSummary table.RowDisplay.SocialMediaList tr th,
 div#alumnusSummary table.RowDisplay.AlternateContacts tr th {
