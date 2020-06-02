@@ -1,4 +1,4 @@
-/* TABLES --> */
+ TABLES --> */
 
 .QuestionAnswer .RowDisplay td,
 .QuestionAnswer .RowDisplay th {
@@ -20,4 +20,26 @@ table.RowDisplay {
   padding: 0 .5em 0 0;
 }
 
-/* <-- TABLES */
+/* NEW TABLES --> */
+
+.QuestionAnswer .row-display td,
+.QuestionAnswer .row-display th {
+  border: 0;
+}
+.QuestionAnswer .row-display td {
+  padding-top: .25em;
+  text-decoration: underline;
+}
+.QuestionAnswer .row-display {
+  margin-left: .75em;
+}
+table.row-display {
+  margin: .5em 0;
+}
+.row-display th,
+.row-display td {
+  text-align: left;
+  padding: 0 .5em 0 0;
+}
+
+/* <-- TABLES 

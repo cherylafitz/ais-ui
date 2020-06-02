@@ -1140,7 +1140,7 @@ div.deadlineBox span.timeZone,
 
 /* <-- notice boxes */  
 
-/* TABLES --> */
+ TABLES --> */
 
 div.Content table.AnswerTable tr.odd,
 div.SectionDisplay table.RowDisplay tr:nth-child(2n+1),
@@ -1180,4 +1180,44 @@ div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
   margin: 1em;
 }
 
-/* <-- TABLES */
+/* NEW TABLES --> */
+
+div.Content table.AnswerTable tr.odd,
+div.SectionDisplay table.row-display tr:nth-child(2n+1),
+div.SectionDisplay table.row-display tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
+}
+div.Content table.AnswerTable tr.even,
+div.SectionDisplay table.row-display tr:nth-child(2n+2),
+div.SectionDisplay table.row-display tbody tr:nth-child(2n+2)  {
+  background-color: #c4dced;
+}
+div.SectionDisplay table.AnswerTable tr td,
+div.SectionDisplay table th,
+.SectionDisplay table.row-display td  {
+  border: 1px solid #fff;
+  vertical-align: top;
+  padding: .125rem .25rem;
+}
+.SectionDisplay table.row-display tr.headerRow,
+.SectionDisplay table.row-display thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+div.SectionDisplay table.AnswerTable tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.row-display tr.headerRow th,
+div.SectionDisplay .QuestionAnswer table.row-display thead tr th {
+  font-style:normal;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  font-size: 1rem;
+  border-color: #fff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.SectionDisplay .ReferenceNotified form table.row-display,
+.SectionDisplay .ReferenceNotified table.row-display {
+  margin: 1em;
+}
+
+/* <-- TABLES 
