@@ -122,6 +122,7 @@ div.NoEvaluationQueuesAvailable {
 }
 
 /* <-- <code> STYLES */
+
 /* START DETAILS STYLES --> */
 details {
   margin: .75em 0 1em;
@@ -176,13 +177,15 @@ details[open] > summary::before {
   top: 30%;
   left: .75em;
 }
-
 /* BASE DETAILS OVERRIDES --> */
-table.RowDisplay details {
+table.RowDisplay details,
+table.row-display details {
   margin: 0;
 }
 table.RowDisplay details > summary,
-table.RowDisplay details > .details-content {
+table.RowDisplay details > .details-content,
+table.row-display details > summary,
+table.row-display details > .details-content  {
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;
@@ -192,6 +195,7 @@ fieldset details section,
 fieldset details .details-content {
   background-color: #eff3f5;
 } 
+
 details details .details-content {
   background-color: #e0e7eb;
 }
@@ -224,7 +228,6 @@ div.ApplicantApplicationTemplateEditor div details > summary {
   position: relative;
 }
 /* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
-
 details.details_1 {
   padding: 0 .75rem;
   width: 36rem;
@@ -266,10 +269,10 @@ details.details_1[open] summary::before {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 } 
+
 details.details_1:last-of-type {
   margin-bottom: 1.5rem;
 }
-
 details.details_1 section, 
 details.details_1 .details-content {
     background-color: transparent;
@@ -329,7 +332,6 @@ td a.file-download[href$=".xlsx"] {
 td a.file-download[href$=".docx"] {
   background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
 }
-
 /* REMOVE?? --> */
 table td div.PDFDownload,
 table td div.PDFDownloadDescription,
@@ -576,9 +578,6 @@ div.SecureDocumentEditorRowDisplay h1 {
 }
 /* <--To Overwrite Amagavi CSS */
 /* LIST OF SECTIONS--> */
-div.Content div.Rowdisplay {
-  margin: 0 auto;
-}
 .SectionDisplay {
   padding: 0;
   margin: 0;
@@ -1094,9 +1093,6 @@ div.AIRAdminSearchForApplications form div#outerTableContainerID table.Search.ro
 table.ChoiceCategories {
   background-color: #fff;
 }
-table.RowDisplay {
-    border-collapse: collapse;
-}
 table.templates,
 div.MenuOfSections table,
 div.GroupedItem table {
@@ -1118,24 +1114,7 @@ table.rolodex,
 div.CheckboxMatrix table {
   background-color: transparent;
 }
-div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay,
-div.AIRAdminSearchForApplications table.Search.rolodex,
-div#TemplateListingContainer table.RowDisplay,
-.MenuRowDisplay .RowDisplay,
-div.AIRAdminSearchForApplicants table.RowDisplay,
-table.Rowdisplay.Deadlines,
-table.Rowdisplay.QueueList,
-div#DisplayGroupUpdateContainerID table.RowDisplay,
-div#SessionDisplay table.rolodex,
-div.EvaluationQueueList table.QueueList,
-table.ChoiceCategories,
-form table.RowDisplay,
-div.EvaluationQueueDisplay table.rolodex,
-table.RowDisplay,
-div.generateReportsWrapper {
-  margin: .5rem 0 1rem;
-  border: 1px solid #A7A7A7;
-}
+
 div.generateReportsWrapper {
 background: #ffffff;
 }
@@ -1147,26 +1126,19 @@ table.PageCommands {
   padding: 0.5em;
   border: 1px solid #c7c7c7;
 }
-table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+2),
-table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+3) {
-  background-color: transparent;
-}
+
 table.PageCommands tr td,
 table.PageCommands tr th {
   padding: .5em;
 }
-div.SectionEditor, table.Choices.RowDisplay {
-  margin: 1em 0;
-}
+
 tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td.ERXMatrixTableCell {
   background-color: #ffffff;
   font-size: .95em;
   white-space: normal;
   max-width: 450px;
 }
-td.noTableBordersBelowMe table.RowDisplay {
-  margin: 0;
-}
+
 tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td  {
   background-color: #fff;
 }
@@ -1182,109 +1154,7 @@ div.AIRAdminSearchForApplications table.Search.rolodex {
 div.AIRAdminSearchForApplications #outerTableContainerID table.Search.rolodex {
   border: none;
 }
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th,
-table.RowDisplay td {
-  font-size: .875rem;
-  white-space: nowrap;
-  padding: .25rem 0.5rem;
-  border: 1px solid #afb2b9;
-  text-align: left;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-}
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th {
-  padding: .5rem;
-}
-div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
-div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
-  max-width: 200px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.PlacedQuestions table.RowDisplay tr.headerRow th,
-.PlacedQuestions  table.RowDisplay td,
-table.RowDisplay.Data tr.headerRow th {
-  white-space: initial;
-}
 
-div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.headerRow th,
-div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
-  max-width: 1200px;
-}
-table.RowDisplay tr.headerRow,
-table.RowDisplay thead tr {
-  font-style: normal;
-  font-size: 1rem;
-  border-bottom: 2px solid #363a3e;
-  border-top: 2px solid #363a3e;
-}
-table.RowDisplay tr.headerRow th a,
-table.RowDisplay thead tr th a,
-table.RowDisplay td a {
-  color: #000000;
-  text-decoration: underline;
-  border-bottom: none;
-}
-
-table.RowDisplay tr.headerRow th a:hover,
-table.RowDisplay thead tr th a:hover,
-table.RowDisplay td a:hover {
-  text-decoration: none;
-  border-bottom: none;
-  color: #C75D48;
-}
-table.RowDisplay tr.headerRow th a:active,
-table.RowDisplay td a:active {
-  color: #73382C;
-}
-table.RowDisplay tr.headerRow,
-table.RowDisplay thead tr,
-tr.headerRow,
-tr.headerRow th a {
-  background-color: #fff;
-}
-table a {
-  color: #222222;
-}
-table.RowDisplay tr:nth-child(2n+2),
-table.RowDisplay tbody tr:nth-child(2n+2),
-/* added for tables with thead */
-table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
-.odd {
-  background-color: #dbe8f2;
-}
-table.RowDisplay tr:nth-child(2n+3),
-table.RowDisplay tbody tr:nth-child(2n+3),
-/* added for tables with thead */
-table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
-.even {
-  background-color: #fff;
-}
-table.RowDisplay tbody tr.submitted_odd,
-table.RowDisplay tbody tr:nth-child(2n+1).submitted,
-div.AppRowDisplayRowColorLegend table.RowDisplay tr td.odd.submitted,
-td.odd.submitted,
-body table.Brands td.Active {
-  color: #000;
-  background-color: #629BC6;
-}
-table.RowDisplay  tbody tr.submitted_even,
-table.RowDisplay tr:nth-child(2n+2).submitted,
-div.AppRowDisplayRowColorLegend table.RowDisplay tr td.even.submitted,
-td.even.submitted {
-  background-color: #8fb7d6;
-  color: #000;
-}
-table.RowDisplay tr.submitted_odd a:hover,
-.submitted_odd a:hover,
-table.RowDisplay tr.submitted_even a:hover,
-.submitted_even a:hover {
-  color: #A14C3A;
-  border-bottom: 1px solid #A14C3A;
-}
 tbody tr.sectionDivider {
   background-color: transparent;
   color: #222;
@@ -1306,19 +1176,14 @@ table.Search tr th {
 
 /* <--TABLES*/
 /* FORMS SEARCH RESULTS--> */
-.Content .ApplicantApplicationRowDisplay  table.RowDisplay td,
-.Content .ApplicantApplicationRowDisplay  table.RowDisplay th {
-  border: 1px solid #e6e6e6;
-}
+
 .PDFPrint,
 .searchResultActionLink {
   margin: 0 1em .5em 0;
   border: none;
   padding: 0 .5em;
 }
-.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
-  background-color: #e0e6ec;
-}
+
 /* <--FORMS SEARCH RESULTS */
 /* HOMEPAGE--> */
 .Greeting {
@@ -1380,17 +1245,7 @@ th.filtered {
   text-shadow: none;
   background-color: #eeb753;
 }
-.LiveTemplates table.RowDisplay td,
-.LiveTemplates table.RowDisplay tr.headerRow th {
-  white-space: normal;
-}
-.LiveTemplates table.RowDisplay tr.headerRow th.Available,
-.LiveTemplates table.RowDisplay tr.headerRow th.DeadlineToApply,
-.LiveTemplates table.RowDisplay tr.headerRow th.ExtendedDeadlineToApply,
-.LiveTemplates table.RowDisplay tr.headerRow th.StartedFormCount,
-.LiveTemplates table.RowDisplay tr.headerRow th.SubmittedFormCount {
-  width: 2.5em;
-}
+
 th.ProgramName,
 th.ProgramName input {
   width: 6em;
@@ -1399,11 +1254,7 @@ th.ProgramYear,
 th.ProgramYear input {
   width: 4em;
 }
-.LiveTemplates table.RowDisplay td.Available,
-.LiveTemplates table.RowDisplay td.DeadlineToApply,
-.LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
-  white-space: nowrap;
-}
+
 .infoIconOnRight .showHoverable.erxHoverArea:after {
   right: -24px;
   position: absolute;
@@ -1413,10 +1264,7 @@ th.ProgramYear input {
 margin-left: 0 !important;
 margin-right: 24px !important;
 }
-table.RowDisplay td.DeadlineToApply,
-table.RowDisplay td.Available {
-  font-size: .9em;
-}
+
 div.Main div.staffHome div.Deadlines {
   padding: 1rem 0 0;
   margin-bottom: 1.5rem;
@@ -1888,21 +1736,10 @@ div.EvaluationQueueDisplay table.rolodex th {
 .evaluatorManagement .ajaxTabbedPanelPanes {
   margin: 0;
 }
-form table.RowDisplay.Evaluators,
-table.RowDisplay.Evaluators {
-  margin: 1em;
-}
+
 
 /* <--EVALUATION QUEUE MANAGEMENT */
-div#UserHomePage table.RowDisplay tr.headerRow th,
-div#UserHomePage table.RowDisplay td,
-.EvaluatorHomePage table.RowDisplay td,
-.EvaluatorHomePage table.RowDisplay tr.headerRow th  {
-  white-space: normal;
-}
-div#UserHomePage table.RowDisplay td {
-  font-size: .875rem;
-}
+
 .HeaderDescription {
   font-size: 0.6em;
 }
@@ -1984,12 +1821,7 @@ h1.FormViewHeader .FormRefCode:before {
 h1.FormViewHeader .ProgramName {
   font-weight: bold;
 }
-div#TemplateListingContainer table.RowDisplay td {
-  max-width: 500px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 input#SubmitForEvaluation, input#SubmitForEvaluation:hover {
     font-size: 1.2em;
     padding: 0.2em 0.5em;
@@ -2002,13 +1834,7 @@ input#SubmitForEvaluation, input#SubmitForEvaluation:hover {
 .QuestionCustomizer  input[type="submit"], input[type="button"] {
   font-size: .8em;
 }
-table.RowDisplay td.SectionItemSequenceNumber + td {
-  max-width:5em;
-  white-space: normal;
-}
-#SectionListUpdateContainer table.RowDisplay {
-  margin: 1em;
-}
+
 table.rolodex tr.ItemXMLTag th {
   white-space: normal;
   max-width: 10em;
@@ -2065,12 +1891,7 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
   max-width: 733px;
   margin: 0 auto;
 }
-.QuestionRowDisplay #DisplayGroupUpdateContainerID {
-  max-width: initial;
-}
-table.RowDisplay.Deadlines tbody tr td {
-  white-space: normal;
-}
+
 /* <--DEADLINES */
 div.SectionNavigator .MenuOfSections {
   vertical-align: middle;
@@ -2485,9 +2306,7 @@ table#CreateAccount input[type="password"],
 table#CreateAccount input[type="text"] {
   font-size: .75rem;
 }
-table.RowDisplay td {
-margin: 0.25em 0 0.25em 0;
-}
+
 table.rolodex tr td {
     white-space: nowrap;
     padding-top: 0.2em;
@@ -2548,9 +2367,7 @@ div.CheckboxMatrix tr td {
 .EvaluationQueueDisplay .deleteWrapper {
   margin-left: 1rem;
 }
-.EvaluationQueueDisplay .RowDisplay td[rowspan="2"] {
-  background-color: #fff;
-}
+
 /* <--PAGE: EVAL QUEUE DISPLAY */
 
 
@@ -2760,11 +2577,7 @@ body#body--environment-staging:after {
     float: none;
     margin: 1em auto;
   }
-  .LiveTemplates table.RowDisplay td.Available,
-  .LiveTemplates table.RowDisplay td.DeadlineToApply,
-  .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
-  white-space: normal;
-  }
+
   .infoIconOnRight .showHoverable.erxHoverArea {
     margin-left: 0 !important;
     margin-right: 24px !important;
@@ -2819,11 +2632,7 @@ body#body--environment-staging:after {
   .Greeting {
     width: 100%;
   }
-  .LiveTemplates table.RowDisplay td.Available,
-  .LiveTemplates table.RowDisplay td.DeadlineToApply,
-  .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
-    white-space: normal;
-  }
+
   .infoIconOnRight .showHoverable.erxHoverArea {
     margin-left: 0 !important;
     margin-right: 24px !important;
@@ -3717,3 +3526,493 @@ section.portalMessage header {
   display: inline-block;
   vertical-align: middle;
 }
+/* TABLES --> */
+
+div.Content div.Rowdisplay {
+  margin: 0 auto;
+}
+table.RowDisplay {
+    border-collapse: collapse;
+}
+
+/* PORTED FROM MARCO'S AIR.CSS --> */
+table.row-display thead tr {
+  vertical-align: text-top;
+  white-space: nowrap;
+}
+table.row-display tr {
+  vertical-align: top;
+}
+table.row-display td {
+    white-space: nowrap;
+    padding: .2em .3em .1em .3em;
+    border: .1em solid gray;
+    text-align: left;
+}
+table.row-display td.rightAlign,
+table.row-display td.numeric,
+table.row-display td.number,
+table.row-display td.rowNumber,
+table.row-display td.RowNumber,
+td.rightAlign{
+    text-align: right;
+}
+
+table.row-display tr.headerRow th.rightAlign,
+table.row-display thead tr th.rightAlign {
+    text-align: right;
+}  
+div#ErrorPage table.row-display {
+  border-collapse: collapse;
+}
+div#ErrorPage table.row-display thead tr th,
+div#ErrorPage table.row-display thead tr td{
+  border-bottom:0.1em solid black;
+}
+div#ErrorPage table.row-display td,
+div#ErrorPage table.row-display th{
+  border: 0;
+}
+/* <--PORTED FROM MARCO'S CSS */
+
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay,
+div.AIRAdminSearchForApplications table.Search.rolodex,
+div#TemplateListingContainer table.RowDisplay,
+.MenuRowDisplay .RowDisplay,
+div.AIRAdminSearchForApplicants table.RowDisplay,
+table.Rowdisplay.Deadlines,
+table.Rowdisplay.QueueList,
+div#DisplayGroupUpdateContainerID table.RowDisplay,
+div#SessionDisplay table.rolodex,
+div.EvaluationQueueList table.QueueList,
+table.ChoiceCategories,
+form table.RowDisplay,
+div.EvaluationQueueDisplay table.rolodex,
+table.RowDisplay,
+div.generateReportsWrapper {
+  margin: .5rem 0 1rem;
+  border: 1px solid #A7A7A7;
+}
+
+table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+2),
+table.RowDisplay tbody tr td table.templates tbody tr:nth-child(2n+3) {
+  background-color: transparent;
+}
+
+div.SectionEditor, table.Choices.RowDisplay {
+  margin: 1em 0;
+}
+
+td.noTableBordersBelowMe table.RowDisplay {
+  margin: 0;
+}
+table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th,
+table.RowDisplay td {
+  font-size: .875rem;
+  white-space: nowrap;
+  padding: .25rem 0.5rem;
+  border: 1px solid #afb2b9;
+  text-align: left;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+table.RowDisplay tr.headerRow th,
+table.RowDisplay thead tr th {
+  padding: .5rem;
+}
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.PlacedQuestions table.RowDisplay tr.headerRow th,
+.PlacedQuestions  table.RowDisplay td,
+table.RowDisplay.Data tr.headerRow th {
+  white-space: initial;
+}
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
+  max-width: 1200px;
+}
+table.RowDisplay tr.headerRow,
+table.RowDisplay thead tr {
+  font-style: normal;
+  font-size: 1rem;
+  border-bottom: 2px solid #363a3e;
+  border-top: 2px solid #363a3e;
+}
+table.RowDisplay tr.headerRow th a,
+table.RowDisplay thead tr th a,
+table.RowDisplay td a {
+  color: #000000;
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+table.RowDisplay tr.headerRow th a:hover,
+table.RowDisplay thead tr th a:hover,
+table.RowDisplay td a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  color: #C75D48;
+}
+table.RowDisplay tr.headerRow th a:active,
+table.RowDisplay td a:active {
+  color: #73382C;
+}
+table.RowDisplay tr.headerRow,
+table.RowDisplay thead tr,
+tr.headerRow,
+tr.headerRow th a {
+  background-color: #fff;
+}
+table a {
+  color: #222222;
+}
+table.RowDisplay tr:nth-child(2n+2),
+table.RowDisplay tbody tr:nth-child(2n+2),
+/* added for tables with thead */
+table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
+.odd {
+  background-color: #dbe8f2;
+}
+table.RowDisplay tr:nth-child(2n+3),
+table.RowDisplay tbody tr:nth-child(2n+3),
+/* added for tables with thead */
+table.RowDisplay thead ~ tbody tr:nth-child(2n+2),
+.even {
+  background-color: #fff;
+}
+table.RowDisplay tbody tr.submitted_odd,
+table.RowDisplay tbody tr:nth-child(2n+1).submitted,
+div.AppRowDisplayRowColorLegend table.RowDisplay tr td.odd.submitted,
+td.odd.submitted,
+body table.Brands td.Active {
+  color: #000;
+  background-color: #629BC6;
+}
+table.RowDisplay  tbody tr.submitted_even,
+table.RowDisplay tr:nth-child(2n+2).submitted,
+div.AppRowDisplayRowColorLegend table.RowDisplay tr td.even.submitted,
+td.even.submitted {
+  background-color: #8fb7d6;
+  color: #000;
+}
+table.RowDisplay tr.submitted_odd a:hover,
+.submitted_odd a:hover,
+table.RowDisplay tr.submitted_even a:hover,
+.submitted_even a:hover {
+  color: #A14C3A;
+  border-bottom: 1px solid #A14C3A;
+}
+.Content .ApplicantApplicationRowDisplay  table.RowDisplay td,
+.Content .ApplicantApplicationRowDisplay  table.RowDisplay th {
+  border: 1px solid #e6e6e6;
+}
+.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
+  background-color: #e0e6ec;
+}
+.LiveTemplates table.RowDisplay td,
+.LiveTemplates table.RowDisplay tr.headerRow th {
+  white-space: normal;
+}
+.LiveTemplates table.RowDisplay tr.headerRow th.Available,
+.LiveTemplates table.RowDisplay tr.headerRow th.DeadlineToApply,
+.LiveTemplates table.RowDisplay tr.headerRow th.ExtendedDeadlineToApply,
+.LiveTemplates table.RowDisplay tr.headerRow th.StartedFormCount,
+.LiveTemplates table.RowDisplay tr.headerRow th.SubmittedFormCount {
+  width: 2.5em;
+}
+.LiveTemplates table.RowDisplay td.Available,
+.LiveTemplates table.RowDisplay td.DeadlineToApply,
+.LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
+  white-space: nowrap;
+}
+table.RowDisplay td.DeadlineToApply,
+table.RowDisplay td.Available {
+  font-size: .9em;
+}
+form table.RowDisplay.Evaluators,
+table.RowDisplay.Evaluators {
+  margin: 1em;
+}
+div#UserHomePage table.RowDisplay tr.headerRow th,
+div#UserHomePage table.RowDisplay td,
+.EvaluatorHomePage table.RowDisplay td,
+.EvaluatorHomePage table.RowDisplay tr.headerRow th  {
+  white-space: normal;
+}
+div#UserHomePage table.RowDisplay td {
+  font-size: .875rem;
+}
+div#TemplateListingContainer table.RowDisplay td {
+  max-width: 500px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+table.RowDisplay td.SectionItemSequenceNumber + td {
+  max-width:5em;
+  white-space: normal;
+}
+#SectionListUpdateContainer table.RowDisplay {
+  margin: 1em;
+}
+.QuestionRowDisplay #DisplayGroupUpdateContainerID {
+  max-width: initial;
+}
+table.RowDisplay.Deadlines tbody tr td {
+  white-space: normal;
+}
+table.RowDisplay td {
+margin: 0.25em 0 0.25em 0;
+}
+.EvaluationQueueDisplay .RowDisplay td[rowspan="2"] {
+  background-color: #fff;
+}
+
+/* MEDIA QUERIES-->*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 480px) {
+  .LiveTemplates table.RowDisplay td.Available,
+  .LiveTemplates table.RowDisplay td.DeadlineToApply,
+  .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
+  white-space: normal;
+  }
+	.LiveTemplates table.RowDisplay td.Available,
+  .LiveTemplates table.RowDisplay td.DeadlineToApply,
+  .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
+    white-space: normal;
+  }
+
+}
+
+/* <-- TABLES */
+
+/* NEW TABLES CSS FOR AFTER MARCO REPLACES ROWDISPLAY WITH ROW-DISPLAY -->> */
+
+/* LIST OF SECTIONS--> */
+div.Content div.row-display {
+  margin: 0 auto;
+}
+table.row-display {
+    border-collapse: collapse;
+}
+div.AIRAdminSearchForApplications div.ApplicationList table.row-display,
+div.AIRAdminSearchForApplications table.Search.rolodex,
+div#TemplateListingContainer table.row-display,
+.MenuRowDisplay .row-display,
+div.AIRAdminSearchForApplicants table.row-display,
+table.row-display.Deadlines,
+table.row-display.QueueList,
+div#DisplayGroupUpdateContainerID table.row-display,
+div#SessionDisplay table.rolodex,
+div.EvaluationQueueList table.QueueList,
+table.ChoiceCategories,
+form table.row-display,
+div.EvaluationQueueDisplay table.rolodex,
+table.row-display,
+div.generateReportsWrapper {
+  margin: .5rem 0 1rem;
+  border: 1px solid #A7A7A7;
+}
+
+table.row-display tbody tr td table.templates tbody tr:nth-child(2n+2),
+table.row-display tbody tr td table.templates tbody tr:nth-child(2n+3) {
+  background-color: transparent;
+}
+
+div.SectionEditor, table.Choices.row-display {
+  margin: 1em 0;
+}
+
+td.noTableBordersBelowMe table.row-display {
+  margin: 0;
+}
+table.row-display tr.headerRow th,
+table.row-display thead tr th,
+table.row-display td {
+  font-size: .875rem;
+  white-space: nowrap;
+  padding: .25rem 0.5rem;
+  border: 1px solid #afb2b9;
+  text-align: left;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+table.row-display tr.headerRow th,
+table.row-display thead tr th {
+  padding: .5rem;
+}
+div.AIRAdminSearchForApplications div.ApplicationList table.row-display tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList table.row-display td {
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.PlacedQuestions table.row-display tr.headerRow th,
+.PlacedQuestions  table.row-display td,
+table.row-display.Data tr.headerRow th {
+  white-space: initial;
+}
+div.AIRAdminSearchForApplications div.ApplicationList div table.row-display tr.headerRow th,
+div.AIRAdminSearchForApplications div.ApplicationList div table.row-display td  {
+  max-width: 1200px;
+}
+table.row-display tr.headerRow,
+table.row-display thead tr {
+  font-style: normal;
+  font-size: 1rem;
+  border-bottom: 2px solid #363a3e;
+  border-top: 2px solid #363a3e;
+}
+table.row-display tr.headerRow th a,
+table.row-display thead tr th a,
+table.row-display td a {
+  color: #000000;
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+table.row-display tr.headerRow th a:hover,
+table.row-display thead tr th a:hover,
+table.row-display td a:hover {
+  text-decoration: none;
+  border-bottom: none;
+  color: #C75D48;
+}
+table.row-display tr.headerRow th a:active,
+table.row-display td a:active {
+  color: #73382C;
+}
+table.row-display tr.headerRow,
+table.row-display thead tr,
+tr.headerRow,
+tr.headerRow th a {
+  background-color: #fff;
+}
+table a {
+  color: #222222;
+}
+table.row-display tr:nth-child(2n+2),
+table.row-display tbody tr:nth-child(2n+2),
+/* added for tables with thead */
+table.row-display thead ~ tbody tr:nth-child(2n+1),
+.odd {
+  background-color: #dbe8f2;
+}
+table.row-display tr:nth-child(2n+3),
+table.row-display tbody tr:nth-child(2n+3),
+/* added for tables with thead */
+table.row-display thead ~ tbody tr:nth-child(2n+2),
+.even {
+  background-color: #fff;
+}
+table.row-display tbody tr.submitted_odd,
+table.row-display tbody tr:nth-child(2n+1).submitted,
+div.AppRowDisplayRowColorLegend table.row-display tr td.odd.submitted,
+td.odd.submitted,
+body table.Brands td.Active {
+  color: #000;
+  background-color: #629BC6;
+}
+table.row-display  tbody tr.submitted_even,
+table.row-display tr:nth-child(2n+2).submitted,
+div.AppRowDisplayRowColorLegend table.row-display tr td.even.submitted,
+td.even.submitted {
+  background-color: #8fb7d6;
+  color: #000;
+}
+table.row-display tr.submitted_odd a:hover,
+.submitted_odd a:hover,
+table.row-display tr.submitted_even a:hover,
+.submitted_even a:hover {
+  color: #A14C3A;
+  border-bottom: 1px solid #A14C3A;
+}
+.Content .ApplicantApplicationRowDisplay  table.row-display td,
+.Content .ApplicantApplicationRowDisplay  table.row-display th {
+  border: 1px solid #e6e6e6;
+}
+.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.row-display td {
+  background-color: #e0e6ec;
+}
+.LiveTemplates table.row-display td,
+.LiveTemplates table.row-display tr.headerRow th {
+  white-space: normal;
+}
+.LiveTemplates table.row-display tr.headerRow th.Available,
+.LiveTemplates table.row-display tr.headerRow th.DeadlineToApply,
+.LiveTemplates table.row-display tr.headerRow th.ExtendedDeadlineToApply,
+.LiveTemplates table.row-display tr.headerRow th.StartedFormCount,
+.LiveTemplates table.row-display tr.headerRow th.SubmittedFormCount {
+  width: 2.5em;
+}
+.LiveTemplates table.row-display td.Available,
+.LiveTemplates table.row-display td.DeadlineToApply,
+.LiveTemplates table.row-display td.ExtendedDeadlineToApply {
+  white-space: nowrap;
+}
+table.row-display td.DeadlineToApply,
+table.row-display td.Available {
+  font-size: .9em;
+}
+form table.row-display.Evaluators,
+table.row-display.Evaluators {
+  margin: 1em;
+}
+div#UserHomePage table.row-display tr.headerRow th,
+div#UserHomePage table.row-display td,
+.EvaluatorHomePage table.row-display td,
+.EvaluatorHomePage table.row-display tr.headerRow th  {
+  white-space: normal;
+}
+div#UserHomePage table.row-display td {
+  font-size: .875rem;
+}
+div#TemplateListingContainer table.row-display td {
+  max-width: 500px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+table.row-display td.SectionItemSequenceNumber + td {
+  max-width:5em;
+  white-space: normal;
+}
+#SectionListUpdateContainer table.row-display {
+  margin: 1em;
+}
+.QuestionRowDisplay #DisplayGroupUpdateContainerID {
+  max-width: initial;
+}
+table.row-display.Deadlines tbody tr td {
+  white-space: normal;
+}
+table.row-display td {
+margin: 0.25em 0 0.25em 0;
+}
+.EvaluationQueueDisplay .row-display td[rowspan="2"] {
+  background-color: #fff;
+}
+
+/* MEDIA QUERIES-->*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 480px) {
+  .LiveTemplates table.row-display td.Available,
+  .LiveTemplates table.row-display td.DeadlineToApply,
+  .LiveTemplates table.row-display td.ExtendedDeadlineToApply {
+  white-space: normal;
+  }
+  .LiveTemplates table.row-display td.Available,
+  .LiveTemplates table.row-display td.DeadlineToApply,
+  .LiveTemplates table.row-display td.ExtendedDeadlineToApply {
+    white-space: normal;
+  }
+
+}
+/* <-- NEW TABLES CSS FOR AFTER MARCO REPLACES ROWDISPLAY WITH ROW-DISPLAY */

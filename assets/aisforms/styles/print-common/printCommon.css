@@ -1,0 +1,864 @@
+/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
+/*                                                           */
+/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
+/* added at the bottom of your palette list below, within    */
+/* their own comment section.                                */
+/*                                                           */
+/* CSS ADDITIONS: Any CSS I added or notes about changes     */
+/* are at the bottom of this stylesheet beginning at Line    */
+/* 2870) in its own section.                                 */
+/*                                                           */
+/* Please! Please! review my changes and clean them up as    */
+/* as you think appropriate. Thanks! ... Gregg               */
+
+
+/* PAGE SETUP */
+@import url("https://www.princexml.com/fonts/sil/index.css") all;
+@import url("https://ais.americancouncils.org/ais/common/stylesheets/inlineQuestions.css");
+
+@page {
+  size: US-Letter;
+  margin: .5in;
+}
+
+/* HEADER AND FOOTER SETUP */
+
+@page {
+  @top-left { content: flow(header) }
+}
+@page {
+  @top-right { content: flow(header2) }
+}
+/* removing page number for now, individual forms can add own page num */
+@page {
+    /*@bottom {*/
+        /*content: "Page " counter(page) " of " counter(pages);*/
+        font-size: 10px;
+        font-family: Arial;
+        color: #474747;
+    /*}*/
+}
+
+
+#pageHeader {
+  flow: static(header);
+  background-color: transparent;
+  color: #474747;
+  padding-top: 0.5em;
+}
+body .Content .RecommendationFor {
+  flow: static(header2);
+  background-color: transparent;
+  /*** check if necessary --> */
+  color: #474747 !important;
+  text-align:right;
+  padding-top: 0.5em;
+}
+
+#pageHeader .LastName,
+#pageHeader .FirstName,
+#pageHeader .MiddleName,
+.Content .LastName,
+.Content .FirstName,
+.Content .MiddleName {
+  text-transform: capitalize;
+}
+#pageHeader .LastName:not(:empty):after {
+  content: ", ";
+}
+#pageHeader .MiddleName,
+#pageHeader .ApplicationRefCode,
+#pageHeader .ProgramYear {
+    padding-right: 2pt;
+}
+#pageHeader .MiddleName:not(:empty):after,
+#pageHeader .ApplicationRefCode:after,
+#pageHeader .ProgramYear:after {
+    content: " |";
+    color: #777;
+}
+#pageHeader .ApplicationRefCode:before {
+  content: "Ref code: "
+}
+
+/* BASIC STYLES */
+
+body {
+  font-size: 12px;
+  font-family: Arial;
+  border: none !important;
+  box-sizing: border-box;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+.QuestionItem {
+  widows: 5;
+  orphans: 5;
+}
+.QuestionAnswer {
+  page-break-before: avoid;
+}
+.nodisplayprint {
+  page-break-before: avoid;
+  page-break-after: avoid;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+p,
+ul {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+/* COLORS */
+.SectionDisplay .SectionName {
+  border-bottom: 2px solid #025689;
+  font-size: 1.75em;
+  padding-top: .75em;
+  margin-bottom: .5em;
+  color: #025689;
+  clear: both;
+  page-break-after: avoid;
+}
+
+.Content .Divider,
+.Content .SectionDisplay h1,
+.Content .SectionDisplay h2,
+.Content .RecommendationFor {
+  color: #025689;
+  clear: both;
+}
+.small {
+  font-size: 1em;
+}
+.big {
+  font-size: 1.25em;
+}
+.ExtraStrong {
+  color: #CD0000;
+  font-weight: bold;
+}
+
+/* FLOAT LEFT FIELDS OVERRIDES DUE TO LAYOUT ISSUE DURING PDF GENERATION */
+.SectionDisplay .PrimaryPhone,
+.SectionDisplay .PrimaryPhoneType,
+.SectionDisplay .AlternatePhoneType,
+.SectionDisplay .TelephoneAlternate,
+.SectionDisplay .OthPhone,
+.SectionDisplay .OthPhoneWhose,
+.SectionDisplay .ParentPrimaryTelephone,
+.SectionDisplay .ParentPrimaryTelephoneType,
+.SectionDisplay .ParentAlternateTelephone,
+.SectionDisplay .ParentAlternateTelephoneType,
+.SectionDisplay .ParentOtherTelephone,
+.SectionDisplay .ParentOtherTelephoneType,
+.SectionDisplay .EmergencyContactPrimaryTelephone,
+.SectionDisplay .EmergencyContactPrimaryTelephoneType,
+.SectionDisplay .EmergencyContactAlternateTelephone,
+.SectionDisplay .EmergencyContactAlternateTelephoneType,
+.SectionDisplay .EmergencyContactOtherTelephone,
+.SectionDisplay .EmergencyContactOtherTelephoneType {
+  float: none;
+}
+
+.QuestionItem,
+.DisplayItemOnly,
+.Group {
+  clear: both;
+}
+/*.QuestionItem.FirstName,*/
+.QuestionItem.Sex,
+.clearPrint {
+  clear: left;
+}
+
+
+/* DATE FIELDS SETUP */
+input[type=text],
+.TextQuestion,
+select.ChoiceQuestion,
+.DateQuestion {
+  text-decoration: underline;
+}
+/* ANSWERS IN TABLES */
+div.Formula div.QuestionAnswer {
+  border-bottom: thin solid #999;
+  margin-bottom: 1pt;
+  vertical-align: top;
+}
+.AnswerTable input[type=text],
+.AnswerTable .TextQuestion,
+.AnswerTable .ChoiceQuestion,
+.AnswerTable .DateQuestion,
+.AnswerTable .Formula,
+td .TextQuestion {
+  border: 0;
+}
+
+/* QUESTION AND ANSWER DISPLAY */
+.QuestionItem .QuestionText .Title {
+  font-weight: bold;
+  margin-top: .25em;
+  padding-top: .25em;
+}
+.QuestionText {
+  display: block;
+  margin-right: .5em;
+}
+.QuestionItem.LongText .QuestionText {
+  max-width: 85%;
+  margin-right: 1.5em;
+  font-size: .875em;
+}
+.QuestionAnswer {
+  margin-top: .125em;
+  color: #222;
+  margin-right: .5em;
+  margin-bottom: .25em;
+}
+.QuestionAnswer .GroupedItem:not(.nodisplayprint) {
+  display: block;
+}
+
+div[class*="Group"] .QuestionAnswer .QuestionAnswer {
+  margin: .125em 0 .25em;
+}
+span.leftmargin-fix {
+  margin-left: 2.4em;
+}
+
+
+/* <--QUESTION AND ANSWER DISPLAY */
+
+
+.LongTextNoEditing br {
+  margin-bottom: 0.3em;
+}
+
+
+.RadioButtonMatrix {
+  margin-bottom: 0;
+  padding: 0;
+}
+.RadioButtonMatrix tr {
+  display: inline-block;
+}
+.RadioButtonMatrix td {
+  padding: 0;
+
+}
+.RadioButtonMatrix td input {
+
+}
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: transparent;
+  width: 0;
+  visibility: hidden;
+}
+.ERXMatrixTable--Checked input[type="checkbox"],
+.ERXMatrixTable--Checked input[type="radio"] {
+  background: #3a3d40;
+}
+input[type="radio"] {
+  border-radius: 50%;
+}
+.CheckboxMatrix td,
+.CheckboxMatrix th {
+  padding: 0;
+}
+.itemDisplayOuterContainer {
+  clear: both;
+}
+
+
+
+/* TABLES */
+.ERXMatrixTable {
+  margin-right: .5em;
+}
+.ChoiceQuestion .ERXMatrixTable td,
+.CheckboxMatrix .ERXMatrixTable td {
+  padding: 1px;
+  display: inline-block;
+  color: #8c8c8c;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+.ERXMatrixTable.ERXMatrixTable--Checked td {
+  color: #000;
+}
+.ERXMatrixTable td:first-of-type {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: thin solid;
+}
+.ERXMatrixTable td:last-of-type {
+  max-width: 7in;
+}
+.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type {
+  position: relative;
+}
+.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type:after {
+  content: "";
+  position: absolute;
+  display: block;
+  text-align: center;
+  -webkit-appearance: none;
+  background-color: #000;
+  border: 0;
+  vertical-align: initial;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+}
+.CheckboxMatrix .ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type:after,
+.CheckboxMatrix .ERXMatrixTable td:first-of-type {
+  border-radius: 2px;
+}
+.TemplateTable {
+  margin: .5em 0;
+}
+table {
+  border-collapse: collapse;
+}
+
+table.TemplateTable td {
+  font-size: 0.875em;
+  text-align: left;
+  font-weight: normal;
+}
+table.TemplateTable tr td,
+table.TemplateTable tr th {
+  border: thin solid #cecece;
+  padding: .25em .5em;
+}
+table.TemplateTable tr th {
+  border: thin solid #222;
+  /*border-bottom-color: transparent;*/
+  padding: .25em .5em;
+  background-color: #3a3d40;
+  color: #FFFFFF;
+  /*font-size: 1em;*/
+  text-align: left;
+  font-weight: normal;
+}
+
+.AnswerTable {
+  border-collapse: collapse;
+  margin: 6pt;
+  widows: 5;
+  orphans: 5;
+}
+.AnswerTable td,
+.AnswerTable th {
+  padding: .25em .5em;
+  text-align: left;
+}
+.AnswerTable td td {
+  padding: 0;
+}
+.AnswerTable th {
+  vertical-align: bottom;
+  padding-bottom: .5em;
+  page-break-after: avoid;
+}
+
+.AnswerTable .headerRow + tr > td,
+.AnswerTable thead + tr > td {
+  border-top: thin solid #8c8c8c;
+  padding-top: .75em;
+}
+
+table.TemplateTable .sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+
+td,
+th {
+  padding: 2pt;
+  vertical-align:top;
+}
+
+.SignatureTable {
+     border: thin solid #FFFFFF;
+     margin: 12pt;
+     border-collapse: collapse;
+}
+table.SignatureTable tr td {
+     border: thin solid #FFFFFF;
+     font-size:100%;
+     text-align:left;
+     padding: 1em 0.3em 0 0.3em;
+}
+table.SignatureTable tr td div {
+     height: 1.5em;
+     vertical-align:bottom;
+     padding:0;
+}
+table.SignatureTable tr td.signatureTD,
+table.SignatureTable tr td.signatureDblTD {
+     font-weight:bold;
+     border-bottom-color:#000000;
+}
+table.SignatureTable tr td.signatureTD div {
+     min-width : 350px;
+     vertical-align:bottom;
+     padding:0;
+}
+table.SignatureTable tr td.signatureDblTD div {
+     min-width : 225px;
+     vertical-align:bottom;
+     padding:0;
+}
+
+.ERXMatrixTable td {
+    margin-right: 1em;
+    padding: 0;
+  }
+td.ERXMatrixTableCell {
+  vertical-align: top;
+  padding-right: 1.5em;
+}
+input {
+  margin-right: 1em;
+}
+
+div.Content div.LongTextNoEditing {
+    padding: .5em;
+    margin: .5em 0;
+    border: 1pt dashed #4A4A4A;
+    min-width: 24pt;
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 3px;
+    background-color: #dedede;
+  }
+div.Content td div.LongTextNoEditing {
+  background-color: transparent;
+}
+div.Content table tr td div.LongTextNoEditing
+  {
+    border: 0;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+  }
+div.Content p:not([class^="nodisplay"])
+  {
+    display: block;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 1em;
+  }
+select
+  {
+    display: inline-block;
+    border: 0 solid transparent;
+  }
+
+.QuestionItem,
+.DisplayItemOnly  {
+/*    margin-bottom: .5em;
+    margin-top: .5em;*/
+    width:auto;
+    padding-left: .75em;
+}
+.QuestionItem.subQuestion {
+    padding-bottom: .125em;
+    padding-top: .125em;
+}
+.GroupedItem .QuestionItem:not(.subQuestion),
+.GroupedItem .DisplayItemOnly {
+  padding-left: 0;
+}
+.AnswerTable .QuestionItem {
+  padding: 0;
+}
+.QuestionText ul li {text-decoration: none;}
+
+ul,
+ol {
+  padding-bottom: .5em;
+  margin-left: 3em;
+  padding-left: 0;
+}
+ol ol li {
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: square;
+}
+div.SectionIntroductionText
+  {
+    /*font-size: 0.875em;*/
+    padding-bottom: .2em;
+  }
+
+/*.QuestionItem .QuestionText .Title,
+.QuestionItem .QuestionNumber,
+.DisplayItemOnly .QuestionText .Title,
+.DisplayItemOnly .QuestionNumber,
+.BeforeQuestion .QuestionText,
+.BeforeQuestion .QuestionNumber
+  {
+    padding-top: 0.15em;
+    color: #000;
+  }*/
+.SectionItemsList {
+    border-radius: 5px;
+}
+.QuestionItem .QuestionText .Instruction,
+.BeforeQuestion .QuestionItem .QuestionInstructions,
+.QuestionText span.Instruction,
+.SectionDisplay .SectionItemsList .Instruction,
+.Instruction,
+a.SectionDataFill,
+a.FormDataFill,
+.PageName {
+  display: none;
+}
+.BeforeQuestion .QuestionItem .QuestionInstructions,
+.QuestionText span.Instruction {
+  margin: 0;
+}
+
+.EssayNonEnglish {
+  font-family: MingLiU;
+}
+.QuestionNumber
+  {
+    display: inline-block;
+    vertical-align: top;
+    width: 25px;
+    clear: both;
+    font-size: .9em;
+  }
+
+.Group .QuestionNumber
+    {
+       float:left;
+    }
+
+.QuestionItem .QuestionNumber,
+.DisplayItemOnly .QuestionNumber,
+.BeforeQuestion .QuestionNumber {
+  float: left;
+  width: 30px;
+}
+.QuestionItem .GroupedItem .QuestionNumber {
+  width: initial;
+}
+option[selected] {display: table-row;}
+
+option:not([selected]) {display: none;}
+
+/*.fromApplicant input[type="button" i]:disabled,
+.fromApplicant input[type="submit" i]:disabled,
+.fromApplicant input[type="reset" i]:disabled,
+.fromApplicant input[type="file" i]:disabled::-webkit-file-upload-button,*/
+.fromApplicant button:disabled,
+.fromApplicant select:disabled,
+.fromApplicant optgroup:disabled,
+.fromApplicant option:disabled,
+.fromApplicant select[disabled] > option {
+  color: #333333 !important;
+  -webkit-text-fill-color: #333333;
+  border: 0;
+  font-size: .875em;
+  background: white;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+}
+
+div.Content div.GroupedItem
+  {
+    padding: 0 10pt 6pt;
+    margin: 1em 0 1em .75em;
+    border-left: 2px solid #cecece;
+  }
+div.Content div.GroupedItem:before {
+    content: "";
+    width: 48pt;
+    border-top: 4px solid #3a3d40;
+    height: 10px;
+    display: inline-block;
+    margin-left: -11pt;
+}
+div.Content div.GroupedItem:after {
+  content: "";
+  width: 48pt;
+  border-bottom: 2px solid #cecece;
+  height: 4px;
+  display: block;
+  margin-left: -11pt;
+  margin-bottom: -6pt;
+}
+
+/*.Content div.SectionDisplay table th,
+div.Content table.AnswerTable tr.headerRow th {
+  background-color: #5D5E57;
+  color: #ffffff;
+  border: thin solid #999;
+  word-break: keep-all;
+}*/
+table.QuestionItem,
+table.QuestionItem tr.QuestionItemRow,
+table.QuestionItem tr.QuestionItemRow td
+  {
+    border: 0;
+  }
+.TableNoBorder {border-style:none;}
+
+.VAlign table.QuestionItem tr {vertical-align: top;}
+
+.VAlignBottom table.QuestionItem tr {vertical-align: bottom;}
+
+div.SectionDisplay h1,
+.SectionDisplay .Divider
+  {
+    margin: .75em 0 .25em 0;
+    padding: 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+  }
+.Divider + p {
+  margin-top: 0;
+}
+h1 + p {
+    margin-top: 0px;
+}
+div.SectionDisplay h2 {
+  font-size: 1em;
+  margin: 1em 0 .5em 0;
+  padding: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.nowrap,
+.noWrap {
+    white-space:nowrap;
+}
+
+img {border:none;}
+
+input#SubmitForEvaluation {margin-bottom: 1em;}
+
+.SideNote,
+.helpBox,
+.deadlineBox,
+.alertBox,
+.noticeBox {
+    display: none;
+  }
+.SideNote:before {
+  content: '\2192 \0000a0';
+}
+div.SectionDisplay div.QuestionItem.subQuestion {
+  margin-left: 1.375em;
+  border-left: thin solid #cecece;
+}
+/*div.SectionDisplay div.QuestionItem.subQuestion:after {
+  content: "";
+  width: 2em;
+  border-bottom: 1px solid #cecece;
+  height: .5em;
+  display: block;
+  margin-left: -.75em;
+  margin-bottom: -2pt;
+}*/
+div.SectionDisplay div.QuestionItem.subConditional {
+  margin-left: 48pt;
+}
+
+
+/* File Label */
+
+.docLabel {
+  color: #025689;
+  font-size:0.9em;
+  border:solid 2px #444444;
+  border-radius:0.5em;
+  margin:0 10px 10px 0;
+  padding:0.25em;
+  width:450px;
+}
+
+div.docLabel div {
+  margin-bottom:0.2em;
+}
+
+.appRefCode,
+.appGender,
+.appPrevProg {
+  float:right;
+}
+
+span.labelTitle {
+  color:#444444;
+  font-size: 0.9em;
+  font-weight:bold;
+}
+
+
+/* SYSTEMS ITEMS NOT TO PRINT */
+
+div.QuestionItem div.QuestionNumber,
+div.QuestionNumber,
+.SectionDisplay[class*="staff-only"],
+.developerEyesOnly,
+.RecommendationTemplateIsExpiredRow {
+    display:none !important;
+}
+
+div.Content > div[style^="color"],
+#AnnouncementBlock,
+.systemMessage,
+.star,
+.SubmittedOn,
+#footer,
+.policies,
+#PrivacyPolicy,
+#CookieDeclaration,
+#logo,
+#acTitle,
+#address,
+#legal,
+#amagavi,
+.BottomCommandLink,
+#Header,
+#TopMenu,
+h1.pageTitle,
+.TopCommandLink,
+#SubmitForEvaluation,
+.SystemAnnouncement,
+.filterWrapper,
+h1.editing ~ h2
+  {
+    display:none;
+  }
+
+/* HIDE PDF Generator Button */
+div.Content div.GeneratePDF {
+    display:none;
+}
+
+
+
+
+/* TEMPLATE ITEMS NOT TO PRINT */
+
+.nodisplayprint,
+.SystemAnnouncementsWrapper,
+.filespecs,
+#SubmitForEvaluation,
+.UnsubmitLink,
+input.SaveChanges,
+#brandFromServerID {
+  display: none;
+}
+
+/* .QuestionAnswer a {display:none;} */
+
+.NumberOfWords {display:none;}
+
+div.Content div.NumberOfCharacters {display: none;}
+
+.EvalLastName {
+  padding-right: 1em;
+  padding-left: 1.7em;
+}
+
+div.TotalScoreFormula {
+    border: medium solid #2E6B9B;
+    border-radius: 0.5em;
+    margin: 0.5em 1em 1em 0;
+    padding: 0.5em;
+    width: 21em;
+}
+
+.TotalScoreFormulaDuplicate .QuestionText {
+  font-size: 1em;
+}
+
+/* ITEMS NOT TO PRINT FOR EVAL */
+
+
+/* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
+div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
+table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after {
+  content: none;
+}
+
+.requiredIndicator {
+  color: #CD0000;
+  content: '*';
+  font-size:1.4em;
+  font-weight: normal;
+  left:1px;
+  right:3px;
+  line-height:0.4;
+  opacity:1;
+  position:relative;
+  top:0.1em;
+}
+
+
+
+
+/* GREGG'S CSS ADDITIONS AND NOTES ABOUT CHANGES AFTER 4 Jun 2019 */
+
+/* 12 Jul - For new Logo "Bundles" with 1-6 narrow and wide logos. Single, non-bundle Logos are "200px",
+"Narrow" logos in bundles count as "100px", "Wide" logos in bundles count as "200px" */
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo200w,
+div.Content img.ProgramLogo200w,
+section img.ProgramLogo200w,
+div#UserHomeIntro header img.ProgramLogo200w,
+img.ProgramLogo200w {
+  max-width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo300w,
+div.Content img.ProgramLogo300w,
+section img.ProgramLogo300w {
+  max-width: 300px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo400w,
+div.Content img.ProgramLogo400w,
+section img.ProgramLogo400w {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo500w,
+div.Content img.ProgramLogo500w,
+section img.ProgramLogo500w {
+  max-width: 500px;
+  margin-bottom: 1rem;
+  display: block;
+}
+div.LoginOrNewAccount div.CustomContent img.ProgramLogo600w,
+div.Content img.ProgramLogo600w,
+section img.ProgramLogo600w {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  display: block;
+}

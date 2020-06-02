@@ -52,13 +52,15 @@ details[open] > summary::before {
   top: 30%;
   left: .75em;
 }
-
 /* BASE DETAILS OVERRIDES --> */
-table.RowDisplay details {
+table.RowDisplay details,
+table.row-display details {
   margin: 0;
 }
 table.RowDisplay details > summary,
-table.RowDisplay details > .details-content {
+table.RowDisplay details > .details-content,
+table.row-display details > summary,
+table.row-display details > .details-content  {
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;
@@ -68,6 +70,7 @@ fieldset details section,
 fieldset details .details-content {
   background-color: #eff3f5;
 } 
+
 details details .details-content {
   background-color: #e0e7eb;
 }
@@ -100,7 +103,6 @@ div.ApplicantApplicationTemplateEditor div details > summary {
   position: relative;
 }
 /* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
-
 details.details_1 {
   padding: 0 .75rem;
   width: 36rem;
@@ -142,10 +144,10 @@ details.details_1[open] summary::before {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 } 
+
 details.details_1:last-of-type {
   margin-bottom: 1.5rem;
 }
-
 details.details_1 section, 
 details.details_1 .details-content {
     background-color: transparent;

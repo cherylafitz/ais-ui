@@ -1,0 +1,45 @@
+ TABLES --> */
+
+.QuestionAnswer .RowDisplay td,
+.QuestionAnswer .RowDisplay th {
+  border: 0;
+}
+.QuestionAnswer .RowDisplay td {
+  padding-top: .25em;
+  text-decoration: underline;
+}
+.QuestionAnswer .RowDisplay {
+  margin-left: .75em;
+}
+table.RowDisplay {
+  margin: .5em 0;
+}
+.RowDisplay th,
+.RowDisplay td {
+  text-align: left;
+  padding: 0 .5em 0 0;
+}
+
+/* NEW TABLES --> */
+
+.QuestionAnswer .row-display td,
+.QuestionAnswer .row-display th {
+  border: 0;
+}
+.QuestionAnswer .row-display td {
+  padding-top: .25em;
+  text-decoration: underline;
+}
+.QuestionAnswer .row-display {
+  margin-left: .75em;
+}
+table.row-display {
+  margin: .5em 0;
+}
+.row-display th,
+.row-display td {
+  text-align: left;
+  padding: 0 .5em 0 0;
+}
+
+/* <-- TABLES 
