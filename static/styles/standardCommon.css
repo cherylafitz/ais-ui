@@ -1051,39 +1051,32 @@ div.alertBox,
   margin: 1rem 0;
   clear: right; /* clears help-box */
 }
-
 div.alertBox,
 [class*="alert-box"] {
   background-color: #ffdacc;
   border-color: #ffc8b3;
 }
-
 [class*="warning-box"] {
   background-color: #ffc266;
   border-color: #ffad33;
 }
-
 [class*="lt-info-box"] {
   background-color: #d4f5ff;
   border-color: #b3edff;
 }
-
 [class*="dk-info-box"] {
   background-color: #98c2cd;
   border-color: #75adbd;
 }
-
 [class*="caution-box"] {
   background-color: #ffe0b3;
   border-color: #ffcc80;
 }
-
 /* makes *-box more prominent */
 [class^="super"][class*="box"] {
   font-weight: bold;
   padding: 1rem 1.25rem;
 }
-
 .noticeBox,
 [class*="notice-box"] {
   border: 2px solid #de6846;
@@ -1091,7 +1084,6 @@ div.alertBox,
   padding: .75rem 1rem;
   margin: 1em 0;
 }
-
 div.recommendeeBox,
 [class*="recommendee-box"] {
   color: #FFFFFF;
@@ -1102,7 +1094,6 @@ div.recommendeeBox,
   padding: .75rem 1rem;
   margin: 1em 0;
 }
-
 div.helpBox,
 [class*="help-box"] {
   display: inline-block;
@@ -1119,7 +1110,6 @@ div.helpBox,
   float: right;
   line-height: 1.0675rem;
 }
-
 div.helpBox img,
 [class*="help-box"] img,
 div.alertBox img,
@@ -1128,7 +1118,6 @@ div.alertBox img,
   float: left;
   height: 17px;
 }
-
 div.deadlineBox,
 [class$="deadline-box"] {
   background-color: #ffc8b3;
@@ -1140,60 +1129,16 @@ div.deadlineBox,
   clear: both;
   border: none;
 }
-
 div.deadlineBox span,
 [class$="deadline-box"] span {
   font-weight: bold;
 }
-
 div.deadlineBox span.timeZone,
 [class$="deadline-box"] span.timeZone {
   font-weight: normal;
 }
 
 /* <-- notice boxes */  
-/* DOWNLOADS --> */
-
-.Content .PDFDownload,
-.Content .ExcelDownload,
-.pdf-download,
-.excel-download,
-.word-download,
-a.file-download {
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  display:block;
-  margin: 1em;
-  padding-left: 2.5em;
-}
-/* Need .Content to override .Content a....should make this less specific eventually */
-.Content a.file-download,
-.Content a.file-download:hover,
-.Content a.file-download:active {
-  display: initial;
-  text-decoration: underline;
-  border-bottom-width: 0;
-}
-.Content a.file-download:hover {
-  text-decoration: underline;
-  border-bottom-width: 0;
-}
-.Content .PDFDownload,
-.pdf-download,
-.file-download[href$=".pdf"] {
-  background-image: url(../../../../ais/common/pdficon_small.gif);
-}
-.Content .ExcelDownload,
-.excel-download,
-.file-download[href$=".xlsx"] {
-  background-image: url(../../../../ais/common/Excelicon_small.png);
-}
-.word-download,
-.file-download[href$=".docx"] {
-  background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
-}
-/* <-- DOWNLOADS */
 
 /* TABLES --> */
 
