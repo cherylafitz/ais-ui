@@ -4,7 +4,7 @@
     background-color: #bfbfbf;
     color: #fff;
     padding: 0;
-    margin: .75rem 0;
+    margin: 0 0 .5rem 0;
     display: inline-block;
     border-radius: 2px;
 }
@@ -29,5 +29,6 @@
 	border: none;
 	padding: 1rem;
 }
+
 
 /* <-- <code> STYLES */

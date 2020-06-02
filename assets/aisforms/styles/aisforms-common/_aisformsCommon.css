@@ -1629,6 +1629,15 @@ table.rolodex tr.ItemXMLTag th {
 
 /* <-- PAGE: #list-of-forms-page  */
 
+/* PAGE: BRAND EDITOR --> */
+
+.BrandEditor .go-top {
+  float: right;
+}
+.BrandEditor .form-section > h2 {
+  display: inline-block;
+}
+
 /* PAGE: EMAIL TEMPLATE --> */
 
 div.ApplicationEmailWorkflow div#ApplicantsID {
