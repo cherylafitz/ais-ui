@@ -1,4 +1,5 @@
 /* Notice etc boxes--> */
+
 div.alertBox,
 [class$="-box"] {
   color: #000;
@@ -31,13 +32,11 @@ div.alertBox,
   background-color: #ffe0b3;
   border-color: #ffcc80;
 }
-
 /* makes *-box more prominent */
 [class^="super"][class*="box"] {
   font-weight: bold;
   padding: 1rem 1.25rem;
 }
-
 .noticeBox,
 [class*="notice-box"] {
   border: 2px solid #de6846;
@@ -45,7 +44,6 @@ div.alertBox,
   padding: .75rem 1rem;
   margin: 1em 0;
 }
-
 div.recommendeeBox,
 [class*="recommendee-box"] {
   color: #FFFFFF;
@@ -56,7 +54,6 @@ div.recommendeeBox,
   padding: .75rem 1rem;
   margin: 1em 0;
 }
-
 div.helpBox,
 [class*="help-box"] {
   display: inline-block;
@@ -73,7 +70,6 @@ div.helpBox,
   float: right;
   line-height: 1.0675rem;
 }
-
 div.helpBox img,
 [class*="help-box"] img,
 div.alertBox img,
@@ -82,7 +78,6 @@ div.alertBox img,
   float: left;
   height: 17px;
 }
-
 div.deadlineBox,
 [class$="deadline-box"] {
   background-color: #ffc8b3;
@@ -102,6 +97,5 @@ div.deadlineBox span.timeZone,
 [class$="deadline-box"] span.timeZone {
   font-weight: normal;
 }
-
 
 /* <-- notice boxes */  

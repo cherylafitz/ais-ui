@@ -50,7 +50,6 @@ td a.file-download[href$=".xlsx"] {
 td a.file-download[href$=".docx"] {
   background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
 }
-
 /* REMOVE?? --> */
 table td div.PDFDownload,
 table td div.PDFDownloadDescription,
