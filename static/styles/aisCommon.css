@@ -121,425 +121,6 @@ div.NoEvaluationQueuesAvailable {
 	padding: 1rem;
 }
 
-
-/* <-- <code> STYLES */
-/* START DETAILS STYLES --> */
-details {
-  margin: .75em 0 1em;
-}
-details > summary {
-  display: inline-block;
-  background: #d0dae1;
-  padding: .25em 1em .25em 2em;
-  border-radius: 2px;
-  position: relative;
-}
-details section,
-details .details-content {
-  padding: 1rem 1.25rem;
-  background: #eff3f5;
-  /* FIX! */
-  /*display: inline-block;*/
-  border-radius: 0 2px 2px 2px;
-}
-details[open] summary {
-  border-radius: 2px 2px 0 0;
-}
-details > summary:hover {
-  cursor: pointer;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-details > summary::before {
-  content: "";
-  border-style: solid;
-  border-width: 3px 3px 0 0;
-  border-color: currentColor;
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background: transparent;
-  width: .625em;
-  height: .625em;
-  position: absolute;
-  /* needs to offset hidden half of square */
-  left: calc(.75em - 2px);
-  top: 33%;
-}
-details[open] > summary::before {
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-  /* needs to offset hidden half of square */
-  top: 30%;
-  left: .75em;
-}
-
-/* BASE DETAILS OVERRIDES --> */
-table.RowDisplay details {
-  margin: 0;
-}
-table.RowDisplay details > summary,
-table.RowDisplay details > .details-content {
-  background-color: transparent;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-details details section,
-fieldset details section,
-fieldset details .details-content {
-  background-color: #eff3f5;
-} 
-details details .details-content {
-  background-color: #e0e7eb;
-}
-details details > summary,
-fieldset details > summary {
-  background-color: #c1cdd7;
-}
-/* <-- BASE DETAILS OVERRIDES */
-/* DELETE AFTER MARCOS CSS IS REMOVED --> */
-div.ApplicantApplicationTemplateEditor details > summary ~ section {
-  padding: .5rem 1.5rem 1.25rem;
-  background: #e0e6eb;
-  background: #eff3f5;
-  border-radius: 0 2px 2px 2px;
-  border: none;
-  border-top: 1px solid #d0dae1;
-}
-div.ApplicantApplicationTemplateEditor div details > summary {
-  border: none;
-  font-weight: normal;
-  position: relative;
-  font-size: 1rem;
-  line-height: 1.125rem;
-  display: inline flow-root list-item;
-  margin-left: .75rem;
-  display: inline-block;
-  background: #d0dae1;
-  padding: .25em 1em .25em 2em;
-  border-radius: 2px;
-  position: relative;
-}
-/* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
-
-details.details_1 {
-  padding: 0 .75rem;
-  width: 36rem;
-  max-width: 100%;
-  border-bottom: 1px solid #90abc1;
-}
-details.details_1 > summary {
-  /* overrides for base styles --> */
-  background-color: transparent;
-  border-radius: 0;
-  padding: .5em 1em .5em 0;
-  display: block;
-  /* <-- overrides for base styles */
-  font-weight: bold;
-}
-details.details_1 summary::before, 
-details.details_1 summary::after {
-  /* overrides for base styles --> */
-  border: 0;
-  height: 2px;
-  width: .75rem;
-  top: 50%;
-  right: 0;
-  left: initial;
-  background-color: currentColor;
-  /* <-- overrides for base styles */
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-details.details_1 summary::after {
-  position: absolute;
-  content: "";
-}
-details.details_1 summary::before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-details.details_1[open] summary::before {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-} 
-details.details_1:last-of-type {
-  margin-bottom: 1.5rem;
-}
-
-details.details_1 section, 
-details.details_1 .details-content {
-    background-color: transparent;
-    padding: 1rem 0;
-}
-/* <-- END DETAILS STYLES */
-
-/* DOWNLOADS --> */
-
-.Content .PDFDownload,
-.Content .ExcelDownload,
-.pdf-download,
-.excel-download,
-.word-download,
-.file-download a,
-td a.file-download {
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: auto 1.5rem;
-  line-height: 1.5;
-  display:block;
-  margin: 1em;
-  padding-left: 2.25rem;
-}
-.file-download a,
-td a.file-download {
-  display: inline-block;
-  margin: 0 1rem; /* inline block counts stacking margins */
-}
-td a.file-download {
-  margin: 0;
-}
-/* Need .Content to override .Content a....should make this less specific eventually */
-.Content .file-download a,
-.Content .file-download a:hover,
-.Content .file-download a:active,
-.Content td a.file-download,
-.Content td a.file-download:hover,
-.Content td a.file-download:active {
-  text-decoration: underline;
-  border-bottom-width: 0;
-}
-.Content .PDFDownload,
-.pdf-download,
-.file-download [href$=".pdf"],
-td a.file-download[href$=".pdf"] {
-  background-image: url(../../../../ais/common/pdficon_small.png);
-}
-.Content .ExcelDownload,
-.excel-download,
-.file-download [href$=".xlsx"],
-td a.file-download[href$=".xlsx"] {
-  background-image: url(../../../../ais/common/Excelicon_small.png);
-}
-.word-download,
-.file-download [href$=".docx"],
-td a.file-download[href$=".docx"] {
-  background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
-}
-
-/* REMOVE?? --> */
-table td div.PDFDownload,
-table td div.PDFDownloadDescription,
-table td div.ExcelDownload,
-table td div.ExcelDownloadDescription {
-  margin-top: 1em;
-  margin-right: 1em;
-}
-/* <-- REMOVE?? */
-
-/* <-- DOWNLOADS */
-
-/* FORMS --> */
-
-.form-input,
-.generated-field {
-  margin-bottom: .25rem;
-/*  display: flex;
-  flex-shrink: 0;
-  flex-flow: row wrap;*/
-}
-.form-input label,
-.generated-field .label {
-  display: inline-block;
-  min-width: 12rem;
-  padding-right: .5rem;
-}
-.generated-field .preview,
-.form-input input,
-.form-input textarea,
-.form-input select {
-	margin-bottom: .5rem;
-	min-width: 14rem;
-	display: inline-block;
-}
-.generated-field .preview {
-	border: 1px solid #e6e6e6;
-}
-.form-input label,
-.generated-field .label {
-}
-.form-input label ~ .ajax-observe-field {
-  display: inline-block;
-}
-.form-section {
-	border: 1px solid #d5d5da;
-	border-radius: 2px;
-	padding: 1rem;
-	margin: 1rem 0;
-}
-.form-section:first-of-type {
-	margin-top: 2rem;
-}
-.generated-field .preview {
-	border: 1px solid #e6e6e6;
-	padding: .25rem .5rem;
-}
-
-
-/* <-- FORMS */
-/* TAGS --> */
-
-[class*="-tag"] {
-	padding: 0 .25rem;
-	font-size: .75rem;
-	margin: 0 .25rem;
-	border-radius: 2px;
-}
-.info-tag {
-	background-color: #bfeaf7;
-}
-.info-tag-1 {
-	background-color: #f7d9fd;
-}
-.info-tag-2 {
-	background-color: #d0d0fb;
-}
-.info-tag-3 {
-	background-color: #d0fbd3;
-}
-.alert-tag {
-	background-color: #fbcec7;
-}
-
-/* <-- TAGS */
-
-/* START BASE STYLES --> */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-
-@charset "UTF-8";
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-html, 
-body {
-  height: 100%;
-  margin: 0;
-  font-size: 100%;
-}
-
-/* <-- END BASE STYLES */
-/* ALERTS, NOTICES, AND WARNINGS --> */
-
-.Alert {
-  display: inline-block;
-  color: #000;
-  padding: .5rem .75rem;
-  border-radius: 2px;
-  margin: .25rem 0 1rem;
-  border: 1px solid #ffc8b3;
-  background-color: #ffdacc;
-}
-
-/* note: pare down this list eventually and use general alert/warning/notice classes */
-div.NoAssignmentsPendingConfirmation,
-div.ToUnassignFromEvaluators,
-div.NoEvaluationQueuesAvailable,
-div.NoAvailableForms,
-div.NoApplicationsAvailable,
-div.NoTemplatesAvailable,
-div.ListOfBrands .NoBrands,
-div.NoDateItemsToCustomize,
-div.NoDeadlines,
-div.NoDomains,
-div.NoEvaluationQueuesMatchFilter,
-div.NoMenuItems,
-div.NoMenus,
-div.NoPacketTemplates,
-div.NoPermissions,
-div.NoQuestions,
-div.NoAnswers,
-div.NoObjects,
-div.NoRoles,
-div.NoSections,
-div.NoSiteContentItems,
-div.NoForms,
-div.NoUsers,
-div.NoFormsAvailable,
-div.NoEvaluationForms,
-div.AvailableForms div,
-.DeveloperCaution,
-div.OtherBrands
-div.HasFormsInOtherBrandsWarning,
-.ValidationError,
-div.MyForms div.NoFormsStartedOrSubmitted,
-div.MyForms div.NoEvaluationForms  {
-  font-style: normal;
-  color: #c93028;
-  background-color: transparent;
-  font-weight: normal;
-  font-size: .875rem;
-  margin-bottom: .5rem;
-}
-
-div.NoFormsAvailable,
-div.NoAvailableForms,
-div.AvailableForms div,
-div.NoFormsStartedOrSubmitted,
-div.MyForms div.NoFormsStartedOrSubmitted,
-div.MyForms div.NoEvaluationForms,
-div.OtherBrands div.HasFormsInOtherBrandsWarning,
-div.NoEvaluationForms,
-div.NoForms,
-div.NoAvailableForms,
-div.NoEvaluationQueuesAvailable {
-  color: #000;
-}
-
-/* <-- ALERTS, NOTICES, AND WARNINGS */
-
-
-
-/* <code> STYLES--> */
-
-.code-wrapper {
-    background-color: #bfbfbf;
-    color: #fff;
-    padding: 0;
-    margin: .75rem 0;
-    display: inline-block;
-    border-radius: 2px;
-}
-.code-wrapper code {
-	background-color: #4d4d4d;
-	border-radius: 2px;
-	color: #00ffff;
-	display: block;
-	padding: .325rem;
-}
-.code-wrapper .preview,
-.code-wrapper textarea,
-.code-wrapper input[type="text"] {
-	background-color: #fff;
-    border: 2px dashed #00cccc;
-    color: #000;
-    display: block;
-    margin: 0 1rem;
-    padding: .5rem;
-}
-.code-wrapper .preview {
-	border: none;
-	padding: 1rem;
-}
-
 /* <-- <code> STYLES */
 
 /* START DETAILS STYLES --> */
@@ -768,13 +349,29 @@ table td div.ExcelDownloadDescription {
 .form-input,
 .generated-field {
   margin-bottom: .25rem;
+/*  display: flex;
+  flex-shrink: 0;
+  flex-flow: row wrap;*/
 }
 .form-input label,
-.generated-field .label,
-.generated-field .preview {
+.generated-field .label {
   display: inline-block;
-  min-width: 14rem;
+  min-width: 12rem;
   padding-right: .5rem;
+}
+.generated-field .preview,
+.form-input input,
+.form-input textarea,
+.form-input select {
+	margin-bottom: .5rem;
+	min-width: 14rem;
+	display: inline-block;
+}
+.generated-field .preview {
+	border: 1px solid #e6e6e6;
+}
+.form-input label,
+.generated-field .label {
 }
 .form-input label ~ .ajax-observe-field {
   display: inline-block;
@@ -785,6 +382,14 @@ table td div.ExcelDownloadDescription {
 	padding: 1rem;
 	margin: 1rem 0;
 }
+.form-section:first-of-type {
+	margin-top: 2rem;
+}
+.generated-field .preview {
+	border: 1px solid #e6e6e6;
+	padding: .25rem .5rem;
+}
+
 
 /* <-- FORMS */
 /* TAGS --> */
