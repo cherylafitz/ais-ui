@@ -973,7 +973,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   content: none;
 }
 #article-editor-page-id .required label::after {
-  content: "* ";
+  content: " *";
   color: var(--required-red);
   background-color: inherit;
   font-weight: bold;
@@ -981,6 +981,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 #article-editor-page-id .hintForRequired {
   font-size: .875rem;
   font-style: italic;
+  color: var(--required-red);
 }
 #article-editor-page-id .controls-wrapper {
   margin-top: .5rem;

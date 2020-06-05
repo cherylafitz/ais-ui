@@ -1406,13 +1406,13 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
 #article-editor-page-id {
-  padding: 1rem 3rem;
+  padding: 1rem 1rem 1rem 10rem;
 }
 #article-editor-page-id .required::before {
   content: none;
 }
 #article-editor-page-id .required label::after {
-  content: "* ";
+  content: " *";
   color: var(--required-red);
   background-color: inherit;
   font-weight: bold;
