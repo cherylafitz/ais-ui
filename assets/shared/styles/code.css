@@ -16,8 +16,8 @@
 	padding: .325rem;
 }
 .code-wrapper .preview,
-.code-wrapper textarea,
-.code-wrapper input[type="text"] {
+.form-input .code-wrapper textarea,
+.form-input .code-wrapper input {
 	background-color: #fff;
     border: 2px dashed #00cccc;
     color: #000;
