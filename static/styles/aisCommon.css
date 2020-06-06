@@ -348,10 +348,10 @@ table td div.ExcelDownloadDescription {
 
 .form-section {
 	background-color: #f1f1f3;
-	border: 1px solid #d5d5da;
 	border-radius: 2px;
-	padding: 1rem;
+	border: 1px solid #d5d5da;
 	margin: 1rem 0;
+	padding: .75rem 1rem 1rem;
 }
 .form-section:first-of-type {
 	margin-top: 2rem;
@@ -364,45 +364,39 @@ fieldset .form-input,
 fieldset .generated-field  {
 	margin-bottom: .25rem;
 }
-.form-input label,
-.generated-field .label {
+.form-input label:first-child,
+.generated-field .label:first-child {
   padding-right: .5rem;
-	width: 12rem;
+	width: 10rem;
 }
-.form-input label,
-.generated-field .label, 
-.form-input input,
-.form-input textarea,
-.form-input select {
-}
-.form-input label,
 .generated-field .label, 
 .generated-field .preview,
+.generated-field .value,
+.form-input label,
 .form-input input,
 .form-input textarea,
 .form-input select {
 	display: inline-block;
-  font-size: .875rem;
 	max-width: 100%;
-	vertical-align: top;
 	padding: .125rem .25rem;
+	vertical-align: top;
+  font-size: .875rem;
 }
-
-.form-input label,
-.generated-field .label {
+.form-input input[type=checkbox] ~ label,
+.form-input inpt[type=radio] ~ label {
+	float: none; /* override */
+	margin: 0 .25rem 0 0;
 }
 .form-input label ~ .ajax-observe-field {
   display: inline-block;
 }
 .generated-field .preview {
 	background-color: #fff;
-	border: 1px solid #cecece;
 	border-radius: 2px;
-	min-width: 14rem;
+	border: 1px solid #cecece;
 	min-height: 1.25rem;
-	/*padding: .25rem .5rem;*/
+	min-width: 14rem;
 }
-
 
 /* <-- FORMS */
 /* TABLE ROW COUNTER --> */
@@ -2265,13 +2259,11 @@ td input[type="search"] {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: 0 2px;
+  padding: .125rem .25rem;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
 select {
-  /* remove permanently after testing */
-  /*margin-bottom: .25rem;*/
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
@@ -2849,10 +2841,6 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
 .CheckboxedConditionItem {
   padding-bottom: 3px;
 }
-/* new form structure */
-.form-input input[type=checkbox] {
-  margin: .125rem .5rem .125rem 0;
-}
 input[type=checkbox] {
   cursor: pointer;
   -webkit-appearance: none;
@@ -2912,7 +2900,9 @@ input[type=checkbox][disabled=disabled]:checked:after {
 input[type=checkbox]:checked + label {
   font-weight: bold;
 }
-
+input[type=radio] {
+  box-shadow: none;
+}
 /* COMMUNITIES AND SCHOOLS --> */
 div#CommunityProfile,
 div#SchoolDisplay {
