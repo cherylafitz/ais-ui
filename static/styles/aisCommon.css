@@ -405,6 +405,49 @@ fieldset .generated-field  {
 
 
 /* <-- FORMS */
+/* TABLE ROW COUNTER --> */
+
+table.row-display tbody {
+    counter-reset: rowCounter calc(var(--row-number-start) - 1) ;
+}
+table.row-display tbody > tr {
+    counter-increment: rowCounter;
+}
+table.row-display tbody > tr td.row-number:after {
+  content: counter(rowCounter) ".";
+}
+table.row-display {
+    background-color: #fff;
+    color: #000;
+    font-style: normal;
+    margin: .5rem 0;
+    border-collapse: collapse;
+}
+/*table.row-display thead th,
+table.row-display tbody td {
+    font-size: .875rem;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: normal;
+    padding: .25rem 0.5rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    border: 1px solid #afb2b9;
+}*/
+/*table.row-display thead th {
+    border-top: 2px solid #5f666d;
+    border-bottom: 2px solid #5f666d;
+}*/
+/*table.row-display thead th.row-number,
+table.row-display tbody td.row-number {
+    text-align: right;
+}
+table.row-display thead tr {
+    font-style: normal;
+    font-size: 1rem;
+}*/
+
+/* <-- TABLE ROW COUNTER */
+
 /* TAGS --> */
 
 [class*="-tag"] {
@@ -453,6 +496,7 @@ fieldset .generated-field  {
 COLOR PALETTE:
 dark red : #981727;
 bright red: #c81e32;
+required red: #e62e00;
 light yellow: #FFD590;
 lighter yellow: #ffe2b3;
 dark blue: #29353d;
@@ -473,7 +517,9 @@ medium-yellow: #f8c76d;
 /*
 dark green: #5ba94d
 */
-
+:root {
+  --required-red: #e62e00;
+}
 
 /* RESET CSS --> */
 
@@ -1395,9 +1441,28 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   min-height: calc(100% - 174px);
   display: flex;
 }
-.ArticleEditor {
-  padding-bottom: 1rem;
+/* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
+#article-editor-page-id {
+  padding: 1rem 1rem 1rem 10rem;
 }
+#article-editor-page-id .required::before {
+  content: none;
+}
+#article-editor-page-id .required label::after {
+  content: " *";
+  color: var(--required-red);
+  background-color: inherit;
+  font-weight: bold;
+}
+#article-editor-page-id .hintForRequired {
+  font-size: .875rem;
+  font-style: italic;
+  color: var(--required-red);
+}
+#article-editor-page-id .controls-wrapper {
+  margin-top: .5rem;
+}
+/* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
 .SystemAnnouncementsWrapper + div.ArticleViewer,
 .SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
   position: relative;
