@@ -1789,13 +1789,11 @@ td input[type="search"] {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: 0 2px;
+  padding: .125rem .25rem;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
 select {
-  /* remove permanently after testing */
-  /*margin-bottom: .25rem;*/
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
@@ -2373,10 +2371,6 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
 .CheckboxedConditionItem {
   padding-bottom: 3px;
 }
-/* new form structure */
-.form-input input[type=checkbox] {
-  margin: .125rem .5rem .125rem 0;
-}
 input[type=checkbox] {
   cursor: pointer;
   -webkit-appearance: none;
@@ -2436,7 +2430,9 @@ input[type=checkbox][disabled=disabled]:checked:after {
 input[type=checkbox]:checked + label {
   font-weight: bold;
 }
-
+input[type=radio] {
+  box-shadow: none;
+}
 /* COMMUNITIES AND SCHOOLS --> */
 div#CommunityProfile,
 div#SchoolDisplay {

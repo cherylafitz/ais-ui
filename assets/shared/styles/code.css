@@ -4,7 +4,7 @@
     background-color: #bfbfbf;
     color: #fff;
     padding: 0;
-    margin: .75rem 0;
+    margin: 0 0 .5rem 0;
     display: inline-block;
     border-radius: 2px;
 }
@@ -16,8 +16,8 @@
 	padding: .325rem;
 }
 .code-wrapper .preview,
-.code-wrapper textarea,
-.code-wrapper input[type="text"] {
+.form-input .code-wrapper textarea,
+.form-input .code-wrapper input {
 	background-color: #fff;
     border: 2px dashed #00cccc;
     color: #000;
