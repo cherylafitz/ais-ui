@@ -428,6 +428,7 @@ div.SectionDisplay  table.AnswerTable div.CheckboxMatrix tr td  {
 }
 td.ERXMatrixTableCell {
   padding-right: 2em;
+  padding-left: 4px; /* TEMP */
 }
 div.Content div.SectionDisplay table tr td input[type="text"] {
   max-width: 95%;
