@@ -1,5 +1,9 @@
 /* TABLES --> */
 
+table {
+  border-collapse: collapse;
+}
+
 div.Content div.Rowdisplay {
   margin: 0 auto;
 }

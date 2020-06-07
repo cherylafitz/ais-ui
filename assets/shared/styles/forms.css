@@ -48,8 +48,9 @@ fieldset .generated-field  {
 	margin-left: .25rem;
 }
 .form-input input[type=checkbox],
-.form-input inpt[type=radio] {
-
+.form-input input[type=radio] {
+	margin: .125rem .25rem;
+	vertical-align: inherit;
 }
 .form-input input[type=checkbox] ~ label,
 .form-input inpt[type=radio] ~ label {
