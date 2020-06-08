@@ -1793,6 +1793,12 @@ td input[type="search"] {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
+input[title="ERXSortOrder.sortBy"] {
+  padding: 0;
+  width: 11px;
+  height: 14px;
+  margin-left: 2px;
+}
 select {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
