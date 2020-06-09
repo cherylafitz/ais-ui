@@ -1,4 +1,4 @@
-/* TABLE ROW COUNTER --> */
+/* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
     counter-reset: rowCounter calc(var(--row-number-start) - 1) ;
@@ -16,6 +16,13 @@ table.row-display {
     margin: .5rem 0;
     border-collapse: collapse;
 }
+table.RowDisplay td.rowNumber,
+table.RowDisplay td.row-number,
+table.row-display td.rowNumber,
+table.row-display td.row-number {
+   text-align: right;
+}
+
 /*table.row-display thead th,
 table.row-display tbody td {
     font-size: .875rem;
@@ -39,4 +46,4 @@ table.row-display thead tr {
     font-size: 1rem;
 }*/
 
-/* <-- TABLE ROW COUNTER */
+/* <-- TABLE ROW NUMBERS */
