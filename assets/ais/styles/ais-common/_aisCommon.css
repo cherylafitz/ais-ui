@@ -2530,6 +2530,38 @@ td.dataEntryIsDisabled {
 
 /* <-- PAGE: PROGRAM SETTINGS */
 
+/* PAGE: CUSTOM DATA ENTRY FORM EDITOR --> */
+
+.CustomDataEntryFormEditor #outerMostUpdatContainerID {
+  height: initial; /* override */
+}
+.CustomDataEntryFormEditor #dropBlockContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+/* Add to shared once used elsewhere: */
+.draggablePart, 
+.draggableField {
+  cursor: pointer;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+  border: 1px solid #cecece;
+  padding: 0.25rem;
+}
+.CustomDataEntryFormEditor .draggablePart {
+  margin: 0.5em 0em 0.5em 0em;
+}
+.CustomDataEntryFormEditor img.draggable {
+  float: right;
+}
+.CustomDataEntryFormEditor .removeField {
+  float: right;
+}
+/* <-- PAGE: CUSTOM DATA ENTRY FORM EDITOR */
+
 /* PAGE: APPLICATION SEARCH --> */
 
 
