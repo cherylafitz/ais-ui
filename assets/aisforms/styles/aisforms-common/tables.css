@@ -207,10 +207,6 @@ table.RowDisplay tr.submitted_even a:hover,
 .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
   white-space: nowrap;
 }
-table.RowDisplay td.DeadlineToApply,
-table.RowDisplay td.Available {
-  font-size: .9em;
-}
 form table.RowDisplay.Evaluators,
 table.RowDisplay.Evaluators {
   margin: 1em;
