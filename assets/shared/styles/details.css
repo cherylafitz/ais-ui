@@ -1,20 +1,22 @@
 /* START DETAILS STYLES --> */
 details {
-  margin: .75em 0 1em;
+  margin: .75rem 0;
 }
 details > summary {
   display: inline-block;
   background: #d0dae1;
-  padding: .25em 1em .25em 2em;
+  padding: .125em .5em .125em 1.5em;
   border-radius: 2px;
   position: relative;
 }
 details section,
 details .details-content {
-  padding: 1rem 1.25rem;
+  padding: .5em .75em .75em;
   background: #eff3f5;
   /* FIX! */
-  /*display: inline-block;*/
+  width: fit-content;
+  width: -moz-fit-content; 
+  width: -webkit-fit-content;
   border-radius: 0 2px 2px 2px;
 }
 details[open] summary {
@@ -36,12 +38,12 @@ details > summary::before {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   background: transparent;
-  width: .625em;
-  height: .625em;
+  width: .5625em; /* 9px of 1em */
+  height: .5625em; /* 9px of 1em */
   position: absolute;
   /* needs to offset hidden half of square */
-  left: calc(.75em - 2px);
-  top: 33%;
+  left: calc(.5em - 2px);
+  top: 30%;
 }
 details[open] > summary::before {
   -ms-transform: rotate(135deg);
@@ -49,8 +51,8 @@ details[open] > summary::before {
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
   /* needs to offset hidden half of square */
-  top: 30%;
-  left: .75em;
+  top: 24%;
+  left: .5em;
 }
 /* BASE DETAILS OVERRIDES --> */
 table.RowDisplay details,
