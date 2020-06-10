@@ -1,0 +1,14 @@
+/* TABLE SORTER --> */
+
+th .SortColumn,
+th .sort-column {
+	margin-right: .125em;
+}
+.sort-wrapper input,
+input[title="ERXSortOrder.sortBy"] {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+/* <-- TABLE SORTER */

@@ -838,10 +838,6 @@ div.FileInboxLink {
   width: initial;
   padding: 0 0 .5rem 0;
 }
-th.TemplateName a.SortColumn,
-th.TemplateName div {
-  float: left;
-}
 th.TemplateName div {
   margin-right: .5em;
 }
