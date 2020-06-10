@@ -465,6 +465,20 @@ table.row-display thead tr {
 
 /* <-- TABLE ROW NUMBERS */
 
+/* TABLE SORTER --> */
+
+th .SortColumn,
+th .sort-column {
+	margin-right: .125em;
+}
+.sort-wrapper input,
+input[title="ERXSortOrder.sortBy"] {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+/* <-- TABLE SORTER */
 /* TAGS --> */
 
 [class*="-tag"] {
@@ -2286,12 +2300,7 @@ td input[type="search"] {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
-input[title="ERXSortOrder.sortBy"] {
-  padding: 0;
-  width: 11px;
-  height: 14px;
-  margin-left: 2px;
-}
+
 select {
   font-size: .875rem;
   border: 1px solid #c0bfbf;

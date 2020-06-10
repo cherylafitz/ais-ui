@@ -465,6 +465,20 @@ table.row-display thead tr {
 
 /* <-- TABLE ROW NUMBERS */
 
+/* TABLE SORTER --> */
+
+th .SortColumn,
+th .sort-column {
+	margin-right: .125em;
+}
+.sort-wrapper input,
+input[title="ERXSortOrder.sortBy"] {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+/* <-- TABLE SORTER */
 /* TAGS --> */
 
 [class*="-tag"] {
@@ -1330,10 +1344,6 @@ div.FileInboxLink {
   font-size: .875rem;
   width: initial;
   padding: 0 0 .5rem 0;
-}
-th.TemplateName a.SortColumn,
-th.TemplateName div {
-  float: left;
 }
 th.TemplateName div {
   margin-right: .5em;
