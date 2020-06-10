@@ -664,11 +664,11 @@ div.ForgottenPassword table#login tr.header th {
 #AirApplicationSearchFormID table.Search.rolodex,
 #UserSearch table.Search.rolodex {
   background-color: #fff;
-/*  -webkit-box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);
-  -moz-box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);
-  box-shadow: 0 0 6px 0 rgba(50, 50, 50, 0.25);*/
   margin: 1em 0;
   border-collapse: initial;
+}
+table.rolodex th {
+  font-weight: normal;
 }
 #UserSearch table.Search th {
   text-align: left;
@@ -1983,7 +1983,7 @@ div.CheckboxMatrix tr td {
 /*WARNINGS and NOTICES-->*/
 tr.LoginSearch th.UserName div.hint,
 tr.LoginSearch th.Email div.hint,
-div.hint {
+.hint {
     font-size: 0.8em;
     font-style: italic;
 }
