@@ -471,7 +471,7 @@ table.row-display thead tr {
 
 th .SortColumn,
 th .sort-column {
-	margin-right: .125em;
+	margin-right: .25em;
 }
 .sort-wrapper input,
 input[title="ERXSortOrder.sortBy"] {
