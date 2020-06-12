@@ -425,29 +425,9 @@ a,
 }
 .Content a:hover,
 .Content a:active {
-  color: #000;
-}
-a:visited,
-a:hover input,
-a:active input,
-a:hover img,
-a:active img {
-  border: none;
-}
-a.imgLink,
-a.imgLink:hover {
-  border: none;
-}
-#PrivacyPolicy a,
-#CookieDeclaration a {
-  color: #444;
+  color: #12293b;
+  text-decoration: none;
 }	
-.IsLoggedIn #CookieDeclaration a,
-.IsLoggedIn #PrivacyPolicy a {
-  /*TEMP */
-    color: #e9ead9;
-    border-bottom-color: #e9ead9;
-}
 /* add to separate file for bg-colors? --> */
 .bg-blue01 a,
 .bg-blue02 a,
