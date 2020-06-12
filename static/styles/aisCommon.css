@@ -426,7 +426,6 @@ a,
 .Content a:hover,
 .Content a:active {
   color: #12293b;
-  text-decoration: none;
 }	
 /* add to separate file for bg-colors? --> */
 .bg-blue01 a,
