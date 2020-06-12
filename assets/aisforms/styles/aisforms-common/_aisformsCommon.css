@@ -84,32 +84,11 @@ h1 {
 h2 {
   font-size: 1.25rem;
 }
-.Content a {
-  color: #296089;
-  text-decoration: none;
-  border-bottom: 1px solid #296089;
-}
-.Content a:hover  {
-  color: #000;
-  border-bottom: 2px solid #000;
-}
-.Content a:active {
-  color: #000;
-  border-bottom: 2px solid #000;
-}
 
-a:visited,
-a:hover input,
-a:active input,
-a:hover img,
-a:active img {
-  border: none;
-}
 
-a.imgLink,
-a.imgLink:hover {
-  border: none;
-}
+
+
+
 
 /* typography -->*/
 
@@ -129,11 +108,6 @@ a.imgLink:hover {
 }
 .bg-blue03 {
   background-color: #3d4f5c;
-}
-.bg-blue01 a,
-.bg-blue02 a,
-.bg-blue03 a {
-  color: #c4dcee;
 }
 .bg-blue01,
 .bg-blue02,
@@ -518,16 +492,8 @@ a.LinkToPreviousPage {
 .IsNotLoggedIn #PrivacyPolicy {
   margin-right: 2rem;
 }
-#PrivacyPolicy a,
-#CookieDeclaration a {
-  color: #444;
-}
-.IsLoggedIn #CookieDeclaration a,
-.IsLoggedIn #PrivacyPolicy a {
-  /*TEMP */
-    color: #e9ead9;
-    border-bottom-color: #e9ead9;
-}
+
+
 .IsLoggedIn #footer img#LoginPage {
     display: none;
 }
@@ -1251,11 +1217,9 @@ table.TemplateTable tr td {
 }
 /*.Content*/ .Tips a {
   color: #c4dcee;
-  border-bottom: 1px solid #c4dcee;
 }
 /*.Content*/ .Tips a:hover {
   color: #FFA391;
-  border-bottom: 1px solid #FFA391;
 }
 span.aisEmail {
   word-wrap: break-word;
@@ -1887,6 +1851,7 @@ div#footer div#CodivusAttribution {
 #codivus a {
   color: #c4dcee;
 }
+/* remove??? */
 td.logoCell a {
   border-bottom: none;
 }
@@ -2387,10 +2352,6 @@ body#body--environment-staging:after {
     line-height: 1.5;
     padding-left: 1em;
   }
-  div.SectionsRowDisplay div.SectionOperations a {
-    border-bottom: 0;
-    text-decoration: underline;
-  }
   div.SectionsRowDisplay div.TemplateOperations,
   div.SectionsRowDisplay div.SectionOperations {
     width: 28%;
@@ -2434,10 +2395,6 @@ body#body--environment-staging:after {
     display: block;
     line-height: 1.5;
     padding-left: 1em;
-  }
-  div.SectionsRowDisplay div.SectionOperations a {
-    border-bottom: 0;
-    text-decoration: underline;
   }
   div.SectionsRowDisplay div.TemplateOperations,
   div.SectionsRowDisplay div.SectionOperations {

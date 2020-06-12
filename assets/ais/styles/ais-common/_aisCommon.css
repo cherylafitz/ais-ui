@@ -269,9 +269,7 @@ div.StudentsRequiringHealthAnswers h4.PendingCancellationForHealthReasons {
   color: #981727;
 }
 
-a {
-  color: #296089;
-}
+
 /* <---- warning text */
 
 /* <-- TYPOGRAPHY */
@@ -402,9 +400,7 @@ body .divider {
 #tippyTopOfPage a.showLink:hover,
 #tippyTopOfPage a.hideLink:hover,
 .topNavInTable .infoBlock a.logoutLink:hover {
-  color: #3b89c4;
-  text-decoration: none;
-  border-bottom: 1px solid;
+  color: #89b8dc;
 }
 .topNavInTable .infoBlock a.logoutLink:hover {
   color: #f4ab33;
@@ -559,7 +555,6 @@ table.pageStructure .leftNav .PriorPage a:hover,
 table.pageStructure .leftNav .ListPage a:hover {
   background-color: #e0e6eb;
   background-color: rgba(255, 255, 255, 0.1);
-  border-bottom: none;
 }
 dl.inLeftNav dt {
   font-weight: bold;
@@ -636,9 +631,10 @@ table.pageStructure tr.contentArea td.leftNav .Body dl {
 }
 table.pageStructure tr.contentArea td.leftNav {
   background: #33424d;
-  -webkit-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  border: none;
+/*  -webkit-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
   -moz-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
-  box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);*/
 }
 dl.inLeftNav dt,
 .Body ul.inLeftNav li.header,
@@ -1740,10 +1736,6 @@ div.AIRAdminSearchForApplications table.Search.rolodex {
 }
 td input {
   font-size: .875rem;
-}
-table a,
-fieldset a {
-  color: #296089;
 }
 table th a {
   color: #000;
@@ -3404,16 +3396,11 @@ body > #priorPage a {
 .transparent {
   background-color: transparent;
 }
-.bg-blue01 a {
-  color: #c4dcee;
-}
 .bg-blue02 {
   background-color: #33424d;
   color: #fff;
 }
-.bg-blue02 a {
-  color: #c4dcee;
-}
+
 
 /* <- bg color classes */
 
