@@ -4,10 +4,47 @@ a,
 .Content a {
   color: #296089;
 }
+a:hover,
 .Content a:hover,
 .Content a:active {
   color: #12293b;
+  text-decoration: none;	
 }	
+/*table a:hover,
+fieldset a:hover,
+a.showLink:hover,
+a.hideLink:hover {
+  color: #3b89c4;
+  text-decoration: none;
+}*/
+table.RowDisplay a,
+table.row-display a {
+  color: #000;
+}
+table.RowDisplay a:hover,
+table.row-display a:hover {
+  color: #CC3333;
+}
+table.RowDisplay a:active,
+table.row-display a:active {
+  color: #73382C;
+}
+/* DELETE? --> */
+/*table.RowDisplay tr.submitted_odd a:hover,
+.submitted_odd a:hover,
+table.RowDisplay tr.submitted_even a:hover,
+.submitted_even a:hover {
+  color: #A14C3A;
+  border-bottom: 1px solid #A14C3A;
+}
+table.row-display tr.submitted_odd a:hover,
+.submitted_odd a:hover,
+table.row-display tr.submitted_even a:hover,
+.submitted_even a:hover {
+  color: #A14C3A;
+  border-bottom: 1px solid #A14C3A;
+}*/
+
 /* add to separate file for bg-colors? --> */
 .bg-blue01 a,
 .bg-blue02 a,

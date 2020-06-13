@@ -163,25 +163,7 @@ table.report tr:first-of-type {
 table.RowDisplay tr.headerRow th.ApplicationCount {
   border-bottom-color: #afb1b9;
 }
-table.RowDisplay tr.headerRow th a,
-table.RowDisplay thead tr th a,
-table.RowDisplay td a {
-  color: #000000;
-  text-decoration: underline;
-  border-bottom: none;
-}
-table.RowDisplay tr.headerRow th a:hover,
-table.RowDisplay thead tr th a:hover,
-table.RowDisplay td a:hover {
-  text-decoration: none;
-  border-bottom: none;
-  color: #C75D48;
-}
-table.RowDisplay tr.headerRow th a:active,
-table.RowDisplay thead tr th a:active,
-table.RowDisplay td a:active {
-  color: #73382C;
-}
+
 #AppStatisticsByProgramYear table.RowDisplay tr:nth-child(2n+3),
 #AppStatisticsByProgramYear table.RowDisplay tbody tr:nth-child(2n+3),
 table.RowDisplay tr:nth-child(2n+2),
@@ -216,13 +198,7 @@ table.RowDisplay  tbody tr.submitted_even /* .submitted_even, table.RowDisplay t
   background-color: #B8C977;
   color: #000;
 }
-table.RowDisplay tr.submitted_odd a:hover,
-.submitted_odd a:hover,
-table.RowDisplay tr.submitted_even a:hover,
-.submitted_even a:hover {
-  color: #A14C3A;
-  border-bottom: 1px solid #A14C3A;
-}
+
 table.RowDisplay td {
   margin: 0.25rem 0 0.25rem 0;
 }
@@ -442,25 +418,7 @@ table.report tr:first-of-type {
 table.row-display tr.headerRow th.ApplicationCount {
   border-bottom-color: #afb1b9;
 }
-table.row-display tr.headerRow th a,
-table.row-display thead tr th a,
-table.row-display td a {
-  color: #000000;
-  text-decoration: underline;
-  border-bottom: none;
-}
-table.row-display tr.headerRow th a:hover,
-table.row-display thead tr th a:hover,
-table.row-display td a:hover {
-  text-decoration: none;
-  border-bottom: none;
-  color: #C75D48;
-}
-table.row-display tr.headerRow th a:active,
-table.row-display thead tr th a:active,
-table.row-display td a:active {
-  color: #73382C;
-}
+
 #AppStatisticsByProgramYear table.row-display tr:nth-child(2n+3),
 #AppStatisticsByProgramYear table.row-display tbody tr:nth-child(2n+3),
 table.row-display tr:nth-child(2n+2),
@@ -495,13 +453,7 @@ table.row-display  tbody tr.submitted_even /* .submitted_even, table.row-display
   background-color: #B8C977;
   color: #000;
 }
-table.row-display tr.submitted_odd a:hover,
-.submitted_odd a:hover,
-table.row-display tr.submitted_even a:hover,
-.submitted_even a:hover {
-  color: #A14C3A;
-  border-bottom: 1px solid #A14C3A;
-}
+
 table.row-display td {
   margin: 0.25rem 0 0.25rem 0;
 }

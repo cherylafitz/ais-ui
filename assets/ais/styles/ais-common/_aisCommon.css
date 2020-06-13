@@ -405,6 +405,10 @@ body .divider {
 .topNavInTable .infoBlock a.logoutLink:hover {
   color: #f4ab33;
 }
+a.showLink:hover, 
+a.hideLink:hover {
+  border: none;
+}
 
 .topNavInTable td.nameBlock {
   background-image: url('https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg');
@@ -1736,16 +1740,6 @@ div.AIRAdminSearchForApplications table.Search.rolodex {
 }
 td input {
   font-size: .875rem;
-}
-table th a {
-  color: #000;
-}
-table a:hover,
-fieldset a:hover,
-a.showLink:hover,
-a.hideLink:hover {
-  color: #3b89c4;
-  text-decoration: none;
 }
 tbody tr.sectionDivider {
   background-color: transparent;
