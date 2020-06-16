@@ -29,13 +29,14 @@ table.row-display a:active {
 .bg-blue03 a {
   color: #c4dcee;
 }
-
-/*[class*="-link"],
-[class*="-button"],*/
-[class*="-link"]:not(:last-child),
-[class*="-button"]:not(:last-child) {
+.controls-wrapper [class*="-link"]:not(:last-child),
+.controls-wrapper [class*="-button"]:not(:last-child),
+.page-commands [class*="-link"]:not(:last-child),
+.page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .5rem;
 }
+
+
 
 
 
