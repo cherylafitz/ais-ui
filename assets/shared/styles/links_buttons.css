@@ -1,0 +1,43 @@
+/* LINKS --> */
+
+a,
+.Content a {
+  color: #296089;
+}
+a:hover,
+.Content a:hover,
+.Content a:active {
+  color: #12293b;
+  text-decoration: none;	
+}	
+table.RowDisplay a,
+table.row-display a {
+  color: #000;
+}
+table.RowDisplay a:hover,
+table.row-display a:hover {
+  color: #CC3333;
+}
+table.RowDisplay a:active,
+table.row-display a:active {
+  color: #73382C;
+}
+
+/* add to separate file for bg-colors? --> */
+.bg-blue01 a,
+.bg-blue02 a,
+.bg-blue03 a {
+  color: #c4dcee;
+}
+.controls-wrapper [class*="-link"]:not(:last-child),
+.controls-wrapper [class*="-button"]:not(:last-child),
+.page-commands [class*="-link"]:not(:last-child),
+.page-commands [class*="-button"]:not(:last-child)  {
+  margin-right: .5rem;
+}
+
+
+
+
+
+/* <-- LINKS 
