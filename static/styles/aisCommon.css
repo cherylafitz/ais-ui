@@ -123,50 +123,6 @@ div.NoEvaluationQueuesAvailable {
 
 /* <-- <code> STYLES */
 
-/* LINKS --> */
-
-a,
-.Content a {
-  color: #296089;
-}
-a:hover,
-.Content a:hover,
-.Content a:active {
-  color: #12293b;
-  text-decoration: none;	
-}	
-table.RowDisplay a,
-table.row-display a {
-  color: #000;
-}
-table.RowDisplay a:hover,
-table.row-display a:hover {
-  color: #CC3333;
-}
-table.RowDisplay a:active,
-table.row-display a:active {
-  color: #73382C;
-}
-
-/* add to separate file for bg-colors? --> */
-.bg-blue01 a,
-.bg-blue02 a,
-.bg-blue03 a {
-  color: #c4dcee;
-}
-.controls-wrapper [class*="-link"]:not(:last-child),
-.controls-wrapper [class*="-button"]:not(:last-child),
-.page-commands [class*="-link"]:not(:last-child),
-.page-commands [class*="-button"]:not(:last-child)  {
-  margin-right: .5rem;
-}
-
-
-
-
-
-/* <-- LINKS 
-
 /* START DETAILS STYLES --> */
 details {
   margin: .75rem 0;
@@ -212,7 +168,7 @@ details > summary::before {
   position: absolute;
   /* needs to offset hidden half of square */
   left: calc(.5em - 2px);
-  top: 30%;
+  top: 33%;
 }
 details[open] > summary::before {
   -ms-transform: rotate(135deg);
@@ -461,6 +417,50 @@ fieldset .generated-field  {
 }
 
 /* <-- FORMS */
+/* LINKS --> */
+
+a,
+.Content a {
+  color: #296089;
+}
+a:hover,
+.Content a:hover,
+.Content a:active {
+  color: #12293b;
+  text-decoration: none;	
+}	
+table.RowDisplay a,
+table.row-display a {
+  color: #000;
+}
+table.RowDisplay a:hover,
+table.row-display a:hover {
+  color: #CC3333;
+}
+table.RowDisplay a:active,
+table.row-display a:active {
+  color: #73382C;
+}
+
+/* add to separate file for bg-colors? --> */
+.bg-blue01 a,
+.bg-blue02 a,
+.bg-blue03 a {
+  color: #c4dcee;
+}
+.controls-wrapper [class*="-link"]:not(:last-child),
+.controls-wrapper [class*="-button"]:not(:last-child),
+.page-commands [class*="-link"]:not(:last-child),
+.page-commands [class*="-button"]:not(:last-child)  {
+  margin-right: .5rem;
+}
+
+
+
+
+
+/* <-- LINKS 
+
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
@@ -2879,10 +2879,6 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
   width: calc(100% - 2rem);
   vertical-align: top;
   margin-left: .25rem;
-}
-.TranscribedQuestionsForApplicant .AnswerByStaff {
-  display: flex;
-  flex-flow: wrap row;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff textarea,
 .TranscribedQuestionsForApplicant .AnswerByStaff .ReasonStaffAnswered {

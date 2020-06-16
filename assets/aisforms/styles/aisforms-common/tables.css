@@ -82,8 +82,7 @@ div.SectionEditor, table.Choices.RowDisplay {
 td.noTableBordersBelowMe table.RowDisplay {
   margin: 0;
 }
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th,
+table.RowDisplay th,
 table.RowDisplay td {
   font-size: .875rem;
   white-space: nowrap;
@@ -115,8 +114,6 @@ div.AIRAdminSearchForApplications div.ApplicationList div table.RowDisplay td  {
 }
 table.RowDisplay tr.headerRow,
 table.RowDisplay thead tr {
-  font-style: normal;
-  font-size: 1rem;
   border-bottom: 2px solid #363a3e;
   border-top: 2px solid #363a3e;
 }
@@ -187,9 +184,6 @@ div#UserHomePage table.RowDisplay td,
 .EvaluatorHomePage table.RowDisplay td,
 .EvaluatorHomePage table.RowDisplay tr.headerRow th  {
   white-space: normal;
-}
-div#UserHomePage table.RowDisplay td {
-  font-size: .875rem;
 }
 div#TemplateListingContainer table.RowDisplay td {
   max-width: 500px;
@@ -275,8 +269,7 @@ div.SectionEditor, table.Choices.row-display {
 td.noTableBordersBelowMe table.row-display {
   margin: 0;
 }
-table.row-display tr.headerRow th,
-table.row-display thead tr th,
+table.row-display th,
 table.row-display td {
   font-size: .875rem;
   white-space: nowrap;
@@ -308,8 +301,6 @@ div.AIRAdminSearchForApplications div.ApplicationList div table.row-display td  
 }
 table.row-display tr.headerRow,
 table.row-display thead tr {
-  font-style: normal;
-  font-size: 1rem;
   border-bottom: 2px solid #363a3e;
   border-top: 2px solid #363a3e;
 }
@@ -371,10 +362,6 @@ td.even.submitted {
 .LiveTemplates table.row-display td.ExtendedDeadlineToApply {
   white-space: nowrap;
 }
-table.row-display td.DeadlineToApply,
-table.row-display td.Available {
-  font-size: .9em;
-}
 form table.row-display.Evaluators,
 table.row-display.Evaluators {
   margin: 1em;
@@ -384,9 +371,6 @@ div#UserHomePage table.row-display td,
 .EvaluatorHomePage table.row-display td,
 .EvaluatorHomePage table.row-display tr.headerRow th  {
   white-space: normal;
-}
-div#UserHomePage table.row-display td {
-  font-size: .875rem;
 }
 div#TemplateListingContainer table.row-display td {
   max-width: 500px;

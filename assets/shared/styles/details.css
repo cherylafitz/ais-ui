@@ -43,7 +43,7 @@ details > summary::before {
   position: absolute;
   /* needs to offset hidden half of square */
   left: calc(.5em - 2px);
-  top: 30%;
+  top: 33%;
 }
 details[open] > summary::before {
   -ms-transform: rotate(135deg);
