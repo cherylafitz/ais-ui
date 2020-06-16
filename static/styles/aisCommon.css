@@ -2880,10 +2880,6 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
   vertical-align: top;
   margin-left: .25rem;
 }
-.TranscribedQuestionsForApplicant .AnswerByStaff {
-  display: flex;
-  flex-flow: wrap row;
-}
 .TranscribedQuestionsForApplicant .AnswerByStaff textarea,
 .TranscribedQuestionsForApplicant .AnswerByStaff .ReasonStaffAnswered {
   width: 100%;
