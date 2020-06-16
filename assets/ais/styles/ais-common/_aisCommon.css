@@ -969,10 +969,6 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   display: flex;
   flex-shrink: 0;
 }
-.ArticleViewer,
-.AlumniHome {
-  max-width: 1200px;
-}
 #navMenu .list-page-and-or-previous-page-link-wrapper {
   text-align: right;
   padding: .5rem .75rem 0;
@@ -1134,7 +1130,6 @@ div#alumnusSummary table.NoteList tr td.note {
   padding: 1rem;
   display: inline-block;
   vertical-align: top;
-  flex: 1;
 }
 .ArticleSearch .ArticleSearch a {
   color: #000;
