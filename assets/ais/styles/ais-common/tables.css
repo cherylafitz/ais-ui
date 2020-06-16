@@ -461,6 +461,9 @@ table.rolodex .row-display td,
 table.rolodex .subTable td > div > div {
   padding: 0.2rem;
 }
+table.rolodex tr {
+  vertical-align: top;
+}
 .HealthQuestions,
 .NewQuestion,
 #ProgramStaffQuestionnaire table.row-display {

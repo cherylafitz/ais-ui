@@ -953,9 +953,12 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 /*ALUMNI only-->*/
 .AlumniHome,
 .ArticleSearch,
+.ArticleViewer,
 .AlumnusNameList,
 .ArticleRowDisplay,
 .AlumnusAddressList,
+.AlumnusRowDisplay,
+.AlumnusSummary,
 .AlumnusEmailRowDisplay,
 .Main,
 .AlumnusEmailList,
@@ -964,6 +967,20 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   position: relative;
   min-height: calc(100% - 174px);
   display: flex;
+  flex-shrink: 0;
+}
+.ArticleViewer,
+.AlumniHome {
+  max-width: 1200px;
+}
+#navMenu .list-page-and-or-previous-page-link-wrapper {
+  text-align: right;
+  padding: .5rem .75rem 0;
+  background: #2c3942;
+}
+#navMenu .previous-page-link {
+  color: #c5dcee;
+  font-size: .75rem;
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
 #article-editor-page-id {
@@ -1016,7 +1033,7 @@ table.rolodex .alumnusSection + tr td {
 /* alumnus summary --> */
 .AddressHistory .English,
 .AddressHistory .Label {
-  background-color: #d7ddbc;
+  background-color: #fff;
 }
 .AddressHistory .subTable {
   background-color: #dbe8f2;
@@ -1031,6 +1048,12 @@ div#alumnusSummary h1 {
   padding: initial;
   margin: initial;
   font-weight: normal;
+}
+div#alumnusSummary table.NoteList tr th.note, 
+div#alumnusSummary table.NoteList tr td.note {
+    width: 40em;
+    max-width: 40em;
+    white-space: normal;
 }
 /* <-- alumnus summary */
 
