@@ -1144,6 +1144,7 @@ div#alumnusSummary table.NoteList tr td.note {
   padding: 1rem;
   display: inline-block;
   vertical-align: top;
+  flex-basis: 1200px;
 }
 .ArticleSearch .ArticleSearch a {
   color: #000;
