@@ -1078,6 +1078,7 @@ div#alumnusSummary table.NoteList tr td.note {
   -moz-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
   box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
   margin: 0;
+  flex-shrink: 0;
 }
 #nav li a {
   display: block;
