@@ -1,85 +1,8 @@
-/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
-/*                                                           */
-/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
-/* added at the bottom of your palette list below, within    */
-/* their own comment section.                                */
-/*                                                           */
-/* CSS ADDITIONS: Any CSS I added or notes about changes     */
-/* are at the bottom of this stylesheet beginning at Line    */
-/* 2870) in its own section.                                 */
-/*                                                           */
-/* Please! Please! review my changes and clean them up as    */
-/* as you think appropriate. Thanks! ... Gregg               */
-
-
-/* PAGE SETUP */
-@import url("https://www.princexml.com/fonts/sil/index.css") all;
-@import url("https://ais.americancouncils.org/ais/common/stylesheets/inlineQuestions.css");
-
-@page {
-  size: US-Letter;
-  margin: .5in;
+/* HIDE GGD 2020-0604 --> */
+span.OtherCheckBoxLabelText {
+  display: none;
 }
-
-/* HEADER AND FOOTER SETUP */
-
-@page {
-  @top-left { content: flow(header) }
-}
-@page {
-  @top-right { content: flow(header2) }
-}
-/* removing page number for now, individual forms can add own page num */
-@page {
-    /*@bottom {*/
-        /*content: "Page " counter(page) " of " counter(pages);*/
-        font-size: 10px;
-        font-family: Arial;
-        color: #474747;
-    /*}*/
-}
-
-
-#pageHeader {
-  flow: static(header);
-  background-color: transparent;
-  color: #474747;
-  padding-top: 0.5em;
-}
-body .Content .RecommendationFor {
-  flow: static(header2);
-  background-color: transparent;
-  /*** check if necessary --> */
-  color: #474747 !important;
-  text-align:right;
-  padding-top: 0.5em;
-}
-
-#pageHeader .LastName,
-#pageHeader .FirstName,
-#pageHeader .MiddleName,
-.Content .LastName,
-.Content .FirstName,
-.Content .MiddleName {
-  text-transform: capitalize;
-}
-#pageHeader .LastName:not(:empty):after {
-  content: ", ";
-}
-#pageHeader .MiddleName,
-#pageHeader .ApplicationRefCode,
-#pageHeader .ProgramYear {
-    padding-right: 2pt;
-}
-#pageHeader .MiddleName:not(:empty):after,
-#pageHeader .ApplicationRefCode:after,
-#pageHeader .ProgramYear:after {
-    content: " |";
-    color: #777;
-}
-#pageHeader .ApplicationRefCode:before {
-  content: "Ref code: "
-}
+/* <--HIDE GGD 2020-0604 */
 
 /* BASIC STYLES */
 
@@ -657,9 +580,18 @@ input#SubmitForEvaluation {margin-bottom: 1em;}
 
 .SideNote,
 .helpBox,
+.help-box, /* ADDED by GGD 2020-0618 */
+.Explanation, /* ADDED by GGD 2020-0618 */
 .deadlineBox,
+.deadline-box, /* ADDED by GGD 2020-0618 */
+.caution-box, /* ADDED by GGD 2020-0618 */
 .alertBox,
-.noticeBox {
+.Alert, /* ADDED by GGD 2020-0618 */
+.super-alert-box, /* ADDED by GGD 2020-0618 */
+.warning-box,  /* ADDED by GGD 2020-0618 */
+.noticeBox,
+.notice-box,  /* ADDED by GGD 2020-0618 */
+.Noteworthy /* ADDED by GGD 2020-0618 */ {
     display: none;
   }
 .SideNote:before {
