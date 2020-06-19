@@ -1,0 +1,39 @@
+/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
+/*                                                           */
+/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
+/* added at the bottom of your palette list below, within    */
+/* their own comment section.                                */
+/*                                                           */
+/* CSS ADDITIONS: Any CSS I added or notes about changes     */
+/* are at the bottom of this stylesheet beginning at Line    */
+/* 2870) in its own section.                                 */
+/*                                                           */
+/* Please! Please! review my changes and clean them up as    */
+/* as you think appropriate. Thanks! ... Gregg               */
+
+
+/* PAGE SETUP */
+@import url("https://www.princexml.com/fonts/sil/index.css") all;
+
+@page {
+  size: US-Letter;
+  margin: .5in;
+}
+
+/* HEADER AND FOOTER SETUP */
+
+@page {
+  @top-left { content: flow(header) }
+}
+@page {
+  @top-right { content: flow(header2) }
+}
+/* removing page number for now, individual forms can add own page num */
+@page {
+    /*@bottom {*/
+        /*content: "Page " counter(page) " of " counter(pages);*/
+        font-size: 10px;
+        font-family: Arial;
+        color: #474747;
+    /*}*/
+}

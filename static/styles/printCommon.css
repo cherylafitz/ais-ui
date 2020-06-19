@@ -14,7 +14,6 @@
 
 /* PAGE SETUP */
 @import url("https://www.princexml.com/fonts/sil/index.css") all;
-@import url("https://ais.americancouncils.org/ais/common/stylesheets/inlineQuestions.css");
 
 @page {
   size: US-Letter;
@@ -38,8 +37,125 @@
         color: #474747;
     /*}*/
 }
+/* Form questions to appear horizontally instead of vertically */
 
+.SectionDisplay .FirstName,
+.SectionDisplay .MiddleName,
+.SectionDisplay .LastName,
+.SectionDisplay .NameSuffix,
+.SectionDisplay .FirstNameNativeLanguage,
+.SectionDisplay .LastNameNativeLanguage,
+.SectionDisplay .MedProxyFirstName,
+.SectionDisplay .MedProxyLastName,
+.SectionDisplay .CongressioVotingDistState,
+.SectionDisplay .CongressionaVotingDistNum,
+.SectionDisplay .PassportGivenName,
+.SectionDisplay .PassportPrimaryName,
+.SectionDisplay .PassportFirstName,
+.SectionDisplay .PassportMiddleName,
+.SectionDisplay .PassportLastName,
+.SectionDisplay .Passport2ndGivenName,
+.SectionDisplay .Passport2ndFirstName,
+.SectionDisplay .Passport2ndMiddleName,
+.SectionDisplay .Passport2ndLastName,
+.SectionDisplay .RecommenderFirstName,
+.SectionDisplay .RecommenderLastName,
+.SectionDisplay .RecommenderFirstName2,
+.SectionDisplay .RecommenderLastName2,
+.SectionDisplay .TeachRef1stName,
+.SectionDisplay .TeachRefLastName,
+.SectionDisplay .AdvisorFirstName,
+.SectionDisplay .AdvisorLastName,
+.SectionDisplay .ParentRecommender1FirstName,
+.SectionDisplay .ParentRecommender1LastName,
+.SectionDisplay .ParentRecommender2FirstName,
+.SectionDisplay .ParentRecommender2LastName,
+.SectionDisplay .ParentCust1stName1,
+.SectionDisplay .ParentCustLastName1,
+.SectionDisplay .ParentCust1stName2,
+.SectionDisplay .ParentCustLastName2,
+.SectionDisplay .PrimaryPhone,
+.SectionDisplay .PrimaryPhoneType,
+.SectionDisplay .AlternatePhoneType,
+.SectionDisplay .TelephoneAlternate,
+.SectionDisplay .OthPhone,
+.SectionDisplay .OthPhoneWhose,
+.SectionDisplay .Parent1stName,
+.SectionDisplay .ParentMidName,
+.SectionDisplay .ParentLastName,
+.SectionDisplay .ParentPrimaryTelephone,
+.SectionDisplay .ParentPrimaryTelephoneType,
+.SectionDisplay .ParentAlternateTelephone,
+.SectionDisplay .ParentAlternateTelephoneType,
+.SectionDisplay .ParentOtherTelephone,
+.SectionDisplay .ParentOtherTelephoneType,
+.SectionDisplay .Mother1stName,
+.SectionDisplay .MotherLastName,
+.SectionDisplay .Father1stName,
+.SectionDisplay .FatherLastName,
+.SectionDisplay .Sib1stName,
+.SectionDisplay .ParentMidName,
+.SectionDisplay .SibLastName,
+.SectionDisplay .EmergCont1stName,
+.SectionDisplay .EmergContLastName,
+.SectionDisplay .EmergencyContact2FirstName,
+.SectionDisplay .EmergencyContact2LastName,
+.SectionDisplay .EmergencyContactPrimaryTelephone,
+.SectionDisplay .EmergencyContactPrimaryTelephoneType,
+.SectionDisplay .EmergencyContactAlternateTelephone,
+.SectionDisplay .EmergencyContactAlternateTelephoneType,
+.SectionDisplay .EmergencyContactOtherTelephone,
+.SectionDisplay .EmergencyContactOtherTelephoneType,
+.SectionDisplay .PassportMiddleName,
+.SectionDisplay .PassportLastName,
+.SectionDisplay .AdministratorHonorific,
+.SectionDisplay .AdministratorFirstName,
+.SectionDisplay .AdministratorLastName,
+.SectionDisplay .AdministratorNameSuffix,
+.SectionDisplay .Honorific,
+.SectionDisplay .MentorTeacherHonorific,
+.SectionDisplay .MentorTeacherFirstName,
+.SectionDisplay .MentorTeacherLastName,
+.SectionDisplay .MentorTeacherNameSuffix,
+.SectionDisplay .CommunityLiaisonHonorific,
+.SectionDisplay .CommunityLiaisonFirstName,
+.SectionDisplay .CommunityLiaisonLastName,
+.SectionDisplay .CommunityLiaisonNameSuffix,
+.SectionDisplay .USParticipantLastName,
+.SectionDisplay .USParticipantGivenName,
+.SectionDisplay .GroupedItem .USParticipantLastName,
+.SectionDisplay .GroupedItem .USParticipantGivenName,
+.SectionDisplay .SchoolDirName,
+.SectionDisplay .SchoolDirLastName,
+.SectionDisplay .SchoolSuperintendentHonorific,
+.SectionDisplay .SchoolSuperintendentFirstName,
+.SectionDisplay .SchoolSuperintendentLastName,
+.SectionDisplay .SchoolSuperintendentNameSuffix {
+  float: left;
+  clear: none;
+}
 
+.SectionDisplay .MailAddrZIP,
+.SectionDisplay .RecSchoolZIPCode,
+.SectionDisplay .TelephoneAlternate,
+.SectionDisplay .OthPhone,
+.SectionDisplay .ParentAlternateTelephone,
+.SectionDisplay .ParentOtherTelephone,
+.SectionDisplay .EmergencyContactAlternateTelephone,
+.SectionDisplay .EmergencyContactAlternateTelephone,
+.SectionDisplay .EmergencyContactOtherTelephone,
+.SectionDisplay .EmergencyContactPrimaryTelephone {
+  clear: left;
+}
+.SectionDisplay .PrimaryPhoneType,
+.SectionDisplay .AlternatePhoneType,
+.SectionDisplay .OthPhoneWhose {
+  clear: right;
+}
+
+.Content .BeforeQuestion {
+  clear: both;
+}
 #pageHeader {
   flow: static(header);
   background-color: transparent;
@@ -657,9 +773,18 @@ input#SubmitForEvaluation {margin-bottom: 1em;}
 
 .SideNote,
 .helpBox,
+.help-box, /* ADDED by GGD 2020-0618 */
+.Explanation, /* ADDED by GGD 2020-0618 */
 .deadlineBox,
+.deadline-box, /* ADDED by GGD 2020-0618 */
+.caution-box, /* ADDED by GGD 2020-0618 */
 .alertBox,
-.noticeBox {
+.Alert, /* ADDED by GGD 2020-0618 */
+.super-alert-box, /* ADDED by GGD 2020-0618 */
+.warning-box,  /* ADDED by GGD 2020-0618 */
+.noticeBox,
+.notice-box,  /* ADDED by GGD 2020-0618 */
+.Noteworthy /* ADDED by GGD 2020-0618 */ {
     display: none;
   }
 .SideNote:before {
