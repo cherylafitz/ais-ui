@@ -1,45 +1,8 @@
-/* <-- ADDED by GGD 2020-0604 Question Float Handling */
-
 /* HIDE GGD 2020-0604 --> */
 span.OtherCheckBoxLabelText {
   display: none;
 }
 /* <--HIDE GGD 2020-0604 */
-
-body .Content .RecommendationFor {
-  flow: static(header2);
-  background-color: transparent;
-  /*** check if necessary --> */
-  color: #474747 !important;
-  text-align:right;
-  padding-top: 0.5em;
-}
-
-#pageHeader .LastName,
-#pageHeader .FirstName,
-#pageHeader .MiddleName,
-.Content .LastName,
-.Content .FirstName,
-.Content .MiddleName {
-  text-transform: capitalize;
-}
-#pageHeader .LastName:not(:empty):after {
-  content: ", ";
-}
-#pageHeader .MiddleName,
-#pageHeader .ApplicationRefCode,
-#pageHeader .ProgramYear {
-    padding-right: 2pt;
-}
-#pageHeader .MiddleName:not(:empty):after,
-#pageHeader .ApplicationRefCode:after,
-#pageHeader .ProgramYear:after {
-    content: " |";
-    color: #777;
-}
-#pageHeader .ApplicationRefCode:before {
-  content: "Ref code: "
-}
 
 /* BASIC STYLES */
 
