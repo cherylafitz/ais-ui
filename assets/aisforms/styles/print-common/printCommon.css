@@ -1,9 +1,11 @@
-#pageHeader {
-  flow: static(header);
-  background-color: transparent;
-  color: #474747;
-  padding-top: 0.5em;
+/* <-- ADDED by GGD 2020-0604 Question Float Handling */
+
+/* HIDE GGD 2020-0604 --> */
+span.OtherCheckBoxLabelText {
+  display: none;
 }
+/* <--HIDE GGD 2020-0604 */
+
 body .Content .RecommendationFor {
   flow: static(header2);
   background-color: transparent;
