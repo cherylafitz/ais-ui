@@ -16,13 +16,13 @@ gulp.task('concat-aisforms-css', function() {
 });
 
 gulp.task('concat-standardcommon-css', function() {
-  return gulp.src('./assets/aisforms/styles/standard-common/*.css','./assets/aisforms/styles/shared-for-forms/*.css') // conly combines files in standard-common folder and shared-forms, not shared
+  return gulp.src(['./assets/aisforms/styles/standard-common/*.css','./assets/aisforms/styles/shared-for-forms/*.css']) // conly combines files in standard-common folder and shared-forms, not shared
     .pipe(concat('standardCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
 
 gulp.task('concat-printcommon-css', function() {
-  return gulp.src('./assets/aisforms/styles/print-common/*.css','./assets/aisforms/styles/shared-for-forms/*.css') // conly combines files in print-common folder and shared-forms, not shared
+  return gulp.src(['./assets/aisforms/styles/print-common/*.css','./assets/aisforms/styles/shared-for-forms/*.css']) // conly combines files in print-common folder and shared-forms, not shared
     .pipe(concat('printCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
