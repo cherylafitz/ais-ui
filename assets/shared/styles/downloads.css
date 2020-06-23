@@ -1,6 +1,6 @@
 /* DOWNLOADS --> */
 
-.Content .PDFDownload,
+.Content .PDFDownload, /* added div to exclude the PDFDownload page */
 .Content .ExcelDownload,
 .pdf-download,
 .excel-download,
@@ -36,6 +36,7 @@ td a.file-download {
 .Content .PDFDownload,
 .pdf-download,
 .file-download [href$=".pdf"],
+.file-download [data-file-name$=".pdf"],
 td a.file-download[href$=".pdf"] {
   background-image: url(../../../../ais/common/pdficon_small.png);
 }
