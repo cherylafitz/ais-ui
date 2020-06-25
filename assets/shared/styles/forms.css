@@ -14,7 +14,8 @@
 	margin-bottom: .5rem;
 }
 .form-input label:first-child,
-.generated-field .label:first-child {
+.generated-field .label:first-child,
+.input-group .label:first-child {
 	padding-right: .5rem;
 	width: 10rem;
 }
@@ -29,7 +30,8 @@
 .form-input label,
 .form-input input,
 .form-input textarea,
-.form-input select {
+.form-input select,
+.input-group .label {
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
@@ -54,8 +56,8 @@
 	float: none; /* override */
 	margin: 0 .25rem 0 0;
 }
-.form-input label ~ .ajax-observe-field {
-	display: inline-block;
+form .ajax-observe-field {
+	display: contents;
 }
 .generated-field .preview {
 	background-color: #fff;
@@ -64,19 +66,32 @@
 	min-height: 1.25rem;
 	min-width: 14rem;
 }
+.input-group {
+	display: flex;
+}
 
-/* FORMS > FIELDSETS --> */
+/* FIELDSETS --> */
 fieldset {
 	border: none;
+	margin-bottom: 1rem;
 }
 fieldset legend {
 	padding: 0;
 }
 fieldset .form-input,
-fieldset .generated-field  {
+fieldset .generated-field,
+fieldset .input-group  {
 	margin: 0 0 .25rem .75rem;
 }
-/* <--FORMS > FIELDSETS */
+/* <-- FIELDSETS */
 
+/* REQUIRED --> */
+.label.required:after {
+    content: " *";
+    color: var(--required-red);
+    background-color: inherit;
+    font-weight: bold;
+}
+/* <-- REQUIRED */
 
-/* <-- FORMS 
+/* <-- FORMS */
