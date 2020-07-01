@@ -1888,6 +1888,15 @@ table.rolodex tr.ItemXMLTag th {
   display: inline-block;
 }
 
+/* PAGE: APPLIATION SUBMITTED SUCCESSFULY EMAIL --> */
+  div.Content div.ApplicationSubmittedSuccessfullyPage table {
+    background-color: transparent;
+  }
+  div.SecurityStamp {
+    text-align: center;
+  }
+/* <-- PAGE: APPLIATION SUBMITTED SUCCESSFULY EMAIL */
+
 /* PAGE: EMAIL TEMPLATE --> */
 
 div.ApplicationEmailWorkflow div#ApplicantsID {
