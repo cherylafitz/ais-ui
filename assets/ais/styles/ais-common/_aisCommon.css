@@ -2523,6 +2523,24 @@ div.PIPYDisplay .PlacementReportReasonSortOrder {
   width: initial;
 }
 
+/* PAGE: AISStudentEmailNotificationViewer --> */
+
+.AISStudentEmailNotificationViewer pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.AISStudentEmailNotificationViewer iframe {
+  height: 300px;
+  width: 800px;
+  resize: both;
+  overflow: auto;
+}
+
+/* <-- PAGE: AISStudentEmailNotificationViewer */
+
 /* PAGE: PROGRAM SETTINGS --> */
 .ProgramViewEditDetail fieldset img {
   width: auto;
