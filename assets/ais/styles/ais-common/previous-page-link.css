@@ -1,0 +1,9 @@
+/* PREVIOUS PAGE LINK --> */
+.previous-page-link {
+	font-size: .875rem;
+	display: inline-block;
+}
+.content .previous-page-link {
+	margin-bottom: 1rem;
+}
+/* <-- PREVIOUS PAGE LINK */
