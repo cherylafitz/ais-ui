@@ -1,7 +1,8 @@
 /* TABLE SORTER --> */
 
 th .SortColumn,
-th .sort-column {
+th .sort-column,
+.sort-wrapper {
 	margin-right: .25em;
 }
 .sort-wrapper input,
