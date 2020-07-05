@@ -29,13 +29,26 @@ table.row-display a:active {
 .bg-blue03 a {
   color: #c4dcee;
 }
+.controls-wrapper {
+  margin-top: .5rem;
+  display: flex;
+}
 .controls-wrapper [class*="-link"]:not(:last-child),
 .controls-wrapper [class*="-button"]:not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .5rem;
 }
-
+/* remove override of input[type="submit"] after css migration */
+.controls-wrapper input[type="submit"][class*="-link"],
+.controls-wrapper input[type="submit"][class*="-button"],
+.page-commands input[type="submit"][class*="-link"],
+.page-commands input[type="submit"][class*="-button"] {
+	padding: .25rem .5rem;
+}
+.controls-wrapper input[class^="delete"] {
+	margin-left: auto;
+}
 
 
 

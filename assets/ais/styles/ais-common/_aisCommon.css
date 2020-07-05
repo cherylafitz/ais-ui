@@ -991,23 +991,6 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 #AlumnusSocialMediaEditor {
   padding: 1rem 1rem 1rem 2rem;
 }
-#article-editor-page-id .required::before {
-  content: none;
-}
-#article-editor-page-id .required label::after {
-  content: " *";
-  color: var(--required-red);
-  background-color: inherit;
-  font-weight: bold;
-}
-#article-editor-page-id .hintForRequired {
-  font-size: .875rem;
-  font-style: italic;
-  color: var(--required-red);
-}
-#article-editor-page-id .controls-wrapper {
-  margin-top: .5rem;
-}
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
 .SystemAnnouncementsWrapper + div.ArticleViewer,
 .SystemAnnouncementsWrapper + div.AlumnusEmailSearch {

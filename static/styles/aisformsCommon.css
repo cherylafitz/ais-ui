@@ -357,7 +357,10 @@ table td div.ExcelDownloadDescription {
 	padding: .75rem 1rem 1rem;
 }
 .form-section-content {
-	margin: 0 0 1rem .75rem;
+	margin: 0 0 0 .75rem;
+}
+.form-section-content > .form-input:first-child {
+	/*margin-top: .5rem;*/
 }
 .form-input,
 .generated-field {
@@ -380,11 +383,11 @@ table td div.ExcelDownloadDescription {
 .form-input input,
 .form-input textarea,
 .form-input select,
-.input-group .input-group-label {
+.from-to-date-picker .input-group-label {
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
-	padding: .125rem .25rem;
+	padding: .25rem;
 	vertical-align: top;
 	font-size: .875rem;
 }
@@ -393,19 +396,26 @@ table td div.ExcelDownloadDescription {
 .form-input select,
 .generated-field .preview,
 .generated-field .value {
+	min-width: 10rem;
 	margin-left: .25rem;
+}
+.form-input textarea,
+.form-input select {
+	width: calc(100% - 11rem);
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
 	margin: .125rem .25rem;
 	vertical-align: baseline;
+	min-width: initial;
 }
 .form-input input[type=checkbox] ~ label,
 .form-input inpt[type=radio] ~ label {
 	float: none; /* override */
 	margin: 0 .25rem 0 0;
 }
-form .ajax-observe-field {
+form .ajax-observe-field,
+form .ajax-update-container {
 	display: contents;	
 }
 .generated-field .preview {
@@ -415,35 +425,87 @@ form .ajax-observe-field {
 	min-height: 1.25rem;
 	min-width: 14rem;
 }
-.input-group,
-.date-group {
+.input-group-label {
+	font-size: 1.25rem;
+	width: 10rem;
 }
+.input-group-content {
+	margin: .25rem 1rem;
+}
+.input-group-content .form-input label:first-child {
+	width: 9rem;
+}
+/* from-to-date-picker --> */
+.from-to-date-picker .input-group-content {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 1rem;
+}
+.from-to-date-picker .input-group-label {
+	width: 9rem;
+}
+.from-to-date-picker label {
+	display: block;
+}
+.date-hint .label,
+.date-hint .value {
+	display: inline-block;
+	font-size: .75rem;
+	padding-left: .25rem;
+}
+.date-hint .label::after {
+	content: ":";
+}
+.date-picker input {
+	width: 8.5rem;
+    min-width: initial;
+}
+.form-input.date-picker:not(:only-child) {
+	margin-right: .5rem;
+}
+/* <-- from-to-date-picker */
 
 /* FIELDSETS --> */
-fieldset.yes-no-picker {
+.yes-no-picker {
 	border: 1px solid #cecece;
-	margin-bottom: 1rem;
+	margin-bottom: .75rem;
 	width: fit-content;
 }
-fieldset.yes-no-picker .form-input {
+.yes-no-picker .form-input {
 	display: inline-block;
 	margin-bottom: 0;
 }
-fieldset.yes-no-picker input[type="radio"] {
+.yes-no-picker input[type="radio"] {
 	margin-right: 0;
 }
-fieldset legend {
+.yes-no-picker legend {
 	font-weight: normal;
+	font-size: .875rem;
 }
 /* <-- FIELDSETS */
 
 /* FORM BUTTONS --> */
 .form-input [class*="-button"] {
 	vertical-align: top;
+	width: initial;
 }
 /* <-- BUTTONS */
 
 /* REQUIRED --> */
+.form-input.required label::after {
+  content: " *";
+  color: var(--required-red);
+  background-color: inherit;
+  font-weight: bold;
+}
+.form-input.required::before {
+  content: none;
+}
+.hint.required {
+  font-size: .875rem;
+  font-style: italic;
+  color: var(--required-red);
+}
 .yes-no-picker.required legend:after {
     content: " *";
     color: var(--required-red);
@@ -454,6 +516,20 @@ fieldset legend {
 	content: "";
 }
 /* <-- REQUIRED */
+
+/* SEARCH --> */
+form[class$="-search"] .form-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+/* CHANGE H2 to target a class! */
+form[class$="-search"] .form-section h2 {
+	flex: 0 0 10rem;
+}
+form[class$="-search"] .form-section-content {
+	margin-top: .25rem
+}
+/* <-- SEARCH */
 
 /* <-- FORMS */
 /* LINKS --> */
@@ -487,19 +563,39 @@ table.row-display a:active {
 .bg-blue03 a {
   color: #c4dcee;
 }
+.controls-wrapper {
+  margin-top: .5rem;
+  display: flex;
+}
 .controls-wrapper [class*="-link"]:not(:last-child),
 .controls-wrapper [class*="-button"]:not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .5rem;
 }
-
+/* remove override of input[type="submit"] after css migration */
+.controls-wrapper input[type="submit"][class*="-link"],
+.controls-wrapper input[type="submit"][class*="-button"],
+.page-commands input[type="submit"][class*="-link"],
+.page-commands input[type="submit"][class*="-button"] {
+	padding: .25rem .5rem;
+}
+.controls-wrapper input[class^="delete"] {
+	margin-left: auto;
+}
 
 
 
 
 /* <-- LINKS 
 
+/* LISTS --> */
+.long-list {
+  column-count: 2;
+  column-width: 15rem;
+  column-gap: .5rem;
+}
+/* <-- LISTS */
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
