@@ -49,9 +49,11 @@
 	min-width: 10rem;
 	margin-left: .25rem;
 }
-.form-input textarea,
-.form-input select {
+.form-input textarea {
 	width: calc(100% - 11rem);
+}
+.form-input select {
+	max-width: calc(100% - 11rem);
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
@@ -71,7 +73,7 @@ form .ajax-update-container {
 .generated-field .preview {
 	background-color: #fff;
 	border-radius: 2px;
-	border: 1px solid #d9d9d9;
+	border: 1px solid #e6e6e6;
 	min-height: 1.25rem;
 	min-width: 14rem;
 }
@@ -116,19 +118,19 @@ form .ajax-update-container {
 /* <-- from-to-date-picker */
 
 /* FIELDSETS --> */
-.yes-no-picker {
+fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin-bottom: .75rem;
 	width: fit-content;
 }
-.yes-no-picker .form-input {
+fieldset.yes-no-picker .form-input {
 	display: inline-block;
 	margin-bottom: 0;
 }
-.yes-no-picker input[type="radio"] {
+fieldset.yes-no-picker input[type="radio"] {
 	margin-right: 0;
 }
-.yes-no-picker legend {
+fieldset.yes-no-picker legend {
 	font-weight: normal;
 	font-size: .875rem;
 }

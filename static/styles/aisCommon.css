@@ -399,9 +399,11 @@ table td div.ExcelDownloadDescription {
 	min-width: 10rem;
 	margin-left: .25rem;
 }
-.form-input textarea,
-.form-input select {
+.form-input textarea {
 	width: calc(100% - 11rem);
+}
+.form-input select {
+	max-width: calc(100% - 11rem);
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
@@ -421,7 +423,7 @@ form .ajax-update-container {
 .generated-field .preview {
 	background-color: #fff;
 	border-radius: 2px;
-	border: 1px solid #d9d9d9;
+	border: 1px solid #e6e6e6;
 	min-height: 1.25rem;
 	min-width: 14rem;
 }
@@ -466,19 +468,19 @@ form .ajax-update-container {
 /* <-- from-to-date-picker */
 
 /* FIELDSETS --> */
-.yes-no-picker {
+fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin-bottom: .75rem;
 	width: fit-content;
 }
-.yes-no-picker .form-input {
+fieldset.yes-no-picker .form-input {
 	display: inline-block;
 	margin-bottom: 0;
 }
-.yes-no-picker input[type="radio"] {
+fieldset.yes-no-picker input[type="radio"] {
 	margin-right: 0;
 }
-.yes-no-picker legend {
+fieldset.yes-no-picker legend {
 	font-weight: normal;
 	font-size: .875rem;
 }
@@ -2480,7 +2482,7 @@ td input[type="search"] {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: .125rem .25rem;
+  padding: .25rem;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
@@ -2488,6 +2490,7 @@ td input[type="search"] {
 select {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
+  padding: .25rem;
 }
 #tippyTopOfPage select,
 #tippyTopOfPage input {
@@ -4589,6 +4592,7 @@ table.RowDisplay thead tr th,
 table.report tr:first-of-type {
   border-top: 2px solid #5f666d;
   border-bottom: 2px solid #5f666d;
+  vertical-align: top;
 }
 table.RowDisplay tr.headerRow th.ApplicationCount {
   border-bottom-color: #afb1b9;

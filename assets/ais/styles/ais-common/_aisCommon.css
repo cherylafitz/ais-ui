@@ -1792,7 +1792,7 @@ td input[type="search"] {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: .125rem .25rem;
+  padding: .25rem;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
@@ -1800,6 +1800,7 @@ td input[type="search"] {
 select {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
+  padding: .25rem;
 }
 #tippyTopOfPage select,
 #tippyTopOfPage input {
