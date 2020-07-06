@@ -1806,6 +1806,9 @@ select {
 #tippyTopOfPage input {
   border: none;
 }
+#tippyTopOfPage select {
+  padding: 1px 0 1px 4px;
+}
 input[type="file"] {
   background-color: initial;
   border: none;
