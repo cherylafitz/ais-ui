@@ -92,10 +92,10 @@ div.NoEvaluationQueuesAvailable {
 /* <code> STYLES--> */
 
 .code-wrapper {
-    background-color: #bfbfbf;
+    background-color: #7b7b7b;
     color: #fff;
     padding: 0;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 .5rem .25rem;
     display: inline-block;
     border-radius: 2px;
 }
@@ -106,7 +106,8 @@ div.NoEvaluationQueuesAvailable {
 	display: block;
 	padding: .325rem;
 }
-.code-wrapper .preview,
+.generated-field .code-wrapper .preview,
+.form-input .code-wrapper .preview,
 .form-input .code-wrapper textarea,
 .form-input .code-wrapper input {
 	background-color: #fff;
@@ -116,7 +117,8 @@ div.NoEvaluationQueuesAvailable {
     margin: 0 1rem;
     padding: .5rem;
 }
-.code-wrapper .preview {
+.generated-field .code-wrapper .preview,
+.form-input .code-wrapper .preview {
 	border: none;
 	padding: 1rem;
 }
@@ -346,7 +348,7 @@ table td div.ExcelDownloadDescription {
 
 /* <-- DOWNLOADS */
 
-/* FORMS --> */
+ /* FORMS --> */
 
 .form-section {
 	background-color: #f1f1f3;
@@ -354,67 +356,173 @@ table td div.ExcelDownloadDescription {
 	margin: 1rem 0;
 	padding: .75rem 1rem 1rem;
 }
-.form-section:first-of-type {
-	margin-top: 2rem;
-}
 .form-section-content {
-	margin: 0 0 1rem 1rem;
+	margin: 0 0 0 .75rem;
 }
 .form-input,
 .generated-field {
-  margin-bottom: .5rem;
-}
-fieldset .form-input,
-fieldset .generated-field  {
-	margin: 0 0 .25rem .75rem;
+	margin-bottom: .5rem;
 }
 .form-input label:first-child,
 .generated-field .label:first-child {
-  padding-right: .5rem;
+	padding-right: .5rem;
 	width: 10rem;
 }
-.generated-field .label,
-.form-input label {
+.generated-field .value {
+	font-style: italic;
+	font-weight: bold;
+	padding-left: 0;
 }
 .generated-field .label, 
 .generated-field .preview,
 .generated-field .value,
 .form-input label,
-.form-input input,
+.form-input input:not([type="submit"]),
 .form-input textarea,
-.form-input select {
+.form-input select,
+.from-to-date-picker .input-group-label {
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
-	padding: .125rem .25rem;
+	padding: .25rem;
 	vertical-align: top;
-  font-size: .875rem;
+	font-size: .875rem;
 }
-.form-input input,
+.form-input input:not([type="submit"]),
 .form-input textarea,
-.form-input select {
+.form-input select,
+.generated-field .preview,
+.generated-field .value {
+	min-width: 10rem;
 	margin-left: .25rem;
+}
+.form-input textarea {
+	width: calc(100% - 11rem);
+}
+.form-input select {
+	max-width: calc(100% - 11rem);
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
 	margin: .125rem .25rem;
 	vertical-align: baseline;
+	min-width: initial;
+	padding: 0;
 }
 .form-input input[type=checkbox] ~ label,
 .form-input inpt[type=radio] ~ label {
 	float: none; /* override */
 	margin: 0 .25rem 0 0;
 }
-.form-input label ~ .ajax-observe-field {
-  display: inline-block;
+form .ajax-observe-field,
+form .ajax-update-container {
+	display: contents;	
 }
 .generated-field .preview {
 	background-color: #fff;
 	border-radius: 2px;
-	border: 1px solid #d9d9d9;
+	border: 1px solid #e6e6e6;
 	min-height: 1.25rem;
 	min-width: 14rem;
 }
+.input-group-label {
+	font-size: 1.25rem;
+	width: 10rem;
+}
+.input-group-content {
+	margin: .25rem 1rem;
+}
+.input-group-content .form-input label:first-child {
+	width: 9rem;
+}
+/* from-to-date-picker --> */
+.from-to-date-picker .input-group-content {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 1rem;
+}
+.from-to-date-picker .input-group-label {
+	width: 9rem;
+}
+.from-to-date-picker label {
+	display: block;
+}
+.date-hint .label,
+.date-hint .value {
+	display: inline-block;
+	font-size: .75rem;
+	padding-left: .25rem;
+}
+.date-hint .label::after {
+	content: ":";
+}
+.date-picker input {
+	width: 8.5rem;
+    min-width: initial;
+}
+.form-input.date-picker:not(:only-child) {
+	margin-right: .5rem;
+}
+/* <-- from-to-date-picker */
+
+/* FIELDSETS --> */
+fieldset.yes-no-picker {
+	border: 1px solid #cecece;
+	margin-bottom: .75rem;
+	width: fit-content;
+}
+fieldset.yes-no-picker .form-input {
+	display: inline-block;
+	margin-bottom: 0;
+}
+fieldset.yes-no-picker input[type="radio"] {
+	margin-right: 0;
+}
+fieldset.yes-no-picker legend {
+	font-weight: normal;
+	font-size: .875rem;
+}
+/* <-- FIELDSETS */
+
+/* REQUIRED --> */
+.form-input.required label::after {
+  content: " *";
+  color: var(--required-red);
+  background-color: inherit;
+  font-weight: bold;
+}
+.form-input.required::before {
+  content: none;
+}
+.hint.required {
+  font-size: .875rem;
+  font-style: italic;
+  color: var(--required-red);
+}
+.yes-no-picker.required legend:after {
+    content: " *";
+    color: var(--required-red);
+    background-color: inherit;
+    font-weight: bold;
+}
+.yes-no-picker.required label:after {
+	content: "";
+}
+/* <-- REQUIRED */
+
+/* SEARCH --> */
+form[class$="-search"] .form-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+/* CHANGE H2 to target a class! */
+form[class$="-search"] .form-section h2 {
+	flex: 0 0 10rem;
+}
+form[class$="-search"] .form-section-content {
+	margin-top: .25rem
+}
+/* <-- SEARCH */
 
 /* <-- FORMS */
 /* LINKS --> */
@@ -448,19 +556,40 @@ table.row-display a:active {
 .bg-blue03 a {
   color: #c4dcee;
 }
+.controls-wrapper {
+  margin-top: .5rem;
+  display: flex;
+}
 .controls-wrapper [class*="-link"]:not(:last-child),
 .controls-wrapper [class*="-button"]:not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .5rem;
 }
-
+/* remove override of input[type="submit"] after css migration */
+.controls-wrapper input[type="submit"][class*="-link"],
+.controls-wrapper input[type="submit"][class*="-button"],
+.page-commands input[type="submit"][class*="-link"],
+.page-commands input[type="submit"][class*="-button"] {
+	padding: .25rem .5rem;
+	min-width: 8rem;
+}
+.controls-wrapper input[class^="delete"] {
+	margin-left: auto;
+}
 
 
 
 
 /* <-- LINKS 
 
+/* LISTS --> */
+.long-list {
+  column-count: 2;
+  column-width: 15rem;
+  column-gap: .5rem;
+}
+/* <-- LISTS */
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
@@ -1303,7 +1432,6 @@ input {
 
 div.HomePageForAll fieldset,
 td.content fieldset,
-fieldset,
 div.AlumnusSummary fieldset,
 div.ArticleViewer fieldset {
   border: 1px solid #cecece;
@@ -1508,6 +1636,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumniHome,
 .ArticleSearch,
 .ArticleViewer,
+.ArticleEditor,
 .AlumnusNameList,
 .ArticleRowDisplay,
 .AlumnusAddressList,
@@ -1544,23 +1673,6 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 #article-editor-page-id,
 #AlumnusSocialMediaEditor {
   padding: 1rem 1rem 1rem 2rem;
-}
-#article-editor-page-id .required::before {
-  content: none;
-}
-#article-editor-page-id .required label::after {
-  content: " *";
-  color: var(--required-red);
-  background-color: inherit;
-  font-weight: bold;
-}
-#article-editor-page-id .hintForRequired {
-  font-size: .875rem;
-  font-style: italic;
-  color: var(--required-red);
-}
-#article-editor-page-id .controls-wrapper {
-  margin-top: .5rem;
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
 .SystemAnnouncementsWrapper + div.ArticleViewer,
@@ -2363,7 +2475,7 @@ td input[type="search"] {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: .125rem .25rem;
+  padding: .25rem;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
@@ -2371,6 +2483,7 @@ td input[type="search"] {
 select {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
+  padding: .25rem;
 }
 #tippyTopOfPage select,
 #tippyTopOfPage input {
@@ -4472,6 +4585,7 @@ table.RowDisplay thead tr th,
 table.report tr:first-of-type {
   border-top: 2px solid #5f666d;
   border-bottom: 2px solid #5f666d;
+  vertical-align: top;
 }
 table.RowDisplay tr.headerRow th.ApplicationCount {
   border-bottom-color: #afb1b9;

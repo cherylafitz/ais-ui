@@ -749,7 +749,6 @@ input {
 
 div.HomePageForAll fieldset,
 td.content fieldset,
-fieldset,
 div.AlumnusSummary fieldset,
 div.ArticleViewer fieldset {
   border: 1px solid #cecece;
@@ -954,6 +953,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumniHome,
 .ArticleSearch,
 .ArticleViewer,
+.ArticleEditor,
 .AlumnusNameList,
 .ArticleRowDisplay,
 .AlumnusAddressList,
@@ -990,23 +990,6 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 #article-editor-page-id,
 #AlumnusSocialMediaEditor {
   padding: 1rem 1rem 1rem 2rem;
-}
-#article-editor-page-id .required::before {
-  content: none;
-}
-#article-editor-page-id .required label::after {
-  content: " *";
-  color: var(--required-red);
-  background-color: inherit;
-  font-weight: bold;
-}
-#article-editor-page-id .hintForRequired {
-  font-size: .875rem;
-  font-style: italic;
-  color: var(--required-red);
-}
-#article-editor-page-id .controls-wrapper {
-  margin-top: .5rem;
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
 .SystemAnnouncementsWrapper + div.ArticleViewer,
@@ -1809,7 +1792,7 @@ td input[type="search"] {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: .125rem .25rem;
+  padding: .25rem;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
 }
@@ -1817,6 +1800,7 @@ td input[type="search"] {
 select {
   font-size: .875rem;
   border: 1px solid #c0bfbf;
+  padding: .25rem;
 }
 #tippyTopOfPage select,
 #tippyTopOfPage input {

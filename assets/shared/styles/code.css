@@ -1,10 +1,10 @@
 /* <code> STYLES--> */
 
 .code-wrapper {
-    background-color: #bfbfbf;
+    background-color: #7b7b7b;
     color: #fff;
     padding: 0;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 .5rem .25rem;
     display: inline-block;
     border-radius: 2px;
 }
@@ -15,7 +15,8 @@
 	display: block;
 	padding: .325rem;
 }
-.code-wrapper .preview,
+.generated-field .code-wrapper .preview,
+.form-input .code-wrapper .preview,
 .form-input .code-wrapper textarea,
 .form-input .code-wrapper input {
 	background-color: #fff;
@@ -25,7 +26,8 @@
     margin: 0 1rem;
     padding: .5rem;
 }
-.code-wrapper .preview {
+.generated-field .code-wrapper .preview,
+.form-input .code-wrapper .preview {
 	border: none;
 	padding: 1rem;
 }

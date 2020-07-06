@@ -1,0 +1,7 @@
+/* LISTS --> */
+.long-list {
+  column-count: 2;
+  column-width: 15rem;
+  column-gap: .5rem;
+}
+/* <-- LISTS */

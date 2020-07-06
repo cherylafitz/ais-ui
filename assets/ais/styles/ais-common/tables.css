@@ -159,6 +159,7 @@ table.RowDisplay thead tr th,
 table.report tr:first-of-type {
   border-top: 2px solid #5f666d;
   border-bottom: 2px solid #5f666d;
+  vertical-align: top;
 }
 table.RowDisplay tr.headerRow th.ApplicationCount {
   border-bottom-color: #afb1b9;
