@@ -359,9 +359,6 @@ table td div.ExcelDownloadDescription {
 .form-section-content {
 	margin: 0 0 0 .75rem;
 }
-.form-section-content > .form-input:first-child {
-	/*margin-top: .5rem;*/
-}
 .form-input,
 .generated-field {
 	margin-bottom: .5rem;
@@ -380,7 +377,7 @@ table td div.ExcelDownloadDescription {
 .generated-field .preview,
 .generated-field .value,
 .form-input label,
-.form-input input,
+.form-input input:not([type="submit"]),
 .form-input textarea,
 .form-input select,
 .from-to-date-picker .input-group-label {
@@ -391,7 +388,7 @@ table td div.ExcelDownloadDescription {
 	vertical-align: top;
 	font-size: .875rem;
 }
-.form-input input,
+.form-input input:not([type="submit"]),
 .form-input textarea,
 .form-input select,
 .generated-field .preview,
@@ -410,6 +407,7 @@ table td div.ExcelDownloadDescription {
 	margin: .125rem .25rem;
 	vertical-align: baseline;
 	min-width: initial;
+	padding: 0;
 }
 .form-input input[type=checkbox] ~ label,
 .form-input inpt[type=radio] ~ label {
@@ -485,13 +483,6 @@ fieldset.yes-no-picker legend {
 	font-size: .875rem;
 }
 /* <-- FIELDSETS */
-
-/* FORM BUTTONS --> */
-.form-input [class*="-button"] {
-	vertical-align: top;
-	width: initial;
-}
-/* <-- BUTTONS */
 
 /* REQUIRED --> */
 .form-input.required label::after {
@@ -581,6 +572,7 @@ table.row-display a:active {
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
 	padding: .25rem .5rem;
+	min-width: 8rem;
 }
 .controls-wrapper input[class^="delete"] {
 	margin-left: auto;
