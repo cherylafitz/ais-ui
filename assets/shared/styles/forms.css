@@ -119,6 +119,8 @@ form .ajax-update-container {
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin-bottom: .75rem;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
 	width: fit-content;
 }
 fieldset.yes-no-picker .form-input {
