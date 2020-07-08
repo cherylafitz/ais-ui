@@ -254,8 +254,8 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
     display: inline-block;
     white-space: nowrap;
 }
-#Header .UserNameBlock select {
-  max-width: 150px;
+#Header div.UserNameBlock select {
+  max-width: calc(100% - 50px);
 }
 .IsNotLoggedIn #Header #buildAndInstance {
 /*  display: none; */
@@ -352,9 +352,6 @@ div#buildAndInstance {
 /* <--HEADER */
 /* TITLES-->*/
 .Content h1 {
-  font-size: 1.75rem;
-  color: #2a353d;
-  font-weight: normal;
   clear: both;
 }
 div.SectionsRowDisplay h1,
@@ -365,23 +362,7 @@ div.BrandRowDisplay h1 {
 .Content .SectionDisplay h1 {
   text-align: left;
 }
-.Content h2 {
-  font-size: 1.375rem;
-}
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .75rem;
-  line-height: 1.5;
-  font-weight: normal;
-  padding: 0;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4{
-  font-size: 1.125rem;
-}
+
 a.LinkToPreviousPage {
   margin-right: 2em;
   margin-top: -2em;
@@ -1545,37 +1526,12 @@ div.PageName {
   text-align: right;
   font-size: 0.75rem;
 }
-input[type="text"],
-textarea,
-input[type="password"] {
-  background-color: #fff;
-  border: 1px solid #CECECE;
-  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  padding: 2px 4px;
-  font-size: .875rem;
-}
-
-select {
-  margin-bottom: .25em;
-}
-input[type="file"] {
-  border: none;
-  text-decoration: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
 input[type="submit"],
 input[type="button"]{
   vertical-align: middle;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   padding-bottom: .1em;
   cursor: pointer;
-}
-select {
-  max-width: 100%;
 }
 input[type="submit"][value="Clear Filters"] {
   border: 1px solid #999;

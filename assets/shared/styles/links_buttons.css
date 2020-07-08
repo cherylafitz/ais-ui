@@ -32,12 +32,13 @@ table.row-display a:active {
 .controls-wrapper {
   margin-top: .5rem;
   display: flex;
+  align-items: center;
 }
 .controls-wrapper [class*="-link"]:not(:last-child),
 .controls-wrapper [class*="-button"]:not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
-  margin-right: .5rem;
+  margin-right: .75rem;
 }
 /* remove override of input[type="submit"] after css migration */
 .controls-wrapper input[type="submit"][class*="-link"],
@@ -50,6 +51,15 @@ table.row-display a:active {
 .controls-wrapper input[class^="delete"] {
 	margin-left: auto;
 }
+.controls-wrapper [class*="-link"] {
+	font-size: .875rem;
+}
+.previous-page-link {
+	margin-bottom: .75rem;
+	display: inline-block;
+    font-size: .875rem;
+}
+
 
 
 
