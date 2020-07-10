@@ -349,9 +349,6 @@ table td div.ExcelDownloadDescription {
 /* <-- DOWNLOADS */
 
  /* FORMS --> */
-form {
-	max-width: 1000px;
-}
 input[type="text"],
 input[type="search"],
 input[type="email"],
@@ -373,7 +370,7 @@ select {
   max-width: 100%;
   font-size: .875rem;
   border: 1px solid #c0bfbf;
-  padding: .25rem 0;
+  padding: .25rem;
 }
 input[type="file"] {
   border: none;
