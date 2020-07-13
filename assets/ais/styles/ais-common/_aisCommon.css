@@ -2520,6 +2520,10 @@ div.PIPYDisplay .PlacementReportReasonSortOrder {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 .AISStudentEmailNotificationViewer iframe {
+  width: 100%;
+  height: 100%;
+}
+.AISStudentEmailNotificationViewer .iframe-resize-wrapper {
   height: 300px;
   width: 800px;
   resize: both;
