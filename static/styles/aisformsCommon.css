@@ -442,6 +442,13 @@ input[type="file"] {
 	vertical-align: text-top;
 	min-width: initial;
 	padding: 0;
+  cursor: pointer;
+}
+input[type=checkbox][disabled=disabled] {
+  cursor: not-allowed;
+}
+input[type=checkbox]:checked + label {
+  font-weight: bold;
 }
 .form-input input[type=checkbox] ~ label,
 .form-input inpt[type=radio] ~ label {
