@@ -349,7 +349,6 @@ table td div.ExcelDownloadDescription {
 /* <-- DOWNLOADS */
 
  /* FORMS --> */
-input[type="checkbox"],/* TEMP july 2020*/ 
 input[type="text"],
 input[type="search"],
 input[type="email"],
@@ -438,7 +437,7 @@ input[type="file"] {
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
-	margin: .25rem .375rem;
+	margin: .25rem;
 	vertical-align: text-top;
 	min-width: initial;
 	padding: 0;
