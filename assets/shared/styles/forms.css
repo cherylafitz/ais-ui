@@ -1,4 +1,5 @@
  /* FORMS --> */
+input[type="checkbox"],/* TEMP july 2020*/ 
 input[type="text"],
 input[type="search"],
 input[type="email"],
@@ -87,8 +88,8 @@ input[type="file"] {
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
-	margin: .125rem .25rem;
-	vertical-align: baseline;
+	margin: .25rem .375rem;
+	vertical-align: text-top;
 	min-width: initial;
 	padding: 0;
 }
@@ -96,6 +97,7 @@ input[type="file"] {
 .form-input inpt[type=radio] ~ label {
 	float: none; /* override */
 	margin: 0 .25rem 0 0;
+	line-height: 1;
 }
 form .ajax-observe-field,
 form .ajax-update-container {
