@@ -3204,6 +3204,10 @@ div.PIPYDisplay .PlacementReportReasonSortOrder {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+.AISStudentEmailNotificationViewer iframe {
+  width: 100%;
+  height: 100%;
+}
 .AISStudentEmailNotificationViewer .iframe-resize-wrapper {
   height: 300px;
   width: 800px;
