@@ -349,7 +349,37 @@ table td div.ExcelDownloadDescription {
 /* <-- DOWNLOADS */
 
  /* FORMS --> */
-
+input[type="checkbox"],/* TEMP july 2020*/ 
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="password"],
+textarea {
+  background-color: #fff;
+  border: 1px solid #CECECE;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  padding: .25rem;
+  font-size: .875rem;
+}
+/* remove after migration?? ? */
+select {
+  max-width: 100%;
+  font-size: .875rem;
+  border: 1px solid #c0bfbf;
+  padding: .25rem;
+}
+input[type="file"] {
+  border: none;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
 .form-section {
 	background-color: #f1f1f3;
 	border-radius: 2px;
@@ -384,9 +414,13 @@ table td div.ExcelDownloadDescription {
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
-	padding: .25rem;
+	padding: .25rem 0;
 	vertical-align: top;
 	font-size: .875rem;
+}
+[class$="-input-wrapper"] {
+	display: inline-block;
+	margin-bottom: .25rem;
 }
 .form-input input:not([type="submit"]),
 .form-input textarea,
@@ -394,7 +428,7 @@ table td div.ExcelDownloadDescription {
 .generated-field .preview,
 .generated-field .value {
 	min-width: 10rem;
-	margin-left: .25rem;
+	padding: .25rem;
 }
 .form-input textarea {
 	width: calc(100% - 11rem);
@@ -404,8 +438,8 @@ table td div.ExcelDownloadDescription {
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
-	margin: .125rem .25rem;
-	vertical-align: baseline;
+	margin: .25rem .375rem;
+	vertical-align: text-top;
 	min-width: initial;
 	padding: 0;
 }
@@ -413,6 +447,7 @@ table td div.ExcelDownloadDescription {
 .form-input inpt[type=radio] ~ label {
 	float: none; /* override */
 	margin: 0 .25rem 0 0;
+	line-height: 1;
 }
 form .ajax-observe-field,
 form .ajax-update-container {
@@ -468,7 +503,7 @@ form .ajax-update-container {
 /* FIELDSETS --> */
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
-	margin-bottom: .75rem;
+	margin: 0 0 .75rem;
 	width: -moz-fit-content;
 	width: -webkit-fit-content;
 	width: fit-content;
@@ -527,6 +562,35 @@ form[class$="-search"] .form-section-content {
 /* <-- SEARCH */
 
 /* <-- FORMS */
+/* HEADINGS --> */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-top: 0;
+  line-height: 1.2;
+  margin-bottom: .5rem;
+  padding: 0;
+}
+h1 {
+  font-size: 1.75rem;
+  color: #2a353d;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4{
+  font-size: 1.125rem;
+  color: #33424d;
+}
+
+/* <-- HEADINGS */
 /* LINKS --> */
 
 a,
@@ -561,12 +625,13 @@ table.row-display a:active {
 .controls-wrapper {
   margin-top: .5rem;
   display: flex;
+  align-items: center;
 }
 .controls-wrapper [class*="-link"]:not(:last-child),
 .controls-wrapper [class*="-button"]:not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
-  margin-right: .5rem;
+  margin-right: .75rem;
 }
 /* remove override of input[type="submit"] after css migration */
 .controls-wrapper input[type="submit"][class*="-link"],
@@ -579,6 +644,15 @@ table.row-display a:active {
 .controls-wrapper input[class^="delete"] {
 	margin-left: auto;
 }
+.controls-wrapper [class*="-link"] {
+	font-size: .875rem;
+}
+.previous-page-link {
+	margin-bottom: .75rem;
+	display: inline-block;
+    font-size: .875rem;
+}
+
 
 
 
@@ -939,8 +1013,8 @@ div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
     display: inline-block;
     white-space: nowrap;
 }
-#Header .UserNameBlock select {
-  max-width: 150px;
+#Header div.UserNameBlock select {
+  max-width: calc(100% - 50px);
 }
 .IsNotLoggedIn #Header #buildAndInstance {
 /*  display: none; */
@@ -1037,9 +1111,6 @@ div#buildAndInstance {
 /* <--HEADER */
 /* TITLES-->*/
 .Content h1 {
-  font-size: 1.75rem;
-  color: #2a353d;
-  font-weight: normal;
   clear: both;
 }
 div.SectionsRowDisplay h1,
@@ -1050,23 +1121,7 @@ div.BrandRowDisplay h1 {
 .Content .SectionDisplay h1 {
   text-align: left;
 }
-.Content h2 {
-  font-size: 1.375rem;
-}
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .75rem;
-  line-height: 1.5;
-  font-weight: normal;
-  padding: 0;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4{
-  font-size: 1.125rem;
-}
+
 a.LinkToPreviousPage {
   margin-right: 2em;
   margin-top: -2em;
@@ -2230,37 +2285,12 @@ div.PageName {
   text-align: right;
   font-size: 0.75rem;
 }
-input[type="text"],
-textarea,
-input[type="password"] {
-  background-color: #fff;
-  border: 1px solid #CECECE;
-  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  padding: 2px 4px;
-  font-size: .875rem;
-}
-
-select {
-  margin-bottom: .25em;
-}
-input[type="file"] {
-  border: none;
-  text-decoration: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-}
 input[type="submit"],
 input[type="button"]{
   vertical-align: middle;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   padding-bottom: .1em;
   cursor: pointer;
-}
-select {
-  max-width: 100%;
 }
 input[type="submit"][value="Clear Filters"] {
   border: 1px solid #999;

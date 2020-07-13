@@ -426,9 +426,6 @@ a.hideLink:hover {
 div.MultiSearcher {
   margin-top: .5rem;
 }
-div.MultiSearcher input {
-  font-size: .75rem;
-}
 div.MultiSearcher input[type="text"] {
   margin: 0 .5rem 0 0;
   padding: 1px 0 1px 4px;
@@ -1638,26 +1635,7 @@ table.pageStructure tr.contentArea {
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  line-height: 1.5;
-  padding: 0;
-}
 
-h1 {
-  font-size: 1.75rem;
-}
-h2 {
-  font-size: 1.375rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 1.125rem;
-  color: #33424d;
-}
 .bg-blue01 h4,
 .bg-blue02 h4 {
   color: #fff;
@@ -1780,28 +1758,8 @@ table.Search tr th {
 /* <--TABLES*/
 
 /* FORMS --> */
-form {
-  margin-bottom: 0;
-}
-td input[type="text"],
-textarea,
-input,
-td input[type="password"],
-td input[type="search"] {
-  border: none;
-  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
-  padding: .25rem;
-  font-size: .875rem;
-  border: 1px solid #c0bfbf;
-}
 
-select {
-  font-size: .875rem;
-  border: 1px solid #c0bfbf;
-  padding: .25rem;
-}
+
 #tippyTopOfPage select,
 #tippyTopOfPage input {
   border: none;

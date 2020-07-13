@@ -1,5 +1,35 @@
  /* FORMS --> */
-
+input[type="checkbox"],/* TEMP july 2020*/ 
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="password"],
+textarea {
+  background-color: #fff;
+  border: 1px solid #CECECE;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  padding: .25rem;
+  font-size: .875rem;
+}
+/* remove after migration?? ? */
+select {
+  max-width: 100%;
+  font-size: .875rem;
+  border: 1px solid #c0bfbf;
+  padding: .25rem;
+}
+input[type="file"] {
+  border: none;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
 .form-section {
 	background-color: #f1f1f3;
 	border-radius: 2px;
@@ -34,9 +64,13 @@
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
-	padding: .25rem;
+	padding: .25rem 0;
 	vertical-align: top;
 	font-size: .875rem;
+}
+[class$="-input-wrapper"] {
+	display: inline-block;
+	margin-bottom: .25rem;
 }
 .form-input input:not([type="submit"]),
 .form-input textarea,
@@ -44,7 +78,7 @@
 .generated-field .preview,
 .generated-field .value {
 	min-width: 10rem;
-	margin-left: .25rem;
+	padding: .25rem;
 }
 .form-input textarea {
 	width: calc(100% - 11rem);
@@ -54,8 +88,8 @@
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
-	margin: .125rem .25rem;
-	vertical-align: baseline;
+	margin: .25rem .375rem;
+	vertical-align: text-top;
 	min-width: initial;
 	padding: 0;
 }
@@ -63,6 +97,7 @@
 .form-input inpt[type=radio] ~ label {
 	float: none; /* override */
 	margin: 0 .25rem 0 0;
+	line-height: 1;
 }
 form .ajax-observe-field,
 form .ajax-update-container {
@@ -118,7 +153,7 @@ form .ajax-update-container {
 /* FIELDSETS --> */
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
-	margin-bottom: .75rem;
+	margin: 0 0 .75rem;
 	width: -moz-fit-content;
 	width: -webkit-fit-content;
 	width: fit-content;
