@@ -608,6 +608,21 @@ h4{
 }
 
 /* <-- HEADINGS */
+/* iframes --> */
+
+.iframe-resize-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+.iframe-resize-wrapper {
+  height: 300px;
+  width: 800px;
+  resize: both;
+  overflow: auto;
+}
+
+/* <-- iframes */
+
 /* LINKS --> */
 
 a,
@@ -3194,16 +3209,6 @@ div.PIPYDisplay .PlacementReportReasonSortOrder {
   white-space: -pre-wrap;      /* Opera 4-6 */
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-.AISStudentEmailNotificationViewer iframe {
-  width: 100%;
-  height: 100%;
-}
-.AISStudentEmailNotificationViewer .iframe-resize-wrapper {
-  height: 300px;
-  width: 800px;
-  resize: both;
-  overflow: auto;
 }
 
 /* <-- PAGE: AISStudentEmailNotificationViewer */
