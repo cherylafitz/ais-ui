@@ -36,18 +36,21 @@ td a.file-download {
 .Content .PDFDownload,
 .pdf-download,
 .file-download [href$=".pdf"],
-td a.file-download[href$=".pdf"] {
+td a.file-download[href$=".pdf"],
+.file-download [data-file-name$=".pdf"] {
   background-image: url(../../../../ais/common/pdficon_small.png);
 }
 .Content .ExcelDownload,
 .excel-download,
 .file-download [href$=".xlsx"],
-td a.file-download[href$=".xlsx"] {
+td a.file-download[href$=".xlsx"],
+.file-download [data-file-name$=".xlsx"] {
   background-image: url(../../../../ais/common/Excelicon_small.png);
 }
 .word-download,
 .file-download [href$=".docx"],
-td a.file-download[href$=".docx"] {
+td a.file-download[href$=".docx"],
+.file-download [data-file-name$=".docx"] {
   background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
 }
 /* REMOVE?? --> */
@@ -59,5 +62,13 @@ table td div.ExcelDownloadDescription {
   margin-right: 1em;
 }
 /* <-- REMOVE?? */
+
+/* PDFDownload PAGE OVERRIDE --> */
+.Content > .PDFDownload {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+}
+/* <-- PDFDownload PAGE OVERRIDE */
 
 /* <-- DOWNLOADS */
