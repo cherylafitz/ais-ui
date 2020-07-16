@@ -1,0 +1,35 @@
+/* ERRORS --> */
+
+.validation-error-line {
+  position: relative;
+	border: 1px solid #ff8f66;
+	border-radius: 2px;
+    padding: .5rem .75rem .5rem 2.25rem;
+    margin: 1rem 0;
+    background-color: #ffb499;
+    width: fit-content;
+}
+.validation-error-line::before {
+  width: 0;
+height: 0;
+    content: "";
+    border-top: 0;
+    border-right: .625em solid transparent;
+    border-bottom: 1.125em solid #cc3600;
+    border-left: .625em solid transparent;
+    position: absolute;
+    left: .625rem;
+    top: .625em;
+    border-radius: 2px;
+}
+.validation-error-line::after {
+    content: "!";
+    color: #fff;
+    position: absolute;
+    left: 1.4375em;
+    top: .825em;
+    font-size: 0.825em;
+    font-weight: bold;
+}
+
+/* <-- ERRORS */
