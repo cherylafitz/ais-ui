@@ -832,9 +832,7 @@ medium-yellow: #f8c76d;
 /*
 dark green: #5ba94d
 */
-:root {
-  --required-red: #e62e00;
-}
+
 
 /* RESET CSS --> */
 
@@ -2866,7 +2864,6 @@ div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes label
   white-space: initial;
   padding: 0;
   overflow: auto;
-  display: block;
 }
 div.HealthDataFormExpertEditor fieldset.HealthConditionWithAttributes,
 div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes {
