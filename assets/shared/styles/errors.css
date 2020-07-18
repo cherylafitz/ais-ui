@@ -1,13 +1,14 @@
 /* ERRORS --> */
 
 .validation-error-line {
-  position: relative;
-	border: 1px solid #ff8f66;
-	border-radius: 2px;
-    padding: .5rem .75rem .5rem 2.25rem;
+    position: relative;
+    border: 1px solid #ffc7b3;
+    border-radius: 2px;
+    padding: .5rem 1rem .5rem 2.25rem;
     margin: 1rem 0;
-    background-color: #ffb499;
+    background-color: #ffdacc;
     width: fit-content;
+    font-size: .875rem;
 }
 .validation-error-line::before {
   width: 0;
@@ -21,6 +22,34 @@ height: 0;
     left: .625rem;
     top: .625em;
     border-radius: 2px;
+
+    /*or....*/
+content: "";
+    width: 1rem;
+    position: absolute;
+    left: .75rem;
+    top: .75rem;
+    border-radius: 50%;
+    height: 1rem;
+    background: transparent;
+    border: 2px solid #cc3600;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /*or x...*/
+/*    border: 0;
+    border-radius: 0;
+    position: absolute;
+    font-size: 0.825em;
+    font-weight: bold;
+    width: .6875rem;
+    width: .75rem;
+    background-color: #cf4216;
+    height: 3px;
+    top: 1.1875rem;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);*/
 }
 .validation-error-line::after {
     content: "!";
@@ -30,6 +59,20 @@ height: 0;
     top: .825em;
     font-size: 0.825em;
     font-weight: bold;
+
+    /*or...*/
+    content: "";
+position: absolute;
+    font-size: 0.825em;
+    font-weight: bold;
+    width: .6875rem;
+    width: .75rem;
+    background-color: #cf4216;
+    height: 3px;
+    top: 1.1875rem;
+    left: .875rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 /* <-- ERRORS */
