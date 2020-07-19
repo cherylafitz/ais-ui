@@ -706,6 +706,12 @@ table.row-display a:active {
   column-gap: .5rem;
 }
 /* <-- LISTS */
+/* page structure --> */
+.page-section {
+  margin-bottom: 1rem;
+}
+/* <-- page structure */
+
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
@@ -2043,7 +2049,17 @@ div.ArticleViewer div.AlumniList {
   margin: .5rem 2rem;
 }
 .ArticleViewer .articleImage img {
-  border: 4px solid #fff;
+  max-width: 100%;
+}
+.articleImage {
+  margin: 0 0 .5rem 1rem;
+  float: right;
+  padding: .25rem;
+  background-color: #fff;
+}
+.articleImage .caption {
+  font-size: .875rem;
+  text-align: center;
 }
 
 /*ALUMNI ARTICLES resets -->*/
@@ -2070,11 +2086,6 @@ div.ArticleViewer div.AlumniList {
 }
 div.ArticleViewer fieldset {
   background-color: #fff;
-}
-.articleImage {
-  margin: .25rem;
-  border: none;
-  padding: 0;
 }
 div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
 .article .header .status table {
@@ -4460,11 +4471,12 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1NumberFema
 div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access input {
     background-color: #bfdfb9;
 }
-
+  
 /* 9 Sep - USED IN AIS HOMEPAGE PORTALS */
 .nodisplayportal {
     display: none;
 }
+
 /* PREVIOUS PAGE LINK --> */
 .previous-page-link {
 	font-size: .875rem;
