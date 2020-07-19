@@ -18,9 +18,14 @@ body {
 }
 
 /* <-- END BASE STYLES */
+/* variables --> */
+
 :root {
   --required-red: #e62e00;
 }
+
+/* <-- variables */
+
 /* ALERTS, NOTICES, AND WARNINGS --> */
 
 .Alert {
