@@ -12,7 +12,7 @@
 
 
 @charset "UTF-8";
-
+ 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 /*@import url("https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css");*/
@@ -2404,6 +2404,48 @@ div#SchoolDisplay p {
 
 /* <-- HEALTH INBOX QUEUE */
 
+/* PAGE: StudentDocumentTypeForProgramYearEditor --> */
+/* ERRORS --> */
+
+.StudentDocumentTypeForProgramYearEditor .validation-error-line {
+  background-color: #ffdacc;
+  border-radius: 2px;
+  border: 1px solid #ffc7b3;
+  font-size: .875rem;
+  margin: 1rem 0;
+  padding: .5rem 1rem .5rem 2.25rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.StudentDocumentTypeForProgramYearEditor .validation-error-line::before {
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #cc3600;
+  content: "";
+  height: 1rem;
+  left: .75rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+}
+.StudentDocumentTypeForProgramYearEditor .validation-error-line::after {
+  background-color: #cf4216;
+  content: "";
+  font-size: 0.825em;
+  font-weight: bold;
+  height: 3px;
+  left: .875rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  width: .75rem;
+}
+
+/* <-- ERRORS */
+/* <-- PAGE: StudentDocumentTypeForProgramYearEditor */
 /* PAGE: PIPY EDITOR --> */
 /* override -> */
 div.PIPYDisplay .PlacementReportReasonSortOrder {
