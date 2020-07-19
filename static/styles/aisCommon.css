@@ -2869,7 +2869,6 @@ div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes label
   white-space: initial;
   padding: 0;
   overflow: auto;
-  display: block;
 }
 div.HealthDataFormExpertEditor fieldset.HealthConditionWithAttributes,
 div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes {
