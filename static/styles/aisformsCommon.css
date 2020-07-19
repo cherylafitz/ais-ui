@@ -706,6 +706,12 @@ table.row-display a:active {
   column-gap: .5rem;
 }
 /* <-- LISTS */
+/* page structure --> */
+.page-section {
+  margin-bottom: 1rem;
+}
+/* <-- page structure */
+
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
