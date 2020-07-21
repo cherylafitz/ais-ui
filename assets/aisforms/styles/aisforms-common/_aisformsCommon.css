@@ -813,6 +813,9 @@ div.Main div.staffHome div.Deadlines {
 }
 /* <--ADMIN VIEW ONLY*/
 /* APPLICANT HOMEPAGE--> */
+.Deadline .HeaderDescription {
+  display: block;
+}
 .InstructionsBadge {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;

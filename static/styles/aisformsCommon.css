@@ -1618,6 +1618,9 @@ div.Main div.staffHome div.Deadlines {
 }
 /* <--ADMIN VIEW ONLY*/
 /* APPLICANT HOMEPAGE--> */
+.Deadline .HeaderDescription {
+  display: block;
+}
 .InstructionsBadge {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -3775,6 +3778,7 @@ section.portalMessage header {
   display: inline-block;
   vertical-align: middle;
 }
+
 /* TABLES --> */
 
 table {
