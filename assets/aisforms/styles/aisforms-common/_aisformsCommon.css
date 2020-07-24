@@ -1311,8 +1311,13 @@ table.rolodex tr.ItemXMLTag th {
 /* <-- PAGE: #list-of-forms-page  */
 
 /* PAGE: FORM TRANSFER INBOX --> */
-.transfer-errors-inbox .Problem {
+.transfer-errors-inbox .Problem,
+.transfer-errors-inbox .TemplateName {
   white-space: normal;
+}
+.transfer-errors-inbox th.Purpose input,
+.transfer-errors-inbox th.Form input {
+  width: 6rem;
 }
 .transfer-errors-inbox .Problem span {
   display: block;
