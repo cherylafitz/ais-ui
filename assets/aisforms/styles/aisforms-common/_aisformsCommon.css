@@ -1325,6 +1325,13 @@ table.rolodex tr.ItemXMLTag th {
   margin-top: .25rem;
 }
 /* <-- PAGE: FORM TRANSFER INBOX */
+
+/* PAGE: USERS IN BULK DISPLAY --> */
+/* TEMP PRE-MIGRATION */
+.UsersInBulkResults .ExcelExport {
+  margin-right: .75rem;
+}
+/* <-- PAGE: USERS IN BULK DISPLAY */
 /* PAGE: BRAND EDITOR --> */
 
 .BrandEditor .go-top {
