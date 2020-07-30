@@ -18,6 +18,7 @@ body {
 }
 
 /* <-- END BASE STYLES */
+
 /* variables --> */
 
 :root {
@@ -815,27 +816,6 @@ input[title="ERXSortOrder.sortBy"] {
 /*                                                           */
 /* Please! Please! review my changes and clean them up as    */
 /* as you think appropriate. Thanks! ... Gregg               */
-
-/* START BASE STYLES --> */
-
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-
-@charset "UTF-8";
-
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-}
-
-html, 
-body {
-  height: 100%;
-  margin: 0;
-  font-size: 100%;
-}
-
-/* <-- END BASE STYLES */
 
 
 /* MAIN STRUCTURE--> */
