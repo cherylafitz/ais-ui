@@ -391,35 +391,29 @@ td ul, td ol {
 
 /* Alignment/Spacing */
 
-div.Content div.QuestionNumber {
+.Content .QuestionNumber {
   float:left;
+  margin-right: .5rem;
 }
-
-.subQuestion {
-  margin-left: 1.7em;
+.subQuestion,
+.Content .QuestionText,
+.Content .QuestionAnswer  {
+  margin-left: 1.75rem;
 }
-
-div.Content div.QuestionText {
-  margin-left: 1.7em;
+.Content .QuestionAnswer {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
 }
-
-div.QuestionItem.subQuestion div.QuestionText,
-div.QuestionItem.subQuestion div.QuestionAnswer {
-  margin-left: 2.5em;
+.Content .subQuestion .QuestionText,
+.Content .subQuestion .QuestionAnswer {
+  margin-left: 2.5rem;
 }
-
-div.Content div.QuestionAnswer {
-  margin-left: 1.7em;
-  margin-bottom: 0.2em;
-  margin-top: 0.2em;
-}
-.Content div.QuestionAnswer a {
+.Content .QuestionAnswer a {
   border: none;
   text-decoration: underline;
 }
-
 a.LinkToDeleteGroupItem {
-  padding: .1em;
+  padding: .125rem;
 }
 input {
   border-radius: 2px;
@@ -431,8 +425,8 @@ input#SubmitForEvaluation {
 input[value="Save Changes"],
 input#SubmitForEvaluation {
   color: #FFF;
-  padding: 0.2em 0.4em 0.3em;
-  font-size: 1em;
+  padding: 0.25rem 0.325rem 0.325rem;
+  font-size: 1rem;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -443,7 +437,7 @@ input#SubmitForEvaluation:hover {
 }
 input#SubmitForEvaluation,
 input#SubmitForEvaluation:hover {
-  font-size: 1.2em;
+  font-size: 1.25rem;
 }
 input[value="Add More"] {
   background: rgb(204,204,204); /* Old browsers */
@@ -917,6 +911,7 @@ table.ExcelDataTabulated th,
 table.ExcelDataTabulated td {
   padding: 2px;
 }
+
 /* Notice etc boxes--> */
 
 div.alertBox,
