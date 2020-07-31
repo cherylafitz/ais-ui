@@ -1787,7 +1787,8 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 }
 /* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
 #article-editor-page-id,
-#AlumnusSocialMediaEditor {
+#AlumnusSocialMediaEditor,
+.AlumnusNoteEditor #articleSummary {
   padding: 1rem 1rem 1rem 2rem;
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
@@ -4487,6 +4488,31 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 	margin-bottom: 1rem;
 }
 /* <-- PREVIOUS PAGE LINK */
+/* ROLODEX --> */
+.rolodex-display {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  border: 1px solid #cecece;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.rolodex-item {
+  margin-bottom: .375rem;
+}
+.rolodex-item .label,
+.rolodex-item .value {
+  display: inline-block;
+  vertical-align: top;
+  font-size: .875rem;
+}
+.rolodex-item .label {
+  width: 10rem;
+  font-weight: bold;
+}
+
+/* <-- ROLODEX */
+
 /* TABLES --> */
 
 /* PORTED FROM MARCO'S PAGEWRAPPER.CSS --> */

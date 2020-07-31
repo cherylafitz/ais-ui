@@ -981,7 +981,8 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 }
 /* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
 #article-editor-page-id,
-#AlumnusSocialMediaEditor {
+#AlumnusSocialMediaEditor,
+.AlumnusNoteEditor #articleSummary {
   padding: 1rem 1rem 1rem 2rem;
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
