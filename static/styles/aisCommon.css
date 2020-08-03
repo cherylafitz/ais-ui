@@ -4478,6 +4478,26 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
     display: none;
 }
 
+/* PAGE: TEST CENTER ASSESSMENT EDITOR --> */
+.scoring-promotion.row-display th {
+  padding: .25rem 1rem;
+}
+.scoring-promotion.row-display td {
+  padding: .5rem 1rem;
+}
+.scoring-promotion .default,
+.scoring-promotion [class$="-default"] {
+  background-color: rgb(247 217 253 / .3);
+}
+
+.scoring-promotion .special,
+.scoring-promotion [class$="-special"] {
+  background-color: rgb(197 237 200 / 0.3);
+}
+
+
+/* <-- PAGE: TEST CENTER ASSESSMENT EDITOR */
+
 /* PREVIOUS PAGE LINK --> */
 .previous-page-link {
 	font-size: .875rem;
