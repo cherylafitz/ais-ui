@@ -54,17 +54,16 @@ div#menu3 ul {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-div.SectionDisplay p {
+.SectionDisplay p {
   margin-top: .6em
 }
 blockquote {
   font-style: italic;
 }
-div.SectionDisplay textarea {
+.SectionDisplay textarea {
   margin: .5em 0;
-  padding: .3em;
 }
-div.SectionDisplay td textarea {
+.SectionDisplay td textarea {
   margin: 0;
 }
 div.Content .noWrap {
@@ -85,7 +84,7 @@ div.QuestionText div.Instruction ul {
 
 
 /* Section Name and Headers--> */
-div.SectionDisplay div.SectionName {
+.SectionDisplay div.SectionName {
   font-size: 1.875rem;
   color: #2E6B9B;
   border-bottom: 2px solid #2E6B9B;
@@ -229,151 +228,21 @@ body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
 
 
 /* Forms--> */
-div.SectionDisplay td select {
+.SectionDisplay td select {
   width: 10em;
 }
-div.SectionDisplay textarea, select {
+.SectionDisplay textarea, select {
   max-width: 100%;
 }
 
-div.SectionDisplay {
+.SectionDisplay {
   min-width: 280px;
 }
 
 div.itemDisplayOuterContainer {
-  margin-bottom:0.5em;
+  margin-bottom: 0.75rem;
 }
 /* <--Forms */
-
-/* Tables -->*/
-div.ChoiceQuestion table,
-div.Content div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
-  background-color: transparent;
-}
-table.TemplateTable,
-.SectionDisplay .SectionIntroductionText table,
-.SectionDisplay .BeforeQuestion table {
-  margin: 1em 1em 1em 0;
-}
-table.TemplateTable td.sideTH {
-  font-weight: bold;
-  background-color: #e6e6e6;
-}
-table.TemplateTable td ul {
-   list-style-type:circle;
-   padding-left:1.1em;
-}
-table.Attachments {
-  margin-left:0 !important;
-}
-div.Content td,
-div.Content th {
-  vertical-align: top;
-}
-div.Content div.MenuOfSections td {
-  vertical-align: bottom;
-}
-div.Content table.QuestionItem,
-div.Content table.QuestionItem tr.QuestionItemRow,
-div.Content table.QuestionItem tr.QuestionItemRow td {
-  border: 0;
-}
-div.Content table.InfoBox {
-  background-color: #E1F0FF;
-}
-div.Content table.ContrastBox {
-  background-color: #2E6B9B;
-}
-div.SectionDisplay table th,
-div.Content table.AnswerTable tr.headerRow th,
-div.Content table.AnswerTable thead tr th {
-  background-color: #444;
-  font-style: normal;
-  color: #FFFFFF;
-  font-size: .875rem;
-  font-weight: bold;
-  padding: 0.25rem;
-}
-div.SectionDisplay .ItemAddress th {
-  text-align: left;
-  font-weight: normal;
-  background-color: #2E6B9B;
-}
-div.SectionDisplay table.ERXMatrixTable tr td,
-div.SectionDisplay  table.AnswerTable div.RadioButtonMatrix tr td,
-div.SectionDisplay  table.AnswerTable div.CheckboxMatrix tr td  {
-  border: none;
-}
-td.ERXMatrixTableCell {
-  padding-right: 2em;
-  padding-left: 4px; /* TEMP */
-}
-div.Content div.SectionDisplay table tr td input[type="text"] {
-  max-width: 95%;
-}
-
-div.SectionDisplay table td.DL,
-div.SectionDisplay table td.Document {
-  background-color: #99ccff;
-  vertical-align: top;
-  text-align: center;
-  border: thin solid #777;
-  padding: 0.3em;
-}
-div.SectionDisplay table td.Detail,
-div.SectionDisplay table td.Instructions,
-div.SectionDisplay table td.Link {
-  vertical-align: top;
-  padding: 0.3em;
-  border: 1px solid #777;
-}
-table.AnswerTable {
-  margin: .5em 0em;
-}
-div.Content table.AnswerTable tr td div{
-  margin-top:5px;
-  margin-bottom:5px;
-}
-
-div.SectionIntroductionText table tr td,
-div.BeforeQuestion table tr td,
-table.TemplateTable tr td,
-div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th,
-table.TemplateTable tr th {
-  border: 1px solid #cecece;
-  padding: .25rem .5rem;
-}
-div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th,
-table.TemplateTable tr th {
-  border-color: #222;
-}
-div.SectionIntroductionText table tr td,
-div.BeforeQuestion table tr td,
-table.TemplateTable tr td {
-  font-size: 0.875rem;
-  text-align: left;
-}
-
-div.SectionDisplay table.TemplateTable tr td,
-div.SectionDisplay table.TemplateTable tr th {
-  vertical-align: middle;
-}
-div.SectionDisplay table.TemplateTable tr th {
-  font-weight: normal;
-}
-
-div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th {
-  font-weight: bold;
-  font-style: normal;
-}
-
-div.SectionIntroductionText table.TBorderNone tr td,
-div.BeforeQuestion table.TBorderNone tr td {
-  border: none;
-}
 
 td ul, td ol {
   font-size: .9em;
@@ -532,17 +401,17 @@ div.Content div.TextGeneric10 {
   clear:both;
 }
 
-div.SectionDisplay h1,
-div.SectionDisplay h2,
-div.SectionDisplay h3,
-div.SectionDisplay h4,
-div.SectionDisplay h5,
-div.SectionDisplay h6 {
+.SectionDisplay h1,
+.SectionDisplay h2,
+.SectionDisplay h3,
+.SectionDisplay h4,
+.SectionDisplay h5,
+.SectionDisplay h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 div.Content div.Divider,
-div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
+div#ApplicationTemplateDisplayAUC .SectionDisplay h1 {
   font-size: 1.5rem;
   color: #025689;
   margin-top: 0.5em;
@@ -552,7 +421,7 @@ div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
   text-align: left;
 }
 
-.Content div.SectionDisplay h2 {
+.Content .SectionDisplay h2 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0;
@@ -669,19 +538,16 @@ div.Content div.SchoolZIP input[type='text'] {
   width: 2em;
 } */
 
-div.Content div.SectionDisplay table tr td div.caption input[type="text"] {
+div.Content .SectionDisplay table tr td div.caption input[type="text"] {
   width: 15em;
 }
-div.Content div.SectionDisplay table tr td .LargeInputTable input[type="text"],
-div.Content div.SectionDisplay .ItemAddress table tr td input[type="text"],
-div.SectionDisplay .ItemAddress td select
- {
+div.Content .SectionDisplay table tr td .LargeInputTable input[type="text"] {
   width: 15rem;
 }
-div.Content div.SectionDisplay table tr td input[type="text"] {
+div.Content .SectionDisplay table tr td input[type="text"] {
   width: 8em;
 }
-div.Content div.SectionDisplay table tr td input[type="text"].IntegerQuestion {
+div.Content .SectionDisplay table tr td input[type="text"].IntegerQuestion {
   width: 6em;
 }
 
@@ -719,7 +585,7 @@ div.Content table .AjaxFlexibleFileUpload .Button span,
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-div.SectionDisplay li {
+.SectionDisplay li {
   margin-bottom: 3px;
 }
 
@@ -881,9 +747,9 @@ div.templateContent  img.ProgramLogo600w {
 }
 
 /* 2 Aug - Float New Name fields added to AIR */
-div.SectionDisplay div.PartnerOrgFirstName,
-div.SectionDisplay div.PartnerOrgMiddleName,
-div.SectionDisplay div.PartnerOrgLastName {
+.SectionDisplay div.PartnerOrgFirstName,
+.SectionDisplay div.PartnerOrgMiddleName,
+.SectionDisplay div.PartnerOrgLastName {
   float: left;
   clear: none;
 }
@@ -895,7 +761,7 @@ div.QuestionItem.DisabledBecauseOfSkipPattern {
 }
 
 /* 6 Aug - Add additional floated question */
-div.SectionDisplay div.MiddleNameNativeLanguage {
+.SectionDisplay div.MiddleNameNativeLanguage {
   float: left;
   clear: none;
 }
@@ -911,6 +777,32 @@ table.ExcelDataTabulated th,
 table.ExcelDataTabulated td {
   padding: 2px;
 }
+
+/* ADDRESS TABLE --> */
+
+.SectionDisplay .ItemAddress th {
+  text-align: left;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  border-color: #fff;
+}
+.SectionDisplay .ItemAddress tr:first-of-type th {
+  border-top-color: #2E6B9B;
+}
+.SectionDisplay .ItemAddress tr:last-of-type th {
+  border-bottom-color: #2E6B9B;
+}
+.SectionDisplay .ItemAddress .RowDisplay td {
+  border-color: #c5dced;
+}
+
+.Content .SectionDisplay .ItemAddress table tr td input[type="text"],
+.SectionDisplay .ItemAddress td select {
+  width: 15rem;
+  max-width: 100%;
+}
+
+/* <-- ADDRESS TABLE */
 
 /* Notice etc boxes--> */
 
@@ -1014,20 +906,18 @@ div.deadlineBox span.timeZone,
 
 /* <-- notice boxes */  
 
- TABLES --> */
-
-div.Content table.AnswerTable tr.odd,
-div.SectionDisplay table.RowDisplay tr:nth-child(2n+1),
-div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+1) {
+/* TABLES --> */
+/* legacy RowDisplay-->  */
+.Content .AnswerTable tr.odd,
+.SectionDisplay table.RowDisplay tr:nth-child(2n+1),
+.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+1) {
   background-color: #ebf3f9;
 }
-div.Content table.AnswerTable tr.even,
-div.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
-div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
+.Content .AnswerTable tr.even,
+.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
+.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
   background-color: #c4dced;
 }
-div.SectionDisplay table.AnswerTable tr td,
-div.SectionDisplay table th,
 .SectionDisplay table.RowDisplay td  {
   border: 1px solid #fff;
   vertical-align: top;
@@ -1038,36 +928,35 @@ div.SectionDisplay table th,
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
-div.SectionDisplay table.AnswerTable tr.headerRow th,
-div.SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
-div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
+.SectionDisplay .AnswerTable tr.headerRow th,
+.SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
+.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
   font-style:normal;
   font-weight: normal;
   background-color: #2E6B9B;
   color: #FFFFFF;
-  font-size: 1rem;
   border-color: #fff;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .SectionDisplay .ReferenceNotified form table.RowDisplay,
 .SectionDisplay .ReferenceNotified table.RowDisplay {
   margin: 1em;
 }
+/* <-- legacy RowDisplay */
 
 /* NEW TABLES --> */
-
-div.Content table.AnswerTable tr.odd,
-div.SectionDisplay table.row-display tr:nth-child(2n+1),
-div.SectionDisplay table.row-display tbody tr:nth-child(2n+1) {
+/* new row-display --> */
+.Content .AnswerTable tr.odd,
+.SectionDisplay table.row-display tr:nth-child(2n+1),
+.SectionDisplay table.row-display tbody tr:nth-child(2n+1) {
   background-color: #ebf3f9;
 }
-div.Content table.AnswerTable tr.even,
-div.SectionDisplay table.row-display tr:nth-child(2n+2),
-div.SectionDisplay table.row-display tbody tr:nth-child(2n+2)  {
+.Content .AnswerTable tr.even,
+.SectionDisplay table.row-display tr:nth-child(2n+2),
+.SectionDisplay table.row-display tbody tr:nth-child(2n+2)  {
   background-color: #c4dced;
 }
-div.SectionDisplay table.AnswerTable tr td,
-div.SectionDisplay table th,
+.SectionDisplay .AnswerTable td,
+.SectionDisplay table th,
 .SectionDisplay table.row-display td  {
   border: 1px solid #fff;
   vertical-align: top;
@@ -1078,23 +967,158 @@ div.SectionDisplay table th,
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
-div.SectionDisplay table.AnswerTable tr.headerRow th,
-div.SectionDisplay .QuestionAnswer table.row-display tr.headerRow th,
-div.SectionDisplay .QuestionAnswer table.row-display thead tr th {
-  font-style:normal;
-  font-weight: normal;
+.SectionDisplay .AnswerTable tr.headerRow th,
+.SectionDisplay .QuestionAnswer table.row-display tr.headerRow th,
+.SectionDisplay .QuestionAnswer table.row-display thead tr th {
   background-color: #2E6B9B;
   color: #FFFFFF;
-  font-size: 1rem;
   border-color: #fff;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .SectionDisplay .ReferenceNotified form table.row-display,
 .SectionDisplay .ReferenceNotified table.row-display {
   margin: 1em;
 }
+/* <-- new row-display */
+
+/* Tables -->*/
+div.ChoiceQuestion table,
+.Content div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
+  background-color: transparent;
+}
+table.TemplateTable,
+.SectionDisplay .SectionIntroductionText table,
+.SectionDisplay .BeforeQuestion table {
+  margin: 1em 1em 1em 0;
+}
+table.TemplateTable td.sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+table.TemplateTable td ul {
+   list-style-type:circle;
+   padding-left:1.1em;
+}
+table.Attachments {
+  margin-left:0 !important;
+}
+.Content td,
+.Content th {
+  vertical-align: top;
+}
+.Content div.MenuOfSections td {
+  vertical-align: bottom;
+}
+.Content table.QuestionItem,
+.Content table.QuestionItem tr.QuestionItemRow,
+.Content table.QuestionItem tr.QuestionItemRow td {
+  border: 0;
+}
+.Content table.InfoBox {
+  background-color: #E1F0FF;
+}
+.Content table.ContrastBox {
+  background-color: #2E6B9B;
+}
+.SectionDisplay table th {
+  background-color: #444;
+  font-size: .875rem;
+  font-weight: bold;
+}
+.SectionDisplay table th,
+.Content .AnswerTable tr.headerRow th,
+.Content .AnswerTable thead tr th {
+  color: #FFFFFF;
+  padding: 0.25rem;
+}
+.SectionDisplay .AnswerTable {
+  font-size: .875rem;
+}
+.SectionDisplay .ERXMatrixTable {
+  margin: 0 1rem 0 .25rem;
+}
+.SectionDisplay .ERXMatrixTable td {
+  padding: 0;
+}
+.SectionDisplay .ERXMatrixTable td.ERXMatrixTableCell {
+  padding-left: 4px; /* TEMP */
+}
+.SectionDisplay table.ERXMatrixTable tr td,
+.SectionDisplay  .AnswerTable div.RadioButtonMatrix tr td,
+.SectionDisplay  .AnswerTable div.CheckboxMatrix tr td  {
+  border: none;
+}
+
+.SectionDisplay table td.DL,
+.SectionDisplay table td.Document {
+  background-color: #99ccff;
+  vertical-align: top;
+  text-align: center;
+  border: thin solid #777;
+  padding: 0.3em;
+}
+.SectionDisplay table td.Detail,
+.SectionDisplay table td.Instructions,
+.SectionDisplay table td.Link {
+  vertical-align: top;
+  padding: 0.3em;
+  border: 1px solid #777;
+}
+.AnswerTable {
+  margin: .5rem 0;
+}
+.AnswerTable textarea {
+  width: 100%;
+}
+.AnswerTable th {
+  max-width: 8rem;
+}
+.Content .AnswerTable tr td div{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+div.SectionIntroductionText table tr td,
+div.BeforeQuestion table tr td,
+table.TemplateTable tr td,
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th,
+table.TemplateTable tr th {
+  border: 1px solid #cecece;
+  padding: .25rem .5rem;
+}
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th,
+table.TemplateTable tr th {
+  border-color: #222;
+}
+div.SectionIntroductionText table tr td,
+div.BeforeQuestion table tr td,
+table.TemplateTable tr td {
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.SectionDisplay table.TemplateTable tr td,
+.SectionDisplay table.TemplateTable tr th {
+  vertical-align: middle;
+}
+.SectionDisplay table.TemplateTable tr th {
+  font-weight: normal;
+}
+
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th {
+  font-weight: bold;
+  font-style: normal;
+}
+
+div.SectionIntroductionText table.TBorderNone tr td,
+div.BeforeQuestion table.TBorderNone tr td {
+  border: none;
+}
 
 /* <-- TABLES 
+
 /* Form questions to appear horizontally instead of vertically */
 
 .SectionDisplay .AdministratorFirstName,
