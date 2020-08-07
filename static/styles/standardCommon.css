@@ -21,7 +21,8 @@
 
 /* Hide Elements--> */
 .nodisplay,
-.nodisplayscreen {
+.nodisplayscreen,
+.pre-form-only {
   display:none;
 }
 /* <--Hide Elements */
