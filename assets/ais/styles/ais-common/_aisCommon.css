@@ -750,6 +750,9 @@ div.ArticleViewer fieldset {
   margin: 0 0 .75rem;
   padding-bottom: .75rem;
 }
+.application-statistics-by-program-year .total {
+  text-align: right;
+}
 
 fieldset:not(:first-child):first-of-type {
   margin-top: .75rem;
