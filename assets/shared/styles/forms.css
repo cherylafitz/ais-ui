@@ -105,8 +105,8 @@ input[type=checkbox]:checked + label {
 	margin: 0 .25rem 0 0;
 	line-height: 1;
 }
-form .ajax-observe-field,
-form .ajax-update-container {
+.form-input .ajax-observe-field,
+.form-input .ajax-update-container {
 	display: contents;	
 }
 .generated-field .preview {

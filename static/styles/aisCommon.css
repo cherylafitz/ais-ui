@@ -17,6 +17,14 @@ body {
   font-size: 100%;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
 /* <-- END BASE STYLES */
 
 /* variables --> */
@@ -97,6 +105,91 @@ div.NoEvaluationQueuesAvailable {
 /* <-- ALERTS, NOTICES, AND WARNINGS */
 
 
+
+/* BUTTONS --> */
+
+#contentPageProportional input[type="submit"],
+#contentPageProportional input[type="button"] {
+  font-size: .875rem;
+  border-radius: 2px;
+  margin: 0 .5rem .25rem 0;
+}
+input.SaveChanges {
+  margin: 1.5rem 0;
+}
+
+#ApplicationTemplateDisplayAUC input.SaveChanges {
+  float: left;
+  margin-right: 3rem;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  /*text-shadow: 0 0 0 #222;*/
+  color : #ffffff;
+  background: #336789;
+}
+input[type="submit"]:disabled,
+input[type="button"]:disabled {
+  background: #99acbb;
+  cursor: not-allowed;
+  border-color: #8ca2b2;
+}
+#filteringButtonContainer {
+  margin-bottom: .5rem;
+}
+div .Button {
+  border-bottom: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
+  margin: 0 .5em .5em;
+}
+input[type="submit"],
+input[type="button"]{
+  vertical-align: middle;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding-bottom: .1em;
+  cursor: pointer;
+}
+
+
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  opacity: .9;
+}
+input[type="submit"]:disabled,
+input#SubmitForEvaluation[type="submit"]:disabled,
+input[type="button"]:disabled {
+  opacity: .7;
+  cursor: default;
+}
+
+input[type="submit"], 
+input[type="button"] {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: .125rem .5rem .1875rem .5rem;
+  background: #336789;
+  border: 1px solid #346788;
+  font-size: .875rem;
+}
+input[type="submit"][value="Clear Filters"] {
+  border: 1px solid #999;
+  color: #000;
+  background: transparent;
+}
+input[type="submit"][value="Clear Filters"]:hover {
+  opacity: .7;
+  background: transparent;
+}
+
+
+/* <-- BUTTONS */
 
 /* <code> STYLES--> */
 
@@ -515,8 +608,8 @@ input[type=checkbox]:checked + label {
 	margin: 0 .25rem 0 0;
 	line-height: 1;
 }
-form .ajax-observe-field,
-form .ajax-update-container {
+.form-input .ajax-observe-field,
+.form-input .ajax-update-container {
 	display: contents;	
 }
 .generated-field .preview {
@@ -628,6 +721,7 @@ form[class$="-search"] .form-section-content {
 /* <-- SEARCH */
 
 /* <-- FORMS */
+
 /* HEADINGS --> */
 h1,
 h2,
@@ -1633,12 +1727,7 @@ fieldset legend .form-input select {
 .ShowHideSectionsInApplicationCell {
     float: right;
 }
-#contentPageProportional input[type="submit"]:not([value="Clear Filters"]),
-#contentPageProportional input[type="button"] {
-  font-size: .875rem;
-  border-radius: 2px;
-  margin: 0 .5rem .25rem 0;
-}
+
 
 table.pageStructure {
     border-collapse: collapse;
@@ -2636,44 +2725,8 @@ input[type="button"]{
 select {
   max-width: 100%;
 }
-input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  /*text-shadow: 0 0 0 #222;*/
-  color : #ffffff;
-  padding : .0625rem .5rem .125rem .5rem;
-  background: #204156; /* Old browsers */
-  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #336789 10%,  #204156 60%, #204156 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 ); /* IE6-9 */
-  border: 1px solid #214155;
-}
-input.SaveChanges {
-  margin: 1.5rem 0;
-}
-input[type="submit"]:hover:not([value="Clear Filters"]),
-input[type="button"]:hover {
-  /*text-shadow: 0 0 0 #222;*/
-  color : #ffffff;
-  background: #336789;
-}
-input[type="submit"]:disabled,
-input[type="button"]:disabled {
-  background: #99acbb;
-  cursor: not-allowed;
-  border-color: #8ca2b2;
-}
-#filteringButtonContainer {
-  margin-bottom: .5rem;
-}
-div .Button {
-  border-bottom: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
+
+
 
 /* <-- FORMS */
 
@@ -3021,9 +3074,7 @@ div.HealthDataForm table.HealthQuestions td.QuestionNumber {
 .HealthNextStep div {
   padding: 0 .5rem .5rem;
 }
-#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
-  margin: 0 .5em .5em;
-}
+
 div.HealthDataFormExpertEditor fieldset.HealthConditionWithAttributes legend,
 div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes legend {
   font-style: normal;
@@ -3723,16 +3774,17 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   clear: both;
 }
 #LoginPage #content input {
-  font-size: 1.3em;
+  font-size: 1.25em;
   width: 10em;
+}
+#LoginPage #content input[type="submit"]{
+  background: #33424d;
+  border-color: #29353d;
+  padding: .0625rem .5rem .125rem; 
 }
 #LoginPage #content #PasswordResetRequestEmail,
 #LoginPage #content #PasswordResetRequestButton {
   width: 13rem;
-}
-#LoginPage #content input[type="submit"] {
-  cursor:pointer;
-  border: 1px solid #214155;
 }
 #LoginButtonContainer {
   margin-top: 1.25rem;
@@ -4325,8 +4377,7 @@ and (max-width : 480px) {
     margin-top: 0;
   }
   #LoginPage #content,
-  #LoginPage #content input
-  {
+  #LoginPage #content input {
     font-size: 1em;
   }
   #LoginPage #content
@@ -4338,17 +4389,6 @@ and (max-width : 480px) {
   #LoginPage.ie-prohibited #content,
   #LoginPage.passwordResetError #content{
     padding: 1.25rem 1.5rem;
-  }
-  #LoginPage #content input[type="submit"]
-  {
-    border: none;
-    background: #204156;
-    background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
-    background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
-    background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
-    color: #fff;
-    border-radius: 2px;
   }
   #LoginPage #banner h2
   {
