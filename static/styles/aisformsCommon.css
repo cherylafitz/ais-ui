@@ -108,25 +108,28 @@ div.NoEvaluationQueuesAvailable {
 
 /* BUTTONS --> */
 
+/* AIS only*/
 #contentPageProportional input[type="submit"],
 #contentPageProportional input[type="button"] {
-  font-size: .875rem;
-  border-radius: 2px;
   margin: 0 .5rem .25rem 0;
 }
-input.SaveChanges {
+#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
+  margin: 0 .5em .5em;
+}
+/* DELETE?? */
+#contentPageProportional input.SaveChanges {
   margin: 1.5rem 0;
 }
-
+/* AIR app save button */
 #ApplicationTemplateDisplayAUC input.SaveChanges {
   float: left;
   margin-right: 3rem;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover {
-  /*text-shadow: 0 0 0 #222;*/
-  color : #ffffff;
-  background: #336789;
+  background: #22465d;
+  border-color: #1c384a;
+  cursor: pointer;
 }
 input[type="submit"]:disabled,
 input[type="button"]:disabled {
@@ -137,43 +140,23 @@ input[type="button"]:disabled {
 #filteringButtonContainer {
   margin-bottom: .5rem;
 }
+/* DELETE??? */
 div .Button {
   border-bottom: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
-  margin: 0 .5em .5em;
-}
-input[type="submit"],
-input[type="button"]{
-  vertical-align: middle;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  padding-bottom: .1em;
-  cursor: pointer;
-}
-
-
-
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  opacity: .9;
-}
-input[type="submit"]:disabled,
-input#SubmitForEvaluation[type="submit"]:disabled,
-input[type="button"]:disabled {
-  opacity: .7;
-  cursor: default;
-}
-
 input[type="submit"], 
 input[type="button"] {
+  vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
   padding: .125rem .5rem .1875rem .5rem;
+  padding: .0625rem .5rem .125rem .5rem;
   background: #336789;
   border: 1px solid #346788;
   font-size: .875rem;
@@ -187,7 +170,6 @@ input[type="submit"][value="Clear Filters"]:hover {
   opacity: .7;
   background: transparent;
 }
-
 
 /* <-- BUTTONS */
 

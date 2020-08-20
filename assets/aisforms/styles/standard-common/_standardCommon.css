@@ -289,17 +289,10 @@ input {
   border-radius: 2px;
   border: 1px solid #cecece;
 }
-input#SubmitForEvaluation {
-  background-color: #dceaf5;
-}
 input[value="Save Changes"],
 input#SubmitForEvaluation {
-  color: #FFF;
-  padding: 0.25rem 0.325rem 0.325rem;
-  font-size: 1rem;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  padding: 0.25rem .75rem;
+  font-size: 1.2em;
 }
 input[value="Save Changes"]:hover,
 input#SubmitForEvaluation:hover {
