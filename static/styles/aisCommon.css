@@ -497,15 +497,14 @@ textarea {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  padding: .25rem;
+  padding: .1875rem .25rem;
   font-size: .875rem;
 }
-/* remove after migration?? ? */
 select {
   max-width: 100%;
   font-size: .875rem;
-  border: 1px solid #c0bfbf;
-  padding: .25rem;
+  border: 1px solid #cecece;
+  padding: .1875rem .25rem;
 }
 input[type="file"] {
   border: none;
@@ -1406,7 +1405,6 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 }
 #tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
   background: #ffffff;
-  font-weight: bold;
   margin: .125rem 0 .25rem .25rem;
   border: 3px solid #2a353d;
   box-shadow: 0 0 0px 2px #f6b844;

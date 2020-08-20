@@ -459,7 +459,6 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 }
 #tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
   background: #ffffff;
-  font-weight: bold;
   margin: .125rem 0 .25rem .25rem;
   border: 3px solid #2a353d;
   box-shadow: 0 0 0px 2px #f6b844;
