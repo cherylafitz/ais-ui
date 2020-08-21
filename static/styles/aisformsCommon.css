@@ -141,12 +141,12 @@ input[type="button"]:disabled {
   margin-bottom: .5rem;
 }
 /* DELETE??? */
-div .Button {
+/*div .Button {
   border-bottom: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-}
+}*/
 input[type="submit"], 
 input[type="button"] {
   vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
@@ -155,7 +155,6 @@ input[type="button"] {
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .125rem .5rem .1875rem .5rem;
   padding: .0625rem .5rem .125rem .5rem;
   background: #336789;
   border: 1px solid #346788;
