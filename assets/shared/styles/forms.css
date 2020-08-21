@@ -12,15 +12,14 @@ textarea {
   -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
-  padding: .25rem;
+  padding: .1875rem .25rem;
   font-size: .875rem;
 }
-/* remove after migration?? ? */
 select {
   max-width: 100%;
   font-size: .875rem;
-  border: 1px solid #c0bfbf;
-  padding: .25rem;
+  border: 1px solid #cecece;
+  padding: .1875rem .25rem;
 }
 input[type="file"] {
   border: none;
@@ -104,8 +103,8 @@ input[type=checkbox]:checked + label {
 	margin: 0 .25rem 0 0;
 	line-height: 1;
 }
-form .ajax-observe-field,
-form .ajax-update-container {
+.form-input .ajax-observe-field,
+.form-input .ajax-update-container {
 	display: contents;	
 }
 .generated-field .preview {

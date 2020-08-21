@@ -17,4 +17,12 @@ body {
   font-size: 100%;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
 /* <-- END BASE STYLES */
