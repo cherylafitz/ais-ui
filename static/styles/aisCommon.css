@@ -1921,6 +1921,10 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   color: #c5dcee;
   font-size: .75rem;
 }
+/* PAGE: AlumnusOtherProgramsAdmin */
+.other-program-display-name {
+  width: 18rem;
+}
 /* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
 #article-editor-page-id,
 #AlumnusSocialMediaEditor {
