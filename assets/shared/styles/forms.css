@@ -34,11 +34,11 @@ input[type="file"] {
 	padding: .75rem 1rem 1rem;
 }
 .form-section-content {
-	margin: 0 0 0 .75rem;
+  margin: 0 0 0 .75rem;
 }
 .form-input,
 .generated-field {
-	margin-bottom: .5rem;
+	margin-bottom: .5rem;  
 }
 .form-input label:first-child,
 .generated-field .label:first-child {
@@ -47,7 +47,6 @@ input[type="file"] {
 }
 .generated-field .value {
 	font-style: italic;
-	font-weight: bold;
 	padding-left: 0;
 }
 .generated-field .label, 
@@ -147,7 +146,7 @@ input[type=checkbox]:checked + label {
 }
 .date-picker input {
 	width: 8.5rem;
-    min-width: initial;
+  min-width: initial;
 }
 .form-input.date-picker:not(:only-child) {
 	margin-right: .5rem;
