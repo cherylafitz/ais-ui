@@ -831,7 +831,7 @@ table.row-display a:active {
   margin: 1rem 0;
 }
 [class*="-section-content"] {
-  margin: .75rem;
+  margin: 0 0 0 .75rem;
 }
 .inbox-section-content {
   background-color: #e0e6eb;
@@ -853,10 +853,11 @@ table.row-display a:active {
 }
 .data-display-section {
   border: 1px solid #d0dae1;
-  padding: 1rem;
+  padding: .75rem 1rem;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
+  margin-bottom: 2rem;
 }
 
 /* <-- SECTIONS */
