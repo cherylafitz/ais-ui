@@ -33,9 +33,6 @@ input[type="file"] {
 	border-radius: 2px;
 	padding: .75rem 1rem 1rem;
 }
-.form-section-content {
-  margin: 0 0 0 .75rem;
-}
 .form-input,
 .generated-field {
 	margin-bottom: .5rem;  

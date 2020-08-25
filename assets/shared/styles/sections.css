@@ -4,7 +4,7 @@
   margin: 1rem 0;
 }
 [class*="-section-content"] {
-  margin: 0 0 0 .75rem;
+  margin: .75rem 0 0 .75rem;
 }
 .inbox-section-content {
   background-color: #e0e6eb;

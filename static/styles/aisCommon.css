@@ -517,9 +517,6 @@ input[type="file"] {
 	border-radius: 2px;
 	padding: .75rem 1rem 1rem;
 }
-.form-section-content {
-  margin: 0 0 0 .75rem;
-}
 .form-input,
 .generated-field {
 	margin-bottom: .5rem;  
@@ -831,7 +828,7 @@ table.row-display a:active {
   margin: 1rem 0;
 }
 [class*="-section-content"] {
-  margin: 0 0 0 .75rem;
+  margin: .75rem 0 0 .75rem;
 }
 .inbox-section-content {
   background-color: #e0e6eb;
