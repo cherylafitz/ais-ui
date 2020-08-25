@@ -1,12 +1,16 @@
 /* SECTIONS --> */
 
-[class$="-section"] {
+[class*="-section"] {
   margin: 1rem 0;
+}
+[class*="-section-content"] {
+  margin: .75rem 0 0 .75rem;
 }
 .inbox-section-content {
   background-color: #e0e6eb;
   border-top: 3px solid #415467;
   padding: .75rem 1rem;
+  margin: 0;
 }
 .inbox-section h2 {
   background-color: #415467;
@@ -20,6 +24,13 @@
   width: -webkit-fit-content;
   width: fit-content;
 }
-
+.data-display-section {
+  border: 1px solid #d0dae1;
+  padding: .75rem 1rem;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
 
 /* <-- SECTIONS */

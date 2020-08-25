@@ -517,12 +517,9 @@ input[type="file"] {
 	border-radius: 2px;
 	padding: .75rem 1rem 1rem;
 }
-.form-section-content {
-	margin: 0 0 0 .75rem;
-}
 .form-input,
 .generated-field {
-	margin-bottom: .5rem;
+	margin-bottom: .5rem;  
 }
 .form-input label:first-child,
 .generated-field .label:first-child {
@@ -531,7 +528,6 @@ input[type="file"] {
 }
 .generated-field .value {
 	font-style: italic;
-	font-weight: bold;
 	padding-left: 0;
 }
 .generated-field .label, 
@@ -631,7 +627,7 @@ input[type=checkbox]:checked + label {
 }
 .date-picker input {
 	width: 8.5rem;
-    min-width: initial;
+  min-width: initial;
 }
 .form-input.date-picker:not(:only-child) {
 	margin-right: .5rem;
@@ -828,13 +824,17 @@ table.row-display a:active {
 
 /* SECTIONS --> */
 
-[class$="-section"] {
+[class*="-section"] {
   margin: 1rem 0;
+}
+[class*="-section-content"] {
+  margin: .75rem 0 0 .75rem;
 }
 .inbox-section-content {
   background-color: #e0e6eb;
   border-top: 3px solid #415467;
   padding: .75rem 1rem;
+  margin: 0;
 }
 .inbox-section h2 {
   background-color: #415467;
@@ -848,7 +848,14 @@ table.row-display a:active {
   width: -webkit-fit-content;
   width: fit-content;
 }
-
+.data-display-section {
+  border: 1px solid #d0dae1;
+  padding: .75rem 1rem;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
 
 /* <-- SECTIONS */
 
@@ -4567,6 +4574,19 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 .nodisplayportal {
     display: none;
 }
+
+/* PAGE: Document review approval editor --> */
+
+/* possibly expand to general forms...*/
+.DocumentReviewApprovalEditor form {  
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.DocumentReviewApprovalEditor .previous-page-link {
+  display: block;
+}
+/* <-- PAGE: Document review approval editor */
 
 /* PAGE: TEST CENTER ASSESSMENT EDITOR --> */
 .scoring-promotion.row-display th {
