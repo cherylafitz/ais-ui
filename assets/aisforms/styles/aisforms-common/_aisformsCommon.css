@@ -1530,50 +1530,11 @@ div.PageName {
   text-align: right;
   font-size: 0.75rem;
 }
-input[type="submit"],
-input[type="button"]{
-  vertical-align: middle;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  padding-bottom: .1em;
-  cursor: pointer;
-}
-input[type="submit"][value="Clear Filters"] {
-  border: 1px solid #999;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  opacity: 1;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-}
-input[type="submit"][value="Clear Filters"]:hover {
-  opacity: .7;
-}
-input[type="submit"]:not([value="Clear Filters"]), 
-input[type="button"] {
-  border-radius: 2px;
-  color : #ffffff;
-  padding: 0 .5rem .125rem .5rem;
-  background: #204156;
-  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
-  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
-  background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
-  border: 1px solid #214155;
-  font-size: .875rem;
-}
-#ApplicationTemplateDisplayAUC input.SaveChanges {
-  float: left;
-  margin-right: 3rem;
-}
+
 input#CannedSearch {
   margin-left: .3em;
 }
-input[type="submit"]:hover:not([value="Clear Filters"]),
-input[type="button"]:hover {
-  opacity: .9;
-}
+
 .BackToTopBookmark {
   display: none;
 }
@@ -1582,12 +1543,7 @@ input[type="button"]:hover {
   margin: .5em;
   font-size: 1em;
 }
-input[type="submit"]:disabled,
-input#SubmitForEvaluation[type="submit"]:disabled,
-input[type="button"]:disabled {
-  opacity: .7;
-  cursor: default;
-}
+
 .previous input[type="button"]:disabled,
 .NextSection input[type="button"]:disabled {
   background-color: transparent;

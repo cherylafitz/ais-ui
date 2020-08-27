@@ -1,0 +1,12 @@
+/* PAGE: Document review approval editor --> */
+
+/* possibly expand to general forms...*/
+.DocumentReviewApprovalEditor form {  
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.DocumentReviewApprovalEditor .previous-page-link {
+  display: block;
+}
+/* <-- PAGE: Document review approval editor */

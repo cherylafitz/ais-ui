@@ -1,0 +1,25 @@
+/* ADDRESS TABLE --> */
+
+.SectionDisplay .ItemAddress th {
+  text-align: left;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  border-color: #fff;
+}
+.SectionDisplay .ItemAddress tr:first-of-type th {
+  border-top-color: #2E6B9B;
+}
+.SectionDisplay .ItemAddress tr:last-of-type th {
+  border-bottom-color: #2E6B9B;
+}
+.SectionDisplay .ItemAddress .RowDisplay td {
+  border-color: #c5dced;
+}
+
+.Content .SectionDisplay .ItemAddress table tr td input[type="text"],
+.SectionDisplay .ItemAddress td select {
+  width: 15rem;
+  max-width: 100%;
+}
+
+/* <-- ADDRESS TABLE */

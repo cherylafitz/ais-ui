@@ -459,7 +459,6 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 }
 #tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
   background: #ffffff;
-  font-weight: bold;
   margin: .125rem 0 .25rem .25rem;
   border: 3px solid #2a353d;
   box-shadow: 0 0 0px 2px #f6b844;
@@ -750,6 +749,9 @@ div.ArticleViewer fieldset {
   margin: 0 0 .75rem;
   padding-bottom: .75rem;
 }
+.application-statistics-by-program-year .total {
+  text-align: right;
+}
 
 fieldset:not(:first-child):first-of-type {
   margin-top: .75rem;
@@ -784,12 +786,7 @@ fieldset legend .form-input select {
 .ShowHideSectionsInApplicationCell {
     float: right;
 }
-#contentPageProportional input[type="submit"]:not([value="Clear Filters"]),
-#contentPageProportional input[type="button"] {
-  font-size: .875rem;
-  border-radius: 2px;
-  margin: 0 .5rem .25rem 0;
-}
+
 
 table.pageStructure {
     border-collapse: collapse;
@@ -978,6 +975,10 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 #navMenu .previous-page-link {
   color: #c5dcee;
   font-size: .75rem;
+}
+/* PAGE: AlumnusOtherProgramsAdmin */
+.other-program-display-name {
+  width: 18rem;
 }
 /* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
 #article-editor-page-id,
@@ -1232,10 +1233,12 @@ table .footerArea .leftNav a {
 table.rolodex tr td.NameCellHeading {
   padding: 0 .5rem;
 }
-td.SearchButtonCell input {
-  margin-right: 2rem;
-  padding-bottom: 1rem;
+/*overriding Marco's css --> */
+div.AlumnusSearch .SearchButtonCell {
+  text-align: left;
+  padding-top: .5rem;
 }
+/* <-- overriding Marco's css  */
 
 .AlumniHome fieldset.Downloads {
   clear: both;
@@ -1707,16 +1710,13 @@ table#CreateAccount {
   padding: 0.5rem;
 }
 table.PageCommands {
-  -webkit-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
-  -moz-box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
-  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.30);
-  margin: 0 auto;
   padding: 0.5rem;
   border: 1px solid #c7c7c7;
 }
 table.PageCommands tr td,
 table.PageCommands tr th {
-  padding: .5rem;
+  padding: .25rem .5rem;
+  vertical-align: top;
 }
 tr.FormSearch td.noTableBordersBelowMe div#ApplicationFormsList tr td.ERXMatrixTableCell {
   background-color: #ffffff;
@@ -1788,44 +1788,8 @@ input[type="button"]{
 select {
   max-width: 100%;
 }
-input[type="submit"]:not([value="Clear Filters"]), input[type="button"] {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  /*text-shadow: 0 0 0 #222;*/
-  color : #ffffff;
-  padding : .0625rem .5rem .125rem .5rem;
-  background: #204156; /* Old browsers */
-  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #336789 10%,  #204156 60%, #204156 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 ); /* IE6-9 */
-  border: 1px solid #214155;
-}
-input.SaveChanges {
-  margin: 1.5rem 0;
-}
-input[type="submit"]:hover:not([value="Clear Filters"]),
-input[type="button"]:hover {
-  /*text-shadow: 0 0 0 #222;*/
-  color : #ffffff;
-  background: #336789;
-}
-input[type="submit"]:disabled,
-input[type="button"]:disabled {
-  background: #99acbb;
-  cursor: not-allowed;
-  border-color: #8ca2b2;
-}
-#filteringButtonContainer {
-  margin-bottom: .5rem;
-}
-div .Button {
-  border-bottom: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}
+
+
 
 /* <-- FORMS */
 
@@ -2173,9 +2137,7 @@ div.HealthDataForm table.HealthQuestions td.QuestionNumber {
 .HealthNextStep div {
   padding: 0 .5rem .5rem;
 }
-#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
-  margin: 0 .5em .5em;
-}
+
 div.HealthDataFormExpertEditor fieldset.HealthConditionWithAttributes legend,
 div.StudentDisplayForHealthReviewer fieldset.HealthConditionWithAttributes legend {
   font-style: normal;
@@ -2875,16 +2837,17 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
   clear: both;
 }
 #LoginPage #content input {
-  font-size: 1.3em;
+  font-size: 1.25em;
   width: 10em;
+}
+#LoginPage #content input[type="submit"]{
+  background: #33424d;
+  border-color: #29353d;
+  padding: .0625rem .5rem .125rem; 
 }
 #LoginPage #content #PasswordResetRequestEmail,
 #LoginPage #content #PasswordResetRequestButton {
   width: 13rem;
-}
-#LoginPage #content input[type="submit"] {
-  cursor:pointer;
-  border: 1px solid #214155;
 }
 #LoginButtonContainer {
   margin-top: 1.25rem;
@@ -3477,8 +3440,7 @@ and (max-width : 480px) {
     margin-top: 0;
   }
   #LoginPage #content,
-  #LoginPage #content input
-  {
+  #LoginPage #content input {
     font-size: 1em;
   }
   #LoginPage #content
@@ -3490,17 +3452,6 @@ and (max-width : 480px) {
   #LoginPage.ie-prohibited #content,
   #LoginPage.passwordResetError #content{
     padding: 1.25rem 1.5rem;
-  }
-  #LoginPage #content input[type="submit"]
-  {
-    border: none;
-    background: #204156;
-    background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
-    background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
-    background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
-    color: #fff;
-    border-radius: 2px;
   }
   #LoginPage #banner h2
   {
