@@ -513,9 +513,10 @@ input[type="file"] {
   border-radius: 10px;
 }
 .form-section {
-	background-color: #f1f1f3;
+	background-color: #eff2f3;
 	border-radius: 2px;
 	padding: .75rem 1rem 1rem;
+  border: 1px solid #e8eced;
 }
 .form-input,
 .generated-field {
@@ -849,14 +850,60 @@ table.row-display a:active {
   width: fit-content;
 }
 .data-display-section {
-  border: 1px solid #d0dae1;
-  padding: .75rem 1rem;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
-
+.data-display-section-content {
+  border: 1px solid #e4e6e8;
+  border: 1px solid #e8eced;
+  border-top: none;
+  padding: 1rem;
+  margin: 0;
+  background-color: #f0f2f3;
+  /*background-color: #f4f5f6;*/
+  border-radius: 0 0 4px 4px;
+}
+.data-display-section h2 {
+/*  background-color: #33434d;
+  background-color: #495D6B;*/
+  background: #c2ced6;
+  background: #bfced9;
+  /* color: #fff; */
+  padding: .625rem 1rem .5rem;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+  border: 1px solid #afc2cf;
+  border: 1px solid #b9cad5;
+}
+.data-display-section h2 a {
+  /*color: #c4dcee;*/
+}
+.data-display-section .generated-field {
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  flex-flow: row wrap;
+}
+.data-display-section .generated-field:last-child {
+  border-bottom: 0;
+}
+.data-display-section .generated-field .value {
+  background: #e3e3e8;
+  background: #E8E8ED;
+  background: #f1f1f3;
+  background: #e3e6e8;
+  /*background: #e6e9eb;*/
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  flex-grow: 1;
+  padding: .5rem .5rem .5rem.75rem;
+  font-style: normal;
+}
+.data-display-section .generated-field .label {
+  padding: .5rem .5rem .5rem 0;
+}
 /* <-- SECTIONS */
 
 /* TABLE ROW NUMBERS --> */
@@ -3244,6 +3291,15 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
 
 /* <-- HEALTH INBOX */
 
+/* ADDRESS INDIVIDUAL CONTENT --> */
+
+.AddressIndividualContent th {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* <-- ADDRESS INDIVIDUAL CONTENT */
 
 .CheckboxedConditionItem {
   padding-bottom: 3px;

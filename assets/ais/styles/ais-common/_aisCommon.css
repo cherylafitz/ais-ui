@@ -2292,6 +2292,15 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
 
 /* <-- HEALTH INBOX */
 
+/* ADDRESS INDIVIDUAL CONTENT --> */
+
+.AddressIndividualContent th {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* <-- ADDRESS INDIVIDUAL CONTENT */
 
 .CheckboxedConditionItem {
   padding-bottom: 3px;
