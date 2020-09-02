@@ -1,0 +1,14 @@
+/* MAIN STRUCTURE --> */
+
+.main-content {
+  padding: 1rem 1.25rem;
+  height: calc(100% - 174px);
+}
+/*remove eventually --> */
+.content > .main-content {
+  padding: 0;
+  height: initial;
+}
+
+/* <-- MAIN STRUCTURE */
+  
