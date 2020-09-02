@@ -1,8 +1,7 @@
-/* START BASE STYLES --> */
-
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
-@charset "UTF-8";
+/* START BASE STYLES --> */ 
 
 *,
 *:after,
@@ -862,7 +861,7 @@ table.row-display a:active {
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
-    counter-reset: rowCounter calc(var(--row-number-start) - 1) ;
+    counter-reset: rowCounter calc(var(--row-number-start) - 1);
 }
 table.row-display tbody > tr {
     counter-increment: rowCounter;
@@ -883,29 +882,6 @@ table.row-display td.rowNumber,
 table.row-display td.row-number {
    text-align: right;
 }
-
-/*table.row-display thead th,
-table.row-display tbody td {
-    font-size: .875rem;
-    white-space: nowrap;
-    text-align: left;
-    font-weight: normal;
-    padding: .25rem 0.5rem;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    border: 1px solid #afb2b9;
-}*/
-/*table.row-display thead th {
-    border-top: 2px solid #5f666d;
-    border-bottom: 2px solid #5f666d;
-}*/
-/*table.row-display thead th.row-number,
-table.row-display tbody td.row-number {
-    text-align: right;
-}
-table.row-display thead tr {
-    font-style: normal;
-    font-size: 1rem;
-}*/
 
 /* <-- TABLE ROW NUMBERS */
 
@@ -961,11 +937,6 @@ input[title="ERXSortOrder.sortBy"] {
 /*                                                           */
 /* Please! Please! review my changes and clean them up as    */
 /* as you think appropriate. Thanks! ... Gregg                                 */
-
-
-@charset "UTF-8";
- 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 /*@import url("https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css");*/
 /*
