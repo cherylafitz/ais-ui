@@ -4575,6 +4575,21 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
     display: none;
 }
 
+/* MAIN STRUCTURE --> */
+
+.main-content {
+  padding: 1rem 1.25rem;
+  height: calc(100% - 174px);
+}
+/*remove eventually --> */
+.content > .main-content {
+  padding: 0;
+  height: initial;
+}
+
+/* <-- MAIN STRUCTURE */
+  
+
 /* PAGE: Document review approval editor --> */
 
 /* possibly expand to general forms...*/
