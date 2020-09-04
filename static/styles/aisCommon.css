@@ -854,6 +854,8 @@ table.row-display a:active {
   width: -webkit-fit-content;
   width: fit-content;
   margin: 1rem 0;
+  background-color: #f0f2f3;
+  border: 1px solid #e8eced;
 }
 .data-display-section-content {
   border: 1px solid #e4e6e8;
