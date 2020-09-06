@@ -512,26 +512,27 @@ input[type="file"] {
   border-radius: 10px;
 }
 .form-section {
-	background-color: #f1f1f3;
+	background-color: #eff2f3;
 	border-radius: 2px;
 	padding: .75rem 1rem 1rem;
+  border: 1px solid #e8eced;
 }
 .form-input,
 .generated-field {
 	margin-bottom: .5rem;  
 }
 .form-input label:first-child,
-.generated-field .label:first-child {
+.generated-field > .label:first-child {
 	padding-right: .5rem;
 	width: 10rem;
 }
-.generated-field .value {
+.generated-field > .value {
 	font-style: italic;
 	padding-left: 0;
 }
-.generated-field .label, 
+.generated-field > .label, 
 .generated-field .preview,
-.generated-field .value,
+.generated-field > .value,
 .form-input label,
 .form-input input:not([type="submit"]),
 .form-input textarea,
@@ -551,8 +552,8 @@ input[type="file"] {
 .form-input input:not([type="submit"]),
 .form-input textarea,
 .form-input select,
-.generated-field .preview,
-.generated-field .value {
+.generated-field > .preview,
+.generated-field > .value {
 	min-width: 10rem;
 	padding: .25rem;
 }
@@ -826,6 +827,9 @@ table.row-display a:active {
 [class*="-section"] {
   margin: 1rem 0;
 }
+[class*="-section-"] {
+  margin: 0;
+}
 [class*="-section-content"] {
   margin: .75rem 0 0 .75rem;
 }
@@ -848,14 +852,60 @@ table.row-display a:active {
   width: fit-content;
 }
 .data-display-section {
-  border: 1px solid #d0dae1;
-  padding: .75rem 1rem;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
-
+.data-display-section-content {
+  border: 1px solid #e4e6e8;
+  border: 1px solid #e8eced;
+  border-top: none;
+  padding: 1rem;
+  margin: 0;
+  background-color: #f0f2f3;
+  /*background-color: #f4f5f6;*/
+  border-radius: 0 0 4px 4px;
+}
+.data-display-section h2 {
+/*  background-color: #33434d;
+  background-color: #495D6B;*/
+  background: #c2ced6;
+  background: #bfced9;
+  /* color: #fff; */
+  padding: .625rem 1rem .5rem;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+  border: 1px solid #afc2cf;
+  border: 1px solid #b9cad5;
+}
+.data-display-section h2 a {
+  color: #33434d;
+}
+.data-display-section .generated-field {
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  flex-flow: row wrap;
+}
+.data-display-section .generated-field:last-child {
+  border-bottom: 0;
+}
+.data-display-section .generated-field > .value {
+  background: #e3e3e8;
+  background: #E8E8ED;
+  background: #f1f1f3;
+  background: #e3e6e8;
+  /*background: #e6e9eb;*/
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  flex-grow: 1;
+  padding: .5rem .5rem .5rem.75rem;
+  font-style: normal;
+}
+.data-display-section .generated-field > .label {
+  padding: .5rem .5rem .5rem 0;
+}
 /* <-- SECTIONS */
 
 /* TABLE ROW NUMBERS --> */
@@ -1905,7 +1955,8 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 }
 /* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
 #article-editor-page-id,
-#AlumnusSocialMediaEditor {
+#AlumnusSocialMediaEditor,
+.AlumnusNoteEditor #articleSummary {
   padding: 1rem 1rem 1rem 2rem;
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
@@ -3144,17 +3195,11 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2),
 .HealthQuestionnaireEditor .Answer .Text  {
   display: inline-block;
   width: calc(100% - 2rem);
-  margin: 0 0 0 .25rem;
 }
-
-#ProgramStaffQuestionnaire .Answer,
-.TranscribedQuestionsForApplicant .Answer {
-  padding: .5rem 0;
-}
-#ProgramStaffQuestionnaire .QuestionLabel,
-.TranscribedQuestionsForApplicant .QuestionLabel {
-  font-weight: bold;
-  display: inline-block;
+.TranscribedQuestionsForApplicant .FileUploadQuestion {
+  line-height: 1;
+  padding: .25rem;
+  border: 1px solid #cecece;
 }
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
   background-color: transparent;
@@ -3172,6 +3217,7 @@ div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
   padding: .75rem 1rem;
   border: none;
   white-space: normal;
+  vertical-align: top;
 }
 div.StudentDisplayForHealthReviewer table caption,
 div.HealthQuestionnaireEditor table caption {
@@ -3196,12 +3242,9 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
   width: 100%;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff .Answer {
-  margin-top: .5rem;
-  padding-top: .75rem;
-  border-top: 1px solid #ccd2d6;
+  margin-top: 1.25rem;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff .Answer div {
-  margin-bottom: .5rem;
   width: 100%;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff input[value="Save answer"] {
@@ -3211,9 +3254,33 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
 .TranscribedQuestionsForApplicant .AnswerByStaff input[value="Cancel"]{
   order: 6;
 }
-
+div.HealthDataForm div.HasOverdueQuestionsCount,
+div.HealthDataForm div.OverdueQuestion,
+div.HealthQuestionnaireEditor div.HasOverdueQuestionsCount,
+div.HealthQuestionnaireEditor div.OverdueQuestion {
+  border-radius: 2px;
+  background-color: #ffc7b3;
+  border: 1px solid #ffb499;
+  font-size: .875rem;
+  margin: .5rem 0;
+  padding: .5rem .875rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  color: #000;
+}
 /* <-- HEALTH INBOX */
 
+/* ADDRESS INDIVIDUAL CONTENT --> */
+
+.AddressIndividualContent th {
+  text-align: left;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* <-- ADDRESS INDIVIDUAL CONTENT */
 
 .CheckboxedConditionItem {
   padding-bottom: 3px;
@@ -4546,6 +4613,35 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
     display: none;
 }
 
+/* INBOX Q AND A --> */
+.questionnaire .RowDisplay td {
+  vertical-align: top;
+  padding: .5rem;
+}
+.QuestionAndAnswer .Question,
+.QuestionAndAnswer .Answer {
+  display: flex;
+}
+.QuestionAndAnswer .QuestionLabel,
+.QuestionAndAnswer .AnswerLabel {
+  font-weight: bold; 
+  margin-right: .5rem;
+}
+
+/* CAN DELETE? --> */
+#ProgramStaffQuestionnaire .Answer,
+.TranscribedQuestionsForApplicant .Answer {
+  padding: .5rem 0;
+}
+#ProgramStaffQuestionnaire .QuestionLabel,
+.TranscribedQuestionsForApplicant .QuestionLabel {
+  font-weight: bold;
+  display: inline-block;
+}
+/* <-- CAN DELETE? */
+
+/* <-- INBOX Q AND A */
+
 /* MAIN STRUCTURE --> */
 
 .main-content {
@@ -4597,6 +4693,62 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 .DocumentReviewApprovalEditor .previous-page-link {
   display: block;
 }
+.DocumentReviewApprovalEditor .calculated-age {
+  color: rebeccapurple;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  display: flex;
+  margin-top: .5rem;
+}
+.DocumentReviewApprovalEditor .calculated-age .label::after {
+  content: ":";
+  padding-right: .25rem;
+}
+/* TEMP!!... --> */
+.DocumentReviewApprovalEditor .generated-field-group-label {
+  display: none;
+}
+.generated-field-group-content .AddressIndividualContent {
+  border-collapse: collapse;
+  width: 100%;
+}
+.generated-field-group-content .AddressIndividualContent th {
+  font-style: initial;
+}
+.DocumentReviewApprovalEditor caption {
+  text-align: left;
+  padding: .5rem 0;
+}
+.DocumentReviewApprovalEditor .generated-field-group-content td {
+  background-color: #e3e6e8;
+  border-bottom: 1px solid #d9d9d9; 
+}
+.DocumentReviewApprovalEditor .generated-field-group-content th,
+.DocumentReviewApprovalEditor .generated-field-group-content td {
+  font-size: .875rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+}
+.DocumentReviewApprovalEditor .generated-field-group-content th {
+  width: 10rem;
+  padding-left: 2rem;
+}
+
+/* ****** */
+
+.DocumentReviewApprovalEditor .view-edit-link-wrapper,
+.DocumentReviewApprovalEditor .data-display-section-controls {
+  display: flex;
+  background: #dfe7ec;
+  padding: .5rem 1rem;
+}
+.DocumentReviewApprovalEditor .view-edit-link-wrapper {
+  margin: -1rem -1rem 1rem -1rem;
+}
+.DocumentReviewApprovalEditor .view-edit-link-wrapper .view,
+.DocumentReviewApprovalEditor .data-display-section-controls .view {
+  margin-right: .75rem;
+}
 /* <-- PAGE: Document review approval editor */
 
 /* PAGE: TEST CENTER ASSESSMENT EDITOR --> */
@@ -4628,6 +4780,31 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 	margin-bottom: 1rem;
 }
 /* <-- PREVIOUS PAGE LINK */
+/* ROLODEX --> */
+.rolodex-display {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  border: 1px solid #cecece;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.rolodex-item {
+  margin-bottom: .375rem;
+}
+.rolodex-item .label,
+.rolodex-item .value {
+  display: inline-block;
+  vertical-align: top;
+  font-size: .875rem;
+}
+.rolodex-item .label {
+  width: 10rem;
+  font-weight: bold;
+}
+
+/* <-- ROLODEX */
+
 /* TABLES --> */
 
 /* PORTED FROM MARCO'S PAGEWRAPPER.CSS --> */

@@ -1,0 +1,28 @@
+/* INBOX Q AND A --> */
+.questionnaire .RowDisplay td {
+  vertical-align: top;
+  padding: .5rem;
+}
+.QuestionAndAnswer .Question,
+.QuestionAndAnswer .Answer {
+  display: flex;
+}
+.QuestionAndAnswer .QuestionLabel,
+.QuestionAndAnswer .AnswerLabel {
+  font-weight: bold; 
+  margin-right: .5rem;
+}
+
+/* CAN DELETE? --> */
+#ProgramStaffQuestionnaire .Answer,
+.TranscribedQuestionsForApplicant .Answer {
+  padding: .5rem 0;
+}
+#ProgramStaffQuestionnaire .QuestionLabel,
+.TranscribedQuestionsForApplicant .QuestionLabel {
+  font-weight: bold;
+  display: inline-block;
+}
+/* <-- CAN DELETE? */
+
+/* <-- INBOX Q AND A */
