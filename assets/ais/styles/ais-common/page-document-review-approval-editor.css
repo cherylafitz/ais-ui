@@ -17,16 +17,6 @@
   display: flex;
   margin-top: .5rem;
 }
-/*.DocumentReviewApprovalEditor .calculated-age .label {
-  width: initial;
-  padding: .25rem;
-}
-.DocumentReviewApprovalEditor .calculated-age .value {
-  background: transparent;
-  border: 0;
-  min-width: initial;
-  padding: .25rem;
-}*/
 .DocumentReviewApprovalEditor .calculated-age .label::after {
   content: ":";
   padding-right: .25rem;
