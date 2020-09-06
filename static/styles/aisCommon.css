@@ -102,6 +102,23 @@ div.NoEvaluationQueuesAvailable {
   color: #000;
 }
 
+div.HealthDataForm div.HasOverdueQuestionsCount,
+div.HealthDataForm div.OverdueQuestion,
+div.HealthQuestionnaireEditor div.HasOverdueQuestionsCount,
+div.HealthQuestionnaireEditor div.OverdueQuestion {
+  border-radius: 2px;
+  background-color: #ffc7b3;
+  border: 1px solid #ffb499;
+  font-size: .875rem;
+  margin: .5rem 0;
+  padding: .5rem .875rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  color: #000;
+}
+
 /* <-- ALERTS, NOTICES, AND WARNINGS */
 
 
@@ -523,17 +540,17 @@ input[type="file"] {
 	margin-bottom: .5rem;  
 }
 .form-input label:first-child,
-.generated-field .label:first-child {
+.generated-field > .label:first-child {
 	padding-right: .5rem;
 	width: 10rem;
 }
-.generated-field .value {
+.generated-field > .value {
 	font-style: italic;
 	padding-left: 0;
 }
-.generated-field .label, 
+.generated-field > .label, 
 .generated-field .preview,
-.generated-field .value,
+.generated-field > .value,
 .form-input label,
 .form-input input:not([type="submit"]),
 .form-input textarea,
@@ -553,8 +570,8 @@ input[type="file"] {
 .form-input input:not([type="submit"]),
 .form-input textarea,
 .form-input select,
-.generated-field .preview,
-.generated-field .value {
+.generated-field > .preview,
+.generated-field > .value {
 	min-width: 10rem;
 	padding: .25rem;
 }
@@ -828,6 +845,9 @@ table.row-display a:active {
 [class*="-section"] {
   margin: 1rem 0;
 }
+[class*="-section-"] {
+  margin: 0;
+}
 [class*="-section-content"] {
   margin: .75rem 0 0 .75rem;
 }
@@ -854,8 +874,6 @@ table.row-display a:active {
   width: -webkit-fit-content;
   width: fit-content;
   margin: 1rem 0;
-  background-color: #f0f2f3;
-  border: 1px solid #e8eced;
 }
 .data-display-section-content {
   border: 1px solid #e4e6e8;
@@ -891,7 +909,7 @@ table.row-display a:active {
 .data-display-section .generated-field:last-child {
   border-bottom: 0;
 }
-.data-display-section .generated-field .value {
+.data-display-section .generated-field > .value {
   background: #e3e3e8;
   background: #E8E8ED;
   background: #f1f1f3;
@@ -903,7 +921,7 @@ table.row-display a:active {
   padding: .5rem .5rem .5rem.75rem;
   font-style: normal;
 }
-.data-display-section .generated-field .label {
+.data-display-section .generated-field > .label {
   padding: .5rem .5rem .5rem 0;
 }
 /* <-- SECTIONS */
@@ -3223,17 +3241,11 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2),
 .HealthQuestionnaireEditor .Answer .Text  {
   display: inline-block;
   width: calc(100% - 2rem);
-  margin: 0 0 0 .25rem;
 }
-
-#ProgramStaffQuestionnaire .Answer,
-.TranscribedQuestionsForApplicant .Answer {
-  padding: .5rem 0;
-}
-#ProgramStaffQuestionnaire .QuestionLabel,
-.TranscribedQuestionsForApplicant .QuestionLabel {
-  font-weight: bold;
-  display: inline-block;
+.TranscribedQuestionsForApplicant .FileUploadQuestion {
+  line-height: 1;
+  padding: .25rem;
+  border: 1px solid #cecece;
 }
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
   background-color: transparent;
@@ -3251,6 +3263,7 @@ div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
   padding: .75rem 1rem;
   border: none;
   white-space: normal;
+  vertical-align: top;
 }
 div.StudentDisplayForHealthReviewer table caption,
 div.HealthQuestionnaireEditor table caption {
@@ -3275,12 +3288,9 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
   width: 100%;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff .Answer {
-  margin-top: .5rem;
-  padding-top: .75rem;
-  border-top: 1px solid #ccd2d6;
+  margin-top: 1.25rem;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff .Answer div {
-  margin-bottom: .5rem;
   width: 100%;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff input[value="Save answer"] {
@@ -4634,6 +4644,35 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
     display: none;
 }
 
+/* INBOX Q AND A --> */
+.questionnaire .RowDisplay td {
+  vertical-align: top;
+  padding: .5rem;
+}
+.QuestionAndAnswer .Question,
+.QuestionAndAnswer .Answer {
+  display: flex;
+}
+.QuestionAndAnswer .QuestionLabel,
+.QuestionAndAnswer .AnswerLabel {
+  font-weight: bold; 
+  margin-right: .5rem;
+}
+
+/* CAN DELETE? --> */
+#ProgramStaffQuestionnaire .Answer,
+.TranscribedQuestionsForApplicant .Answer {
+  padding: .5rem 0;
+}
+#ProgramStaffQuestionnaire .QuestionLabel,
+.TranscribedQuestionsForApplicant .QuestionLabel {
+  font-weight: bold;
+  display: inline-block;
+}
+/* <-- CAN DELETE? */
+
+/* <-- INBOX Q AND A */
+
 /* PAGE: Document review approval editor --> */
 
 /* possibly expand to general forms...*/
@@ -4644,6 +4683,72 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 }
 .DocumentReviewApprovalEditor .previous-page-link {
   display: block;
+}
+.DocumentReviewApprovalEditor .calculated-age {
+  color: rebeccapurple;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  display: flex;
+  margin-top: .5rem;
+}
+/*.DocumentReviewApprovalEditor .calculated-age .label {
+  width: initial;
+  padding: .25rem;
+}
+.DocumentReviewApprovalEditor .calculated-age .value {
+  background: transparent;
+  border: 0;
+  min-width: initial;
+  padding: .25rem;
+}*/
+.DocumentReviewApprovalEditor .calculated-age .label::after {
+  content: ":";
+  padding-right: .25rem;
+}
+/* TEMP!!... --> */
+.DocumentReviewApprovalEditor .generated-field-group-label {
+  display: none;
+}
+.generated-field-group-content .AddressIndividualContent {
+  border-collapse: collapse;
+  width: 100%;
+}
+.generated-field-group-content .AddressIndividualContent th {
+  font-style: initial;
+}
+.DocumentReviewApprovalEditor caption {
+  text-align: left;
+  padding: .5rem 0;
+}
+.DocumentReviewApprovalEditor .generated-field-group-content td {
+  background-color: #e3e6e8;
+  border-bottom: 1px solid #d9d9d9; 
+}
+.DocumentReviewApprovalEditor .generated-field-group-content th,
+.DocumentReviewApprovalEditor .generated-field-group-content td {
+  font-size: .875rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+}
+.DocumentReviewApprovalEditor .generated-field-group-content th {
+  width: 10rem;
+  padding-left: 2rem;
+}
+
+/* ****** */
+
+.DocumentReviewApprovalEditor .view-edit-link-wrapper,
+.DocumentReviewApprovalEditor .data-display-section-controls {
+  display: flex;
+  background: #dfe7ec;
+  padding: .5rem 1rem;
+}
+.DocumentReviewApprovalEditor .view-edit-link-wrapper {
+  margin: -1rem -1rem 1rem -1rem;
+}
+.DocumentReviewApprovalEditor .view-edit-link-wrapper .view,
+.DocumentReviewApprovalEditor .data-display-section-controls .view {
+  margin-right: .75rem;
 }
 /* <-- PAGE: Document review approval editor */
 

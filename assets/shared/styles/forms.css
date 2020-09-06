@@ -39,17 +39,17 @@ input[type="file"] {
 	margin-bottom: .5rem;  
 }
 .form-input label:first-child,
-.generated-field .label:first-child {
+.generated-field > .label:first-child {
 	padding-right: .5rem;
 	width: 10rem;
 }
-.generated-field .value {
+.generated-field > .value {
 	font-style: italic;
 	padding-left: 0;
 }
-.generated-field .label, 
+.generated-field > .label, 
 .generated-field .preview,
-.generated-field .value,
+.generated-field > .value,
 .form-input label,
 .form-input input:not([type="submit"]),
 .form-input textarea,
@@ -69,8 +69,8 @@ input[type="file"] {
 .form-input input:not([type="submit"]),
 .form-input textarea,
 .form-input select,
-.generated-field .preview,
-.generated-field .value {
+.generated-field > .preview,
+.generated-field > .value {
 	min-width: 10rem;
 	padding: .25rem;
 }

@@ -2222,17 +2222,11 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Answer td:nth-child(2),
 .HealthQuestionnaireEditor .Answer .Text  {
   display: inline-block;
   width: calc(100% - 2rem);
-  margin: 0 0 0 .25rem;
 }
-
-#ProgramStaffQuestionnaire .Answer,
-.TranscribedQuestionsForApplicant .Answer {
-  padding: .5rem 0;
-}
-#ProgramStaffQuestionnaire .QuestionLabel,
-.TranscribedQuestionsForApplicant .QuestionLabel {
-  font-weight: bold;
-  display: inline-block;
+.TranscribedQuestionsForApplicant .FileUploadQuestion {
+  line-height: 1;
+  padding: .25rem;
+  border: 1px solid #cecece;
 }
 div.StudentDisplayForHealthReviewer table.HealthQuestions tr td:empty {
   background-color: transparent;
@@ -2250,6 +2244,7 @@ div.StudentDisplayForHealthReviewer #ProgramStaffQuestionnaire table tr td,
   padding: .75rem 1rem;
   border: none;
   white-space: normal;
+  vertical-align: top;
 }
 div.StudentDisplayForHealthReviewer table caption,
 div.HealthQuestionnaireEditor table caption {
@@ -2274,12 +2269,9 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
   width: 100%;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff .Answer {
-  margin-top: .5rem;
-  padding-top: .75rem;
-  border-top: 1px solid #ccd2d6;
+  margin-top: 1.25rem;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff .Answer div {
-  margin-bottom: .5rem;
   width: 100%;
 }
 .TranscribedQuestionsForApplicant .AnswerByStaff input[value="Save answer"] {

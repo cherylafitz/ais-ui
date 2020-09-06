@@ -65,6 +65,23 @@ div.NoEvaluationQueuesAvailable {
   color: #000;
 }
 
+div.HealthDataForm div.HasOverdueQuestionsCount,
+div.HealthDataForm div.OverdueQuestion,
+div.HealthQuestionnaireEditor div.HasOverdueQuestionsCount,
+div.HealthQuestionnaireEditor div.OverdueQuestion {
+  border-radius: 2px;
+  background-color: #ffc7b3;
+  border: 1px solid #ffb499;
+  font-size: .875rem;
+  margin: .5rem 0;
+  padding: .5rem .875rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  color: #000;
+}
+
 /* <-- ALERTS, NOTICES, AND WARNINGS */
 
 
