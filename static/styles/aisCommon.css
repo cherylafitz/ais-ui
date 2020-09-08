@@ -4646,7 +4646,7 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 
 .main-content {
   padding: 1rem 1.25rem;
-  height: calc(100% - 174px);
+  min-height: calc(100% - 174px);
 }
 /* TEMP fix for alumni page structure issue */
 .main-content.AlumniHome,
