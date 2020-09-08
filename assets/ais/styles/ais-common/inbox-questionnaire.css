@@ -3,16 +3,25 @@
   vertical-align: top;
   padding: .5rem;
 }
-.QuestionAndAnswer .Question,
-.QuestionAndAnswer .Answer {
+.QuestionAndAnswer {
+  padding: .75rem;
+}
+.QuestionAndAnswer > .Question {
+  padding-bottom: .75rem;
+}
+.QuestionAndAnswer > .Question,
+.QuestionAndAnswer > .Answer {
   display: flex;
+  white-space: normal;
 }
 .QuestionAndAnswer .QuestionLabel,
 .QuestionAndAnswer .AnswerLabel {
   font-weight: bold; 
   margin-right: .5rem;
 }
-
+.form-section.questionnaire .reference-code {
+  margin-bottom: 1rem;
+}
 /* CAN DELETE? --> */
 #ProgramStaffQuestionnaire .Answer,
 .TranscribedQuestionsForApplicant .Answer {
@@ -24,5 +33,23 @@
   display: inline-block;
 }
 /* <-- CAN DELETE? */
-
+.questions-for-participant th,
+.questions-for-participant td {
+  vertical-align: top;
+  text-align: left;
+}
+.HasOverdueQuestionsCount,
+.OverdueQuestion {
+  border-radius: 2px;
+  background-color: #ffc7b3;
+  border: 1px solid #ffb499;
+  font-size: .875rem;
+  margin: .5rem 0;
+  padding: .5rem .875rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  color: #000;
+}
 /* <-- INBOX Q AND A */

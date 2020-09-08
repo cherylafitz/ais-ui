@@ -116,7 +116,7 @@ input[type=checkbox]:checked + label {
 	width: 10rem;
 }
 .input-group-content {
-	margin: .25rem 1rem;
+	margin: .25rem 0 .25rem 1rem;
 }
 .input-group-content .form-input label:first-child {
 	width: 9rem;

@@ -599,7 +599,7 @@ input[type=checkbox]:checked + label {
 	width: 10rem;
 }
 .input-group-content {
-	margin: .25rem 1rem;
+	margin: .25rem 0 .25rem 1rem;
 }
 .input-group-content .form-input label:first-child {
 	width: 9rem;
@@ -3254,22 +3254,7 @@ div.HealthQuestionnaireEditor td.QuestionAndAnswer div.Question textarea {
 .TranscribedQuestionsForApplicant .AnswerByStaff input[value="Cancel"]{
   order: 6;
 }
-div.HealthDataForm div.HasOverdueQuestionsCount,
-div.HealthDataForm div.OverdueQuestion,
-div.HealthQuestionnaireEditor div.HasOverdueQuestionsCount,
-div.HealthQuestionnaireEditor div.OverdueQuestion {
-  border-radius: 2px;
-  background-color: #ffc7b3;
-  border: 1px solid #ffb499;
-  font-size: .875rem;
-  margin: .5rem 0;
-  padding: .5rem .875rem;
-  position: relative;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-  color: #000;
-}
+
 /* <-- HEALTH INBOX */
 
 /* ADDRESS INDIVIDUAL CONTENT --> */
@@ -4618,16 +4603,25 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   vertical-align: top;
   padding: .5rem;
 }
-.QuestionAndAnswer .Question,
-.QuestionAndAnswer .Answer {
+.QuestionAndAnswer {
+  padding: .75rem;
+}
+.QuestionAndAnswer > .Question {
+  padding-bottom: .75rem;
+}
+.QuestionAndAnswer > .Question,
+.QuestionAndAnswer > .Answer {
   display: flex;
+  white-space: normal;
 }
 .QuestionAndAnswer .QuestionLabel,
 .QuestionAndAnswer .AnswerLabel {
   font-weight: bold; 
   margin-right: .5rem;
 }
-
+.form-section.questionnaire .reference-code {
+  margin-bottom: 1rem;
+}
 /* CAN DELETE? --> */
 #ProgramStaffQuestionnaire .Answer,
 .TranscribedQuestionsForApplicant .Answer {
@@ -4639,7 +4633,25 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   display: inline-block;
 }
 /* <-- CAN DELETE? */
-
+.questions-for-participant th,
+.questions-for-participant td {
+  vertical-align: top;
+  text-align: left;
+}
+.HasOverdueQuestionsCount,
+.OverdueQuestion {
+  border-radius: 2px;
+  background-color: #ffc7b3;
+  border: 1px solid #ffb499;
+  font-size: .875rem;
+  margin: .5rem 0;
+  padding: .5rem .875rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  color: #000;
+}
 /* <-- INBOX Q AND A */
 
 /* MAIN STRUCTURE --> */
@@ -4685,15 +4697,15 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 /* PAGE: Document review approval editor --> */
 
 /* possibly expand to general forms...*/
-.DocumentReviewApprovalEditor form {  
+.document-review-approval form {  
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
 }
-.DocumentReviewApprovalEditor .previous-page-link {
+.document-review-approval .previous-page-link {
   display: block;
 }
-.DocumentReviewApprovalEditor .calculated-age {
+.document-review-approval .calculated-age {
   color: rebeccapurple;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -4701,12 +4713,17 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   display: flex;
   margin-top: .5rem;
 }
-.DocumentReviewApprovalEditor .calculated-age .label::after {
+.document-review-approval .label::after {
   content: ":";
   padding-right: .25rem;
 }
+.document-review-approval .birth-citizenships {
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 2px solid #999;
+}
 /* TEMP!!... --> */
-.DocumentReviewApprovalEditor .generated-field-group-label {
+.document-review-approval .generated-field-group-label {
   display: none;
 }
 .generated-field-group-content .AddressIndividualContent {
@@ -4716,37 +4733,111 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 .generated-field-group-content .AddressIndividualContent th {
   font-style: initial;
 }
-.DocumentReviewApprovalEditor caption {
+.document-review-approval caption {
   text-align: left;
   padding: .5rem 0;
 }
-.DocumentReviewApprovalEditor .generated-field-group-content td {
+.document-review-approval .generated-field-group-content td {
   background-color: #e3e6e8;
   border-bottom: 1px solid #d9d9d9; 
 }
-.DocumentReviewApprovalEditor .generated-field-group-content th,
-.DocumentReviewApprovalEditor .generated-field-group-content td {
+.document-review-approval .generated-field-group-content th,
+.document-review-approval .generated-field-group-content td {
   font-size: .875rem;
   padding: 0.5rem 0.5rem 0.5rem 0.75rem;
 }
-.DocumentReviewApprovalEditor .generated-field-group-content th {
+.document-review-approval .generated-field-group-content th {
   width: 10rem;
   padding-left: 2rem;
 }
 
 /* ****** */
 
-.DocumentReviewApprovalEditor .view-edit-link-wrapper,
-.DocumentReviewApprovalEditor .data-display-section-controls {
+.document-review-approval .view-edit-link-wrapper,
+.document-review-approval .data-display-section-controls {
   display: flex;
   background: #dfe7ec;
   padding: .5rem 1rem;
 }
-.DocumentReviewApprovalEditor .view-edit-link-wrapper {
+.document-review-approval .view-edit-link-wrapper {
   margin: -1rem -1rem 1rem -1rem;
 }
-.DocumentReviewApprovalEditor .view-edit-link-wrapper .view,
-.DocumentReviewApprovalEditor .data-display-section-controls .view {
+.document-review-approval .view-edit-link-wrapper .view,
+.document-review-approval .data-display-section-controls .view {
+  margin-right: .75rem;
+}
+
+/* <-- DELETE BELOW AFTER WEEK OF 9-8-20 (check first for "document-review-approval" class*/
+
+
+/* possibly expand to general forms...*/
+[class*="DocumentReview"].main-content form {  
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+[class*="DocumentReview"].main-content .previous-page-link {
+  display: block;
+}
+[class*="DocumentReview"].main-content .calculated-age {
+  color: rebeccapurple;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  display: flex;
+  margin-top: .5rem;
+}
+[class*="DocumentReview"].main-content .label::after {
+  content: ":";
+  padding-right: .25rem;
+}
+[class*="DocumentReview"].main-content .birth-citizenships {
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 2px solid #999;
+}
+/* TEMP!!... --> */
+[class*="DocumentReview"].main-content .generated-field-group-label {
+  display: none;
+}
+.generated-field-group-content .AddressIndividualContent {
+  border-collapse: collapse;
+  width: 100%;
+}
+.generated-field-group-content .AddressIndividualContent th {
+  font-style: initial;
+}
+[class*="DocumentReview"].main-content caption {
+  text-align: left;
+  padding: .5rem 0;
+}
+[class*="DocumentReview"].main-content .generated-field-group-content td {
+  background-color: #e3e6e8;
+  border-bottom: 1px solid #d9d9d9; 
+}
+[class*="DocumentReview"].main-content .generated-field-group-content th,
+[class*="DocumentReview"].main-content .generated-field-group-content td {
+  font-size: .875rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.75rem;
+}
+[class*="DocumentReview"].main-content .generated-field-group-content th {
+  width: 10rem;
+  padding-left: 2rem;
+}
+
+/* ****** */
+
+[class*="DocumentReview"].main-content .view-edit-link-wrapper,
+[class*="DocumentReview"].main-content .data-display-section-controls {
+  display: flex;
+  background: #dfe7ec;
+  padding: .5rem 1rem;
+}
+[class*="DocumentReview"].main-content .view-edit-link-wrapper {
+  margin: -1rem -1rem 1rem -1rem;
+}
+[class*="DocumentReview"].main-content .view-edit-link-wrapper .view,
+[class*="DocumentReview"].main-content .data-display-section-controls .view {
   margin-right: .75rem;
 }
 /* <-- PAGE: Document review approval editor */
