@@ -858,25 +858,18 @@ table.row-display a:active {
   margin: 1rem 0;
 }
 .data-display-section-content {
-  border: 1px solid #e4e6e8;
   border: 1px solid #e8eced;
   border-top: none;
   padding: 1rem;
   margin: 0;
   background-color: #f0f2f3;
-  /*background-color: #f4f5f6;*/
   border-radius: 0 0 4px 4px;
 }
 .data-display-section h2 {
-/*  background-color: #33434d;
-  background-color: #495D6B;*/
-  background: #c2ced6;
   background: #bfced9;
-  /* color: #fff; */
   padding: .625rem 1rem .5rem;
   border-radius: 4px 4px 0 0;
   margin: 0;
-  border: 1px solid #afc2cf;
   border: 1px solid #b9cad5;
 }
 .data-display-section h2 a {
@@ -892,11 +885,7 @@ table.row-display a:active {
   border-bottom: 0;
 }
 .data-display-section .generated-field > .value {
-  background: #e3e3e8;
-  background: #E8E8ED;
-  background: #f1f1f3;
   background: #e3e6e8;
-  /*background: #e6e9eb;*/
   border-left: 1px solid #e3e3e3;
   border-right: 1px solid #e3e3e3;
   flex-grow: 1;
