@@ -1,5 +1,3 @@
-/* QUESTIONNAIRE --> */
-
 /* overrides --> */
 
 div.Content div.QuestionText {
@@ -11,31 +9,26 @@ div.Content div.QuestionAnswer {
   margin-top: .5em;
 }
 /* <-- overrides */
-
-.DynamicQuestions .Dynamic {
-  background: #f0f2f3;
-  padding: .75rem 1rem;
-  display: flex;
-}
 .DynamicQuestions .Index {
+  display: inline-block;
+  vertical-align: top;
   margin-right: .5em;
 }
 .DynamicQuestions .Index:after {
   content: ')';
 }
 
-.DynamicQuestions .Dynamic .File {
-  width: 100%;
-}
 .DynamicQuestions .Text,
 .DynamicQuestions .File {
-/*  display: inline-block;
-  max-width: 90%;*/
+  display: inline-block;
+  max-width: 90%;
 }
 
 .DynamicQuestions .Answer {
   margin: .5em 0 .75em;
+  color: #447C8D;
   color: #2E6B9B;
+  font-family: serif;
 }
 .DynamicQuestions .File ol {
   -webkit-padding-start: 1em;
@@ -51,8 +44,7 @@ div.Content div.QuestionAnswer {
   background-color: #d7dcbc;
 }
 div.Content input[type='text'] {
-  width: 100%;
+    width: 80em;
+    height: 4em;
+    max-width: 100%;
 }
-
-/* <-- QUESTIONNAIRE */
-
