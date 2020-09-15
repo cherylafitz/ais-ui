@@ -74,6 +74,9 @@ input[type="file"] {
 	min-width: 10rem;
 	padding: .25rem;
 }
+.form-input input.FileUploadQuestion {
+  padding: .25rem 0;
+}
 .form-input textarea {
 	width: calc(100% - 11rem);
 }
@@ -82,7 +85,6 @@ input[type="file"] {
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
-	margin: .25rem;
 	vertical-align: text-top;
 	min-width: initial;
 	padding: 0;
@@ -160,17 +162,33 @@ fieldset.yes-no-picker {
 	width: fit-content;
 }
 fieldset.yes-no-picker .form-input {
-	display: inline-block;
+	display: inline-flex;
+  align-items: center;
 	margin-bottom: 0;
 }
-fieldset.yes-no-picker input[type="radio"] {
-	margin-right: 0;
+fieldset.yes-no-picker label,
+fieldset.yes-no-picker input {
+  margin: 0 .25rem;
 }
 fieldset.yes-no-picker legend {
 	font-weight: normal;
 	font-size: .875rem;
 }
 /* <-- FIELDSETS */
+
+/* FORMS IN TABLES --> */
+.row-display .form-input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+.row-display .form-input textarea,
+.row-display .form-input select {
+  display: block;
+}
+.row-display .form-input textarea {
+  width: 100%;
+}
+.row-display .input-group-label {
+  font-size: 1rem;
+}
+/* <-- FORMS IN TABLES */
 
 /* REQUIRED --> */
 .form-input.required label::after {
