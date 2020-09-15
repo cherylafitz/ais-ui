@@ -568,6 +568,7 @@ input[type="file"] {
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
+  margin: .25rem;
 	vertical-align: text-top;
 	min-width: initial;
 	padding: 0;
