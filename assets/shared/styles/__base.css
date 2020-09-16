@@ -1,8 +1,7 @@
-/* START BASE STYLES --> */
-
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
-@charset "UTF-8";
+/* START BASE STYLES --> */ 
 
 *,
 *:after,
@@ -15,6 +14,14 @@ body {
   height: 100%;
   margin: 0;
   font-size: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
 }
 
 /* <-- END BASE STYLES */
