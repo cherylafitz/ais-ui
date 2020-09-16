@@ -1313,11 +1313,18 @@ table.rolodex tr.ItemXMLTag th {
 /* PAGE: FORM TRANSFER INBOX --> */
 .transfer-errors-inbox .Problem {
   white-space: normal;
+  min-width: 9rem;
 }
 .transfer-errors-inbox .Problem span {
   display: block;
   max-width: 450px;
   margin-top: .25rem;
+}
+.primaryActionLinksDivider {
+  margin-bottom: .5rem;
+}
+.transfer-errors-inbox .row-display {
+  margin-top: 1.5rem;
 }
 /* <-- PAGE: FORM TRANSFER INBOX */
 /* PAGE: BRAND EDITOR --> */
