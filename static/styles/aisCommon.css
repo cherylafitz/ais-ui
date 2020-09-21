@@ -5180,7 +5180,9 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Rec
 /* <--TABLES */
 
 /* NEW TABLES WITH ROW-DISPLAY --> */
-
+.row-display td {
+  vertical-align: top;
+}
 
 div#alumnusSummary table.CountryRelationships tr th,
 div#alumnusSummary table.row-display.SocialMediaList tr th,
@@ -5435,4 +5437,27 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.row-display.Re
   font-weight: bold;
 }
 
+/* SIMPLE TABLE --> */
+.row-display .SimpleTable {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+.row-display .SimpleTable tr,
+.row-display .SimpleTable tr th,
+.row-display .SimpleTable tr td {
+  border: none;
+}
+.row-display .SimpleTable .NameFilter .ajax-observe-field {
+  display: inline-block;
+}
+.row-display .SimpleTable .Allotment {
+  text-align: right; 
+}
+.row-display .SimpleTable tr:nth-child(2n+1),
+.row-display .SimpleTable tr:nth-child(2n+2) {
+  background-color: inherit;
+}
+
+/* <-- SIMPLE TABLE */
 /* <--NEW TABLES WITH ROW-DISPLAY */
