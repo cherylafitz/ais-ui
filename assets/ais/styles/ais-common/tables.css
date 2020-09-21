@@ -530,13 +530,6 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.row-display.Re
 }
 
 /* SIMPLE TABLE --> */
-/*table table.PlacementsRepeatingGroup {
-  border-collapse: collapse; 
-  width: 100%;
-}
-table table.PlacementsRepeatingGroup td {
-  border: none;
-}*/
 .row-display .SimpleTable {
   width: 100%;
   border: none;
