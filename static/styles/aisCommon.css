@@ -918,6 +918,21 @@ table.row-display a:active {
 }
 /* <-- SECTIONS */
 
+/* screenreaders --> */
+
+.show-for-sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* <-- screenreaders */
+
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
@@ -4607,6 +4622,51 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 .nodisplayportal {
     display: none;
 }
+
+/* logged in site header --> */
+
+.name-block {
+  display: flex;
+  padding-top: .5rem;
+}
+.name-block .title {
+  margin-bottom: .5rem;
+}
+.name-block .aisforms-logo {
+  margin-right: 1rem;
+}
+.name-block .aisforms-logo img {
+  width: 70px;
+  height: 70px;
+}
+.name-block a {
+  color: #c4dcee;
+}
+.name-block .form-input {
+  margin-bottom: .25rem;
+}
+.name-block .form-input .search-records {
+  padding: .125rem .25rem;
+  width: 15.5rem;
+}
+.name-block .controls-wrapper {
+  margin-top: .25rem;
+}
+.name-block .controls-wrapper input[type="submit"][class*="-button"] {
+  min-width: inherit;
+  padding: 1px 5px 1px;
+  margin-right: .5rem;
+}
+.name-block .controls-wrapper [class*="-link"] {
+  font-size: .75rem;
+}
+.name-block .hidden-text-for-show-hide {
+  display: none;
+  font-size: .75rem;
+  padding-left: .5rem;
+}
+
+/* <-- logged in site header */
 
 /* INBOX Q AND A --> */
 .questionnaire .RowDisplay td {
