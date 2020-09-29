@@ -1,0 +1,123 @@
+/* PAGINATOR --> CLEAN UP AFTER MARCO DELETES STYLES! */
+.paginatorContainer {
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #cecece;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.paginator {
+  font-size: .75rem;
+  padding: .75rem; 
+  margin-right: 0; 
+  margin-left: 0;
+}
+.paginator span,
+.paginator a {
+  display: inline-block;
+}
+
+.Content .paginator a {
+  background: rgb(255 255 255);
+  border: solid 1px #346789;
+  color: rgb(40 54 61);
+  padding: .0625rem .5rem .125rem .5rem;
+  text-decoration: none;
+  margin-right: .125rem;
+}
+
+.paginator a:visited {
+  color: rgb(50, 50, 150);
+  padding: .0625rem .5rem .125rem .5rem;
+  border: solid 1px #346789;
+  background: inherit;
+  text-decoration: none;
+}
+
+.paginator .paginatorAtStart,
+.paginator .paginatorAtEnd {
+  margin: inherit;
+  padding: .0625rem .5rem .125rem .5rem;
+  color: rgb(255 255 255);
+  border: 1px solid #356789;
+  background: #356789;
+  opacity: .6;
+  white-space: nowrap;
+}
+
+.paginator .paginatorBreak {
+  padding: 2px 6px;
+  border: none;
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.paginatorContainer .paginator .paginatorNext,
+.paginatorContainer .paginator .paginatorPrev {
+  padding: .0625rem .5rem .125rem .5rem;
+  background: #336789;
+  border: 1px solid #346788;
+  color: #ffffff;
+  border-color: #356788;
+  border-radius: 2px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.Content .paginator .paginatorNext {
+  margin-left: .5rem;
+}
+.Content .paginator .paginatorPrev {
+  margin-right: .5rem;
+}
+
+.paginatorContainer .paginator a:hover,
+.paginatorContainer .paginatorBatchSizes a:hover {
+  color: #fff;
+  background: #22465d;
+  border-color: #1c384a;
+  text-decoration: none;
+}
+
+.paginatorContainer .paginatorResults {
+  /* text-align: center; */
+  font: 11px/15px Arial, Helvetica;
+   color: #000; 
+  /* margin-top: .75rem; */
+  margin: 0 1.5rem;
+  background: #e0e6ef;
+  padding: .125rem .5rem;
+  margin: .75rem;
+}
+
+.paginatorContainer .paginatorBatchSizes {
+  /* text-align: center; */
+  font: 11px/15px Arial, Helvetica;
+  margin: .75rem;
+}
+
+.paginatorBatchSizeList {
+  font-weight: bold;
+}
+
+.paginatorBatchSizes a {
+  color: #296089;
+  padding: 2px 6px;
+  border: solid 1px rgb(208, 208, 208);
+  background: rgb(255, 255, 255);
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0 .125rem;
+}
+
+.paginatorContainer .paginator .paginatorCurrentPage {
+  padding: .0625rem .5rem .125rem .5rem;
+  border: none;
+  font-weight: bold;
+  color: #000;
+}
+/* <-- PAGINATOR */
