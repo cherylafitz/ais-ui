@@ -918,6 +918,21 @@ table.row-display a:active {
 }
 /* <-- SECTIONS */
 
+/* screenreaders --> */
+
+.show-for-sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* <-- screenreaders */
+
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
@@ -1206,6 +1221,25 @@ div.SecureDocumentEditorRowDisplay h1 {
 div#TopMenu div.AccountProfileMenuIsOneOfTwo a {
   margin-left: 0;
 }
+nav#TopMenu {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#TopMenu .menu-items-wrapper {
+  padding: 0;
+  margin: 0;
+}
+#TopMenu .Logout {
+  font-weight: bold;
+  font-size: .875rem;
+}
+#TopMenu a.Logout:hover,
+#TopMenu a.Logout:active {
+  text-decoration: underline;
+  color: #000;
+}
 /* <--NAV */
 #Header .UserNameBlock .Username .userIsAdministrator,
 #Header .UserNameBlock .Username,
@@ -1299,22 +1333,6 @@ div#buildAndInstance {
 }
 #Header a {
   color: #c4dcee;
-}
-#Header .LoginLogoutLink {
-  margin-top: 1.125rem;
-  position: absolute;
-  right: 1rem;
-  z-index: 10;
-}
-#Header .LoginLogoutLink a {
-  display: block;
-  color: #000;
-  font-size: 0.875rem;
-  font-weight: bold;
-}
-#Header .LoginLogoutLink a:hover,
-#Header .LoginLogoutLink a:active {
-  text-decoration: underline;
 }
 /* <--HEADER */
 /* TITLES-->*/

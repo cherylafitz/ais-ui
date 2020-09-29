@@ -918,6 +918,21 @@ table.row-display a:active {
 }
 /* <-- SECTIONS */
 
+/* screenreaders --> */
+
+.show-for-sr {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* <-- screenreaders */
+
 /* TABLE ROW NUMBERS --> */
 
 table.row-display tbody {
@@ -4608,6 +4623,51 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
     display: none;
 }
 
+/* logged in site header --> */
+
+.name-block {
+  display: flex;
+  padding-top: .5rem;
+}
+.name-block .title {
+  margin-bottom: .5rem;
+}
+.name-block .aisforms-logo {
+  margin-right: 1rem;
+}
+.name-block .aisforms-logo img {
+  width: 70px;
+  height: 70px;
+}
+.name-block a {
+  color: #c4dcee;
+}
+.name-block .form-input {
+  margin-bottom: .25rem;
+}
+.name-block .form-input .search-records {
+  padding: .125rem .25rem;
+  width: 15.5rem;
+}
+.name-block .controls-wrapper {
+  margin-top: .25rem;
+}
+.name-block .controls-wrapper input[type="submit"][class*="-button"] {
+  min-width: inherit;
+  padding: 1px 5px 1px;
+  margin-right: .5rem;
+}
+.name-block .controls-wrapper [class*="-link"] {
+  font-size: .75rem;
+}
+.name-block .hidden-text-for-show-hide {
+  display: none;
+  font-size: .75rem;
+  padding-left: .5rem;
+}
+
+/* <-- logged in site header */
+
 /* INBOX Q AND A --> */
 .questionnaire .RowDisplay td {
   vertical-align: top;
@@ -4851,6 +4911,31 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   margin-right: .75rem;
 }
 /* <-- PAGE: Document review approval editor */
+
+/* PAGE: HOME --> */
+.HomePageForAll section,
+.HomePageForAll fieldset {
+  border: 1px solid #cecece;
+  background-color: #e0e6eb;
+  border-radius: 2px;
+  margin: 0 0 .75rem;
+  padding: .5rem .75rem .75rem;
+}
+.HomePageForAll legend {
+  float: left;
+  width: 100%;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: .5rem;  
+  padding: 0;
+  font-size: 1.375rem;
+}
+.downloads ul {
+  padding: 0;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+/* <-- PAGE: HOME */
 
 /* PAGE: TEST CENTER ASSESSMENT EDITOR --> */
 .scoring-promotion.row-display th {
@@ -5180,7 +5265,9 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Rec
 /* <--TABLES */
 
 /* NEW TABLES WITH ROW-DISPLAY --> */
-
+.row-display td {
+  vertical-align: top;
+}
 
 div#alumnusSummary table.CountryRelationships tr th,
 div#alumnusSummary table.row-display.SocialMediaList tr th,
@@ -5435,4 +5522,27 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.row-display.Re
   font-weight: bold;
 }
 
+/* SIMPLE TABLE --> */
+.row-display .SimpleTable {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+.row-display .SimpleTable tr,
+.row-display .SimpleTable tr th,
+.row-display .SimpleTable tr td {
+  border: none;
+}
+.row-display .SimpleTable .NameFilter .ajax-observe-field {
+  display: inline-block;
+}
+.row-display .SimpleTable .Allotment {
+  text-align: right; 
+}
+.row-display .SimpleTable tr:nth-child(2n+1),
+.row-display .SimpleTable tr:nth-child(2n+2) {
+  background-color: inherit;
+}
+
+/* <-- SIMPLE TABLE */
 /* <--NEW TABLES WITH ROW-DISPLAY */

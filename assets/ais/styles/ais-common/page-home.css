@@ -1,0 +1,24 @@
+/* PAGE: HOME --> */
+.HomePageForAll section,
+.HomePageForAll fieldset {
+  border: 1px solid #cecece;
+  background-color: #e0e6eb;
+  border-radius: 2px;
+  margin: 0 0 .75rem;
+  padding: .5rem .75rem .75rem;
+}
+.HomePageForAll legend {
+  float: left;
+  width: 100%;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: .5rem;  
+  padding: 0;
+  font-size: 1.375rem;
+}
+.downloads ul {
+  padding: 0;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+/* <-- PAGE: HOME */
