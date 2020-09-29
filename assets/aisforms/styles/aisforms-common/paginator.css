@@ -4,18 +4,22 @@
   border-radius: 2px;
   border: 1px solid #cecece;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   margin-bottom: .5rem;
   margin-top: .5rem;
-  padding: .75rem;
-  text-align: center;
   width: fit-content;
+  justify-content: space-between;
 }
 
 .paginator {
   font-size: .75rem;
-  padding-top: 0; 
-  /* margin-right: 1rem; */
+  padding: .75rem; 
+  margin-right: 0; 
+  margin-left: 0;
+}
+.paginator span,
+.paginator a {
+  display: inline-block;
 }
 
 .Content .paginator a {
@@ -24,6 +28,7 @@
   color: rgb(40 54 61);
   padding: .0625rem .5rem .125rem .5rem;
   text-decoration: none;
+  margin-right: .125rem;
 }
 
 .paginator a:visited {
@@ -42,6 +47,7 @@
   border: 1px solid #356789;
   background: #356789;
   opacity: .6;
+  white-space: nowrap;
 }
 
 .paginator .paginatorBreak {
@@ -59,6 +65,8 @@
   color: #ffffff;
   border-color: #356788;
   border-radius: 2px;
+  white-space: nowrap;
+  display: inline-block;
 }
 .Content .paginator .paginatorNext {
   margin-left: .5rem;
@@ -83,12 +91,13 @@
   margin: 0 1.5rem;
   background: #e0e6ef;
   padding: .125rem .5rem;
+  margin: .75rem;
 }
 
 .paginatorContainer .paginatorBatchSizes {
   /* text-align: center; */
   font: 11px/15px Arial, Helvetica;
-   margin-top: 0; 
+  margin: .75rem;
 }
 
 .paginatorBatchSizeList {
