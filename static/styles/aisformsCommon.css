@@ -1128,11 +1128,6 @@ h2 {
 
 /*<--MAIN STRUCTURE */
 /* To Overwrite Codivus CSS--> */
-#DisplayGroupUpdateContainerID .fromToWrapper ,
-#DisplayGroupUpdateContainerID .batchNavigation,
-#DisplayGroupUpdateContainerID .findDeadlinesWrapper {
-  display: initial;
-}
 div.SecureDocumentEditorRowDisplay h1 {
   margin-top: 1rem;
 }
@@ -2368,15 +2363,6 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
 
 
 /* DEADLINES--> */
-#DisplayGroupUpdateContainerID .findDeadlinesWrapper  {
-  max-width: 733px;
-  margin: 0 auto;
-  float: right;
-}
-#DisplayGroupUpdateContainerID {
-  max-width: 733px;
-  margin: 0 auto;
-}
 
 /* <--DEADLINES */
 div.SectionNavigator .MenuOfSections {
