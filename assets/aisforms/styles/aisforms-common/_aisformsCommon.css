@@ -1306,6 +1306,13 @@ table.rolodex tr.ItemXMLTag th {
   max-width: 450px;
   margin-top: .25rem;
 }
+.primaryActionLinksDivider {
+  margin-bottom: .5rem;
+}
+.transfer-errors-inbox .row-display {
+  margin-top: 1.5rem;
+}
+/* <-- PAGE: FORM TRANSFER INBOX */
 /* <-- PAGE: FORM TRANSFER INBOX */
 
 /* PAGE: USERS IN BULK DISPLAY --> */

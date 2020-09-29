@@ -349,7 +349,10 @@ table.row-display tbody tr td table.templates tbody tr:nth-child(2n+2),
 table.row-display tbody tr td table.templates tbody tr:nth-child(2n+3) {
   background-color: transparent;
 }
-
+.row-display td.TemplateName,
+.row-display td.test-center {
+  white-space: normal;
+}
 div.SectionEditor, table.Choices.row-display {
   margin: 1em 0;
 }
@@ -484,6 +487,9 @@ margin: 0.25em 0 0.25em 0;
 }
 .EvaluationQueueDisplay .row-display td[rowspan="2"] {
   background-color: #fff;
+}
+caption .title {
+  font-size: 1.25rem;
 }
 
 /* MEDIA QUERIES-->*/
