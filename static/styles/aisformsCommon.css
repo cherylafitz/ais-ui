@@ -642,13 +642,16 @@ input[type=checkbox]:checked + label {
 /* <-- from-to-date-picker */
 
 /* FIELDSETS --> */
-fieldset {
+form fieldset {
   border: 1px solid #356789;
   border-radius: 2px;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
   margin: 0 0 .75rem;
+}
+.content fieldset {
+  width: initial;
 }
 legend {
   font-weight: normal;
