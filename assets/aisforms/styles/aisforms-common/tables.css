@@ -7,8 +7,17 @@ table {
 div.Content div.Rowdisplay {
   margin: 0 auto;
 }
-table.RowDisplay {
+table.RowDisplay,
+table.row-display {
     border-collapse: collapse;
+}
+table.RowDisplay tfoot td,
+table.row-display tfoot td {
+  font-weight: bold;
+}
+table.RowDisplay td.PageTotals,
+table.row-display td.PageTotals {
+  text-align: right;
 }
 
 /* PORTED FROM MARCO'S AIR.CSS --> */
@@ -24,6 +33,9 @@ table.row-display td {
     padding: .2em .3em .1em .3em;
     border: .1em solid gray;
     text-align: left;
+}
+table.row-display td.Description {
+  white-space: normal;
 }
 table.row-display td.rightAlign,
 table.row-display td.numeric,
@@ -179,6 +191,9 @@ table.RowDisplay td {
   text-align: left;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: normal;
+}
+table.RowDisplay td.Description {
+  white-space: normal;
 }
 table.RowDisplay tr.headerRow th,
 table.RowDisplay thead tr th {

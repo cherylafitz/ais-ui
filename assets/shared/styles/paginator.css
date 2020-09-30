@@ -5,12 +5,12 @@
   border: 1px solid #cecece;
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin: .5rem 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-
 .paginator {
   font-size: .75rem;
   padding: .75rem; 
@@ -22,8 +22,8 @@
   display: inline-block;
 }
 
-.Content .paginator a {
-  background: rgb(255 255 255);
+.paginatorContainer .paginator a {
+  background: #fff;
   border: solid 1px #346789;
   color: rgb(40 54 61);
   padding: .0625rem .5rem .125rem .5rem;
@@ -32,7 +32,6 @@
 }
 
 .paginator a:visited {
-  color: rgb(50, 50, 150);
   padding: .0625rem .5rem .125rem .5rem;
   border: solid 1px #346789;
   background: inherit;

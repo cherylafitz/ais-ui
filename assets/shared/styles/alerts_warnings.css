@@ -42,7 +42,8 @@ div.OtherBrands
 div.HasFormsInOtherBrandsWarning,
 .ValidationError,
 div.MyForms div.NoFormsStartedOrSubmitted,
-div.MyForms div.NoEvaluationForms  {
+div.MyForms div.NoEvaluationForms,
+.NoExtendedDeadlines  {
   font-style: normal;
   color: #c93028;
   background-color: transparent;
