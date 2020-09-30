@@ -602,7 +602,6 @@ input[type=checkbox]:checked + label {
 }
 .input-group-label {
 	font-size: 1.25rem;
-	width: 10rem;
 }
 .input-group-content {
 	margin: .25rem 0 .25rem 1rem;

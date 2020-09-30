@@ -643,6 +643,7 @@ div.Content div.AIRAdminSearchForApplications div.instructions {
 .UpcomingDeadlinesHeader,
 .RecentlyClosedTemplatesTitle   {
   font-size: 1.5rem;
+  display: flex;
   justify-content: space-between;
 }
 .LiveTemplatesTitle .History,
