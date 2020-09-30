@@ -643,6 +643,7 @@ div.Content div.AIRAdminSearchForApplications div.instructions {
 .UpcomingDeadlinesHeader,
 .RecentlyClosedTemplatesTitle   {
   font-size: 1.5rem;
+  justify-content: space-between;
 }
 .LiveTemplatesTitle .History,
 .showDeadlinesPage {
@@ -674,6 +675,7 @@ div.FileInboxLink {
   font-size: .875rem;
   width: initial;
   padding: 0 0 .5rem 0;
+  float: right;
 }
 th.TemplateName div {
   margin-right: .5em;
@@ -1901,9 +1903,6 @@ div#Growler {
 div.NoDisplayExceptPDF.HeaderEvalAppVersion,
 .NoDisplayExceptPDF {
   display: none;
-}
-legend:not(.SaveButton) {
-  font-weight: bold;
 }
 .list-multi {
   column-count: 2;

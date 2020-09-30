@@ -53,8 +53,8 @@ input[type="file"] {
 .form-input label,
 .form-input input:not([type="submit"]),
 .form-input textarea,
-.form-input select,
-.from-to-date-picker .input-group-label {
+.form-input select
+/*.from-to-date-picker .input-group-label */{
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
@@ -119,7 +119,6 @@ input[type=checkbox]:checked + label {
 }
 .input-group-label {
 	font-size: 1.25rem;
-	width: 10rem;
 }
 .input-group-content {
 	margin: .25rem 0 .25rem 1rem;
@@ -129,12 +128,12 @@ input[type=checkbox]:checked + label {
 }
 /* from-to-date-picker --> */
 .from-to-date-picker .input-group-content {
-	display: inline-flex;
+	display: flex;
 	flex-wrap: wrap;
 	margin: 0 0 0 1rem;
 }
 .from-to-date-picker .input-group-label {
-	width: 9rem;
+	/*width: 9rem;*/
 }
 .from-to-date-picker label {
 	display: block;
@@ -158,6 +157,21 @@ input[type=checkbox]:checked + label {
 /* <-- from-to-date-picker */
 
 /* FIELDSETS --> */
+fieldset {
+  border: 1px solid #356789;
+  border-radius: 2px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0 0 .75rem;
+}
+legend {
+  font-weight: normal;
+  padding: 0 .25rem;
+}
+fieldset .radio-button-wrapper {
+  display: inline-block;
+}
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin: 0 0 .75rem;
