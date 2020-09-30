@@ -536,8 +536,8 @@ input[type="file"] {
 .form-input label,
 .form-input input:not([type="submit"]),
 .form-input textarea,
-.form-input select
-/*.from-to-date-picker .input-group-label */{
+.form-input select,
+.from-to-date-picker .input-group-label {
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
@@ -602,6 +602,7 @@ input[type=checkbox]:checked + label {
 }
 .input-group-label {
 	font-size: 1.25rem;
+	width: 10rem;
 }
 .input-group-content {
 	margin: .25rem 0 .25rem 1rem;
@@ -611,12 +612,12 @@ input[type=checkbox]:checked + label {
 }
 /* from-to-date-picker --> */
 .from-to-date-picker .input-group-content {
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
 	margin: 0 0 0 1rem;
 }
 .from-to-date-picker .input-group-label {
-	/*width: 9rem;*/
+	width: 9rem;
 }
 .from-to-date-picker label {
 	display: block;
