@@ -642,6 +642,21 @@ input[type=checkbox]:checked + label {
 /* <-- from-to-date-picker */
 
 /* FIELDSETS --> */
+fieldset {
+  border: 1px solid #356789;
+  border-radius: 2px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0 0 .75rem;
+}
+legend {
+  font-weight: normal;
+  padding: 0 .25rem;
+}
+fieldset .radio-button-wrapper {
+  display: inline-block;
+}
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin: 0 0 .75rem;
@@ -1259,11 +1274,6 @@ h2 {
 
 /*<--MAIN STRUCTURE */
 /* To Overwrite Codivus CSS--> */
-#DisplayGroupUpdateContainerID .fromToWrapper ,
-#DisplayGroupUpdateContainerID .batchNavigation,
-#DisplayGroupUpdateContainerID .findDeadlinesWrapper {
-  display: initial;
-}
 div.SecureDocumentEditorRowDisplay h1 {
   margin-top: 1rem;
 }
@@ -1782,6 +1792,8 @@ div.Content div.AIRAdminSearchForApplications div.instructions {
 .UpcomingDeadlinesHeader,
 .RecentlyClosedTemplatesTitle   {
   font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 .LiveTemplatesTitle .History,
 .showDeadlinesPage {
@@ -1813,6 +1825,7 @@ div.FileInboxLink {
   font-size: .875rem;
   width: initial;
   padding: 0 0 .5rem 0;
+  float: right;
 }
 th.TemplateName div {
   margin-right: .5em;
@@ -2506,15 +2519,6 @@ div.ApplicationEmailWorkflow #EmailPreviewContainerID {
 
 
 /* DEADLINES--> */
-#DisplayGroupUpdateContainerID .findDeadlinesWrapper  {
-  max-width: 733px;
-  margin: 0 auto;
-  float: right;
-}
-#DisplayGroupUpdateContainerID {
-  max-width: 733px;
-  margin: 0 auto;
-}
 
 /* <--DEADLINES */
 div.SectionNavigator .MenuOfSections {
@@ -3049,9 +3053,6 @@ div#Growler {
 div.NoDisplayExceptPDF.HeaderEvalAppVersion,
 .NoDisplayExceptPDF {
   display: none;
-}
-legend:not(.SaveButton) {
-  font-weight: bold;
 }
 .list-multi {
   column-count: 2;

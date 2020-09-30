@@ -642,6 +642,21 @@ input[type=checkbox]:checked + label {
 /* <-- from-to-date-picker */
 
 /* FIELDSETS --> */
+fieldset {
+  border: 1px solid #356789;
+  border-radius: 2px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0 0 .75rem;
+}
+legend {
+  font-weight: normal;
+  padding: 0 .25rem;
+}
+fieldset .radio-button-wrapper {
+  display: inline-block;
+}
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin: 0 0 .75rem;
