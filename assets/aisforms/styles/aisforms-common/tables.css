@@ -34,7 +34,7 @@ table.row-display td {
     border: .1em solid gray;
     text-align: left;
 }
-table.RowDisplay td.Description {
+table.row-display td.Description {
   white-space: normal;
 }
 table.row-display td.rightAlign,

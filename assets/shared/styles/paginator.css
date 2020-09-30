@@ -34,7 +34,7 @@
 .paginator a:visited {
   padding: .0625rem .5rem .125rem .5rem;
   border: solid 1px #346789;
-  background: transparent;
+  background: inherit;
   text-decoration: none;
 }
 

@@ -895,7 +895,7 @@ table.row-display a:active {
 .paginator a:visited {
   padding: .0625rem .5rem .125rem .5rem;
   border: solid 1px #346789;
-  background: transparent;
+  background: inherit;
   text-decoration: none;
 }
 
@@ -4112,7 +4112,7 @@ table.row-display td {
     border: .1em solid gray;
     text-align: left;
 }
-table.RowDisplay td.Description {
+table.row-display td.Description {
   white-space: normal;
 }
 table.row-display td.rightAlign,
