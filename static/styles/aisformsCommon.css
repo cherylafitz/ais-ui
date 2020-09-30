@@ -4080,17 +4080,16 @@ section.portalMessage header {
 }
 
 /* TABLES --> */
-
+/* generic and NEW STYLES (remove RowDisplay styles when appropriate) --> */
 table {
   border-collapse: collapse;
 }
-
 div.Content div.Rowdisplay {
   margin: 0 auto;
 }
 table.RowDisplay,
 table.row-display {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 table.RowDisplay tfoot td,
 table.row-display tfoot td {
@@ -4100,6 +4099,24 @@ table.RowDisplay td.PageTotals,
 table.row-display td.PageTotals {
   text-align: right;
 }
+/* NESTED TABLES --> */
+table.row-display .row-display {
+  margin: 0;
+}
+table.row-display .row-display,
+table.row-display .row-display td {
+  border: none;
+}
+table.row-display .row-display tr {
+  background-color: transparent;
+}
+table.row-display .row-display tr:first-of-type td {
+  padding-top: 0;
+}
+/* <-- NESTED TABLES */ 
+
+/* <-- generic and NEW STYLES (remove RowDisplay styles when appropriate) */
+
 
 /* PORTED FROM MARCO'S AIR.CSS --> */
 table.row-display thead tr {
@@ -4232,18 +4249,12 @@ table.Search tr th {
   border-bottom: none;
 }
 
-div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay,
 div.AIRAdminSearchForApplications table.Search.rolodex,
-div#TemplateListingContainer table.RowDisplay,
-.MenuRowDisplay .RowDisplay,
-div.AIRAdminSearchForApplicants table.RowDisplay,
 table.Rowdisplay.Deadlines,
 table.Rowdisplay.QueueList,
-div#DisplayGroupUpdateContainerID table.RowDisplay,
 div#SessionDisplay table.rolodex,
 div.EvaluationQueueList table.QueueList,
 table.ChoiceCategories,
-form table.RowDisplay,
 div.EvaluationQueueDisplay table.rolodex,
 table.RowDisplay,
 div.generateReportsWrapper {
@@ -4310,7 +4321,7 @@ tr.headerRow th a {
 table.RowDisplay tr:nth-child(2n+2),
 table.RowDisplay tbody tr:nth-child(2n+2),
 /* added for tables with thead */
-table.RowDisplay thead ~ tbody tr:nth-child(2n+1),
+table.RowDisplay thead ~ tbody > tr:nth-child(2n+1),
 .odd {
   background-color: #dbe8f2;
 }
@@ -4422,18 +4433,12 @@ div.Content div.row-display {
 table.row-display {
     border-collapse: collapse;
 }
-div.AIRAdminSearchForApplications div.ApplicationList table.row-display,
 div.AIRAdminSearchForApplications table.Search.rolodex,
-div#TemplateListingContainer table.row-display,
-.MenuRowDisplay .row-display,
-div.AIRAdminSearchForApplicants table.row-display,
 table.row-display.Deadlines,
 table.row-display.QueueList,
-div#DisplayGroupUpdateContainerID table.row-display,
 div#SessionDisplay table.rolodex,
 div.EvaluationQueueList table.QueueList,
 table.ChoiceCategories,
-form table.row-display,
 div.EvaluationQueueDisplay table.rolodex,
 table.row-display,
 div.generateReportsWrapper {
@@ -4500,7 +4505,7 @@ tr.headerRow th a {
 table.row-display tr:nth-child(2n+2),
 table.row-display tbody tr:nth-child(2n+2),
 /* added for tables with thead */
-table.row-display thead ~ tbody tr:nth-child(2n+1),
+table.row-display thead ~ tbody > tr:nth-child(2n+1),
 .odd {
   background-color: #dbe8f2;
 }
