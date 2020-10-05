@@ -1601,6 +1601,7 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.25;
+  color: #fff;
 }
 .topNavInTable td.logo {
   padding-right: 1rem;
@@ -1615,6 +1616,7 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 }
 .programName {
   vertical-align: middle;
+  display: inline-block;
 }
 /* <--HEADER */
 
@@ -2910,8 +2912,6 @@ table.Search tr th {
 /* <--TABLES*/
 
 /* FORMS --> */
-
-
 #tippyTopOfPage select,
 #tippyTopOfPage input {
   border: none;
