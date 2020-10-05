@@ -483,6 +483,9 @@ table td div.ExcelDownloadDescription {
 /* <-- ERRORS */
 
  /* FORMS --> */
+form {
+  margin: 0;
+}
 input[type="text"],
 input[type="search"],
 input[type="email"],
