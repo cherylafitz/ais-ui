@@ -291,7 +291,6 @@ input {
 }
 input[value="Save Changes"],
 input#SubmitForEvaluation {
-  padding: 0.25rem .75rem;
   font-size: 1.2em;
 }
 input[value="Save Changes"]:hover,
@@ -300,7 +299,10 @@ input#SubmitForEvaluation:hover {
 }
 input#SubmitForEvaluation,
 input#SubmitForEvaluation:hover {
+  padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
+  border-color: inherit;
+  background: #3392A1;
 }
 input[value="Add More"] {
   background: rgb(204,204,204); /* Old browsers */
