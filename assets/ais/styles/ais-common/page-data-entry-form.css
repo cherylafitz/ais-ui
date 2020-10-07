@@ -1,0 +1,36 @@
+/* PAGE: Data Entry Form (HTML NOT UPDATED) --> */
+
+.AISDataEntryForm .FormHeader {
+  margin: .5rem 0;
+  display: flex;
+  font-size: 1.5rem;
+}
+.AISDataEntryForm .FormHeaderImage {
+  margin-right: 1rem;
+}
+.AISDataEntryForm .SectionTitle {
+  font-size: 1.25rem;
+  margin: 1rem 0 .5rem;
+}
+.AISDataEntryForm .SectionTitle .sectionHeadLine2 {
+  font-size: 1rem;
+}
+.AISDataEntryForm .dynamic {
+  background-color: #eff2f3;
+  padding: .75rem 1rem;
+  font-size: .875rem;
+}
+.AISDataEntryForm .dynamic {
+  padding-top: .75rem;
+}
+.AISDataEntryForm .dynamic + .dynamic {
+  padding: 0 1rem .75rem;
+}
+
+.AISDataEntryForm label.desc, legend.desc {
+    font-weight: bold;
+    padding: 0 0 .125rem 0;
+    display: block;
+}
+
+/* <-- PAGE: Data Entry Form */
