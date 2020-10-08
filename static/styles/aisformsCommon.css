@@ -1982,9 +1982,9 @@ table.SubmittedApplications td.Form {
   font-style: italic;
 }
 .Noteworthy {
-  background-color: #FFF7EB;
-  padding: .5em;
-  border: 1px solid #e6e6e6;
+  background-color: #fff5e6;
+  padding: .5rem;
+  border: 1px solid #ffe0b3;
   clear: both;
 }
 
@@ -2693,9 +2693,8 @@ input#CannedSearch {
   display: none;
 }
 .NotifyReferenceButtonWrapper input[type="button"] {
-  padding: .2em;
-  margin: .5em;
-  font-size: 1em;
+  margin-bottom: .5rem;
+  font-size: 1rem;
 }
 
 .previous input[type="button"]:disabled,

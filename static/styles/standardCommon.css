@@ -803,7 +803,7 @@ table.ExcelDataTabulated td {
 /* Notice etc boxes--> */
 
 div.alertBox,
-[class$="-box"] {
+[class*="-box"] {
   color: #000;
   font-size: 0.9375rem; /* 15px when 100% */
   font-weight: normal;
@@ -831,7 +831,7 @@ div.alertBox,
   border-color: #75adbd;
 }
 [class*="caution-box"] {
-  background-color: #ffe0b3;
+  background-color:   
   border-color: #ffcc80;
 }
 /* makes *-box more prominent */
@@ -881,7 +881,7 @@ div.alertBox img,
   height: 17px;
 }
 div.deadlineBox,
-[class$="deadline-box"] {
+[class*="deadline-box"] {
   background-color: #ffc8b3;
   font-size: 1.2em;
   text-align: left;
@@ -892,11 +892,11 @@ div.deadlineBox,
   border: none;
 }
 div.deadlineBox span,
-[class$="deadline-box"] span {
+[class*="deadline-box"] span {
   font-weight: bold;
 }
 div.deadlineBox span.timeZone,
-[class$="deadline-box"] span.timeZone {
+[class*="deadline-box"] span.timeZone {
   font-weight: normal;
 }
 
