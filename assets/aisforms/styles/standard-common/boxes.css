@@ -29,7 +29,7 @@ div.alertBox,
   border-color: #75adbd;
 }
 [class*="caution-box"] {
-  background-color:   
+  background-color: #ffe0b3;
   border-color: #ffcc80;
 }
 /* makes *-box more prominent */
