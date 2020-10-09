@@ -34,6 +34,9 @@ table.row-display a:active {
   display: flex;
   align-items: center;
 }
+.form-section-content ~ .controls-wrapper {
+  margin-top: 1rem;
+}
 .controls-wrapper [class*="-link"]:not(:last-child),
 .controls-wrapper [class*="-button"]:not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
