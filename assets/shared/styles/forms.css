@@ -275,6 +275,8 @@ form[class$="-search"] .form-section-content {
 
 /* filter for display --> */
 .filter-for-display {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   margin: 1rem 0;
 }
