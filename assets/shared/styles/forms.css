@@ -206,15 +206,15 @@ fieldset.yes-no-picker legend {
 	font-weight: normal;
 	font-size: .875rem;
 }
-.radio-fieldset .form-input {
+.fieldset-content .form-input {
   display: inline-block;
   margin-bottom: 0;
 }
-.radio-fieldset .form-input:first-child:nth-last-child(n + 4),
-.radio-fieldset .form-input:nth-last-child(n + 4) ~ .form-input {
+.fieldset-content .form-input:first-child:nth-last-child(n + 4),
+.fieldset-content .form-input:nth-last-child(n + 4) ~ .form-input {
   display: block;
 }
-.radio-fieldset legend {
+.form-section-content legend {
   font-size: .875rem;
 }
 /* <-- FIELDSETS */
