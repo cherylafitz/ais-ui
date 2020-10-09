@@ -139,6 +139,10 @@ input[type=checkbox]:checked + label {
 .from-to-date-picker .input-group-label {
 	width: 9rem;
 }
+.from-to-date-picker {
+  display: flex;
+  flex-flow: row wrap;
+}
 .from-to-date-picker label {
 	display: block;
 }
@@ -169,6 +173,10 @@ form fieldset {
   width: fit-content;
   margin: 0 0 .75rem;
 }
+.form-input + fieldset {
+  margin: .75rem 0;
+}
+/* temp override for AIS because of so many unnecessary fieldsets */
 .content fieldset {
   width: initial;
 }
@@ -197,6 +205,17 @@ fieldset.yes-no-picker label {
 fieldset.yes-no-picker legend {
 	font-weight: normal;
 	font-size: .875rem;
+}
+.fieldset-content .form-input {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.fieldset-content .form-input:first-child:nth-last-child(n + 4),
+.fieldset-content .form-input:nth-last-child(n + 4) ~ .form-input {
+  display: block;
+}
+.form-section-content legend {
+  font-size: .875rem;
 }
 /* <-- FIELDSETS */
 
@@ -253,5 +272,17 @@ form[class$="-search"] .form-section-content {
 	margin-top: .25rem
 }
 /* <-- SEARCH */
+
+/* filter for display --> */
+.filter-for-display {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 1rem 0;
+}
+.filter-for-display label:first-child {
+  display: block;
+}
+/* <-- filter for display */
 
 /* <-- FORMS */
