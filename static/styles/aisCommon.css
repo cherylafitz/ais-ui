@@ -607,6 +607,10 @@ textarea {
   padding: .1875rem .25rem;
   font-size: .875rem;
 }
+input[type="email"] {
+  width: 20rem;
+  max-width: 100%;
+}
 select {
   max-width: 100%;
   font-size: .875rem;
