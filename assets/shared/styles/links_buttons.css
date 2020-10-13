@@ -9,6 +9,9 @@ a:hover,
 .Content a:active {
   color: #12293b;
   text-decoration: none;	
+}
+.bottomPageActionLink {
+  margin-right: .5rem;
 }	
 table.RowDisplay a,
 table.row-display a {

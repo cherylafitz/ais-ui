@@ -36,7 +36,10 @@ textarea {
 
 /* ALERTS, NOTICES, AND WARNINGS --> */
 
-.Alert {
+.Alert,
+.alert,
+/* delete when able */
+h2.PortalAlert {
   display: inline-block;
   color: #000;
   padding: .5rem .75rem;
@@ -105,6 +108,108 @@ div.NoEvaluationQueuesAvailable {
 /* <-- ALERTS, NOTICES, AND WARNINGS */
 
 
+
+/* Notice etc boxes--> */
+
+div.alertBox,
+[class*="-box"] {
+  color: #000;
+  font-size: 0.9375rem; /* 15px when 100% */
+  font-weight: normal;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .5rem .75rem;
+  margin: 1rem 0;
+  clear: right; /* clears help-box */
+}
+div.alertBox,
+[class*="alert-box"] {
+  background-color: #ffdacc;
+  border-color: #ffc8b3;
+}
+[class*="warning-box"] {
+  background-color: #ffc266;
+  border-color: #ffad33;
+}
+[class*="lt-info-box"] {
+  background-color: #d4f5ff;
+  border-color: #b3edff;
+}
+[class*="dk-info-box"] {
+  background-color: #98c2cd;
+  border-color: #75adbd;
+}
+[class*="caution-box"] {
+  background-color: #ffe0b3;
+  border-color: #ffcc80;
+}
+/* makes *-box more prominent */
+[class^="super"][class*="box"] {
+  font-weight: bold;
+  padding: 1rem 1.25rem;
+}
+.noticeBox,
+[class*="notice-box"] {
+  border: 2px solid #de6846;
+  border-radius: 1em;
+  padding: .75rem 1rem;
+  margin: 1em 0;
+}
+div.recommendeeBox,
+[class*="recommendee-box"] {
+  color: #FFFFFF;
+  background-color:#036eb0;
+  font-size:1.2em;
+  border: thin solid #025689;
+  border-radius: 1em;
+  padding: .75rem 1rem;
+  margin: 1em 0;
+}
+div.helpBox,
+[class*="help-box"] {
+  display: inline-block;
+  color: #000;
+  background-color: #ffe2b3;
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-align: left;
+  width: 15em;
+  padding: .25rem .5rem;
+  border: 1px solid #f6b844;
+  border-radius: 2px;
+  margin: 0 0 1.25rem 1rem;;
+  float: right;
+  line-height: 1.0675rem;
+}
+div.helpBox img,
+[class*="help-box"] img,
+div.alertBox img,
+[class*="alert-box"] img {
+  padding-right: .25rem;
+  float: left;
+  height: 17px;
+}
+div.deadlineBox,
+[class*="deadline-box"] {
+  background-color: #ffc8b3;
+  font-size: 1.2em;
+  text-align: left;
+  border-radius: 2px;
+  padding: .25rem .5rem;
+  margin: 1em 0;
+  clear: both;
+  border: none;
+}
+div.deadlineBox span,
+[class*="deadline-box"] span {
+  font-weight: bold;
+}
+div.deadlineBox span.timeZone,
+[class*="deadline-box"] span.timeZone {
+  font-weight: normal;
+}
+
+/* <-- notice boxes */  
 
 /* BUTTONS --> */
 
@@ -826,6 +931,9 @@ a:hover,
 .Content a:active {
   color: #12293b;
   text-decoration: none;	
+}
+.bottomPageActionLink {
+  margin-right: .5rem;
 }	
 table.RowDisplay a,
 table.row-display a {
@@ -1688,26 +1796,6 @@ body table#login tr.LoginActions span.ForgotPassword {
   font-size: .8em;
 }
 
-/*.LoginWrapper.LoginProgramWrapper  .TipsLogin {
-  background-color: #EFF1E4;
-  border: 1px solid #e6e6e6;
-  max-width: 600px;
-    margin: 4em 400px 1em 2em;
-  padding: 0 1em 1em 2em;
-}
-.LoginWrapper.LoginProgramWrapper .LoginWelcome img {
-  padding: 0 1.5em 1em .5em;
-  float: right;
-}
-.LoginWrapper.LoginProgramWrapper .LoginWelcome .HomeBanner img {
-  float: none;
-  padding-bottom: .5em;
-}
-.LoginWrapper.LoginProgramWrapper  .TipsLogin h3 {
-  border: none;
-  padding-top: 0;
-}*/
-
 .AClogo {
   margin: 0 auto;
   max-width: 400px;
@@ -1722,23 +1810,11 @@ a img {
 h2.AppClosed {
   color: #DA2238;
 }
-h2.PortalAlert {
-  color: #981727;
-  background-color: #FFFFDD;
-  font-size: 0.9em;
-  font-weight: normal;
-  text-align: left;
-  border: 1px solid #DA2238;
-  border-radius: 1em;
-  display: table-cell;
-  padding: .2em .5em;
-  margin: 1em 0;
-  clear: both;
-}
-p.LoginWelcomeAlertText {
+/* testing removal */
+/*p.LoginWelcomeAlertText {
     color: #981727 !important;
     font-weight: bold;
-}
+}*/
 .LoginWelcome .PageTitle h1 img {
   padding-left: .4em;
 }
@@ -1754,15 +1830,6 @@ p.LoginWelcomeAlertText {
   position: relative;
   display: none;
 }
-/* .LoginGetStarted.CreateAccountemoved {
-  background-image: url('https://ais.americancouncils.org/ais/common/GetStartedBlurb_horizontal.png');
-  height: 300px;
-  width: 250px;
-  float: right;
-  clear: right;
-  margin: -3em 3em;
-  padding: 0 1em 0 1.3em;
-} */
 /* VERIFY PASSWORD--> */
 div.ForgottenPassword,
 div.PasswordHasBeenSent,
@@ -2515,6 +2582,11 @@ table.rolodex tr.ItemXMLTag th {
   margin-right: .75rem;
 }
 /* <-- PAGE: USERS IN BULK DISPLAY */
+/* PAGE: ApplicantApplicationTemplateEditor --> */
+.EditTemplateLinks a {
+  margin-right: .5rem;
+}
+/* <-- PAGE: ApplicantApplicationTemplateEditor */
 /* PAGE: BRAND EDITOR --> */
 
 .BrandEditor .go-top {
@@ -3045,19 +3117,9 @@ div.NoAvailableForms,
 div.NoEvaluationQueuesAvailable {
   color: #000;
 }
-
-
 div.MyForms div.OtherBrands {
   margin-top: .5rem;
   max-width: 1000px;
-}
-body.IsLoggedIn .ValidationError {
-  padding-top: 0;
-}
-body.IsNotLoggedIn .ValidationError {
-  text-align: right;
-  padding-right: 3em;
-  margin: -1.5em 0 -0.8em 0;
 }
 body.IsNotLoggedIn ul.ErrorOnLoginPage {
   list-style-type:none;
@@ -3173,9 +3235,6 @@ body#body--environment-staging:after {
   }
   /* UPDATE validation and errors on login  -->>>> */
 
-  div.ValidationAndForms .ValidationError {
-    margin: -3em 2em 6em 0;
-  }
   .Content .mainInstructions  {
     float: none;
     margin: 1em auto;
@@ -3249,9 +3308,6 @@ body#body--environment-staging:after {
   div#AClogoFooter img, div#footer {
     width: 100%;
   }
-  div.ValidationAndForms .ValidationError {
-    margin: -3em 8em 0 0;
-  }
   .Content .mainInstructions  {
     float: none;
     margin: 1em auto;
@@ -3294,9 +3350,6 @@ body#body--environment-staging:after {
   }
   #Header #buildAndInstance .brand {
     display: none;
-  }
-  div.ValidationAndForms .ValidationError {
-    text-align: center;
   }
   .Content .mainInstructions  {
     float: none;

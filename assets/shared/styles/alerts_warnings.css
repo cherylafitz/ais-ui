@@ -1,6 +1,9 @@
 /* ALERTS, NOTICES, AND WARNINGS --> */
 
-.Alert {
+.Alert,
+.alert,
+/* delete when able */
+h2.PortalAlert {
   display: inline-block;
   color: #000;
   padding: .5rem .75rem;
