@@ -492,26 +492,6 @@ body table#login tr.LoginActions span.ForgotPassword {
   font-size: .8em;
 }
 
-/*.LoginWrapper.LoginProgramWrapper  .TipsLogin {
-  background-color: #EFF1E4;
-  border: 1px solid #e6e6e6;
-  max-width: 600px;
-    margin: 4em 400px 1em 2em;
-  padding: 0 1em 1em 2em;
-}
-.LoginWrapper.LoginProgramWrapper .LoginWelcome img {
-  padding: 0 1.5em 1em .5em;
-  float: right;
-}
-.LoginWrapper.LoginProgramWrapper .LoginWelcome .HomeBanner img {
-  float: none;
-  padding-bottom: .5em;
-}
-.LoginWrapper.LoginProgramWrapper  .TipsLogin h3 {
-  border: none;
-  padding-top: 0;
-}*/
-
 .AClogo {
   margin: 0 auto;
   max-width: 400px;
@@ -526,23 +506,11 @@ a img {
 h2.AppClosed {
   color: #DA2238;
 }
-h2.PortalAlert {
-  color: #981727;
-  background-color: #FFFFDD;
-  font-size: 0.9em;
-  font-weight: normal;
-  text-align: left;
-  border: 1px solid #DA2238;
-  border-radius: 1em;
-  display: table-cell;
-  padding: .2em .5em;
-  margin: 1em 0;
-  clear: both;
-}
-p.LoginWelcomeAlertText {
+/* testing removal */
+/*p.LoginWelcomeAlertText {
     color: #981727 !important;
     font-weight: bold;
-}
+}*/
 .LoginWelcome .PageTitle h1 img {
   padding-left: .4em;
 }
@@ -558,15 +526,6 @@ p.LoginWelcomeAlertText {
   position: relative;
   display: none;
 }
-/* .LoginGetStarted.CreateAccountemoved {
-  background-image: url('https://ais.americancouncils.org/ais/common/GetStartedBlurb_horizontal.png');
-  height: 300px;
-  width: 250px;
-  float: right;
-  clear: right;
-  margin: -3em 3em;
-  padding: 0 1em 0 1.3em;
-} */
 /* VERIFY PASSWORD--> */
 div.ForgottenPassword,
 div.PasswordHasBeenSent,
@@ -1319,6 +1278,11 @@ table.rolodex tr.ItemXMLTag th {
   margin-right: .75rem;
 }
 /* <-- PAGE: USERS IN BULK DISPLAY */
+/* PAGE: ApplicantApplicationTemplateEditor --> */
+.EditTemplateLinks a {
+  margin-right: .5rem;
+}
+/* <-- PAGE: ApplicantApplicationTemplateEditor */
 /* PAGE: BRAND EDITOR --> */
 
 .BrandEditor .go-top {
@@ -1849,19 +1813,9 @@ div.NoAvailableForms,
 div.NoEvaluationQueuesAvailable {
   color: #000;
 }
-
-
 div.MyForms div.OtherBrands {
   margin-top: .5rem;
   max-width: 1000px;
-}
-body.IsLoggedIn .ValidationError {
-  padding-top: 0;
-}
-body.IsNotLoggedIn .ValidationError {
-  text-align: right;
-  padding-right: 3em;
-  margin: -1.5em 0 -0.8em 0;
 }
 body.IsNotLoggedIn ul.ErrorOnLoginPage {
   list-style-type:none;
@@ -1977,9 +1931,6 @@ body#body--environment-staging:after {
   }
   /* UPDATE validation and errors on login  -->>>> */
 
-  div.ValidationAndForms .ValidationError {
-    margin: -3em 2em 6em 0;
-  }
   .Content .mainInstructions  {
     float: none;
     margin: 1em auto;
@@ -2053,9 +2004,6 @@ body#body--environment-staging:after {
   div#AClogoFooter img, div#footer {
     width: 100%;
   }
-  div.ValidationAndForms .ValidationError {
-    margin: -3em 8em 0 0;
-  }
   .Content .mainInstructions  {
     float: none;
     margin: 1em auto;
@@ -2098,9 +2046,6 @@ body#body--environment-staging:after {
   }
   #Header #buildAndInstance .brand {
     display: none;
-  }
-  div.ValidationAndForms .ValidationError {
-    text-align: center;
   }
   .Content .mainInstructions  {
     float: none;

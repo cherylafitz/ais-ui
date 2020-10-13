@@ -113,6 +113,12 @@ ul {
 div[id$="_textBefore"] .QuestionNumber {
   display: none;
 }
+.datePicker {
+  margin-right: .5rem;
+}
+.onyx-button {
+  padding: 0 1rem .125rem;
+}
 .onyx-picker-decorator .onyx-button {
   padding: 2px 4px;
 }
