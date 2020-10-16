@@ -5294,6 +5294,28 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
 .nodisplayportal {
     display: none;
 }
+div.HomePageForAll img.mfaLock
+{
+  height: 11pt;
+  width: 11pt;
+}
+
+div.HomePageForAll img.BigBusySpinner
+{
+  width: 32px;
+  height: 32px; 
+}
+.stateList {
+   font-family: monospace;
+   max-width: 600px;
+}
+.stateList li {
+  margin: 0;
+  padding: 0 .5rem 0 0;
+  float: none; 
+  display: inline-block;
+  font-size: 1rem;
+}
 /* <-- PAGE: HOME */
 
 /* PAGE: TEST CENTER ASSESSMENT EDITOR --> */
