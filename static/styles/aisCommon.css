@@ -777,6 +777,9 @@ legend {
   font-weight: normal;
   padding: 0 .25rem;
 }
+legend a {
+  font-size: .75rem;
+}
 fieldset .radio-button-wrapper {
   display: inline-block;
 }
@@ -4655,25 +4658,6 @@ body > #priorPage a {
 }
 /* <- text-size classes */
 
-/* flexbox --> */
-div.HomePageForAll div#FlexBoxedItems {
-  display: flex; /* or inline-flex */
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* nowrap */
-  justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
-  margin-right: -1rem;
-}
-
-div.HomePageForAll div#FlexBoxedItems fieldset {
-  flex-basis: auto;
-  flex-grow: 1;
-  min-width: initial;
-  margin-right: 1rem;
-}
-/* <-- flexbox */
-
 /* LISTS -> */
 
 
@@ -4930,10 +4914,7 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
     background-color: #bfdfb9;
 }
   
-/* 9 Sep - USED IN AIS HOMEPAGE PORTALS */
-.nodisplayportal {
-    display: none;
-}
+
 
 /* logged in site header --> */
 
@@ -5270,6 +5251,12 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   margin: 0 0 .75rem;
   padding: .5rem .75rem .75rem;
 }
+.HomePageForAll section ul ,
+.HomePageForAll fieldset ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
 .HomePageForAll legend {
   float: left;
   width: 100%;
@@ -5279,10 +5266,33 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   padding: 0;
   font-size: 1.375rem;
 }
-.downloads ul {
-  padding: 0;
-  padding-left: 1.5rem;
-  margin: 0;
+.homepage-section-content {
+  margin-left: 0;
+}
+.downloads li {
+  margin-bottom: .5rem;
+}
+/* flexbox --> */
+div.HomePageForAll div#FlexBoxedItems {
+  display: flex; /* or inline-flex */
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* nowrap */
+  justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
+  margin-right: -1rem;
+}
+
+div.HomePageForAll div#FlexBoxedItems fieldset {
+  flex-basis: auto;
+  flex-grow: 1;
+  min-width: initial;
+  margin-right: 1rem;
+}
+/* <-- flexbox */
+/* 9 Sep - USED IN AIS HOMEPAGE PORTALS */
+.nodisplayportal {
+    display: none;
 }
 /* <-- PAGE: HOME */
 

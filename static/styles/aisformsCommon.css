@@ -777,6 +777,9 @@ legend {
   font-weight: normal;
   padding: 0 .25rem;
 }
+legend a {
+  font-size: .75rem;
+}
 fieldset .radio-button-wrapper {
   display: inline-block;
 }
