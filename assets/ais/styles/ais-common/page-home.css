@@ -50,17 +50,6 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
 .nodisplayportal {
     display: none;
 }
-div.HomePageForAll img.mfaLock
-{
-  height: 11pt;
-  width: 11pt;
-}
-
-div.HomePageForAll img.BigBusySpinner
-{
-  width: 32px;
-  height: 32px; 
-}
 .stateList {
    font-family: monospace;
    max-width: 600px;
