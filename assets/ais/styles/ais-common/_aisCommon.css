@@ -3343,25 +3343,6 @@ body > #priorPage a {
 }
 /* <- text-size classes */
 
-/* flexbox --> */
-div.HomePageForAll div#FlexBoxedItems {
-  display: flex; /* or inline-flex */
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* nowrap */
-  justify-content: space-between; /* flex-start | flex-end | center | space-between | space-around | space-evenly; */
-  margin-right: -1rem;
-}
-
-div.HomePageForAll div#FlexBoxedItems fieldset {
-  flex-basis: auto;
-  flex-grow: 1;
-  min-width: initial;
-  margin-right: 1rem;
-}
-/* <-- flexbox */
-
 /* LISTS -> */
 
 
@@ -3618,7 +3599,4 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
     background-color: #bfdfb9;
 }
   
-/* 9 Sep - USED IN AIS HOMEPAGE PORTALS */
-.nodisplayportal {
-    display: none;
-}
+
