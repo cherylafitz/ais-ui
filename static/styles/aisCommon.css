@@ -4961,6 +4961,18 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 
 /* <-- logged in site header */
 
+/* ICONS --> */
+.mfaLock {
+  height: 11pt;
+  width: 11pt;
+}
+
+.BigBusySpinner {
+  width: 32px;
+  height: 32px; 
+}
+/* <-- ICONS */
+
 /* INBOX Q AND A --> */
 .questionnaire .RowDisplay td {
   vertical-align: top;
