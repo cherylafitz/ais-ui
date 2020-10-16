@@ -1,4 +1,8 @@
 /* SHARED TABLE STYLES --> */
+th {
+  font-weight: normal;
+  white-space: nowrap;
+}
 .row-display .number,
 .RowDisplay .number {
   text-align: right;
