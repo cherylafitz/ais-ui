@@ -1,17 +1,31 @@
 /* PAGE: HOME --> */
+.HomePageForAll {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 1;
+  align-self: flex-start;
+}
 .HomePageForAll section,
-.HomePageForAll fieldset {
+/* remove fieldset styles when able */
+.HomePageForAll fieldset,
+div.HomePageForAll fieldset  {
   border: 1px solid #cecece;
   background-color: #e0e6eb;
   border-radius: 2px;
   margin: 0 0 .75rem;
   padding: .5rem .75rem .75rem;
+  margin-right: .75rem;
+  flex-grow: 1;
 }
 .HomePageForAll section ul ,
 .HomePageForAll fieldset ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+.HomePageForAll .AppStatisticsByProgramYear {
+  flex-grow: 2;
+  flex-basis: 100%;
 }
 .HomePageForAll legend {
   float: left;
