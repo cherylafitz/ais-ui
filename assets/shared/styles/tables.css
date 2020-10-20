@@ -2,9 +2,19 @@
 th {
   font-weight: normal;
   white-space: nowrap;
+  vertical-align: top;
 }
 .row-display .number,
 .RowDisplay .number {
   text-align: right;
+}
+thead .aisid input[list*="Filter"] {
+  width: 8rem;
+}
+thead .test-center input[list*="Filter"] {
+  width: 6rem;
+}
+thead .applicant-status input[list*="Filter"] {
+  width: 4rem;
 }
 /* <-- SHARED TABLE STYLES */
