@@ -1288,10 +1288,6 @@ thead .test-center input[list*="Filter"] {
 thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
-/* phone number */
-.DialText {
-  white-space: nowrap;
-}
 /* <-- SHARED TABLE STYLES */
 
 /* TAGS --> */
