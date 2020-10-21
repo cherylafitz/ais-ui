@@ -1494,7 +1494,7 @@ div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > th {
   padding-left: 0;
 }
 
-div.FSAAppFullDisplay table.rolodex tr td,
+div.FSAAppFullDisplay table.rolodex tr td:not(.DialText),
 div.AlumnusSummary fieldset.Section table.rolodex tr td {
   white-space: initial;
 }

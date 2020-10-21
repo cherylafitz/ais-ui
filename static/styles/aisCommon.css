@@ -1288,10 +1288,6 @@ thead .test-center input[list*="Filter"] {
 thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
-/* phone number */
-.DialText {
-  white-space: nowrap;
-}
 /* <-- SHARED TABLE STYLES */
 
 /* TAGS --> */
@@ -2823,7 +2819,7 @@ div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > th {
   padding-left: 0;
 }
 
-div.FSAAppFullDisplay table.rolodex tr td,
+div.FSAAppFullDisplay table.rolodex tr td:not(.DialText),
 div.AlumnusSummary fieldset.Section table.rolodex tr td {
   white-space: initial;
 }
