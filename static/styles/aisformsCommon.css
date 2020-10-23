@@ -892,7 +892,7 @@ h5,
 h6 {
   font-weight: normal;
   margin-top: 0;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: .5rem;
   padding: 0;
 }
@@ -912,6 +912,7 @@ h4{
 }
 
 /* <-- HEADINGS */
+
 /* iframes --> */
 
 .iframe-resize-wrapper iframe {
@@ -1008,6 +1009,55 @@ table.row-display a:active {
   column-gap: .5rem;
 }
 /* <-- LISTS */
+/* NAVIGATION --> */
+.sub-nav,
+.info-bar {
+  display: flex;
+  margin: -1rem -1.25rem 1rem -1.25rem;
+  padding: .5rem 1rem;
+}
+.sub-nav {
+  background-color: #e4e5e7;
+  font-size: .875rem;
+}
+.info-bar {
+  background-color: #f1f2f3;
+}
+.sub-nav:first-child,
+.info-bar:first-child {
+  padding-top: .75rem;
+}
+.sub-nav .page-actions {
+  margin-left: auto;
+}
+.nav-item:not(:last-child),
+.info-bar-item:not(:last-child) {
+  margin-right: 1rem;
+}
+.info-bar-item .label {
+  color: #666;
+}
+.page-actions .link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.page-actions .link-list li:not(:first-child) {
+  display: inline-block;
+  margin-left: .5rem;
+}
+.breadcrumbs-item:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin: 0 .5rem;
+  color: #666;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+/* <-- NAVIGATION */
+
 /* page structure --> */
 .page-section {
   margin-bottom: 1rem;
@@ -1506,6 +1556,7 @@ div.SecureDocumentEditorRowDisplay h1 {
   padding: .125rem 1rem .1875rem;
   color: #000;
   background-color: transparent;
+  text-decoration: none;
 }
 #TopMenu a:hover,
 .menu a:hover,

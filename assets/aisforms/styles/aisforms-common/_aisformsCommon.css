@@ -181,6 +181,7 @@ div.SecureDocumentEditorRowDisplay h1 {
   padding: .125rem 1rem .1875rem;
   color: #000;
   background-color: transparent;
+  text-decoration: none;
 }
 #TopMenu a:hover,
 .menu a:hover,
