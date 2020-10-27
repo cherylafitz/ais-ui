@@ -22,4 +22,13 @@
 	background-color: #fbcec7;
 }
 
+/* overrides on one-off classes --> */
+.external-system-tag {
+  padding: initial;
+  font-size: initial;
+  margin: initial;
+  border-radius: initial;
+}
+/* <-- overrides on one-off classes */
+
 /* <-- TAGS */

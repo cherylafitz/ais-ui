@@ -45,6 +45,14 @@ input[type="file"] {
 .generated-field {
 	margin-bottom: .5rem;  
 }
+.form-input .action,
+.generated-field .action {
+  display: inline-block;
+}
+.form-input .number,
+.generated-field .number {
+  text-align: right;
+}
 .form-input label:first-child,
 .generated-field > .label:first-child {
 	padding-right: .5rem;
@@ -86,6 +94,7 @@ input[type="file"] {
 }
 .form-input textarea {
 	width: calc(100% - 11rem);
+  max-width: 500px;
 }
 .form-input select {
 	max-width: calc(100% - 11rem);
