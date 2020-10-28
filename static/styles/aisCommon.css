@@ -685,6 +685,12 @@ input[type="file"] {
 	width: calc(100% - 11rem);
   max-width: 500px;
 }
+[class*="css"] textarea {
+  width: 100%; /* textareas containing CSS need to be full width */
+}
+.form-input[class*="css"] textarea {
+  max-width: 100%; /* textareas containing CSS need to be full width */
+}
 .form-input select {
 	max-width: calc(100% - 11rem);
 }

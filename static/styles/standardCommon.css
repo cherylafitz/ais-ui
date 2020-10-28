@@ -801,6 +801,10 @@ table.ExcelDataTabulated td {
 /* <-- ADDRESS TABLE */
 
 /* TABLES --> */
+.SectionDisplay th {
+  white-space: normal;
+}
+
 /* legacy RowDisplay-->  */
 .Content .AnswerTable tr.odd,
 .SectionDisplay table.RowDisplay tr:nth-child(2n+1),
@@ -964,7 +968,8 @@ table.Attachments {
   width: 100%;
 }
 .AnswerTable th {
-  max-width: 8rem;
+  max-width: 11rem;
+  white-space: normal;
 }
 .Content .AnswerTable tr td div{
   margin-top:5px;
