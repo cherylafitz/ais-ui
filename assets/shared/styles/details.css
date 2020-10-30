@@ -50,8 +50,6 @@ details[open] > summary::before {
   -o-transform: translateY(-50%) rotate(135deg);
   -webkit-transform: translateY(-50%) rotate(135deg);
   transform: translateY(-50%) rotate(135deg);
-  /* needs to offset hidden half of square */
-  /*top: 24%;*/
   left: .5em;
 }
 /* BASE DETAILS OVERRIDES --> */
