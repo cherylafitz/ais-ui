@@ -286,6 +286,9 @@ input[type="submit"][value="Clear Filters"]:hover {
     margin: 0 0 .5rem .25rem;
     display: inline-block;
     border-radius: 2px;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
 }
 .code-wrapper code {
 	background-color: #4d4d4d;
@@ -304,6 +307,11 @@ input[type="submit"][value="Clear Filters"]:hover {
     display: block;
     margin: 0 1rem;
     padding: .5rem;
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+    max-width: 100%;
 }
 .generated-field .code-wrapper .preview,
 .form-input .code-wrapper .preview {
