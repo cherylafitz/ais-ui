@@ -308,8 +308,8 @@ form[class$="-search"] .form-section-content {
 /* <-- filter for display */
 
 @media only screen and (max-width : 30rem) {
-	select,
-	textarea {
+	.form-input select,
+	.form-input textarea {
 		width: 100%;
 	}
 }
