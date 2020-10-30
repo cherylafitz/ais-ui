@@ -896,6 +896,13 @@ form[class$="-search"] .form-section-content {
 }
 /* <-- filter for display */
 
+@media only screen and (max-width : 30rem) {
+	select,
+	textarea {
+		width: 100%;
+	}
+}
+
 /* <-- FORMS */
 
 /* HEADINGS --> */
