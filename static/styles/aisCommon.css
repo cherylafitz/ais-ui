@@ -1003,7 +1003,6 @@ table.row-display a:active {
   margin-top: .75rem;
 }
 .controls-wrapper > :not(:last-child),
-.controls-wrapper > :not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .75rem;
@@ -1021,9 +1020,6 @@ table.row-display a:active {
   margin-top: .25rem;
   margin-bottom: .25rem;
 }
-/*.controls-wrapper input[class^="delete"] {
-	margin-left: auto;
-}*/
 .controls-wrapper [class*="-link"] {
 	font-size: .875rem;
 }
