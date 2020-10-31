@@ -9,11 +9,11 @@
 td a.file-download {
   background-repeat: no-repeat;
   background-position: left;
-  background-size: auto 1.5rem;
-  line-height: 1.5;
+  background-size: auto 1.4rem;
+  line-height: 1.6;
   display:block;
   margin: 1em;
-  padding-left: 2.25rem;
+  padding-left: 2rem;
 }
 .file-download a,
 td a.file-download {
