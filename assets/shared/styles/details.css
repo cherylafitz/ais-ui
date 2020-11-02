@@ -155,28 +155,33 @@ details.details_1 .details-content {
     padding: 1rem 0;
 }
 /* details block */
-details.block summary,
-details.language-section summary {
+details[class*="super"] summary {
+  padding: 0.5em 1em 0.5em 2.25em;
+  font-size: 1.125rem;
+}
+details[class*="block"] summary {
   display: block;
   padding: 0.5em 1em 0.5em 2.25em;
   font-size: 1.125rem;
 }
-details.block > summary::before,
-details.language-section summary::before  {
+details[class*="block"] > summary::before,
+details[class*="super"] > summary::before {
   left: calc(1em - 2px);
 }
-details.language-section summary {
-  background-color: #e1e3f4;
-}
-details.block .details-content,
-details.language-section .details-content {
+
+details[class*="block"] .details-content {
   padding-left: 1em;
   padding-right: 1em;
 }
-details.language-section {
+/* details*/
+details[class*="language"] summary {
+  background-color: #e1e3f4;
+}
+details.language-block {
   border: 1px solid #dadbf1;
 }
-details.language-section .details-content {
+details[class*="language"] .details-content {
   background-color: #f4f4fb;
 }
+
 /* <-- END DETAILS STYLES */
