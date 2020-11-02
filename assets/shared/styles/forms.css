@@ -96,11 +96,11 @@ input[type="file"] {
 	width: calc(100% - 11rem);
   max-width: 500px;
 }
+.form-input[class*="css"] textarea {
+  max-width: initial; /* textareas containing CSS need to be full width */
+}
 [class*="css"] textarea {
   width: 100%; /* textareas containing CSS need to be full width */
-}
-.form-input[class*="css"] textarea {
-  max-width: 100%; /* textareas containing CSS need to be full width */
 }
 .form-input select {
 	max-width: calc(100% - 11rem);

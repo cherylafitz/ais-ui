@@ -33,25 +33,23 @@ details > summary::before {
   border-style: solid;
   border-width: 3px 3px 0 0;
   border-color: currentColor;
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  -o-transform: translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
   background: transparent;
   width: .5625em; /* 9px of 1em */
   height: .5625em; /* 9px of 1em */
   position: absolute;
   /* needs to offset hidden half of square */
   left: calc(.5em - 2px);
-  top: 33%;
+  top: 50%;
 }
 details[open] > summary::before {
-  -ms-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-  /* needs to offset hidden half of square */
-  top: 24%;
+  -ms-transform: translateY(-50%) rotate(135deg);
+  -o-transform: translateY(-50%) rotate(135deg);
+  -webkit-transform: translateY(-50%) rotate(135deg);
+  transform: translateY(-50%) rotate(135deg);
   left: .5em;
 }
 /* BASE DETAILS OVERRIDES --> */
@@ -120,6 +118,7 @@ details.details_1 > summary {
   /* <-- overrides for base styles */
   font-weight: bold;
 }
+/* details 1 (uses plus sign) */
 details.details_1 summary::before, 
 details.details_1 summary::after {
   /* overrides for base styles --> */
@@ -155,4 +154,34 @@ details.details_1 .details-content {
     background-color: transparent;
     padding: 1rem 0;
 }
+/* details block */
+details[class*="super"] summary {
+  padding: 0.5em 1em 0.5em 2.25em;
+  font-size: 1.125rem;
+}
+details[class*="block"] summary {
+  display: block;
+  padding: 0.5em 1em 0.5em 2.25em;
+  font-size: 1.125rem;
+}
+details[class*="block"] > summary::before,
+details[class*="super"] > summary::before {
+  left: calc(1em - 2px);
+}
+
+details[class*="block"] .details-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* details*/
+details[class*="language"] summary {
+  background-color: #e1e3f4;
+}
+details.language-block {
+  border: 1px solid #dadbf1;
+}
+details[class*="language"] .details-content {
+  background-color: #f4f4fb;
+}
+
 /* <-- END DETAILS STYLES */
