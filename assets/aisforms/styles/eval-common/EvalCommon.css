@@ -313,6 +313,17 @@ div.BeforeQuestion.fromRecommender {
 div.QuestionItem.fromEvaluator {
   margin-top: .5em;
 }
+.eval-background .QuestionItem.fromEvaluator {
+  padding: .5rem .75rem;
+  background: #eff2f3;
+  margin: 0;
+}
+.eval-background .QuestionItem.fromEvaluator.AISDocumentDownload {
+  background-color: transparent;
+}
+.eval-background .QuestionItem.fromEvaluator.evaluatorNotes {
+  border: 0;
+}
 .fromEvaluator .Instruction {
   margin-top: .5rem;
 }
