@@ -586,7 +586,8 @@ table td div.ExcelDownloadDescription {
 
 /* ERRORS --> */
 
-.validation-error-line {
+.validation-error-line,
+.warning {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -598,7 +599,8 @@ table td div.ExcelDownloadDescription {
   width: -webkit-fit-content;
   width: fit-content;
 }
-.validation-error-line::before {
+.validation-error-line::before,
+.warning::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
@@ -610,7 +612,8 @@ table td div.ExcelDownloadDescription {
   transform: translateY(-50%);
   width: .9375rem;
 }
-.validation-error-line::after {
+.validation-error-line::after,
+.warning::after {
   color: black;
   content: "!";
   font-size: .6875rem;
