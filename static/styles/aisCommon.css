@@ -1077,8 +1077,9 @@ table.row-display a:active {
   color: #068471;
   margin-bottom: .375rem;
 }
-.mixed-languages .instructions [lang] {
+.mixed-languages .Instruction [lang] {
   color: #066051;
+  margin-bottom: 0;
 }
 
 /* <-- mixed languages */
