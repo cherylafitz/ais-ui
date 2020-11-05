@@ -1074,7 +1074,11 @@ table.row-display a:active {
 /* mixed languages --> */
 
 .mixed-languages [lang] {
-  color: #046254;
+  color: #068471;
+  margin-bottom: .375rem;
+}
+.mixed-languages .instructions [lang] {
+  color: #066051;
 }
 
 /* <-- mixed languages */
