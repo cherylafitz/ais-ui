@@ -1,7 +1,12 @@
 /* mixed languages --> */
 
 .mixed-languages [lang] {
-  color: #046254;
+  color: #068471;
+  margin-bottom: .375rem;
+}
+.mixed-languages .Instruction [lang] {
+  color: #066051;
+  margin-bottom: 0;
 }
 
 /* <-- mixed languages */
