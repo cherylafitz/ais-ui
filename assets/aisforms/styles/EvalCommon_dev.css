@@ -127,6 +127,7 @@ div.Content .fromApplicant table.AnswerTable tr td:first-child {
 .Group.fromApplicant,
 div.Content .fromApplicant div.GroupedItem,
 .QuestionItem.fromRecommender {
+  background-color: #e4e5e7;
   background-color: #ddeaee;
   padding: .375rem 1rem .25rem;
   margin-bottom: .125rem;
@@ -159,6 +160,15 @@ div.Content div.BeforeQuestion.fromApplicant {
   background-color: transparent;
   padding: 0;
 }
+/* in testing */
+div.Content div#ApplicationTemplateDisplayAUC div.BeforeQuestion.fromApplicant h1 {
+/*    margin-right: .125rem;
+     border: 2px solid #bbd5dd; 
+     padding: .5rem 1rem .5rem 1rem; 
+     margin-right: .125rem; 
+     margin-top: 1.5rem; 
+     border-radius: 3px 3px 0 0;*/
+}
 
 .fromApplicant.MissingItemForAttemptedSubmit {
   border: initial;
@@ -172,7 +182,7 @@ div.Content div.BeforeQuestion.fromApplicant {
   background-color: transparent;
 }
 
-/* ISSUES --> */
+/* ISSUES --> 
 div.Content .fromRecommender .fromRecommender div.QuestionText,
 div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
   /*margin-left: 1.7em;*/
@@ -317,6 +327,7 @@ div.QuestionItem.fromEvaluator {
   padding: .5rem 1rem;
   background: #eff2f3;
   margin: 0;
+  /*background: #f0f1f5;*/
 }
 .Content .BeforeQuestion + div .QuestionItem.fromEvaluator {
   margin-top: .5rem;
