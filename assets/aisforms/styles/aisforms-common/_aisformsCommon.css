@@ -1242,6 +1242,14 @@ table.rolodex tr.ItemXMLTag th {
 }
 /* <--TEMPLATE EDITOR */
 
+/* PAGE: ApplicationEmailWorkflow --> */
+.EmailTemplateSpecifics input[type="text"],
+.EmailTemplateSpecifics textarea {
+  width: 100%;
+}
+
+/* <-- PAGE: ApplicationEmailWorkflow */
+
 /* PAGE: #list-of-forms-page -->  */
 
 #list-of-forms-page .related-form {
