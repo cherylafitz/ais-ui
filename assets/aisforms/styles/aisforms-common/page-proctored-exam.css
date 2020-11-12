@@ -3,5 +3,15 @@ form.has-unsaved-edits {
   border-left: 3px solid #de463d;
   padding-left: 1rem;
 }
-
+table.row-display td.template,
+table.row-display td.proctors {
+  white-space: normal;
+  max-width: 350px;
+}
+.ProctoredExamEditor caption {
+  font-size: 1.25rem;
+}
+.ProctoredExamEditor td.preconditions {
+  text-align: center;
+}
 /* <-- PAGE: PROCTORED EXAM */

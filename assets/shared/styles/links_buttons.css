@@ -25,6 +25,10 @@ table.RowDisplay a:active,
 table.row-display a:active {
   color: #73382C;
 }
+.row-display caption [class*="-link"] {
+  font-size: .875rem;
+  color: #296089;
+}
 
 /* add to separate file for bg-colors? --> */
 .bg-blue01 a,
