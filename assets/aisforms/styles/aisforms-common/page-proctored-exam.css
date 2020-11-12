@@ -8,10 +8,14 @@ table.row-display td.proctors {
   white-space: normal;
   max-width: 350px;
 }
-.ProctoredExamEditor caption {
+table.row-display td.alternate-text {
+  white-space: normal;
+  max-width: 600px;
+}
+[class*="ProctoredExam"] caption {
   font-size: 1.25rem;
 }
-.ProctoredExamEditor td.preconditions {
+[class*="ProctoredExam"] td.preconditions {
   text-align: center;
 }
 /* <-- PAGE: PROCTORED EXAM */
