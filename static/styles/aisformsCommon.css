@@ -1018,6 +1018,10 @@ table.RowDisplay a:active,
 table.row-display a:active {
   color: #73382C;
 }
+.row-display caption [class*="-link"] {
+  font-size: .875rem;
+  color: #296089;
+}
 
 /* add to separate file for bg-colors? --> */
 .bg-blue01 a,
@@ -1416,6 +1420,7 @@ thead .test-center input[list*="Filter"] {
 thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
+
 /* <-- SHARED TABLE STYLES */
 
 /* TAGS --> */
@@ -4347,7 +4352,21 @@ form.has-unsaved-edits {
   border-left: 3px solid #de463d;
   padding-left: 1rem;
 }
-
+table.row-display td.template,
+table.row-display td.proctors {
+  white-space: normal;
+  max-width: 350px;
+}
+table.row-display td.alternate-text {
+  white-space: normal;
+  max-width: 600px;
+}
+[class*="ProctoredExam"] caption {
+  font-size: 1.25rem;
+}
+[class*="ProctoredExam"] td.preconditions {
+  text-align: center;
+}
 /* <-- PAGE: PROCTORED EXAM */
 
 /* TABLES --> */
