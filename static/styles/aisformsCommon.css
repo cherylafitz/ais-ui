@@ -1421,16 +1421,6 @@ thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
 
-/* wrapped cells --> */
-
-table.row-display td.description,
-table.RowDisplay td.Description {
-  white-space: normal;
-  max-width: 400px;
-}
-
-/* <-- wrapped cells */
-
 /* <-- SHARED TABLE STYLES */
 
 /* TAGS --> */
