@@ -773,3 +773,12 @@ table.ExcelDataTabulated th,
 table.ExcelDataTabulated td {
   padding: 2px;
 }
+/* looks like "caution-box" */
+.proctored-exam-room-information {
+  font-size: 0.9375rem; /* 15px when 100% */
+  border: 1px solid #ffcc80;
+  border-radius: 2px;
+  padding: .5rem .75rem;
+  margin: 1rem 0;
+  background-color: #ffe0b3;
+}
