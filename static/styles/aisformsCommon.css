@@ -192,7 +192,7 @@ div.alertBox img,
 div.deadlineBox,
 [class*="deadline-box"] {
   background-color: #ffc8b3;
-  font-size: 1.2em;
+  font-size: 1.2em; 
   text-align: left;
   border-radius: 2px;
   padding: .25rem .5rem;
@@ -1420,6 +1420,16 @@ thead .test-center input[list*="Filter"] {
 thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
+
+/* wrapped cells --> */
+
+table.row-display td.description,
+table.RowDisplay td.Description {
+  white-space: normal;
+  max-width: 400px;
+}
+
+/* <-- wrapped cells */
 
 /* <-- SHARED TABLE STYLES */
 
