@@ -81,7 +81,7 @@ div.alertBox img,
 div.deadlineBox,
 [class*="deadline-box"] {
   background-color: #ffc8b3;
-  font-size: 1.2em; 
+  font-size: 1.2em;
   text-align: left;
   border-radius: 2px;
   padding: .25rem .5rem;
