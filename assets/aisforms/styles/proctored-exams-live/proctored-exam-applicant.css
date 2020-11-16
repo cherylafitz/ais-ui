@@ -1,0 +1,33 @@
+.video-and-chat-content {
+  padding: 1rem;
+}
+#webcam-widget-wrapper-id,
+#blast-chat-content-wrapper-id,
+#direct-chat-content-wrapper-id {
+  margin-right: 1rem;
+  padding: .5rem;
+}
+#webcam-widget-wrapper-id {
+  background-color: transparent;
+  border: 1px solid #999;
+}
+.announcements-header
+/* essays --> */
+.switchComponent {
+  max-width: 80%;
+}
+.app_sectionItemsList {
+  margin: 0 1rem 1rem;
+}
+
+.onyx-popup {
+  background-color: #B0BECA;
+  color: #000;
+  border: 1px solid #000;
+}
+.onyx-popup button {
+  border: 1px solid #444;
+}
+.app_detailScroller_confirmation {
+  margin: 1rem;
+}

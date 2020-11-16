@@ -1,0 +1,14 @@
+.enyo-scroller.chat-scroller {
+  max-width: 450px;
+}
+#blast-widget-wrapper-id {
+  background-color: #444; 
+  color: #fff;
+  padding: .5rem;
+}
+#blast-widget-wrapper-id_inputDecorator {
+  margin: .5rem 0;
+}
+#blast-widget-wrapper-id_control2 {
+  margin-bottom: .5rem;
+}
