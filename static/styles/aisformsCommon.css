@@ -4357,15 +4357,19 @@ table.row-display td.proctors {
   white-space: normal;
   max-width: 350px;
 }
-table.row-display td.alternate-text {
+table.row-display td.alternate-text,
+table.row-display td.change {
   white-space: normal;
   max-width: 600px;
 }
 [class*="ProctoredExam"] caption {
   font-size: 1.25rem;
 }
-[class*="ProctoredExam"] td.preconditions {
-  text-align: center;
+[class*="ProctoredExam"] td.preconditions img {
+  vertical-align: inherit;
+}
+[class*="ProctoredExam"] td.preconditions details {
+  display: inline-block;
 }
 /* <-- PAGE: PROCTORED EXAM */
 
