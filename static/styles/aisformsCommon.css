@@ -723,7 +723,7 @@ input[type="file"] {
 }
 .form-input textarea {
 	width: calc(100% - 11rem);
-  max-width: 500px;
+  max-width: 600px;
 }
 .form-input[class*="css"] textarea {
   max-width: initial; /* textareas containing CSS need to be full width */
@@ -1119,6 +1119,14 @@ table.row-display a:active {
 .info-bar-item .label {
   color: #666;
 }
+.info-bar .label::after {
+  content: ":";
+  padding-right: .25rem;
+}
+.info-bar .StudentLastNameEmphasis:first-child::after {
+  content: ",";
+  padding-right: .25rem;
+}
 .page-actions .link-list {
   list-style-type: none;
   margin: 0;
@@ -1136,6 +1144,12 @@ table.row-display a:active {
   color: #666;
   font-size: 1.125rem;
   line-height: 1;
+}
+
+/* Override for h1 size until all h1 text is reduced appropriately --> */
+#contentPageProportional .info-bar + h1 {
+  padding: 0;
+  font-size: 1.5rem;
 }
 
 /* <-- NAVIGATION */
