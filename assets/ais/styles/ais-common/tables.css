@@ -10,16 +10,10 @@ table.row-display th.sort-order {
   white-space: normal;
   min-width: 60px;
 }
-table.row-display td.description,
-table.RowDisplay td.Description {
+table.row-display td.description {
   white-space: normal;
   min-width: 300px; 
   max-width: 600px; 
-}
-
-/* specific to table or page --> */
-div.AttachmentDisplay table.AttachmentDocumentType {
-  width: 600px;
 }
 /* <-- wrap cells */
 

@@ -1123,7 +1123,7 @@ table.row-display a:active {
   content: ":";
   padding-right: .25rem;
 }
-.info-bar .StudentLastNameEmphasis::after {
+.info-bar .StudentLastNameEmphasis:first-child::after {
   content: ",";
   padding-right: .25rem;
 }

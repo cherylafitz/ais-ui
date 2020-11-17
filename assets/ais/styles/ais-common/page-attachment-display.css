@@ -10,6 +10,9 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
   padding-left: 0; /* ul reset */
   min-height: 300px;
   overflow: initial; /*override*/
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
 }
 
 /* <-- PAGE: attachment display */

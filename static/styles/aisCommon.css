@@ -1123,7 +1123,7 @@ table.row-display a:active {
   content: ":";
   padding-right: .25rem;
 }
-.info-bar .StudentLastNameEmphasis::after {
+.info-bar .StudentLastNameEmphasis:first-child::after {
   content: ",";
   padding-right: .25rem;
 }
@@ -5247,6 +5247,9 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
   padding-left: 0; /* ul reset */
   min-height: 300px;
   overflow: initial; /*override*/
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
 }
 
 /* <-- PAGE: attachment display */
@@ -5581,16 +5584,10 @@ table.row-display th.sort-order {
   white-space: normal;
   min-width: 60px;
 }
-table.row-display td.description,
-table.RowDisplay td.Description {
+table.row-display td.description {
   white-space: normal;
   min-width: 300px; 
   max-width: 600px; 
-}
-
-/* specific to table or page --> */
-div.AttachmentDisplay table.AttachmentDocumentType {
-  width: 600px;
 }
 /* <-- wrap cells */
 
