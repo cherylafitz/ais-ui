@@ -1,5 +1,30 @@
 /* TABLES --> */
 
+/* wrap cells --> */
+/* general--> */
+table.row-display th.document-review,
+table.row-display th.document-review-approval {
+  white-space: normal;
+} 
+table.row-display th.sort-order {
+  white-space: normal;
+  min-width: 60px;
+}
+table.row-display td.description,
+table.RowDisplay td.Description {
+  white-space: normal;
+  min-width: 300px; 
+  max-width: 600px; 
+}
+
+/* specific to table or page --> */
+div.AttachmentDisplay table.AttachmentDocumentType {
+  width: 600px;
+}
+/* <-- wrap cells */
+
+
+
 /* PORTED FROM MARCO'S PAGEWRAPPER.CSS --> */
 
 table.row-display {

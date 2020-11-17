@@ -94,7 +94,7 @@ input[type="file"] {
 }
 .form-input textarea {
 	width: calc(100% - 11rem);
-  max-width: 500px;
+  max-width: 600px;
 }
 .form-input[class*="css"] textarea {
   max-width: initial; /* textareas containing CSS need to be full width */

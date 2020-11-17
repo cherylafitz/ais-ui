@@ -1,0 +1,15 @@
+/* PAGE: attachment display --> */
+
+div.AttachmentDisplay table.AttachmentDocumentType {
+  width: 100%;
+  max-width: 800px;
+}
+
+div.AttachmentDisplay .ajaxTabbedPanelPanes {
+  width: 100%; /*override*/
+  padding-left: 0; /* ul reset */
+  min-height: 300px;
+  overflow: initial; /*override*/
+}
+
+/* <-- PAGE: attachment display */
