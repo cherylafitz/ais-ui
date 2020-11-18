@@ -1,4 +1,4 @@
-/* PAGE: PROCTORED EXAM --> */
+/* PAGES: PROCTORED EXAM --> */
 form.has-unsaved-edits {
   border-left: 3px solid #de463d;
   padding-left: 1rem;
@@ -22,4 +22,13 @@ table.row-display td.change {
 [class*="ProctoredExam"] td.preconditions details {
   display: inline-block;
 }
-/* <-- PAGE: PROCTORED EXAM */
+
+/* PAGE: ApplicationProctoredFormResultsViewer --> */
+
+.ApplicationProctoredFormResultsViewer .question-value-wrapper .label {
+  word-break: break-word;
+}
+
+/* <-- PAGE: ApplicationProctoredFormResultsViewer */
+
+/* <-- PAGES: PROCTORED EXAM */
