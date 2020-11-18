@@ -687,10 +687,6 @@ input[type="file"] {
 	padding-right: .5rem;
 	width: 10rem;
 }
-.generated-field > .value {
-	font-style: italic;
-	padding-left: 0;
-}
 .generated-field > .label, 
 .generated-field .preview,
 .generated-field > .value,
@@ -706,10 +702,6 @@ input[type="file"] {
 	vertical-align: top;
 	font-size: .875rem;
 }
-[class$="-input-wrapper"] {
-	display: inline-block;
-	margin-bottom: .25rem;
-}
 .form-input input:not([type="submit"]),
 .form-input textarea,
 .form-input select,
@@ -718,12 +710,33 @@ input[type="file"] {
 	min-width: 10rem;
 	padding: .25rem;
 }
+.generated-field > .value {
+  font-style: italic;
+  background-color: #eff2f3;
+  border-radius: 2px;
+  border: 1px solid #d3dbde;
+}
+.generated-field > .value,
+.generated-field > .label,
+.generated-field > .preview {
+  line-height: 1.5;
+}
+.generated-field > .value,
+.generated-field > .preview {
+  padding-left: .5rem;
+  padding-right: .5rem; 
+}
+[class$="-input-wrapper"] {
+	display: inline-block;
+	margin-bottom: .25rem;
+}
 .form-input input.FileUploadQuestion {
   padding: .25rem 0;
 }
-.form-input textarea {
-	width: calc(100% - 11rem);
-  max-width: 600px;
+.form-input select,
+.form-input textarea,
+.generated-field > .value {
+	max-width: calc(100% - 11rem);
 }
 .form-input[class*="css"] textarea {
   max-width: initial; /* textareas containing CSS need to be full width */
@@ -731,8 +744,11 @@ input[type="file"] {
 [class*="css"] textarea {
   width: 100%; /* textareas containing CSS need to be full width */
 }
-.form-input select {
-	max-width: calc(100% - 11rem);
+.form-input textarea {
+  max-width: 600px;
+}
+.generated-field > .value {
+  max-width: 800px;
 }
 .form-input input[type=checkbox],
 .form-input input[type=radio] {
@@ -938,7 +954,8 @@ form[class$="-search"] .form-section-content {
 
 @media only screen and (max-width : 30rem) {
 	.form-input select,
-	.form-input textarea {
+	.form-input textarea,
+  .generated-field > .value {
 		width: 100%;
 		max-width: 100%;
 	}
@@ -4361,7 +4378,7 @@ section.portalMessage header {
   vertical-align: middle;
 }
 
-/* PAGE: PROCTORED EXAM --> */
+/* PAGES: PROCTORED EXAM --> */
 form.has-unsaved-edits {
   border-left: 3px solid #de463d;
   padding-left: 1rem;
@@ -4385,7 +4402,16 @@ table.row-display td.change {
 [class*="ProctoredExam"] td.preconditions details {
   display: inline-block;
 }
-/* <-- PAGE: PROCTORED EXAM */
+
+/* PAGE: ApplicationProctoredFormResultsViewer --> */
+
+.ApplicationProctoredFormResultsViewer .question-value-wrapper .label {
+  word-break: break-word;
+}
+
+/* <-- PAGE: ApplicationProctoredFormResultsViewer */
+
+/* <-- PAGES: PROCTORED EXAM */
 
 /* TABLES --> */
 /* generic and NEW STYLES (remove RowDisplay styles when appropriate) --> */
