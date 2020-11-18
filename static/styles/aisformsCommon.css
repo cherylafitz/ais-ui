@@ -716,7 +716,7 @@ input[type="file"] {
   border-radius: 2px;
   border: 1px solid #e2e7e9;
 }
-.form-section > .value {
+.form-section .generated-field > .value {
   border-color: #d3dbde;
 }
 .generated-field > .value,
