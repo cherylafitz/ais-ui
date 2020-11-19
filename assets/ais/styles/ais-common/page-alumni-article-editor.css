@@ -1,0 +1,7 @@
+/* PAGE: Alumni article editor --> */
+
+#article-editor-page-id .controls-wrapper :nth-last-child(2) {
+  margin-right: auto; /*makes last child align right;*/
+}
+
+/* <-- PAGE: Alumni article editor */

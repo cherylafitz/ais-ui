@@ -321,6 +321,154 @@ input[type="submit"][value="Clear Filters"]:hover {
 
 /* <-- <code> STYLES */
 
+/* CONTROLS --> */
+
+a,
+.Content a {
+  color: #296089;
+}
+a:hover,
+.Content a:hover,
+.Content a:active {
+  color: #12293b;
+  text-decoration: none;	
+}
+.bottomPageActionLink {
+  margin-right: .5rem;
+}	
+table.RowDisplay a,
+table.row-display a {
+  color: #000;
+}
+table.RowDisplay a:hover,
+table.row-display a:hover {
+  color: #CC3333;
+}
+table.RowDisplay a:active,
+table.row-display a:active {
+  color: #73382C;
+}
+.row-display caption [class*="-link"] {
+  font-size: .875rem;
+  color: #296089;
+}
+
+/* add to separate file for bg-colors? --> */
+.bg-blue01 a,
+.bg-blue02 a,
+.bg-blue03 a {
+  color: #c4dcee;
+}
+.controls-wrapper {
+  margin-top: .5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.controls-wrapper:not(:last-child) {
+  margin-bottom: .5rem;
+}
+.form-section-content ~ .controls-wrapper {
+  margin-top: 1rem;
+}
+.controls-wrapper > :not(:last-child),
+.page-commands [class*="-link"]:not(:last-child),
+.page-commands [class*="-button"]:not(:last-child)  {
+  margin-right: .75rem;
+}
+/* remove override of input[type="submit"] after css migration */
+.controls-wrapper input[type="submit"][class*="-link"],
+.controls-wrapper input[type="submit"][class*="-button"],
+.page-commands input[type="submit"][class*="-link"],
+.page-commands input[type="submit"][class*="-button"] {
+	padding: .25rem .5rem;
+	min-width: 8rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+.controls-wrapper [class*="-link"] {
+	font-size: .875rem;
+}
+.previous-page-link {
+	margin-bottom: .75rem;
+	display: inline-block;
+  font-size: .875rem;
+}
+
+/* BUTTONS --> */
+
+/* AIS only*/
+#contentPageProportional input[type="submit"],
+#contentPageProportional input[type="button"] {
+  margin: 0 .5rem .25rem 0;
+}
+#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
+  margin: 0 .5em .5em;
+}
+/* DELETE?? */
+#contentPageProportional input.SaveChanges {
+  margin: 1.5rem 0;
+}
+/* AIR app save button */
+#ApplicationTemplateDisplayAUC input.SaveChanges {
+  float: left;
+  margin-right: 3rem;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.controls-wrapper [class*="-button"]:hover {
+  background: #22465d;
+  border-color: #1c384a;
+  cursor: pointer;
+}
+input[type="submit"]:disabled,
+input[type="button"]:disabled,
+.controls-wrapper [class*="-button"]:disabled {
+  background: #99acbb;
+  cursor: not-allowed;
+  border-color: #8ca2b2;
+}
+#filteringButtonContainer {
+  margin-bottom: .5rem;
+}
+/* DELETE??? */
+/*div .Button {
+  border-bottom: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}*/
+input[type="submit"], 
+input[type="button"],
+.controls-wrapper [class*="-button"] {
+  vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  padding: .0625rem .5rem .125rem .5rem;
+  background: #336789;
+  border: 1px solid #346788;
+  font-size: .875rem;
+}
+.controls-wrapper a[class*="-button"] {
+  text-decoration: none;
+}
+input[type="submit"][value="Clear Filters"] {
+  border: 1px solid #999;
+  color: #000;
+  background: transparent;
+}
+input[type="submit"][value="Clear Filters"]:hover {
+  opacity: .7;
+  background: transparent;
+}
+
+/* <-- BUTTONS */
+
+/* <-- CONTROLS */
+
 /* START DETAILS STYLES --> */
 details {
   margin: .75rem 0;
@@ -1010,86 +1158,6 @@ h4{
 }
 
 /* <-- iframes */
-
-/* LINKS --> */
-
-a,
-.Content a {
-  color: #296089;
-}
-a:hover,
-.Content a:hover,
-.Content a:active {
-  color: #12293b;
-  text-decoration: none;	
-}
-.bottomPageActionLink {
-  margin-right: .5rem;
-}	
-table.RowDisplay a,
-table.row-display a {
-  color: #000;
-}
-table.RowDisplay a:hover,
-table.row-display a:hover {
-  color: #CC3333;
-}
-table.RowDisplay a:active,
-table.row-display a:active {
-  color: #73382C;
-}
-.row-display caption [class*="-link"] {
-  font-size: .875rem;
-  color: #296089;
-}
-
-/* add to separate file for bg-colors? --> */
-.bg-blue01 a,
-.bg-blue02 a,
-.bg-blue03 a {
-  color: #c4dcee;
-}
-.controls-wrapper {
-  margin-top: .5rem;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-.form-section-content ~ .controls-wrapper {
-  margin-top: .75rem;
-}
-.controls-wrapper > :not(:last-child),
-.page-commands [class*="-link"]:not(:last-child),
-.page-commands [class*="-button"]:not(:last-child)  {
-  margin-right: .75rem;
-}
-.controls-wrapper :nth-last-child(2) {
-  margin-right: auto; /*makes last child align right;*/
-}
-/* remove override of input[type="submit"] after css migration */
-.controls-wrapper input[type="submit"][class*="-link"],
-.controls-wrapper input[type="submit"][class*="-button"],
-.page-commands input[type="submit"][class*="-link"],
-.page-commands input[type="submit"][class*="-button"] {
-	padding: .25rem .5rem;
-	min-width: 8rem;
-  margin-top: .25rem;
-  margin-bottom: .25rem;
-}
-.controls-wrapper [class*="-link"] {
-	font-size: .875rem;
-}
-.previous-page-link {
-	margin-bottom: .75rem;
-	display: inline-block;
-  font-size: .875rem;
-}
-
-
-
-
-
-/* <-- LINKS 
 
 /* LISTS --> */
 .long-list {
@@ -5254,6 +5322,14 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 
 /* <-- MAIN STRUCTURE */
   
+
+/* PAGE: Alumni article editor --> */
+
+#article-editor-page-id .controls-wrapper :nth-last-child(2) {
+  margin-right: auto; /*makes last child align right;*/
+}
+
+/* <-- PAGE: Alumni article editor */
 
 /* PAGE: attachment display --> */
 
