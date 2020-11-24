@@ -232,6 +232,10 @@ body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
 .SectionDisplay td select {
   width: 10em;
 }
+.SectionDisplay td select[disabled="disabled"] {
+  width: 100%;
+  max-width: 100%;
+}
 .SectionDisplay textarea, select {
   max-width: 100%;
 }
