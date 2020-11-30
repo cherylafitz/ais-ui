@@ -22,7 +22,11 @@ table.row-display td.change {
 [class*="ProctoredExam"] td.preconditions details {
   display: inline-block;
 }
-
+.ProctoredExamEditor .table-wrapper.applicants .delete-link {
+  margin-right: 2rem;
+  display: inline-block;
+  vertical-align: inherit;
+}
 /* PAGE: ApplicationProctoredFormResultsViewer --> */
 
 .ApplicationProctoredFormResultsViewer .question-value-wrapper .label {
