@@ -1179,69 +1179,6 @@ h4{
 
 /* <-- mixed languages */
 
-/* NAVIGATION --> */
-.sub-nav,
-.info-bar {
-  display: flex;
-  margin: -1rem -1.25rem 1rem -1.25rem;
-  padding: .5rem 1rem;
-}
-.sub-nav {
-  background-color: #e4e5e7;
-  font-size: .875rem;
-}
-.info-bar {
-  background-color: #f1f2f3;
-}
-.sub-nav:first-child,
-.info-bar:first-child {
-  padding-top: .75rem;
-}
-.sub-nav .page-actions {
-  margin-left: auto;
-}
-.nav-item:not(:last-child),
-.info-bar-item:not(:last-child) {
-  margin-right: 1rem;
-}
-.info-bar-item .label {
-  color: #666;
-}
-.info-bar .label::after {
-  content: ":";
-  padding-right: .25rem;
-}
-.info-bar .StudentLastNameEmphasis:first-child::after {
-  content: ",";
-  padding-right: .25rem;
-}
-.page-actions .link-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-.page-actions .link-list li:not(:first-child) {
-  display: inline-block;
-  margin-left: .5rem;
-}
-.breadcrumbs-item:not(:last-child)::after {
-  content: "/";
-  display: inline-block;
-  margin: 0 .5rem;
-  color: #666;
-  font-size: 1.125rem;
-  line-height: 1;
-}
-
-/* Override for h1 size until all h1 text is reduced appropriately --> */
-#contentPageProportional .info-bar + h1 {
-  padding: 0;
-  font-size: 1.5rem;
-}
-
-/* <-- NAVIGATION */
-
 /* page structure --> */
 .page-section {
   margin-bottom: 1rem;
@@ -1460,6 +1397,72 @@ h4{
 }
 
 /* <-- screenreaders */
+
+/* NAVIGATION --> */
+.sub-nav,
+.info-bar {
+  display: flex;
+  margin: -1rem -1.25rem 1rem -1.25rem;
+  padding: .5rem 1rem;
+}
+.sub-nav {
+  background-color: #e4e5e7;
+  font-size: .875rem;
+}
+.info-bar {
+  background-color: #f1f2f3;
+}
+.sub-nav:first-child,
+.info-bar:first-child {
+  padding-top: .75rem;
+}
+.sub-nav .page-actions {
+  margin-left: auto;
+}
+.nav-item:not(:last-child),
+.info-bar-item:not(:last-child) {
+  margin-right: 1rem;
+}
+.info-bar-item .label {
+  color: #666;
+}
+.info-bar .label::after {
+  content: ":";
+  padding-right: .25rem;
+}
+.info-bar .StudentLastNameEmphasis:first-child::after {
+  content: ",";
+  padding-right: .25rem;
+}
+.page-actions .link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.page-actions .link-list li:not(:first-child) {
+  display: inline-block;
+  margin-left: .5rem;
+}
+.breadcrumbs-item:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin: 0 .5rem;
+  color: #666;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.info-bar-item.student-name .last-name::after {
+  content:",";
+}
+
+/* Override for h1 size until all h1 text is reduced appropriately --> */
+#contentPageProportional .info-bar + h1 {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+/* <-- NAVIGATION */
 
 /* TABLE ROW NUMBERS --> */
 

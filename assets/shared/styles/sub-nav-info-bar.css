@@ -52,6 +52,9 @@
   font-size: 1.125rem;
   line-height: 1;
 }
+.info-bar-item.student-name .last-name::after {
+  content:",";
+}
 
 /* Override for h1 size until all h1 text is reduced appropriately --> */
 #contentPageProportional .info-bar + h1 {
