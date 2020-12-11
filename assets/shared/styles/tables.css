@@ -17,5 +17,8 @@ thead .test-center input[list*="Filter"] {
 thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
-
+table.row-display tr,
+table.RowDisplay tr {
+  vertical-align: top;
+}
 /* <-- SHARED TABLE STYLES */
