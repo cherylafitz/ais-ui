@@ -42,6 +42,9 @@ table.row-display thead tr {
   vertical-align: text-top;
   white-space: nowrap;
 }
+table.row-display tr {
+  vertical-align: top;
+}
 table.row-display td {
     white-space: nowrap;
     padding: .2em .3em .1em .3em;
