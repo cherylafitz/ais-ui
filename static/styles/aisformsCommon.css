@@ -1575,7 +1575,10 @@ thead .test-center input[list*="Filter"] {
 thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
-
+table.row-display tr,
+table.RowDisplay tr {
+  vertical-align: top;
+}
 /* <-- SHARED TABLE STYLES */
 
 /* TAGS --> */
@@ -4584,9 +4587,6 @@ table.row-display .row-display tr:first-of-type td {
 table.row-display thead tr {
   vertical-align: text-top;
   white-space: nowrap;
-}
-table.row-display tr {
-  vertical-align: top;
 }
 table.row-display td {
     white-space: nowrap;
