@@ -394,7 +394,9 @@ table.row-display a:active {
 	display: inline-block;
   font-size: .875rem;
 }
-
+.pageMenu a {
+  margin-right: .75rem;
+}
 /* BUTTONS --> */
 
 /* AIS only*/

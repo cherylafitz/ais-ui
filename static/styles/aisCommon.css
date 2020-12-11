@@ -394,7 +394,9 @@ table.row-display a:active {
 	display: inline-block;
   font-size: .875rem;
 }
-
+.pageMenu a {
+  margin-right: .75rem;
+}
 /* BUTTONS --> */
 
 /* AIS only*/
@@ -2578,7 +2580,8 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumnusEmailSearch,
 .AlumnusEmailList,
 .AlumnusSocialMediaList,
-.SystemAnnouncementsWrapper + div {
+.SystemAnnouncementsWrapper + div,
+.main-content[class*="Alumnus"] {
   position: relative;
   min-height: calc(100% - 174px);
   display: flex;
@@ -5362,7 +5365,8 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
 .main-content.AlumnusEmailSearch,
 .main-content.AlumnusEmailList,
 .main-content.AlumnusSocialMediaList,
-.SystemAnnouncementsWrapper + div.main-content {
+.SystemAnnouncementsWrapper + div.main-content,
+.main-content[class*="Alumnus"] {
   padding: 0;
 }
 /*remove eventually --> */
