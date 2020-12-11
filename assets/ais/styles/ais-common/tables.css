@@ -15,14 +15,6 @@ table.row-display td.description {
   min-width: 300px; 
   max-width: 600px; 
 }
-
-/* by page --> */
-.RightList .RowDisplay .Name,
-.RightList .RowDisplay .Description {
-  white-space: normal;
-  min-width: 300px; 
-  max-width: 600px; 
-}
 /* <-- wrap cells */
 
 

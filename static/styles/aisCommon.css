@@ -1575,10 +1575,7 @@ thead .test-center input[list*="Filter"] {
 thead .applicant-status input[list*="Filter"] {
   width: 4rem;
 }
-table.row-display tr,
-table.RowDisplay tr {
-  vertical-align: top;
-}
+
 /* <-- SHARED TABLE STYLES */
 
 /* TAGS --> */
@@ -5739,14 +5736,6 @@ table.row-display th.sort-order {
   min-width: 60px;
 }
 table.row-display td.description {
-  white-space: normal;
-  min-width: 300px; 
-  max-width: 600px; 
-}
-
-/* by page --> */
-.RightList .RowDisplay .Name,
-.RightList .RowDisplay .Description {
   white-space: normal;
   min-width: 300px; 
   max-width: 600px; 
