@@ -18,7 +18,9 @@ table.row-display td.description {
 
 /* by page --> */
 .RightList .RowDisplay .Name,
-.RightList .RowDisplay .Description {
+.RightList .RowDisplay .Description,
+.GroupList .RowDisplay .Name,
+.GroupList .RowDisplay .Description {
   white-space: normal;
   min-width: 300px; 
   max-width: 600px; 
