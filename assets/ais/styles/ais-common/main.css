@@ -26,7 +26,8 @@
 .main-content.AlumnusEmailSearch,
 .main-content.AlumnusEmailList,
 .main-content.AlumnusSocialMediaList,
-.SystemAnnouncementsWrapper + div.main-content {
+.SystemAnnouncementsWrapper + div.main-content,
+.main-content[class*="Alumnus"] {
   padding: 0;
 }
 /*remove eventually --> */

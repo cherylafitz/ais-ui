@@ -958,7 +958,8 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumnusEmailSearch,
 .AlumnusEmailList,
 .AlumnusSocialMediaList,
-.SystemAnnouncementsWrapper + div {
+.SystemAnnouncementsWrapper + div,
+.main-content[class*="Alumnus"] {
   position: relative;
   min-height: calc(100% - 174px);
   display: flex;
