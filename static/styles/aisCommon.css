@@ -1734,7 +1734,7 @@ table {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ca2222;
+  background-color: #444;
   -webkit-transition: .4s;
   transition: .4s;
    border-radius: 34px;
@@ -1773,7 +1773,7 @@ input:checked + .slider:before {
  top: 50%;
  left: 50%;
  font-family: Verdana, sans-serif;
- font-size: 1rem;
+ font-size: .875rem;
 }
 input:checked + .slider:after
 {  
