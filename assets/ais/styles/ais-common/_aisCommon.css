@@ -91,6 +91,72 @@ table {
 
 /* <-- RESET */
 
+/* css for AIS home page cards to turn the checkboxes 
+ * into pill-like toggle switches.
+ * Without this css, the cards will show checkboxes without labels.
+ */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 24px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ca2222;
+  -webkit-transition: .4s;
+  transition: .4s;
+   border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2ab934;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(65px);
+}
+/*------ ADDED CSS ---------*/
+.slider:after
+{
+ content:'OFF';
+ color: white;
+ display: block;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top: 50%;
+ left: 50%;
+ font-family: Verdana, sans-serif;
+ font-size: 1rem;
+}
+input:checked + .slider:after
+{  
+  content:'ON';
+  font-size: 1rem;
+}
+/*<-- toggle switches*/
+
 /* OVERRIDES (REMOVE FROM AMAGAVI STYLESHEETS -->*/
 
   /* TOPNAV --> */
