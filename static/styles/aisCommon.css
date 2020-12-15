@@ -1782,6 +1782,13 @@ input:checked + .slider:after
 }
 /*<-- toggle switches*/
 
+/* overdue questions (first used on doc inbox page, move when it makes sense) --> */
+[data-has-overdue-questions="true"] td.overdue {
+  color: var(--required-red);
+  font-weight: bold;
+}
+/* <-- overdue questions */
+
 /* OVERRIDES (REMOVE FROM AMAGAVI STYLESHEETS -->*/
 
   /* TOPNAV --> */
