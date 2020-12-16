@@ -17,10 +17,10 @@ table.row-display td.description {
 }
 
 /* by page --> */
-.RightList .RowDisplay .Name,
-.RightList .RowDisplay .Description,
-.GroupList .RowDisplay .Name,
-.GroupList .RowDisplay .Description {
+.RightList .row-display .Name,
+.RightList .row-display .Description,
+.GroupList .row-display .Name,
+.GroupList .row-display .Description {
   white-space: normal;
   min-width: 300px; 
   max-width: 600px; 
