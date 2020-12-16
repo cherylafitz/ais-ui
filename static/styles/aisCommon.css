@@ -5811,8 +5811,6 @@ table.row-display td.description {
 }
 
 /* by page --> */
-.RightList .RowDisplay .Name,
-.RightList .RowDisplay .Description,
 .RightList .row-display .Name,
 .RightList .row-display .Description,
 .GroupList .row-display .Name,
