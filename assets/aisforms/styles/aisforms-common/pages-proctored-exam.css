@@ -29,7 +29,7 @@ table.row-display td.change {
 }
 /* PAGE: ApplicationProctoredFormResultsViewer --> */
 
-.ApplicationProctoredFormResultsViewer .question-value-wrapper .label {
+.ApplicationProctoredFormResultsViewer .question .label {
   word-break: break-word;
 }
 
