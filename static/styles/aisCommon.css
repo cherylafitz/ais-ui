@@ -737,7 +737,8 @@ table td div.ExcelDownloadDescription {
 /* ERRORS --> */
 
 .validation-error-line,
-.warning {
+.warning,
+.error {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -778,50 +779,58 @@ table td div.ExcelDownloadDescription {
   padding: 0 0 0 1.5rem;
   margin: 0;
 }
-.warning li {
+.warning li,
+.error li {
   padding-left: .5rem;
 }
 .prohibited-character {
   color: black;
   padding: .125rem .75rem;
   display: inline-block;
-  margin: 0 .325rem;
+  margin: .125rem .325rem;
   font-size: 1.5rem;
   border-radius: 2px;
   border: 2px dashed #cc3702;
   vertical-align: sub;
 }
-/* to be live after Marco updates CSS (needs some modification) */
-/*.warning.non-conforming-characters .heading {
+.error .error-heading {
   position: relative;
-  background-color: #cc3702;
-  color: #fff;
-  padding: .5rem .5rem .25rem 2.5rem;
+  background-color: #ffc7b3;
+  color: #000;
+  line-height: 1.5rem;
+  padding: .25rem .5rem .25rem 2.5rem;
+  /* cancels out margin on general errors (without heading)*/
+  margin: -.5rem -.875rem 0 -2.1875rem;
 }
-.warning.non-conforming-characters .heading::before {
+.error ol {
+  padding: .5rem .75rem .5rem 2rem;
+  /* cancels out margin on general errors (without heading)*/
+  margin: 0 -.875rem -.5rem -2.1875rem;
+}
+.error .error-heading::before {
   background: transparent;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #cc3702;
   content: "";
   height: 1rem;
-  left: 0;
+  left: .875rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 1rem;
 }
-.warning.non-conforming-characters .heading::after {
-  background-color: #fff;
+.error .error-heading::after {
+  background-color: #cc3702;
   content: "";
   font-size: 0.825em;
   font-weight: bold;
   height: 3px;
-  left: .125rem;
+  left: 1rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
   width: .75rem;
-}*/
+}
 
 /* <-- ERRORS */
 
@@ -1429,7 +1438,8 @@ h4{
   font-style: normal;
 }
 .data-display-section .generated-field > .label {
-  padding: .5rem .5rem .5rem 0;
+  padding: .5rem .75rem .5rem 0;
+  width: 13rem;
 }
 /* <-- SECTIONS */
 

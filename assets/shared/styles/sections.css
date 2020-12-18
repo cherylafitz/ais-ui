@@ -69,6 +69,7 @@
   font-style: normal;
 }
 .data-display-section .generated-field > .label {
-  padding: .5rem .5rem .5rem 0;
+  padding: .5rem .75rem .5rem 0;
+  width: 13rem;
 }
 /* <-- SECTIONS */
