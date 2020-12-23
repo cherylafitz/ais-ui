@@ -155,6 +155,13 @@ div.QuestionText div.Instruction ul {
 body.IsLoggedIn .ValidationError {
   margin: 0;
 }
+/* Clean up, messy selector! */
+.sectionBodyBelowTopNavBar > .ValidationError .error-heading {
+  margin-bottom: -.5rem;
+}
+.sectionBodyBelowTopNavBar > .ValidationError .error-heading ~ ol {
+  display: none;
+}
 
 .ValidationError .header {
   font-weight: bold;
@@ -167,13 +174,19 @@ body.IsLoggedIn .ValidationError .header:after {
   content: ' You have either [1] not answered all required questions, or [2] attempted to submit your form after the deadline. If you have not answered all required questions, you will see section(s) marked "INCOMPLETE" in the navigation. If you attempted to submit your form after the deadline, you will see the past-deadline message below.';
   color: #C75D48;
 }
-
+body.IsLoggedIn .ValidationError .header ~ ul {
+  list-style-type: none;
+}
 body.IsLoggedIn .ValidationError ul {
   font-weight: normal;
 }
-
+body.IsLoggedIn .inlineError .ValidationError {
+  display: inline-block;
+}
 body.IsLoggedIn .inlineError .ValidationError ul {
   display: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 body.IsLoggedIn .ValidationError ul
@@ -213,7 +226,9 @@ body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
 
 .inlineError:before {
   content: url('https://ais.americancouncils.org/ais/common/missingAnswer.png');
-  float: left;
+  display: inline-block;
+  vertical-align: top;
+  padding: .5rem;
 }
 
 .inlineError:after {
