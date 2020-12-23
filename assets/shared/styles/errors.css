@@ -62,7 +62,7 @@
   background-color: #ffc7b3;
   color: #000;
   line-height: 1.5rem;
-  padding: .25rem .5rem .25rem 2.5rem;
+  padding: .25rem 1rem .25rem 2.25rem;
   /* cancels out margin on general errors (without heading)*/
   margin: -.5rem -.875rem 0 -2.1875rem;
 }
@@ -77,7 +77,7 @@
   border: 2px solid #cc3702;
   content: "";
   height: 1rem;
-  left: .875rem;
+  left: .75rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -89,7 +89,7 @@
   font-size: 0.825em;
   font-weight: bold;
   height: 3px;
-  left: 1rem;
+  left: .875rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
