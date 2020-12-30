@@ -590,7 +590,11 @@ div.Content div.AIRAdminSearchForApplications div.instructions {
 .Greeting {
   display: none;
 }
-
+.Main {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100%;
+}
 .Main.Administrator,
 .Main[class*="Staff"],
 .Main.Developer {
@@ -708,7 +712,9 @@ div.Main div.staffHome div.Deadlines {
 .AdminHomeLinks div {
   display: inline-block;
 }
-.Content .staffHome {
+.Content .Main.Administrator .staffHome,
+.Content .Main[class*="Staff"] .staffHome,
+.Content .Main.Developer {
   order: 2;
   flex-basis: 600px;
   flex-grow: 1;
@@ -909,6 +915,8 @@ table.TemplateTable tr td {
   display: flex;
   flex-flow: row wrap;
   margin: -1.5rem;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 /*TEMP*/
 .IsLoggedIn #CookieDeclaration {
