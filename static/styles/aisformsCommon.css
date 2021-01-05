@@ -802,7 +802,10 @@ table td div.ExcelDownloadDescription {
   /* cancels out margin on general errors (without heading)*/
   margin: -.5rem -.875rem 0 -2.1875rem;
 }
-.error ol {
+.error .error-question {
+  margin: .75rem 0 .25rem -1.375rem;
+}
+.error .error-list {
   padding: .5rem .75rem .5rem 2rem;
   /* cancels out margin on general errors (without heading)*/
   margin: 0 -.875rem -.5rem -2.1875rem;
