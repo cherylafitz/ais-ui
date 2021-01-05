@@ -802,6 +802,11 @@ table.ExcelDataTabulated td {
   margin: 1rem 0;
   background-color: #ffe0b3;
 }
+@media only screen and (min-width: 20em) {
+  .inlineError .ValidationError {
+    max-width: calc(100% - 120px);
+  }
+}
 
 /* ADDRESS TABLE --> */
 
