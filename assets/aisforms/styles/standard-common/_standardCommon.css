@@ -155,7 +155,7 @@ div.QuestionText div.Instruction ul {
 body.IsLoggedIn .ValidationError {
   margin: 0;
 }
-/* Clean up, messy selector when possible */
+/* hides error-list and error-question whe error appears at the top of page */
 .sectionBodyBelowTopNavBar > .ValidationError .error {
   padding-bottom: 0;
 }
