@@ -956,6 +956,13 @@ table.TemplateTable tr td {
   margin-top: 0;
 }
 
+#UserHomeIntro h1,
+#UserHomeIntro h2,
+#UserHomeIntro h3,
+#UserHomeIntro h4 {
+  color: #2C7F8C;
+}
+
 .HomeProgramAfterContent {
   padding: 1.5rem;
   border-top: 1px solid #cecece;
