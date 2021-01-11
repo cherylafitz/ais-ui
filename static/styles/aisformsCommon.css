@@ -1683,7 +1683,7 @@ body {
 .IsNotLoggedIn .Content {
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 0;
+  /*flex-basis: 0;*/ /*was added to make sticky tips work in safari, but also causes bug*/
 }
 .Content:after {
   content: " ";
