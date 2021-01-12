@@ -5,7 +5,8 @@
   margin-bottom: .375rem;
 }
 .mixed-languages .deadlineBox [lang],
-div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1, /*forms only*/
+div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1[lang], /*forms only*/
+div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*forms only*/
 .mixed-languages [lang] h1, 
 .mixed-languages [lang] h2,
 .mixed-languages [lang] h3,
