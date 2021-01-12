@@ -1231,8 +1231,23 @@ h4{
 /* mixed languages --> */
 
 .mixed-languages [lang] {
-  color: #068471;
+  color: #067766;
   margin-bottom: .375rem;
+}
+.mixed-languages .deadlineBox [lang],
+div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1
+.mixed-languages [lang] h1, 
+.mixed-languages [lang] h2,
+.mixed-languages [lang] h3,
+/* user home page */
+#UserHomeIntro .mixed-languages [lang] h1, 
+#UserHomeIntro .mixed-languages [lang] h2,
+#UserHomeIntro .mixed-languages [lang] h3,
+/* login page */
+.CustomContent .mixed-languages [lang] h1, 
+.CustomContent .mixed-languages [lang] h2,
+.CustomContent .mixed-languages [lang] h3  {
+  color: #065649;
 }
 .mixed-languages .Instruction [lang] {
   color: #066051;
@@ -2597,8 +2612,12 @@ table.TemplateTable tr td {
 #UserHomeIntro h1,
 #UserHomeIntro h2,
 #UserHomeIntro h3,
-#UserHomeIntro h4 {
-  color: #2C7F8C;
+#UserHomeIntro h4,
+.CustomContent h1,
+.CustomContent h2,
+.CustomContent h3,
+.CustomContent h4 {
+  color: #025689;
 }
 
 .HomeProgramAfterContent {

@@ -959,8 +959,12 @@ table.TemplateTable tr td {
 #UserHomeIntro h1,
 #UserHomeIntro h2,
 #UserHomeIntro h3,
-#UserHomeIntro h4 {
-  color: #2C7F8C;
+#UserHomeIntro h4,
+.CustomContent h1,
+.CustomContent h2,
+.CustomContent h3,
+.CustomContent h4 {
+  color: #025689;
 }
 
 .HomeProgramAfterContent {
