@@ -1,12 +1,12 @@
 /* TABLE ROW NUMBERS --> */
 
-table.row-display tbody {
+table.row-display > tbody {
     counter-reset: rowCounter calc(var(--row-number-start) - 1);
 }
-table.row-display tbody > tr {
+table.row-display > tbody > tr {
     counter-increment: rowCounter;
 }
-table.row-display tbody > tr td.row-number:after {
+table.row-display > tbody > tr td.row-number:after {
   content: counter(rowCounter) ".";
 }
 table.row-display {
