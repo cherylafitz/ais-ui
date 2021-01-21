@@ -316,3 +316,168 @@ div.alertBox img {
 .PlacedQuestion .enyo-touch-strategy-container.enyo-scroller .enyo-touch-scroller {
   overflow: auto;
 }
+
+/* proctored exam --> */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+#app_userDataEntryContent #app_detailScroller {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
+#app_userDataEntryContent .onyx-toolbar {
+  white-space: normal;
+}
+#app_userDataEntryContent #app_templateHeadingForProctoredExam {
+  flex-basis: 100%;
+}
+#app_userDataEntryContent #video-and-chat-content-id {
+  width: 100%;
+  flex-direction: column;
+}
+#app_userDataEntryContent #interactive-content-id {
+  padding: .5rem;
+  display: block;
+  order: 2;
+}
+#webcam-widget-wrapper-id,
+#blast-chat-content-wrapper-id,
+#direct-chat-content-wrapper-id {
+  padding: .75rem;
+  border: 1px solid #cecece;
+  background-color: #e0e6eb;
+  border-radius: 2px;
+  margin: .5rem;
+  width: 300px;
+  max-width: 100%;
+}
+#blast-chat-content-wrapper-id,
+#direct-chat-content-wrapper-id { 
+  display: inline-block;
+  vertical-align: top;
+}
+#app_userDataEntryContent .announcements-header,
+#app_userDataEntryContent .speak-with-proctor-header {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+#app_userDataEntryContent #webcam-widget-wrapper-id {
+  width: 300px;
+  background-color: transparent;
+  /*float: right;*/
+  max-width: 100%;
+}
+#app_userDataEntryContent #webcam-widget-wrapper-id #js-video-window-id {
+  margin: .5rem 0 0;
+}
+#app_userDataEntryContent #blast-chat-content-wrapper-id {
+  background-color: #29353d;
+  border: 1px solid #29353d;
+  color: #fff;
+  overflow: scroll;
+  height: 300px;
+}
+#app_userDataEntryContent .proctor-blast-item-wrapper {
+  background-color: #33424d;
+  padding: .25rem;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id {
+  height: 275px;
+}
+#app_userDataEntryContent .PlacedQuestion {
+  padding: 1rem;
+  max-width: 1000px;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id_inputDecorator {
+  margin-bottom: .25rem;
+  width: 100%;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id_detailScroller {
+  margin-top: .75rem;
+  /*height: initial !important;*/
+  background-color: #f6f8f9;
+  padding: 0 .25rem;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id_blastField {
+  width: 100%;
+}
+#app_userDataEntryContent span.speaker {
+  font-weight: bold;
+  margin-right: .5rem;
+}
+#app_userDataEntryContent #before-exam-text-id {
+  color: #000;
+  font-size: 0.9375rem; /* 15px when 100% */
+  font-weight: normal;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .5rem .75rem;
+  margin: 1rem 1rem 0;
+  background-color: #ffe0b3;
+  border-color: #ffcc80;
+  display: inline-block;
+  order: 1;
+}
+#app_userDataEntryContent #app_detailScroller_confirmation {
+  margin: 1rem;
+}
+@media only screen
+and (max-width : 767px) {
+  #app_userDataEntryContent #webcam-widget-wrapper-id {
+    float: none;
+  }
+  #app_userDataEntryContent #webcam-widget-wrapper-id,
+  #app_userDataEntryContent #blast-chat-content-wrapper-id,
+  #app_userDataEntryContent #direct-chat-content-wrapper-id { 
+    /*height: initial;*/
+    /*max-height: 250px;*/
+    width: initial;
+    max-width: 100%;
+  }
+  #app_userDataEntryContent #interactive-content-id {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-shrink: 0;
+  } 
+}
+
+@media only screen
+and (min-width: 768px) {
+  .section-form-fields-view .detailScroller.proctored {
+    display: flex;
+    flex-flow: row wrap;
+    flex-shrink: 0;
+  }
+  #app_userDataEntryContent #video-and-chat-content-id {
+    width: initial;
+  }
+  #app_userDataEntryContent #interactive-content-id {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 0;
+  }
+  #app_userDataEntryContent #webcam-widget-wrapper-id {
+    width: 330px;
+  }
+  #app_userDataEntryContent #app_sectionItemsList {
+    width: calc(100% - 370px);
+  }
+}
+@media only screen
+and (min-width: 768px) and (max-width: 899px) {
+  #app_userDataEntryContent #interactive-content-id {
+    width: 300px;
+  }
+  #app_userDataEntryContent #webcam-widget-wrapper-id,
+  #app_userDataEntryContent #blast-chat-content-wrapper-id,
+  #app_userDataEntryContent #direct-chat-content-wrapper-id {
+    min-width: initial;
+  }
+}
