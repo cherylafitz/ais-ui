@@ -278,9 +278,6 @@ div#buildAndInstance {
   color: #e6e6e6;
   font-style: normal;
 }
-#Header #buildAndInstance  .instance {
-  color: #999;
-}
 .brand .name:after {
   content: " |";
   color: #FFD590;
