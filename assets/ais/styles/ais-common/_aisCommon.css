@@ -1038,6 +1038,10 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   display: flex;
   flex-shrink: 0;
 }
+/* fixes bug temporarily until Marco updates structure */
+.main-content.AlumnusExceptionalCategoryUnifiedEditor {
+  display: initial;
+}
 #navMenu .list-page-and-or-previous-page-link-wrapper {
   text-align: right;
   padding: .5rem .75rem 0;
@@ -1054,7 +1058,8 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 /* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
 #article-editor-page-id,
 #AlumnusSocialMediaEditor,
-.AlumnusNoteEditor #articleSummary {
+.AlumnusNoteEditor #articleSummary,
+.main-content.AlumnusExceptionalEditor {
   padding: 1rem 1rem 1rem 2rem;
 }
 /* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
