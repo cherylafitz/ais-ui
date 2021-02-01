@@ -5779,6 +5779,29 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
 }
 /* <-- PAGE: HOME */
 
+/* PAGE: Login --> */
+
+form[name="loginForm"] {
+  margin-top: .75rem;
+}
+#LoginPage .form-input label {
+  font-size: 1rem;
+  width: 5.125rem;
+}
+#LoginPage .form-input {
+  margin-top: .5rem;
+}
+
+#login-button-wrapper,
+#reset-password-link-wrapper {
+  margin-top: .75rem;
+  text-align: center;
+}
+#login-button-wrapper {
+  margin-top: 1.25rem;
+}
+/* <- PAGE: Login */
+
 /* PAGE: TEST CENTER ASSESSMENT EDITOR --> */
 .scoring-promotion.row-display th {
   padding: .25rem 1rem;
