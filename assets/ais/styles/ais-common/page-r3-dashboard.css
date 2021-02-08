@@ -1,0 +1,29 @@
+/* R3 Dashboard --> */
+
+.TestCenterRoundThreeDashboard caption {
+  border: none;
+  background: transparent;
+  font-style: normal;
+  font-size: 1.25rem;
+  padding: .5rem 0;
+}
+
+.TestCenterRoundThreeDashboard [class*="read-1"] {
+  background-color: rgb(247 217 253 / .3);
+  background-color: rgb(255 255 255 / 50%);
+}
+
+.TestCenterRoundThreeDashboard [class*="read-2"] {
+  background-color: rgb(197 237 200 / 0.3);
+  background-color: rgb(116 138 153 / 0.2);
+}
+
+.TestCenterRoundThreeDashboard [class*="A-011"],
+.TestCenterRoundThreeDashboard [class*="a-011"] {
+  background-color: rgb(116 138 153 / 30%);
+}
+.TestCenterRoundThreeDashboard [class*="LP"],
+.TestCenterRoundThreeDashboard [class*="with-disabilities"] {
+  background-color: rgb(86 125 153 / 30%);
+}
+/* <-- R3 Dashboard */
