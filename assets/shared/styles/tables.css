@@ -21,4 +21,7 @@ table.row-display tr,
 table.RowDisplay tr {
   vertical-align: top;
 }
+td.percent:not(:empty)::after {
+    content: "%";
+}
 /* <-- SHARED TABLE STYLES */

@@ -28,13 +28,6 @@
 }
 .TestCenterRoundThreeDashboard [class*="A-012"],
 .TestCenterRoundThreeDashboard [class*="a-012"] {
-  background-color: rgb(255 185 69 / 15%);
-}
-.TestCenterRoundThreeDashboard .final-selection-progress-monitoring td,
-.TestCenterRoundThreeDashboard .final-selection-progress-monitoring th {
-  /*background-color: transparent;*/
-}
-.TestCenterRoundThreeDashboard [class*="with-disabilities"] {
-
+  background-color: rgb(255 206 69 / 15%);
 }
 /* <-- R3 Dashboard */
