@@ -2035,167 +2035,6 @@ div.StudentsRequiringHealthAnswers h4.PendingCancellationForHealthReasons {
   filter: drop-shadow(2px 0 0 #fff);
 }
 
-
-/* HEADER --> */
-.topNavInTable td.infoBlock {
-    padding-top: .2rem;
-}
-.topNavInTable .infoBlock a.logoutLink,
-.userLink,
-.topNavInTable .localizificatinator a.suggestLocalization {
-  color: #FFD590;
-  font-weight: normal;
-  font-size: .75rem;
-  margin-right: .5rem;
-}
-.userLink,
-.topNavInTable .localizificatinator a.suggestLocalization {
-color: #c4dcee;
-}
-.localizificatinator select {
-  font-size: .675rem;
-  margin-top: .25rem;
-}
-.logoutLink {
-  padding-right: 0;
-  display: inline-block;
-}
-#AddAuthorizedUserButtonID {
-  line-height: .75rem;
-  margin: .25rem 0;
-}
-.leftNav .Body .header {
-  display: block;
-}
-.topNavInTable .infoBlock .serverInfo,
-.topNavInTable .infoBlock .instanceID,
-.topNavInTable .infoBlock .instanceID a {
-    font-size: .6875rem;
-    font-weight: normal;
-}
-.topNavInTable .infoBlock .instanceID,
-.topNavInTable .infoBlock .instanceID a {
-    color: #cecece;
-}
-.TopNavTableStructure {
-  background-color: #29353d !important;
-}
-body .divider {
-  border: none;
-}
-#tippyTopOfPage + .divider {
-  height: .5rem;
-  background: #29353d;
-}
-#cssmenu {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-#cssmenu ul {
-  background: #444;
-  background: -moz-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
-  background: -webkit-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
-  background: -o-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
-  background: -ms-linear-gradient(bottom, #333 0, #444 50%, #333 100%);
-  background: linear-gradient(to top, #333 0, #444 50%, #333 100%);
-  background: transparent linear-gradient(to top, #333 0, #444 50%, #333 100%) repeat scroll 0 0;
-  -webkit-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
-  -moz-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
-  box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
-}
-#cssmenu ul li {
-  -webkit-transition: background ease-out 100ms;
-  -moz-transition: background ease-out 100ms;
-  -ms-transition: background ease-out 100ms;
-  -o-transition: background ease-out 100ms;
-  transition: background 100ms ease-out;
-  border: none;
-}
-#cssmenu ul li::after {
-  height: 0;
-}
-#cssmenu ul li:hover,
-#cssmenu ul li:active {
-  background: #34677f;
-}
-#tippyTopOfPage table a:hover,
-#tippyTopOfPagefieldset a:hover,
-#tippyTopOfPage a.showLink:hover,
-#tippyTopOfPage a.hideLink:hover,
-.topNavInTable .infoBlock a.logoutLink:hover {
-  color: #89b8dc;
-}
-.topNavInTable .infoBlock a.logoutLink:hover {
-  color: #f4ab33;
-}
-a.showLink:hover, 
-a.hideLink:hover {
-  border: none;
-}
-
-.topNavInTable td.nameBlock {
-  background-image: url('https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg');
-  background-repeat: no-repeat;
-  background-size: 66px;
-  text-align: left;
-  padding-top: .5rem;
-  width: 360px;
-  vertical-align: top;
-  background-position: 0 .5rem;
-}
-.topNavInTable td.nameBlock > div {
-  margin-left: 84px;
-}
-div.MultiSearcher {
-  margin-top: .5rem;
-}
-div.MultiSearcher input[type="text"] {
-  margin: 0 .5rem 0 0;
-  padding: 1px 0 1px 4px;
-  display: block;
-}
-
-.MultiSearcher .showLink,
-.MultiSearcher .hideLink {
-  color: #c4dcee;
-  font-weight: normal;
-  white-space: nowrap;
-}
-
-div.MultiSearcher input[type="submit"] {
-  padding: 1px 5px 1px;
-  border-radius: 2px;
-  margin-top: .25rem;
-}
-div.MultiSearcher input[type="submit"]:last-of-type {
-  margin-right: .25rem;
-}
-div#tippyTopOfPage table.TopNavTableStructure img.Logo {
-  padding-top: .75rem;
-  width: 225px;
-}
-.topNavInTable .title {
-  font-weight: normal;
-  font-size: 1.125rem;
-  line-height: 1.25;
-  color: #fff;
-}
-.topNavInTable td.logo {
-  padding-right: 1rem;
-  padding-left: .5rem;
-  vertical-align: top;
-}
-#tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
-  background: #ffffff;
-  margin: .125rem 0 .25rem .25rem;
-  border: 3px solid #2a353d;
-  box-shadow: 0 0 0px 2px #f6b844;
-}
-.programName {
-  vertical-align: middle;
-  display: inline-block;
-}
-/* <--HEADER */
-
 /* MAP --> */
 #ex {
   margin: 1rem;
@@ -2299,23 +2138,6 @@ dl.inLeftNav dd {
 }
 /* <-- NAVIGATION */
 
-#cssmenu ul li a {
-  padding: .25rem 1rem .375rem;
-  color: #000;
-  display: block;
-  text-decoration: none;
-  font-size: .9375rem;
-  text-transform: none;
-  font-weight: normal;
-  border: none;
-}
-#cssmenu ul {
-  background: -moz-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 ); /* IE6-9 */
-  line-height: initial;
-}
 table.pageStructure .leftNav dd a,
 .inLeftNav li a,
 table .leftNav a {
@@ -5383,6 +5205,181 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   font-size: .75rem;
   padding-left: .5rem;
 }
+
+/* not cleaned up yet --> */
+
+.topNavInTable td.infoBlock {
+    padding-top: .2rem;
+}
+.topNavInTable .infoBlock a.logoutLink,
+.userLink,
+.topNavInTable .localizificatinator a.suggestLocalization {
+  color: #FFD590;
+  font-weight: normal;
+  font-size: .75rem;
+  margin-right: .5rem;
+}
+.userLink,
+.topNavInTable .localizificatinator a.suggestLocalization {
+color: #c4dcee;
+}
+.localizificatinator select {
+  font-size: .675rem;
+  margin-top: .25rem;
+}
+#AddAuthorizedUserButtonID {
+  line-height: .75rem;
+  margin: .25rem 0;
+}
+.leftNav .Body .header {
+  display: block;
+}
+.topNavInTable .infoBlock .serverInfo,
+.topNavInTable .infoBlock .instanceID,
+.topNavInTable .infoBlock .instanceID a {
+    font-size: .6875rem;
+    font-weight: normal;
+}
+.topNavInTable .infoBlock .instanceID,
+.topNavInTable .infoBlock .instanceID a {
+    color: #cecece;
+}
+.TopNavTableStructure {
+  background-color: #29353d !important;
+}
+body .divider {
+  border: none;
+}
+#tippyTopOfPage + .divider {
+  height: .5rem;
+  background: #29353d;
+}
+#cssmenu {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+#cssmenu ul li {
+  -webkit-transition: background ease-out 100ms;
+  -moz-transition: background ease-out 100ms;
+  -ms-transition: background ease-out 100ms;
+  -o-transition: background ease-out 100ms;
+  transition: background 100ms ease-out;
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+#cssmenu ul li a {
+  padding: .25rem 1rem .375rem;
+  color: #000;
+  display: block;
+  text-decoration: none;
+  font-size: .9375rem;
+  text-transform: none;
+  font-weight: normal;
+  border: none;
+}
+#cssmenu ul {
+  background: -moz-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 ); /* IE6-9 */
+  line-height: initial;
+  -webkit-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
+  -moz-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
+  box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
+}
+#cssmenu ul li::after {
+  height: 0;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li:active {
+  background: #34677f;
+}
+.logoutLink {
+  padding-right: 0;
+  display: inline-block;
+}
+.topNavInTable .infoBlock .userName {
+    display: inline-block;
+}
+.programName {
+  vertical-align: middle;
+  display: inline-block;
+}
+#tippyTopOfPage table a:hover,
+#tippyTopOfPagefieldset a:hover,
+#tippyTopOfPage a.showLink:hover,
+#tippyTopOfPage a.hideLink:hover,
+.topNavInTable .infoBlock a.logoutLink:hover {
+  color: #89b8dc;
+}
+.topNavInTable .infoBlock a.logoutLink:hover {
+  color: #f4ab33;
+}
+a.showLink:hover, 
+a.hideLink:hover {
+  border: none;
+}
+
+.topNavInTable td.nameBlock {
+  background-image: url('https://ais.americancouncils.org/ais/common/AISLogoBall_Color_2018.svg');
+  background-repeat: no-repeat;
+  background-size: 66px;
+  text-align: left;
+  padding-top: .5rem;
+  width: 360px;
+  vertical-align: top;
+  background-position: 0 .5rem;
+}
+.topNavInTable td.nameBlock > div {
+  margin-left: 84px;
+}
+div.MultiSearcher {
+  margin-top: .5rem;
+}
+div.MultiSearcher input[type="text"] {
+  margin: 0 .5rem 0 0;
+  padding: 1px 0 1px 4px;
+  display: block;
+}
+
+.MultiSearcher .showLink,
+.MultiSearcher .hideLink {
+  color: #c4dcee;
+  font-weight: normal;
+  white-space: nowrap;
+}
+div.MultiSearcher input[type="submit"] {
+  padding: 1px 5px 1px;
+  border-radius: 2px;
+  margin-top: .25rem;
+}
+div.MultiSearcher input[type="submit"]:last-of-type {
+  margin-right: .25rem;
+}
+div#tippyTopOfPage table.TopNavTableStructure img.Logo {
+  padding-top: .75rem;
+  width: 225px;
+}
+.topNavInTable .title {
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  color: #fff;
+}
+.topNavInTable td.logo {
+  padding-right: 1rem;
+  padding-left: .5rem;
+  vertical-align: top;
+}
+#tippyTopOfPage  #FastProgramSwitchingMenuFormID select {
+  background: #ffffff;
+  margin: .125rem 0 .25rem .25rem;
+  border: 3px solid #2a353d;
+  box-shadow: 0 0 0px 2px #f6b844;
+}
+/* <--not cleaned up yet */
 
 /* <-- logged in site header */
 
