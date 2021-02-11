@@ -1608,6 +1608,9 @@ table.row-display tr,
 table.RowDisplay tr {
   vertical-align: top;
 }
+td.percent:not(:empty)::after {
+    content: "%";
+}
 /* <-- SHARED TABLE STYLES */
 
 /* TAGS --> */
@@ -5804,6 +5807,40 @@ form[name="loginForm"] {
   margin-top: 1.25rem;
 }
 /* <- PAGE: Login */
+
+/* R3 Dashboard --> */
+
+.TestCenterRoundThreeDashboard caption {
+  border: none;
+  background: transparent;
+  font-style: normal;
+  font-size: 1.25rem;
+  padding: .5rem 0;
+}
+
+.TestCenterRoundThreeDashboard [class*="read-1"] {
+  background-color: rgb(255 255 255 / 55%);
+}
+
+.TestCenterRoundThreeDashboard [class*="read-2"] {
+  background-color: rgb(237 255 238 / 50%);
+}
+
+.TestCenterRoundThreeDashboard [class*="A-011"],
+.TestCenterRoundThreeDashboard [class*="a-011"] {
+  background-color: rgb(86 107 153 / 15%);
+
+}
+.TestCenterRoundThreeDashboard [class*="LP"],
+.TestCenterRoundThreeDashboard [class*="lp"] {
+  background-color: rgb(247 217 253 / .3);
+
+}
+.TestCenterRoundThreeDashboard [class*="A-012"],
+.TestCenterRoundThreeDashboard [class*="a-012"] {
+  background-color: rgb(255 206 69 / 15%);
+}
+/* <-- R3 Dashboard */
 
 /* PAGE: TEST CENTER ASSESSMENT EDITOR --> */
 .scoring-promotion.row-display th {
