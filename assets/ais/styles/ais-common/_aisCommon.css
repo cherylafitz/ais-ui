@@ -401,6 +401,7 @@ color: #c4dcee;
 }
 .logoutLink {
   padding-right: 0;
+  display: inline-block;
 }
 #AddAuthorizedUserButtonID {
   line-height: .75rem;
