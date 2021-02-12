@@ -5163,6 +5163,17 @@ div.IntegratedRoundTwoDataSetRowDisplay table#RoundTwoHeaderInfo td.R1Access inp
   
 
 
+/* details --> */
+
+/* darken summary when on colored bg -- expensive CSS, clean up after HTML is updated!! */
+.applicantSearch > tbody > tr > th ~ td details > summary,
+div.AlumnusSummary fieldset.Section table.rolodex > tbody > tr > td details > summary, 
+fieldset.Section table.rolodex > tbody > tr > td details > summary {
+  background-color: #a2b5c3;
+}
+
+/* <-- details */
+
 /* logged in site header --> */
 
 .name-block {
@@ -5288,6 +5299,8 @@ body .divider {
   -webkit-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
   -moz-box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
   box-shadow: 0 0 3px 1px rgba(50, 50, 50, 0.30);
+  padding: 0;
+  margin: 0;
 }
 #cssmenu ul li::after {
   height: 0;
