@@ -1,0 +1,9 @@
+/* PAGE: Alumnus Summary --> */
+
+#alumnusSummary .StartDate,
+#alumnusSummary .English,
+#alumnusSummary .NativeLanguage {
+  white-space: nowrap;
+}
+
+/* <-- PAGE: Alumnus Summary */
