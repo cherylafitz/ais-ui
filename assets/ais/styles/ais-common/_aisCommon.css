@@ -318,7 +318,6 @@ p:last-child {
 }
 
 /* warning text ----> */
-.warning,
 span.StudentEntryDisabled,
 #TooManyInReview_id {
   font-size: .875rem;
@@ -2397,9 +2396,6 @@ td.dataEntryIsDisabled {
 .applicantSearch > tbody > tr > th ~ td {
   border-bottom: 1px solid #c2c2c2;
   background-color: #e0e6eb;
-}
-.applicantSearch > tbody > tr > th ~ td details > summary {
-  background-color: #a2b5c3;
 }
 .applicantSearch > tbody > tr > th ~ td {
   background-color: #cbd2d6;

@@ -739,7 +739,8 @@ table td div.ExcelDownloadDescription {
 
 .validation-error-line,
 .warning,
-.error {
+.error,
+.error-on-find {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -752,7 +753,8 @@ table td div.ExcelDownloadDescription {
   width: fit-content;
 }
 .validation-error-line::before,
-.warning::before {
+.warning::before,
+.error-on-find::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
@@ -765,7 +767,8 @@ table td div.ExcelDownloadDescription {
   width: .9375rem;
 }
 .validation-error-line::after,
-.warning::after {
+.warning::after,
+.error-on-find::after {
   color: black;
   content: "!";
   font-size: .6875rem;
@@ -812,16 +815,16 @@ table td div.ExcelDownloadDescription {
   margin: 0 -.875rem -.5rem -2.1875rem;
 }
 .error .error-heading::before {
-  background: transparent;
-  border-radius: 50%;
-  border: 2px solid #cc3702;
+  background-color: #cc3702;
   content: "";
-  height: 1rem;
-  left: .75rem;
+  font-size: 0.825em;
+  font-weight: bold;
+  height: 3px;
+  left: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 1rem;
+  transform: translateY(-50%) rotate(-135deg);
+  width: .75rem;
 }
 .error .error-heading::after {
   background-color: #cc3702;
@@ -829,7 +832,7 @@ table td div.ExcelDownloadDescription {
   font-size: 0.825em;
   font-weight: bold;
   height: 3px;
-  left: .875rem;
+  left: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);
