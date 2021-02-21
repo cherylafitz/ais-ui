@@ -2,7 +2,8 @@
 
 .validation-error-line,
 .warning,
-.error {
+.error,
+.error-on-find {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -15,7 +16,8 @@
   width: fit-content;
 }
 .validation-error-line::before,
-.warning::before {
+.warning::before,
+.error-on-find::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
@@ -28,7 +30,8 @@
   width: .9375rem;
 }
 .validation-error-line::after,
-.warning::after {
+.warning::after,
+.error-on-find::after {
   color: black;
   content: "!";
   font-size: .6875rem;

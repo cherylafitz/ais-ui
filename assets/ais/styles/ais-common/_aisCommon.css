@@ -318,7 +318,6 @@ p:last-child {
 }
 
 /* warning text ----> */
-.warning,
 span.StudentEntryDisabled,
 #TooManyInReview_id {
   font-size: .875rem;

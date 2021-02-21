@@ -379,6 +379,7 @@ table.row-display a:active {
 /* remove override of input[type="submit"] after css migration */
 .controls-wrapper input[type="submit"][class*="-link"],
 .controls-wrapper input[type="submit"][class*="-button"],
+.controls-wrapper input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
 	padding: .25rem .5rem;
@@ -738,7 +739,8 @@ table td div.ExcelDownloadDescription {
 
 .validation-error-line,
 .warning,
-.error {
+.error,
+.error-on-find {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -751,7 +753,8 @@ table td div.ExcelDownloadDescription {
   width: fit-content;
 }
 .validation-error-line::before,
-.warning::before {
+.warning::before,
+.error-on-find::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
@@ -764,7 +767,8 @@ table td div.ExcelDownloadDescription {
   width: .9375rem;
 }
 .validation-error-line::after,
-.warning::after {
+.warning::after,
+.error-on-find::after {
   color: black;
   content: "!";
   font-size: .6875rem;
@@ -901,7 +905,7 @@ input[type="file"] {
 .generated-field .preview,
 .generated-field > .value,
 .form-input label,
-.form-input input:not([type="submit"]),
+.form-input input:not([type="submit"]):not([type="button"]),
 .form-input textarea,
 .form-input select,
 .from-to-date-picker .input-group-label {
@@ -912,7 +916,7 @@ input[type="file"] {
 	vertical-align: top;
 	font-size: .875rem;
 }
-.form-input input:not([type="submit"]),
+.form-input input:not([type="submit"]):not([type="button"]),
 .form-input textarea,
 .form-input select,
 .generated-field > .preview,
@@ -1100,7 +1104,7 @@ fieldset.yes-no-picker legend {
 /* <-- FIELDSETS */
 
 /* FORMS IN TABLES --> */
-.row-display .form-input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+.row-display .form-input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="button"]),
 .row-display .form-input textarea,
 .row-display .form-input select {
   display: block;
