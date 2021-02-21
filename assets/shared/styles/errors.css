@@ -78,16 +78,16 @@
   margin: 0 -.875rem -.5rem -2.1875rem;
 }
 .error .error-heading::before {
-  background-color: #cc3702;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #cc3702;
   content: "";
-  font-size: 0.825em;
-  font-weight: bold;
-  height: 3px;
-  left: 0;
+  height: 1rem;
+  left: .75rem;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%) rotate(-135deg);
-  width: .75rem;
+  transform: translateY(-50%);
+  width: 1rem;
 }
 .error .error-heading::after {
   background-color: #cc3702;
@@ -95,7 +95,7 @@
   font-size: 0.825em;
   font-weight: bold;
   height: 3px;
-  left: 0;
+  left: .875rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) rotate(-45deg);

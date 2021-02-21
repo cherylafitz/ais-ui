@@ -2397,6 +2397,9 @@ td.dataEntryIsDisabled {
   border-bottom: 1px solid #c2c2c2;
   background-color: #e0e6eb;
 }
+.applicantSearch > tbody > tr > th ~ td details > summary {
+  background-color: #a2b5c3;
+}
 .applicantSearch > tbody > tr > th ~ td {
   background-color: #cbd2d6;
   border-right: .75rem solid #e0e6eb;
