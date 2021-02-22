@@ -62,7 +62,7 @@ input[type="file"] {
 .generated-field .preview,
 .generated-field > .value,
 .form-input label,
-.form-input input:not([type="submit"]):not([type="button"]),
+.form-input input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]),
 .form-input textarea,
 .form-input select,
 .from-to-date-picker .input-group-label {
@@ -73,7 +73,7 @@ input[type="file"] {
 	vertical-align: top;
 	font-size: .875rem;
 }
-.form-input input:not([type="submit"]):not([type="button"]),
+.form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]),
 .form-input textarea,
 .form-input select,
 .generated-field > .preview,
