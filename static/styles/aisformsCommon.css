@@ -4635,6 +4635,15 @@ table.row-display .row-display tr:first-of-type td {
 }
 /* <-- NESTED TABLES */ 
 
+
+/* WRAPPING CELLS --> */
+#ReportUserEditorPage .defaultTitle,
+#ReportUserEditorPage .customTitle {
+  white-space: normal;
+  max-width: 500px;
+}
+/* <-- WRAPPING CELLS */
+
 /* <-- generic and NEW STYLES (remove RowDisplay styles when appropriate) */
 
 
