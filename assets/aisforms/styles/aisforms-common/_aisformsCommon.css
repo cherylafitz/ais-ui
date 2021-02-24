@@ -504,7 +504,7 @@ a img {
   max-width: inherit;
 }
 h2.AppClosed {
-  color: #DA2238;
+  color: #DA2238 !important;
 }
 /* testing removal */
 /*p.LoginWelcomeAlertText {
