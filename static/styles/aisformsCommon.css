@@ -1169,6 +1169,13 @@ form[class$="-search"] .form-section-content {
 }
 /* <-- filter for display */
 
+/* control inside form-input --> */
+#contentPageProportional .form-input input[type="submit"],
+#contentPageProportional .form-input input[type="button"] {
+  margin: 0 0 0 .5rem;
+}
+/* <-- control inside form-input */
+
 @media only screen and (max-width : 30rem) {
 	.form-input select,
 	.form-input textarea,
