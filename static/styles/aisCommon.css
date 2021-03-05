@@ -1169,6 +1169,13 @@ form[class$="-search"] .form-section-content {
 }
 /* <-- filter for display */
 
+/* control inside form-input --> */
+#contentPageProportional .form-input input[type="submit"],
+#contentPageProportional .form-input input[type="button"] {
+  margin: 0 0 0 .5rem;
+}
+/* <-- control inside form-input */
+
 @media only screen and (max-width : 30rem) {
 	.form-input select,
 	.form-input textarea,
@@ -5177,6 +5184,141 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 
 /* <-- details */
 
+/* PAGE: Combinator tool --> */
+.PDFCombinatorTool .combine-wrapper,
+.PDFCombinatorTool .form-input-wrapper {
+  border: 1px solid #cecece;
+  padding: .75rem;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin-top: .75rem;
+}
+#combined-file-name-id {
+  min-width: 20rem;
+}
+.title-wrapper-for-piece
+{
+  display: flex;
+  justify-content: space-between;
+}
+.draggable-icon-then-title
+{
+  display: flex;
+  justify-content: flex-start;
+}
+.draggable-piece.ais-document .title-wrapper-for-piece,
+.draggable-piece.air-form .title-wrapper-for-piece,
+.draggable-piece.uploaded-file .title-wrapper-for-piece {
+  background-color: #bfced9;
+  padding: .625rem .75rem .5rem;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+  border: 1px solid #b9cad5;
+}
+.draggable-piece.air-form .title-wrapper-for-piece {
+  background-color: #dfe7ec;
+  border-color: #cfdae2;
+} 
+.draggable-piece.ais-document .title-wrapper-for-piece a,
+.draggable-piece.air-form .title-wrapper-for-piece a {
+  color: black;
+  font-size: .75rem;
+}
+.draggable-piece.uploaded-file .title-wrapper-for-piece a {
+  color: #fff;
+  font-size: .75rem;
+}
+.draggable-piece.uploaded-file .title-wrapper-for-piece {
+  background-color: #2b3a42;
+  border: none;
+  color: #fff;
+}
+.draggable-piece {
+  background: #f0f2f3;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.PDFCombinatorTool .draggable-piece {
+  border: none;
+}
+.PDFCombinatorTool .title {
+  margin-left: 1rem;
+}
+.remove-piece-wrapper,
+.remove-field-link {
+  position: relative;
+  margin-right: 1rem;
+}
+.remove-field-link::before,
+.remove-field-link::after {
+  background-color: currentColor;
+  content: "";
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-135deg);
+  width: 1rem;
+}
+.remove-field-link::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.remove-field-image {
+  display: none;
+}
+.form-input.piece-mode-to-add {
+  margin: 0 0 2rem;
+}
+#piece-mode-to-add-id {
+  width: initial;
+}
+.form-input.piece-mode-to-add label {
+  width: initial;
+}
+/* on AttachmentSelectiveDownloadDisplay page */
+.ready-to-combine {
+  margin-top: 1.5rem;
+}
+.ready-to-combine .document-type {
+  padding: 0 1rem;
+}
+.ready-to-combine .draggable-piece {
+  border-radius: 4px;
+  display: flex;
+  padding: .75rem;
+  border: 1px solid #b9cad5;
+  background-color: #bfced9;
+}
+.sorting-drop-block {
+  height: 1rem;
+}
+.draggable-files-container {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid #346789;
+  width: fit-content;
+  padding: .25rem 1rem;
+  background: #eff2f3;
+}
+.combine-controls-wrapper {
+  border: 1px solid #cecece;
+  padding: 1.25rem;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin-top: .75rem;
+}
+.combine-controls-wrapper .form-input {
+  margin-bottom: .75rem;
+}
+
+/* <-- PAGE: Combinator tool */
+
 /* logged in site header --> */
 
 .name-block {
@@ -5544,91 +5686,6 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 }
 
 /* <-- PAGE: attachment display */
-
-/* PAGE: Combinator tool --> */
-.PDFCombinatorTool .combine-wrapper,
-.PDFCombinatorTool .form-input-wrapper {
-  border: 1px solid #cecece;
-  padding: .75rem;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-  margin-top: .75rem;
-}
-#combined-file-name-id {
-  min-width: 20rem;
-}
-.title-wrapper-for-piece
-{
-  display: flex;
-  justify-content: space-between;
-}
-.draggable-icon-then-title
-{
-  display: flex;
-  justify-content: flex-start;
-}
-.draggable-piece.ais-document .title-wrapper-for-piece,
-.draggable-piece.air-form .title-wrapper-for-piece,
-.draggable-piece.uploaded-file .title-wrapper-for-piece {
-  background-color: #bfced9;
-  padding: .625rem .75rem .5rem;
-  border-radius: 4px 4px 0 0;
-  margin: 0;
-  border: 1px solid #b9cad5;
-}
-.draggable-piece.air-form .title-wrapper-for-piece {
-  background-color: #dfe7ec;
-  border-color: #cfdae2;
-} 
-.draggable-piece.ais-document .title-wrapper-for-piece a,
-.draggable-piece.air-form .title-wrapper-for-piece a {
-  color: black;
-  font-size: .75rem;
-}
-.draggable-piece.uploaded-file .title-wrapper-for-piece a {
-  color: #fff;
-  font-size: .75rem;
-}
-.draggable-piece.uploaded-file .title-wrapper-for-piece {
-  background-color: #2b3a42;
-  border: none;
-  color: #fff;
-}
-.PDFCombinatorTool .draggable-piece {
-  background: #f0f2f3;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-  border: 1px solid #e8eced;
-}
-.PDFCombinatorTool .title {
-  margin-left: 1rem;
-}
-.remove-piece-wrapper {
-  position: relative;
-  margin-right: 1rem;
-}
-.remove-field-link::before,
-.remove-field-link::after {
-  background-color: currentColor;
-  content: "";
-  font-size: 1rem;
-  font-weight: bold;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-135deg);
-  width: 1rem;
-}
-.remove-field-link::after {
-  transform: translateY(-50%) rotate(-45deg);
-}
-.remove-field-image {
-  display: none;
-}
-/* <-- PAGE: Combinator tool */
 
 /* PAGE: Data Entry Form (HTML NOT UPDATED) --> */
 

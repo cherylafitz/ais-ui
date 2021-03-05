@@ -48,17 +48,20 @@
   border: none;
   color: #fff;
 }
-.PDFCombinatorTool .draggable-piece {
+.draggable-piece {
   background: #f0f2f3;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
-  border: 1px solid #e8eced;
+}
+.PDFCombinatorTool .draggable-piece {
+  border: none;
 }
 .PDFCombinatorTool .title {
   margin-left: 1rem;
 }
-.remove-piece-wrapper {
+.remove-piece-wrapper,
+.remove-field-link {
   position: relative;
   margin-right: 1rem;
 }
@@ -81,4 +84,51 @@
 .remove-field-image {
   display: none;
 }
+.form-input.piece-mode-to-add {
+  margin: 0 0 2rem;
+}
+#piece-mode-to-add-id {
+  width: initial;
+}
+.form-input.piece-mode-to-add label {
+  width: initial;
+}
+/* on AttachmentSelectiveDownloadDisplay page */
+.ready-to-combine {
+  margin-top: 1.5rem;
+}
+.ready-to-combine .document-type {
+  padding: 0 1rem;
+}
+.ready-to-combine .draggable-piece {
+  border-radius: 4px;
+  display: flex;
+  padding: .75rem;
+  border: 1px solid #b9cad5;
+  background-color: #bfced9;
+}
+.sorting-drop-block {
+  height: 1rem;
+}
+.draggable-files-container {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid #346789;
+  width: fit-content;
+  padding: .25rem 1rem;
+  background: #eff2f3;
+}
+.combine-controls-wrapper {
+  border: 1px solid #cecece;
+  padding: 1.25rem;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin-top: .75rem;
+}
+.combine-controls-wrapper .form-input {
+  margin-bottom: .75rem;
+}
+
 /* <-- PAGE: Combinator tool */
