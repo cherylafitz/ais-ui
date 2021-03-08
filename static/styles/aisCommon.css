@@ -1475,7 +1475,8 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
 
 /* screenreaders --> */
 
-.show-for-sr {
+.show-for-sr,
+.show-for-screen-reader {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
