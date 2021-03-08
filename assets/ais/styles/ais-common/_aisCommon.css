@@ -3099,6 +3099,11 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 
 /* <-- PAGE: AIS FORMS SUMMARY */
 
+/* PAGE: Doc type editor --> */
+.AvailableTypes {
+  vertical-align: top;
+}
+/* <-- PAGE: Doc type editor */
 
 /* <--- END PAGES */
 

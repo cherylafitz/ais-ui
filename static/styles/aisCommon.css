@@ -871,6 +871,10 @@ select {
   border: 1px solid #cecece;
   padding: .1875rem .25rem;
 }
+select[multiple="multiple"] {
+  height: 600px;
+  max-height: 100%;
+}
 input[type="file"] {
   border: none;
   text-decoration: none;
@@ -4768,6 +4772,11 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 
 /* <-- PAGE: AIS FORMS SUMMARY */
 
+/* PAGE: Doc type editor --> */
+.AvailableTypes {
+  vertical-align: top;
+}
+/* <-- PAGE: Doc type editor */
 
 /* <--- END PAGES */
 
@@ -6218,16 +6227,6 @@ table.RowDisplay thead tr th.RowNumber,
 table.report td.RowNumber,
 div.AuditTrailRowDisplay td.RowNumber {
     text-align: right;
-}
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th,
-table.report th,
-table.TravelVendorExplanation tr.headerRow th,
-table.TravelVendorExplanation thead tr th,
-table.TravelInboundDisplay th,
-table.TravelOutboundDisplay th {
-  /*padding: .25rem .325rem .25rem;*/
-  /*border-color: #e8ecda;*/
 }
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay thead tr th,
