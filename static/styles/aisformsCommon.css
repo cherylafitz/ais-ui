@@ -871,6 +871,10 @@ select {
   border: 1px solid #cecece;
   padding: .1875rem .25rem;
 }
+select[multiple="multiple"] {
+  height: 600px;
+  max-height: 100%;
+}
 input[type="file"] {
   border: none;
   text-decoration: none;

@@ -154,16 +154,6 @@ table.report td.RowNumber,
 div.AuditTrailRowDisplay td.RowNumber {
     text-align: right;
 }
-table.RowDisplay tr.headerRow th,
-table.RowDisplay thead tr th,
-table.report th,
-table.TravelVendorExplanation tr.headerRow th,
-table.TravelVendorExplanation thead tr th,
-table.TravelInboundDisplay th,
-table.TravelOutboundDisplay th {
-  /*padding: .25rem .325rem .25rem;*/
-  /*border-color: #e8ecda;*/
-}
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay tr.headerRow th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay thead tr th,
 div.AIRAdminSearchForApplications div.ApplicationList table.RowDisplay td {
