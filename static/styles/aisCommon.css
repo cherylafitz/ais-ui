@@ -469,6 +469,15 @@ input[type="submit"][value="Clear Filters"]:hover {
 }
 
 /* <-- BUTTONS */
+.reorder-controls-wrapper button {
+  border: 0;
+  background-color: transparent;
+  padding: .25rem;
+}
+
+tr:first-of-type .reorder-controls-wrapper .sequence-menu-wrapper {
+  padding-left: 1.75rem;
+}
 
 /* <-- CONTROLS */
 
