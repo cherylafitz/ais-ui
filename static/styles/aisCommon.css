@@ -275,6 +275,20 @@ input[type="submit"][value="Clear Filters"]:hover {
   background: transparent;
 }
 
+.reorder-controls-wrapper button {
+  border: 0;
+  background-color: #336789;
+  padding: .25rem;
+  color: #fff;
+}
+
+tr:first-of-type .reorder-controls-wrapper .sequence-menu-wrapper {
+  padding-left: 1.75rem;
+}
+.reorder-controls-wrapper .sequence-menu-wrapper {
+  margin: 0 .125rem;
+}
+
 /* <-- BUTTONS */
 
 /* <code> STYLES--> */
@@ -469,15 +483,6 @@ input[type="submit"][value="Clear Filters"]:hover {
 }
 
 /* <-- BUTTONS */
-.reorder-controls-wrapper button {
-  border: 0;
-  background-color: transparent;
-  padding: .25rem;
-}
-
-tr:first-of-type .reorder-controls-wrapper .sequence-menu-wrapper {
-  padding-left: 1.75rem;
-}
 
 /* <-- CONTROLS */
 

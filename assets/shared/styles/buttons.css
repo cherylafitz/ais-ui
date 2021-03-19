@@ -62,4 +62,18 @@ input[type="submit"][value="Clear Filters"]:hover {
   background: transparent;
 }
 
+.reorder-controls-wrapper button {
+  border: 0;
+  background-color: #336789;
+  padding: .25rem;
+  color: #fff;
+}
+
+tr:first-of-type .reorder-controls-wrapper .sequence-menu-wrapper {
+  padding-left: 1.75rem;
+}
+.reorder-controls-wrapper .sequence-menu-wrapper {
+  margin: 0 .125rem;
+}
+
 /* <-- BUTTONS */
