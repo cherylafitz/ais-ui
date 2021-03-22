@@ -479,12 +479,12 @@ input[type="submit"][value="Clear Filters"]:hover {
 tr:first-of-type .reorder-controls-wrapper select {
   margin-left: 1.75rem;
 }
-.reorder-controls-wrapper select {
+.reorder-controls-wrapper     margin-top: .25rem;
+    text-align: center;select {
   margin: 0 .125rem;
 }
-.sequence-item .switch-section-button {
+.switch-section-wrapper {
   margin-top: .25rem;
-  text-align: center;
 }
 /* <-- SEQUENCE-ITEM */
 
