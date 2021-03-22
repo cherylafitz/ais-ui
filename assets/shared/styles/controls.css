@@ -157,8 +157,7 @@ input[type="submit"][value="Clear Filters"]:hover {
 tr:first-of-type .reorder-controls-wrapper select {
   margin-left: 1.75rem;
 }
-.reorder-controls-wrapper     margin-top: .25rem;
-    text-align: center;select {
+.reorder-controls-wrapper select {
   margin: 0 .125rem;
 }
 .switch-section-wrapper {
