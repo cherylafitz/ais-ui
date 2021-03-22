@@ -147,4 +147,23 @@ input[type="submit"][value="Clear Filters"]:hover {
 
 /* <-- BUTTONS */
 
+/* SEQUENCE-ITEM --> */
+.reorder-controls-wrapper button {
+  border: 0;
+  background-color: #336789;
+  padding: .25rem;
+  color: #fff;
+}
+tr:first-of-type .reorder-controls-wrapper select {
+  margin-left: 1.75rem;
+}
+.reorder-controls-wrapper select {
+  margin: 0 .125rem;
+}
+.sequence-item .switch-section-button {
+  margin-top: .25rem;
+  text-align: center;
+}
+/* <-- SEQUENCE-ITEM */
+
 /* <-- CONTROLS */
