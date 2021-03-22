@@ -160,8 +160,9 @@ tr:first-of-type .reorder-controls-wrapper select {
 .reorder-controls-wrapper select {
   margin: 0 .125rem;
 }
-.switch-section-wrapper {
+.sequence-item .switch-section-button {
   margin-top: .25rem;
+  text-align: center;
 }
 /* <-- SEQUENCE-ITEM */
 
