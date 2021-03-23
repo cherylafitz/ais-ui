@@ -1,0 +1,17 @@
+/* SHARED: HEADER --> */
+
+#Header .form-input label {
+  width: initial;
+}
+#Header .form-input select {
+  padding: 0;
+}
+#Header .UserNameBlock {
+  font-size: .875rem;
+}
+#Header .UserNameBlock label {
+  padding-left: .5rem;
+  padding-right: .25rem;
+}
+
+/* <-- SHARED: HEADER */
