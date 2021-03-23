@@ -1,0 +1,20 @@
+/* PAGE: CHANGE HISTORY --> */
+
+.StudentEditHistoryDisplay [data-action="update"] td.Action {
+  background-color: rgb(168 212 165 / 50%);
+}
+.StudentEditHistoryDisplay [data-action="insert"] td.Action {
+  background-color: rgb(203 204 236 / 50%);
+}
+.StudentEditHistoryDisplay [data-action="delete"] td.Action {
+  background-color: rgb(255 164 128 / 60%);
+}
+
+.StudentEditHistoryDisplay .row-display .FullName,
+.StudentEditHistoryDisplay .row-display .Type {
+  margin-left: 1rem;
+}
+.StudentEditHistoryDisplay .row-display .FullName {
+  font-style: italic;
+}
+/* <-- PAGE: CHANGE HISTORY */
