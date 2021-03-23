@@ -5718,10 +5718,10 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 /* PAGE: CHANGE HISTORY --> */
 
 .StudentEditHistoryDisplay [data-action="update"] td.Action {
-  background-color: rgb(168 212 165 / 50%);
+  background-color: rgb(203 204 236 / 50%);
 }
 .StudentEditHistoryDisplay [data-action="insert"] td.Action {
-  background-color: rgb(203 204 236 / 50%);
+  background-color: rgb(168 212 165 / 50%);
 }
 .StudentEditHistoryDisplay [data-action="delete"] td.Action {
   background-color: rgb(255 164 128 / 60%);
