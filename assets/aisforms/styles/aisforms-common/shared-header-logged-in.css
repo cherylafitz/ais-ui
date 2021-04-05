@@ -1,0 +1,151 @@
+/* SHARED: HEADER (LOGGED IN) --> */
+/* HEADER--> */
+#Header {
+  padding: .5rem 1rem 1rem .5rem;
+  background-color: #29353d;
+  z-index: 11;
+  position: relative;
+  text-align: right;
+}
+#Header .UserNameBlock .Username .userIsAdministrator,
+#Header .UserNameBlock .Username,
+#Header .UserNameBlock .Username .userIsStaff  {
+  color: #FFD590;
+}
+#Header .UserNameBlock {
+  font-style: normal;
+  color: #FFF;
+  text-align: right;
+}
+.fastUserSwitchForm, .fastBrandSwitchForm {
+    display: inline-block;
+    white-space: nowrap;
+}
+#Header div.UserNameBlock select {
+  max-width: calc(100% - 50px);
+}
+/* 19 Jul - New CSS for new login page ---> */
+div#buildAndInstance {
+  color: #FFFFFF;
+  font-size: 0.5rem;
+  text-align: left;
+  margin: 0;
+}
+/* <--- */
+#Header #serverInfo,
+#Header #buildAndInstance {
+  margin-top: .5rem;
+  font-size: 0.625rem;
+  line-height: .625rem;
+  display: inline-block;
+}
+#Header #serverInfo,
+#Header #buildAndInstance .build,
+#Header #buildAndInstance .brand,
+#Header #buildAndInstance .instance {
+  color: #e6e6e6;
+  font-style: normal;
+}
+.brand .name:after {
+  content: " |";
+  color: #FFD590;
+  font-size: 1.1em;
+}
+#Header #serverInfo {
+  margin-right: 2rem;
+}
+.instance {
+  margin-bottom: .4em;
+}
+.header-logo {
+  float: left;
+}
+.header-logo img {
+  height: 47px;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+.logo ~ .ac-logo {
+  display: none;
+}
+.IsLoggedIn #Header .logo,
+.IsLoggedIn #Header .AClogo,
+.IsLoggedIn #Header .Title,
+.IsLoggedIn #Header .aisFormsLogo {
+  float: left;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 47px;
+  background-position: 0 center;
+  background-size: 100%;
+  margin-right: 1rem;
+  /*margin-bottom: .5rem;*/
+}
+#Header .logo:empty {
+  display: none;
+}
+.IsLoggedIn #Header .Title,
+.IsLoggedIn #Header .aisFormsLogo {
+  background-image: url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
+/*  background-image: url((https://ais.americancouncils.org/ais/common/AISformsLogo_flat.png)\9; */
+  width: 162px;
+  margin: -0.2rem 0 0;
+}
+#Header a {
+  color: #c4dcee;
+}
+#Header.IsLoggedIn #LoginHeader,
+#Header.IsLoggedIn img#headerbg {
+  /*display: none;*/
+}
+#Header .form-input label {
+  width: initial;
+}
+#Header .form-input select {
+  padding: 0;
+}
+#Header .UserNameBlock {
+  font-size: .875rem;
+}
+#Header .UserNameBlock label {
+  padding-left: .5rem;
+  padding-right: .25rem;
+}
+/* 19 Jun - Added in addition to Line 247 above to accomodate new username link in header. Also added to aisformsCommon.css */
+#Header .UserNameBlock .Username .userIsAdministrator a,
+#Header .UserNameBlock .Username a,
+#Header .UserNameBlock .Username .userIsStaff a {
+  color: #c4dcee;
+}
+@media only screen and (max-width : 480px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
+  #Header {
+    padding: 1rem;
+  }
+  #Header .Title,
+  #Header .aisFormsLogo {
+    width: 135px;
+  }
+}   
+@media only screen and (min-width: 480px) and (max-width: 568px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
+}
+@media only screen and (min-width : 568px) and (max-width : 767px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
+  #Header #buildAndInstance .brand {
+    display: none;
+  }
+}
+/* <-- SHARED: HEADER (LOGGED IN) */
