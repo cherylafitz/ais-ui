@@ -1511,6 +1511,55 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
 
 /* <-- screenreaders */
 
+/* SHARED: STEP BY STEP WIZARD --> */
+ul.progress_bar {
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+}
+.progress_bar li {
+  list-style: none;
+  border: 2px dashed #29353d;
+  padding: .5rem .75rem;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 2rem;
+}
+.progress_bar li:not(:last-child):after { 
+  content: '';
+  position: absolute;
+  width: 1.8rem;
+  height: 4px;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #29353d;
+}
+.progress_bar.step_one li:nth-of-type(2):after { 
+  background-color: #94a9b8;
+}
+.progress_bar.step_one li:first-of-type,
+.progress_bar.step_two li:nth-of-type(2),
+.progress_bar.step_three li:nth-of-type(3) {
+  background-color: #29353d;
+  color: #fff;
+  font-weight: bold;
+}
+.progress_bar.step_two li:first-of-type,
+.progress_bar.step_three li:nth-child(-n+2) {
+  border-style: solid;
+  background-color: #475c6b;
+  color: #fff;
+}
+.progress_bar.step_two li:first-of-type:before,
+.progress_bar.step_three li:nth-child(-n+2):before {
+ content:  "\2713 ";
+ padding-right: .5rem;
+ font-weight: bold;
+}
+
+/* <-- SHARED: STEP BY STEP WIZARD */
+
 /* NAVIGATION --> */
 .sub-nav,
 .info-bar {
@@ -6076,6 +6125,34 @@ form[name="loginForm"] {
 
 
 /* <-- PAGE: TEST CENTER ASSESSMENT EDITOR */
+
+/* PAGES: BULK EMAIL TEMPLATE WORKFLOW --> */
+.AISStudentBulkEmailTemplateWorkflow .Applicants,
+.AISStudentBulkEmailTemplateWorkflow #WorkflowID {
+  display: inline-block;
+  vertical-align: top;
+}
+.AISStudentBulkEmailTemplateWorkflow .Applicants .row-display {
+  margin-top: 0;
+}
+.AISStudentBulkEmailTemplateWorkflow .Applicants {
+  margin-right: 1.5rem;
+}
+.AISStudentBulkEmailTemplateWorkflow td.fullName {
+  max-width: 200px;
+  white-space: normal;
+}
+.AISStudentBulkEmailTemplateWorkflow .PlainText td,
+.AISStudentBulkEmailTemplateWorkflow .BodyPlain td pre {
+  font-family: monospace;
+  white-space: normal;
+  max-width: 800px;
+}
+.AISStudentBulkEmailTemplateWorkflow caption {
+  text-align: left;
+  padding: 0 .25rem .25rem;
+}
+/* <-- PAGES: BULK EMAIL TEMPLATE WORKFLOW */
 
 /* PREVIOUS PAGE LINK --> */
 .previous-page-link {
