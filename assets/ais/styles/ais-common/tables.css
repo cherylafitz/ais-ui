@@ -25,6 +25,10 @@ table.row-display td.description {
   min-width: 300px; 
   max-width: 600px; 
 }
+
+.EmailTemplateRowDisplay .row-display td {
+  white-space: normal;
+}
 /* <-- wrap cells */
 
 
