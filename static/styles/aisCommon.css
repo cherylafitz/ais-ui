@@ -1682,6 +1682,10 @@ input[title="ERXSortOrder.sortBy"] {
 
 /* <-- TABLE SORTER */
 /* SHARED TABLE STYLES --> */
+caption {
+  text-align: left;
+  padding: .125rem 0 .375rem;
+}
 th {
   font-weight: normal;
   white-space: nowrap;
