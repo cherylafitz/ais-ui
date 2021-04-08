@@ -340,10 +340,10 @@ form[class$="-search"] .form-section-content {
 /* Email forms --> */
 
 .EmailTemplate .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
-.form-input textarea, 
-.form-input select, 
-.generated-field > .preview, 
-.generated-field > .value {
+.EmailTemplate .form-input textarea, 
+.EmailTemplate .form-input select, 
+.EmailTemplate .generated-field > .preview, 
+.EmailTemplate .generated-field > .value {
   width: 34rem;
   max-width: 100%;
 }
