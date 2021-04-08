@@ -136,8 +136,8 @@ div.alertBox,
   border-color: #b3edff;
 }
 [class*="dk-info-box"] {
-  background-color: #98c2cd;
-  border-color: #75adbd;
+  background-color: #a9cdd6;
+  border-color: #87b8c5;
 }
 [class*="caution-box"] {
   background-color: #ffe0b3;
@@ -510,6 +510,7 @@ details .details-content {
   width: -moz-fit-content; 
   width: -webkit-fit-content;
   border-radius: 0 2px 2px 2px;
+  margin-bottom: 1rem;
 }
 details[open] summary {
   border-radius: 2px 2px 0 0;
@@ -562,12 +563,13 @@ fieldset details section,
 fieldset details .details-content {
   background-color: #eff3f5;
 } 
-
-details details .details-content {
+details details .details-content,
+.form-section details .details-content {
   background-color: #e0e7eb;
 }
 details details > summary,
-fieldset details > summary {
+fieldset details > summary,
+.form-section details > summary {
   background-color: #c1cdd7;
 }
 /* <-- BASE DETAILS OVERRIDES */
@@ -1197,6 +1199,17 @@ form[class$="-search"] .form-section-content {
   margin: 0 0 0 .5rem;
 }
 /* <-- control inside form-input */
+
+/* Email forms --> */
+
+.EmailTemplate .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+.EmailTemplate .form-input textarea, 
+.EmailTemplate .form-input select, 
+.EmailTemplate .generated-field > .preview, 
+.EmailTemplate .generated-field > .value {
+  width: 34rem;
+  max-width: 100%;
+}
 
 @media only screen and (max-width : 30rem) {
 	.form-input select,
@@ -6214,6 +6227,10 @@ table.row-display td.description {
   white-space: normal;
   min-width: 300px; 
   max-width: 600px; 
+}
+
+.EmailTemplateRowDisplay .row-display td {
+  white-space: normal;
 }
 /* <-- wrap cells */
 

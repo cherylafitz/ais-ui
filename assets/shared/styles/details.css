@@ -18,6 +18,7 @@ details .details-content {
   width: -moz-fit-content; 
   width: -webkit-fit-content;
   border-radius: 0 2px 2px 2px;
+  margin-bottom: 1rem;
 }
 details[open] summary {
   border-radius: 2px 2px 0 0;
@@ -70,12 +71,13 @@ fieldset details section,
 fieldset details .details-content {
   background-color: #eff3f5;
 } 
-
-details details .details-content {
+details details .details-content,
+.form-section details .details-content {
   background-color: #e0e7eb;
 }
 details details > summary,
-fieldset details > summary {
+fieldset details > summary,
+.form-section details > summary {
   background-color: #c1cdd7;
 }
 /* <-- BASE DETAILS OVERRIDES */
