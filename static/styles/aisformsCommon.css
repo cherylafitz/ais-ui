@@ -4762,6 +4762,15 @@ table.row-display .row-display tr:first-of-type td {
 }
 /* <-- WRAPPING CELLS */
 
+/* Specific cell styles --> */
+.row-display td.delete,
+.RowDisplay td.delete {
+  text-align: center;
+  padding: .5rem;
+}
+/* <-- Specific cell styles */
+
+
 /* <-- generic and NEW STYLES (remove RowDisplay styles when appropriate) */
 
 
