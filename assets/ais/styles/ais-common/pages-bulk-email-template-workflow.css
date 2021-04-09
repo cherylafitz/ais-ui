@@ -1,0 +1,27 @@
+/* PAGES: BULK EMAIL TEMPLATE WORKFLOW --> */
+.AISStudentBulkEmailTemplateWorkflow .Applicants,
+.AISStudentBulkEmailTemplateWorkflow #WorkflowID {
+  display: inline-block;
+  vertical-align: top;
+}
+.AISStudentBulkEmailTemplateWorkflow .Applicants .row-display {
+  margin-top: 0;
+}
+.AISStudentBulkEmailTemplateWorkflow .Applicants {
+  margin-right: 1.5rem;
+}
+.AISStudentBulkEmailTemplateWorkflow td.fullName {
+  max-width: 200px;
+  white-space: normal;
+}
+.AISStudentBulkEmailTemplateWorkflow .PlainText td,
+.AISStudentBulkEmailTemplateWorkflow .BodyPlain td pre {
+  font-family: monospace;
+  white-space: normal;
+  max-width: 800px;
+}
+.AISStudentBulkEmailTemplateWorkflow caption {
+  text-align: left;
+  padding: 0 .25rem .25rem;
+}
+/* <-- PAGES: BULK EMAIL TEMPLATE WORKFLOW */

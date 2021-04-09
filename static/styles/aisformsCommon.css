@@ -136,8 +136,8 @@ div.alertBox,
   border-color: #b3edff;
 }
 [class*="dk-info-box"] {
-  background-color: #98c2cd;
-  border-color: #75adbd;
+  background-color: #a9cdd6;
+  border-color: #87b8c5;
 }
 [class*="caution-box"] {
   background-color: #ffe0b3;
@@ -510,6 +510,7 @@ details .details-content {
   width: -moz-fit-content; 
   width: -webkit-fit-content;
   border-radius: 0 2px 2px 2px;
+  margin-bottom: 1rem;
 }
 details[open] summary {
   border-radius: 2px 2px 0 0;
@@ -562,12 +563,13 @@ fieldset details section,
 fieldset details .details-content {
   background-color: #eff3f5;
 } 
-
-details details .details-content {
+details details .details-content,
+.form-section details .details-content {
   background-color: #e0e7eb;
 }
 details details > summary,
-fieldset details > summary {
+fieldset details > summary,
+.form-section details > summary {
   background-color: #c1cdd7;
 }
 /* <-- BASE DETAILS OVERRIDES */
@@ -1198,6 +1200,17 @@ form[class$="-search"] .form-section-content {
 }
 /* <-- control inside form-input */
 
+/* Email forms --> */
+
+.EmailTemplate .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+.EmailTemplate .form-input textarea, 
+.EmailTemplate .form-input select, 
+.EmailTemplate .generated-field > .preview, 
+.EmailTemplate .generated-field > .value {
+  width: 34rem;
+  max-width: 100%;
+}
+
 @media only screen and (max-width : 30rem) {
 	.form-input select,
 	.form-input textarea,
@@ -1511,6 +1524,55 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
 
 /* <-- screenreaders */
 
+/* SHARED: STEP BY STEP WIZARD --> */
+ul.progress_bar {
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+}
+.progress_bar li {
+  list-style: none;
+  border: 2px dashed #29353d;
+  padding: .5rem .75rem;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 2rem;
+}
+.progress_bar li:not(:last-child):after { 
+  content: '';
+  position: absolute;
+  width: 1.8rem;
+  height: 4px;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #29353d;
+}
+.progress_bar.step_one li:nth-of-type(2):after { 
+  background-color: #94a9b8;
+}
+.progress_bar.step_one li:first-of-type,
+.progress_bar.step_two li:nth-of-type(2),
+.progress_bar.step_three li:nth-of-type(3) {
+  background-color: #29353d;
+  color: #fff;
+  font-weight: bold;
+}
+.progress_bar.step_two li:first-of-type,
+.progress_bar.step_three li:nth-child(-n+2) {
+  border-style: solid;
+  background-color: #475c6b;
+  color: #fff;
+}
+.progress_bar.step_two li:first-of-type:before,
+.progress_bar.step_three li:nth-child(-n+2):before {
+ content:  "\2713 ";
+ padding-right: .5rem;
+ font-weight: bold;
+}
+
+/* <-- SHARED: STEP BY STEP WIZARD */
+
 /* NAVIGATION --> */
 .sub-nav,
 .info-bar {
@@ -1620,6 +1682,10 @@ input[title="ERXSortOrder.sortBy"] {
 
 /* <-- TABLE SORTER */
 /* SHARED TABLE STYLES --> */
+caption {
+  text-align: left;
+  padding: .125rem 0 .375rem;
+}
 th {
   font-weight: normal;
   white-space: nowrap;
@@ -4603,6 +4669,15 @@ table.row-display .row-display tr:first-of-type td {
   white-space: normal;
 }
 /* <-- WRAPPING CELLS */
+
+/* Specific cell styles --> */
+.row-display td.delete,
+.RowDisplay td.delete {
+  text-align: center;
+  padding: .5rem;
+}
+/* <-- Specific cell styles */
+
 
 /* <-- generic and NEW STYLES (remove RowDisplay styles when appropriate) */
 

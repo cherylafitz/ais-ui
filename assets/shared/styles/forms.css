@@ -337,6 +337,17 @@ form[class$="-search"] .form-section-content {
 }
 /* <-- control inside form-input */
 
+/* Email forms --> */
+
+.EmailTemplate .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+.EmailTemplate .form-input textarea, 
+.EmailTemplate .form-input select, 
+.EmailTemplate .generated-field > .preview, 
+.EmailTemplate .generated-field > .value {
+  width: 34rem;
+  max-width: 100%;
+}
+
 @media only screen and (max-width : 30rem) {
 	.form-input select,
 	.form-input textarea,
