@@ -12,6 +12,14 @@
 #Header .UserNameBlock .Username .userIsStaff  {
   color: #FFD590;
 }
+#Header .Username {
+  display: inline-block;
+}
+#Header .UserNameBlock > span,
+#Header .Username > span {
+  display: inline-block;
+  vertical-align: middle;
+}
 #Header .UserNameBlock {
   font-style: normal;
   color: #FFF;
@@ -34,9 +42,7 @@ div#buildAndInstance {
 /* <--- */
 #Header #serverInfo,
 #Header #buildAndInstance {
-  margin-top: .5rem;
-  font-size: 0.625rem;
-  line-height: .625rem;
+  font-size: 0.75rem;
   display: inline-block;
 }
 #Header #serverInfo,
