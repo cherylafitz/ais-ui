@@ -1913,14 +1913,6 @@ div.SecureDocumentEditorRowDisplay h1 {
   content: ",";
 }
 /* <--LIST OF SECTIONS */
-/* HEADER--> */
-#Header {
-  padding: .5rem 1rem 1rem .5rem;
-  background-color: #29353d;
-  z-index: 11;
-  position: relative;
-  text-align: right;
-}
 /*NAV-->*/
 #TopMenu .menuItem,
 .menu .menuItem {
@@ -1993,96 +1985,8 @@ nav#TopMenu {
   color: #000;
 }
 /* <--NAV */
-#Header .UserNameBlock .Username .userIsAdministrator,
-#Header .UserNameBlock .Username,
-#Header .UserNameBlock .Username .userIsStaff  {
-  color: #FFD590;
-}
-#Header .UserNameBlock {
-  font-style: normal;
-  color: #FFF;
-  text-align: right;
-}
-.fastUserSwitchForm, .fastBrandSwitchForm {
-    display: inline-block;
-    white-space: nowrap;
-}
-#Header div.UserNameBlock select {
-  max-width: calc(100% - 50px);
-}
-.IsNotLoggedIn #Header #buildAndInstance {
-/*  display: none; */
-}
-/* 19 Jul - New CSS for new login page ---> */
-div#buildAndInstance {
-  color: #FFFFFF;
-  font-size: 0.5rem;
-  text-align: left;
-  margin: 0;
-}
-/* <--- */
-#Header #serverInfo,
-#Header #buildAndInstance {
-  margin-top: .5rem;
-  font-size: 0.625rem;
-  line-height: .625rem;
-  display: inline-block;
-}
-#Header #serverInfo,
-#Header #buildAndInstance .build,
-#Header #buildAndInstance .brand,
-#Header #buildAndInstance .instance {
-  color: #e6e6e6;
-  font-style: normal;
-}
-.brand .name:after {
-  content: " |";
-  color: #FFD590;
-  font-size: 1.1em;
-}
-#Header #serverInfo {
-  margin-right: 2rem;
-}
-.instance {
-  margin-bottom: .4em;
-}
-.header-logo {
-  float: left;
-}
-.header-logo img {
-  height: 47px;
-  max-width: 100%;
-  margin-right: 1rem;
-}
-.logo ~ .ac-logo {
-  display: none;
-}
-.IsLoggedIn #Header .logo,
-.IsLoggedIn #Header .AClogo,
-.IsLoggedIn #Header .Title,
-.IsLoggedIn #Header .aisFormsLogo {
-  float: left;
-  background-repeat: no-repeat;
-  width: 180px;
-  height: 47px;
-  background-position: 0 center;
-  background-size: 100%;
-  margin-right: 1rem;
-  /*margin-bottom: .5rem;*/
-}
-#Header .logo:empty {
-  display: none;
-}
-.IsLoggedIn #Header .Title,
-.IsLoggedIn #Header .aisFormsLogo {
-  background-image: url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
-/*  background-image: url((https://ais.americancouncils.org/ais/common/AISformsLogo_flat.png)\9; */
-  width: 162px;
-  margin: -0.2rem 0 0;
-}
-#Header a {
-  color: #c4dcee;
-}
+
+
 /* <--HEADER */
 /* TITLES-->*/
 .Content h1 {
@@ -2102,74 +2006,7 @@ a.LinkToPreviousPage {
   margin-top: -2em;
 }
 /*<--TITLES*/
-/* LOGIN-->*/
-#Header.IsLoggedIn #LoginHeader,
-#Header.IsLoggedIn img#headerbg {
-  display: none;
-}
-/*body.IsNotLoggedIn .Content {
-  -webkit-box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25);
-  -moz-box-shadow:    0 30px 30px 0 rgba(62, 62, 62, .25);
-  box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25);
-  border-right: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
-  background-color: #fff;
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto 0 auto;
-  padding: 1em;
-  z-index: 2;
-}
-#Header.IsNotLoggedIn #buildAndInstance {
-  display: none;
-}
-#Header.IsNotLoggedIn {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1em 1em 0;
-  border-top: none;
-  border-bottom: none;
-  border-right: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
-  -webkit-box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25), 0 -80px 30px 0 rgba(62, 62, 62, .25);
-  -moz-box-shadow:    0 30px 30px 0 rgba(62, 62, 62, .25), 0 -80px 30px 0 rgba(62, 62, 62, .25);
-  box-shadow: 0 30px 30px 0 rgba(62, 62, 62, .25), 0 -80px 30px 0 rgba(62, 62, 62, .25);
-  z-index: 1;
-  height:  100px;
-  color: #fff;
-  background-color: #fff;
-}
 
-#Header.IsNotLoggedIn #LoginHeader {
-  max-width: 700px;
-  margin: 0 auto;
-}
-#Header.IsNotLoggedIn img#headerbg.mobile {
-  display: none;
-}
-#Header.IsNotLoggedIn #logo {
-  float: none;
-  margin: 0 auto;
-  display: inherit;
-  width: 50%;
-}
-#Header.IsNotLoggedIn .Title {
-  display: none;
-}
-.IsNotLoggedIn  div#footer {
-  padding: 1.5rem 6rem;
-}
-#footer.IsNotLoggedIn img#HomePage {
-  display: none;
-}*/
-/*#footer.IsNotLoggedIn div#footer2 a {
-  color: #5A752D;
-}
-#footer.IsNotLoggedIn div#footer2 a:hover {
-  color: #FF7F67
-}*/
-/* <--- LOGIN */
 #footer #AClogoFooter img {
   max-width: 250px;
   padding: 0 1rem 1rem 0;
@@ -2181,34 +2018,9 @@ a.LinkToPreviousPage {
 .policies {
   margin: 1rem 0;
 }
-#PrivacyPolicy,
-#CookieDeclaration {
-/*  margin: 0 1.5rem 1rem 1rem;
-  font-size: .875rem;
-  text-align: right;
-  position: relative;
-  z-index: 1;
-  padding-top: 3rem; */
-}
-.IsLoggedIn #CookieDeclaration {
-/*  margin: 0 1.5rem 1rem 1rem;
-  padding-top: 3rem; */
-}
-.IsLoggedIn #CookieDeclaration {
-  /*TEMP */
-/*    padding: 1rem 1.5rem 0;
-    margin: 1rem -1.5rem -3rem;
-    background: #2b353c; */
-}
-#PrivacyPolicy {
-/*  float: right;
-  z-index: 2; */
-}
 .IsNotLoggedIn #PrivacyPolicy {
   margin-right: 2rem;
 }
-
-
 .IsLoggedIn #footer img#LoginPage {
     display: none;
 }
@@ -3692,18 +3504,6 @@ body#body--environment-staging:after {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  #Header .UserNameBlock  {
-    font-size: .875rem;
-    clear: both;
-    text-align: left;
-  }
-  #Header {
-    padding: 1rem;
-  }
-  #Header .Title,
-  #Header .aisFormsLogo {
-    width: 135px;
-  }
   .Content .AdminHomeLinks {
     width: 100%;
   }
@@ -3760,11 +3560,6 @@ body#body--environment-staging:after {
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 568px) {
-  #Header .UserNameBlock  {
-    font-size: .875rem;
-    clear: both;
-    text-align: left;
-  }
   #TopMenu a, .menu a {
     width: 15%;
     margin: 0;
@@ -3824,14 +3619,6 @@ body#body--environment-staging:after {
   }
 }
 @media only screen and (min-width : 568px) and (max-width : 767px) {
-  #Header .UserNameBlock  {
-    font-size: .875rem;
-    clear: both;
-    text-align: left;
-  }
-  #Header #buildAndInstance .brand {
-    display: none;
-  }
   .Content .mainInstructions  {
     float: none;
     margin: 1em auto;
@@ -4367,12 +4154,6 @@ button:hover {
   }
 }
 @media only screen and (min-width: 50em) {
-  .IsNotLoggedIn #Header,
-  .IsNotLoggedIn .ValidationAndForms,
-  .IsNotLoggedIn .Tips,
-  .IsNotLoggedIn #footer,
-  .IsNotLoggedIn #loginHeading  {
-  }
   #footer {
     display: flex;
     justify-content: space-between;
@@ -4423,13 +4204,6 @@ button:hover {
 /* 10 Jun - Line 19, commented out display:none of the Privacy Policy link to expose it in Staging */
 
 /* 10 Jun - Line 298, commented out styling of the AC header logo background image. Logo is now pulled in using the header logo file upload in portal editor (to be added to system default, and portal will be just override file) */
-
-/* 19 Jun - Added in addition to Line 247 above to accomodate new username link in header. Also added to aisformsCommon.css */
-#Header .UserNameBlock .Username .userIsAdministrator a,
-#Header .UserNameBlock .Username a,
-#Header .UserNameBlock .Username .userIsStaff a {
-  color: #c4dcee;
-}
 
 /* 19 Jun Line 347 above, changed image URL to absolute from relative
 url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
@@ -4695,8 +4469,112 @@ table.row-display td.change {
 
 /* <-- PAGES: PROCTORED EXAM */
 
-/* SHARED: HEADER --> */
-
+/* SHARED: HEADER (LOGGED IN) --> */
+/* HEADER--> */
+#Header {
+  padding: .5rem 1rem 1rem .5rem;
+  background-color: #29353d;
+  z-index: 11;
+  position: relative;
+  text-align: right;
+}
+#Header .UserNameBlock .Username .userIsAdministrator,
+#Header .UserNameBlock .Username,
+#Header .UserNameBlock .Username .userIsStaff  {
+  color: #FFD590;
+}
+#Header .Username {
+  display: inline-block;
+}
+#Header .UserNameBlock > span,
+#Header .Username > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#Header .UserNameBlock {
+  font-style: normal;
+  color: #FFF;
+  text-align: right;
+}
+.fastUserSwitchForm, .fastBrandSwitchForm {
+    display: inline-block;
+    white-space: nowrap;
+}
+#Header div.UserNameBlock select {
+  max-width: calc(100% - 50px);
+}
+/* 19 Jul - New CSS for new login page ---> */
+div#buildAndInstance {
+  color: #FFFFFF;
+  font-size: 0.5rem;
+  text-align: left;
+  margin: 0;
+}
+/* <--- */
+#Header #serverInfo,
+#Header #buildAndInstance {
+  font-size: 0.75rem;
+  display: inline-block;
+}
+#Header #serverInfo,
+#Header #buildAndInstance .build,
+#Header #buildAndInstance .brand,
+#Header #buildAndInstance .instance {
+  color: #e6e6e6;
+  font-style: normal;
+}
+.brand .name:after {
+  content: " |";
+  color: #FFD590;
+  font-size: 1.1em;
+}
+#Header #serverInfo {
+  margin-right: 2rem;
+}
+.instance {
+  margin-bottom: .4em;
+}
+.header-logo {
+  float: left;
+}
+.header-logo img {
+  height: 47px;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+.logo ~ .ac-logo {
+  display: none;
+}
+.IsLoggedIn #Header .logo,
+.IsLoggedIn #Header .AClogo,
+.IsLoggedIn #Header .Title,
+.IsLoggedIn #Header .aisFormsLogo {
+  float: left;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 47px;
+  background-position: 0 center;
+  background-size: 100%;
+  margin-right: 1rem;
+  /*margin-bottom: .5rem;*/
+}
+#Header .logo:empty {
+  display: none;
+}
+.IsLoggedIn #Header .Title,
+.IsLoggedIn #Header .aisFormsLogo {
+  background-image: url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
+/*  background-image: url((https://ais.americancouncils.org/ais/common/AISformsLogo_flat.png)\9; */
+  width: 162px;
+  margin: -0.2rem 0 0;
+}
+#Header a {
+  color: #c4dcee;
+}
+#Header.IsLoggedIn #LoginHeader,
+#Header.IsLoggedIn img#headerbg {
+  /*display: none;*/
+}
 #Header .form-input label {
   width: initial;
 }
@@ -4710,8 +4588,44 @@ table.row-display td.change {
   padding-left: .5rem;
   padding-right: .25rem;
 }
-
-/* <-- SHARED: HEADER */
+/* 19 Jun - Added in addition to Line 247 above to accomodate new username link in header. Also added to aisformsCommon.css */
+#Header .UserNameBlock .Username .userIsAdministrator a,
+#Header .UserNameBlock .Username a,
+#Header .UserNameBlock .Username .userIsStaff a {
+  color: #c4dcee;
+}
+@media only screen and (max-width : 480px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
+  #Header {
+    padding: 1rem;
+  }
+  #Header .Title,
+  #Header .aisFormsLogo {
+    width: 135px;
+  }
+}   
+@media only screen and (min-width: 480px) and (max-width: 568px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
+}
+@media only screen and (min-width : 568px) and (max-width : 767px) {
+  #Header .UserNameBlock  {
+    font-size: .875rem;
+    clear: both;
+    text-align: left;
+  }
+  #Header #buildAndInstance .brand {
+    display: none;
+  }
+}
+/* <-- SHARED: HEADER (LOGGED IN) */
 
 /* TABLES --> */
 /* generic and NEW STYLES (remove RowDisplay styles when appropriate) --> */
