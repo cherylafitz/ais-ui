@@ -2611,7 +2611,8 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumnusEmailList,
 .AlumnusSocialMediaList,
 .SystemAnnouncementsWrapper + div,
-.main-content[class*="Alumnus"] {
+.main-content[class*="Alumnus"],
+.main-content.ArticleStatistics {
   position: relative;
   min-height: calc(100% - 174px);
   display: flex;
@@ -5732,7 +5733,8 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 .main-content.AlumnusEmailList,
 .main-content.AlumnusSocialMediaList,
 .SystemAnnouncementsWrapper + div.main-content,
-.main-content[class*="Alumnus"] {
+.main-content[class*="Alumnus"],
+.main-content.ArticleStatistics {
   padding: 0;
 }
 /*remove eventually --> */
