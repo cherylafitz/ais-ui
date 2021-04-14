@@ -111,13 +111,6 @@ input[type="button"]:disabled,
 #filteringButtonContainer {
   margin-bottom: .5rem;
 }
-/* DELETE??? */
-/*div .Button {
-  border-bottom: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}*/
 input[type="submit"], 
 input[type="button"],
 .controls-wrapper [class*="-button"] {
@@ -143,6 +136,16 @@ input[type="submit"][value="Clear Filters"] {
 input[type="submit"][value="Clear Filters"]:hover {
   opacity: .7;
   background: transparent;
+}
+.primary-control-wrapper {
+  flex-basis: 100%;
+}
+.primary-control-wrapper input[type="submit"][class*="-button"] {
+  background-color: #3392A1;
+  border-color: #318d9b;
+  padding: .5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 /* <-- BUTTONS */
