@@ -1582,13 +1582,16 @@ ul.progress_bar {
   display: flex;
   margin: -1rem -1.25rem 1rem -1.25rem;
   padding: .5rem 1rem;
+  font-size: .875rem;
 }
 .sub-nav {
   background-color: #e4e5e7;
-  font-size: .875rem;
 }
 .info-bar {
   background-color: #f1f2f3;
+}
+.info-bar ~ .info-bar {
+  background-color: #f7f7f8;
 }
 .sub-nav:first-child,
 .info-bar:first-child {
@@ -1602,7 +1605,7 @@ ul.progress_bar {
   margin-right: 1rem;
 }
 .info-bar-item .label {
-  color: #666;
+  color: #555;
 }
 .info-bar .label::after {
   content: ":";
@@ -1632,6 +1635,9 @@ ul.progress_bar {
 }
 .info-bar-item.student-name .last-name:first-child::after {
   content:",";
+}
+.info-bar-item.student-name .last-name {
+  font-weight: bold;
 }
 
 /* Override for h1 size until all h1 text is reduced appropriately --> */
@@ -3641,6 +3647,10 @@ div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
   font-style: normal;
   padding: .5rem;
 }
+.wrapper-for-documents-and-status {
+  display: flex;
+  justify-content: space-between;
+}
 div.StudentDisplayForHealthReviewer table.DocumentsList {
   width: 49%;
   border-top: none;
@@ -3652,7 +3662,7 @@ div.StudentDisplayForHealthReviewer table.DocumentsList tr:last-child td {
   padding-bottom: .5rem;
 }
 div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow {
-  width: 49%;
+  float: none;
 }
 div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow,
 div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {

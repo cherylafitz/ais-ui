@@ -1881,6 +1881,10 @@ div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
   font-style: normal;
   padding: .5rem;
 }
+.wrapper-for-documents-and-status {
+  display: flex;
+  justify-content: space-between;
+}
 div.StudentDisplayForHealthReviewer table.DocumentsList {
   width: 49%;
   border-top: none;
@@ -1892,7 +1896,7 @@ div.StudentDisplayForHealthReviewer table.DocumentsList tr:last-child td {
   padding-bottom: .5rem;
 }
 div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow {
-  width: 49%;
+  float: none;
 }
 div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow,
 div.StudentDisplayForHealthReviewer table.HealthStatusAndWorkflow caption {
