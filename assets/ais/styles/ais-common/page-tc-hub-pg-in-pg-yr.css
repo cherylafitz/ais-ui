@@ -1,0 +1,39 @@
+/* PAGE: TestCentersForHubByProgramInProgramYear --> */
+
+.test-center-for-hub-wrapper,
+.missing-test-center-wrapper,
+.missing-hub-wrapper {
+  display: flex;
+}
+.missing-test-center-wrapper {
+  flex-flow: row wrap;
+}
+.missing-test-center-wrapper .display-name {
+  flex-basis: calc(100% - 30px);
+}
+.test-center-for-hub-wrapper div:not(:last-child),
+.missing-test-center-wrapper div:not(:last-child),
+.missing-hub-wrapper div:not(:last-child) {
+  margin-right: .5rem;
+}
+.test-center-for-hub-wrapper .student-count {
+  margin-left: auto;
+}
+.missing-test-center-wrapper .test-center-count-label {
+  margin-left: 2.25rem;
+}
+.test-center-for-hub-wrapper .delete-wrapper {
+  margin-left: 1rem
+}
+.test-center-for-hub-wrapper .DisplayName,
+.TestCentersForHubByProgramInProgramYear .display-name {
+  max-width: 250px;
+  white-space: normal;
+  margin-right: 1rem;
+}
+.test-center-for-hub-wrapper .student-count .label:after,
+.missing-test-center-wrapper .test-center-count-label:after {
+  content: ":";
+}
+
+/* <-- PAGE: TestCentersForHubByProgramInProgramYear */
