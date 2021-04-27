@@ -6027,7 +6027,7 @@ div.HomePageForAll fieldset  {
   margin: 0;
   list-style-type: none;
 }
-.HomePageForAll .AppStatisticsByProgramYear {
+.HomePageForAll .application-statistics-by-program-year {
   flex-grow: 2;
   flex-basis: 100%;
 }
