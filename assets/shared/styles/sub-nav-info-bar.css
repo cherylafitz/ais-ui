@@ -11,6 +11,7 @@
 }
 .info-bar {
   background-color: #f1f2f3;
+  border-bottom: 1px solid #e3e6e8;
 }
 .info-bar ~ .info-bar {
   background-color: #f7f7f8;
@@ -24,7 +25,13 @@
 }
 .nav-item:not(:last-child),
 .info-bar-item:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: .5rem;
+}
+.nav-item:not(:last-child):after,
+.info-bar-item:not(:last-child):after {
+  content: "|";
+  margin-left: .5rem;
+  color: #3e7da8;
 }
 .info-bar-item .label {
   color: #555;
