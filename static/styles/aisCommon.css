@@ -1603,13 +1603,15 @@ ul.progress_bar {
 }
 .nav-item:not(:last-child),
 .info-bar-item:not(:last-child) {
-  margin-right: .5rem;
+  margin-right: .75rem;
 }
 .nav-item:not(:last-child):after,
 .info-bar-item:not(:last-child):after {
   content: "|";
-  margin-left: .5rem;
-  color: #3e7da8;
+  margin-left: .75rem;
+  color: #98b0c1;
+  font-size: 1rem;
+  line-height: .975rem;
 }
 .info-bar-item .label {
   color: #555;
