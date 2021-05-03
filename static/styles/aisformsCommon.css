@@ -4448,6 +4448,19 @@ section.portalMessage header {
   vertical-align: middle;
 }
 
+/* PAGE: role editor --> */
+
+.RoleEditor .menus ol {
+  display: flex;
+  list-style-type: none;
+  padding-left: 1rem;
+}
+.RoleEditor .menus li {
+  margin-right: 1rem;
+  font-style: normal;
+}
+/* <-- PAGE: role editor */
+
 /* PAGES: PROCTORED EXAM --> */
 form.has-unsaved-edits {
   border-left: 3px solid #de463d;
