@@ -1589,6 +1589,7 @@ ul.progress_bar {
 }
 .info-bar {
   background-color: #f1f2f3;
+  border-bottom: 1px solid #e3e6e8;
 }
 .info-bar ~ .info-bar {
   background-color: #f7f7f8;
@@ -1602,7 +1603,15 @@ ul.progress_bar {
 }
 .nav-item:not(:last-child),
 .info-bar-item:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: .75rem;
+}
+.nav-item:not(:last-child):after,
+.info-bar-item:not(:last-child):after {
+  content: "|";
+  margin-left: .75rem;
+  color: #98b0c1;
+  font-size: 1rem;
+  line-height: .975rem;
 }
 .info-bar-item .label {
   color: #555;
