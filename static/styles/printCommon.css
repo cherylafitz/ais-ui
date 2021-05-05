@@ -225,10 +225,6 @@ td .TextQuestion {
 .form-input label:first-child {
   width: 10rem;
 }
-.has-long-questions .form-input.has-legal-custody label:first-child,
-.has-long-questions .form-input.lives-with label:first-child {
-  width: 17em;
-}
 .QuestionText {
   display: block;
   margin-right: .5em;
