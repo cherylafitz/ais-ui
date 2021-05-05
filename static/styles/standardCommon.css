@@ -1184,3 +1184,10 @@ div.BeforeQuestion table.TBorderNone tr td {
 .Content .BeforeQuestion {
   clear: both;
 }
+
+/* LONG QUESTIONS --> */
+.has-long-questions .form-input.has-legal-custody label:first-child,
+.has-long-questions .form-input.lives-with label:first-child {
+  width: 18em;
+}
+/* <-- LONG QUESTIONS */

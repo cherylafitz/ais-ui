@@ -180,7 +180,9 @@ ul {
 input[type=text],
 .TextQuestion,
 select.ChoiceQuestion,
-.DateQuestion {
+.form-input select,
+.DateQuestion
+input[type=email] {
   text-decoration: underline;
 }
 /* ANSWERS IN TABLES */
@@ -199,10 +201,33 @@ td .TextQuestion {
 }
 
 /* QUESTION AND ANSWER DISPLAY */
-.QuestionItem .QuestionText .Title {
+.QuestionItem .QuestionText .Title,
+.form-input label {
   font-weight: bold;
   margin-top: .25em;
   padding-top: .25em;
+}
+.form-input label {
+  display: inline-block;
+}
+.form-input input[type="text"],
+.form-input input[type="search"],
+.form-input input[type="email"],
+.form-input input[type="tel"],
+.form-input input[type="url"],
+.form-input input[type="number"],
+.form-input input[type="password"],
+.form-input textarea {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+.form-input label:first-child {
+  width: 10rem;
+}
+.has-long-questions .form-input.has-legal-custody label:first-child,
+.has-long-questions .form-input.lives-with label:first-child {
+  width: 17em;
 }
 .QuestionText {
   display: block;
@@ -572,31 +597,36 @@ option:not([selected]) {display: none;}
 .fromApplicant optgroup:disabled,
 .fromApplicant option:disabled,
 .fromApplicant select[disabled] > option {
-  color: #333333 !important;
-  -webkit-text-fill-color: #333333;
+  color: #000 !important;
+  -webkit-text-fill-color: #000;
   border: 0;
-  font-size: .875em;
   background: white;
   border-radius: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
 }
-
-div.Content div.GroupedItem
+fieldset {
+  border: none;
+}
+div.Content div.GroupedItem,
+fieldset
   {
     padding: 0 10pt 6pt;
     margin: 1em 0 1em .75em;
     border-left: 2px solid #cecece;
   }
-div.Content div.GroupedItem:before {
+div.Content div.GroupedItem:before,
+fieldset:before {
     content: "";
     width: 48pt;
     border-top: 4px solid #3a3d40;
     height: 10px;
     display: inline-block;
     margin-left: -11pt;
+    margin-top: -.5rem;
 }
-div.Content div.GroupedItem:after {
+div.Content div.GroupedItem:after,
+fieldset:after {
   content: "";
   width: 48pt;
   border-bottom: 2px solid #cecece;
@@ -605,7 +635,15 @@ div.Content div.GroupedItem:after {
   margin-left: -11pt;
   margin-bottom: -6pt;
 }
-
+fieldset fieldset {
+  margin-left: 0;
+}
+fieldset fieldset:before {
+  border-color: #cecece;
+}
+fieldset .form-input:last-child {
+  margin-bottom: .5rem;
+}
 /*.Content div.SectionDisplay table th,
 div.Content table.AnswerTable tr.headerRow th {
   background-color: #5D5E57;
@@ -873,6 +911,7 @@ section img.ProgramLogo600w {
   margin-bottom: 1rem;
   display: block;
 }
+
  TABLES --> */
 
 .QuestionAnswer .RowDisplay td,
@@ -1050,3 +1089,10 @@ table.row-display {
 .Content .BeforeQuestion {
   clear: both;
 }
+
+/* LONG QUESTIONS --> */
+.has-long-questions .form-input.has-legal-custody label:first-child,
+.has-long-questions .form-input.lives-with label:first-child {
+  width: 18em;
+}
+/* <-- LONG QUESTIONS */
