@@ -201,14 +201,16 @@ td .TextQuestion {
 }
 
 /* QUESTION AND ANSWER DISPLAY */
-.QuestionItem .QuestionText .Title,
-.form-input label {
+.QuestionItem .QuestionText .Title {
   font-weight: bold;
   margin-top: .25em;
   padding-top: .25em;
 }
-.form-input label {
-  display: inline-block;
+input[type=email] {
+  min-width: 25em;
+}
+.form-input {
+  margin-bottom: .5em;
 }
 .form-input input[type="text"],
 .form-input input[type="search"],
@@ -217,13 +219,21 @@ td .TextQuestion {
 .form-input input[type="url"],
 .form-input input[type="number"],
 .form-input input[type="password"],
-.form-input textarea {
+.form-input textarea,
+.form-input select {
   background-color: transparent;
   border: 0;
   padding: 0;
+  vertical-align: top;
+  margin: 0;
+}
+.form-input label {
+  display: inline-block;
+  font-weight: bold;
 }
 .form-input label:first-child {
-  width: 10rem;
+  width: 12em;
+  min-width: 12em;
 }
 .QuestionText {
   display: block;
@@ -636,9 +646,6 @@ fieldset fieldset {
 }
 fieldset fieldset:before {
   border-color: #cecece;
-}
-fieldset .form-input:last-child {
-  margin-bottom: .5rem;
 }
 /*.Content div.SectionDisplay table th,
 div.Content table.AnswerTable tr.headerRow th {
@@ -1090,5 +1097,6 @@ table.row-display {
 .has-long-questions .form-input.has-legal-custody label:first-child,
 .has-long-questions .form-input.lives-with label:first-child {
   width: 18em;
+  min-width: 18em;
 }
 /* <-- LONG QUESTIONS */

@@ -1189,5 +1189,6 @@ div.BeforeQuestion table.TBorderNone tr td {
 .has-long-questions .form-input.has-legal-custody label:first-child,
 .has-long-questions .form-input.lives-with label:first-child {
   width: 18em;
+  min-width: 18em;
 }
 /* <-- LONG QUESTIONS */
