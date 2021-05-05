@@ -181,7 +181,7 @@ input[type=text],
 .TextQuestion,
 select.ChoiceQuestion,
 .form-input select,
-.DateQuestion
+.DateQuestion,
 input[type=email] {
   text-decoration: underline;
 }
