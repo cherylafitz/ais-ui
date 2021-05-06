@@ -1,7 +1,7 @@
 /* LONG QUESTIONS --> */
 .has-long-questions .form-input.has-legal-custody label:first-child,
 .has-long-questions .form-input.lives-with label:first-child {
-  width: 18em;
-  min-width: 18em;
+  width: 22em;
+  min-width: 22em;
 }
 /* <-- LONG QUESTIONS */
