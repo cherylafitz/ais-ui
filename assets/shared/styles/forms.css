@@ -252,7 +252,6 @@ fieldset.yes-no-picker legend {
 	font-size: .875rem;
 }
 .fieldset-content .form-input {
-  display: inline-block;
   margin-bottom: 0;
 }
 .fieldset-content .form-input:first-child:nth-last-child(n + 4),
