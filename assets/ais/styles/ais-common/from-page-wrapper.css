@@ -17,7 +17,8 @@
 }
 
 .showHoverable.erxHoverArea:before {
-  content: url(../img/information_symbol_16.png);
+  /* NEED NEW URL */
+  /*content: url(../img/information_symbol_16.png);*/
   left: -18px; 
   position: absolute;
 }
@@ -39,13 +40,13 @@
   position: static;
   display: inline-block;
   width: auto;
-  height: auto;*/
+  height: auto;
 }
 
 .infoIconOnRight .showHoverable.erxHoverArea:before {
   display: none;
   left: auto; 
-  position: static;*/
+  position: static;
 }
 
 .infoIconOnRight .hiddenHoverableShield:after {
@@ -58,7 +59,8 @@
 }
 
 .infoIconOnRight .showHoverable.erxHoverArea:after {
-  content: url(../img/information_symbol_16.png);
+  /* NEED NEW URL! */
+  /*content: url(../img/information_symbol_16.png);*/
   right: -24px; 
   position: absolute;
 }
