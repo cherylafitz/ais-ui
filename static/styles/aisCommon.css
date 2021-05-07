@@ -1110,8 +1110,8 @@ fieldset.yes-no-picker .form-input {
   align-items: center;
 	margin-bottom: 0;
 }
-fieldset.yes-no-picker label {
-  margin: 0 .5rem 0 .125rem;
+fieldset.yes-no-picker .form-input:not(:last-child) label {
+  margin: 0 1.25rem 0 .125rem;
 }
 fieldset.yes-no-picker legend {
 	font-weight: normal;
@@ -5435,6 +5435,82 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 }
 
 /* <-- PAGE: Combinator tool */
+
+/* FROM PAGE WRAPPER --> */
+
+/** START - AjaxHoverable custom styling **/
+/* copy of this is in air.css */
+
+.showHoverable.erxHoverArea {
+  margin-left: 18px !important;
+}
+
+.hiddenHoverableShield:before {
+  content: "";
+  left: -18px; 
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+}
+
+.showHoverable.erxHoverArea:before {
+  content: url(../img/information_symbol_16.png);
+  left: -18px; 
+  position: absolute;
+}
+
+.infoIconOnRight .showHoverable.erxHoverArea {
+  margin-right: 18px !important;
+}
+
+/* here we flip the icon to the right by adding the class "infoIconOnRight" to the enclosing tag */
+
+.infoIconOnRight .showHoverable.erxHoverArea {
+  margin-left: 0px !important;
+  margin-right: 24px !important;
+}
+
+.infoIconOnRight .hiddenHoverableShield:before {
+  display: none;
+  left: auto; 
+  position: static;
+  display: inline-block;
+  width: auto;
+  height: auto;*/
+}
+
+.infoIconOnRight .showHoverable.erxHoverArea:before {
+  display: none;
+  left: auto; 
+  position: static;*/
+}
+
+.infoIconOnRight .hiddenHoverableShield:after {
+  content: "";
+  right: -24px; 
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+}
+
+.infoIconOnRight .showHoverable.erxHoverArea:after {
+  content: url(../img/information_symbol_16.png);
+  right: -24px; 
+  position: absolute;
+}
+
+/** END - AjaxHoverable custom styling **/
+
+
+.hiddenTextForShowHide {
+  display: none;
+  color: #fff;
+}
+
+
+/* <-- FROM PAGE WRAPPER */
 
 /* logged in site header --> */
 

@@ -1110,8 +1110,8 @@ fieldset.yes-no-picker .form-input {
   align-items: center;
 	margin-bottom: 0;
 }
-fieldset.yes-no-picker label {
-  margin: 0 .5rem 0 .125rem;
+fieldset.yes-no-picker .form-input:not(:last-child) label {
+  margin: 0 1.25rem 0 .125rem;
 }
 fieldset.yes-no-picker legend {
 	font-weight: normal;
