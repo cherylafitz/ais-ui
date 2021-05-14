@@ -883,6 +883,7 @@ textarea {
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   padding: .1875rem .25rem;
   font-size: .875rem;
+  max-width: 100%;
 }
 input[type="email"] {
   width: 20rem;
