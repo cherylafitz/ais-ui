@@ -883,6 +883,7 @@ textarea {
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   padding: .1875rem .25rem;
   font-size: .875rem;
+  max-width: 100%;
 }
 input[type="email"] {
   width: 20rem;
@@ -4713,6 +4714,13 @@ table.row-display .row-display tr:first-of-type td {
   padding: .5rem;
 }
 /* <-- Specific cell styles */
+
+/* restrict widths for small cells --> */
+.row-display .SectionItemNumber {
+  max-width: 6rem;
+}
+/* <-- restrict widths for small cells */
+
 
 
 /* <-- generic and NEW STYLES (remove RowDisplay styles when appropriate) */

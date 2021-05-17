@@ -55,6 +55,13 @@ table.row-display .row-display tr:first-of-type td {
 }
 /* <-- Specific cell styles */
 
+/* restrict widths for small cells --> */
+.row-display .SectionItemNumber {
+  max-width: 6rem;
+}
+/* <-- restrict widths for small cells */
+
+
 
 /* <-- generic and NEW STYLES (remove RowDisplay styles when appropriate) */
 
