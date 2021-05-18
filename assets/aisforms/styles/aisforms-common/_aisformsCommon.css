@@ -526,7 +526,7 @@ div.Main div.staffHome div.Deadlines {
 }
 .Content .Main.Administrator .staffHome,
 .Content .Main[class*="Staff"] .staffHome,
-.Content .Main.Developer {
+.Content .Main.Developer .staffHome {
   order: 2;
   flex-basis: 600px;
   flex-grow: 1;
