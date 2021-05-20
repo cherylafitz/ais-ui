@@ -28,4 +28,7 @@ table.RowDisplay tr {
 td.percent:not(:empty)::after {
     content: "%";
 }
+tr.has-pii td.pii {
+  background-color: #ffb699ab;
+}
 /* <-- SHARED TABLE STYLES */
