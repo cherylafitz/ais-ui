@@ -1127,9 +1127,6 @@ legend {
 legend a {
   font-size: .75rem;
 }
-fieldset .radio-button-wrapper {
-  display: inline-block;
-}
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin: 0 0 .75rem;
