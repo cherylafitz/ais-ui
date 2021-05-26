@@ -375,7 +375,6 @@ div.Content div.ListOfUsers td.IsLoggedIn {
 div.Content div.AIRAdminSearchForApplications div.instructions {
   font-size: .8em;
   margin: 0 auto;
-  color: #999;
 }
 .applicationTemplateIsLive {
   background-color: #FFE6BC;
@@ -432,9 +431,6 @@ table caption {
   text-align: left;
   padding-bottom: .5em;
   caption-side: top;
-}
-.UpcomingDeadlinesHeader .showDeadlinesPage {
-  color: #999;
 }
 .LiveTemplates .paginatorContainer,
 .Deadlines .paginatorContainer {
@@ -1679,7 +1675,7 @@ div#Growler {
 }
 
 .SecurityStamp {
-  color: #999;
+  color: #777;
   font-size: .8em;
 }
 
