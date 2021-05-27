@@ -5508,6 +5508,12 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 
 /* <-- PAGE: Combinator tool */
 
+/* FORM ONE-OFFS --> */
+.AISReportEditor input[type="text"] {
+  width: 20rem;
+}
+/* <-- FORM ONE-OFFS */
+
 /* FROM PAGE WRAPPER --> */
 
 /** START - AjaxHoverable custom styling **/
