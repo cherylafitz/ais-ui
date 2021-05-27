@@ -47,6 +47,13 @@ table.row-display .row-display tr:first-of-type td {
 }
 /* <-- WRAPPING CELLS */
 
+/* min widths --> */
+td.ProgramName {
+  min-width: 7.5rem
+}
+/* <-- min widths */
+
+
 /* Specific cell styles --> */
 .row-display td.delete,
 .RowDisplay td.delete {

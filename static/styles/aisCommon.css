@@ -711,7 +711,64 @@ details.language-block {
 details[class*="language"] .details-content {
   background-color: #f4f4fb;
 }
-
+/* info "i" --> */
+details.extra-information {
+  display: inline-block;
+}
+details.extra-information summary::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  top: .6rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+} 
+details.extra-information summary::after {
+  content: "i";
+  position: absolute;
+  left: .37rem;
+  top: 0;
+  font-weight: bold;
+}
+/* overrides base details styles */
+details[open].extra-information > summary::before {
+  -ms-transform: none;
+  -o-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  left: 0;
+  top: .1rem;
+}
+details.extra-information > .details-content {
+  position: absolute;
+}
+/* overrides base details styles within tables */
+table.row-display details.extra-information > .details-content,
+details.extra-information > .details-content {
+  background-color: #f0f6fa;
+  width: fit-content;
+  width: -moz-fit-content; 
+  width: -webkit-fit-content;
+  -webkit-box-shadow: rgb(0 0 0 / 13%) 0px 6px 14px 0px, rgb(0 0 0 / 11%) 0px 1px 4px 0px;
+  -moz-box-shadow: rgb(0 0 0 / 13%) 0px 6px 14px 0px, rgb(0 0 0 / 11%) 0px 1px 4px 0px;
+  box-shadow: rgb(0 0 0 / 13%) 0px 6px 14px 0px, rgb(0 0 0 / 11%) 0px 1px 4px 0px;
+  padding: .25rem .5rem;
+  margin-top: .5rem;
+  border-radius: 2px;
+  /*position: relative;*/
+  z-index: 1;
+}
+details.extra-information > .details-content::before {
+  content: "";
+  border: 8px solid transparent;
+  border-bottom: 9px solid #f0f6fa;
+  top: -1rem;
+  left: .35rem;
+  position: absolute;
+  filter: drop-shadow(1px -2px 2px rgb(0 0 0 / 13%));
+}
 /* <-- END DETAILS STYLES */
 
 /* DOWNLOADS --> */
