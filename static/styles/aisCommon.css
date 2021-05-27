@@ -725,8 +725,7 @@ details.extra-information summary::before {
   border: 1px solid currentColor;
   border-radius: 50%;
 } 
-details.extra-information summary::after,
-.ProgramName summary::after {
+details.extra-information summary::after {
   content: "i";
   position: absolute;
   left: .37rem;
