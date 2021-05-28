@@ -1013,7 +1013,8 @@ input[type="file"] {
   text-align: right;
 }
 .form-input label:first-child,
-.generated-field > .label:first-child {
+.generated-field > .label:first-child,
+.form-input > .label:first-child {
 	padding-right: .5rem;
 	width: 10rem;
 }
@@ -1290,14 +1291,18 @@ form[class$="-search"] .form-section-content {
 
 /* Email forms --> */
 
-.EmailTemplate .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
-.EmailTemplate .form-input textarea, 
-.EmailTemplate .form-input select, 
-.EmailTemplate .generated-field > .preview, 
-.EmailTemplate .generated-field > .value {
+[class*="EmailTemplate"] .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+[class*="EmailTemplate"] .form-input textarea, 
+[class*="EmailTemplate"] .form-input select, 
+[class*="EmailTemplate"] .generated-field > .preview, 
+[class*="EmailTemplate"] .generated-field > .value {
   width: 34rem;
   max-width: 100%;
 }
+[class*="EmailTemplate"] .form-input textarea {
+  min-height: 18rem;
+}
+/* <-- Email forms */
 
 @media only screen and (max-width : 30rem) {
 	.form-input select,
