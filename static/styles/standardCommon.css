@@ -86,7 +86,8 @@ div.QuestionText div.Instruction ul {
 
 /* Section Name and Headers--> */
 .SectionDisplay div.SectionName,
-#ApplicationTemplateDisplayAUC .SectionDisplay h1.section-name {
+#ApplicationTemplateDisplayAUC .SectionDisplay h1.section-name,
+.SectionDisplay h1.section-name {
   font-size: 1.875rem;
   color: #2E6B9B;
   border-bottom: 2px solid #2E6B9B;
@@ -429,7 +430,8 @@ div.Content div.TextGeneric10 {
 }
 
 div.Content div.Divider,
-div#ApplicationTemplateDisplayAUC .SectionDisplay h1 {
+div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
+.SectionDisplay h1 {
   font-size: 1.5rem;
   color: #025689;
   margin-top: 0.5em;
