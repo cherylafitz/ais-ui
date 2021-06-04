@@ -1003,6 +1003,7 @@ input[type="file"] {
 .form-input,
 .generated-field {
 	margin-bottom: .5rem;  
+  white-space: normal;
 }
 .form-input .action,
 .generated-field .action {
@@ -1047,7 +1048,8 @@ input[type="file"] {
   border-radius: 2px;
   border: 1px solid #e2e7e9;
 }
-.form-section .generated-field > .value {
+.form-section .generated-field > .value,
+.details-content .generated-field > .value {
   border-color: #d3dbde;
 }
 .generated-field > .value,
