@@ -4536,6 +4536,13 @@ section.portalMessage header {
 }
 /* <-- PAGE: role editor */
 
+/* PAGE: USER HOME --> */
+.MyForms .TrackRecentChanges {
+  margin-top: .5rem;
+  min-width: 5rem;
+}
+/* <-- PAGE: USER HOME */
+
 /* PAGES: PROCTORED EXAM --> */
 form.has-unsaved-edits {
   border-left: 3px solid #de463d;
