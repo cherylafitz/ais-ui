@@ -838,6 +838,14 @@ table.ExcelDataTabulated td {
 
 /* <-- ADDRESS TABLE */
 
+/* One off styles -->  */
+
+.BeenToAlumniWorkshopsBeforeMulti .CheckboxMatrix span > table {
+  table-layout: fixed;
+  width: 100%;
+}
+/* <-- One off styles */
+
 /* TABLES --> */
 .SectionDisplay th {
   white-space: normal;
