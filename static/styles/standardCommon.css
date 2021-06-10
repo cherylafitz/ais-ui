@@ -32,7 +32,9 @@
 .dayMonthYear:after {
   content: ",";
 }
-
+.dayMonthYear:last-child:after {
+  content: "";
+}
 
 /* */
 /* <!--VARIABLE Setup */
