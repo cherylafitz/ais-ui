@@ -2031,9 +2031,14 @@ div.Content span.SharedTeamManagement {
   border: medium solid #de6846;
   border-radius: 1em;
   padding: 0.5em;
-  margin: 1em 0;
+  margin: .75em 0;
+  display: inline-block;
 }
-
+div.Content .AdminFormNav span.TrackChanges,
+div.Content .AdminFormNav span.TrackRecentChanges,
+div.Content span.SharedTeamManagement {
+  margin: 0 .25rem;
+}
 div.Main .SharedLegend {
     font-style: normal;
     font-weight: normal;
