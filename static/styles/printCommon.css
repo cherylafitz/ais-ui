@@ -114,7 +114,7 @@ ul {
   margin-bottom: .5em;
 }
 /* COLORS */
-.SectionDisplay .SectionName {
+.SectionDisplay .section-name  {
   border-bottom: 2px solid #025689;
   font-size: 1.75em;
   padding-top: .75em;
