@@ -1026,7 +1026,7 @@ input[type="file"] {
 .form-input input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]),
 .form-input textarea,
 .form-input select,
-.from-to-date-picker .input-group-label {
+.input-group-label {
 	display: inline-block;
 	line-height: 1.2;
 	max-width: 100%;
@@ -1120,12 +1120,16 @@ input[type=checkbox]:checked + label {
 	min-height: 1.25rem;
 	min-width: 14rem;
 }
-.input-group-label {
-	font-size: 1.25rem;
-	width: 10rem;
+.input-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.input-group ~ .input-group,
+.input-group ~ .form-input {
+  margin-top: .75rem;
 }
 .input-group-content {
-	margin: .25rem 0 .25rem 1rem;
+	margin: 0 0 .25rem 1rem;
 }
 .input-group-content .form-input label:first-child {
 	width: 9rem;
@@ -1136,7 +1140,7 @@ input[type=checkbox]:checked + label {
 	flex-wrap: wrap;
 	margin: 0 0 0 1rem;
 }
-.from-to-date-picker .input-group-label {
+.input-group-label {
 	width: 9rem;
 }
 .from-to-date-picker {
@@ -1193,14 +1197,6 @@ fieldset.yes-no-picker {
 	width: -moz-fit-content;
 	width: -webkit-fit-content;
 	width: fit-content;
-}
-fieldset.yes-no-picker .form-input {
-	display: inline-flex;
-  align-items: center;
-	margin-bottom: 0;
-}
-fieldset.yes-no-picker .form-input:not(:last-child) label {
-  margin: 0 1.25rem 0 .125rem;
 }
 fieldset.yes-no-picker legend {
 	font-weight: normal;
@@ -1268,7 +1264,7 @@ form[class$="-search"] .form-section h2 {
 	flex: 0 0 10rem;
 }
 form[class$="-search"] .form-section-content {
-	margin-top: .25rem
+	margin-top: .5rem
 }
 /* <-- SEARCH */
 
