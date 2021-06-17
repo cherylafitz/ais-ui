@@ -20,16 +20,10 @@
 .sub-nav .page-actions {
   margin-left: auto;
 }
-.info-bar-item {
-  flex: 0 1 15rem;
-}
-/* exceptions --> */
-.info-bar-item.module {
-  flex-basis: initial;
-}
 .nav-item:not(:last-child),
 .info-bar-item:not(:last-child) {
   margin-right: .75rem;
+  flex: 0 1 15rem; /* last child can be long item */
 }
 .info-bar-item .label {
   color: #555;
