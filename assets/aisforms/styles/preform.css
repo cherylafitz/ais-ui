@@ -207,6 +207,7 @@ div[id$="_textBefore"] .QuestionNumber {
 #app_sectionFooterToolbar,
 #app_sectionHeaderToolbar {
   background-color: #33424d;
+  width: 100%;
 }
 .section-form-fields-view .detailScroller {
   padding: .5rem 1.5rem;
