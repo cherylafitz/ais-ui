@@ -1800,7 +1800,7 @@ tr.has-pii td.pii {
 
 [class*="-tag"] {
 	padding: 0 .25rem;
-	font-size: .75rem;
+	font-size: .875rem;
 	margin: 0 .25rem;
 	border-radius: 2px;
 }
