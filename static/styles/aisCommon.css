@@ -1779,6 +1779,9 @@ th {
 .RowDisplay .number {
   text-align: right;
 }
+.row-display th {
+  text-align: left;
+}
 thead .aisid input[list*="Filter"] {
   width: 8rem;
 }
