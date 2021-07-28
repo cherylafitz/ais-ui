@@ -1587,11 +1587,15 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
 }
 .data-display-section .generated-field > .value {
   background: #e3e6e8;
+  border: 0;
   border-left: 1px solid #e3e3e3;
   border-right: 1px solid #e3e3e3;
   flex-grow: 1;
   padding: .5rem .5rem .5rem.75rem;
   font-style: normal;
+}
+.data-display-section .generated-field .generated-field > .value {
+    background-color: hsl(204 10% 86% / 1);
 }
 .data-display-section .generated-field > .label {
   padding: .5rem .75rem .5rem 0;
