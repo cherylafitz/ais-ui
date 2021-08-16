@@ -3,19 +3,19 @@
   margin-top: .5rem;
   min-width: 5rem;
 }
-.AvailablePrograms .Deadline ol {
+#FormsWrapper ol {
   padding: 0 1rem;
   margin: 0;
 }
-.AvailablePrograms .Deadline li {
+#FormsWrapper li {
   margin-bottom: .5rem;
 }
-.AvailablePrograms .Deadline .program-name,
-.AvailablePrograms .Deadline .deadline {
+#FormsWrapper td span.program-name,
+#FormsWrapper td span.deadline {
   display: block;
   white-space: nowrap;
 }
-.AvailablePrograms td.Program {
+#FormsWrapper td.Program {
   max-width: 10rem;
 }
 /* <-- PAGE: USER HOME */
