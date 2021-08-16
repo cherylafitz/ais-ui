@@ -99,7 +99,10 @@ ul {
   margin: .25rem 0;
   padding: 0 2rem;
 }
-.onyx-input-decorator,
+.onyx-input-decorator {
+  padding: 0;
+  border: 0;
+}
 .onyx-input {
   background-color: #fff;
   border: 1px solid #C7C7C7;
@@ -217,14 +220,15 @@ div[id$="_textBefore"] .QuestionNumber {
   background-position: 0px -130px;
   border: 1px solid #999;
   border-radius: 9px;
-  height: 30px;
-  width: 30px;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 2px;
 }
 .onyx-checkbox[checked],
 .onyx-checkbox[disabled] {
   border: 0;
-  height: 32px;
-  width: 32px;
+  height: 1rem;
+  width: 1rem;
 }
 #app_sectionItemsList_ownerProxy_placedQuestion_switchComponent_placed_multiChoiceList_ownerProxy_inputDecorator {
   box-shadow: none;
@@ -466,9 +470,6 @@ and (min-width: 768px) {
   }
   #app_userDataEntryContent #webcam-widget-wrapper-id {
     width: 330px;
-  }
-  #app_userDataEntryContent #app_sectionItemsList {
-    width: calc(100% - 370px);
   }
 }
 @media only screen
