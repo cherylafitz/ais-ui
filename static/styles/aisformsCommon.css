@@ -4539,6 +4539,21 @@ section.portalMessage header {
   margin-top: .5rem;
   min-width: 5rem;
 }
+.AvailablePrograms .Deadline ol {
+  padding: 0 1rem;
+  margin: 0;
+}
+.AvailablePrograms .Deadline li {
+  margin-bottom: .5rem;
+}
+.AvailablePrograms .Deadline .program-name,
+.AvailablePrograms .Deadline .deadline {
+  display: block;
+  white-space: nowrap;
+}
+.AvailablePrograms td.Program {
+  max-width: 10rem;
+}
 /* <-- PAGE: USER HOME */
 
 /* PAGES: PROCTORED EXAM --> */
