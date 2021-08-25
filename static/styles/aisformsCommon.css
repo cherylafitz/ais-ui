@@ -4797,7 +4797,8 @@ table.row-display .row-display tr:first-of-type td {
   white-space: normal;
   max-width: 500px;
 }
-#LiveTemplateTableID th {
+#LiveTemplateTableID th,
+table.rolodex .TemplatePicker td {
   white-space: normal;
 }
 /* <-- WRAPPING CELLS */
