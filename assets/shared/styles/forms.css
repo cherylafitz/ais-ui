@@ -127,7 +127,8 @@ input[type="file"] {
   width: 100%; /* textareas containing CSS need to be full width */
 }
 .form-input textarea {
-  max-width: 600px;
+  /*max-width: 600px; consider removing permanently */
+  max-width: 100%;
 }
 .generated-field > .value {
   max-width: 850px;
