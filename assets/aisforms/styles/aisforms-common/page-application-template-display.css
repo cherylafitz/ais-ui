@@ -1,0 +1,74 @@
+/* PAGE: APPILCATION TEMPLATE DISPLAY --> */
+  div#ApplicationTemplateDisplayAUC .sub-nav ~ .page-heading {
+    margin: -1rem -1.25rem 1rem;
+    padding: 1rem 1.25rem;
+    background: #f1f2f3;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: baseline;
+    flex-flow: row wrap;
+  }
+  .sub-nav .previous-page-link {
+    margin: 0;
+  }
+  .info-bar-item dt, .info-bar-item dd {
+    display: inline-block;
+    margin: 0;
+  }
+  .info-tag.in-testing {
+    background-color: #62deff !important;
+    margin: 0;
+  }
+  .info-tag.edit-mode {
+    background-color: #d0d0fb;
+    margin: 0 .75rem 0 0;
+  }
+  .page-heading .template-name {
+    margin-right: .5rem;
+  }
+  .page-heading .of-user {
+    font-size: 1rem;
+  }
+  .page-heading .of-user::before{
+    content: "(";
+  }
+  .page-heading .of-user::after{
+    content: ")";
+  }
+  dt {
+    font-weight: normal;
+  }
+  dl {
+    margin: 0;
+  }
+  .form-view-header .program-override-name {
+    margin-right: auto;
+  }
+  .info-bar-item.reference-code {
+    margin-left: auto;
+  }
+  .form-view-header .info-bar {
+    margin-bottom: 0;
+  }
+  .super.info-tag {
+    padding: .125rem .75rem;
+    font-size: 1rem;
+    border-radius: 100px;
+  }
+  .info-bar-item.generated-field-group,
+  .info-bar-item .generated-field-group-content {
+    display: flex;
+  }
+  .info-bar-item .generated-field-group-label {
+    margin-right: 1rem;
+    white-space: nowrap;
+  }
+  .info-bar-item .generated-field-group-label:after {
+    content: ":";
+  }
+  .multi-pipy-refs .reference-code {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+/* <-- PAGE: APPILCATION TEMPLATE DISPLAY */
