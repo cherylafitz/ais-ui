@@ -36,7 +36,7 @@ body {
 }
 .IsLoggedIn .Content {
   margin: 0;
-  padding: 1.5rem;
+  padding: 1.5rem 1.25rem;
   position: relative;
   background-color: transparent;
   clear: both;
@@ -512,7 +512,7 @@ div.Main div.staffHome div.Deadlines {
 .Content .Main[class*="Staff"] .AdminHomeLinks,
 .Content .Main.Developer .AdminHomeLinks {
   order: 1;
-  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  margin: -1.5rem -1.25rem 1rem;
   padding: 1rem;
   background-color: #33424d;
   flex-grow: 1;
@@ -722,7 +722,7 @@ table.TemplateTable tr td {
 #UserHomePage {
   display: flex;
   flex-flow: row wrap;
-  margin: -1.5rem;
+  margin: -1.5rem -1.25rem;
   flex-grow: 1;
   flex-shrink: 0;
 }
@@ -829,7 +829,7 @@ table.TemplateTable tr td {
 .HomeProgramAfterContent .Tips {
   background-color: #33424d;
   padding: 1.5rem;
-  margin: -1.5rem;
+  margin: -1.5rem -1.25rem;
 }
 .Tips article {
   font-size: .875rem;
@@ -1021,7 +1021,7 @@ div.ApplicationTemplateDisplay h2 {
 .ApplicationTemplateDisplay h1.FormViewHeader,
 .ApplicationTemplateDisplay h1.editing,
 .ApplicationTemplateDisplay h2.ProgramNameLabel {
-  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  margin: -1.5rem -1.25rem 1rem;
   padding: .75rem 1rem .5rem;
   background-color: #e4e5e7;
 }
@@ -1031,6 +1031,9 @@ div.ApplicationTemplateDisplay h2 {
 .AdminFormNav {
   font-size: .875em;
   margin-bottom: 1.5rem;
+}
+.AdminFormNav .FormActions {
+  float: right;
 }
 .SectionDisplay h1 {
   margin: .5em 0;
@@ -2138,7 +2141,7 @@ button:hover {
   .Content .Main[class*="Staff"] .AdminHomeLinks,
   .Content .Main.Developer .AdminHomeLinks {
     flex-grow: 0;
-    margin: -1.5rem 0 -4.25rem -1.5rem;
+    margin: -1.5rem 0 -4.25rem -1.25rem;
   }
   .Content .staffHome {
     margin-left: 1.75rem;

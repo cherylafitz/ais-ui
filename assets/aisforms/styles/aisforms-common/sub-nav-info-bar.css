@@ -1,0 +1,12 @@
+/* sub-nav info-bar AIS Forms only--> */
+
+.sub-nav,
+.info-bar {
+  margin: -1.5rem -1.25rem 1rem;
+  padding: .75rem 1rem;
+}
+.sub-nav ~ .info-bar {
+  margin: -1rem -1.25rem 1rem;
+}
+
+/* <--  sub-nav info-bar AIS Forms only */
