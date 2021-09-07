@@ -4588,12 +4588,15 @@ section.portalMessage header {
   .info-bar-item .generated-field-group-label {
     margin-right: 1rem;
     white-space: nowrap;
+    font-style: italic;
   }
   .info-bar-item .generated-field-group-label:after {
     content: ":";
   }
   .multi-pipy-refs .reference-code {
     display: flex;
+  }
+  .multi-pipy-refs .reference-code:not(:last-child) {
     margin-right: 1rem;
   }
 
@@ -4841,7 +4844,9 @@ div#buildAndInstance {
 .sub-nav ~ .info-bar {
   margin: -1rem -1.25rem 1rem;
 }
-
+.info-bar > dl {
+  display: contents;
+}
 /* <--  sub-nav info-bar AIS Forms only */
 
 /* TABLES --> */

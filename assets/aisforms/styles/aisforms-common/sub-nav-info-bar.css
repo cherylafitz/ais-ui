@@ -8,5 +8,7 @@
 .sub-nav ~ .info-bar {
   margin: -1rem -1.25rem 1rem;
 }
-
+.info-bar > dl {
+  display: contents;
+}
 /* <--  sub-nav info-bar AIS Forms only */
