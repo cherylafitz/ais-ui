@@ -24,6 +24,13 @@ textarea {
   font-family: inherit;
 }
 
+dt {
+  font-weight: normal;
+}
+dl {
+  margin: 0;
+}
+
 /* <-- END BASE STYLES */
 
 /* variables --> */
@@ -1661,16 +1668,13 @@ ul.progress_bar {
   padding: .5rem 1rem;
   font-size: .875rem;
   flex-flow: row wrap;
+  align-items: flex-end;
 }
 .sub-nav {
   background-color: #e4e5e7;
 }
 .info-bar {
   background-color: #f1f2f3;
-}
-.sub-nav:first-child,
-.info-bar:first-child {
-  padding-top: .75rem;
 }
 .sub-nav .page-actions {
   margin-left: auto;
@@ -1719,6 +1723,40 @@ ul.progress_bar {
 #contentPageProportional .info-bar + h1 {
   padding: 0;
   font-size: 1.5rem;
+}
+
+.info-bar .generated-field-group-content .label::after {
+  content: "";
+}
+.info-bar .generated-field-group-content .value {
+  font-weight: bold;
+}
+.sub-nav .previous-page-link {
+  margin: 0;
+}
+.info-bar-item dt, .info-bar-item dd {
+  display: inline-block;
+  margin: 0;
+}
+.info-bar-item.generated-field-group,
+.info-bar-item .generated-field-group-content {
+  display: flex;
+}
+.info-bar-item .generated-field-group-label {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+.info-bar-item .generated-field-group-label:after {
+  content: ":";
+}
+.info-bar ~ .page-heading {
+  margin: -1rem -1.25rem 0;
+  padding: 1rem;
+  background: #f1f2f3;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  flex-flow: row wrap;
 }
 
 /* <-- NAVIGATION */
@@ -1826,7 +1864,11 @@ tr.has-pii td.pii {
 .alert-tag {
 	background-color: #fbcec7;
 }
-
+.super.info-tag {
+  padding: .125rem .75rem;
+  font-size: 1rem;
+  border-radius: 100px;
+}
 /* overrides on one-off classes --> */
 .external-system-tag {
   padding: initial;
@@ -2848,7 +2890,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 div.ApplicationTemplateDisplay div.templateContent {
   display: flex;
 }
-
+/* remove when able! */
 div#ApplicationTemplateDisplayAUC h1 {
   font-size: .875rem;
 }
@@ -4525,81 +4567,53 @@ section.portalMessage header {
 }
 
 /* PAGE: APPILCATION TEMPLATE DISPLAY --> */
-  div#ApplicationTemplateDisplayAUC .sub-nav ~ .page-heading {
-    margin: -1rem -1.25rem 1rem;
-    padding: 1rem 1.25rem;
-    background: #f1f2f3;
+  div#ApplicationTemplateDisplayAUC .info-bar ~ .page-heading {
+    padding: 1rem;
     font-size: 1.5rem;
-    display: flex;
-    align-items: baseline;
-    flex-flow: row wrap;
   }
-  .sub-nav .previous-page-link {
-    margin: 0;
-  }
-  .info-bar-item dt, .info-bar-item dd {
-    display: inline-block;
-    margin: 0;
-  }
-  .info-tag.in-testing {
+  #ApplicationTemplateDisplayAUC .info-tag.in-testing {
     background-color: #62deff !important;
     margin: 0;
   }
-  .info-tag.edit-mode {
+  #ApplicationTemplateDisplayAUC .info-tag.edit-mode {
     background-color: #d0d0fb;
     margin: 0 .75rem 0 0;
   }
-  .page-heading .template-name {
+  #ApplicationTemplateDisplayAUC .page-heading .template-name {
     margin-right: .5rem;
   }
-  .page-heading .of-user {
+  #ApplicationTemplateDisplayAUC .page-heading .of-user {
     font-size: 1rem;
   }
-  .page-heading .of-user::before{
+  #ApplicationTemplateDisplayAUC .page-heading .of-user::before{
     content: "(";
   }
-  .page-heading .of-user::after{
+  #ApplicationTemplateDisplayAUC .page-heading .of-user::after{
     content: ")";
   }
-  dt {
-    font-weight: normal;
-  }
-  dl {
-    margin: 0;
-  }
-  .form-view-header .program-override-name {
+  #ApplicationTemplateDisplayAUC .form-view-header .program-override-name {
     margin-right: auto;
+    font-size: 1.125rem;
   }
-  .info-bar-item.reference-code {
+  #ApplicationTemplateDisplayAUC .info-bar-item.reference-code {
     margin-left: auto;
   }
-  .form-view-header .info-bar {
+  #ApplicationTemplateDisplayAUC .form-view-header .info-bar {
     margin-bottom: 0;
   }
-  .super.info-tag {
-    padding: .125rem .75rem;
-    font-size: 1rem;
-    border-radius: 100px;
-  }
-  .info-bar-item.generated-field-group,
-  .info-bar-item .generated-field-group-content {
+  #ApplicationTemplateDisplayAUC .multi-pipy-refs .reference-code {
     display: flex;
   }
-  .info-bar-item .generated-field-group-label {
-    margin-right: 1rem;
-    white-space: nowrap;
-    font-style: italic;
-  }
-  .info-bar-item .generated-field-group-label:after {
-    content: ":";
-  }
-  .multi-pipy-refs .reference-code {
-    display: flex;
-  }
-  .multi-pipy-refs .reference-code:not(:last-child) {
+  #ApplicationTemplateDisplayAUC .multi-pipy-refs .reference-code:not(:last-child) {
     margin-right: 1rem;
   }
-
+  #ApplicationTemplateDisplayAUC #no-multi-pipy-form-is-generally-submittable-id {
+    clear: both;
+    margin-top: 1rem;
+  }
+  #ApplicationTemplateDisplayAUC .info-bar-item.program-override-name {
+    flex:  0 1 auto;
+  }
 /* <-- PAGE: APPILCATION TEMPLATE DISPLAY */
 
 /* PAGE: role editor --> */
@@ -4839,7 +4853,7 @@ div#buildAndInstance {
 .sub-nav,
 .info-bar {
   margin: -1.5rem -1.25rem 1rem;
-  padding: .75rem 1rem;
+  padding: .5rem 1rem;
 }
 .sub-nav ~ .info-bar {
   margin: -1rem -1.25rem 1rem;
@@ -4847,6 +4861,7 @@ div#buildAndInstance {
 .info-bar > dl {
   display: contents;
 }
+
 /* <--  sub-nav info-bar AIS Forms only */
 
 /* TABLES --> */
