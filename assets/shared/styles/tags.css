@@ -21,7 +21,11 @@
 .alert-tag {
 	background-color: #fbcec7;
 }
-
+.super.info-tag {
+  padding: .125rem .75rem;
+  font-size: 1rem;
+  border-radius: 100px;
+}
 /* overrides on one-off classes --> */
 .external-system-tag {
   padding: initial;

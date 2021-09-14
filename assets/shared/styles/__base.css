@@ -24,4 +24,11 @@ textarea {
   font-family: inherit;
 }
 
+dt {
+  font-weight: normal;
+}
+dl {
+  margin: 0;
+}
+
 /* <-- END BASE STYLES */

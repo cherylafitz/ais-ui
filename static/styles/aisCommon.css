@@ -24,6 +24,13 @@ textarea {
   font-family: inherit;
 }
 
+dt {
+  font-weight: normal;
+}
+dl {
+  margin: 0;
+}
+
 /* <-- END BASE STYLES */
 
 /* variables --> */
@@ -1661,16 +1668,13 @@ ul.progress_bar {
   padding: .5rem 1rem;
   font-size: .875rem;
   flex-flow: row wrap;
+  align-items: flex-end;
 }
 .sub-nav {
   background-color: #e4e5e7;
 }
 .info-bar {
   background-color: #f1f2f3;
-}
-.sub-nav:first-child,
-.info-bar:first-child {
-  padding-top: .75rem;
 }
 .sub-nav .page-actions {
   margin-left: auto;
@@ -1719,6 +1723,40 @@ ul.progress_bar {
 #contentPageProportional .info-bar + h1 {
   padding: 0;
   font-size: 1.5rem;
+}
+
+.info-bar .generated-field-group-content .label::after {
+  content: "";
+}
+.info-bar .generated-field-group-content .value {
+  font-weight: bold;
+}
+.sub-nav .previous-page-link {
+  margin: 0;
+}
+.info-bar-item dt, .info-bar-item dd {
+  display: inline-block;
+  margin: 0;
+}
+.info-bar-item.generated-field-group,
+.info-bar-item .generated-field-group-content {
+  display: flex;
+}
+.info-bar-item .generated-field-group-label {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+.info-bar-item .generated-field-group-label:after {
+  content: ":";
+}
+.info-bar ~ .page-heading {
+  margin: -1rem -1.25rem 0;
+  padding: 1rem;
+  background: #f1f2f3;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  flex-flow: row wrap;
 }
 
 /* <-- NAVIGATION */
@@ -1826,7 +1864,11 @@ tr.has-pii td.pii {
 .alert-tag {
 	background-color: #fbcec7;
 }
-
+.super.info-tag {
+  padding: .125rem .75rem;
+  font-size: 1rem;
+  border-radius: 100px;
+}
 /* overrides on one-off classes --> */
 .external-system-tag {
   padding: initial;
