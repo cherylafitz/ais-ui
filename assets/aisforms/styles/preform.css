@@ -234,6 +234,16 @@ div[id$="_textBefore"] .QuestionNumber {
   background-position: 0px -16px;
   background-size: 1rem;
 }
+input[type=checkbox] {
+  margin-bottom: .5rem;
+}
+.active input[type=radio] + label,
+input[type=checkbox]:checked + label  {
+  font-weight: bold;
+}
+input + label {
+  padding-left: .25rem;
+}
 #app_sectionItemsList_ownerProxy_placedQuestion_switchComponent_placed_multiChoiceList_ownerProxy_inputDecorator {
   box-shadow: none;
   border:0;
