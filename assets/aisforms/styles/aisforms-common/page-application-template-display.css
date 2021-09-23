@@ -46,4 +46,11 @@
   #ApplicationTemplateDisplayAUC .info-bar-item.program-override-name {
     flex:  0 1 auto;
   }
+  #ApplicationTemplateDisplayAUC #multi-pipy-submit-wrapper-id {
+    clear: both;
+    margin-top: 2rem;
+  }
+ #ApplicationTemplateDisplayAUC .reference-code-wrapper .reference-code:not(:last-child) {
+    margin-right: 1.25rem;
+ }
 /* <-- PAGE: APPILCATION TEMPLATE DISPLAY */
