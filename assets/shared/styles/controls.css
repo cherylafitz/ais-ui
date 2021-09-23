@@ -120,10 +120,10 @@ input[type="button"],
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .0625rem .5rem .125rem .5rem;
+  padding: .65rem .75rem;
   background: #336789;
   border: 1px solid #346788;
-  font-size: .875rem;
+  font-size: 1rem;
 }
 .controls-wrapper a[class*="-button"] {
   text-decoration: none;

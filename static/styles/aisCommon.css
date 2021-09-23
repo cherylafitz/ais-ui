@@ -249,71 +249,6 @@ div.deadlineBox span.timeZone,
 
 /* <-- notice boxes */  
 
-/* BUTTONS --> */
-
-/* AIS only*/
-#contentPageProportional input[type="submit"],
-#contentPageProportional input[type="button"] {
-  margin: 0 .5rem .25rem 0;
-}
-#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
-  margin: 0 .5em .5em;
-}
-/* DELETE?? */
-#contentPageProportional input.SaveChanges {
-  margin: 1.5rem 0;
-}
-/* AIR app save button */
-#ApplicationTemplateDisplayAUC input.SaveChanges {
-  float: left;
-  margin-right: 3rem;
-}
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  background: #22465d;
-  border-color: #1c384a;
-  cursor: pointer;
-}
-input[type="submit"]:disabled,
-input[type="button"]:disabled {
-  background: #99acbb;
-  cursor: not-allowed;
-  border-color: #8ca2b2;
-}
-#filteringButtonContainer {
-  margin-bottom: .5rem;
-}
-/* DELETE??? */
-/*div .Button {
-  border-bottom: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}*/
-input[type="submit"], 
-input[type="button"] {
-  vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  padding: .0625rem .5rem .125rem .5rem;
-  background: #336789;
-  border: 1px solid #346788;
-  font-size: .875rem;
-}
-input[type="submit"][value="Clear Filters"] {
-  border: 1px solid #999;
-  color: #000;
-  background: transparent;
-}
-input[type="submit"][value="Clear Filters"]:hover {
-  opacity: .7;
-  background: transparent;
-}
-/* <-- BUTTONS */
-
 /* <code> STYLES--> */
 
 .code-wrapper {
@@ -480,10 +415,10 @@ input[type="button"],
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .0625rem .5rem .125rem .5rem;
+  padding: .65rem .75rem;
   background: #336789;
   border: 1px solid #346788;
-  font-size: .875rem;
+  font-size: 1rem;
 }
 .controls-wrapper a[class*="-button"] {
   text-decoration: none;
