@@ -852,7 +852,12 @@ table.ExcelDataTabulated td {
 .SectionDisplay th {
   white-space: normal;
 }
-
+td ul, td ol {
+  padding-right: .5rem;
+}
+.SectionDisplay td p {
+  margin: 0.6rem;
+}
 /* legacy RowDisplay-->  */
 .Content .AnswerTable tr.odd,
 .SectionDisplay table.RowDisplay tr:nth-child(2n+1),

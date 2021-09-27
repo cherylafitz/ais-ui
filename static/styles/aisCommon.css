@@ -354,7 +354,7 @@ table.row-display a:active {
 .controls-wrapper input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
-	padding: .25rem .5rem;
+	padding: .5rem .75rem;
 	min-width: 8rem;
   margin-top: .25rem;
   margin-bottom: .25rem;
@@ -415,10 +415,14 @@ input[type="button"],
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .65rem .75rem;
+  padding: .5rem .75rem;
   background: #336789;
   border: 1px solid #346788;
   font-size: 1rem;
+}
+.form-input input[type="submit"], 
+.form-input input[type="button"] {
+  padding: .125rem .75rem;
 }
 .controls-wrapper a[class*="-button"] {
   text-decoration: none;
@@ -912,7 +916,7 @@ textarea {
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   padding: .1875rem .25rem;
-  font-size: .875rem;
+  font-size: 1rem;
   max-width: 100%;
 }
 input[type="email"] {
@@ -921,8 +925,8 @@ input[type="email"] {
 }
 select {
   max-width: 100%;
-  font-size: .875rem;
-  border: 1px solid #cecece;
+  font-size: 1rem;
+  border: 1px solid #b3b3b3;
   padding: .1875rem .25rem;
 }
 select[multiple="multiple"] {
@@ -974,7 +978,7 @@ input[type="file"] {
 	max-width: 100%;
 	padding: .25rem 0;
 	vertical-align: top;
-	font-size: .875rem;
+	font-size: 1rem;
 }
 .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]),
 .form-input textarea,
@@ -1131,9 +1135,9 @@ legend {
   font-weight: normal;
   padding: 0 .25rem;
 }
-legend a {
+/*legend a {
   font-size: .75rem;
-}
+}*/
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin: 0 0 .75rem;
@@ -1143,7 +1147,7 @@ fieldset.yes-no-picker {
 }
 fieldset.yes-no-picker legend {
 	font-weight: normal;
-	font-size: .875rem;
+	font-size: 1rem;
 }
 .fieldset-content .form-input {
   margin-bottom: 0;

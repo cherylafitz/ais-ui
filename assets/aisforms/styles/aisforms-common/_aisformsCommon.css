@@ -1062,8 +1062,9 @@ input#SubmitForEvaluation, input#SubmitForEvaluation:hover {
 .SectionItemCustomization .QuestionText textarea {
   max-width: 350px;
 }
-.QuestionCustomizer  input[type="submit"], input[type="button"] {
-  font-size: .8em;
+.QuestionCustomizer  input[type="submit"], 
+input[type="button"] {
+  padding: .25rem .75rem;
 }
 
 table.rolodex tr.ItemXMLTag th {
@@ -1271,10 +1272,10 @@ div.SectionTitleText {
 .NextSectionNearSaveChanges input[type="button"] {
   border: none;
   border-style: solid;
-  border-width: 3px 3px 0 0;
+  border-width: 5px 5px 0 0;
   border-color: #fff;
-  height: 16px;
-  width: 16px;
+  height: 1.25rem;
+  width: 1.25rem;
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -1291,12 +1292,12 @@ div.PreviousSection {
 .SectionNavigator .next input[type="button"],
 .SectionNavigator input[value="next >"],
 .NextSectionNearSaveChanges .next input[type="button"] {
-  border-width: 4px 4px 0 0;
+  border-width: 5px 5px 0 0;
 }
 .SectionNavigator .previous input[type="button"],
 .SectionNavigator input[value="< previous"],
 .PreviousSectionNearSaveChanges .previous input[type="button"] {
-  border-width: 0 0 4px 4px;
+  border-width: 0 0 5px 5px;
 }
 
 .SectionNavigator input[type="button"]:hover,

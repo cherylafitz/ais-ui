@@ -16,7 +16,7 @@ textarea {
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   padding: .1875rem .25rem;
-  font-size: .875rem;
+  font-size: 1rem;
   max-width: 100%;
 }
 input[type="email"] {
@@ -25,8 +25,8 @@ input[type="email"] {
 }
 select {
   max-width: 100%;
-  font-size: .875rem;
-  border: 1px solid #cecece;
+  font-size: 1rem;
+  border: 1px solid #b3b3b3;
   padding: .1875rem .25rem;
 }
 select[multiple="multiple"] {
@@ -78,7 +78,7 @@ input[type="file"] {
 	max-width: 100%;
 	padding: .25rem 0;
 	vertical-align: top;
-	font-size: .875rem;
+	font-size: 1rem;
 }
 .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]),
 .form-input textarea,
@@ -235,9 +235,9 @@ legend {
   font-weight: normal;
   padding: 0 .25rem;
 }
-legend a {
+/*legend a {
   font-size: .75rem;
-}
+}*/
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin: 0 0 .75rem;
@@ -247,7 +247,7 @@ fieldset.yes-no-picker {
 }
 fieldset.yes-no-picker legend {
 	font-weight: normal;
-	font-size: .875rem;
+	font-size: 1rem;
 }
 .fieldset-content .form-input {
   margin-bottom: 0;
