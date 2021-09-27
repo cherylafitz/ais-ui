@@ -434,7 +434,7 @@ table.pageStructure .leftNav dd a {
   margin: .25rem 0;
 }
 table .Chapter div a {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .ListAndOrPriorPageLinks {
   text-align: right;
@@ -670,7 +670,7 @@ fieldset legend .form-input select {
 /* <-- TEMP until fieldsets are repurposed */
 
 #contentPageProportional table.ERXMatrixTable {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 #contentPageProportional table.ERXMatrixTable tr td {
   padding: .1rem .2rem;
@@ -692,7 +692,7 @@ table.pageStructure tr.footerArea td.leftNav
 {
   white-space: nowrap;
   background-color: #d9d9d9;
-  font-size: .75rem;
+  font-size: .875rem;
   text-align: center;
 }
 /* Placement Report --> */
@@ -872,7 +872,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 }
 #navMenu .previous-page-link {
   color: #c5dcee;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 /* PAGE: AlumnusOtherProgramsAdmin */
 .other-program-display-name {
@@ -1096,7 +1096,7 @@ footer {
   padding: .75rem 1rem;
   color: #fff;
   font-style: normal;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 footer a,
 footer div.classNameDisplay {
@@ -1124,7 +1124,7 @@ table.pageStructure tr.footerArea td.leftNav {
 }
 table .footerArea .leftNav a {
   line-height: 28px;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 #PageWrapperNavUpdate > .footer a {
   color: #c4dcee;
@@ -1570,7 +1570,7 @@ div.CMSBatchNavigation table {
 }
 div.CMSBatchNavigation td {
   /*padding-left: .5rem;*/
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .CMSBatchNavigation .MultipleBatches .RightArrow,
 .CMSBatchNavigation .MultipleBatches .LeftArrow {
@@ -1768,7 +1768,7 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement .byline {
 }
 .SecurityStamp {
   color: #999;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .Alert {
   border-left: 5px solid #FFB039;
@@ -2020,7 +2020,7 @@ div.HealthDataForm table.HealthQuestions td.QuestionNumber {
 }
 .HealthQuestionStamp {
     font-weight: normal;
-    font-size: .75rem;
+    font-size: .875rem;
     color: #333;
     font-style: normal;
 }
@@ -2791,7 +2791,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 
 #LinkToResetPassword {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 #Policies {
   margin-top: .5rem;
@@ -2799,7 +2799,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 #PrivacyPolicy,
 #CookieDeclaration,
 #DataUsageGuidance {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 /* <-- PAGE: LOGIN */
@@ -3043,7 +3043,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 .AISMultipleFileUploadStatus .MoveToInbox {
   white-space: normal;
   width: 4rem;
-  font-size: .75rem;
+  font-size: .875rem;
   display: inline-block;
 }
 /* <-- PAGE: AISBOX */

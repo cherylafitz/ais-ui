@@ -59,7 +59,7 @@ table.row-display a:active {
 .controls-wrapper input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
-	padding: .5rem .75rem;
+	padding: .4rem .75rem;
 	min-width: 8rem;
   margin-top: .25rem;
   margin-bottom: .25rem;
@@ -74,6 +74,13 @@ table.row-display a:active {
 }
 .pageMenu a {
   margin-right: .75rem;
+}
+.RowDisplay input[type="submit"],
+.RowDisplay input[type="button"],
+.row-display input[type="submit"],
+.row-display input[type="button"]  {
+  margin: .125rem .125rem .25rem;
+  font-size: .875rem;
 }
 /* BUTTONS --> */
 
@@ -120,7 +127,7 @@ input[type="button"],
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .5rem .75rem;
+  padding: .4rem .75rem;
   background: #336789;
   border: 1px solid #346788;
   font-size: 1rem;
@@ -147,7 +154,7 @@ input[type="submit"][value="Clear Filters"]:hover {
 .primary-control-wrapper input[type="submit"][class*="-button"] {
   background-color: #3392A1;
   border-color: #318d9b;
-  padding: .5rem;
+  padding: .4rem;
   margin-top: 1rem;
   font-size: 1rem;
 }

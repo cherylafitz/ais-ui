@@ -200,7 +200,7 @@ input[type=checkbox]:checked + label {
 .date-hint .label,
 .date-hint .value {
 	display: inline-block;
-	font-size: .75rem;
+	font-size: .875rem;
 	padding-left: .25rem;
 }
 .date-hint .label::after {

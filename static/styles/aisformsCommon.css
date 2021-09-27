@@ -208,7 +208,7 @@ div.helpBox,
   display: inline-block;
   color: #000;
   background-color: #ffe2b3;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: normal;
   text-align: left;
   width: 15em;
@@ -217,7 +217,7 @@ div.helpBox,
   border-radius: 2px;
   margin: 0 0 1.25rem 1rem;;
   float: right;
-  line-height: 1.0675rem;
+  line-height: 1.125rem;
 }
 div.helpBox img,
 [class*="help-box"] img,
@@ -354,7 +354,7 @@ table.row-display a:active {
 .controls-wrapper input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
-	padding: .5rem .75rem;
+	padding: .4rem .75rem;
 	min-width: 8rem;
   margin-top: .25rem;
   margin-bottom: .25rem;
@@ -369,6 +369,13 @@ table.row-display a:active {
 }
 .pageMenu a {
   margin-right: .75rem;
+}
+.RowDisplay input[type="submit"],
+.RowDisplay input[type="button"],
+.row-display input[type="submit"],
+.row-display input[type="button"]  {
+  margin: .125rem .125rem .25rem;
+  font-size: .875rem;
 }
 /* BUTTONS --> */
 
@@ -415,7 +422,7 @@ input[type="button"],
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .5rem .75rem;
+  padding: .4rem .75rem;
   background: #336789;
   border: 1px solid #346788;
   font-size: 1rem;
@@ -442,7 +449,7 @@ input[type="submit"][value="Clear Filters"]:hover {
 .primary-control-wrapper input[type="submit"][class*="-button"] {
   background-color: #3392A1;
   border-color: #318d9b;
-  padding: .5rem;
+  padding: .4rem;
   margin-top: 1rem;
   font-size: 1rem;
 }
@@ -1100,7 +1107,7 @@ input[type=checkbox]:checked + label {
 .date-hint .label,
 .date-hint .value {
 	display: inline-block;
-	font-size: .75rem;
+	font-size: .875rem;
 	padding-left: .25rem;
 }
 .date-hint .label::after {
@@ -1361,7 +1368,7 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
   justify-content: flex-start;
 }
 .paginator {
-  font-size: .75rem;
+  font-size: .875rem;
   padding: .75rem; 
   margin-right: 0; 
   margin-left: 0;
@@ -3257,7 +3264,7 @@ span.fax {
   margin: 0 1rem .75rem 0;
   flex-grow: 1;
   flex-basis: calc(100% - 600px);
-  font-size: .75rem;
+  font-size: .875rem;
   line-height: 24px;
 }
 #footer #codivus {
@@ -3300,7 +3307,7 @@ div#footer div#CodivusAttribution {
 }
 #footer #amagavi table,
 #footer #codivus table {
-  font-size: .75rem;
+  font-size: .875rem;
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline,
@@ -3346,7 +3353,7 @@ table#login input[type="text"],
 table#login input[type="password"],
 table#CreateAccount input[type="password"],
 table#CreateAccount input[type="text"] {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 table.rolodex tr td {
@@ -3977,7 +3984,7 @@ button:hover {
   }
   div#footer div#codivus,
   div#footer div#CodivusAttribution {
-    font-size: .75rem;
+    font-size: .875rem;
     line-height: 24px;
   }
 /* <-- admin/staff/dev HOME PAGE */

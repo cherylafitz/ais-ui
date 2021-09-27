@@ -200,7 +200,6 @@ table.TemplateTable tr td {
   text-align: left;
 }
 
-.SectionDisplay table.TemplateTable tr td,
 .SectionDisplay table.TemplateTable tr th {
   vertical-align: middle;
 }

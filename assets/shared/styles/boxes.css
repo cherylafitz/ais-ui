@@ -59,7 +59,7 @@ div.helpBox,
   display: inline-block;
   color: #000;
   background-color: #ffe2b3;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: normal;
   text-align: left;
   width: 15em;
@@ -68,7 +68,7 @@ div.helpBox,
   border-radius: 2px;
   margin: 0 0 1.25rem 1rem;;
   float: right;
-  line-height: 1.0675rem;
+  line-height: 1.125rem;
 }
 div.helpBox img,
 [class*="help-box"] img,

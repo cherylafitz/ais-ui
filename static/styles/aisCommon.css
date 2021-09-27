@@ -208,7 +208,7 @@ div.helpBox,
   display: inline-block;
   color: #000;
   background-color: #ffe2b3;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: normal;
   text-align: left;
   width: 15em;
@@ -217,7 +217,7 @@ div.helpBox,
   border-radius: 2px;
   margin: 0 0 1.25rem 1rem;;
   float: right;
-  line-height: 1.0675rem;
+  line-height: 1.125rem;
 }
 div.helpBox img,
 [class*="help-box"] img,
@@ -354,7 +354,7 @@ table.row-display a:active {
 .controls-wrapper input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
-	padding: .5rem .75rem;
+	padding: .4rem .75rem;
 	min-width: 8rem;
   margin-top: .25rem;
   margin-bottom: .25rem;
@@ -369,6 +369,13 @@ table.row-display a:active {
 }
 .pageMenu a {
   margin-right: .75rem;
+}
+.RowDisplay input[type="submit"],
+.RowDisplay input[type="button"],
+.row-display input[type="submit"],
+.row-display input[type="button"]  {
+  margin: .125rem .125rem .25rem;
+  font-size: .875rem;
 }
 /* BUTTONS --> */
 
@@ -415,7 +422,7 @@ input[type="button"],
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .5rem .75rem;
+  padding: .4rem .75rem;
   background: #336789;
   border: 1px solid #346788;
   font-size: 1rem;
@@ -442,7 +449,7 @@ input[type="submit"][value="Clear Filters"]:hover {
 .primary-control-wrapper input[type="submit"][class*="-button"] {
   background-color: #3392A1;
   border-color: #318d9b;
-  padding: .5rem;
+  padding: .4rem;
   margin-top: 1rem;
   font-size: 1rem;
 }
@@ -1100,7 +1107,7 @@ input[type=checkbox]:checked + label {
 .date-hint .label,
 .date-hint .value {
 	display: inline-block;
-	font-size: .75rem;
+	font-size: .875rem;
 	padding-left: .25rem;
 }
 .date-hint .label::after {
@@ -1361,7 +1368,7 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
   justify-content: flex-start;
 }
 .paginator {
-  font-size: .75rem;
+  font-size: .875rem;
   padding: .75rem; 
   margin-right: 0; 
   margin-left: 0;
@@ -2262,7 +2269,7 @@ table.pageStructure .leftNav dd a {
   margin: .25rem 0;
 }
 table .Chapter div a {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .ListAndOrPriorPageLinks {
   text-align: right;
@@ -2498,7 +2505,7 @@ fieldset legend .form-input select {
 /* <-- TEMP until fieldsets are repurposed */
 
 #contentPageProportional table.ERXMatrixTable {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 #contentPageProportional table.ERXMatrixTable tr td {
   padding: .1rem .2rem;
@@ -2520,7 +2527,7 @@ table.pageStructure tr.footerArea td.leftNav
 {
   white-space: nowrap;
   background-color: #d9d9d9;
-  font-size: .75rem;
+  font-size: .875rem;
   text-align: center;
 }
 /* Placement Report --> */
@@ -2700,7 +2707,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 }
 #navMenu .previous-page-link {
   color: #c5dcee;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 /* PAGE: AlumnusOtherProgramsAdmin */
 .other-program-display-name {
@@ -2924,7 +2931,7 @@ footer {
   padding: .75rem 1rem;
   color: #fff;
   font-style: normal;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 footer a,
 footer div.classNameDisplay {
@@ -2952,7 +2959,7 @@ table.pageStructure tr.footerArea td.leftNav {
 }
 table .footerArea .leftNav a {
   line-height: 28px;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 #PageWrapperNavUpdate > .footer a {
   color: #c4dcee;
@@ -3398,7 +3405,7 @@ div.CMSBatchNavigation table {
 }
 div.CMSBatchNavigation td {
   /*padding-left: .5rem;*/
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .CMSBatchNavigation .MultipleBatches .RightArrow,
 .CMSBatchNavigation .MultipleBatches .LeftArrow {
@@ -3596,7 +3603,7 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement .byline {
 }
 .SecurityStamp {
   color: #999;
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .Alert {
   border-left: 5px solid #FFB039;
@@ -3848,7 +3855,7 @@ div.HealthDataForm table.HealthQuestions td.QuestionNumber {
 }
 .HealthQuestionStamp {
     font-weight: normal;
-    font-size: .75rem;
+    font-size: .875rem;
     color: #333;
     font-style: normal;
 }
@@ -4619,7 +4626,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 }
 
 #LinkToResetPassword {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 #Policies {
   margin-top: .5rem;
@@ -4627,7 +4634,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 #PrivacyPolicy,
 #CookieDeclaration,
 #DataUsageGuidance {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 /* <-- PAGE: LOGIN */
@@ -4871,7 +4878,7 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
 .AISMultipleFileUploadStatus .MoveToInbox {
   white-space: normal;
   width: 4rem;
-  font-size: .75rem;
+  font-size: .875rem;
   display: inline-block;
 }
 /* <-- PAGE: AISBOX */
@@ -5608,11 +5615,11 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
   margin-right: .5rem;
 }
 .name-block .controls-wrapper [class*="-link"] {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .name-block .hidden-text-for-show-hide {
   display: none;
-  font-size: .75rem;
+  font-size: .875rem;
   padding-left: .5rem;
 }
 
@@ -5626,7 +5633,7 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 .topNavInTable .localizificatinator a.suggestLocalization {
   color: #FFD590;
   font-weight: normal;
-  font-size: .75rem;
+  font-size: .875rem;
   margin-right: .5rem;
 }
 .userLink,
@@ -5634,7 +5641,7 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 color: #c4dcee;
 }
 .localizificatinator select {
-  font-size: .675rem;
+  font-size: .875rem;
   margin-top: .25rem;
 }
 #AddAuthorizedUserButtonID {
@@ -5647,7 +5654,7 @@ color: #c4dcee;
 .topNavInTable .infoBlock .serverInfo,
 .topNavInTable .infoBlock .instanceID,
 .topNavInTable .infoBlock .instanceID a {
-    font-size: .6875rem;
+    font-size: .875rem;
     font-weight: normal;
 }
 .topNavInTable .infoBlock .instanceID,

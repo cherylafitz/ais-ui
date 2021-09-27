@@ -1429,7 +1429,7 @@ span.fax {
   margin: 0 1rem .75rem 0;
   flex-grow: 1;
   flex-basis: calc(100% - 600px);
-  font-size: .75rem;
+  font-size: .875rem;
   line-height: 24px;
 }
 #footer #codivus {
@@ -1472,7 +1472,7 @@ div#footer div#CodivusAttribution {
 }
 #footer #amagavi table,
 #footer #codivus table {
-  font-size: .75rem;
+  font-size: .875rem;
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline,
@@ -1518,7 +1518,7 @@ table#login input[type="text"],
 table#login input[type="password"],
 table#CreateAccount input[type="password"],
 table#CreateAccount input[type="text"] {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 table.rolodex tr td {
@@ -2149,7 +2149,7 @@ button:hover {
   }
   div#footer div#codivus,
   div#footer div#CodivusAttribution {
-    font-size: .75rem;
+    font-size: .875rem;
     line-height: 24px;
   }
 /* <-- admin/staff/dev HOME PAGE */
