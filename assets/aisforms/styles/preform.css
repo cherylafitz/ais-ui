@@ -122,6 +122,10 @@ div[id$="_textBefore"] .QuestionNumber {
 .onyx-button {
   padding: 0 1rem .125rem;
 }
+.onyx-button:focus {
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 .onyx-picker-decorator .onyx-button {
   padding: 2px 4px;
 }
