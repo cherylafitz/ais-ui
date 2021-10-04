@@ -632,7 +632,8 @@ input#SubmitForEvaluation {margin-bottom: 1em;}
 .warning-box,  /* ADDED by GGD 2020-0618 */
 .noticeBox,
 .notice-box,  /* ADDED by GGD 2020-0618 */
-.Noteworthy /* ADDED by GGD 2020-0618 */ {
+.Noteworthy, /* ADDED by GGD 2020-0618 */
+.Content .SectionDisplay .program-logo {
     display: none;
   }
 .SideNote:before {
