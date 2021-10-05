@@ -2381,7 +2381,7 @@ div.Main div.staffHome div.Deadlines {
 .InTesting td {
   border-color: #888 !important;
 }
-.InTesting .TemplateName::before,
+.InTesting .template::before,
 .InTesting .Form::before {
   content: "IN TESTING: ";
   font-weight: bold;
@@ -4866,6 +4866,11 @@ table.row-display .row-display tr:first-of-type td {
 table.rolodex .TemplatePicker td {
   white-space: normal;
 }
+.row-display .available,
+.row-display .deadline,
+.row-display .extended-deadline {
+  white-space: nowrap;
+}
 /* <-- WRAPPING CELLS */
 
 /* min widths --> */
@@ -4884,7 +4889,8 @@ td.ProgramName {
 /* <-- Specific cell styles */
 
 /* restrict widths for small cells --> */
-.row-display .SectionItemNumber {
+.row-display .SectionItemNumber,
+.row-display .year {
   max-width: 6rem;
 }
 /* <-- restrict widths for small cells */
@@ -5127,22 +5133,6 @@ td.even.submitted {
 .Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
   background-color: #e0e6ec;
 }
-.LiveTemplates table.RowDisplay td,
-.LiveTemplates table.RowDisplay tr.headerRow th {
-  white-space: normal;
-}
-.LiveTemplates table.RowDisplay tr.headerRow th.Available,
-.LiveTemplates table.RowDisplay tr.headerRow th.DeadlineToApply,
-.LiveTemplates table.RowDisplay tr.headerRow th.ExtendedDeadlineToApply,
-.LiveTemplates table.RowDisplay tr.headerRow th.StartedFormCount,
-.LiveTemplates table.RowDisplay tr.headerRow th.SubmittedFormCount {
-  width: 2.5em;
-}
-.LiveTemplates table.RowDisplay td.Available,
-.LiveTemplates table.RowDisplay td.DeadlineToApply,
-.LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
-  white-space: nowrap;
-}
 form table.RowDisplay.Evaluators,
 table.RowDisplay.Evaluators {
   margin: 1em;
@@ -5182,16 +5172,6 @@ margin: 0.25em 0 0.25em 0;
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  .LiveTemplates table.RowDisplay td.Available,
-  .LiveTemplates table.RowDisplay td.DeadlineToApply,
-  .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
-  white-space: normal;
-  }
-	.LiveTemplates table.RowDisplay td.Available,
-  .LiveTemplates table.RowDisplay td.DeadlineToApply,
-  .LiveTemplates table.RowDisplay td.ExtendedDeadlineToApply {
-    white-space: normal;
-  }
 
 }
 
@@ -5311,21 +5291,12 @@ td.even.submitted {
 .Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.row-display td {
   background-color: #e0e6ec;
 }
-.LiveTemplates table.row-display td,
-.LiveTemplates table.row-display tr.headerRow th {
-  white-space: normal;
-}
 .LiveTemplates table.row-display tr.headerRow th.Available,
 .LiveTemplates table.row-display tr.headerRow th.DeadlineToApply,
 .LiveTemplates table.row-display tr.headerRow th.ExtendedDeadlineToApply,
 .LiveTemplates table.row-display tr.headerRow th.StartedFormCount,
 .LiveTemplates table.row-display tr.headerRow th.SubmittedFormCount {
   width: 2.5em;
-}
-.LiveTemplates table.row-display td.Available,
-.LiveTemplates table.row-display td.DeadlineToApply,
-.LiveTemplates table.row-display td.ExtendedDeadlineToApply {
-  white-space: nowrap;
 }
 form table.row-display.Evaluators,
 table.row-display.Evaluators {
@@ -5369,16 +5340,7 @@ caption .title {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  .LiveTemplates table.row-display td.Available,
-  .LiveTemplates table.row-display td.DeadlineToApply,
-  .LiveTemplates table.row-display td.ExtendedDeadlineToApply {
-  white-space: normal;
-  }
-  .LiveTemplates table.row-display td.Available,
-  .LiveTemplates table.row-display td.DeadlineToApply,
-  .LiveTemplates table.row-display td.ExtendedDeadlineToApply {
-    white-space: normal;
-  }
+
 
 }
 /* <-- NEW TABLES CSS FOR AFTER MARCO REPLACES ROWDISPLAY WITH ROW-DISPLAY */
