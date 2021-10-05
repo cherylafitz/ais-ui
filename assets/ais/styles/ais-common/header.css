@@ -33,11 +33,11 @@
   margin-right: .5rem;
 }
 .name-block .controls-wrapper [class*="-link"] {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 .name-block .hidden-text-for-show-hide {
   display: none;
-  font-size: .75rem;
+  font-size: .875rem;
   padding-left: .5rem;
 }
 
@@ -51,7 +51,7 @@
 .topNavInTable .localizificatinator a.suggestLocalization {
   color: #FFD590;
   font-weight: normal;
-  font-size: .75rem;
+  font-size: .875rem;
   margin-right: .5rem;
 }
 .userLink,
@@ -59,7 +59,7 @@
 color: #c4dcee;
 }
 .localizificatinator select {
-  font-size: .675rem;
+  font-size: .875rem;
   margin-top: .25rem;
 }
 #AddAuthorizedUserButtonID {
@@ -72,7 +72,7 @@ color: #c4dcee;
 .topNavInTable .infoBlock .serverInfo,
 .topNavInTable .infoBlock .instanceID,
 .topNavInTable .infoBlock .instanceID a {
-    font-size: .6875rem;
+    font-size: .875rem;
     font-weight: normal;
 }
 .topNavInTable .infoBlock .instanceID,

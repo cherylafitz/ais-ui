@@ -208,7 +208,7 @@ div.helpBox,
   display: inline-block;
   color: #000;
   background-color: #ffe2b3;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: normal;
   text-align: left;
   width: 15em;
@@ -217,7 +217,7 @@ div.helpBox,
   border-radius: 2px;
   margin: 0 0 1.25rem 1rem;;
   float: right;
-  line-height: 1.0675rem;
+  line-height: 1.125rem;
 }
 div.helpBox img,
 [class*="help-box"] img,
@@ -248,71 +248,6 @@ div.deadlineBox span.timeZone,
 }
 
 /* <-- notice boxes */  
-
-/* BUTTONS --> */
-
-/* AIS only*/
-#contentPageProportional input[type="submit"],
-#contentPageProportional input[type="button"] {
-  margin: 0 .5rem .25rem 0;
-}
-#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
-  margin: 0 .5em .5em;
-}
-/* DELETE?? */
-#contentPageProportional input.SaveChanges {
-  margin: 1.5rem 0;
-}
-/* AIR app save button */
-#ApplicationTemplateDisplayAUC input.SaveChanges {
-  float: left;
-  margin-right: 3rem;
-}
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  background: #22465d;
-  border-color: #1c384a;
-  cursor: pointer;
-}
-input[type="submit"]:disabled,
-input[type="button"]:disabled {
-  background: #99acbb;
-  cursor: not-allowed;
-  border-color: #8ca2b2;
-}
-#filteringButtonContainer {
-  margin-bottom: .5rem;
-}
-/* DELETE??? */
-/*div .Button {
-  border-bottom: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-}*/
-input[type="submit"], 
-input[type="button"] {
-  vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  color: #ffffff;
-  padding: .0625rem .5rem .125rem .5rem;
-  background: #336789;
-  border: 1px solid #346788;
-  font-size: .875rem;
-}
-input[type="submit"][value="Clear Filters"] {
-  border: 1px solid #999;
-  color: #000;
-  background: transparent;
-}
-input[type="submit"][value="Clear Filters"]:hover {
-  opacity: .7;
-  background: transparent;
-}
-/* <-- BUTTONS */
 
 /* <code> STYLES--> */
 
@@ -419,7 +354,7 @@ table.row-display a:active {
 .controls-wrapper input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
-	padding: .25rem .5rem;
+	padding: .4rem .75rem;
 	min-width: 8rem;
   margin-top: .25rem;
   margin-bottom: .25rem;
@@ -434,6 +369,13 @@ table.row-display a:active {
 }
 .pageMenu a {
   margin-right: .75rem;
+}
+.RowDisplay input[type="submit"],
+.RowDisplay input[type="button"],
+.row-display input[type="submit"],
+.row-display input[type="button"]  {
+  margin: .125rem .125rem .25rem;
+  font-size: .875rem;
 }
 /* BUTTONS --> */
 
@@ -480,10 +422,14 @@ input[type="button"],
   border-radius: 2px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: #ffffff;
-  padding: .0625rem .5rem .125rem .5rem;
+  padding: .4rem .75rem;
   background: #336789;
   border: 1px solid #346788;
-  font-size: .875rem;
+  font-size: 1rem;
+}
+.form-input input[type="submit"], 
+.form-input input[type="button"] {
+  padding: .125rem .75rem;
 }
 .controls-wrapper a[class*="-button"] {
   text-decoration: none;
@@ -977,7 +923,7 @@ textarea {
   -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
   padding: .1875rem .25rem;
-  font-size: .875rem;
+  font-size: 1rem;
   max-width: 100%;
 }
 input[type="email"] {
@@ -986,8 +932,8 @@ input[type="email"] {
 }
 select {
   max-width: 100%;
-  font-size: .875rem;
-  border: 1px solid #cecece;
+  font-size: 1rem;
+  border: 1px solid #b3b3b3;
   padding: .1875rem .25rem;
 }
 select[multiple="multiple"] {
@@ -1039,7 +985,7 @@ input[type="file"] {
 	max-width: 100%;
 	padding: .25rem 0;
 	vertical-align: top;
-	font-size: .875rem;
+	font-size: 1rem;
 }
 .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]),
 .form-input textarea,
@@ -1161,7 +1107,7 @@ input[type=checkbox]:checked + label {
 .date-hint .label,
 .date-hint .value {
 	display: inline-block;
-	font-size: .75rem;
+	font-size: .875rem;
 	padding-left: .25rem;
 }
 .date-hint .label::after {
@@ -1196,9 +1142,9 @@ legend {
   font-weight: normal;
   padding: 0 .25rem;
 }
-legend a {
+/*legend a {
   font-size: .75rem;
-}
+}*/
 fieldset.yes-no-picker {
 	border: 1px solid #cecece;
 	margin: 0 0 .75rem;
@@ -1208,7 +1154,7 @@ fieldset.yes-no-picker {
 }
 fieldset.yes-no-picker legend {
 	font-weight: normal;
-	font-size: .875rem;
+	font-size: 1rem;
 }
 .fieldset-content .form-input {
   margin-bottom: 0;
@@ -1422,7 +1368,7 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
   justify-content: flex-start;
 }
 .paginator {
-  font-size: .75rem;
+  font-size: .875rem;
   padding: .75rem; 
   margin-right: 0; 
   margin-left: 0;
@@ -2951,8 +2897,9 @@ input#SubmitForEvaluation, input#SubmitForEvaluation:hover {
 .SectionItemCustomization .QuestionText textarea {
   max-width: 350px;
 }
-.QuestionCustomizer  input[type="submit"], input[type="button"] {
-  font-size: .8em;
+.QuestionCustomizer  input[type="submit"], 
+input[type="button"] {
+  padding: .25rem .75rem;
 }
 
 table.rolodex tr.ItemXMLTag th {
@@ -3160,10 +3107,10 @@ div.SectionTitleText {
 .NextSectionNearSaveChanges input[type="button"] {
   border: none;
   border-style: solid;
-  border-width: 3px 3px 0 0;
+  border-width: 5px 5px 0 0;
   border-color: #fff;
-  height: 16px;
-  width: 16px;
+  height: 1.25rem;
+  width: 1.25rem;
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -3180,12 +3127,12 @@ div.PreviousSection {
 .SectionNavigator .next input[type="button"],
 .SectionNavigator input[value="next >"],
 .NextSectionNearSaveChanges .next input[type="button"] {
-  border-width: 4px 4px 0 0;
+  border-width: 5px 5px 0 0;
 }
 .SectionNavigator .previous input[type="button"],
 .SectionNavigator input[value="< previous"],
 .PreviousSectionNearSaveChanges .previous input[type="button"] {
-  border-width: 0 0 4px 4px;
+  border-width: 0 0 5px 5px;
 }
 
 .SectionNavigator input[type="button"]:hover,
@@ -3317,7 +3264,7 @@ span.fax {
   margin: 0 1rem .75rem 0;
   flex-grow: 1;
   flex-basis: calc(100% - 600px);
-  font-size: .75rem;
+  font-size: .875rem;
   line-height: 24px;
 }
 #footer #codivus {
@@ -3360,7 +3307,7 @@ div#footer div#CodivusAttribution {
 }
 #footer #amagavi table,
 #footer #codivus table {
-  font-size: .75rem;
+  font-size: .875rem;
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline,
@@ -3406,7 +3353,7 @@ table#login input[type="text"],
 table#login input[type="password"],
 table#CreateAccount input[type="password"],
 table#CreateAccount input[type="text"] {
-  font-size: .75rem;
+  font-size: .875rem;
 }
 
 table.rolodex tr td {
@@ -4037,7 +3984,7 @@ button:hover {
   }
   div#footer div#codivus,
   div#footer div#CodivusAttribution {
-    font-size: .75rem;
+    font-size: .875rem;
     line-height: 24px;
   }
 /* <-- admin/staff/dev HOME PAGE */
