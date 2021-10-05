@@ -449,7 +449,7 @@ input[type="submit"][value="Clear Filters"]:hover {
 .primary-control-wrapper input[type="submit"][class*="-button"] {
   background-color: #3392A1;
   border-color: #318d9b;
-  padding: .4rem;
+  padding: .5rem;
   margin-top: 1rem;
   font-size: 1rem;
 }
