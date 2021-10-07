@@ -210,9 +210,11 @@ input[type="radio"] {
   background-color: transparent;
   width: 0;
   visibility: hidden;
+  margin: 0;
 }
 .ERXMatrixTable--Checked input[type="checkbox"],
-.ERXMatrixTable--Checked input[type="radio"] {
+.ERXMatrixTable--Checked input[type="radio"],
+input[type="checkbox"] {
   background: #3a3d40;
 }
 input[type="radio"] {
@@ -243,19 +245,31 @@ input[type="radio"] {
 .ERXMatrixTable.ERXMatrixTable--Checked td {
   color: #000;
 }
-.ERXMatrixTable td:first-of-type {
+/* checkbox styles  */
+div[class*="-checkbox"]:before {
+  content: "";
+  display: inline-block;
+}
+.ERXMatrixTable td:first-of-type,
+div[class*="-checkbox"]:before {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   border: thin solid;
 }
+div[class*="-checkbox"]:before {
+  width: 9px;
+  height: 9px;
+}
 .ERXMatrixTable td:last-of-type {
   max-width: 7in;
 }
-.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type {
+.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type,
+div[class*="-checkbox"] {
   position: relative;
 }
-.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type:after {
+.ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type:after,
+div[class*="-checkbox"]:after {
   content: "";
   position: absolute;
   display: block;
@@ -269,6 +283,10 @@ input[type="radio"] {
   border-radius: 50%;
   top: 2px;
   left: 2px;
+}
+div[class*="-checkbox"]:after {
+  top: 5px;
+  left: 3px;
 }
 .CheckboxMatrix .ERXMatrixTable.ERXMatrixTable--Checked td:first-of-type:after,
 .CheckboxMatrix .ERXMatrixTable td:first-of-type {
@@ -477,7 +495,8 @@ div.SectionIntroductionText
 .Instruction,
 a.SectionDataFill,
 a.FormDataFill,
-.PageName {
+.PageName,
+#multi-pipy-submit-wrapper-id {
   display: none;
 }
 .BeforeQuestion .QuestionItem .QuestionInstructions,
