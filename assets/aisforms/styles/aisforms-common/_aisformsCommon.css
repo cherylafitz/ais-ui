@@ -487,7 +487,14 @@ div.Main div.staffHome div.Deadlines {
 .staffHome h1 {
   display: none;
 }
-.Content .AdminHomeLinks a {
+.Content .admin-home-links ul {
+  padding: 0;
+  margin: 0;
+}
+.Content .admin-home-links li {
+  list-style-type: none;
+}
+.Content .admin-home-links a {
   font-size: .875rem;
   text-decoration: none;
   border-bottom: none;
@@ -498,26 +505,26 @@ div.Main div.staffHome div.Deadlines {
   margin: .5rem 0;
   border-left: 1px solid #FFD590;
 }
-.Content .AdminHomeLinks a span.adminHomeLinksDescription,
-.Content .AdminHomeLinks a span.description {
+.Content .admin-home-links a span.adminHomeLinksDescription,
+.Content .admin-home-links a span.description {
   font-size: .6em;
 }
-.Content .AdminHomeLinks a:hover,
-.Content .AdminHomeLinks a:active {
+.Content .admin-home-links a:hover,
+.Content .admin-home-links a:active {
   border-bottom: none;
   color: #fff;
   background-color: rgba(76,140,158, 0.5);
 }
-.Content .Main.Administrator .AdminHomeLinks,
-.Content .Main[class*="Staff"] .AdminHomeLinks,
-.Content .Main.Developer .AdminHomeLinks {
+.Content .Main.Administrator .admin-home-links,
+.Content .Main[class*="Staff"] .admin-home-links,
+.Content .Main.Developer .admin-home-links {
   order: 1;
   margin: -1.5rem -1.25rem 1rem;
   padding: 1rem;
   background-color: #33424d;
   flex-grow: 1;
 }
-.AdminHomeLinks div {
+.admin-home-links div {
   display: inline-block;
 }
 .Content .Main.Administrator .staffHome,
@@ -534,10 +541,10 @@ div.Main div.staffHome div.Deadlines {
   flex-basis: 100%;
   background: transparent;
 }
-.Content .AdminHomeLinks:after {
+.Content .admin-home-links:after {
   clear: both;
 }
-.Content div.AdminHomeLinks a.adminHomeLinksDescription {
+.Content div.admin-home-links a.adminHomeLinksDescription {
   font-size: .6em;
 }
 .InTesting {
@@ -1747,7 +1754,7 @@ body#body--environment-staging:after {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  .Content .AdminHomeLinks {
+  .Content .admin-home-links {
     width: 100%;
   }
   .ACaddressBlock {
@@ -2135,12 +2142,12 @@ button:hover {
 }
 @media only screen and (min-width : 860px) {
 /* admin/staff/dev HOME PAGE --> */
-  .AdminHomeLinks div {
+  .admin-home-links div {
     display: block;
   }
-  .Content .Main.Administrator .AdminHomeLinks,
-  .Content .Main[class*="Staff"] .AdminHomeLinks,
-  .Content .Main.Developer .AdminHomeLinks {
+  .Content .Main.Administrator .admin-home-links,
+  .Content .Main[class*="Staff"] .admin-home-links,
+  .Content .Main.Developer .admin-home-links {
     flex-grow: 0;
     margin: -1.5rem 0 -4.25rem -1.25rem;
   }
