@@ -311,16 +311,27 @@ input[value="Save Changes"],
 input#SubmitForEvaluation {
   font-size: 1.2em;
 }
-input[value="Save Changes"]:hover,
-input#SubmitForEvaluation:hover {
+input[value="Save Changes"]:hover {
   opacity: .9;
 }
 input#SubmitForEvaluation,
-input#SubmitForEvaluation:hover {
+#multi-pipy-submit-wrapper-id input.multi-pipy-form-submit-button {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
-  border-color: inherit;
-  background: #3392A1;
+  background-color: #d0d0fb;
+  color: black;
+  border-color: #ababf8;
+}
+#multi-pipy-submit-wrapper-id input.multi-pipy-form-submit-button {
+  font-size: 1rem;
+}
+input#SubmitForEvaluation:hover,
+#multi-pipy-submit-wrapper-id input.multi-pipy-form-submit-button:hover {
+  background-color: #bdbdf9;
+  border-color: #ababf8;
+}
+#multi-pipy-submit-wrapper-id td {
+  vertical-align: middle;
 }
 input[value="Add More"] {
   background: rgb(204,204,204); /* Old browsers */
