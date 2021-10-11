@@ -325,7 +325,7 @@ input#SubmitForEvaluation,
 input#SubmitForEvaluation:hover,
 #multi-pipy-submit-wrapper-id input.multi-pipy-form-submit-button:hover {
   background-color: #bdbdf9;
-  border-color: #ababf8;
+  border-color: #b8b8f9;
 }
 #multi-pipy-submit-wrapper-id td {
   vertical-align: middle;
