@@ -322,9 +322,6 @@ input#SubmitForEvaluation,
   color: black;
   border-color: #ababf8;
 }
-#multi-pipy-submit-wrapper-id input.multi-pipy-form-submit-button {
-  font-size: 1rem;
-}
 input#SubmitForEvaluation:hover,
 #multi-pipy-submit-wrapper-id input.multi-pipy-form-submit-button:hover {
   background-color: #bdbdf9;
