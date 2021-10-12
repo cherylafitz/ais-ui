@@ -6168,7 +6168,7 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 .EvaluatorsForPIPYEditor .AmagaviObjectChooser .divider {
   padding: .5rem;
 }
-select[multiple="multiple"] {
+.EvaluatorsForPIPYEditor select[multiple="multiple"] {
      height: initial; 
      max-height: initial; 
 }
