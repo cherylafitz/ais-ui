@@ -547,16 +547,18 @@ div.Main div.staffHome div.Deadlines {
 .Content div.admin-home-links a.adminHomeLinksDescription {
   font-size: .6em;
 }
-.InTesting {
+.in-testing {
   background-color: #62deff !important;
 }
-.InTesting td {
+.in-testing td {
   border-color: #888 !important;
 }
-.InTesting .template::before,
-.InTesting .Form::before {
-  content: "IN TESTING: ";
+.in-testing-text {
+  text-transform: uppercase;
   font-weight: bold;
+}
+.in-testing-text:after {
+  content: ":";
 }
 /* ADMIN VIEW ONLY-->*/
 /* CREATE USERS--> */
@@ -1058,11 +1060,6 @@ h1.FormViewHeader .FormRefCode:before {
 }
 h1.FormViewHeader .ProgramName {
   font-weight: bold;
-}
-
-input#SubmitForEvaluation, input#SubmitForEvaluation:hover {
-    font-size: 1.2em;
-    padding: 0.2em 0.5em;
 }
 /* <--TEMPLATES */
 /* TEMPLATE EDITOR--> */
