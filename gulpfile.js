@@ -27,3 +27,8 @@ gulp.task('concat-printcommon-css', function() {
     .pipe(gulp.dest('./static/styles/'));
 });
 
+gulp.task('concat-preform-css', function() {
+  return gulp.src(['./assets/shared/styles/*.css','./assets/aisforms/styles/preform/*.css'])
+    .pipe(concat('preform.css'))
+    .pipe(gulp.dest('./static/styles/'));
+});
