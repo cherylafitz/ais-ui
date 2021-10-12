@@ -1,0 +1,2338 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+/* START BASE STYLES --> */ 
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+dt {
+  font-weight: normal;
+}
+dl {
+  margin: 0;
+}
+
+/* <-- END BASE STYLES */
+
+/* variables --> */
+
+:root {
+  --required-red: #e62e00;
+}
+
+/* <-- variables */
+
+/* screenreaders --> */
+
+.show-for-sr,
+.show-for-screen-reader,
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.skip-link {
+  background: #ffb945;
+  color: #000;
+  font-weight: bold;
+  left: 50%;
+  padding: .5rem 1rem;
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+/* <-- screenreaders 
+
+/* ALERTS, NOTICES, AND WARNINGS --> */
+
+.Alert,
+.alert,
+/* delete when able */
+h2.PortalAlert {
+  display: inline-block;
+  color: #000;
+  padding: .5rem .75rem;
+  border-radius: 2px;
+  margin: .25rem 0 1rem;
+  border: 1px solid #ffc8b3;
+  background-color: #ffdacc;
+}
+
+/* note: pare down this list eventually and use general alert/warning/notice classes */
+div.NoAssignmentsPendingConfirmation,
+div.ToUnassignFromEvaluators,
+div.NoEvaluationQueuesAvailable,
+div.NoAvailableForms,
+div.NoApplicationsAvailable,
+div.NoTemplatesAvailable,
+div.ListOfBrands .NoBrands,
+div.NoDateItemsToCustomize,
+div.NoDeadlines,
+div.NoDomains,
+div.NoEvaluationQueuesMatchFilter,
+div.NoMenuItems,
+div.NoMenus,
+div.NoPacketTemplates,
+div.NoPermissions,
+div.NoQuestions,
+div.NoAnswers,
+div.NoObjects,
+div.NoRoles,
+div.NoSections,
+div.NoSiteContentItems,
+div.NoForms,
+div.NoUsers,
+div.NoFormsAvailable,
+div.NoEvaluationForms,
+div.AvailableForms div,
+.DeveloperCaution,
+div.OtherBrands
+div.HasFormsInOtherBrandsWarning,
+.ValidationError,
+div.MyForms div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoEvaluationForms,
+.NoExtendedDeadlines  {
+  font-style: normal;
+  color: #c93028;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+
+div.NoFormsAvailable,
+div.NoAvailableForms,
+div.AvailableForms div,
+div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoFormsStartedOrSubmitted,
+div.MyForms div.NoEvaluationForms,
+div.OtherBrands div.HasFormsInOtherBrandsWarning,
+div.NoEvaluationForms,
+div.NoForms,
+div.NoAvailableForms,
+div.NoEvaluationQueuesAvailable {
+  color: #000;
+}
+
+/* <-- ALERTS, NOTICES, AND WARNINGS */
+
+
+
+/* Notice etc boxes--> */
+
+div.alertBox,
+[class*="-box"] {
+  color: #000;
+  font-size: 0.9375rem; /* 15px when 100% */
+  font-weight: normal;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .5rem .75rem;
+  margin: 1rem 0;
+  clear: right; /* clears help-box */
+}
+div.alertBox,
+[class*="alert-box"] {
+  background-color: #ffdacc;
+  border-color: #ffc8b3;
+}
+[class*="warning-box"] {
+  background-color: #ffc266;
+  border-color: #ffad33;
+}
+[class*="lt-info-box"] {
+  background-color: #d4f5ff;
+  border-color: #b3edff;
+}
+[class*="dk-info-box"] {
+  background-color: #a9cdd6;
+  border-color: #87b8c5;
+}
+[class*="caution-box"] {
+  background-color: #ffe0b3;
+  border-color: #ffcc80;
+}
+/* makes *-box more prominent */
+[class^="super"][class*="box"] {
+  font-weight: bold;
+  padding: 1rem 1.25rem;
+}
+.noticeBox,
+[class*="notice-box"] {
+  border: 2px solid #de6846;
+  border-radius: 1em;
+  padding: .75rem 1rem;
+  margin: 1em 0;
+}
+div.recommendeeBox,
+[class*="recommendee-box"] {
+  color: #FFFFFF;
+  background-color:#036eb0;
+  font-size:1.2em;
+  border: thin solid #025689;
+  border-radius: 1em;
+  padding: .75rem 1rem;
+  margin: 1em 0;
+}
+div.helpBox,
+[class*="help-box"] {
+  display: inline-block;
+  color: #000;
+  background-color: #ffe2b3;
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: left;
+  width: 15em;
+  padding: .25rem .5rem;
+  border: 1px solid #f6b844;
+  border-radius: 2px;
+  margin: 0 0 1.25rem 1rem;;
+  float: right;
+  line-height: 1.125rem;
+}
+div.helpBox img,
+[class*="help-box"] img,
+div.alertBox img,
+[class*="alert-box"] img {
+  padding-right: .25rem;
+  float: left;
+  height: 17px;
+}
+div.deadlineBox,
+[class*="deadline-box"] {
+  background-color: #ffc8b3;
+  font-size: 1.2em;
+  text-align: left;
+  border-radius: 2px;
+  padding: .25rem .5rem;
+  margin: 1em 0;
+  clear: both;
+  border: none;
+}
+div.deadlineBox span,
+[class*="deadline-box"] span {
+  font-weight: bold;
+}
+div.deadlineBox span.timeZone,
+[class*="deadline-box"] span.timeZone {
+  font-weight: normal;
+}
+
+/* <-- notice boxes */  
+
+/* <code> STYLES--> */
+
+.code-wrapper {
+    background-color: #7b7b7b;
+    color: #fff;
+    padding: 0;
+    margin: 0 0 .5rem .25rem;
+    display: inline-block;
+    border-radius: 2px;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+}
+.code-wrapper code {
+	background-color: #4d4d4d;
+	border-radius: 2px;
+	color: #00ffff;
+	display: block;
+	padding: .325rem;
+}
+.generated-field .code-wrapper .preview,
+.form-input .code-wrapper .preview,
+.form-input .code-wrapper textarea,
+.form-input .code-wrapper input {
+	background-color: #fff;
+    border: 2px dashed #00cccc;
+    color: #000;
+    display: block;
+    margin: 0 1rem;
+    padding: .5rem;
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+    max-width: 100%;
+}
+.generated-field .code-wrapper .preview,
+.form-input .code-wrapper .preview {
+	border: none;
+	padding: 1rem;
+}
+
+/* <-- <code> STYLES */
+
+/* CONTROLS --> */
+
+a,
+.Content a {
+  color: #296089;
+}
+a:hover,
+.Content a:hover,
+.Content a:active {
+  color: #12293b;
+  text-decoration: none;	
+}
+.bottomPageActionLink {
+  margin-right: .5rem;
+}	
+table.RowDisplay a,
+table.row-display a {
+  color: #000;
+}
+table.RowDisplay a:hover,
+table.row-display a:hover {
+  color: #CC3333;
+}
+table.RowDisplay a:active,
+table.row-display a:active {
+  color: #73382C;
+}
+.row-display caption [class*="-link"] {
+  font-size: .875rem;
+  color: #296089;
+}
+
+/* add to separate file for bg-colors? --> */
+.bg-blue01 a,
+.bg-blue02 a,
+.bg-blue03 a {
+  color: #c4dcee;
+}
+.controls-wrapper {
+  margin-top: .5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.controls-wrapper:not(:last-child) {
+  margin-bottom: .5rem;
+}
+.form-section-content ~ .controls-wrapper {
+  margin-top: 1rem;
+}
+.controls-wrapper > :not(:last-child),
+.page-commands [class*="-link"]:not(:last-child),
+.page-commands [class*="-button"]:not(:last-child)  {
+  margin-right: .75rem;
+}
+/* remove override of input[type="submit"] after css migration */
+.controls-wrapper input[type="submit"][class*="-link"],
+.controls-wrapper input[type="submit"][class*="-button"],
+.controls-wrapper input[type="button"][class*="-button"],
+.page-commands input[type="submit"][class*="-link"],
+.page-commands input[type="submit"][class*="-button"] {
+	padding: .4rem .75rem;
+	min-width: 8rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+.controls-wrapper [class*="-link"] {
+	font-size: .875rem;
+}
+.previous-page-link {
+	margin-bottom: .75rem;
+	display: inline-block;
+  font-size: .875rem;
+}
+.pageMenu a {
+  margin-right: .75rem;
+}
+.RowDisplay input[type="submit"],
+.RowDisplay input[type="button"],
+.row-display input[type="submit"],
+.row-display input[type="button"]  {
+  margin: .125rem .125rem .25rem;
+  font-size: .875rem;
+}
+/* BUTTONS --> */
+
+/* AIS only*/
+#contentPageProportional input[type="submit"],
+#contentPageProportional input[type="button"] {
+  margin: 0 .5rem .25rem 0;
+}
+#contentPageProportional .HealthNextStep td input[type="submit"]:not([value="Clear Filters"]) {
+  margin: 0 .5em .5em;
+}
+/* DELETE?? */
+#contentPageProportional input.SaveChanges {
+  margin: 1.5rem 0;
+}
+/* AIR app save button */
+#ApplicationTemplateDisplayAUC input.SaveChanges {
+  float: left;
+  margin-right: 3rem;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.controls-wrapper [class*="-button"]:hover {
+  background: #22465d;
+  border-color: #1c384a;
+  cursor: pointer;
+}
+input[type="submit"]:disabled,
+input[type="button"]:disabled,
+.controls-wrapper [class*="-button"]:disabled {
+  background: #99acbb;
+  cursor: not-allowed;
+  border-color: #8ca2b2;
+}
+#filteringButtonContainer {
+  margin-bottom: .5rem;
+}
+input[type="submit"], 
+input[type="button"],
+.controls-wrapper [class*="-button"] {
+  vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  padding: .4rem .75rem;
+  background: #336789;
+  border: 1px solid #346788;
+  font-size: 1rem;
+}
+.form-input input[type="submit"], 
+.form-input input[type="button"] {
+  padding: .125rem .75rem;
+}
+.controls-wrapper a[class*="-button"] {
+  text-decoration: none;
+}
+input[type="submit"][value="Clear Filters"] {
+  border: 1px solid #999;
+  color: #000;
+  background: transparent;
+}
+input[type="submit"][value="Clear Filters"]:hover {
+  opacity: .7;
+  background: transparent;
+}
+.primary-control-wrapper {
+  flex-basis: 100%;
+}
+.primary-control-wrapper input[type="submit"][class*="-button"] {
+  background-color: #3392A1;
+  border-color: #318d9b;
+  padding: .5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* <-- BUTTONS */
+
+/* SEQUENCE-ITEM --> */
+.reorder-controls-wrapper button {
+  border: 0;
+  background-color: #336789;
+  padding: .25rem;
+  color: #fff;
+}
+tr:first-of-type .reorder-controls-wrapper select {
+  margin-left: 1.75rem;
+}
+.reorder-controls-wrapper select {
+  margin: 0 .125rem;
+}
+.sequence-item .switch-section-button {
+  margin-top: .25rem;
+  text-align: center;
+}
+/* <-- SEQUENCE-ITEM */
+
+/* <-- CONTROLS */
+
+/* START DETAILS STYLES --> */
+details {
+  margin: .75rem 0;
+}
+details > summary {
+  display: inline-block;
+  background: #d0dae1;
+  padding: .125em .5em .125em 1.5em;
+  border-radius: 2px;
+  position: relative;
+}
+details section,
+details .details-content {
+  padding: .5em .75em .75em;
+  background: #eff3f5;
+  /* FIX! */
+  width: fit-content;
+  width: -moz-fit-content; 
+  width: -webkit-fit-content;
+  border-radius: 0 2px 2px 2px;
+  margin-bottom: 1rem;
+}
+details[open] summary {
+  border-radius: 2px 2px 0 0;
+}
+details > summary:hover {
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  content: "";
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: currentColor;
+  -ms-transform: translateY(-50%) rotate(45deg);
+  -o-transform: translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+  background: transparent;
+  width: .5625em; /* 9px of 1em */
+  height: .5625em; /* 9px of 1em */
+  position: absolute;
+  /* needs to offset hidden half of square */
+  left: calc(.5em - 2px);
+  top: 50%;
+}
+details[open] > summary::before {
+  -ms-transform: translateY(-50%) rotate(135deg);
+  -o-transform: translateY(-50%) rotate(135deg);
+  -webkit-transform: translateY(-50%) rotate(135deg);
+  transform: translateY(-50%) rotate(135deg);
+  left: .5em;
+}
+/* BASE DETAILS OVERRIDES --> */
+table.RowDisplay details,
+table.row-display details {
+  margin: 0;
+}
+table.RowDisplay details > summary,
+table.RowDisplay details > .details-content,
+table.row-display details > summary,
+table.row-display details > .details-content  {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+details details section,
+fieldset details section,
+fieldset details .details-content {
+  background-color: #eff3f5;
+} 
+details details .details-content,
+.form-section details .details-content {
+  background-color: #e0e7eb;
+}
+details details > summary,
+fieldset details > summary,
+.form-section details > summary {
+  background-color: #c1cdd7;
+}
+/* <-- BASE DETAILS OVERRIDES */
+/* DELETE AFTER MARCOS CSS IS REMOVED --> */
+div.ApplicantApplicationTemplateEditor details > summary ~ section {
+  padding: .5rem 1.5rem 1.25rem;
+  background: #e0e6eb;
+  background: #eff3f5;
+  border-radius: 0 2px 2px 2px;
+  border: none;
+  border-top: 1px solid #d0dae1;
+}
+div.ApplicantApplicationTemplateEditor div details > summary {
+  border: none;
+  font-weight: normal;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  display: inline flow-root list-item;
+  margin-left: .75rem;
+  display: inline-block;
+  background: #d0dae1;
+  padding: .25em 1em .25em 2em;
+  border-radius: 2px;
+  position: relative;
+}
+/* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
+details.details_1 {
+  padding: 0 .75rem;
+  width: 36rem;
+  max-width: 100%;
+  border-bottom: 1px solid #90abc1;
+}
+details.details_1 > summary {
+  /* overrides for base styles --> */
+  background-color: transparent;
+  border-radius: 0;
+  padding: .5em 1em .5em 0;
+  display: block;
+  /* <-- overrides for base styles */
+  font-weight: bold;
+}
+/* details 1 (uses plus sign) */
+details.details_1 summary::before, 
+details.details_1 summary::after {
+  /* overrides for base styles --> */
+  border: 0;
+  height: 2px;
+  width: .75rem;
+  top: 50%;
+  right: 0;
+  left: initial;
+  background-color: currentColor;
+  /* <-- overrides for base styles */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+details.details_1 summary::after {
+  position: absolute;
+  content: "";
+}
+details.details_1 summary::before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+details.details_1[open] summary::before {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+} 
+
+details.details_1:last-of-type {
+  margin-bottom: 1.5rem;
+}
+details.details_1 section, 
+details.details_1 .details-content {
+    background-color: transparent;
+    padding: 1rem 0;
+}
+/* details block */
+details[class*="super"] summary {
+  padding: 0.5em 1em 0.5em 2.25em;
+  font-size: 1.125rem;
+}
+details[class*="block"] summary {
+  display: block;
+  padding: 0.5em 1em 0.5em 2.25em;
+  font-size: 1.125rem;
+}
+details[class*="block"] > summary::before,
+details[class*="super"] > summary::before {
+  left: calc(1em - 2px);
+}
+
+details[class*="block"] .details-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/* details*/
+details[class*="language"] summary {
+  background-color: #e1e3f4;
+}
+details.language-block {
+  border: 1px solid #dadbf1;
+}
+details[class*="language"] .details-content {
+  background-color: #f4f4fb;
+}
+/* info "i" --> */
+details.extra-information {
+  display: inline-block;
+}
+details.extra-information summary::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  top: .6rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+} 
+details.extra-information summary::after {
+  content: "i";
+  position: absolute;
+  left: .37rem;
+  top: 0;
+  font-weight: bold;
+}
+/* overrides base details styles */
+details[open].extra-information > summary::before {
+  -ms-transform: none;
+  -o-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  left: 0;
+  top: .1rem;
+}
+details.extra-information > .details-content {
+  position: absolute;
+}
+/* overrides base details styles within tables */
+table.row-display details.extra-information > .details-content,
+details.extra-information > .details-content {
+  background-color: #f0f6fa;
+  width: fit-content;
+  width: -moz-fit-content; 
+  width: -webkit-fit-content;
+  -webkit-box-shadow: rgb(0 0 0 / 13%) 0px 6px 14px 0px, rgb(0 0 0 / 11%) 0px 1px 4px 0px;
+  -moz-box-shadow: rgb(0 0 0 / 13%) 0px 6px 14px 0px, rgb(0 0 0 / 11%) 0px 1px 4px 0px;
+  box-shadow: rgb(0 0 0 / 13%) 0px 6px 14px 0px, rgb(0 0 0 / 11%) 0px 1px 4px 0px;
+  padding: .25rem .5rem;
+  margin-top: .5rem;
+  border-radius: 2px;
+  /*position: relative;*/
+  z-index: 1;
+}
+details.extra-information > .details-content::before {
+  content: "";
+  border: 8px solid transparent;
+  border-bottom: 9px solid #f0f6fa;
+  top: -1rem;
+  left: .35rem;
+  position: absolute;
+  filter: drop-shadow(1px -2px 2px rgb(0 0 0 / 13%));
+}
+/* <-- END DETAILS STYLES */
+
+/* DOWNLOADS --> */
+
+.Content .PDFDownload,
+.Content .ExcelDownload,
+.pdf-download,
+.excel-download,
+.word-download,
+.file-download a,
+td a.file-download {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 1.4rem;
+  line-height: 1.6;
+  display:block;
+  margin: 1em;
+  padding-left: 2rem;
+}
+.file-download a,
+td a.file-download {
+  display: inline-block;
+  margin: 0 1rem; /* inline block counts stacking margins */
+}
+td a.file-download {
+  margin: 0;
+}
+/* Need .Content to override .Content a....should make this less specific eventually */
+.Content .file-download a,
+.Content .file-download a:hover,
+.Content .file-download a:active,
+.Content td a.file-download,
+.Content td a.file-download:hover,
+.Content td a.file-download:active {
+  text-decoration: underline;
+  border-bottom-width: 0;
+}
+.Content .PDFDownload,
+.pdf-download,
+.file-download [href$=".pdf"],
+td a.file-download[href$=".pdf"],
+.file-download [data-file-name$=".pdf"] {
+  background-image: url(../../../../ais/common/pdficon_small.png);
+}
+.Content .ExcelDownload,
+.excel-download,
+.file-download [href$=".xlsx"],
+td a.file-download[href$=".xlsx"],
+.file-download [data-file-name$=".xlsx"] {
+  background-image: url(../../../../ais/common/Excelicon_small.png);
+}
+.word-download,
+.file-download [href$=".docx"],
+td a.file-download[href$=".docx"],
+.file-download [data-file-name$=".docx"] {
+  background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
+}
+/* REMOVE?? --> */
+table td div.PDFDownload,
+table td div.PDFDownloadDescription,
+table td div.ExcelDownload,
+table td div.ExcelDownloadDescription {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+/* <-- REMOVE?? */
+
+/* PDFDownload PAGE OVERRIDE --> */
+.Content > .PDFDownload {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+}
+/* <-- PDFDownload PAGE OVERRIDE */
+
+/* <-- DOWNLOADS */
+
+/* ERRORS --> */
+
+.validation-error-line,
+.warning,
+.error,
+.error-on-find {
+  background-color: #ffdacc;
+  border-radius: 2px;
+  border: 1px solid #ffc7b3;
+  font-size: .875rem;
+  margin: 1rem 0;
+  padding: .5rem .875rem .5rem 2.1875rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.validation-error-line::before,
+.warning::before,
+.error-on-find::before {
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #000;
+  content: "";
+  height: .9375rem;
+  left: .75rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: .9375rem;
+}
+.validation-error-line::after,
+.warning::after,
+.error-on-find::after {
+  color: black;
+  content: "!";
+  font-size: .6875rem;
+  font-weight: bold;
+  left: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1.0625rem;
+}
+.warning ol {
+  padding: 0 0 0 1.5rem;
+  margin: 0;
+}
+.warning li,
+.error li {
+  padding-left: .5rem;
+}
+.prohibited-character {
+  color: black;
+  padding: .125rem .75rem;
+  display: inline-block;
+  margin: .125rem .325rem;
+  font-size: 1.5rem;
+  border-radius: 2px;
+  border: 2px dashed #cc3702;
+  vertical-align: sub;
+}
+.error .error-heading {
+  position: relative;
+  background-color: #ffc7b3;
+  color: #000;
+  line-height: 1.5rem;
+  padding: .25rem 1rem .25rem 2.25rem;
+  /* cancels out margin on general errors (without heading)*/
+  margin: -.5rem -.875rem 0 -2.1875rem;
+}
+.error .error-question {
+  margin: .75rem 0 .25rem -1.375rem;
+}
+.error .error-list {
+  padding: .5rem .75rem .5rem 2rem;
+  /* cancels out margin on general errors (without heading)*/
+  margin: 0 -.875rem -.5rem -2.1875rem;
+}
+.error .error-heading::before {
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #cc3702;
+  content: "";
+  height: 1rem;
+  left: .75rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+}
+.error .error-heading::after {
+  background-color: #cc3702;
+  content: "";
+  font-size: 0.825em;
+  font-weight: bold;
+  height: 3px;
+  left: .875rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  width: .75rem;
+}
+
+/* <-- ERRORS */
+
+ /* FORMS --> */
+form {
+  margin: 0;
+}
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="password"],
+textarea {
+  background-color: #fff;
+  border: 1px solid #CECECE;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.10) inset;
+  padding: .1875rem .25rem;
+  font-size: 1rem;
+  max-width: 100%;
+}
+input[type="email"] {
+  width: 20rem;
+  max-width: 100%;
+}
+select {
+  max-width: 100%;
+  font-size: 1rem;
+  border: 1px solid #b3b3b3;
+  padding: .1875rem .25rem;
+}
+select[multiple="multiple"] {
+  height: 600px;
+  max-height: 100%;
+}
+input[type="file"] {
+  border: none;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.form-section {
+	background-color: #eff2f3;
+	border-radius: 2px;
+	padding: .75rem 1rem 1rem;
+  border: 1px solid #e8eced;
+}
+.form-input,
+.generated-field {
+	margin-bottom: .5rem;  
+  white-space: normal;
+}
+.form-input .action,
+.generated-field .action {
+  display: inline-block;
+}
+.form-input .number,
+.generated-field .number {
+  text-align: right;
+}
+.form-input label:first-child,
+.generated-field > .label:first-child,
+.form-input > .label:first-child {
+	padding-right: .5rem;
+	width: 10rem;
+}
+.generated-field > .label, 
+.generated-field .preview,
+.generated-field > .value,
+.form-input label,
+.form-input input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]),
+.form-input textarea,
+.form-input select,
+.input-group-label {
+	display: inline-block;
+	line-height: 1.2;
+	max-width: 100%;
+	padding: .25rem 0;
+	vertical-align: top;
+	font-size: 1rem;
+}
+.form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]),
+.form-input textarea,
+.form-input select,
+.generated-field > .preview,
+.generated-field > .value {
+	min-width: 10rem;
+	padding: .25rem;
+}
+.generated-field > .value {
+  font-style: italic;
+  background-color: #eff2f3;
+  border-radius: 2px;
+  border: 1px solid #e2e7e9;
+}
+.form-section .generated-field > .value,
+.details-content .generated-field > .value {
+  border-color: #d3dbde;
+}
+.generated-field > .value,
+.generated-field > .label,
+.generated-field > .preview {
+  line-height: 1.3;
+}
+.generated-field > .value,
+.generated-field > .preview {
+  padding-left: .5rem;
+  padding-right: .5rem; 
+}
+[class$="-input-wrapper"] {
+	display: inline-block;
+	margin-bottom: .25rem;
+}
+.form-input input.FileUploadQuestion {
+  padding: .25rem 0;
+}
+.form-input select,
+.form-input textarea,
+.generated-field > .value {
+	max-width: calc(100% - 11rem);
+}
+.form-input[class*="css"] textarea {
+  max-width: initial; /* textareas containing CSS need to be full width */
+}
+[class*="css"] textarea {
+  width: 100%; /* textareas containing CSS need to be full width */
+}
+.form-input textarea {
+  /*max-width: 600px; consider removing permanently */
+  max-width: 100%;
+}
+.generated-field > .value {
+  max-width: 850px;
+}
+.form-input input[type=checkbox],
+.form-input input[type=radio] {
+  margin: .25rem;
+	vertical-align: text-top;
+	min-width: initial;
+	padding: 0;
+  cursor: pointer;
+}
+.form-input input[type=radio] {
+  margin: .3125rem .25rem;
+}
+input[type=checkbox][disabled=disabled] {
+  cursor: not-allowed;
+}
+input[type=checkbox]:checked + label {
+  font-weight: bold;
+}
+.form-input input[type=checkbox] ~ label,
+.form-input inpt[type=radio] ~ label {
+	float: none; /* override */
+	margin: 0 .25rem 0 0;
+	line-height: 1;
+}
+.form-input .ajax-observe-field,
+.form-input .ajax-update-container {
+	display: contents;	
+}
+.generated-field .preview {
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid #e6e6e6;
+	min-height: 1.25rem;
+	min-width: 14rem;
+}
+.input-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.input-group ~ .input-group,
+.input-group ~ .form-input {
+  margin-top: .75rem;
+}
+.input-group-content {
+	margin: 0 0 .25rem 1rem;
+}
+.input-group-content .form-input label:first-child {
+	width: 9rem;
+}
+/* from-to-date-picker --> */
+.from-to-date-picker .input-group-content {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 1rem;
+}
+.input-group-label {
+	width: 9rem;
+}
+.from-to-date-picker {
+  display: flex;
+  flex-flow: row wrap;
+}
+.from-to-date-picker label {
+	display: block;
+}
+.date-hint .label,
+.date-hint .value {
+	display: inline-block;
+	font-size: .875rem;
+	padding-left: .25rem;
+}
+.date-hint .label::after {
+	content: ":";
+}
+.date-picker input {
+	width: 8.5rem;
+  min-width: initial;
+}
+.form-input.date-picker:not(:only-child) {
+	margin-right: .5rem;
+}
+/* <-- from-to-date-picker */
+
+/* FIELDSETS --> */
+form fieldset {
+  border: 1px solid #356789;
+  border-radius: 2px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 0 0 .75rem;
+}
+.form-input + fieldset {
+  margin: .75rem 0;
+}
+/* temp override for AIS because of so many unnecessary fieldsets */
+.content fieldset {
+  width: initial;
+}
+legend {
+  font-weight: normal;
+  padding: 0 .25rem;
+}
+/*legend a {
+  font-size: .75rem;
+}*/
+fieldset.yes-no-picker {
+	border: 1px solid #cecece;
+	margin: 0 0 .75rem;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+}
+fieldset.yes-no-picker legend {
+	font-weight: normal;
+	font-size: 1rem;
+}
+.fieldset-content .form-input {
+  margin-bottom: 0;
+}
+.fieldset-content .form-input:first-child:nth-last-child(n + 4),
+.fieldset-content .form-input:nth-last-child(n + 4) ~ .form-input {
+  display: block;
+}
+.form-section-content legend {
+  font-size: .875rem;
+}
+/* <-- FIELDSETS */
+
+/* FORMS IN TABLES --> */
+.row-display .form-input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="button"]),
+.row-display .form-input textarea,
+.row-display .form-input select {
+  display: block;
+}
+.row-display .form-input textarea {
+  width: 100%;
+}
+.row-display .input-group-label {
+  font-size: 1rem;
+}
+/* <-- FORMS IN TABLES */
+
+/* REQUIRED --> */
+.form-input.required label::after {
+  content: " *";
+  color: var(--required-red);
+  background-color: inherit;
+  font-weight: bold;
+}
+.form-input.required::before {
+  content: none;
+}
+.hint.required {
+  font-size: .875rem;
+  font-style: italic;
+  color: var(--required-red);
+}
+.yes-no-picker.required legend:after {
+    content: " *";
+    color: var(--required-red);
+    background-color: inherit;
+    font-weight: bold;
+}
+.yes-no-picker.required label:after {
+	content: "";
+}
+/* <-- REQUIRED */
+
+/* SEARCH --> */
+form[class$="-search"] .form-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+/* CHANGE H2 to target a class! */
+form[class$="-search"] .form-section h2 {
+	flex: 0 0 10rem;
+}
+form[class$="-search"] .form-section-content {
+	margin-top: .5rem
+}
+/* <-- SEARCH */
+
+/* filter for display --> */
+.filter-for-display {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 1rem 0;
+}
+.filter-for-display label:first-child {
+  display: block;
+}
+/* <-- filter for display */
+
+/* control inside form-input --> */
+#contentPageProportional .form-input input[type="submit"],
+#contentPageProportional .form-input input[type="button"] {
+  margin: 0 0 0 .5rem;
+}
+/* <-- control inside form-input */
+
+/* Email forms --> */
+
+[class*="EmailTemplate"] .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+[class*="EmailTemplate"] .form-input textarea, 
+[class*="EmailTemplate"] .form-input select, 
+[class*="EmailTemplate"] .generated-field > .preview, 
+[class*="EmailTemplate"] .generated-field > .value {
+  width: 34rem;
+  max-width: 100%;
+}
+[class*="EmailTemplate"] .form-input textarea {
+  min-height: 18rem;
+}
+/* <-- Email forms */
+
+@media only screen and (max-width : 30rem) {
+	.form-input select,
+	.form-input textarea,
+  .generated-field > .value {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+/* <-- FORMS */
+
+/* HEADINGS --> */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-top: 0;
+  line-height: 1.4;
+  margin-bottom: .5rem;
+  padding: 0;
+}
+h1 {
+  font-size: 1.75rem;
+  color: #2a353d;
+}
+h2 {
+  font-size: 1.375rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4{
+  font-size: 1.125rem;
+  color: #33424d;
+}
+
+/* <-- HEADINGS */
+
+/* iframes --> */
+
+.iframe-resize-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+.iframe-resize-wrapper {
+  height: 300px;
+  width: 800px;
+  resize: both;
+  overflow: auto;
+}
+
+/* <-- iframes */
+
+/* LISTS --> */
+.long-list {
+  column-count: 2;
+  column-width: 15rem;
+  column-gap: .5rem;
+}
+/* <-- LISTS */
+/* mixed languages --> */
+
+.mixed-languages [lang] {
+  color: #067766;
+  margin-bottom: .375rem;
+}
+.mixed-languages .deadlineBox [lang],
+div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1[lang], /*forms only*/
+div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*forms only*/
+.mixed-languages [lang] h1, 
+.mixed-languages [lang] h2,
+.mixed-languages [lang] h3,
+/* user home page */
+#UserHomeIntro .mixed-languages [lang] h1, 
+#UserHomeIntro .mixed-languages [lang] h2,
+#UserHomeIntro .mixed-languages [lang] h3,
+/* login page */
+.CustomContent .mixed-languages [lang] h1, 
+.CustomContent .mixed-languages [lang] h2,
+.CustomContent .mixed-languages [lang] h3  {
+  color: #065649;
+}
+.mixed-languages .Instruction [lang] {
+  color: #066051;
+  margin-bottom: 0;
+}
+
+/* <-- mixed languages */
+
+/* page structure --> */
+.page-section {
+  margin-bottom: 1rem;
+}
+/* <-- page structure */
+
+/* PAGINATOR --> CLEAN UP AFTER MARCO DELETES STYLES! */
+.paginatorContainer {
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid #cecece;
+  display: flex;
+  flex-flow: row wrap;
+  margin: .5rem 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  justify-content: flex-start;
+}
+.paginator {
+  font-size: .875rem;
+  padding: .75rem; 
+  margin-right: 0; 
+  margin-left: 0;
+}
+.paginator span,
+.paginator a {
+  display: inline-block;
+}
+
+.paginatorContainer .paginator a {
+  background: #fff;
+  border: solid 1px #346789;
+  color: rgb(40 54 61);
+  padding: .0625rem .5rem .125rem .5rem;
+  text-decoration: none;
+  margin-right: .125rem;
+}
+
+.paginator a:visited {
+  padding: .0625rem .5rem .125rem .5rem;
+  border: solid 1px #346789;
+  background: inherit;
+  text-decoration: none;
+}
+
+.paginator .paginatorAtStart,
+.paginator .paginatorAtEnd {
+  margin: inherit;
+  padding: .0625rem .5rem .125rem .5rem;
+  color: rgb(255 255 255);
+  border: 1px solid #356789;
+  background: #356789;
+  opacity: .6;
+  white-space: nowrap;
+}
+
+.paginator .paginatorBreak {
+  padding: 2px 6px;
+  border: none;
+  background: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.paginatorContainer .paginator .paginatorNext,
+.paginatorContainer .paginator .paginatorPrev {
+  padding: .0625rem .5rem .125rem .5rem;
+  background: #336789;
+  border: 1px solid #346788;
+  color: #ffffff;
+  border-color: #356788;
+  border-radius: 2px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.Content .paginator .paginatorNext {
+  margin-left: .5rem;
+}
+.Content .paginator .paginatorPrev {
+  margin-right: .5rem;
+}
+
+.paginatorContainer .paginator a:hover,
+.paginatorContainer .paginatorBatchSizes a:hover {
+  color: #fff;
+  background: #22465d;
+  border-color: #1c384a;
+  text-decoration: none;
+}
+
+.paginatorContainer .paginatorResults {
+  /* text-align: center; */
+  font: 11px/15px Arial, Helvetica;
+   color: #000; 
+  /* margin-top: .75rem; */
+  margin: 0 1.5rem;
+  background: #e0e6ef;
+  padding: .125rem .5rem;
+  margin: .75rem;
+}
+
+.paginatorContainer .paginatorBatchSizes {
+  /* text-align: center; */
+  font: 11px/15px Arial, Helvetica;
+  margin: .75rem;
+}
+
+.paginatorBatchSizeList {
+  font-weight: bold;
+}
+
+.paginatorBatchSizes a {
+  color: #296089;
+  padding: 2px 6px;
+  border: solid 1px rgb(208, 208, 208);
+  background: rgb(255, 255, 255);
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0 .125rem;
+}
+
+.paginatorContainer .paginator .paginatorCurrentPage {
+  padding: .0625rem .5rem .125rem .5rem;
+  border: none;
+  font-weight: bold;
+  color: #000;
+}
+/* <-- PAGINATOR */
+
+/* SECTIONS --> */
+
+[class*="-section"] {
+  margin: 1rem 0;
+}
+[class*="-section-"] {
+  margin: 0;
+}
+[class*="-section-content"] {
+  margin: 1rem 0 0 0;
+}
+.inbox-section-content {
+  background-color: #e0e6eb;
+  border-top: 3px solid #415467;
+  padding: .75rem 1rem;
+  margin: 0;
+}
+.inbox-section h2 {
+  background-color: #415467;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.125;
+  margin: 0;
+  padding: 5px 10px 4px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.data-display-section {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 1rem 0;
+}
+.data-display-section-content {
+  border: 1px solid #e8eced;
+  border-top: none;
+  padding: 1rem;
+  margin: 0;
+  background-color: #f0f2f3;
+  border-radius: 0 0 4px 4px;
+}
+.data-display-section h2 {
+  background: #bfced9;
+  padding: .625rem 1rem .5rem;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+  border: 1px solid #b9cad5;
+}
+.data-display-section h2 a {
+  color: #33434d;
+}
+.data-display-section .generated-field {
+  margin: 0;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  flex-flow: row wrap;
+}
+.data-display-section .generated-field:last-child {
+  border-bottom: 0;
+}
+.data-display-section .generated-field > .value {
+  background: #e3e6e8;
+  border: 0;
+  border-left: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  flex-grow: 1;
+  padding: .5rem .5rem .5rem.75rem;
+  font-style: normal;
+}
+.data-display-section .generated-field .generated-field > .value {
+    background-color: hsl(204 10% 86% / 1);
+}
+.data-display-section .generated-field > .label {
+  padding: .5rem .75rem .5rem 0;
+  width: 13rem;
+}
+/* <-- SECTIONS */
+
+/* SHARED: STEP BY STEP WIZARD --> */
+ul.progress_bar {
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+}
+.progress_bar li {
+  list-style: none;
+  border: 2px dashed #29353d;
+  padding: .5rem .75rem;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 2rem;
+}
+.progress_bar li:not(:last-child):after { 
+  content: '';
+  position: absolute;
+  width: 1.8rem;
+  height: 4px;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #29353d;
+}
+.progress_bar.step_one li:nth-of-type(2):after { 
+  background-color: #94a9b8;
+}
+.progress_bar.step_one li:first-of-type,
+.progress_bar.step_two li:nth-of-type(2),
+.progress_bar.step_three li:nth-of-type(3) {
+  background-color: #29353d;
+  color: #fff;
+  font-weight: bold;
+}
+.progress_bar.step_two li:first-of-type,
+.progress_bar.step_three li:nth-child(-n+2) {
+  border-style: solid;
+  background-color: #475c6b;
+  color: #fff;
+}
+.progress_bar.step_two li:first-of-type:before,
+.progress_bar.step_three li:nth-child(-n+2):before {
+ content:  "\2713 ";
+ padding-right: .5rem;
+ font-weight: bold;
+}
+
+/* <-- SHARED: STEP BY STEP WIZARD */
+
+/* NAVIGATION --> */
+.sub-nav,
+.info-bar {
+  display: flex;
+  margin: -1rem -1.25rem 1rem -1.25rem;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  flex-flow: row wrap;
+  align-items: flex-end;
+}
+.sub-nav {
+  background-color: #e4e5e7;
+}
+.info-bar {
+  background-color: #f1f2f3;
+}
+.sub-nav .page-actions {
+  margin-left: auto;
+}
+.info-bar-item:not(:last-child) {
+  margin-right: .75rem;
+  flex: 0 1 15rem; /* last child can be long item */
+}
+.info-bar-item .label {
+  color: #555;
+}
+.info-bar .label::after {
+  content: ":";
+  padding-right: .25rem;
+}
+.info-bar .StudentLastNameEmphasis:first-child::after {
+  content: ",";
+  padding-right: .25rem;
+}
+.page-actions .link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+.page-actions .link-list li:not(:first-child) {
+  display: inline-block;
+  margin-left: .5rem;
+}
+.breadcrumbs-item:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin: 0 .5rem;
+  color: #666;
+  font-size: 1.125rem;
+  line-height: 1;
+}
+.info-bar-item.student-name .last-name:first-child::after {
+  content:",";
+}
+.info-bar-item.student-name .last-name {
+  font-weight: bold;
+}
+
+/* Override for h1 size until all h1 text is reduced appropriately --> */
+#contentPageProportional .info-bar + h1 {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.info-bar .generated-field-group-content .label::after {
+  content: "";
+}
+.info-bar .generated-field-group-content .value {
+  font-weight: bold;
+}
+.sub-nav .previous-page-link {
+  margin: 0;
+}
+.info-bar-item dt, .info-bar-item dd {
+  display: inline-block;
+  margin: 0;
+}
+.info-bar-item.generated-field-group,
+.info-bar-item .generated-field-group-content {
+  display: flex;
+}
+.info-bar-item .generated-field-group-label {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+.info-bar-item .generated-field-group-label:after {
+  content: ":";
+}
+.info-bar ~ .page-heading {
+  margin: -1rem -1.25rem 0;
+  padding: 1rem;
+  background: #f1f2f3;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  flex-flow: row wrap;
+}
+
+/* <-- NAVIGATION */
+
+/* TABLE ROW NUMBERS --> */
+
+table.row-display > tbody {
+    counter-reset: rowCounter calc(var(--row-number-start) - 1);
+}
+table.row-display > tbody > tr {
+    counter-increment: rowCounter;
+}
+table.row-display > tbody > tr td.row-number:after {
+  content: counter(rowCounter) ".";
+}
+table.row-display {
+    background-color: #fff;
+    color: #000;
+    font-style: normal;
+    margin: .5rem 0;
+    border-collapse: collapse;
+}
+table.RowDisplay td.rowNumber,
+table.RowDisplay td.row-number,
+table.row-display td.rowNumber,
+table.row-display td.row-number {
+   text-align: right;
+}
+
+/* <-- TABLE ROW NUMBERS */
+
+/* TABLE SORTER --> */
+
+th .SortColumn,
+th .sort-column,
+.sort-wrapper {
+	margin-right: .25em;
+}
+.sort-wrapper input,
+input[title="ERXSortOrder.sortBy"] {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+/* <-- TABLE SORTER */
+/* SHARED TABLE STYLES --> */
+caption {
+  text-align: left;
+  padding: .125rem 0 .375rem;
+}
+th {
+  font-weight: normal;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.row-display .number,
+.RowDisplay .number {
+  text-align: right;
+}
+.row-display th {
+  text-align: left;
+}
+thead .aisid input[list*="Filter"] {
+  width: 8rem;
+}
+thead .test-center input[list*="Filter"] {
+  width: 6rem;
+}
+thead .applicant-status input[list*="Filter"] {
+  width: 4rem;
+}
+table.row-display tr,
+table.RowDisplay tr {
+  vertical-align: top;
+}
+td.percent:not(:empty)::after {
+    content: "%";
+}
+tr.has-pii td.pii {
+  background-color: #ffb699ab;
+}
+/* <-- SHARED TABLE STYLES */
+
+/* TAGS --> */
+
+[class*="-tag"] {
+	padding: 0 .25rem;
+	font-size: .875rem;
+	margin: 0 .25rem;
+	border-radius: 2px;
+}
+.info-tag {
+	background-color: #bfeaf7;
+}
+.info-tag-1 {
+	background-color: #f7d9fd;
+}
+.info-tag-2 {
+	background-color: #d0d0fb;
+}
+.info-tag-3 {
+	background-color: #d0fbd3;
+}
+.alert-tag {
+	background-color: #fbcec7;
+}
+.super.info-tag {
+  padding: .125rem .75rem;
+  font-size: 1rem;
+  border-radius: 100px;
+}
+/* overrides on one-off classes --> */
+.external-system-tag {
+  padding: initial;
+  font-size: initial;
+  margin: initial;
+  border-radius: initial;
+}
+/* <-- overrides on one-off classes */
+
+/* <-- TAGS */
+
+/* TEXT --> */
+.explanation {
+  font-size: .875rem;
+  font-style: italic;
+}
+/* <-- TEXT */
+
+/* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
+/*                                                           */
+/* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
+/* added at the bottom of your palette list below, within    */
+/* their own comment section.                                */
+/*                                                           */
+/* CSS ADDITIONS: Any CSS I added or notes about changes     */
+/* are at the bottom of this stylesheet beginning at Line    */
+/* 2870) in its own section.                                 */
+/*                                                           */
+/* Please! Please! review my changes and clean them up as    */
+/* as you think appropriate. Thanks! ... Gregg               */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.preformHeaderLogo {
+  margin-right: 1rem;
+  height: 50px;
+}
+h1, h2, h3, h4 {
+  color: #025689;
+  margin: 0 0 .5rem;
+  font-weight: normal;
+}
+h1, h2 {
+  font-size: 1.5rem;
+}
+a {
+  color: #296089;
+}
+.nodisplaypreform {
+  display: none;
+}
+.section-form-fields-view .templateDeadlineToolbar {
+  display: none;
+}
+.section-form-fields-view {
+  background-color: #fff;
+}
+div.QuestionText .QuestionInstructions,
+.Instruction {
+  color: #2E6B9B;
+  font-style: italic;
+  font-size: .875rem;
+  margin-bottom: .5rem;
+}
+.section-form-fields-view {
+  background-color: #fff;
+}
+
+.section-form-fields-view .detailScroller {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 0;
+  box-shadow: none;
+  border: 0;
+  text-align: left;
+  max-width: 950px;
+}
+
+.PlacedQuestion .required.questionNumber:before,
+.PlacedQuestion .required.preFormQuestionNumber:before {
+  content: '';
+}
+
+.PlacedQuestion .required.questionNumber ~ .questionText:after,
+.PlacedQuestion .required.preFormQuestionNumber ~ .questionText:after {
+  color: #CD0000;
+  content: ' *';
+}
+
+.PlacedQuestion div.preFormQuestionNumber,
+.QuestionNumber {
+  display: inline-block;
+  padding-right: 0;
+  vertical-align: top;
+  width: 1.75rem;
+}
+.QuestionText,
+.questionText {
+  display: inline-block;
+  vertical-align: top;
+}
+.switchComponent {
+  margin-left: 1.75rem;
+  margin-top: .25rem;
+}
+.PlacedQuestion {
+  margin-bottom: 1rem;
+}
+li {
+  margin: 0;
+}
+ul {
+  margin: .25rem 0;
+  padding: 0 2rem;
+}
+.onyx-input-decorator {
+  padding: 0;
+  border: 0;
+}
+.onyx-input {
+  background-color: #fff;
+  border: 1px solid #C7C7C7;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+  -moz-box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20);
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.20) inset;
+  padding: 2px 4px;
+  font-size: .875rem;
+  border-radius: 2px;
+}
+div[id$="_textBefore"] .QuestionNumber {
+  display: none;
+}
+.datePicker {
+  margin-right: .5rem;
+}
+.onyx-button {
+  padding: 0 1rem .125rem;
+}
+.onyx-button:focus {
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.onyx-picker-decorator .onyx-button {
+  padding: 2px 4px;
+}
+
+.PlacedQuestion .SingleChoice button,
+.PlacedQuestion .DateQuestion .datePicker button,
+.PlacedQuestion .UniversityPicker button {
+  font-size: .875rem;
+  background-color: #fff
+  min-width: 10rem;
+  background: transparent;
+  border-color: #a6a6a6;
+}
+.PlacedQuestion .SingleChoice button:hover,
+.PlacedQuestion .DateQuestion .datePicker button:hover,
+.PlacedQuestion .UniversityPicker button:hover {
+  cursor: pointer;
+}
+.PlacedQuestion .SingleChoice button.active {
+  background: #3e6887 url(../lib/onyx/images/gradient-invert.png) repeat-x top;
+}
+
+.PlacedQuestion .SingleChoice button:after,
+.PlacedQuestion .DateQuestion .datePicker button:after,
+.PlacedQuestion .UniversityPicker button:after {
+  /*content: none;*/
+}
+.onyx-picker {
+  width: initial;
+  min-width: 10rem;
+  background-color: #fff;
+}
+.onyx-menu-item {
+  padding: 0 .25rem;
+}
+.filterLabel {
+  margin-bottom: .5rem;
+}
+#app_templateHeading {
+  padding: 0;
+  font-size: 1.875rem;
+  color: #2E6B9B;
+  border: 0;
+  border-bottom: 2px solid #2E6B9B;
+  margin-bottom: 1rem;
+  padding-bottom: .125rem;
+  font-weight: normal;
+  background: transparent;
+  margin: .5rem 1.5rem;
+}
+#app_saveToServerToolbar {
+  background: transparent;
+  margin: .75rem 1.5rem;
+  border: 0;
+  border-top: 2px solid #2E6B9B;
+}
+.onyx-toolbar .onyx-button {
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 0 .5rem .125rem .5rem;
+  background: #204156;
+  background: -moz-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: -webkit-linear-gradient(top, #336789 0%, #204156 58%, #204156 100%);
+  background: linear-gradient(to bottom, #336789 10%, #204156 60%, #204156 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#336789', endColorstr='#204156',GradientType=0 );
+  border: 1px solid #214155;
+  font-size: .875rem;
+}
+
+.form-panels a {
+  font-size: inherit;
+}
+.AClogoAddressFooter {
+  font-size: .75rem;
+}
+.form-panels .AClogoAddressFooter a {
+  color: #c4dcee;
+}
+
+.AClogoAddressFooter img {
+  width: 200px;
+}
+.AClogoAddressFooter #LoginPage {
+  display: none;
+}
+#app_sectionFooterToolbar,
+#app_sectionHeaderToolbar {
+  background-color: #33424d;
+  width: 100%;
+}
+.section-form-fields-view .detailScroller {
+  padding: .5rem 1.5rem;
+}
+
+.onyx-checkbox {
+  background-position: 0px -130px;
+  border: 1px solid #999;
+  border-radius: 9px;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 2px;
+}
+.onyx-checkbox[checked],
+.onyx-checkbox[disabled] {
+  border: 0;
+  height: 1rem;
+  width: 1rem;
+}
+.onyx-checkbox[checked] {
+  background-position: 0px -16px;
+  background-size: 1rem;
+}
+input[type=checkbox] {
+  margin-bottom: .5rem;
+}
+.active input[type=radio] + label,
+input[type=checkbox]:checked + label  {
+  font-weight: bold;
+}
+input + label {
+  padding-left: .25rem;
+}
+#app_sectionItemsList_ownerProxy_placedQuestion_switchComponent_placed_multiChoiceList_ownerProxy_inputDecorator {
+  box-shadow: none;
+  border:0;
+}
+
+
+
+/* GREGG'S CSS ADDITIONS AND NOTES ABOUT CHANGES AFTER 4 Jun 2019 */
+
+/* 9 Aug - Change formatting of "missing required" questions in pre-form */
+.PlacedQuestion.missingRequired {
+    border: none;
+    border-left: 5px solid #C75D48;
+    padding: .2em .5em;
+    background-color: #F9EFED;
+}
+
+.onyx-picker .onyx-menu-item { text-align: left;}
+
+
+/* 15 Aug - For new Logo "Bundles" with 1-6 narrow and wide logos. Single, non-bundle Logos are "200px",
+"Narrow" logos in bundles count as "100px", "Wide" logos in bundles count as "200px" */
+img.ProgramLogo200w {
+  max-width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+}
+img.ProgramLogo300w {
+  max-width: 300px;
+  margin-bottom: 1rem;
+  display: block;
+}
+img.ProgramLogo400w {
+  max-width: 400px;
+  margin-bottom: 1rem;
+  display: block;
+}
+img.ProgramLogo500w {
+  max-width: 500px;
+  margin-bottom: 1rem;
+  display: block;
+}
+img.ProgramLogo600w {
+  max-width: 600px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* 15 Aug - Add noticeBox and alertBox CSS to preform */
+.noticeBox {
+  border: medium solid #de6846;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 1em 0;
+}
+div.alertBox {
+  color: #000;
+  background-color: #ffdacc;
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: left;
+  border: 1px solid #ffc8b3;
+  border-radius: 2px;
+  padding: .25rem .5rem;
+  margin: 1em 0;
+  clear: right;
+}
+div.alertBox img {
+  padding-right: .25rem;
+  float: left;
+  height: 17px;
+}
+
+/* 15 Aug - Add CSS for required "*" styling in text area */
+.requiredIndicator {
+  color: #CD0000;
+  content: '*';
+  font-size:1.4em;
+  font-weight: normal;
+  left:1px;
+  right:3px;
+  line-height:0.4;
+  opacity:1;
+  position:relative;
+  top:0.1em;
+}
+
+/* 16 Aug - Add scrollbar to long drop down menus, because scrolling is not obvious and is quirky */
+.PlacedQuestion .enyo-touch-strategy-container.enyo-scroller .enyo-touch-scroller {
+  overflow: auto;
+}
+
+/* proctored exam --> */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+#app_userDataEntryContent #app_detailScroller {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
+#app_userDataEntryContent .onyx-toolbar {
+  white-space: normal;
+}
+#app_userDataEntryContent #app_templateHeadingForProctoredExam {
+  flex-basis: 100%;
+}
+#app_userDataEntryContent #video-and-chat-content-id {
+  width: 100%;
+  flex-direction: column;
+}
+#app_userDataEntryContent #interactive-content-id {
+  padding: .5rem;
+  display: block;
+  order: 2;
+}
+#webcam-widget-wrapper-id,
+#blast-chat-content-wrapper-id,
+#direct-chat-content-wrapper-id {
+  padding: .75rem;
+  border: 1px solid #cecece;
+  background-color: #e0e6eb;
+  border-radius: 2px;
+  margin: .5rem;
+  width: 300px;
+  max-width: 100%;
+}
+#blast-chat-content-wrapper-id,
+#direct-chat-content-wrapper-id { 
+  display: inline-block;
+  vertical-align: top;
+}
+#app_userDataEntryContent .announcements-header,
+#app_userDataEntryContent .speak-with-proctor-header {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+#app_userDataEntryContent #webcam-widget-wrapper-id {
+  width: 300px;
+  background-color: transparent;
+  /*float: right;*/
+  max-width: 100%;
+}
+#app_userDataEntryContent #webcam-widget-wrapper-id #js-video-window-id {
+  margin: .5rem 0 0;
+}
+#app_userDataEntryContent #blast-chat-content-wrapper-id {
+  background-color: #29353d;
+  border: 1px solid #29353d;
+  color: #fff;
+  overflow: scroll;
+  height: 300px;
+}
+#app_userDataEntryContent .proctor-blast-item-wrapper {
+  background-color: #33424d;
+  padding: .25rem;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id {
+  height: 275px;
+}
+#app_userDataEntryContent .PlacedQuestion {
+  padding: 1rem;
+  max-width: 1000px;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id_inputDecorator {
+  margin-bottom: .25rem;
+  width: 100%;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id_detailScroller {
+  margin-top: .75rem;
+  /*height: initial !important;*/
+  background-color: #f6f8f9;
+  padding: 0 .25rem;
+}
+#app_userDataEntryContent #direct-chat-content-wrapper-id_blastField {
+  width: 100%;
+}
+#app_userDataEntryContent span.speaker {
+  font-weight: bold;
+  margin-right: .5rem;
+}
+#app_userDataEntryContent #before-exam-text-id {
+  color: #000;
+  font-size: 0.9375rem; /* 15px when 100% */
+  font-weight: normal;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .5rem .75rem;
+  margin: 1rem 1rem 0;
+  background-color: #ffe0b3;
+  border-color: #ffcc80;
+  display: inline-block;
+  order: 1;
+}
+#app_userDataEntryContent #app_detailScroller_confirmation {
+  margin: 1rem;
+}
+@media only screen
+and (max-width : 767px) {
+  #app_userDataEntryContent #webcam-widget-wrapper-id {
+    float: none;
+  }
+  #app_userDataEntryContent #webcam-widget-wrapper-id,
+  #app_userDataEntryContent #blast-chat-content-wrapper-id,
+  #app_userDataEntryContent #direct-chat-content-wrapper-id { 
+    /*height: initial;*/
+    /*max-height: 250px;*/
+    width: initial;
+    max-width: 100%;
+  }
+  #app_userDataEntryContent #interactive-content-id {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-shrink: 0;
+  } 
+}
+
+@media only screen
+and (min-width: 768px) {
+  .section-form-fields-view .detailScroller.proctored {
+    display: flex;
+    flex-flow: row wrap;
+    flex-shrink: 0;
+  }
+  #app_userDataEntryContent #video-and-chat-content-id {
+    width: initial;
+  }
+  #app_userDataEntryContent #interactive-content-id {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 0;
+  }
+  #app_userDataEntryContent #webcam-widget-wrapper-id {
+    width: 330px;
+  }
+}
+@media only screen
+and (min-width: 768px) and (max-width: 899px) {
+  #app_userDataEntryContent #interactive-content-id {
+    width: 300px;
+  }
+  #app_userDataEntryContent #webcam-widget-wrapper-id,
+  #app_userDataEntryContent #blast-chat-content-wrapper-id,
+  #app_userDataEntryContent #direct-chat-content-wrapper-id {
+    min-width: initial;
+  }
+}
