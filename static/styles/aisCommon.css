@@ -6160,6 +6160,20 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 }
 /* <-- PAGE: Document review approval editor */
 
+/* PAGE: Evaluators for PIPY Editor -->  */
+
+.EvaluatorsForPIPYEditor .AmagaviObjectChooser .middle {
+  text-align: center;
+}
+.EvaluatorsForPIPYEditor .AmagaviObjectChooser .divider {
+  padding: .5rem;
+}
+select[multiple="multiple"] {
+     height: initial; 
+     max-height: initial; 
+}
+/* <-- PAGE: Evaluators for PIPY Editor  */
+
 /* PAGE: HOME --> */
 .HomePageForAll {
   display: flex;
