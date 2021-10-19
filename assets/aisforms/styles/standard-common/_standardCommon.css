@@ -45,6 +45,17 @@
 /* FIXED Setup--> */
 /* */
 
+
+/* forms --> */
+.QuestionAnswer .social-media input[type="text"],
+.QuestionAnswer .social-media select,
+.QuestionAnswer .UpSupplemenItemsDescripti input[type="text"],
+.QuestionAnswer .EmployerWebsite input[type="text"] {
+  width: 20rem;
+  max-width: 100%;
+}
+/* <-- forms */
+
 /* Typography--> */
 
 div.Content {
@@ -561,16 +572,16 @@ div.Content div.SchoolZIP input[type='text'] {
   width: 2em;
 } */
 
-div.Content .SectionDisplay table tr td div.caption input[type="text"] {
+.SectionDisplay table div.caption input[type="text"] {
   width: 15em;
 }
-div.Content .SectionDisplay table tr td .LargeInputTable input[type="text"] {
+.SectionDisplay table .LargeInputTable input[type="text"] {
   width: 15rem;
 }
-div.Content .SectionDisplay table tr td input[type="text"] {
+.SectionDisplay table input[type="text"] {
   width: 8em;
 }
-div.Content .SectionDisplay table tr td input[type="text"].IntegerQuestion {
+.SectionDisplay table input[type="text"].IntegerQuestion {
   width: 6em;
 }
 
