@@ -349,6 +349,11 @@ form[class$="-search"] .form-section-content {
   width: 34rem;
   max-width: 100%;
 }
+[class*="email-template"] .form-input textarea,
+[class*="EmailTemplate"] .form-input textarea {
+  width: 52rem;
+  height: 27rem;
+}
 [class*="EmailTemplate"] .form-input textarea {
   min-height: 18rem;
 }
