@@ -547,17 +547,21 @@ div.Main div.staffHome div.Deadlines {
 .Content div.admin-home-links a.adminHomeLinksDescription {
   font-size: .6em;
 }
-.in-testing {
+.in-testing,
+.InTesting {
   background-color: #62deff !important;
 }
-.in-testing td {
+.in-testing td,
+.InTesting td {
   border-color: #888 !important;
 }
-.in-testing-text {
+.in-testing-text,
+.InTestingLabel {
   text-transform: uppercase;
   font-weight: bold;
 }
-.in-testing-text:after {
+.in-testing-text:after,
+.InTestingLabel:after {
   content: ":";
 }
 /* ADMIN VIEW ONLY-->*/
