@@ -4531,6 +4531,15 @@ section.portalMessage header {
   vertical-align: middle;
 }
 
+/* FORMS --> */
+
+#program-short-name-override-id,
+#program-long-name-override-id {
+  width: 30rem;
+}
+
+/* <-- FORMS */
+
 /* PAGE: APPILCATION TEMPLATE DISPLAY --> */
   div#ApplicationTemplateDisplayAUC .info-bar ~ .page-heading {
     padding: 1rem;
