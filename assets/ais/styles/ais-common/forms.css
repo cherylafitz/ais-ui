@@ -1,0 +1,9 @@
+/* FORMS --> */
+.AISReportEditor input[type="text"] {
+  width: 20rem;
+}
+
+th.ref-code .filter {
+  width: 6rem;
+}
+/* <-- FORMS */

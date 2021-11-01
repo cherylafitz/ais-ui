@@ -5511,11 +5511,15 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 
 /* <-- PAGE: Combinator tool */
 
-/* FORM ONE-OFFS --> */
+/* FORMS --> */
 .AISReportEditor input[type="text"] {
   width: 20rem;
 }
-/* <-- FORM ONE-OFFS */
+
+th.ref-code .filter {
+  width: 6rem;
+}
+/* <-- FORMS */
 
 /* FROM PAGE WRAPPER --> */
 
