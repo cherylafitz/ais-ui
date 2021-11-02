@@ -5511,11 +5511,24 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 
 /* <-- PAGE: Combinator tool */
 
-/* FORM ONE-OFFS --> */
+/* FORMS --> */
 .AISReportEditor input[type="text"] {
   width: 20rem;
 }
-/* <-- FORM ONE-OFFS */
+
+th.ref-code .filter {
+  width: 6rem;
+}
+th.reference-code .filter {
+  width: 7rem;
+}
+th.firstgiven-name .filter {
+  width: 8.5rem;
+}
+th.mailing-address-state .filter {
+  width: 10.5rem;
+}
+/* <-- FORMS */
 
 /* FROM PAGE WRAPPER --> */
 
