@@ -4541,6 +4541,11 @@ section.portalMessage header {
 /* <-- FORMS */
 
 /* PAGE: APPILCATION TEMPLATE DISPLAY --> */
+.info-bar-item.program-official-name,
+.info-bar.program-long-name {
+  margin-right: auto;
+  font-size: 1rem;
+}
   div#ApplicationTemplateDisplayAUC .info-bar ~ .page-heading {
     padding: 1rem;
     font-size: 1.5rem;
