@@ -6198,6 +6198,10 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 /* <-- PAGE: Evaluators for PIPY Editor  */
 
 /* PAGE: HOME --> */
+dd.Separator {
+  padding: .5rem;
+}
+
 .HomePageForAll {
   display: flex;
   flex-flow: row wrap;
