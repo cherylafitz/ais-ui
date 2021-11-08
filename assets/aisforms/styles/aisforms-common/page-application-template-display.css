@@ -3,6 +3,8 @@
 .info-bar.program-long-name {
   margin-right: auto;
   font-size: 1rem;
+  flex: 0 1 auto;
+  font-weight: bold;
 }
   div#ApplicationTemplateDisplayAUC .info-bar ~ .page-heading {
     padding: 1rem;
