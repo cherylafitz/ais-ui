@@ -6198,6 +6198,13 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 /* <-- PAGE: Evaluators for PIPY Editor  */
 
 /* PAGE: HOME --> */
+.homepage-section[class*="portal"] li a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.homepage-section[class*="portal"] a .template-pipy-csv {
+  padding-right: .25rem;
+}
 dd.Separator {
   padding: .5rem;
 }
