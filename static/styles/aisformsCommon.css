@@ -1639,6 +1639,9 @@ ul.progress_bar {
   margin-right: .75rem;
   flex: 0 1 15rem; /* last child can be long item */
 }
+.info-bar-item.student-name {
+  flex: 0 1 24rem;
+}
 .info-bar-item .label {
   color: #555;
 }
