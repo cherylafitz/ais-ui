@@ -4,4 +4,7 @@
   table-layout: fixed;
   width: 100%;
 }
+td .FieldOfStudyChoice select {
+  width: 40rem;
+}
 /* <-- One off styles */
