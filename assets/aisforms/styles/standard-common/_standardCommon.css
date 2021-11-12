@@ -445,23 +445,25 @@ div.Content div.TextGeneric10 {
 
 div.Content div.Divider,
 div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
-.SectionDisplay h1 {
+.SectionDisplay h1,
+.Content .SectionDisplay h2,
+.Content .SectionDisplay h3,
+.Content .SectionDisplay h4 {
   font-size: 1.5rem;
   color: #025689;
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-weight: normal;
   clear: both;
   font-variant: normal;
   text-align: left;
 }
 
-.Content .SectionDisplay h2 {
+.Content .SectionDisplay h3 {
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0;
-  color: #025689;
-  clear: both;
-  text-align: left;
+}
+.Content .SectionDisplay h4 {
+  font-size: 1.125rem;
 }
 
 /*Give all AfterQuestion divs clear:both, so that empty divs placed in an AfterQuestion will make the containing border wrap around the last question if it is floated. This also can be used to float four elements like so:
