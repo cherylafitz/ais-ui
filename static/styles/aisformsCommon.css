@@ -4671,6 +4671,10 @@ table.row-display td.change {
   display: inline-block;
   vertical-align: inherit;
 }
+.ProctoredExamEditor textarea#text-shown-before-begin-id {
+  width: 30rem;
+  height: 8rem;
+}
 /* PAGE: ApplicationProctoredFormResultsViewer --> */
 
 .ApplicationProctoredFormResultsViewer .question .label {
