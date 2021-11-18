@@ -81,8 +81,6 @@
 .SectionDisplay .PassportMiddleName,
 .SectionDisplay .PassportMiddleName,
 .SectionDisplay .PassportPrimaryName,
-.SectionDisplay .PrimaryPhone,
-.SectionDisplay .PrimaryPhoneType,
 .SectionDisplay .RecommenderFirstName,
 .SectionDisplay .RecommenderFirstName2,
 .SectionDisplay .RecommenderLastName,
@@ -101,6 +99,9 @@
 .SectionDisplay .TeacherLastName,
 .SectionDisplay .TeachRef1stName,
 .SectionDisplay .TeachRefLastName,
+.SectionDisplay .TelephonePrimary,
+.SectionDisplay .TelephonePrimaryType,
+.SectionDisplay .TelephonePrimarySMSPermission,
 .SectionDisplay .TelephoneAlternate,
 .SectionDisplay .USParticipantGivenName,
 .SectionDisplay .USParticipantLastName,
@@ -123,7 +124,8 @@
 }
 .SectionDisplay .AlternatePhoneType,
 .SectionDisplay .OthPhoneWhose,
-.SectionDisplay .PrimaryPhoneType {
+.SectionDisplay .TelephonePrimaryType,
+.SectionDisplay .TelephonePrimarySMSPermission {
   clear: right;
 }
 
