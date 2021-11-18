@@ -4541,6 +4541,11 @@ section.portalMessage header {
   width: 30rem;
 }
 
+.custom-pdf-file-name-input-wrapper input[type="text"],
+.custom-zip-file-name-input-wrapper input[type="text"] {
+  width: 40rem;
+}
+
 /* <-- FORMS */
 
 /* PAGE: APPILCATION TEMPLATE DISPLAY --> */
