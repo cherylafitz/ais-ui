@@ -95,7 +95,7 @@ a {
   color: #000000;
   text-decoration: none;
 }
-.QuestionItem {
+.QuestionItemF {
   widows: 5;
   orphans: 5;
 }
@@ -682,7 +682,6 @@ h1 + p {
     margin-top: 0px;
 }
 div.SectionDisplay h2 {
-  font-size: 1em;
   margin: 1em 0 .5em 0;
   padding: 0;
   color: #000000;
@@ -915,6 +914,32 @@ section img.ProgramLogo600w {
   margin-bottom: 1rem;
   display: block;
 }
+
+/* HEADINGS -->  */
+.Content .SectionDisplay h1,
+.Content .SectionDisplay h2,
+.Content .SectionDisplay h3,
+.Content .SectionDisplay h4 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  clear: both;
+  font-variant: normal;
+  text-align: left;
+  color: #025689;
+}
+.Content .SectionDisplay h2 {
+  font-size: 1.375em;
+}
+.Content .SectionDisplay h3 {
+  font-size: 1.25em;
+}
+.Content .SectionDisplay h4 {
+  font-size: 1.125em;
+}
+
+/* <-- HEADINGS */
 
  TABLES --> */
 
