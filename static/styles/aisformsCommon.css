@@ -2384,10 +2384,19 @@ div.Main div.staffHome div.Deadlines {
   margin-bottom: 1rem;
   overflow: auto;
 }
-.Content div.PageName {
+.Content .PageName {
   order: 3;
   flex-basis: 100%;
   background: transparent;
+  text-align: right;
+  font-size: 0.875rem;
+}
+.login-duration {
+  flex-basis: 100%;
+  order: 4;
+  text-align: right;
+  padding-top: 0.25rem;
+  font-size: .875rem;
 }
 .Content .admin-home-links:after {
   clear: both;
@@ -3185,10 +3194,7 @@ div.PreviousSection {
   padding: 0 .125rem 0 .5rem;
   vertical-align: middle;
 }
-div.PageName {
-  text-align: right;
-  font-size: 0.75rem;
-}
+
 
 input#CannedSearch {
   margin-left: .3em;
