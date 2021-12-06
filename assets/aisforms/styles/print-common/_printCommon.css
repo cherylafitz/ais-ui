@@ -477,7 +477,8 @@ div.SectionIntroductionText
 .Instruction,
 a.SectionDataFill,
 a.FormDataFill,
-.PageName {
+.PageName,
+.login-duration {
   display: none;
 }
 .BeforeQuestion .QuestionItem .QuestionInstructions,
