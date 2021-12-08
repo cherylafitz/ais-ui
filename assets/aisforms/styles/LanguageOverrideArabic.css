@@ -5,24 +5,27 @@
     flex-flow: row wrap;
     justify-content: space-between;
 }
+.MenuOfSections .sectionName {
+    padding-left: 1rem;
+}
 .Arabic {
-	text-align: right;
-	display: block;
-	direction: rtl;
+    text-align: right;
+    display: block;
+    direction: rtl;
 }
 .ArabicLeft {
-	text-align: left;
-	direction: rtl;
+    text-align: left;
+    direction: rtl;
 }
 .ArabicCenter {
-	text-align: center;
-	display: block;
-	direction: rtl;
+    text-align: center;
+    display: block;
+    direction: rtl;
 }
 .ArabicSectionName {
-	text-align: right;
-	display: block;
-	direction: rtl;
+    text-align: right;
+    display: block;
+    direction: rtl;
     margin-left: auto;
     white-space:nowrap;
 }
