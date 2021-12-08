@@ -6,6 +6,9 @@ table.row-display > tbody {
 table.row-display > tbody > tr {
     counter-increment: rowCounter;
 }
+table.row-display table.row-display > tbody > tr {
+    counter-increment: initial;
+}
 table.row-display > tbody > tr td.row-number:after {
   content: counter(rowCounter) ".";
 }
