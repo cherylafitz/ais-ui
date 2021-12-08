@@ -1,5 +1,10 @@
 /* Adjustments for Arabic Script Display */
-
+.sectionName,
+.section-name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 .Arabic {
 	text-align: right;
 	display: block;
@@ -18,7 +23,7 @@
 	text-align: right;
 	display: block;
 	direction: rtl;
-    float:right;
+    margin-left: auto;
     white-space:nowrap;
 }
 .Arabic,
