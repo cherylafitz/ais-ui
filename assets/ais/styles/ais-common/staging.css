@@ -17,5 +17,10 @@ body#body--environment-staging {
     height: unset;
     width: unset;
 }
-
+body#body--environment-staging:before {
+    top: 0;
+}
+body#body--environment-staging:after {
+    bottom: 0;
+}
 /* <--STAGING */
