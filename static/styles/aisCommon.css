@@ -5946,6 +5946,15 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 /* <-- MAIN STRUCTURE */
   
 
+/* MEDIA --> */
+
+.SettingsDisplay .mfaLock svg {
+  height: 13pt;
+  width: 13pt;
+}
+
+/* <-- MEDIA  */
+
 /* PAGE: Alumni article editor --> */
 
 #article-editor-page-id .controls-wrapper :nth-last-child(2) {
