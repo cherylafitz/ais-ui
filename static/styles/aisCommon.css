@@ -5534,6 +5534,14 @@ th.firstgiven-name .filter {
 th.mailing-address-state .filter {
   width: 10.5rem;
 }
+#recipe-name-id, 
+#pdf-name-id {
+  width: calc(100% - 11rem);
+}
+#pdf-file-name-substitution-text-id,
+#zip-file-name-id {
+  width: calc(100% - 13rem);
+}
 /* <-- FORMS */
 
 /* FROM PAGE WRAPPER --> */
