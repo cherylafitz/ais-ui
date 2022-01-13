@@ -6481,6 +6481,28 @@ form[name="loginForm"] {
 
 /* <-- ROLODEX */
 
+/* STAGING --> */
+
+body#body--environment-staging:before, 
+body#body--environment-staging:after {
+    content: "";
+    position: fixed;
+    background: #FFE83C;
+    left: 0;
+    right: 0;
+    height: 10px;
+    z-index: 1000;
+}
+body#body--environment-staging {
+    border-left: 10px solid #FFE83C;
+    border-right: 10px solid #FFE83C;
+    margin-top: 10px;
+    height: unset;
+    width: unset;
+}
+
+/* <--STAGING */
+
 /* TABLES --> */
 
 /* wrap cells --> */
