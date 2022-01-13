@@ -1,0 +1,105 @@
+/* Adjustments for Arabic Script Display */
+.sectionName,
+.section-name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.MenuOfSections .sectionName {
+    padding-left: 1rem;
+}
+.Arabic {
+    text-align: right;
+    display: block;
+    direction: rtl;
+}
+.ArabicLeft {
+    text-align: left;
+    direction: rtl;
+}
+.ArabicCenter {
+    text-align: center;
+    display: block;
+    direction: rtl;
+}
+.ArabicSectionName {
+    text-align: right;
+    display: block;
+    direction: rtl;
+    margin-left: auto;
+    white-space:nowrap;
+}
+.Arabic,
+.ArabicLeft,
+.ArabicCenter,
+.ArabicSectionName {
+     font: 150% 'Traditional Arabic' !important;
+}
+
+.Instruction .Arabic,
+.Instruction .ArabicLeft,
+.Instruction .ArabicCenter {
+     font: 170% 'Traditional Arabic' !important;
+}
+
+.Instruction,
+div.Content div.NumberOfWords,
+div.Content div.NumberOfCharacters {
+     font-style: normal !important;
+}
+
+div.Content div.ArabicInput textarea,
+div.Content div.ArabicInput input {
+    text-align: right;
+    direction: rtl; 
+    font: 150% 'Traditional Arabic' !important;
+}
+/*
+div.Content div.EssayNonEnglish {
+    text-align:right;
+    display:inline;
+}
+*/
+div.SectionDisplay table.ERXMatrixTable tr td,
+div.SectionDisplay table.AnswerTable div.RadioButtonMatrix tr td,
+div.SectionDisplay table.AnswerTable div.CheckboxMatrix tr td {
+     font: 130% 'Traditional Arabic';
+}
+
+div.Content .EnglishMixed {
+     font: 66% 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif !important;
+}
+
+.EnglishMixedSectionName {
+     float:left;
+}
+
+ .BackToTopBookmark::after {
+    content: " العودة الى الأعلى";
+}
+
+body.IsLoggedIn .ValidationError .header::after {
+    content: url(https://ais.americancouncils.org/ais/common/ErrorMissingRequiredQuestionsArabic.png) !important;
+}
+
+body.IsLoggedIn .ValidationError .NoDataSaved::after {
+    content: ".إن إجاباتكم على هذه الصفحة لم تحفظ";
+    display: block;
+    font: 150% 'Traditional Arabic',serif;
+}
+
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after {
+    content: " * INCOMPLETE / غير مكتمل" !important;
+    font: bold 130% 'Traditional Arabic',serif;
+}
+
+.SubmittedOn .date::after {
+    content: "  :تمّ الإرسال بنجاح";
+    font: bold 150% 'Traditional Arabic',serif;
+}
+
+.PastDeadline::after {
+    content: ".لا يمكنم التعديل في هذه الاستمارة بسبب تجاوز الأجل الأقصى";
+    display: block;
+    font: 150% 'Traditional Arabic',serif;
+}
