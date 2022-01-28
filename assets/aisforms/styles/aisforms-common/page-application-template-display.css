@@ -60,4 +60,191 @@
  #ApplicationTemplateDisplayAUC .reference-code-wrapper .reference-code:not(:last-child) {
     margin-right: 1.25rem;
  }
+
+div.SectionNavigator .MenuOfSections {
+  vertical-align: middle;
+  max-width: 1050px;
+}
+div.SectionNavigator.vertical .MenuOfSections {
+  background-color: #d8e8f3;
+  border-radius: 2px;
+}
+.MenuOfSections select {
+  padding: 0.1em;
+  font-size: 1em;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+div.bottomButtons {
+  display: none;
+}
+div.SectionNavigator.vertical #menu3 a {
+  font-size: 0.84em;
+  display: block;
+  padding: 3px 8px;
+  border-bottom: 1px solid #FFF;
+  border-radius: 2px 4px 4px 2px;
+}
+.SectionNavigator.vertical #menu3 li:first-of-type a {
+  padding-top: .25rem;
+}
+.SectionNavigator.vertical #menu3 li:last-of-type a,
+.SectionNavigator.vertical #menu3 li:last-of-type a:hover,
+div.SectionNavigator.vertical #menu3 li:last-of-type a.current {
+  padding-bottom: .5rem;
+  border-bottom-width: 2px;
+}
+div.SectionNavigator.vertical #menu3 a:hover,
+div.SectionNavigator.vertical #menu3 li a.current {
+  padding-left: 4px;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #cecece;
+  border-left: 4px solid #3b6d99;
+  background: #f1f5f9;
+}
+div.SectionNavigator.vertical {
+  margin: 1rem 0;
+  flex-basis: 14rem;
+  background-color: #d8e8f3;
+  z-index: 999;
+  border-radius: 2px 2px 0px 0px;
+  border: none;
+  flex-grow: 1;
+}
+.SectionNavigator.horizontal {
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+}
+.SectionNavigator.horizontal .previous,
+.SectionNavigator.horizontal .next {
+  display: none;
+}
+.SectionNavigator.horizontal .label {
+  font-size: 1.5rem;
+}
+.AdminFormNav {
+  font-size: .875em;
+  font-size: .875em;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.AdminFormNav input {
+  margin: .125rem;
+}
+.sectionBodyBelowTopNavBar {
+  margin-left: 0 !important;
+  flex-grow: 1;
+  flex-basis: 20%;
+}
+div#menu3 ul {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+div#menu3 li, div#menu3 a {
+  background-color: transparent;
+}
+div.NextSectionNearSaveChanges input[type="button"],
+div.PreviousSectionNearSaveChanges input[type="button"] {
+  border-color: #274155;
+  display: inline-block;
+}
+div.NextSectionNearSaveChanges input[type="button"] {
+  margin-right: 3rem;
+}
+div.NextSectionNearSaveChanges input[type="button"]:hover,
+div.PreviousSectionNearSaveChanges input[type="button"]:hover {
+  border-color: #777;
+}
+div.SectionTitle {
+  display: flex;
+  background: #2E6B9B;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem 1rem;
+  color: #fff;
+  border-radius: 2px 2px 0px 0px;
+}
+div.SectionTitleText {
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.SectionNavigator input[type="button"],
+.PreviousSectionNearSaveChanges input[type="button"],
+.NextSectionNearSaveChanges input[type="button"] {
+  border: none;
+  border-style: solid;
+  border-width: 5px 5px 0 0;
+  border-color: #fff;
+  height: 1.25rem;
+  width: 1.25rem;
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: 0 0 0 1px;
+  color: transparent;
+  background: transparent;
+  padding: 0;
+}
+div.NextSection,
+div.PreviousSection {
+  position: static;
+}
+.SectionNavigator .next input[type="button"],
+.SectionNavigator input[value="next >"],
+.NextSectionNearSaveChanges .next input[type="button"] {
+  border-width: 5px 5px 0 0;
+}
+.SectionNavigator .previous input[type="button"],
+.SectionNavigator input[value="< previous"],
+.PreviousSectionNearSaveChanges .previous input[type="button"] {
+  border-width: 0 0 5px 5px;
+}
+
+.SectionNavigator input[type="button"]:hover,
+.PreviousSectionNearSaveChanges input[type="button"]:hover,
+.NextSectionNearSaveChanges input[type="button"]:hover {
+  opacity: .7;
+}
+.SectionNavigator input[type="button"]:active,
+.PreviousSectionNearSaveChanges input[type="button"]:active,
+.NextSectionNearSaveChanges input[type="button"]:active {
+  border-color: #000;
+}
+.SectionNavigator input[type="button"]:active,
+.PreviousSectionNearSaveChanges input[type="button"]:active,
+.NextSectionNearSaveChanges input[type="button"]:active,
+.SectionNavigator input[type="button"]:focus,
+.PreviousSectionNearSaveChanges input[type="button"]:focus,
+.NextSectionNearSaveChanges input[type="button"]:focus {
+  outline: none;
+}
+.SectionNavigator input[type="button"]:disabled,
+.PreviousSectionNearSaveChanges input[type="button"]:disabled,
+.NextSectionNearSaveChanges input[type="button"]:disabled,
+.SectionNavigator input[type="button"]:disabled {
+  opacity: .5;
+}
+.PreviousSectionNearSaveChanges .previous:after {
+  content: "Sections";
+  padding: 0 .125rem 0 .5rem;
+  vertical-align: middle;
+}
+div.ApplicationTemplateDisplay div.templateContent {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 38em) { 
+  div.SectionNavigator.vertical {
+    margin: 0 1.5rem 0 0;
+    flex-grow: 0;
+  }
+}
+
 /* <-- PAGE: APPILCATION TEMPLATE DISPLAY */
