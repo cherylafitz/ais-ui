@@ -27,7 +27,7 @@
     display: block;
     direction: rtl;
     margin-left: auto;
-    white-space:nowrap;
+    /*white-space:nowrap;*/
 }
 .Arabic,
 .ArabicLeft,
@@ -54,6 +54,13 @@ div.Content div.ArabicInput input {
     direction: rtl; 
     font: 150% 'Traditional Arabic' !important;
 }
+
+/* Adjust English Question Number Level Because of Increased Arabic Font Size */
+
+div.Content div.QuestionNumber { 
+    margin-top: 0.4rem;
+}
+
 /*
 div.Content div.EssayNonEnglish {
     text-align:right;
@@ -67,7 +74,7 @@ div.SectionDisplay table.AnswerTable div.CheckboxMatrix tr td {
 }
 
 div.Content .EnglishMixed {
-     font: 66% 'Century Gothic', 'Trebuchet MS',  Geneva, sans-serif !important;
+     font: 66% 'Open Sans', Helvetica, Arial, sans-serif !important;
 }
 
 .EnglishMixedSectionName {
