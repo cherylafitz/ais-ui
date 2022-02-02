@@ -135,6 +135,7 @@ div.SectionNavigator.vertical {
   margin-left: 0 !important;
   flex-grow: 1;
   flex-basis: 20%;
+  max-width: 100%;
 }
 div#menu3 ul {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -239,7 +240,6 @@ div.ApplicationTemplateDisplay div.templateContent {
   flex-flow: row wrap;
   margin-top: 1rem;
 }
-
 @media only screen and (min-width: 38em) { 
   div.SectionNavigator.vertical {
     margin: 0 1.5rem 0 0;
