@@ -5912,6 +5912,16 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 }
 /* <-- INBOX Q AND A */
 
+/* LISTS --> */
+.Gender ul {
+  padding: 0;
+}
+.Gender li {
+  list-style-type: none;
+}
+
+/* <-- LISTS */
+
 /* MAIN STRUCTURE --> */
 
 .main-content {
