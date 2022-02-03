@@ -1,0 +1,9 @@
+/* LISTS --> */
+.Gender ul {
+  padding: 0;
+}
+.Gender li {
+  list-style-type: none;
+}
+
+/* <-- LISTS */
