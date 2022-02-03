@@ -4393,6 +4393,9 @@ section.portalMessage header {
   width: 40rem;
 }
 
+.SingleUser input[type="text"] {
+  width: 25rem;
+}
 /* <-- FORMS */
 
 /* PAGE: APPILCATION TEMPLATE DISPLAY --> */
