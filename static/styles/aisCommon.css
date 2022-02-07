@@ -3555,6 +3555,7 @@ div.CheckboxMatrix tr td {
 div.hint {
     font-size: 0.875rem;
     font-style: italic;
+    padding: 0 .5rem;
 }
 .TechHint {
     font-size: 1rem;
