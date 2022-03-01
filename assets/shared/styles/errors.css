@@ -17,7 +17,8 @@
 }
 .validation-error-line::before,
 .warning::before,
-.error-on-find::before {
+.error-on-find::before,
+.file-not-found::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
