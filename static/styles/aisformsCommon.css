@@ -854,7 +854,8 @@ table td div.ExcelDownloadDescription {
 }
 .validation-error-line::after,
 .warning::after,
-.error-on-find::after {
+.error-on-find::after,
+.file-not-found::after {
   color: black;
   content: "!";
   font-size: .6875rem;
