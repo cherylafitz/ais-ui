@@ -1,0 +1,12 @@
+/* PAGE: HEALTH DATA FORM --> */
+
+fieldset.HealthGroup[data-dev-reference="Immunization"] {
+  display: flex;
+  flex-flow: row wrap;
+}
+fieldset.HealthGroup[data-dev-reference="Immunization"] .HealthConditionWithAttributes {
+  flex-basis: 25%;
+  margin-right: 1rem;
+}
+
+/* <-- PAGE: HEALTH DATA FORM */
