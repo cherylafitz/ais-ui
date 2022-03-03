@@ -377,7 +377,7 @@ table.row-display a:active {
   margin: .125rem .125rem .25rem;
   font-size: .875rem;
 }
-/* BUTTONS --> */
+/* INPUT BUTTONS --> */
 
 /* AIS only*/
 #contentPageProportional input[type="submit"],
@@ -398,7 +398,8 @@ table.row-display a:active {
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
-.controls-wrapper [class*="-button"]:hover {
+.controls-wrapper [class*="-button"]:hover,
+button:hover {
   background: #22465d;
   border-color: #1c384a;
   cursor: pointer;
@@ -415,7 +416,8 @@ input[type="button"]:disabled,
 }
 input[type="submit"], 
 input[type="button"],
-.controls-wrapper [class*="-button"] {
+.controls-wrapper [class*="-button"],
+button {
   vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -426,6 +428,10 @@ input[type="button"],
   background: #336789;
   border: 1px solid #346788;
   font-size: 1rem;
+}
+button.selected {
+  background: #28353d;
+  border-color: #28353d;
 }
 .form-input input[type="submit"], 
 .form-input input[type="button"] {
@@ -454,7 +460,7 @@ input[type="submit"][value="Clear Filters"]:hover {
   font-size: 1rem;
 }
 
-/* <-- BUTTONS */
+/* <-- INPUT BUTTONS */
 
 /* SEQUENCE-ITEM --> */
 .reorder-controls-wrapper button {
@@ -6053,6 +6059,21 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 }
 .StudentEditHistoryDisplay .row-display .FullName {
   font-style: italic;
+}
+
+.StudentEditHistoryDisplay .buttons-single-select-wrapper-js button {
+  display: inline-flex;
+  margin: 0 .25rem;
+}
+.StudentEditHistoryDisplay .buttons-single-select-wrapper-js .count {
+  order: 2;
+  padding-left: .5rem;
+}
+.StudentEditHistoryDisplay .buttons-single-select-wrapper-js .count::before {
+  content: "(";
+}
+.StudentEditHistoryDisplay .buttons-single-select-wrapper-js .count::after {
+  content: ")";
 }
 /* <-- PAGE: CHANGE HISTORY */
 
