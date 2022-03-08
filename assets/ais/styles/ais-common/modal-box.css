@@ -1,0 +1,16 @@
+/* MODAL BOX --> */
+
+#MB_frame fieldset {
+  margin-top: 1rem;
+}
+#MB_frame th:after {
+  content: ":";
+}
+#MB_frame ul.Fields {
+  list-style-type: none;
+}
+/* reduce margin for error in overlay--> */
+#MB_window .ExceptionMessage {
+  margin: .5rem 0;
+}
+/* <-- MODAL BOX */

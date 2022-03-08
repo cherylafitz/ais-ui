@@ -832,7 +832,8 @@ table td div.ExcelDownloadDescription {
 .validation-error-line,
 .warning,
 .error,
-.error-on-find {
+.error-on-find,
+.ExceptionMessage:not(:empty) {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -847,7 +848,8 @@ table td div.ExcelDownloadDescription {
 .validation-error-line::before,
 .warning::before,
 .error-on-find::before,
-.file-not-found::before {
+.file-not-found::before,
+.ExceptionMessage:not(:empty)::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
@@ -862,7 +864,8 @@ table td div.ExcelDownloadDescription {
 .validation-error-line::after,
 .warning::after,
 .error-on-find::after,
-.file-not-found::after {
+.file-not-found::after,
+.ExceptionMessage:not(:empty)::after {
   color: black;
   content: "!";
   font-size: .6875rem;
