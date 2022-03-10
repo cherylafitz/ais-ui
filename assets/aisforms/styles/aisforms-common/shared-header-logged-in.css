@@ -7,33 +7,38 @@
   position: relative;
   text-align: right;
 }
-#Header .UserNameBlock .Username .userIsAdministrator,
-#Header .UserNameBlock .Username,
-#Header .UserNameBlock .Username .userIsStaff  {
+#Header .user-name-block .user .userIsAdministrator,
+#Header .user-name-block .user,
+#Header .user-name-block .user .userIsStaff  {
   color: #FFD590;
 }
-#Header .Username {
+#Header .user {
   display: inline-block;
 }
-#Header .UserNameBlock > span,
-#Header .Username > span {
+#Header .user-name-block > span,
+#Header .user > span {
   display: inline-block;
   vertical-align: middle;
 }
-#Header .UserNameBlock {
-  font-style: normal;
+#Header .user-name-block {
   color: #FFF;
-  text-align: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+#Header .user-name-block .welcome {
+  margin-right: .5rem;
+  padding-top: 0.125rem;
 }
 .fastUserSwitchForm, .fastBrandSwitchForm {
     display: inline-block;
     white-space: nowrap;
 }
-#Header div.UserNameBlock select {
+#Header div.user-name-block select {
   max-width: calc(100% - 50px);
 }
 /* 19 Jul - New CSS for new login page ---> */
-div#buildAndInstance {
+div#build-and-instance {
   color: #FFFFFF;
   font-size: 0.5rem;
   text-align: left;
@@ -41,14 +46,14 @@ div#buildAndInstance {
 }
 /* <--- */
 #Header #serverInfo,
-#Header #buildAndInstance {
+#Header #build-and-instance {
   font-size: 0.75rem;
   display: inline-block;
 }
 #Header #serverInfo,
-#Header #buildAndInstance .build,
-#Header #buildAndInstance .brand,
-#Header #buildAndInstance .instance {
+#Header #build-and-instance .build,
+#Header #build-and-instance .brand,
+#Header #build-and-instance .instance {
   color: #e6e6e6;
   font-style: normal;
 }
@@ -110,21 +115,18 @@ div#buildAndInstance {
 #Header .form-input select {
   padding: 0;
 }
-#Header .UserNameBlock {
-  font-size: .875rem;
-}
-#Header .UserNameBlock label {
+#Header .user-name-block label {
   padding-left: .5rem;
   padding-right: .25rem;
 }
 /* 19 Jun - Added in addition to Line 247 above to accomodate new username link in header. Also added to aisformsCommon.css */
-#Header .UserNameBlock .Username .userIsAdministrator a,
-#Header .UserNameBlock .Username a,
-#Header .UserNameBlock .Username .userIsStaff a {
+#Header .user-name-block .user .userIsAdministrator a,
+#Header .user-name-block .user a,
+#Header .user-name-block .user .userIsStaff a {
   color: #c4dcee;
 }
 @media only screen and (max-width : 480px) {
-  #Header .UserNameBlock  {
+  #Header .user-name-block  {
     font-size: .875rem;
     clear: both;
     text-align: left;
@@ -138,19 +140,19 @@ div#buildAndInstance {
   }
 }   
 @media only screen and (min-width: 480px) and (max-width: 568px) {
-  #Header .UserNameBlock  {
+  #Header .user-name-block  {
     font-size: .875rem;
     clear: both;
     text-align: left;
   }
 }
 @media only screen and (min-width : 568px) and (max-width : 767px) {
-  #Header .UserNameBlock  {
+  #Header .user-name-block  {
     font-size: .875rem;
     clear: both;
     text-align: left;
   }
-  #Header #buildAndInstance .brand {
+  #Header #build-and-instance .brand {
     display: none;
   }
 }
