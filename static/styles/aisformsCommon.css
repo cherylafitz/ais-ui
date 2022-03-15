@@ -589,30 +589,6 @@ fieldset details > summary,
   background-color: #c1cdd7;
 }
 /* <-- BASE DETAILS OVERRIDES */
-/* DELETE AFTER MARCOS CSS IS REMOVED --> */
-div.ApplicantApplicationTemplateEditor details > summary ~ section {
-  padding: .5rem 1.5rem 1.25rem;
-  background: #e0e6eb;
-  background: #eff3f5;
-  border-radius: 0 2px 2px 2px;
-  border: none;
-  border-top: 1px solid #d0dae1;
-}
-div.ApplicantApplicationTemplateEditor div details > summary {
-  border: none;
-  font-weight: normal;
-  position: relative;
-  font-size: 1rem;
-  line-height: 1.125rem;
-  display: inline flow-root list-item;
-  margin-left: .75rem;
-  display: inline-block;
-  background: #d0dae1;
-  padding: .25em 1em .25em 2em;
-  border-radius: 2px;
-  position: relative;
-}
-/* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
 details.details_1 {
   padding: 0 .75rem;
   width: 36rem;
@@ -834,7 +810,8 @@ table td div.ExcelDownloadDescription {
 .warning,
 .error,
 .error-on-find,
-.ExceptionMessage:not(:empty) {
+.ExceptionMessage:not(:empty),
+.no-owner {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -850,7 +827,8 @@ table td div.ExcelDownloadDescription {
 .warning::before,
 .error-on-find::before,
 .file-not-found::before,
-.ExceptionMessage:not(:empty)::before {
+.ExceptionMessage:not(:empty)::before,
+.no-owner::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
@@ -866,7 +844,8 @@ table td div.ExcelDownloadDescription {
 .warning::after,
 .error-on-find::after,
 .file-not-found::after,
-.ExceptionMessage:not(:empty)::after {
+.ExceptionMessage:not(:empty)::after,
+.no-owner::after {
   color: black;
   content: "!";
   font-size: .6875rem;
@@ -4682,6 +4661,23 @@ div.ApplicationTemplateDisplay div.templateContent {
 }
 
 /* <-- PAGE: APPILCATION TEMPLATE DISPLAY */
+
+/* PAGE: APPLICATION TEMPLATE EDITOR --> */
+.ApplicantApplicationTemplateEditor .form-template-owner {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1rem;
+}
+.ApplicantApplicationTemplateEditor .form-template-owner.no-owner {
+  align-items: center;
+}
+.ApplicantApplicationTemplateEditor .template-owner-history {
+  margin: 0;
+}
+.ApplicantApplicationTemplateEditor .form-template-owner select {
+  margin-right: 1rem;
+}
+/* <-- PAGE: APPLICATION TEMPLATE EDITOR */
 
 /* PAGE: role editor --> */
 

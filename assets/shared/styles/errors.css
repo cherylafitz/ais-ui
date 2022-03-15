@@ -4,7 +4,8 @@
 .warning,
 .error,
 .error-on-find,
-.ExceptionMessage:not(:empty) {
+.ExceptionMessage:not(:empty),
+.no-owner {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -20,7 +21,8 @@
 .warning::before,
 .error-on-find::before,
 .file-not-found::before,
-.ExceptionMessage:not(:empty)::before {
+.ExceptionMessage:not(:empty)::before,
+.no-owner::before {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #000;
@@ -36,7 +38,8 @@
 .warning::after,
 .error-on-find::after,
 .file-not-found::after,
-.ExceptionMessage:not(:empty)::after {
+.ExceptionMessage:not(:empty)::after,
+.no-owner::after {
   color: black;
   content: "!";
   font-size: .6875rem;
