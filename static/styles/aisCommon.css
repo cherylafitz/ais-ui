@@ -506,6 +506,20 @@ li .copy-to-clipboard-button:hover {
 
 /* <-- COPY TO CLIPBOARD */
 
+/* COUNTS --> */
+
+.count {
+  padding-left: .325rem;
+}
+.count::before {
+  content: "(";
+}
+.count::after {
+  content: ")";
+}
+
+/* <-- COUNTS */
+
 /* START DETAILS STYLES --> */
 details {
   margin: .75rem 0;
