@@ -81,30 +81,6 @@ fieldset details > summary,
   background-color: #c1cdd7;
 }
 /* <-- BASE DETAILS OVERRIDES */
-/* DELETE AFTER MARCOS CSS IS REMOVED --> */
-div.ApplicantApplicationTemplateEditor details > summary ~ section {
-  padding: .5rem 1.5rem 1.25rem;
-  background: #e0e6eb;
-  background: #eff3f5;
-  border-radius: 0 2px 2px 2px;
-  border: none;
-  border-top: 1px solid #d0dae1;
-}
-div.ApplicantApplicationTemplateEditor div details > summary {
-  border: none;
-  font-weight: normal;
-  position: relative;
-  font-size: 1rem;
-  line-height: 1.125rem;
-  display: inline flow-root list-item;
-  margin-left: .75rem;
-  display: inline-block;
-  background: #d0dae1;
-  padding: .25em 1em .25em 2em;
-  border-radius: 2px;
-  position: relative;
-}
-/* <-- DELETE AFTER MARCOS CSS IS REMOVED*/
 details.details_1 {
   padding: 0 .75rem;
   width: 36rem;

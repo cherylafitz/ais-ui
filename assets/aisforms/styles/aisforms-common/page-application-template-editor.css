@@ -1,0 +1,16 @@
+/* PAGE: APPLICATION TEMPLATE EDITOR --> */
+.ApplicantApplicationTemplateEditor .form-template-owner {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 1rem;
+}
+.ApplicantApplicationTemplateEditor .form-template-owner.no-owner {
+  align-items: center;
+}
+.ApplicantApplicationTemplateEditor .template-owner-history {
+  margin: 0;
+}
+.ApplicantApplicationTemplateEditor .form-template-owner select {
+  margin-right: 1rem;
+}
+/* <-- PAGE: APPLICATION TEMPLATE EDITOR */
