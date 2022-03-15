@@ -6079,16 +6079,6 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
   display: inline-flex;
   margin: 0 .25rem;
 }
-.StudentEditHistoryDisplay .buttons-single-select-wrapper-js .count {
-  order: 2;
-  padding-left: .5rem;
-}
-.StudentEditHistoryDisplay .buttons-single-select-wrapper-js .count::before {
-  content: "(";
-}
-.StudentEditHistoryDisplay .buttons-single-select-wrapper-js .count::after {
-  content: ")";
-}
 /* <-- PAGE: CHANGE HISTORY */
 
 /* PAGE: Data Entry Form (HTML NOT UPDATED) --> */
