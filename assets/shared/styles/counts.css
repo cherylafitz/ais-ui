@@ -1,0 +1,13 @@
+/* COUNTS --> */
+
+.count {
+  padding-left: .325rem;
+}
+.count::before {
+  content: "(";
+}
+.count::after {
+  content: ")";
+}
+
+/* <-- COUNTS */
