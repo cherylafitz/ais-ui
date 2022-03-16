@@ -5,7 +5,8 @@
 .error,
 .error-on-find,
 .ExceptionMessage:not(:empty),
-.no-owner {
+.no-owner,
+.generated-field > .value.warning {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -49,6 +50,7 @@
   top: 50%;
   transform: translateY(-50%);
   height: 1.0625rem;
+  font-style: normal;
 }
 td > .warning:first-child {
   margin: 0;
