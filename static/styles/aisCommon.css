@@ -6036,6 +6036,19 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 
 /* <-- PAGE: Alumnus Summary */
 
+/* page: application search results --> */
+#batchNavigationContainer .count {
+  padding-left: initial;
+}
+#batchNavigationContainer .count::before {
+  content: '';
+}
+#batchNavigationContainer .count::after {
+  content: '';
+}
+
+/* <-- PAGE APPLICATION SEARCH RESULTS */
+
 /* PAGE: attachment display --> */
 
 div.AttachmentDisplay table.AttachmentDocumentType {
