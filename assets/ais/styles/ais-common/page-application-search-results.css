@@ -1,0 +1,12 @@
+/* page: application search results --> */
+#batchNavigationContainer .count {
+  padding-left: initial;
+}
+#batchNavigationContainer .count::before {
+  content: '';
+}
+#batchNavigationContainer .count::after {
+  content: '';
+}
+
+/* <-- PAGE APPLICATION SEARCH RESULTS */
