@@ -6,7 +6,12 @@
 }
 
 .custom-pdf-file-name-input-wrapper input[type="text"],
-.custom-zip-file-name-input-wrapper input[type="text"] {
+.custom-zip-file-name-input-wrapper input[type="text"],
+#email-from-id,
+#email-reply-to-id,
+[class*="subject-container"] input[type="text"],
+[class*="subject-block"] input[type="text"],
+#user-reference-field-id {
   width: 40rem;
 }
 
