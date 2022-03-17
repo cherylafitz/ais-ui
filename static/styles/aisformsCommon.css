@@ -1121,7 +1121,7 @@ input[type=checkbox]:checked + label {
   margin-top: .75rem;
 }
 .input-group-content {
-	margin: 0 0 .25rem 1rem;
+	margin: 0 0 .25rem 1.25rem;
 }
 .input-group-content .form-input label:first-child {
 	width: 9rem;
@@ -1130,7 +1130,7 @@ input[type=checkbox]:checked + label {
 .from-to-date-picker .input-group-content {
 	display: inline-flex;
 	flex-wrap: wrap;
-	margin: 0 0 0 1rem;
+	margin: 0 0 0 1.25rem;
 }
 .input-group-label {
 	width: 9rem;
@@ -4427,7 +4427,13 @@ section.portalMessage header {
 }
 
 .custom-pdf-file-name-input-wrapper input[type="text"],
-.custom-zip-file-name-input-wrapper input[type="text"] {
+.custom-zip-file-name-input-wrapper input[type="text"],
+#email-from-id,
+#email-reply-to-id,
+[class*="subject-container"] input[type="text"],
+[class*="subject-block"] input[type="text"],
+#user-reference-field-id,
+#user-reference-field-id {
   width: 40rem;
 }
 
