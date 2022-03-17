@@ -875,6 +875,12 @@ table td div.ExcelDownloadDescription {
 td > .warning:first-child {
   margin: 0;
 }
+.form-input .warning {
+  display: inline-block;
+  margin: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;  
+}
 .warning ol {
   padding: 0 0 0 1.5rem;
   margin: 0;
