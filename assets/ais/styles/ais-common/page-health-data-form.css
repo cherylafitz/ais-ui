@@ -8,5 +8,14 @@ fieldset.HealthGroup[data-dev-reference="Immunization"] .HealthConditionWithAttr
   flex-basis: 25%;
   margin-right: 1rem;
 }
-
+.HealthQuestionsSubTitle .grouping {
+  display: flex;
+  flex-flow: row wrap;
+}
+.HealthQuestionsSubTitle .grouping .generated-field {
+  flex-basis: 50%;
+}
+.HealthQuestionsSubTitle .grouping .label {
+  font-weight: bold;
+}
 /* <-- PAGE: HEALTH DATA FORM */

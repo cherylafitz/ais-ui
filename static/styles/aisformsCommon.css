@@ -4432,7 +4432,6 @@ section.portalMessage header {
 #email-reply-to-id,
 [class*="subject-container"] input[type="text"],
 [class*="subject-block"] input[type="text"],
-#user-reference-field-id,
 #user-reference-field-id {
   width: 40rem;
 }
