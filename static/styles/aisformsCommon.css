@@ -1876,6 +1876,10 @@ tr.has-pii td.pii {
   margin: initial;
   border-radius: initial;
 }
+.is-deceased-tag {
+	background-color: #B00707;
+	color: #fff;
+}
 /* <-- overrides on one-off classes */
 
 /* <-- TAGS */
