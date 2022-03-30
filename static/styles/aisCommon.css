@@ -943,6 +943,17 @@ td > .warning:first-child {
 
 /* <-- ERRORS */
 
+/* ERX MATRIX FIXES --> */
+
+.ERXMatrixTable {
+  display: contents;
+}
+.ERXMatrixTable--Checked .ERXMatrixTableCell {
+  font-weight: bold;
+}
+
+/* <-- ERX MATRIX FIXES */
+
  /* FORMS --> */
 form {
   margin: 0;
@@ -6308,6 +6319,17 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
      max-height: initial; 
 }
 /* <-- PAGE: Evaluators for PIPY Editor  */
+
+/* GRADE LEVEL EDITOR --> */
+
+.GradeLevelForC4PIPY_Editor .grade-levels.wrapper {
+  display: flex;
+}
+.GradeLevelForC4PIPY_Editor .grade-levels.wrapper div:first-child {
+  margin-right: .5rem;
+}
+
+/* <-- GRADE LEVEL EDITOR */
 
 /* PAGE: HEALTH DATA FORM --> */
 

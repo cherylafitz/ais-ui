@@ -943,6 +943,17 @@ td > .warning:first-child {
 
 /* <-- ERRORS */
 
+/* ERX MATRIX FIXES --> */
+
+.ERXMatrixTable {
+  display: contents;
+}
+.ERXMatrixTable--Checked .ERXMatrixTableCell {
+  font-weight: bold;
+}
+
+/* <-- ERX MATRIX FIXES */
+
  /* FORMS --> */
 form {
   margin: 0;

@@ -1,0 +1,10 @@
+/* GRADE LEVEL EDITOR --> */
+
+.GradeLevelForC4PIPY_Editor .grade-levels.wrapper {
+  display: flex;
+}
+.GradeLevelForC4PIPY_Editor .grade-levels.wrapper div:first-child {
+  margin-right: .5rem;
+}
+
+/* <-- GRADE LEVEL EDITOR */
