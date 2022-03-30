@@ -965,7 +965,7 @@ textarea {
   max-width: 100%;
 }
 input[type="email"] {
-  width: 20rem;
+  width: 25rem;
   max-width: 100%;
 }
 select {
@@ -4440,7 +4440,8 @@ section.portalMessage header {
   width: 40rem;
 }
 
-.SingleUser input[type="text"] {
+.SingleUser input[type="text"],
+.UserEditor input[type="text"] {
   width: 25rem;
 }
 /* <-- FORMS */

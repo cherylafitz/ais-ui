@@ -1,6 +1,7 @@
 /* FORMS --> */
-.AISReportEditor input[type="text"] {
-  width: 20rem;
+.AISReportEditor input[type="text"],
+.PersonSearch input[type="text"] {
+  width: 25rem;
 }
 
 th.ref-code .filter {

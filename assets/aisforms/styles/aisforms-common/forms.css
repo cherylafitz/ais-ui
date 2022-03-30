@@ -15,7 +15,8 @@
   width: 40rem;
 }
 
-.SingleUser input[type="text"] {
+.SingleUser input[type="text"],
+.UserEditor input[type="text"] {
   width: 25rem;
 }
 /* <-- FORMS */
