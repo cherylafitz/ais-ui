@@ -490,7 +490,8 @@ tr:first-of-type .reorder-controls-wrapper select {
   margin-bottom: .25rem;
   border-bottom: 1px solid #999;
 }
-li .copy-to-clipboard-button {
+li .copy-to-clipboard-button,
+td .copy-to-clipboard-button {
   float: right;
   margin-left: 0.5rem;
   font-size: 1rem;
