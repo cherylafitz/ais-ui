@@ -1,0 +1,10 @@
+/* ERX MATRIX FIXES --> */
+
+.ERXMatrixTable {
+  display: contents;
+}
+.ERXMatrixTable--Checked .ERXMatrixTableCell {
+  font-weight: bold;
+}
+
+/* <-- ERX MATRIX FIXES */
