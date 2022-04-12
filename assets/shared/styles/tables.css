@@ -34,4 +34,11 @@ td.percent:not(:empty)::after {
 tr.has-pii td.pii {
   background-color: #ffb699ab;
 }
+/* cell width restrictions --> */
+.row-display td.Description,
+.row-display td.description {
+  white-space: normal;
+  max-width: 35rem;
+}
+
 /* <-- SHARED TABLE STYLES */
