@@ -3083,38 +3083,6 @@ div.ArticleViewer div.AlumniList {
   text-align: center;
 }
 
-/*ALUMNI ARTICLES resets -->*/
-
-.article {
-  border: 1px solid #cecece;
-  background: #e0e6ec;
-  padding: .5rem 1rem;
-  margin-bottom: 1rem;
-}
-.article .header,
-.article .footer {
-  border: none;
-  background-color: #e0e6ed;
-  padding: .5rem 0 0;
-}
-
-.article table {
-  background-color: transparent;
-}
-
-.article .textBody {
-  padding: 0;
-}
-div.ArticleViewer fieldset {
-  background-color: #fff;
-}
-div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
-.article .header .status table {
-  border: none;
-}
-
-/*<-- ALUMNI resets */
-
 /*<--ALUMNI only*/
 
 /* ARTICLE BOXES --> */
