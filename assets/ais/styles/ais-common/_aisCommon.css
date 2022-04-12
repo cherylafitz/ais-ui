@@ -1019,10 +1019,10 @@ div#alumnusSummary table.NoteList tr td.note {
   background: rgba(41, 53, 61, 0.7);
 }
 #navMenu + div {
-  padding: 1rem;
+  padding: 1.25rem;
   display: inline-block;
   vertical-align: top;
-  flex-basis: 1200px;
+  flex-basis: 100%;
 }
 .ArticleSearch .ArticleSearch a {
   color: #000;
