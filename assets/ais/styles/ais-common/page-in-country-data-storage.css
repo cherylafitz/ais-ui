@@ -1,0 +1,46 @@
+@media screen and (max-width: 1000px), print {
+  .in-country-data-storage-page table.row-display {
+    border: 0;
+  }
+  .in-country-data-storage-page table.row-display caption {
+    font-size: 1.3em;
+  }
+  .in-country-data-storage-page table.row-display thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .in-country-data-storage-page table.row-display tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .5rem;
+  }
+  .in-country-data-storage-page table.row-display td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    min-height: 1.5rem;
+  }
+  .in-country-data-storage-page table.row-display td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    width: 12rem;
+    white-space: normal;
+  }
+  .in-country-data-storage-page table.row-display td:last-child {
+    border-bottom: 0;
+  }
+  .in-country-data-storage-page table.row-display td.row-number::before {
+    width: initial;
+    margin-right: .25rem;
+  }
+  .in-country-data-storage-page table.row-display td.row-number {
+    text-align: left;
+  }
+}
