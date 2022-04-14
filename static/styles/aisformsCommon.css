@@ -873,7 +873,8 @@ table td div.ExcelDownloadDescription {
   height: 1.0625rem;
   font-style: normal;
 }
-td > .warning:first-child {
+td > .warning:first-child,
+td > .error:first-child {
   margin: 0;
 }
 .form-input .warning {
