@@ -1,0 +1,14 @@
+/* PAGE: SEARCH FOR FORMS --> */
+.AirApplicationsSearch .Search th {
+  padding-left: 4rem;
+  padding-right: .5rem;
+  text-align: left;
+}
+.AirApplicationsSearch .Search .sectionDivider > th {
+  padding-left: 1rem;
+}
+.AirApplicationsSearch .FormSearch:nth-last-child(9) th,
+.AirApplicationsSearch .FormSearch:nth-last-child(9) td:first-child {
+  background-color: #e6e6e6;
+}
+/* <-- PAGE: SEARCH FOR FORMS */
