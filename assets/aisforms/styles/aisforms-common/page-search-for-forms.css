@@ -8,7 +8,7 @@
   padding-left: 1rem;
 }
 .AirApplicationsSearch .FormSearch:nth-last-child(9) th,
-.AirApplicationsSearch .FormSearch:nth-last-child(9) td:first-child {
+.AirApplicationsSearch .FormSearch:nth-last-child(9) td:first-of-type {
   background-color: #e6e6e6;
 }
 /* <-- PAGE: SEARCH FOR FORMS */
