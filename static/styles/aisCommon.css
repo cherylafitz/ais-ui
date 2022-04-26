@@ -6491,9 +6491,10 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
   }
   .in-country-data-storage-page table.row-display td {
     border-bottom: 1px solid #ddd;
-    display: block;
+    display: flex;
     font-size: .8em;
     min-height: 1.5rem;
+    white-space: normal;
   }
   .in-country-data-storage-page table.row-display td::before {
     content: attr(data-label);
