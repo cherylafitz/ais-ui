@@ -5600,7 +5600,9 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 .PersonSearch input[type="text"] {
   width: 25rem;
 }
-
+#official-name-id {
+  width: 30rem;
+}
 th.ref-code .filter {
   width: 6rem;
 }
