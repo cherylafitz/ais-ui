@@ -459,7 +459,10 @@ input[type="submit"][value="Clear Filters"]:hover {
   margin-top: 1rem;
   font-size: 1rem;
 }
-
+/* misc --> */
+.details-content > .update-no-save:first-child {
+  margin: .5rem 0 .75rem 0;
+}
 /* <-- INPUT BUTTONS */
 
 /* SEQUENCE-ITEM --> */
