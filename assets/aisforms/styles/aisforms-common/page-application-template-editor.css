@@ -13,13 +13,4 @@
 .ApplicantApplicationTemplateEditor .form-template-owner select {
   margin-right: 1rem;
 }
-#PreviewAcknowledgementViaEmailID .email-subject {
-  padding: .75rem 0;
-}
-#PreviewAcknowledgementViaEmailID .email-subject .label {
-  font-weight: bold;
-}
-#PreviewAcknowledgementViaEmailID .email-subject .label::after {
-  content: ":";
-}
 /* <-- PAGE: APPLICATION TEMPLATE EDITOR */
