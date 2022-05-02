@@ -12,6 +12,9 @@ table.row-display table.row-display > tbody > tr {
 table.row-display > tbody > tr td.row-number:after {
   content: counter(rowCounter) ".";
 }
+table.row-display > tbody > tr.secondary-row {
+    counter-increment: none;
+}   
 table.row-display {
     background-color: #fff;
     color: #000;
