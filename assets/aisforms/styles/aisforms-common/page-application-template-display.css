@@ -125,11 +125,14 @@ div.SectionNavigator.vertical {
   font-size: .875em;
   font-size: .875em;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-flow: row wrap;
 }
 .AdminFormNav input {
   margin: .125rem;
+}
+.AdminFormNav .FormActions {
+  margin-right: 1rem;
 }
 .sectionBodyBelowTopNavBar {
   margin-left: 0 !important;
