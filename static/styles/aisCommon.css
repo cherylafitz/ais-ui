@@ -398,7 +398,7 @@ table.row-display a:active {
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
-.controls-wrapper [class*="-button"]:hover,
+.controls-wrapper input[class*="-button"]:hover,
 button:hover {
   background: #22465d;
   border-color: #1c384a;
@@ -406,7 +406,8 @@ button:hover {
 }
 input[type="submit"]:disabled,
 input[type="button"]:disabled,
-.controls-wrapper [class*="-button"]:disabled {
+.controls-wrapper input[class*="-button"]:disabled,
+button:disabled {
   background: #99acbb;
   cursor: not-allowed;
   border-color: #8ca2b2;
@@ -416,7 +417,7 @@ input[type="button"]:disabled,
 }
 input[type="submit"], 
 input[type="button"],
-.controls-wrapper [class*="-button"],
+.controls-wrapper input[class*="-button"],
 button {
   vertical-align: middle; /* for buttons that appear as arrows in section nav AIR, possibly others */
   -webkit-border-radius: 2px;
@@ -5609,6 +5610,9 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
 #official-name-id {
   width: 30rem;
 }
+div.AirportEdit input.CommonTextField {
+  width: 50rem;
+}
 th.ref-code .filter {
   width: 6rem;
 }
@@ -6076,6 +6080,11 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
   margin: .5rem 0;
 }
 /* <-- MODAL BOX */
+
+/* PAGE: AIRPORT EDIT --> */
+.AirportEdit th {
+  padding-right: 1rem;
+}
 
 /* PAGE: Alumni article editor --> */
 
