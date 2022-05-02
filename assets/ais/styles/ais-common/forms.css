@@ -6,6 +6,9 @@
 #official-name-id {
   width: 30rem;
 }
+div.AirportEdit input.CommonTextField {
+  width: 50rem;
+}
 th.ref-code .filter {
   width: 6rem;
 }
