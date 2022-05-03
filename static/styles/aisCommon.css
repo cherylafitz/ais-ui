@@ -6104,6 +6104,12 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 
 /* <-- PAGE: Alumnus Summary */
 
+/* PAGE: ANNOUNCEMENT --> */
+.row-display.Announcements td:nth-last-child(2) {
+  white-space: normal;
+}
+/* <-- PAGE: ANNOUNCEMENT */
+
 /* page: application search results --> */
 #batchNavigationContainer .count {
   padding-left: initial;
