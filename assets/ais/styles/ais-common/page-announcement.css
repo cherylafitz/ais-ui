@@ -1,0 +1,5 @@
+/* PAGE: ANNOUNCEMENT --> */
+.row-display.Announcements td:nth-last-child(2) {
+  white-space: normal;
+}
+/* <-- PAGE: ANNOUNCEMENT */
