@@ -3,7 +3,9 @@
 /* wrap cells --> */
 /* general--> */
 table.row-display th.document-review,
-table.row-display th.document-review-approval {
+table.row-display th.document-review-approval,
+.AlumnusExceptionalNoteDisplay .ExceptionalNote td,
+.PlacementReportEditor .HostFamilyInformation td {
   white-space: normal;
 } 
 table.row-display th.sort-order {

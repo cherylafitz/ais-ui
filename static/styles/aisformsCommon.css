@@ -4777,11 +4777,11 @@ div.ApplicationTemplateDisplay div.templateContent {
 .AirApplicationsSearch .Search .sectionDivider > th {
   padding-left: 1rem;
 }
-.AirApplicationsSearch .FormSearch:nth-last-child(9) th {
+.AirApplicationsSearch .FormSearch.submitted th {
   font-weight: bold;
 }
-.AirApplicationsSearch .FormSearch:nth-last-child(9) th,
-.AirApplicationsSearch .FormSearch:nth-last-child(9) td:first-of-type {
+.AirApplicationsSearch .FormSearch.submitted th,
+.AirApplicationsSearch .FormSearch.submitted td:first-of-type {
   background-color: #e6e6e6;
   padding-right: .5rem;
   padding-top: .5rem;

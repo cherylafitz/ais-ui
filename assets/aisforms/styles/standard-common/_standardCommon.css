@@ -264,6 +264,9 @@ body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
 .SectionDisplay td select {
   width: 10em;
 }
+.SectionDisplay td .Program select {
+  width: initial;
+}
 .SectionDisplay td select[disabled="disabled"] {
   width: 100%;
   max-width: 100%;
