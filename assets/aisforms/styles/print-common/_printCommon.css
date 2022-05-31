@@ -872,6 +872,11 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
   padding: .5rem .5rem .5rem.75rem;
   font-style: normal;
 }
+.document-signing-request-info.pdf .summary .generated-field .mismatch {
+  display: block;
+  white-space: normal;
+  max-width: 370px;
+}
 .data-display-section .generated-field .generated-field > .value {
     background-color: hsl(204 10% 86% / 1);
 }
@@ -903,6 +908,10 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
 .document-signing-request-info.pdf .document-history td {
   border: 1px solid #666;
   padding: 6px;
+}
+.document-signing-request-info.pdf td.username {
+  word-break: break-all;
+  white-space: normal;
 }
 /* <-- DRS Summary and History */
 
