@@ -838,6 +838,7 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
   width: -webkit-fit-content;
   width: fit-content;
   margin: 1rem;
+  page-break-before: always;
 }
 .document-signing-request-info.pdf .generated-field {
   border: 1px solid #e8eced;
