@@ -1,0 +1,43 @@
+/* PAGE: SkylinkUSOutboundToUSGateway --> */
+
+.arriving-to-iad.row-display caption .generated-field {
+  display: inline-block;
+}
+.arriving-to-iad.row-display caption .flight .value, 
+.arriving-to-iad.row-display caption .departure-airport,
+.arriving-to-iad.row-display caption .arrival-airport,
+.arriving-to-iad.row-display caption .departure-time,
+.arriving-to-iad.row-display caption .arrival-time,
+.arriving-to-iad.row-display .passenger-count .number {
+  font-weight: bold;
+}
+.arriving-to-iad.row-display caption [class*="-date"]::before {
+  content: "[";
+}
+.arriving-to-iad.row-display caption [class*="-time"]::after {
+  content: "]";
+}
+.arriving-to-iad.row-display caption [class*="-date"]::after {
+  content: " @ ";
+}
+.arriving-to-iad.row-display caption [class*="-airport"] {
+  padding-right: .25rem;
+}
+.arriving-to-iad.row-display .generated-field > .label:first-child {
+  width: initial;
+  padding-right: .25rem;
+}
+.arriving-to-iad.row-display .generated-field > .label:after {
+  content: ":";
+}
+.arriving-to-iad.row-display .generated-field > .value {
+  max-width: initial;
+  background-color: transparent;
+  border: 0;
+  min-width: initial;
+  font-style: normal;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* <-- PAGE: SkylinkUSOutboundToUSGateway */
