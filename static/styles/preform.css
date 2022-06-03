@@ -1331,6 +1331,11 @@ input.extra-wide {
   width: 40rem;
   max-width: 100%;
 }
+.form-input .date-hint {
+  display: inline-block;
+  padding: 0 .25rem;
+  vertical-align: bottom;
+}
 
 @media only screen and (max-width : 30rem) {
 	.form-input select,
