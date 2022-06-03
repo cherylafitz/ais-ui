@@ -1,0 +1,51 @@
+/* PAGE: SkylinkUSOutboundToUSGateway --> */
+.skylink-report .count-summary {
+  width: fit-content;
+  padding: 1rem 1rem 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid #999;
+}
+.skylink-report .row-display {
+  margin-bottom: 1.5rem;  
+}
+.skylink-report .row-display caption .generated-field {
+  display: inline-block;
+}
+.skylink-report .row-display caption .flight .value, 
+.skylink-report .row-display caption .departure-airport,
+.skylink-report .row-display caption .arrival-airport,
+.skylink-report .row-display caption .departure-time,
+.skylink-report .row-display caption .arrival-time,
+.skylink-report .row-display .passenger-count .number {
+  font-weight: bold;
+}
+.skylink-report .row-display caption [class*="-date"]::before {
+  content: "[";
+}
+.skylink-report .row-display caption [class*="-time"]::after {
+  content: "]";
+}
+.skylink-report .row-display caption [class*="-date"]::after {
+  content: " @ ";
+}
+.skylink-report .row-display caption [class*="-airport"] {
+  padding-right: .25rem;
+}
+.skylink-report .row-display .generated-field > .label:first-child {
+  width: initial;
+  padding-right: .25rem;
+}
+.skylink-report .row-display .generated-field > .label:after {
+  content: ":";
+}
+.skylink-report .row-display .generated-field > .value {
+  max-width: initial;
+  background-color: transparent;
+  border: 0;
+  min-width: initial;
+  font-style: normal;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* <-- PAGE: SkylinkUSOutboundToUSGateway */
