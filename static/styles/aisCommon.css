@@ -1334,7 +1334,7 @@ input.extra-wide {
 .form-input .date-hint {
   display: inline-block;
   padding: 0 .25rem;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 @media only screen and (max-width : 30rem) {
@@ -6602,43 +6602,46 @@ form[name="loginForm"] {
 /* <-- R3 Dashboard */
 
 /* PAGE: SkylinkUSOutboundToUSGateway --> */
-.SkylinkUSOutboundToUSGateway .count-summary {
+[class*="SkylinkUSOutbound"] .count-summary {
   width: fit-content;
   padding: 1rem 1rem 0.75rem;
   margin: 1rem 0;
   border: 1px solid #999;
 }
-.SkylinkUSOutboundToUSGateway .row-display caption .generated-field {
+[class*="SkylinkUSOutbound"] .row-display {
+  margin-bottom: 1.5rem;  
+}
+[class*="SkylinkUSOutbound"] .row-display caption .generated-field {
   display: inline-block;
 }
-.SkylinkUSOutboundToUSGateway .row-display caption .flight .value, 
-.SkylinkUSOutboundToUSGateway .row-display caption .departure-airport,
-.SkylinkUSOutboundToUSGateway .row-display caption .arrival-airport,
-.SkylinkUSOutboundToUSGateway .row-display caption .departure-time,
-.SkylinkUSOutboundToUSGateway .row-display caption .arrival-time,
-.SkylinkUSOutboundToUSGateway .row-display .passenger-count .number {
+[class*="SkylinkUSOutbound"] .row-display caption .flight .value, 
+[class*="SkylinkUSOutbound"] .row-display caption .departure-airport,
+[class*="SkylinkUSOutbound"] .row-display caption .arrival-airport,
+[class*="SkylinkUSOutbound"] .row-display caption .departure-time,
+[class*="SkylinkUSOutbound"] .row-display caption .arrival-time,
+[class*="SkylinkUSOutbound"] .row-display .passenger-count .number {
   font-weight: bold;
 }
-.SkylinkUSOutboundToUSGateway .row-display caption [class*="-date"]::before {
+[class*="SkylinkUSOutbound"] .row-display caption [class*="-date"]::before {
   content: "[";
 }
-.SkylinkUSOutboundToUSGateway .row-display caption [class*="-time"]::after {
+[class*="SkylinkUSOutbound"] .row-display caption [class*="-time"]::after {
   content: "]";
 }
-.SkylinkUSOutboundToUSGateway .row-display caption [class*="-date"]::after {
+[class*="SkylinkUSOutbound"] .row-display caption [class*="-date"]::after {
   content: " @ ";
 }
-.SkylinkUSOutboundToUSGateway .row-display caption [class*="-airport"] {
+[class*="SkylinkUSOutbound"] .row-display caption [class*="-airport"] {
   padding-right: .25rem;
 }
-.SkylinkUSOutboundToUSGateway .row-display .generated-field > .label:first-child {
+[class*="SkylinkUSOutbound"] .row-display .generated-field > .label:first-child {
   width: initial;
   padding-right: .25rem;
 }
-.SkylinkUSOutboundToUSGateway .row-display .generated-field > .label:after {
+[class*="SkylinkUSOutbound"] .row-display .generated-field > .label:after {
   content: ":";
 }
-.SkylinkUSOutboundToUSGateway .row-display .generated-field > .value {
+[class*="SkylinkUSOutbound"] .row-display .generated-field > .value {
   max-width: initial;
   background-color: transparent;
   border: 0;
