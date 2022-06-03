@@ -1,36 +1,41 @@
 /* PAGE: SkylinkUSOutboundToUSGateway --> */
-
-.arriving-to-iad.row-display caption .generated-field {
+.SkylinkUSOutboundToUSGateway .count-summary {
+  width: fit-content;
+  padding: 1rem 1rem 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid #999;
+}
+.SkylinkUSOutboundToUSGateway .row-display caption .generated-field {
   display: inline-block;
 }
-.arriving-to-iad.row-display caption .flight .value, 
-.arriving-to-iad.row-display caption .departure-airport,
-.arriving-to-iad.row-display caption .arrival-airport,
-.arriving-to-iad.row-display caption .departure-time,
-.arriving-to-iad.row-display caption .arrival-time,
-.arriving-to-iad.row-display .passenger-count .number {
+.SkylinkUSOutboundToUSGateway .row-display caption .flight .value, 
+.SkylinkUSOutboundToUSGateway .row-display caption .departure-airport,
+.SkylinkUSOutboundToUSGateway .row-display caption .arrival-airport,
+.SkylinkUSOutboundToUSGateway .row-display caption .departure-time,
+.SkylinkUSOutboundToUSGateway .row-display caption .arrival-time,
+.SkylinkUSOutboundToUSGateway .row-display .passenger-count .number {
   font-weight: bold;
 }
-.arriving-to-iad.row-display caption [class*="-date"]::before {
+.SkylinkUSOutboundToUSGateway .row-display caption [class*="-date"]::before {
   content: "[";
 }
-.arriving-to-iad.row-display caption [class*="-time"]::after {
+.SkylinkUSOutboundToUSGateway .row-display caption [class*="-time"]::after {
   content: "]";
 }
-.arriving-to-iad.row-display caption [class*="-date"]::after {
+.SkylinkUSOutboundToUSGateway .row-display caption [class*="-date"]::after {
   content: " @ ";
 }
-.arriving-to-iad.row-display caption [class*="-airport"] {
+.SkylinkUSOutboundToUSGateway .row-display caption [class*="-airport"] {
   padding-right: .25rem;
 }
-.arriving-to-iad.row-display .generated-field > .label:first-child {
+.SkylinkUSOutboundToUSGateway .row-display .generated-field > .label:first-child {
   width: initial;
   padding-right: .25rem;
 }
-.arriving-to-iad.row-display .generated-field > .label:after {
+.SkylinkUSOutboundToUSGateway .row-display .generated-field > .label:after {
   content: ":";
 }
-.arriving-to-iad.row-display .generated-field > .value {
+.SkylinkUSOutboundToUSGateway .row-display .generated-field > .value {
   max-width: initial;
   background-color: transparent;
   border: 0;
