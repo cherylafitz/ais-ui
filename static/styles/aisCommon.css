@@ -6634,6 +6634,9 @@ form[name="loginForm"] {
 [class*="SkylinkUSOutbound"] .row-display caption [class*="-airport"] {
   padding-right: .25rem;
 }
+[class*="SkylinkUSOutbound"] .row-display .generated-field {
+  margin: .5rem 0 0;
+}
 [class*="SkylinkUSOutbound"] .row-display .generated-field > .label:first-child {
   width: initial;
   padding-right: .25rem;
