@@ -12,7 +12,11 @@ table.row-display th.sort-order {
   white-space: normal;
   min-width: 60px;
 }
-table.row-display td.description {
+.row-display .ais-id {
+  white-space: normal;
+  max-width: 400px;
+}
+table.row-display td.description{
   white-space: normal;
   min-width: 300px; 
   max-width: 600px; 
