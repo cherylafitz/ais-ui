@@ -6602,49 +6602,49 @@ form[name="loginForm"] {
 /* <-- R3 Dashboard */
 
 /* PAGE: SkylinkUSOutboundToUSGateway --> */
-[class*="SkylinkUSOutbound"] .count-summary {
+.skylink-report .count-summary {
   width: fit-content;
   padding: 1rem 1rem 0.75rem;
   margin: 1rem 0;
   border: 1px solid #999;
 }
-[class*="SkylinkUSOutbound"] .row-display {
+.skylink-report .row-display {
   margin-bottom: 1.5rem;  
 }
-[class*="SkylinkUSOutbound"] .row-display caption .generated-field {
+.skylink-report .row-display caption .generated-field {
   display: inline-block;
 }
-[class*="SkylinkUSOutbound"] .row-display caption .flight .value, 
-[class*="SkylinkUSOutbound"] .row-display caption .departure-airport,
-[class*="SkylinkUSOutbound"] .row-display caption .arrival-airport,
-[class*="SkylinkUSOutbound"] .row-display caption .departure-time,
-[class*="SkylinkUSOutbound"] .row-display caption .arrival-time,
-[class*="SkylinkUSOutbound"] .row-display .passenger-count .number {
+.skylink-report .row-display caption .flight .value, 
+.skylink-report .row-display caption .departure-airport,
+.skylink-report .row-display caption .arrival-airport,
+.skylink-report .row-display caption .departure-time,
+.skylink-report .row-display caption .arrival-time,
+.skylink-report .row-display .passenger-count .number {
   font-weight: bold;
 }
-[class*="SkylinkUSOutbound"] .row-display caption [class*="-date"]::before {
+.skylink-report .row-display caption [class*="-date"]::before {
   content: "[";
 }
-[class*="SkylinkUSOutbound"] .row-display caption [class*="-time"]::after {
+.skylink-report .row-display caption [class*="-time"]::after {
   content: "]";
 }
-[class*="SkylinkUSOutbound"] .row-display caption [class*="-date"]::after {
+.skylink-report .row-display caption [class*="-date"]::after {
   content: " @ ";
 }
-[class*="SkylinkUSOutbound"] .row-display caption [class*="-airport"] {
+.skylink-report .row-display caption [class*="-airport"] {
   padding-right: .25rem;
 }
-[class*="SkylinkUSOutbound"] .row-display .generated-field {
+.skylink-report .row-display .generated-field {
   margin: .5rem 0 0;
 }
-[class*="SkylinkUSOutbound"] .row-display .generated-field > .label:first-child {
+.skylink-report .row-display .generated-field > .label:first-child {
   width: initial;
   padding-right: .25rem;
 }
-[class*="SkylinkUSOutbound"] .row-display .generated-field > .label:after {
+.skylink-report .row-display .generated-field > .label:after {
   content: ":";
 }
-[class*="SkylinkUSOutbound"] .row-display .generated-field > .value {
+.skylink-report .row-display .generated-field > .value {
   max-width: initial;
   background-color: transparent;
   border: 0;
