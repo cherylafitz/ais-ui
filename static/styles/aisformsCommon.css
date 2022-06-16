@@ -794,13 +794,19 @@ td a.file-download[href$=".pdf"],
 .excel-download,
 .file-download [href$=".xlsx"],
 td a.file-download[href$=".xlsx"],
-.file-download [data-file-name$=".xlsx"] {
+.file-download [data-file-name$=".xlsx"],
+.file-download [href$=".xls"],
+td a.file-download[href$=".xls"],
+.file-download [data-file-name$=".xls"] {
   background-image: url(../../../../ais/common/Excelicon_small.png);
 }
 .word-download,
 .file-download [href$=".docx"],
 td a.file-download[href$=".docx"],
-.file-download [data-file-name$=".docx"] {
+.file-download [data-file-name$=".docx"],
+.file-download [href$=".doc"],
+td a.file-download[href$=".doc"],
+.file-download [data-file-name$=".doc"]  {
   background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
 }
 /* REMOVE?? --> */
