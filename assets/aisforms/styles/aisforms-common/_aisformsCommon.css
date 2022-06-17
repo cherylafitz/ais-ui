@@ -1869,37 +1869,6 @@ body#body--environment-staging:after {
   }*/
 }
 
-
-/* Shared Forms */
-div.TeamInviteLandingPage h1.LoginOrCreateAccountLink {
-border: 5px solid #D3DDAC;
-max-width:530px;
-margin:10px auto 0;
-padding:1em;
-}
-
-div.Main .JoinSharedForm,
-div.Main .SharedWithExplanation,
-div.Content span.TrackChanges,
-div.Content span.TrackRecentChanges,
-div.Content span.SharedTeamManagement {
-  background-color:#FFFFFF;
-  border: medium solid #de6846;
-  border-radius: 1em;
-  padding: 0.5em;
-  margin: .75em 0;
-  display: inline-block;
-}
-div.Content .AdminFormNav span.TrackChanges,
-div.Content .AdminFormNav span.TrackRecentChanges,
-div.Content span.SharedTeamManagement {
-  margin: 0 .25rem;
-}
-div.Main .SharedLegend {
-    font-style: normal;
-    font-weight: normal;
-}
-
 /* CATEGORY: SIMPLE GRID --> */
 .row:after,
 .applicantSearch .sectionDivider:after {
