@@ -8,6 +8,9 @@
 .skylink-report .row-display {
   margin-bottom: 1.5rem;  
 }
+.skylink-report .row-display caption {
+  text-align: left;
+}
 .skylink-report .row-display caption .generated-field {
   display: inline-block;
 }
