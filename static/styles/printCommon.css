@@ -1064,6 +1064,19 @@ section img.ProgramLogo600w {
 
 /* <-- HEADINGS */
 
+/* SKYLINK --> */
+
+.skylink-report .row-display th,
+.skylink-report .row-display td {
+  border: 1px solid #888;
+  padding: 3px 6px;
+}
+.skylink-report .row-display th {
+  vertical-align: bottom;
+}
+
+/* <-- SKYLINK */
+
  TABLES --> */
 
 .QuestionAnswer .RowDisplay td,
@@ -1251,3 +1264,94 @@ table.row-display {
   min-width: 22em;
 }
 /* <-- LONG QUESTIONS */
+
+/* PAGE: SkylinkUSOutboundToUSGateway --> */
+.skylink-report .count-summary {
+  width: fit-content;
+  padding: 1rem 1rem 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid #999;
+}
+.skylink-report .row-display {
+  margin-bottom: 1.5rem;  
+}
+.skylink-report .row-display caption {
+  text-align: left;
+}
+.skylink-report .row-display caption .generated-field {
+  display: inline-block;
+}
+.skylink-report .row-display caption .flight .value, 
+.skylink-report .row-display caption .departure-airport,
+.skylink-report .row-display caption .arrival-airport,
+.skylink-report .row-display caption .departure-time,
+.skylink-report .row-display caption .arrival-time,
+.skylink-report .row-display .passenger-count .number {
+  font-weight: bold;
+}
+.skylink-report .row-display caption [class*="-date"]::before {
+  content: "[";
+}
+.skylink-report .row-display caption [class*="-time"]::after {
+  content: "]";
+}
+.skylink-report .row-display caption [class*="-date"]::after {
+  content: " @ ";
+}
+.skylink-report .row-display caption [class*="-airport"] {
+  padding-right: .25rem;
+}
+.skylink-report .row-display .generated-field {
+  margin: .5rem 0 0;
+}
+.skylink-report .row-display .generated-field > .label:first-child {
+  width: initial;
+  padding-right: .25rem;
+}
+.skylink-report .row-display .generated-field > .label:after {
+  content: ":";
+}
+.skylink-report .row-display .generated-field > .value {
+  max-width: initial;
+  background-color: transparent;
+  border: 0;
+  min-width: initial;
+  font-style: normal;
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+/* <-- PAGE: SkylinkUSOutboundToUSGateway */
+
+/* TABLE ROW NUMBERS --> */
+
+table.row-display > tbody {
+    counter-reset: rowCounter calc(var(--row-number-start) - 1);
+}
+table.row-display > tbody > tr {
+    counter-increment: rowCounter;
+}
+table.row-display table.row-display > tbody > tr {
+    counter-increment: initial;
+}
+table.row-display > tbody > tr td.row-number:after {
+  content: counter(rowCounter) ".";
+}
+table.row-display > tbody > tr.secondary-row {
+    counter-increment: none;
+}   
+table.row-display {
+    background-color: #fff;
+    color: #000;
+    font-style: normal;
+    margin: .5rem 0;
+    border-collapse: collapse;
+}
+table.RowDisplay td.rowNumber,
+table.RowDisplay td.row-number,
+table.row-display td.rowNumber,
+table.row-display td.row-number {
+   text-align: right;
+}
+
+/* <-- TABLE ROW NUMBERS */
