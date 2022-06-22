@@ -41,5 +41,11 @@ table.row-display {
   text-align: left;
   padding: 0 .5em 0 0;
 }
-
+.row-display thead tr th {
+  border-top: 2px solid #5f666d;
+  border-bottom: 2px solid #5f666d;
+}
+.row-display thead ~ tbody tr:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
 /* <-- TABLES 

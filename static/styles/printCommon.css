@@ -1065,16 +1065,26 @@ section img.ProgramLogo600w {
 /* <-- HEADINGS */
 
 /* SKYLINK --> */
-
+.skylink-report {
+  font-size: 11px;
+}
 .skylink-report .row-display th,
 .skylink-report .row-display td {
-  border: 1px solid #888;
-  padding: 3px 6px;
+  padding: 3px;
+}
+.skylink-report .row-display td {
+  border: 1px solid #afb2b9;
+}
+.skylink-report .row-display th {
+  border-left: 1px solid #afb2b9;
+  border-right: 1px solid #afb2b9;
 }
 .skylink-report .row-display th {
   vertical-align: bottom;
 }
-
+.skylink-report .row-display caption .generated-field > .value {
+  padding-right: .5rem;
+}
 /* <-- SKYLINK */
 
  TABLES --> */
@@ -1120,8 +1130,15 @@ table.row-display {
   text-align: left;
   padding: 0 .5em 0 0;
 }
-
+.row-display thead tr th {
+  border-top: 2px solid #5f666d;
+  border-bottom: 2px solid #5f666d;
+}
+.row-display thead ~ tbody tr:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
 /* <-- TABLES 
+
 /* Form questions to appear horizontally instead of vertically */
 
 .SectionDisplay .AdministratorFirstName,
