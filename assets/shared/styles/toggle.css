@@ -1,0 +1,33 @@
+/* TOGGLE --> */
+
+.toggle-buttons-wrapper {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.toggle-button {
+  border: 1px solid #346788;
+}
+.toggle-button:first-of-type {
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px 0 0 6px;
+}
+.toggle-button:last-of-type {
+  border-radius: 0 6px 6px 0;
+}
+.toggle-button[aria-pressed="true"] {
+  background: #336789;
+  color: #fff;
+  border-color: #29353d;
+}
+.toggle-button[aria-pressed="false"] {
+  background: transparent;
+  color: #444;
+  border-color: #a3a3a3;
+}
+.toggle-button:first-of-type[aria-pressed="false"] {
+  border-right: none;
+}
+.toggle-button:last-of-type[aria-pressed="false"] {
+  border-left: none;
+}
+/* <-- TOGGLE */
