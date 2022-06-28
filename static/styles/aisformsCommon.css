@@ -4850,6 +4850,47 @@ div.ApplicationTemplateDisplay div.templateContent {
 }
 /* <-- PAGE: USER HOME */
 
+/* HELP NOTES --> */
+
+.HelpNoteDisplay h1 {
+    margin: -1.5rem -1.25rem .5rem;
+    padding: 0.75rem 1.25rem;
+    background: #f1f2f3;
+}
+.HelpNoteDisplay .sub-nav h1 {
+    margin: -1rem -1.25rem .5rem;
+}
+.help-note h2 .title-text {
+    font-size: 1.75rem;
+    margin-right: 1rem;
+}
+.help-note .ui-library {
+    display: flex;
+}
+.help-note .ui-library-component {
+    flex-basis: 500px;
+    border: 1px solid #C5D4D1;
+    border-radius: 6px;
+}
+.ui-library-component h3 {
+    background: #C5D4D1;
+    padding: .75rem 1rem;
+    border-radius: 6px 6px 0 0;
+    margin: 0;
+}
+.ui-library .component-description {
+    padding: 1rem 1rem 0;
+    background-color: #DDEDEA;
+}
+.ui-library .component-example {
+    padding: 1rem;
+}
+.ui-library-component .availability {
+    font-style: italic;
+    color: #2d443e;
+}
+/* <-- HELP NOTES */
+
 /* PAGES: PROCTORED EXAM --> */
 form.has-unsaved-edits {
   border-left: 3px solid #de463d;
@@ -5082,7 +5123,7 @@ div#build-and-instance {
 .sub-nav,
 .info-bar {
   margin: -1.5rem -1.25rem 1rem;
-  padding: .5rem 1rem;
+  padding: .5rem 1.25rem;
 }
 .sub-nav ~ .info-bar {
   margin: -1rem -1.25rem 1rem;
@@ -5619,3 +5660,29 @@ caption .title {
 
 }
 /* <-- NEW TABLES CSS FOR AFTER MARCO REPLACES ROWDISPLAY WITH ROW-DISPLAY */
+
+/* TEXT --> */
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+p:last-child {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+}
+h1, h2 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+
+.text-small {
+  font-size: .875rem;
+}
+/* <-- TEXT */
