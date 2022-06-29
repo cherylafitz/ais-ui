@@ -1,0 +1,25 @@
+/* TEXT --> */
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+p:last-child {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+}
+h1, h2 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+
+.text-small {
+  font-size: .875rem;
+}
+/* <-- TEXT */
