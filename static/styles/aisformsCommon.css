@@ -5194,7 +5194,13 @@ table.row-display td.numeric,
 table.row-display td.number,
 table.row-display td.rowNumber,
 table.row-display td.RowNumber,
-td.rightAlign{
+td.rightAlign,
+table.RowDisplay th[class*="RunningTotal"],
+table.RowDisplay th[class*="Percentage"],
+table.RowDisplay th.FormsCreatedByMonth,
+table.RowDisplay th[class*="Percent"],
+table.RowDisplay th[class*="Count"],
+table.RowDisplay th.FormsSubmittedByMonth {
     text-align: right;
 }
 
