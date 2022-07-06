@@ -3,6 +3,7 @@
 .toggle-buttons-wrapper {
   display: flex;
   margin-bottom: 1rem;
+  margin-right: .5rem;
 }
 .toggle-button {
   border: 1px solid #346788;

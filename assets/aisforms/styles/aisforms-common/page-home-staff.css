@@ -1,0 +1,15 @@
+/* PAGE: HOME STAFF --> */
+
+.staffHome .TransferInboxLink {
+  margin-bottom: .5rem;
+}
+.staffHome .toggle-buttons-wrapper {
+  margin-top: 1rem;
+}
+/*temp!!*/
+.staffHome label.switch {
+  width: initial;
+  height: initial;
+}
+
+/* <-- PAGE: HOME STAFF */

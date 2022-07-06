@@ -1945,6 +1945,7 @@ tr.has-pii td.pii {
 .toggle-buttons-wrapper {
   display: flex;
   margin-bottom: 1rem;
+  margin-right: .5rem;
 }
 .toggle-button {
   border: 1px solid #346788;
@@ -4768,6 +4769,22 @@ div.ApplicationTemplateDisplay div.templateContent {
   margin-right: 1rem;
 }
 /* <-- PAGE: APPLICATION TEMPLATE EDITOR */
+
+/* PAGE: HOME STAFF --> */
+
+.staffHome .TransferInboxLink {
+  margin-bottom: .5rem;
+}
+.staffHome .toggle-buttons-wrapper {
+  margin-top: 1rem;
+}
+/*temp!!*/
+.staffHome label.switch {
+  width: initial;
+  height: initial;
+}
+
+/* <-- PAGE: HOME STAFF */
 
 /* PAGE: role editor --> */
 
