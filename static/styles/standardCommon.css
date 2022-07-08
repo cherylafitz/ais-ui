@@ -1202,6 +1202,7 @@ div.BeforeQuestion table.TBorderNone tr td {
 .SectionDisplay .TelephonePrimaryType,
 .SectionDisplay .TelephonePrimarySMSPermission,
 .SectionDisplay .TelephoneAlternate,
+.SectionDisplay .TelephoneAlternateType,
 .SectionDisplay .USParticipantGivenName,
 .SectionDisplay .USParticipantLastName,
 .SectionDisplay .USParticipantMiddleName {
@@ -1224,7 +1225,8 @@ div.BeforeQuestion table.TBorderNone tr td {
 .SectionDisplay .AlternatePhoneType,
 .SectionDisplay .OthPhoneWhose,
 .SectionDisplay .TelephonePrimaryType,
-.SectionDisplay .TelephonePrimarySMSPermission {
+.SectionDisplay .TelephonePrimarySMSPermission,
+.SectionDisplay .TelephoneAlternateType {
   clear: right;
 }
 
