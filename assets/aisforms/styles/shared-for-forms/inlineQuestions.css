@@ -103,6 +103,7 @@
 .SectionDisplay .TelephonePrimaryType,
 .SectionDisplay .TelephonePrimarySMSPermission,
 .SectionDisplay .TelephoneAlternate,
+.SectionDisplay .TelephoneAlternateType,
 .SectionDisplay .USParticipantGivenName,
 .SectionDisplay .USParticipantLastName,
 .SectionDisplay .USParticipantMiddleName {
@@ -125,7 +126,8 @@
 .SectionDisplay .AlternatePhoneType,
 .SectionDisplay .OthPhoneWhose,
 .SectionDisplay .TelephonePrimaryType,
-.SectionDisplay .TelephonePrimarySMSPermission {
+.SectionDisplay .TelephonePrimarySMSPermission,
+.SectionDisplay .TelephoneAlternateType {
   clear: right;
 }
 

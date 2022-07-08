@@ -1227,6 +1227,7 @@ table.row-display {
 .SectionDisplay .TelephonePrimaryType,
 .SectionDisplay .TelephonePrimarySMSPermission,
 .SectionDisplay .TelephoneAlternate,
+.SectionDisplay .TelephoneAlternateType,
 .SectionDisplay .USParticipantGivenName,
 .SectionDisplay .USParticipantLastName,
 .SectionDisplay .USParticipantMiddleName {
@@ -1249,7 +1250,8 @@ table.row-display {
 .SectionDisplay .AlternatePhoneType,
 .SectionDisplay .OthPhoneWhose,
 .SectionDisplay .TelephonePrimaryType,
-.SectionDisplay .TelephonePrimarySMSPermission {
+.SectionDisplay .TelephonePrimarySMSPermission,
+.SectionDisplay .TelephoneAlternateType {
   clear: right;
 }
 
