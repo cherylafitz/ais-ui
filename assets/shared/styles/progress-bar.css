@@ -1,7 +1,0 @@
-/* PROGRESS BAR --> */
-
-[class*="BarGraph"] canvas {
-  border: 1px solid #000;
-}
-
-/* <-- PROGRESS BAR */
