@@ -886,11 +886,6 @@ td .FieldOfStudyChoice select {
   display: inline-block;
   padding-right: .5rem;
 }
-.stop-sign-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  width: fit-content;
-}
 
 /* <-- STOP SIGN GUY */
 
