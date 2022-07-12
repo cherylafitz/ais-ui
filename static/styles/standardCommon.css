@@ -875,6 +875,25 @@ td .FieldOfStudyChoice select {
 }
 /* <-- One off styles */
 
+/* STOP SIGN GUY --> */
+
+.stop-sign-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: fit-content;
+}
+.stop-sign-guy {
+  display: inline-block;
+  padding-right: .5rem;
+}
+.stop-sign-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  width: fit-content;
+}
+
+/* <-- STOP SIGN GUY */
+
 /* TABLES --> */
 .SectionDisplay th {
   white-space: normal;
