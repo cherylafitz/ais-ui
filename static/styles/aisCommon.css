@@ -6192,7 +6192,7 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
   font-size: 1rem;
 }
 .FSAAppSearch .input-group-label {
-  width: 10rem;
+  /*width: 10rem;*/
 }
 
 /* <-- PAGE: Application search */
