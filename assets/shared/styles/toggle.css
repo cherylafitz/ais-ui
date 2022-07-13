@@ -5,6 +5,12 @@
   margin-bottom: 1rem;
   margin-right: .5rem;
 }
+.form-input .toggle-buttons-wrapper {
+  display: inline-flex;
+}
+.form-input button.toggle-button {
+  padding: .35rem .5rem;
+}
 .toggle-button {
   border: 1px solid #346788;
 }

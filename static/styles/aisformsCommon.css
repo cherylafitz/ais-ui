@@ -1056,6 +1056,11 @@ input[type="file"] {
 	min-width: 10rem;
 	padding: .25rem;
 }
+.form-input textarea:not(:last-child),
+.form-input select:not(:last-child),
+.form-input input:not(:last-child) {
+  margin-right: .5rem;
+}
 .generated-field > .value {
   font-style: italic;
   background-color: #eff2f3;
@@ -1946,6 +1951,12 @@ tr.has-pii td.pii {
   display: flex;
   margin-bottom: 1rem;
   margin-right: .5rem;
+}
+.form-input .toggle-buttons-wrapper {
+  display: inline-flex;
+}
+.form-input button.toggle-button {
+  padding: .35rem .5rem;
 }
 .toggle-button {
   border: 1px solid #346788;
