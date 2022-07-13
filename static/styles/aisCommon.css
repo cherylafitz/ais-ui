@@ -143,6 +143,18 @@ div.NoEvaluationQueuesAvailable {
   color: #000;
 }
 
+div.hint {
+  font-style: italic;
+  font-size: 0.9em;
+  background: #ffe2b3;
+  padding: 0.25rem 0.5rem 0.25rem 0.325rem;
+  width: fit-content;
+  margin: 0.25rem 0;
+  display: inline-block;
+  border-left: 4px solid #f6b844;
+  align-self: flex-start;
+}
+
 /* <-- ALERTS, NOTICES, AND WARNINGS */
 
 
@@ -3656,12 +3668,6 @@ div.CheckboxMatrix tr td {
 }
 
 /*WARNINGS and NOTICES-->*/
-
-div.hint {
-    font-size: 0.875rem;
-    font-style: italic;
-    padding: 0 .5rem;
-}
 .TechHint {
     font-size: 1rem;
     font-style: normal;
@@ -5981,19 +5987,50 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 /* <-- PAGE APPLICATION SEARCH RESULTS */
 
 /* PAGE: Application search --> */
-
+.FSAAppSearch .input-group-label {
+  width: 10rem;
+}
+.FSAAppSearch .input-group,
+.FSAAppSearch .form-input {
+  margin: 0;
+  border-bottom: 1px solid #c2c2c2;
+  display: flex;
+}
+.FSAAppSearch .input-group-content .input-group,
+.FSAAppSearch .input-group-content .form-input {
+  border: 0;
+}
 .FSAAppSearch .input-group-label,
 .FSAAppSearch .form-input label {
   font-size: 1.125rem;
 }
+.FSAAppSearch .input-group-label,
+.FSAAppSearch .form-input label {
+  background: #e0e6eb;
+  padding-top: 0.75rem;
+  padding: 0.5rem;
+}
 .FSAAppSearch .input-group-content .input-group-label,
 .FSAAppSearch .input-group-content label {
   font-size: 1rem;
+  background-color: transparent;
+  padding: .5rem 0;
 }
-.FSAAppSearch .input-group-label {
-  /*width: 10rem;*/
+.FSAAppSearch .form-input select, 
+.FSAAppSearch .form-input textarea, 
+.FSAAppSearch .generated-field > .value,
+.FSAAppSearch .form-input input {
+    margin-left: 1rem;
+    align-self: flex-start;
 }
-
+.FSAAppSearch .form-input select, 
+.FSAAppSearch .form-input textarea, 
+.FSAAppSearch .generated-field > .value,
+.FSAAppSearch .form-input input,
+.FSAAppSearch .input-group-content {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
 /* <-- PAGE: Application search */
 
 /* PAGE: attachment display --> */

@@ -1,15 +1,46 @@
 /* PAGE: Application search --> */
-
+.FSAAppSearch .input-group-label {
+  width: 10rem;
+}
+.FSAAppSearch .input-group,
+.FSAAppSearch .form-input {
+  margin: 0;
+  border-bottom: 1px solid #c2c2c2;
+  display: flex;
+}
+.FSAAppSearch .input-group-content .input-group,
+.FSAAppSearch .input-group-content .form-input {
+  border: 0;
+}
 .FSAAppSearch .input-group-label,
 .FSAAppSearch .form-input label {
   font-size: 1.125rem;
 }
+.FSAAppSearch .input-group-label,
+.FSAAppSearch .form-input label {
+  background: #e0e6eb;
+  padding-top: 0.75rem;
+  padding: 0.5rem;
+}
 .FSAAppSearch .input-group-content .input-group-label,
 .FSAAppSearch .input-group-content label {
   font-size: 1rem;
+  background-color: transparent;
+  padding: .5rem 0;
 }
-.FSAAppSearch .input-group-label {
-  /*width: 10rem;*/
+.FSAAppSearch .form-input select, 
+.FSAAppSearch .form-input textarea, 
+.FSAAppSearch .generated-field > .value,
+.FSAAppSearch .form-input input {
+    margin-left: 1rem;
+    align-self: flex-start;
 }
-
+.FSAAppSearch .form-input select, 
+.FSAAppSearch .form-input textarea, 
+.FSAAppSearch .generated-field > .value,
+.FSAAppSearch .form-input input,
+.FSAAppSearch .input-group-content {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
 /* <-- PAGE: Application search */

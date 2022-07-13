@@ -143,6 +143,18 @@ div.NoEvaluationQueuesAvailable {
   color: #000;
 }
 
+div.hint {
+  font-style: italic;
+  font-size: 0.9em;
+  background: #ffe2b3;
+  padding: 0.25rem 0.5rem 0.25rem 0.325rem;
+  width: fit-content;
+  margin: 0.25rem 0;
+  display: inline-block;
+  border-left: 4px solid #f6b844;
+  align-self: flex-start;
+}
+
 /* <-- ALERTS, NOTICES, AND WARNINGS */
 
 
