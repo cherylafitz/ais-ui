@@ -1,12 +1,22 @@
 /* TAGS --> */
 
-[class*="-tag"] {
+[class*="-tag"],
+.hint {
 	padding: 0 .25rem;
 	font-size: .875rem;
 	margin: 0 .25rem;
 	border-radius: 2px;
+	align-self: flex-start;
 }
-.info-tag {
+.hint {
+	font-style: italic;
+	display: inline-block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.info-tag,
+.hint {
 	background-color: #bfeaf7;
 }
 .info-tag-1 {

@@ -1,46 +1,58 @@
 /* PAGE: Application search --> */
-.FSAAppSearch .input-group-label {
+.FSAAppSearch .content .input-group-label {
   width: 10rem;
 }
-.FSAAppSearch .input-group,
-.FSAAppSearch .form-input {
+.FSAAppSearch .content .input-group,
+.FSAAppSearch .content .form-input {
   margin: 0;
-  border-bottom: 1px solid #c2c2c2;
+  border-bottom: 1px solid #dbdbdb;
   display: flex;
 }
-.FSAAppSearch .input-group-content .input-group,
-.FSAAppSearch .input-group-content .form-input {
+.FSAAppSearch .content .input-group-content .input-group-content {
+  margin-left: 0;
+}
+.FSAAppSearch .content .input-group-content .input-group,
+.FSAAppSearch .content .input-group-content .form-input {
   border: 0;
 }
-.FSAAppSearch .input-group-label,
-.FSAAppSearch .form-input label {
+.FSAAppSearch .content .input-group-label,
+.FSAAppSearch .content .form-input label {
   font-size: 1.125rem;
 }
-.FSAAppSearch .input-group-label,
-.FSAAppSearch .form-input label {
+.FSAAppSearch .content .input-group-label,
+.FSAAppSearch .content .form-input label {
   background: #e0e6eb;
-  padding-top: 0.75rem;
+}
+.FSAAppSearch .content .input-group-label,
+.FSAAppSearch .content .form-input label:first-child {
   padding: 0.5rem;
 }
-.FSAAppSearch .input-group-content .input-group-label,
-.FSAAppSearch .input-group-content label {
+.FSAAppSearch .content .input-group-content .input-group-label,
+.FSAAppSearch .content .input-group-content label {
   font-size: 1rem;
   background-color: transparent;
+}
+.FSAAppSearch .content .input-group-content .input-group-label,
+.FSAAppSearch .content .input-group-content label:first-child {
   padding: .5rem 0;
 }
-.FSAAppSearch .form-input select, 
-.FSAAppSearch .form-input textarea, 
-.FSAAppSearch .generated-field > .value,
-.FSAAppSearch .form-input input {
+.FSAAppSearch .content .form-input select, 
+.FSAAppSearch .content .form-input textarea, 
+.FSAAppSearch .content .generated-field > .value,
+.FSAAppSearch .content .form-input input[type="text"] {
     margin-left: 1rem;
     align-self: flex-start;
 }
-.FSAAppSearch .form-input select, 
-.FSAAppSearch .form-input textarea, 
-.FSAAppSearch .generated-field > .value,
-.FSAAppSearch .form-input input,
-.FSAAppSearch .input-group-content {
-    margin-top: .25rem;
-    margin-bottom: .25rem;
+.FSAAppSearch .content .form-input select, 
+.FSAAppSearch .content .form-input textarea, 
+.FSAAppSearch .content .generated-field > .value,
+.FSAAppSearch .content .form-input input,
+.FSAAppSearch .content .input-group-content,
+.FSAAppSearch .content .hint {
+    margin-top: .125rem;
+    margin-bottom: .125rem;
+}
+.FSAAppSearch .content .form-input.student-number-list {
+  margin-top: 1rem;
 }
 /* <-- PAGE: Application search */
