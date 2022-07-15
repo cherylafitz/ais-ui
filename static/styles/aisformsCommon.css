@@ -3012,7 +3012,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 div#ApplicationTemplateDisplayAUC h1 {
   font-size: .875rem;
 }
-div#ApplicationTemplateDisplayAUC h1.editing:not(.FormViewHeader) {
+div#ApplicationTemplateDisplayAUC h1.editing:not(.form-view-header) {
   float: left;
   margin-top: 0;
   margin-bottom: 0;
@@ -3025,10 +3025,10 @@ div.ApplicationTemplateDisplay h2 {
 .ApplicationTemplateDisplay h2.ProgramNameLabel {
     font-size: .875rem;
 }
-.ApplicationTemplateDisplay h1.FormViewHeader,
+.ApplicationTemplateDisplay h1.form-view-header,
 .ApplicationTemplateDisplay h1.editing,
 .ApplicationTemplateDisplay h2.ProgramNameLabel {
-  margin: -1.5rem -1.25rem 1rem;
+  margin: 0 -1.25rem 1rem;
   padding: .75rem 1rem .5rem;
   background-color: #e4e5e7;
 }
@@ -3039,18 +3039,18 @@ div.ApplicationTemplateDisplay h2 {
 .SectionDisplay h1 {
   margin: .5em 0;
 }
-h1.FormViewHeader .TemplateName {
+h1.form-view-header .TemplateName {
   font-weight: bold;
 }
-h1.FormViewHeader .FormRefCode {
+h1.form-view-header .FormRefCode {
   float: right;
 }
-h1.FormViewHeader .FormRefCode:before {
+h1.form-view-header .FormRefCode:before {
   content: "Ref code ";
   padding-left: .5rem;
   color: #7b7e80;
 }
-h1.FormViewHeader .ProgramName {
+h1.form-view-header .ProgramName {
   font-weight: bold;
 }
 /* <--TEMPLATES */
