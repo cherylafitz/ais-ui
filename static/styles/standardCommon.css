@@ -1111,6 +1111,18 @@ div.BeforeQuestion table.TBorderNone tr td {
   border: none;
 }
 
+/* one-off's --> */
+
+.SectionDisplay td .ProgramPrefChoice select {
+  width: initial;
+}
+
+/* <--  one-off's */
+/* overrides set width for selects in tables */
+.AnswerTable .wide select {
+  width: initial;
+}
+
 /* <-- TABLES 
 
 /* Form questions to appear horizontally instead of vertically */
