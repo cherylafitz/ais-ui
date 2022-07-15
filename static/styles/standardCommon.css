@@ -1109,6 +1109,14 @@ div.BeforeQuestion table.TBorderNone tr td {
   border: none;
 }
 
+/* one-off's --> */
+
+.SectionDisplay td .ProgramPrefChoice select {
+  width: initial;
+}
+
+/* <--  one-off's */
+
 /* <-- TABLES 
 
 /* Form questions to appear horizontally instead of vertically */

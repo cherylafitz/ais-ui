@@ -218,4 +218,12 @@ div.BeforeQuestion table.TBorderNone tr td {
   border: none;
 }
 
+/* one-off's --> */
+
+.SectionDisplay td .ProgramPrefChoice select {
+  width: initial;
+}
+
+/* <--  one-off's */
+
 /* <-- TABLES 
