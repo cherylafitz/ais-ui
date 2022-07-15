@@ -225,5 +225,9 @@ div.BeforeQuestion table.TBorderNone tr td {
 }
 
 /* <--  one-off's */
+/* overrides set width for selects in tables */
+.AnswerTable .wide select {
+  width: initial;
+}
 
 /* <-- TABLES 
