@@ -2410,18 +2410,6 @@ div.sectionDivider span.SearchButtonWrapper ~ span {
   font-weight: normal;
   font-size: 1.25rem;
 }
-#contentPageProportional #ApplicationSearchForm input[type="submit"] {
-  margin: 0 0 .0625rem;
-  background: #96b9cf; /* Old browsers */
-  background: -moz-linear-gradient(top, #A6D7F7 10%, #a8c5d7 60%, #487d9d 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #A6D7F7 10%, #a8c5d7 60%, #487d9d 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #A6D7F7 10%, #a8c5d7 60%, #487d9d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A6D7F7', endColorstr='#487d9d',GradientType=0 ); /* IE6-9 */
-  color: #000;
-}
-#contentPageProportional #ApplicationSearchForm input[type="submit"]:hover {
-  background: #99C6E3;
-}
 .applicantSearch .ShowHideSectionsInApplicationCell {
   display: contents;
   margin-top: -.25rem;
