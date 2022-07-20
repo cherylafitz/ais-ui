@@ -28,6 +28,7 @@ select {
   font-size: 1rem;
   border: 1px solid #b3b3b3;
   padding: .1875rem .25rem;
+  background-color: #fff;
 }
 select[multiple="multiple"] {
   height: 600px;
@@ -203,10 +204,11 @@ input[type=checkbox]:checked + label {
 	display: block;
 }
 .date-hint .label,
-.date-hint .value {
+.date-hint .value,
+.hint .label,
+.hint .value {
 	display: inline-block;
 	font-size: .875rem;
-	padding-left: .25rem;
 }
 .date-hint .label::after {
 	content: ":";
@@ -376,7 +378,7 @@ input.extra-wide {
 }
 .form-input .date-hint {
   display: inline-block;
-  padding: 0 .25rem;
+  /*padding: 0 .25rem;*/
   vertical-align: top;
 }
 
