@@ -1,0 +1,15 @@
+/* COMMUNITY/SCHOOL PAGES --> */
+
+#website p {
+  word-break: break-word;
+}
+#CommunityEditor .form-input input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]),
+#SchoolEditor .form-input input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]) {
+  min-width: 40rem;
+}
+#CommunityEditor textarea,
+#SchoolEditor textarea {
+  min-height: 6rem;
+  min-width: 40rem;
+}
+/* <-- COMMUNITY/SCHOOL PAGES */

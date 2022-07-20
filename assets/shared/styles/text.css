@@ -2,5 +2,7 @@
 .explanation {
   font-size: .875rem;
   font-style: italic;
+  max-width: 16rem;
+  display: inline-block;
 }
 /* <-- TEXT */
