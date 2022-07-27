@@ -670,7 +670,7 @@ fieldset legend .form-input select {
 /* <-- TEMP until fieldsets are repurposed */
 
 #contentPageProportional table.ERXMatrixTable {
-  font-size: .875rem;
+  /*font-size: .875rem;*/
 }
 #contentPageProportional table.ERXMatrixTable tr td {
   padding: .1rem .2rem;

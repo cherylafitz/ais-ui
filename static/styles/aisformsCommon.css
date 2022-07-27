@@ -1002,6 +1002,9 @@ select[multiple="multiple"] {
   height: 600px;
   max-height: 100%;
 }
+.sort-wrapper select {
+  margin-bottom: .125rem;
+}
 input[type="file"] {
   border: none;
   text-decoration: none;
@@ -1345,9 +1348,11 @@ input.extra-wide {
   max-width: 100%;
 }
 .form-input .date-hint {
-  display: inline-block;
-  /*padding: 0 .25rem;*/
+  display: block;
+  padding: 0;
   vertical-align: top;
+  margin: .125rem 0;
+  background-color: transparent;
 }
 
 @media only screen and (max-width : 30rem) {
@@ -1913,9 +1918,9 @@ tr.has-pii td.pii {
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
+  background-color: #e0e6eb;
 }
-.info-tag,
-.hint {
+.info-tag {
 	background-color: #bfeaf7;
 }
 .info-tag-1 {
@@ -1970,17 +1975,17 @@ tr.has-pii td.pii {
   display: inline-flex;
 }
 .form-input button.toggle-button {
-  padding: .35rem .5rem;
+  padding: .3rem .5rem;
 }
 .toggle-button {
   border: 1px solid #346788;
 }
 .toggle-button:first-of-type {
   padding: 0.4rem 0.75rem;
-  border-radius: 6px 0 0 6px;
+  border-radius: 4px 0 0 4px;
 }
 .toggle-button:last-of-type {
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 4px 4px 0;
 }
 .toggle-button[aria-pressed="true"] {
   background: #336789;

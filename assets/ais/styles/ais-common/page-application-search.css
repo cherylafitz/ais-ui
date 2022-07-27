@@ -5,17 +5,25 @@
 #ApplicationSearchForm .details-content {
   padding-top: .75rem;
 }
-#ApplicationSearchForm .input-group-label {
-  width: 10rem;
+#ApplicationSearchForm .input-group-label,
+#ApplicationSearchForm .form-input label:first-child {
+  width: 12rem;
 }
 #ApplicationSearchForm .input-group,
 #ApplicationSearchForm .form-input {
   margin: 0;
-  border-bottom: 1px solid #bfbfbf;
   display: flex;
+}
+#ApplicationSearchForm .input-group:not(:first-child),
+#ApplicationSearchForm .form-input:not(:first-child) {
+  border-top: 1px solid #cccccc;
 }
 #ApplicationSearchForm .input-group-content .input-group-content {
   margin-left: 0;
+  /*flex-basis: initial;*/
+}
+#ApplicationSearchForm .input-group-content .input-group {
+  flex-basis: 100%;
 }
 #ApplicationSearchForm .input-group-content .input-group,
 #ApplicationSearchForm .input-group-content .form-input {
@@ -27,12 +35,11 @@
 }
 #ApplicationSearchForm .input-group-label,
 #ApplicationSearchForm .form-input label {
-  background: #e0e6eb;
-  background-color: #d0dae1;
+  background: #dae2e7;
 }
 #ApplicationSearchForm .input-group-label,
 #ApplicationSearchForm .form-input label:first-child {
-  padding: 0.5rem;
+  padding: 0.25rem .5rem;
 }
 #ApplicationSearchForm .input-group-content .input-group-label,
 #ApplicationSearchForm .input-group-content label {
@@ -43,9 +50,16 @@
 #ApplicationSearchForm .form-input[class*="radio"] label {
   background-color: transparent;
 }
+#ApplicationSearchForm .details-content > .form-input[class*="checkbox"] label {
+  padding: .5rem;
+}
+#ApplicationSearchForm .details-content details {
+  margin: 0.5rem 0 0.125rem;
+  align-self: flex-end;
+}
 #ApplicationSearchForm .input-group-content .input-group-label,
 #ApplicationSearchForm .input-group-content label:first-child {
-  padding: .5rem 0;
+  padding: .25rem 0;
 }
 #ApplicationSearchForm .form-input select, 
 #ApplicationSearchForm .form-input textarea, 
@@ -54,6 +68,14 @@
     margin-left: 1.25rem;
     align-self: flex-start;
 }
+#ApplicationSearchForm .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+#ApplicationSearchForm .form-input textarea, 
+#ApplicationSearchForm .form-input select {
+  min-width: 12rem;
+}
+
+
+
 #ApplicationSearchForm .form-input select, 
 #ApplicationSearchForm .form-input textarea, 
 #ApplicationSearchForm .generated-field > .value,
@@ -63,13 +85,14 @@
     margin-top: .25rem;
     margin-bottom: .25rem;
 }
-#ApplicationSearchForm .input-group:not(.advanced-program-and-year-or-student-list) .input-group-content {
+#ApplicationSearchForm .input-group-content {
   display: flex;
   flex-flow:  row wrap;
+  flex-basis: calc(100% - 14rem);
 }
 #ApplicationSearchForm .input-group-content .form-input[class*="radio"],
 #ApplicationSearchForm .input-group-content .form-input[class*="checkbox"] {
-  flex-basis: calc(100% - 12rem);
+  flex-basis: calc(100%);
 }
 #ApplicationSearchForm .input-group .form-input:not(.student-number-list) {
   display: block;
@@ -84,10 +107,11 @@
 }
 #ApplicationSearchForm .input-group .form-input label:first-child {
   display: block;
+  width: 12rem;
 }
 #ApplicationSearchForm .ais-id-components .toggle-buttons-wrapper {
-  display: flex;
-  margin-top: .5rem;
+  display: inline-flex;
+  margin: 0;
 }
 #ApplicationSearchForm .assigned-module-tags,
 #ApplicationSearchForm .module-preference-tags {

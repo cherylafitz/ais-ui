@@ -34,6 +34,9 @@ select[multiple="multiple"] {
   height: 600px;
   max-height: 100%;
 }
+.sort-wrapper select {
+  margin-bottom: .125rem;
+}
 input[type="file"] {
   border: none;
   text-decoration: none;
@@ -377,9 +380,11 @@ input.extra-wide {
   max-width: 100%;
 }
 .form-input .date-hint {
-  display: inline-block;
-  /*padding: 0 .25rem;*/
+  display: block;
+  padding: 0;
   vertical-align: top;
+  margin: .125rem 0;
+  background-color: transparent;
 }
 
 @media only screen and (max-width : 30rem) {

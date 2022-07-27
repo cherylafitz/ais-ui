@@ -14,9 +14,9 @@
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
+  background-color: #e0e6eb;
 }
-.info-tag,
-.hint {
+.info-tag {
 	background-color: #bfeaf7;
 }
 .info-tag-1 {

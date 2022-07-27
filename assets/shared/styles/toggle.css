@@ -9,17 +9,17 @@
   display: inline-flex;
 }
 .form-input button.toggle-button {
-  padding: .35rem .5rem;
+  padding: .3rem .5rem;
 }
 .toggle-button {
   border: 1px solid #346788;
 }
 .toggle-button:first-of-type {
   padding: 0.4rem 0.75rem;
-  border-radius: 6px 0 0 6px;
+  border-radius: 4px 0 0 4px;
 }
 .toggle-button:last-of-type {
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 4px 4px 0;
 }
 .toggle-button[aria-pressed="true"] {
   background: #336789;
