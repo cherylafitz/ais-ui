@@ -5,8 +5,7 @@ div.SystemAnnouncementsWrapper {
   width: 100%;
 }
 
-div.SystemAnnouncementsWrapper div.SystemAnnouncement,
-body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+div.SystemAnnouncementsWrapper div.SystemAnnouncement {
   background-color: #FFF;
   padding: .5rem .25rem;
   z-index: 1;
@@ -19,6 +18,8 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   box-shadow: 0 0 0px 0.625rem #2b353c;
   margin: -1rem -1rem 2rem;
 }
+
+/* AIR */
 .IsNotLoggedIn div.SystemAnnouncementsWrapper div.SystemAnnouncement {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -76,4 +77,33 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   color: #000; 
   font-size:0.8125rem; 
   font-weight: bold;
+}
+
+/* new ais styles -->  */
+
+[data-system="ais"] .SystemAnnouncement details {
+  border-left: 0.5rem solid #de463d;
+  margin: 0;
+}
+[data-system="ais"] .SystemAnnouncement details > summary {
+  background-color: #fff;
+  font-size: 1.125rem;
+  padding: 0.25em 0.5em 0.25em 1.5em;
+  border-radius: 0 2px 2px 0;
+}
+[data-system="ais"] .SystemAnnouncement details[open] > summary {
+  border-radius: 0 2px 0 0;
+}
+[data-system="ais"] .SystemAnnouncement .details-content {
+  margin: 0;
+  border-top: 1px solid #d9e0e3;
+  border-radius: 0 2px 2px 0;
+}
+[data-system="ais"] div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+  border: 0;
+  padding: 0;
+  background: #2b353c;
+}
+[data-system="ais"] .SystemAnnouncement summary span {
+  color: #c93028;
 }
