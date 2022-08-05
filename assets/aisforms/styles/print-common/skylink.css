@@ -1,5 +1,138 @@
 /* SKYLINK --> */
+/* PAGE: SkylinkUSOutboundToUSGateway --> */
+.skylink-report .summary {
+  width: fit-content;
+  padding: .5em .5em 0;
+  margin: 1em 0;
+  border: 1px solid #999;
+}
+.skylink-report .row-display {
+  margin-bottom: 1em;  
+}
+.skylink-report .row-display td,
+.skylink-report .row-display th {
+  page-break-inside: avoid;
+}
+.skylink-report .row-display caption {
+  text-align: left;
+}
+.skylink-report .row-display caption .generated-field {
+  display: inline-block;
+}
+.skylink-report .row-display caption .flight .value, 
+.skylink-report .row-display caption .departure-airport,
+.skylink-report .row-display caption .arrival-airport,
+.skylink-report .row-display caption .departure-time,
+.skylink-report .row-display caption .arrival-time,
+.skylink-report .row-display .passenger-count .number {
+  font-weight: bold;
+}
+.skylink-report .row-display caption [class*="-date"]::before {
+  content: "[";
+}
+.skylink-report .row-display caption [class*="-time"]::after {
+  content: "]";
+}
+.skylink-report .row-display caption [class*="-date"]::after {
+  content: " @ ";
+}
+.skylink-report .row-display caption [class*="-airport"] {
+  padding-right: .25em;
+}
+.skylink-report .row-display .generated-field {
+  margin: .5em 0 0;
+}
+.skylink-report .row-display .generated-field > .label:first-child {
+  width: initial;
+  padding-right: .25em;
+}
+.skylink-report .row-display .generated-field > .label:after {
+  content: ":";
+}
+.skylink-report .row-display .generated-field > .value {
+  max-width: initial;
+  background-color: transparent;
+  border: 0;
+  min-width: initial;
+  font-style: normal;
+  padding-left: 0;
+  padding-right: 1em;
+}
 
+/* horrible checkbox matrix marco needs ot update --> */
+/* PAGE: SKYLINK TRAVELERS REPORT --> */
+
+.checkbox-matrix td {
+  padding-right: 1em;
+}
+.checkbox-matrix table.ERXMatrixTable td {
+  padding: 0;
+}
+
+/*cell widths --> */
+/* cell widths --> */
+.skylink-report .row-display .row-number {
+  width: 1.5em;
+}
+/*.skylink-report .row-display .next-flight {
+  width: 17.5em;
+}*/
+.skylink-report .row-display .next-flight.departure {
+  width: 4em;
+}
+.skylink-report .row-display .next-flight.flight-number {
+  width: 2em;
+}
+.skylink-report .row-display .next-flight.destination {
+  width: 1.5em;
+}
+.skylink-report .row-display .passenger-number {
+  width: 5.75em;
+}
+.skylink-report .row-display .program {
+  width: 2em;
+}
+.skylink-report .row-display .year {
+  width: 3em;
+}
+.skylink-report .row-display .gender {
+  width: 1.75em;
+  overflow: hidden;
+  word-wrap: normal;
+}
+.skylink-report .row-display .first-name,
+.skylink-report .row-display .last-name {
+  width: 9em;
+  word-wrap: normal;
+  overflow: hidden;
+}
+.skylink-report .row-display .first-name {
+  width: 8em;
+}
+.skylink-report .row-display .departure-date,
+.skylink-report .row-display .departure-time {
+  white-space: nowrap;
+}
+/*.skylink-report .row-display .disabilities {
+  width: 5.5em;
+}*/
+.skylink-report .row-display .disabilities.ais,
+.skylink-report .row-display .etkt {
+  width: 2em;
+}
+/* <-- PAGE: SKYLINK TRAVELERS REPORT */
+
+/* <-- PAGE: SkylinkUSOutboundToUSGateway */
+
+.skylink-report {
+  font-size: 11px;
+}
+.skylink-report .summary {
+  font-size: 15px;
+}
+.skylink-report td {
+  word-wrap: break-word;
+}
 .skylink-report .row-display th,
 .skylink-report .row-display td {
   border: 1px solid #888;
@@ -9,4 +142,44 @@
   vertical-align: bottom;
 }
 
+.skylink-report .header {
+  display: flex;
+  align-items: flex-end;
+}
+.skylink-report .header img.logo {
+  max-height: 50px;
+  margin-right: 1em;
+}
+.skylink-report .header h2 {
+  margin: 0;
+}
+.skylink-report .row-display {
+  width: 44em;
+  /*table-layout: fixed;*/
+  width: 100%;
+  max-width: 100%;
+}
+
+.skylink-report td.next-flight.departure {
+  font-size: 11px;
+}
+.skylink-report .row-display td.passenger-number {
+  /*width: 4.25em;*/
+}
+/*.skylink-report .row-display td.first-name,
+.skylink-report .row-display td.last-name {
+  width: 4em;
+  word-wrap: normal;
+  overflow: hidden;
+}
+.skylink-report .row-display td.first-name {
+  width: 3em;
+}*/
+.skylink-report table.row-display thead ~ tbody tr:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
+.skylink-report table.row-display th {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
 /* <-- SKYLINK */
