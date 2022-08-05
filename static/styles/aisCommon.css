@@ -5800,6 +5800,17 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 }
 /* <-- ICONS */
 
+/* images -->  */
+
+.badge-icon .value {
+  max-width: 400px;
+}
+img {
+  max-width: 100%;
+}
+
+/* <-- images  */
+
 /* INBOX Q AND A --> */
 .questionnaire .RowDisplay td {
   vertical-align: top;
