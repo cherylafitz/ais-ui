@@ -5988,14 +5988,20 @@ img {
 /* <-- PAGE APPLICATION SEARCH RESULTS */
 
 /* PAGE: Application search --> */
+#ApplicationSearchForm > .controls-wrapper {
+  justify-content: space-between;
+}
 #ApplicationSearchForm > details > summary {
   font-size: 1.25rem;
 }
 #ApplicationSearchForm .details-content {
   padding-top: .75rem;
 }
-#ApplicationSearchForm .input-group-label {
-  width: 10rem;
+#ApplicationSearchForm .input-group-label,
+#ApplicationSearchForm .form-input label:first-child, 
+#ApplicationSearchForm .generated-field > .label:first-child, 
+#ApplicationSearchForm .form-input > .label:first-child {
+  width: 11rem;
 }
 #ApplicationSearchForm .input-group,
 #ApplicationSearchForm .form-input {
@@ -6052,13 +6058,25 @@ img {
     margin-top: .25rem;
     margin-bottom: .25rem;
 }
-#ApplicationSearchForm .input-group:not(.advanced-program-and-year-or-student-list) .input-group-content {
+#ApplicationSearchForm .date-hint {
+  display: block;
+}
+#ApplicationSearchForm .input-group-content {
   display: flex;
   flex-flow:  row wrap;
+  flex-basis: calc(100% - 13rem);
 }
+#ApplicationSearchForm .input-group-content .input-group-content {
+  flex-basis: initial;
+}
+/* radio and checkbox exceptions --> */
+/*.assigned-module-direct-or-subgrantee .input-group-content,
+.applicant-attributes .input-group-content {
+  flex-flow: column wrap;
+}*/
 #ApplicationSearchForm .input-group-content .form-input[class*="radio"],
 #ApplicationSearchForm .input-group-content .form-input[class*="checkbox"] {
-  flex-basis: calc(100% - 12rem);
+  flex-basis: calc(100%);
 }
 #ApplicationSearchForm .input-group .form-input:not(.student-number-list) {
   display: block;
@@ -6073,6 +6091,7 @@ img {
 }
 #ApplicationSearchForm .input-group .form-input label:first-child {
   display: block;
+  width: initial;
 }
 #ApplicationSearchForm .ais-id-components .toggle-buttons-wrapper {
   display: flex;
