@@ -1,12 +1,12 @@
 /* PAGE: SkylinkUSOutboundToUSGateway --> */
-.skylink-report .count-summary {
+.skylink-report .summary {
   width: fit-content;
   padding: 1rem 1rem 0.75rem;
   margin: 1rem 0;
   border: 1px solid #999;
 }
 .skylink-report .row-display {
-  margin-bottom: 1.5rem;  
+  margin-bottom: 1rem;  
 }
 .skylink-report .row-display caption {
   text-align: left;
@@ -51,7 +51,66 @@
   min-width: initial;
   font-style: normal;
   padding-left: 0;
+  padding-right: .75rem;
+}
+
+/* horrible checkbox matrix marco needs ot update --> */
+/* PAGE: SKYLINK TRAVELERS REPORT --> */
+
+.checkbox-matrix td {
   padding-right: 1rem;
 }
+.checkbox-matrix table.ERXMatrixTable td {
+  padding: 0;
+}
+
+/*cell widths --> */
+/* cell widths --> */
+.skylink-report .row-display .row-number {
+  width: .75rem;
+}
+.skylink-report .row-display .next-flight {
+  width: 13.5rem;
+}
+.skylink-report .row-display .next-flight.departure {
+  width: 4rem;
+  white-space: normal;
+}
+.skylink-report .row-display .next-flight.flight-number {
+  width: 2rem;
+}
+.skylink-report .row-display .next-flight.destination {
+  width: 1.5rem;
+}
+.skylink-report .row-display .passenger-number {
+  width: 5.25rem;
+}
+.skylink-report .row-display .program {
+  width: 3.5rem;
+}
+.skylink-report .row-display .year {
+  width: 2rem;
+}
+.skylink-report .row-display .gender {
+  width: 2.75rem;
+}
+.skylink-report .row-display .first-name,
+.skylink-report .row-display .last-name {
+  width: 8rem;
+  word-wrap: normal;
+  overflow: hidden;
+}
+.skylink-report .row-display .departure-date,
+.skylink-report .row-display .departure-time {
+  white-space: nowrap;
+}
+.skylink-report .row-display .disabilities {
+  width: 4.5rem;
+}
+.skylink-report .row-display .disabilities.ais,
+.skylink-report .row-display .etkt {
+  width: 2rem;
+}
+/* <-- PAGE: SKYLINK TRAVELERS REPORT */
 
 /* <-- PAGE: SkylinkUSOutboundToUSGateway */
