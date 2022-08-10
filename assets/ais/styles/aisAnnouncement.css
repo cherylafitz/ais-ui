@@ -81,29 +81,29 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
 
 /* new ais styles -->  */
 
-[data-system="ais"] .SystemAnnouncement details {
+.SystemAnnouncement details {
   border-left: 0.5rem solid #de463d;
   margin: 0;
 }
-[data-system="ais"] .SystemAnnouncement details > summary {
+.SystemAnnouncement details > summary {
   background-color: #fff;
   font-size: 1.125rem;
   padding: 0.25em 0.5em 0.25em 1.5em;
   border-radius: 0 2px 2px 0;
 }
-[data-system="ais"] .SystemAnnouncement details[open] > summary {
+.SystemAnnouncement details[open] > summary {
   border-radius: 0 2px 0 0;
 }
-[data-system="ais"] .SystemAnnouncement .details-content {
+.SystemAnnouncement .details-content {
   margin: 0;
   border-top: 1px solid #d9e0e3;
   border-radius: 0 2px 2px 0;
 }
-[data-system="ais"] div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+div.SystemAnnouncementsWrapper div.SystemAnnouncement {
   border: 0;
   padding: 0;
   background: #2b353c;
 }
-[data-system="ais"] .SystemAnnouncement summary span {
+.SystemAnnouncement summary span {
   color: #c93028;
 }
