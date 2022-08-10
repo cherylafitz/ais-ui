@@ -6089,7 +6089,7 @@ img {
 #ApplicationSearchForm .input-group .form-input label {
   margin: 0;
 }
-#ApplicationSearchForm .input-group .form-input label:first-child {
+#ApplicationSearchForm .input-group .form-input:not(.student-number-list) label:first-child {
   display: block;
   width: initial;
 }
