@@ -105,11 +105,14 @@
   white-space: nowrap;
 }
 .skylink-report .row-display .disabilities {
-  width: 4.5rem;
+  width: 1rem;
 }
-.skylink-report .row-display .disabilities.ais,
-.skylink-report .row-display .etkt {
-  width: 2rem;
+.skylink-report .row-display .disabilities.ais
+/* .skylink-report .row-display .etkt */ {
+  width: 1rem;
+}
+.skylink-report .row-display .eticket-pnr {
+  width: 5rem;
 }
 /* <-- PAGE: SKYLINK TRAVELERS REPORT */
 

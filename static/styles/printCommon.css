@@ -1179,12 +1179,15 @@ section img.ProgramLogo600w {
 .skylink-report .row-display .departure-time {
   white-space: nowrap;
 }
-/*.skylink-report .row-display .disabilities {
-  width: 5.5em;
-}*/
-.skylink-report .row-display .disabilities.ais,
-.skylink-report .row-display .etkt {
-  width: 2em;
+.skylink-report .row-display .disabilities {
+  width: 1em;
+}
+.skylink-report .row-display .disabilities.ais
+/* .skylink-report .row-display .etkt */ {
+  width: 1em;
+}
+.skylink-report .row-display .eticket-pnr {
+  width: 5em;
 }
 /* <-- PAGE: SKYLINK TRAVELERS REPORT */
 
