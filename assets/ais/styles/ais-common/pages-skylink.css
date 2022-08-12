@@ -22,10 +22,12 @@
 .skylink-report .row-display .passenger-count .number {
   font-weight: bold;
 }
-.skylink-report .row-display caption [class*="-date"]::before {
+.skylink-report .row-display caption .arrival [class*="-date"]::before,
+.skylink-report .row-display caption .departure [class*="-date"]::before  {
   content: "[";
 }
-.skylink-report .row-display caption [class*="-time"]::after {
+.skylink-report .row-display caption .arrival [class*="-time"]::after,
+.skylink-report .row-display caption .departure [class*="-time"]::after {
   content: "]";
 }
 .skylink-report .row-display caption [class*="-date"]::after {
@@ -34,8 +36,11 @@
 .skylink-report .row-display caption [class*="-airport"] {
   padding-right: .25rem;
 }
-.skylink-report .row-display tbody .generated-field {
+.skylink-report .row-display .generated-field {
   margin: .5rem 0 0;
+}
+.skylink-report .row-display .bus-info .generated-field {
+  margin: 0 0 .5rem;
 }
 .skylink-report .row-display .generated-field > .label:first-child {
   width: initial;
