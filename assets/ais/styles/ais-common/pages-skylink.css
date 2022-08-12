@@ -34,7 +34,7 @@
 .skylink-report .row-display caption [class*="-airport"] {
   padding-right: .25rem;
 }
-.skylink-report .row-display .generated-field {
+.skylink-report .row-display tbody .generated-field {
   margin: .5rem 0 0;
 }
 .skylink-report .row-display .generated-field > .label:first-child {
@@ -115,5 +115,19 @@
   width: 5rem;
 }
 /* <-- PAGE: SKYLINK TRAVELERS REPORT */
+
+/* PAGE: bus group edit --> */
+
+.BusGroupEdit .skylink-report .row-display caption {
+  text-align: left;
+  margin-top: 2rem;
+  background-color: #f0f5fa;
+  border-radius: 2px;
+  padding: 0.75rem 1rem 1rem;
+  border: 1px solid #b0b2b9;
+  border-top: 2px solid;
+}
+
+/* <-- PAGE: bus group edit  */
 
 /* <-- PAGE: SkylinkUSOutboundToUSGateway */
