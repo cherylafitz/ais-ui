@@ -274,8 +274,13 @@ fieldset.yes-no-picker legend {
 .row-display .form-input select {
   display: block;
 }
+.row-display caption .form-input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="button"]),
+.row-display caption .form-input textarea,
+.row-display caption .form-input select {
+  display: inline-block;
+}
 .row-display .form-input textarea {
-  width: 100%;
+  width: calc(100% - 11rem);
 }
 .row-display .input-group-label {
   font-size: 1rem;
