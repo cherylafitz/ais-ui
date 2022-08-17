@@ -5813,7 +5813,11 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 img {
   max-width: 100%;
 }
-
+/* fixes bug with logos in header table */
+td.logo img,
+.header-logo img {
+  max-width: initial;
+}
 /* <-- images  */
 
 /* INBOX Q AND A --> */
