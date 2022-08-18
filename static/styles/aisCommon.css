@@ -6372,6 +6372,9 @@ fieldset.HealthGroup[data-dev-reference="Immunization"] .HealthConditionWithAttr
   flex-basis: 25%;
   margin-right: 1rem;
 }
+.HealthGroup legend a {
+  color: #c4dcee;
+}
 .HealthQuestionsSubTitle .grouping {
   display: flex;
   flex-flow: row wrap;
