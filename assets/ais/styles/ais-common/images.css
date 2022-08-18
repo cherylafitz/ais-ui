@@ -3,12 +3,7 @@
 .badge-icon .value {
   max-width: 400px;
 }
-img {
+.badge-icon .value img {
   max-width: 100%;
-}
-/* fixes bug with logos in header table */
-td.logo img,
-.header-logo img {
-  max-width: initial;
 }
 /* <-- images  */
