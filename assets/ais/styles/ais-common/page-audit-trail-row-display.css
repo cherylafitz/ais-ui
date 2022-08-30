@@ -1,0 +1,10 @@
+/* PAGE: AUDIT TRAIL ROW DISPLAY --> */
+
+.AuditTrailRowDisplay .refinement-criteria {
+  width: fit-content;
+  padding: 1rem 1rem 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid #999;
+}
+
+/* <-- PAGE: AUDIT TRAIL ROW DISPLAY */
