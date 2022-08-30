@@ -1,0 +1,54 @@
+/* SKYLINK REPORT ETICKET --> */
+.SkylinkSingleETicketDisplay .header {
+  margin-bottom: .5rem;
+}
+.SkylinkSingleETicketDisplay h2 {
+  margin-left: 1em;
+}
+.SkylinkSingleETicketDisplay .row-display {
+  margin: .25em 0 0 0;
+}
+.SkylinkSingleETicketDisplay .passenger-into,
+.SkylinkSingleETicketDisplay .flight-info,
+.SkylinkSingleETicketDisplay .eticket {
+  display: flex;
+  flex-direction: row;
+}
+.SkylinkSingleETicketDisplay .passenger-into h3,
+.SkylinkSingleETicketDisplay .flight-info h3,
+.SkylinkSingleETicketDisplay .eticket h3 {
+  margin-right: 1rem;
+}
+.SkylinkSingleETicketDisplay .passenger-into .section-content,
+.SkylinkSingleETicketDisplay .flight-info .section-content,
+.SkylinkSingleETicketDisplay .eticket .section-content {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 13px;
+  margin-top: .25em;
+}
+.SkylinkSingleETicketDisplay .eticket pre {
+  margin-top: 0;
+}
+.SkylinkSingleETicketDisplay .generated-field {
+  margin-right: 0;
+  margin-bottom: .125em;
+}
+.SkylinkSingleETicketDisplay .generated-field .value {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  font-style: normal;
+}
+.SkylinkSingleETicketDisplay .generated-field > .label:first-child {
+  color: #004e7d;
+  font-weight: bold;
+  display: block;
+}
+.SkylinkSingleETicketDisplay h3 {
+  color: #004e7d;
+  margin-bottom: .125em;
+  margin-top: .25em;
+  font-size: 1.5em;
+}
+/* <-- SKYLINK REPORT ETICKET */
