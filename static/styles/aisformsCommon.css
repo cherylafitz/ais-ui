@@ -3038,9 +3038,6 @@ div#ApplicationTemplateDisplayAUC h1.editing:not(.form-view-header) {
   margin-right: 0;
   padding-right: .5rem;
 }
-div.ApplicationTemplateDisplay h2 {
-  font-size: 1.125rem;
-}
 .ApplicationTemplateDisplay h2.ProgramNameLabel {
     font-size: .875rem;
 }
