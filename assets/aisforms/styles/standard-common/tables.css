@@ -2,6 +2,9 @@
 .SectionDisplay th {
   white-space: normal;
 }
+table {
+  border-collapse: collapse;
+}
 td ul, td ol {
   padding-right: .5rem;
 }
@@ -178,7 +181,33 @@ table.Attachments {
   margin-top:5px;
   margin-bottom:5px;
 }
-
+table.TemplateTable {
+  margin: 1em 1em 1em 0;
+}
+table.TemplateTable td.sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+table.TemplateTable td ul {
+  list-style-type:circle;
+  padding-left: 1.25rem;
+}
+table.TemplateTable tr td,
+table.TemplateTable tr th {
+  border: 1px solid #999;
+  padding: .25rem .5rem;
+}
+table.TemplateTable tr th {
+  background-color: #3a3d40;
+  color: #FFFFFF;
+  font-size: 1em;
+  text-align: center;
+  border-color: #222;
+}
+table.TemplateTable tr td {
+  font-size: 0.875rem;
+  text-align: left;
+}
 div.SectionIntroductionText table tr td,
 div.BeforeQuestion table tr td,
 table.TemplateTable tr td,
