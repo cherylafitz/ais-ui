@@ -97,18 +97,7 @@ div.QuestionText div.Instruction ul {
 }
 
 
-/* Section Name and Headers--> */
-.SectionDisplay div.SectionName,
-#ApplicationTemplateDisplayAUC .SectionDisplay h1.section-name,
-.SectionDisplay h1.section-name {
-  font-size: 1.875rem;
-  color: #2E6B9B;
-  border-bottom: 2px solid #2E6B9B;
-  margin-bottom: 1rem;
-  padding-bottom: .125rem;
-  font-weight: normal;
-  margin-top: 0;
-}
+
 .filespecs {
   font-size: .875rem;
   color: black;
@@ -116,7 +105,7 @@ div.QuestionText div.Instruction ul {
   margin-bottom: 1rem;
   font-style: italic;
 }
-/* <--Section Name and Headers */
+
 /* <--Typography */
 
 /* Notices and Error Messages--> */
@@ -444,37 +433,7 @@ div.Content div.TextGeneric10 {
   clear:both;
 }
 
-.SectionDisplay h1,
-.SectionDisplay h2,
-.SectionDisplay h3,
-.SectionDisplay h4,
-.SectionDisplay h5,
-.SectionDisplay h6 {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
 
-div.Content div.Divider,
-div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
-.SectionDisplay h1,
-.Content .SectionDisplay h2,
-.Content .SectionDisplay h3,
-.Content .SectionDisplay h4 {
-  font-size: 1.5rem;
-  color: #025689;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: normal;
-  clear: both;
-  font-variant: normal;
-  text-align: left;
-}
-
-.Content .SectionDisplay h3 {
-  font-size: 1.25rem;
-}
-.Content .SectionDisplay h4 {
-  font-size: 1.125rem;
-}
 
 /*Give all AfterQuestion divs clear:both, so that empty divs placed in an AfterQuestion will make the containing border wrap around the last question if it is floated. This also can be used to float four elements like so:
 1 2
@@ -863,6 +822,66 @@ table.ExcelDataTabulated td {
 }
 
 /* <-- ADDRESS TABLE */
+
+/* HEADINGS --> */
+
+.SectionDisplay h1,
+.SectionDisplay h2,
+.SectionDisplay h3,
+.SectionDisplay h4,
+.SectionDisplay h5,
+.SectionDisplay h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+div.Content div.Divider,
+div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
+.SectionDisplay h1,
+.SectionDisplay h2,
+.SectionDisplay h3,
+.SectionDisplay h4,
+.SectionDisplay h5,
+.SectionDisplay h6 {
+  font-size: 1.5rem;
+  color: #025689;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  clear: both;
+  font-variant: normal;
+  text-align: left;
+}
+
+/* Section Name and Headers--> */
+.SectionDisplay div.SectionName,
+#ApplicationTemplateDisplayAUC .SectionDisplay h1.section-name,
+.SectionDisplay h1.section-name {
+  font-size: 1.875rem;
+  color: #2E6B9B;
+  border-bottom: 2px solid #2E6B9B;
+  margin-bottom: 1rem;
+  padding-bottom: .125rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.SectionDisplay h2 {
+  font-size: 1.75rem;
+}
+.SectionDisplay h3 {
+  font-size: 1.625rem;
+}
+.SectionDisplay h4 {
+  font-size: 1.5rem;
+}
+.SectionDisplay h5 {
+  font-size: 1.375rem;
+}
+.SectionDisplay h6 {
+  font-size: 1.25rem;
+}
+
+/* <-- HEADINGS */
 
 /* One off styles -->  */
 
