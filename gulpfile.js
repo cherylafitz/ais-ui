@@ -31,7 +31,8 @@ gulp.task('concat-printcommon-css', function() {
 });
 
 gulp.task('concat-preform-css', function() {
-  return gulp.src(['./assets/shared/styles/*.css','./assets/aisforms/styles/preform/*.css'])
+  return gulp.src(['./assets/shared/styles/*.css','./assets/aisforms/styles/preform/*.css',
+    './assets/aisforms/styles/standard-common/tables.css'])
     .pipe(concat('preform.css'))
     .pipe(gulp.dest('./static/styles/'));
 });
