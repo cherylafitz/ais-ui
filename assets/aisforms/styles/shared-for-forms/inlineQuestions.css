@@ -110,7 +110,9 @@
   float: left;
   clear: none;
 }
-
+.SectionDisplay td div.QuestionItem {
+  float: none;
+}
 .SectionDisplay .EmergencyContactAlternateTelephone,
 .SectionDisplay .EmergencyContactAlternateTelephone,
 .SectionDisplay .EmergencyContactOtherTelephone,
