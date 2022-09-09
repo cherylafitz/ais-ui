@@ -1,0 +1,35 @@
+/* SCHOOOL MENU --> */
+
+.school-menu {
+  background-color: #eaf3f9;
+  padding: 1rem;
+}
+.school-menu .data-entry-block {
+    background: #c5dbed;
+    width: fit-content;
+    padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+}
+.school-menu .data-entry-block .form-input {
+  margin: 0;
+}
+.school-menu .generated-field  .standardized-address.value {
+  padding: .5rem .75rem;
+  background: #29353d;
+  width: fit-content;
+  margin-top: .5rem;
+  color: white;
+  margin: .5rem 0;
+}
+.school-menu .city-state-zip-wrapper {
+  display: flex;
+}
+.school-menu .city-state-zip-wrapper .address-city {
+  margin-right: .25rem;
+}
+.school-menu .city-state-zip-wrapper .address-city::after {
+  content:  ",";
+}
+.school-menu .city-state-zip-wrapper .address-state {
+  margin-right: 1rem;
+}
+/* <-- SCHOOOL MENU */
