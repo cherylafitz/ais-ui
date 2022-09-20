@@ -1,3 +1,150 @@
+/* Form questions to appear horizontally instead of vertically */
+
+.SectionDisplay .AdministratorFirstName,
+.SectionDisplay .AdministratorHonorific,
+.SectionDisplay .AdministratorLastName,
+.SectionDisplay .AdministratorNameSuffix,
+.SectionDisplay .AdvisorFirstName,
+.SectionDisplay .AdvisorLastName,
+.SectionDisplay .AlternatePhoneType,
+.SectionDisplay .BankAccountOwnerFirstName,
+.SectionDisplay .BankAccountOwnerMiddleName,
+.SectionDisplay .BankAccountOwnerLastName,
+.SectionDisplay .CommunityLiaisonFirstName,
+.SectionDisplay .CommunityLiaisonHonorific,
+.SectionDisplay .CommunityLiaisonLastName,
+.SectionDisplay .CommunityLiaisonNameSuffix,
+.SectionDisplay .CongressionaVotingDistNum,
+.SectionDisplay .CongressioVotingDistState,
+.SectionDisplay .CurrentMobileTelephone,
+.SectionDisplay .CurrentMobileTelephoneCountryCode,
+.SectionDisplay .EmergCont1stName,
+.SectionDisplay .EmergContLastName,
+.SectionDisplay .EmergencyContact2FirstName,
+.SectionDisplay .EmergencyContact2LastName,
+.SectionDisplay .EmergencyContactAlternateTelephone,
+.SectionDisplay .EmergencyContactAlternateTelephoneType,
+.SectionDisplay .EmergencyContactHonorific,
+.SectionDisplay .EmergencyContactOtherTelephone,
+.SectionDisplay .EmergencyContactOtherTelephoneType,
+.SectionDisplay .EmergencyContactPrimaryTelephone,
+.SectionDisplay .EmergencyContactPrimaryTelephoneType,
+.SectionDisplay .Father1stName,
+.SectionDisplay .FatherLastName,
+.SectionDisplay .FirstName,
+.SectionDisplay .FirstNameNativeLanguage,
+.SectionDisplay .GroupedItem .USParticipantGivenName,
+.SectionDisplay .GroupedItem .USParticipantLastName,
+.SectionDisplay .Honorific,
+.SectionDisplay .LastName,
+.SectionDisplay .LastNameNativeLanguage,
+.SectionDisplay .MedProxyFirstName,
+.SectionDisplay .MedProxyLastName,
+.SectionDisplay .MentorTeacherFirstName,
+.SectionDisplay .MentorTeacherHonorific,
+.SectionDisplay .MentorTeacherLastName,
+.SectionDisplay .MentorTeacherNameSuffix,
+.SectionDisplay .MiddleName,
+.SectionDisplay .TelephoneMobile,
+.SectionDisplay .TelephoneMobileMessageConsent,
+.SectionDisplay .Mother1stName,
+.SectionDisplay .MotherLastName,
+.SectionDisplay .NameSuffix,
+.SectionDisplay .OthPhone,
+.SectionDisplay .OthPhoneWhose,
+.SectionDisplay .Parent1stName,
+.SectionDisplay .ParentAlternateTelephone,
+.SectionDisplay .ParentAlternateTelephoneType,
+.SectionDisplay .ParentCust1stName1,
+.SectionDisplay .ParentCust1stName2,
+.SectionDisplay .ParentCustLastName1,
+.SectionDisplay .ParentCustLastName2,
+.SectionDisplay .ParentLastName,
+.SectionDisplay .ParentMidName,
+.SectionDisplay .ParentMidName,
+.SectionDisplay .ParentOtherTelephone,
+.SectionDisplay .ParentOtherTelephoneType,
+.SectionDisplay .ParentPrimaryTelephone,
+.SectionDisplay .ParentPrimaryTelephoneType,
+.SectionDisplay .ParentRecommender1FirstName,
+.SectionDisplay .ParentRecommender1LastName,
+.SectionDisplay .ParentRecommender2FirstName,
+.SectionDisplay .ParentRecommender2LastName,
+.SectionDisplay .Passport2ndFirstName,
+.SectionDisplay .Passport2ndGivenName,
+.SectionDisplay .Passport2ndLastName,
+.SectionDisplay .Passport2ndMiddleName,
+.SectionDisplay .PassportFirstName,
+.SectionDisplay .PassportGivenName,
+.SectionDisplay .PassportLastName,
+.SectionDisplay .PassportLastName,
+.SectionDisplay .PassportMiddleName,
+.SectionDisplay .PassportMiddleName,
+.SectionDisplay .PassportPrimaryName,
+.SectionDisplay .RecommenderFirstName,
+.SectionDisplay .RecommenderFirstName2,
+.SectionDisplay .RecommenderLastName,
+.SectionDisplay .RecommenderLastName2,
+.SectionDisplay .SchoolDirLastName,
+.SectionDisplay .SchoolDirName,
+.SectionDisplay .SchoolSuperintendentFirstName,
+.SectionDisplay .SchoolSuperintendentHonorific,
+.SectionDisplay .SchoolSuperintendentLastName,
+.SectionDisplay .SchoolSuperintendentNameSuffix,
+.SectionDisplay .Sib1stName,
+.SectionDisplay .SibLastName,
+.SectionDisplay .SupervisorFirstName,
+.SectionDisplay .SupervisorLastName,
+.SectionDisplay .TeacherFirstName,
+.SectionDisplay .TeacherLastName,
+.SectionDisplay .TeachRef1stName,
+.SectionDisplay .TeachRefLastName,
+.SectionDisplay .TelephonePrimary,
+.SectionDisplay .TelephonePrimaryType,
+.SectionDisplay .TelephonePrimarySMSPermission,
+.SectionDisplay .TelephoneAlternate,
+.SectionDisplay .TelephoneAlternateType,
+.SectionDisplay .USParticipantGivenName,
+.SectionDisplay .USParticipantLastName,
+.SectionDisplay .USParticipantMiddleName {
+  float: left;
+  clear: none;
+}
+.SectionDisplay td div.QuestionItem {
+  float: none;
+}
+.SectionDisplay .EmergencyContactAlternateTelephone,
+.SectionDisplay .EmergencyContactAlternateTelephone,
+.SectionDisplay .EmergencyContactOtherTelephone,
+.SectionDisplay .EmergencyContactPrimaryTelephone,
+.SectionDisplay .MailAddrZIP,
+.SectionDisplay .OthPhone,
+.SectionDisplay .ParentAlternateTelephone,
+.SectionDisplay .ParentOtherTelephone,
+.SectionDisplay .RecSchoolZIPCode,
+.SectionDisplay .TelephoneAlternate {
+  clear: left;
+}
+.SectionDisplay .AlternatePhoneType,
+.SectionDisplay .OthPhoneWhose,
+.SectionDisplay .TelephonePrimaryType,
+.SectionDisplay .TelephonePrimarySMSPermission,
+.SectionDisplay .TelephoneAlternateType {
+  clear: right;
+}
+
+.Content .BeforeQuestion {
+  clear: both;
+}
+
+/* LONG QUESTIONS --> */
+.has-long-questions .form-input.has-legal-custody label:first-child,
+.has-long-questions .form-input.lives-with label:first-child {
+  width: 22em;
+  min-width: 22em;
+}
+/* <-- LONG QUESTIONS */
+
 /* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
 /*                                                           */
 /* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
@@ -1038,6 +1185,17 @@ section img.ProgramLogo600w {
   display: block;
 }
 
+/* float overrides --> */
+
+.SectionDisplay .TelephonePrimaryType,
+.SectionDisplay .TelephonePrimary,
+.SectionDisplay .TelephoneAlternateType,
+.SectionDisplay .TelephoneAlternate {
+  float: none;
+}
+
+/* <-- float overrides */
+
 /* HEADINGS -->  */
 .Content .SectionDisplay h1,
 .Content .SectionDisplay h2,
@@ -1353,153 +1511,6 @@ table.row-display {
 }
 
 /* <-- TABLES 
-
-/* Form questions to appear horizontally instead of vertically */
-
-.SectionDisplay .AdministratorFirstName,
-.SectionDisplay .AdministratorHonorific,
-.SectionDisplay .AdministratorLastName,
-.SectionDisplay .AdministratorNameSuffix,
-.SectionDisplay .AdvisorFirstName,
-.SectionDisplay .AdvisorLastName,
-.SectionDisplay .AlternatePhoneType,
-.SectionDisplay .BankAccountOwnerFirstName,
-.SectionDisplay .BankAccountOwnerMiddleName,
-.SectionDisplay .BankAccountOwnerLastName,
-.SectionDisplay .CommunityLiaisonFirstName,
-.SectionDisplay .CommunityLiaisonHonorific,
-.SectionDisplay .CommunityLiaisonLastName,
-.SectionDisplay .CommunityLiaisonNameSuffix,
-.SectionDisplay .CongressionaVotingDistNum,
-.SectionDisplay .CongressioVotingDistState,
-.SectionDisplay .CurrentMobileTelephone,
-.SectionDisplay .CurrentMobileTelephoneCountryCode,
-.SectionDisplay .EmergCont1stName,
-.SectionDisplay .EmergContLastName,
-.SectionDisplay .EmergencyContact2FirstName,
-.SectionDisplay .EmergencyContact2LastName,
-.SectionDisplay .EmergencyContactAlternateTelephone,
-.SectionDisplay .EmergencyContactAlternateTelephoneType,
-.SectionDisplay .EmergencyContactHonorific,
-.SectionDisplay .EmergencyContactOtherTelephone,
-.SectionDisplay .EmergencyContactOtherTelephoneType,
-.SectionDisplay .EmergencyContactPrimaryTelephone,
-.SectionDisplay .EmergencyContactPrimaryTelephoneType,
-.SectionDisplay .Father1stName,
-.SectionDisplay .FatherLastName,
-.SectionDisplay .FirstName,
-.SectionDisplay .FirstNameNativeLanguage,
-.SectionDisplay .GroupedItem .USParticipantGivenName,
-.SectionDisplay .GroupedItem .USParticipantLastName,
-.SectionDisplay .Honorific,
-.SectionDisplay .LastName,
-.SectionDisplay .LastNameNativeLanguage,
-.SectionDisplay .MedProxyFirstName,
-.SectionDisplay .MedProxyLastName,
-.SectionDisplay .MentorTeacherFirstName,
-.SectionDisplay .MentorTeacherHonorific,
-.SectionDisplay .MentorTeacherLastName,
-.SectionDisplay .MentorTeacherNameSuffix,
-.SectionDisplay .MiddleName,
-.SectionDisplay .TelephoneMobile,
-.SectionDisplay .TelephoneMobileMessageConsent,
-.SectionDisplay .Mother1stName,
-.SectionDisplay .MotherLastName,
-.SectionDisplay .NameSuffix,
-.SectionDisplay .OthPhone,
-.SectionDisplay .OthPhoneWhose,
-.SectionDisplay .Parent1stName,
-.SectionDisplay .ParentAlternateTelephone,
-.SectionDisplay .ParentAlternateTelephoneType,
-.SectionDisplay .ParentCust1stName1,
-.SectionDisplay .ParentCust1stName2,
-.SectionDisplay .ParentCustLastName1,
-.SectionDisplay .ParentCustLastName2,
-.SectionDisplay .ParentLastName,
-.SectionDisplay .ParentMidName,
-.SectionDisplay .ParentMidName,
-.SectionDisplay .ParentOtherTelephone,
-.SectionDisplay .ParentOtherTelephoneType,
-.SectionDisplay .ParentPrimaryTelephone,
-.SectionDisplay .ParentPrimaryTelephoneType,
-.SectionDisplay .ParentRecommender1FirstName,
-.SectionDisplay .ParentRecommender1LastName,
-.SectionDisplay .ParentRecommender2FirstName,
-.SectionDisplay .ParentRecommender2LastName,
-.SectionDisplay .Passport2ndFirstName,
-.SectionDisplay .Passport2ndGivenName,
-.SectionDisplay .Passport2ndLastName,
-.SectionDisplay .Passport2ndMiddleName,
-.SectionDisplay .PassportFirstName,
-.SectionDisplay .PassportGivenName,
-.SectionDisplay .PassportLastName,
-.SectionDisplay .PassportLastName,
-.SectionDisplay .PassportMiddleName,
-.SectionDisplay .PassportMiddleName,
-.SectionDisplay .PassportPrimaryName,
-.SectionDisplay .RecommenderFirstName,
-.SectionDisplay .RecommenderFirstName2,
-.SectionDisplay .RecommenderLastName,
-.SectionDisplay .RecommenderLastName2,
-.SectionDisplay .SchoolDirLastName,
-.SectionDisplay .SchoolDirName,
-.SectionDisplay .SchoolSuperintendentFirstName,
-.SectionDisplay .SchoolSuperintendentHonorific,
-.SectionDisplay .SchoolSuperintendentLastName,
-.SectionDisplay .SchoolSuperintendentNameSuffix,
-.SectionDisplay .Sib1stName,
-.SectionDisplay .SibLastName,
-.SectionDisplay .SupervisorFirstName,
-.SectionDisplay .SupervisorLastName,
-.SectionDisplay .TeacherFirstName,
-.SectionDisplay .TeacherLastName,
-.SectionDisplay .TeachRef1stName,
-.SectionDisplay .TeachRefLastName,
-.SectionDisplay .TelephonePrimary,
-.SectionDisplay .TelephonePrimaryType,
-.SectionDisplay .TelephonePrimarySMSPermission,
-.SectionDisplay .TelephoneAlternate,
-.SectionDisplay .TelephoneAlternateType,
-.SectionDisplay .USParticipantGivenName,
-.SectionDisplay .USParticipantLastName,
-.SectionDisplay .USParticipantMiddleName {
-  float: left;
-  clear: none;
-}
-.SectionDisplay td div.QuestionItem {
-  float: none;
-}
-.SectionDisplay .EmergencyContactAlternateTelephone,
-.SectionDisplay .EmergencyContactAlternateTelephone,
-.SectionDisplay .EmergencyContactOtherTelephone,
-.SectionDisplay .EmergencyContactPrimaryTelephone,
-.SectionDisplay .MailAddrZIP,
-.SectionDisplay .OthPhone,
-.SectionDisplay .ParentAlternateTelephone,
-.SectionDisplay .ParentOtherTelephone,
-.SectionDisplay .RecSchoolZIPCode,
-.SectionDisplay .TelephoneAlternate {
-  clear: left;
-}
-.SectionDisplay .AlternatePhoneType,
-.SectionDisplay .OthPhoneWhose,
-.SectionDisplay .TelephonePrimaryType,
-.SectionDisplay .TelephonePrimarySMSPermission,
-.SectionDisplay .TelephoneAlternateType {
-  clear: right;
-}
-
-.Content .BeforeQuestion {
-  clear: both;
-}
-
-/* LONG QUESTIONS --> */
-.has-long-questions .form-input.has-legal-custody label:first-child,
-.has-long-questions .form-input.lives-with label:first-child {
-  width: 22em;
-  min-width: 22em;
-}
-/* <-- LONG QUESTIONS */
 
 /* TABLE ROW NUMBERS --> */
 

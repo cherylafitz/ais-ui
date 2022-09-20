@@ -22,9 +22,8 @@ gulp.task('concat-standardcommon-css', function() {
 });
 
 gulp.task('concat-printcommon-css', function() {
-  return gulp.src(['./assets/aisforms/styles/print-common/*.css',
-  './assets/aisforms/styles/shared-for-forms/*.css',
-  // './assets/ais/styles/ais-common/pages-skylink.css',
+  return gulp.src(['./assets/aisforms/styles/shared-for-forms/*.css',
+  './assets/aisforms/styles/print-common/*.css',
   './assets/shared/styles/table-row-numbers.css'])
     .pipe(concat('printCommon.css'))
     .pipe(gulp.dest('./static/styles/'));
