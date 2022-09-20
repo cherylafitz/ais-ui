@@ -1,0 +1,10 @@
+/* float overrides --> */
+
+.SectionDisplay .TelephonePrimaryType,
+.SectionDisplay .TelephonePrimary,
+.SectionDisplay .TelephoneAlternateType,
+.SectionDisplay .TelephoneAlternate {
+  float: none;
+}
+
+/* <-- float overrides */
