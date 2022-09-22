@@ -4697,6 +4697,7 @@ div.SectionTitle {
   padding: .5rem 1rem;
   color: #fff;
   border-radius: 2px 2px 0px 0px;
+  line-height: 2.25;
 }
 div.SectionTitleText {
   font-size: 1.5rem;
