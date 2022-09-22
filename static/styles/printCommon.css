@@ -106,7 +106,10 @@
 .SectionDisplay .TelephoneAlternateType,
 .SectionDisplay .USParticipantGivenName,
 .SectionDisplay .USParticipantLastName,
-.SectionDisplay .USParticipantMiddleName {
+.SectionDisplay .USParticipantMiddleName,
+.SectionDisplay .FirstNamePrevious,
+.SectionDisplay .MiddleNamePrevious,
+.SectionDisplay .LastNamePrevious {
   float: left;
   clear: none;
 }
