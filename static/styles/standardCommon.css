@@ -856,31 +856,36 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
 .SectionDisplay div.SectionName,
 #ApplicationTemplateDisplayAUC .SectionDisplay h1.section-name,
 .SectionDisplay h1.section-name {
-  font-size: 1.875rem;
-  color: #2E6B9B;
+  font-size: 2.125rem;
   border-bottom: 2px solid #2E6B9B;
   margin-bottom: 1rem;
-  padding-bottom: .125rem;
+  padding-bottom: 0.125rem;
   font-weight: normal;
   margin-top: 0;
+  background: #2e6b9b;
+  color: #fff;
+  padding-left: 0.75rem;
 }
-
 .SectionDisplay h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #357bb1;
+  padding-bottom: 0.25rem;
+  margin-bottom: .625rem;
 }
 .SectionDisplay h3 {
   font-size: 1.625rem;
 }
 .SectionDisplay h4 {
-  font-size: 1.5rem;
-}
-.SectionDisplay h5 {
-  font-size: 1.375rem;
-}
-.SectionDisplay h6 {
   font-size: 1.25rem;
 }
-
+.SectionDisplay h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.SectionDisplay h6 {
+  font-size: 1rem;
+  font-style: italic;
+}
 /* <-- HEADINGS */
 
 /* One off styles -->  */
