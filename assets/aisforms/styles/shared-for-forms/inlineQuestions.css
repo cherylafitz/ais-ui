@@ -109,7 +109,10 @@
 .SectionDisplay .USParticipantMiddleName,
 .SectionDisplay .FirstNamePrevious,
 .SectionDisplay .MiddleNamePrevious,
-.SectionDisplay .LastNamePrevious {
+.SectionDisplay .LastNamePrevious,
+.SectionDisplay .RecommenderFirstName,
+.SectionDisplay .RecMidName,
+.SectionDisplay .RecommenderLastName {
   float: left;
   clear: none;
 }
