@@ -8,7 +8,7 @@
 .main-content.AlumniHome,
 .main-content.ArticleSearch,
 .main-content.ArticleViewer,
-.main-content.ArticleEditor,
+/*.main-content.ArticleEditor,*/
 .main-content.AlumnusNameList,
 .main-content.ArticleRowDisplay,
 .main-content.AlumnusAddressList,
@@ -26,7 +26,7 @@
 .main-content.AlumnusEmailSearch,
 .main-content.AlumnusEmailList,
 .main-content.AlumnusSocialMediaList,
-.SystemAnnouncementsWrapper + div.main-content,
+/*.SystemAnnouncementsWrapper + div.main-content,*/
 .main-content[class*="Alumnus"],
 .main-content.ArticleStatistics {
   padding: 0;

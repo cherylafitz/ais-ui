@@ -835,7 +835,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumniHome,
 .ArticleSearch,
 .ArticleViewer,
-.ArticleEditor,
+/*.ArticleEditor,*/
 .AlumnusNameList,
 .ArticleRowDisplay,
 .AlumnusAddressList,
@@ -853,7 +853,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
 .AlumnusEmailSearch,
 .AlumnusEmailList,
 .AlumnusSocialMediaList,
-.SystemAnnouncementsWrapper + div,
+/*.SystemAnnouncementsWrapper + div,*/
 .main-content[class*="Alumnus"],
 .main-content.ArticleStatistics {
   position: relative;
@@ -879,7 +879,7 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   width: 18rem;
 }
 /* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
-#article-editor-page-id,
+/*#article-editor-page-id,*/
 #AlumnusSocialMediaEditor,
 .AlumnusNoteEditor #articleSummary,
 .main-content.AlumnusExceptionalEditor {
