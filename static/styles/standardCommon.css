@@ -866,6 +866,9 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
   color: #fff;
   padding-left: 0.75rem;
 }
+h1.section-name {
+  padding-right: .75rem;
+}
 .SectionDisplay h2 {
   font-size: 2rem;
   border-bottom: 1px solid #357bb1;
