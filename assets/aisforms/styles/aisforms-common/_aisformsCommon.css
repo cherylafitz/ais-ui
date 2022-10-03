@@ -55,15 +55,7 @@ body {
   margin: 0 0 1rem 0;
   line-height: 1.5;
 }
-h1, h2 {
-  font-weight: normal;
-}
-h1 {
-  font-size: 1.5rem;
-}
-h2 {
-  font-size: 1.25rem;
-}
+
 
 
 
@@ -783,16 +775,7 @@ table.TemplateTable tr td {
   margin-top: 0;
 }
 
-#UserHomeIntro h1,
-#UserHomeIntro h2,
-#UserHomeIntro h3,
-#UserHomeIntro h4,
-.CustomContent h1,
-.CustomContent h2,
-.CustomContent h3,
-.CustomContent h4 {
-  color: #025689;
-}
+
 
 .HomeProgramAfterContent {
   padding: 1.5rem;
@@ -833,16 +816,7 @@ table.TemplateTable tr td {
   clear: right;
   float: right;
 }
-.HomeProgramContent h1,
-.HomeProgramAfterContent h1 {
-  clear: none;
-  text-align: left;
-  color: #2E6B9B;
-}
-.HomeProgramContent h2,
-.HomeProgramAfterContent h2 {
-  text-align: left;
-}
+
 /*
 #UserHomeIntro .Tips {
   display: none;
