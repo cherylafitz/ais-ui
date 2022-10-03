@@ -4540,9 +4540,11 @@ h1 {
   font-size: 2rem;
   margin-bottom: .625rem;
 }
-.HomeProgramContent h1 {
-  border-bottom: 1px solid #357bb1;
-  padding-bottom: 0.25rem;
+#UserHomeIntro h1,
+.CustomContent h1 {
+  border-bottom: 1px solid #9fbacf;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 h2 {
   font-size: 1.625rem;
