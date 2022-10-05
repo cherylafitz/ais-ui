@@ -4838,6 +4838,14 @@ div.ApplicationTemplateDisplay div.templateContent {
 
 /* <-- PAGE: HOME STAFF */
 
+/* PAGE: RAW ANSWERS */
+
+.Answers {
+  word-break: break-word;
+}
+
+/*< <-- PAGE:  RAW ANSWERS */
+
 /* PAGE: role editor --> */
 
 .RoleEditor .menus ol {
