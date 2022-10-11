@@ -1,4 +1,4 @@
-/* DOWNLOADS --> */
+/* DOWNLOADS and other icons --> */
 
 .Content .PDFDownload,
 .Content .ExcelDownload,
@@ -6,7 +6,9 @@
 .excel-download,
 .word-download,
 .file-download a,
-td a.file-download {
+td a.file-download,
+a.youtube-link,
+a[href*="youtube.com"] {
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto 1.4rem;
@@ -58,6 +60,11 @@ td a.file-download[href$=".docx"],
 td a.file-download[href$=".doc"],
 .file-download [data-file-name$=".doc"]  {
   background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
+}
+a.youtube-link,
+a[href*="youtube.com"] {
+  background-image: url(../../../../ais/common/yt_logo_rgb_light.png);
+  padding-left: 7rem;
 }
 /* REMOVE?? --> */
 table td div.PDFDownload,
