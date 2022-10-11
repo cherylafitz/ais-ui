@@ -18,7 +18,8 @@ a[href*="youtube.com"] {
   padding-left: 2rem;
 }
 .file-download a,
-td a.file-download {
+td a.file-download,
+td a.youtube-link {
   display: inline-block;
   margin: 0 1rem; /* inline block counts stacking margins */
 }
@@ -65,6 +66,7 @@ a.youtube-link,
 a[href*="youtube.com"] {
   background-image: url(../../../../ais/common/yt_logo_rgb_light.png);
   padding-left: 7rem;
+  margin-left: 2rem;
 }
 /* REMOVE?? --> */
 table td div.PDFDownload,

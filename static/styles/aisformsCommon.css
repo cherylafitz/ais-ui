@@ -768,7 +768,8 @@ a[href*="youtube.com"] {
   padding-left: 2rem;
 }
 .file-download a,
-td a.file-download {
+td a.file-download,
+td a.youtube-link {
   display: inline-block;
   margin: 0 1rem; /* inline block counts stacking margins */
 }
@@ -815,6 +816,7 @@ a.youtube-link,
 a[href*="youtube.com"] {
   background-image: url(../../../../ais/common/yt_logo_rgb_light.png);
   padding-left: 7rem;
+  margin-left: 2rem;
 }
 /* REMOVE?? --> */
 table td div.PDFDownload,
@@ -4529,7 +4531,7 @@ h1 {
 #UserHomeIntro h1,
 .CustomContent h1 {
   border-bottom: 1px solid #9fbacf;
-  padding-bottom: 1rem;
+  padding-bottom: .875rem;
   margin-bottom: 1rem;
 }
 h2 {

@@ -15,7 +15,7 @@ h1 {
 #UserHomeIntro h1,
 .CustomContent h1 {
   border-bottom: 1px solid #9fbacf;
-  padding-bottom: 1rem;
+  padding-bottom: .875rem;
   margin-bottom: 1rem;
 }
 h2 {
