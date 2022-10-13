@@ -8,7 +8,7 @@
 .file-download a,
 td a.file-download,
 a.youtube-link,
-a[href*="youtube.com"] {
+a[href*="youtube.com"]:not(.image-link) {
   background-repeat: no-repeat;
   background-position: left;
   background-size: auto 1.4rem;
@@ -63,10 +63,9 @@ td a.file-download[href$=".doc"],
   background-image: url(../../../../ais/common/Office-Apps-Word-alt-2-Metro-icon.png);
 }
 a.youtube-link,
-a[href*="youtube.com"] {
+a[href*="youtube.com"]:not(.image-link) {
   background-image: url(../../../../ais/common/yt_logo_rgb_light.png);
   padding-left: 7rem;
-  margin-left: 2rem;
 }
 /* REMOVE?? --> */
 table td div.PDFDownload,
