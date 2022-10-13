@@ -112,7 +112,19 @@
 .SectionDisplay .LastNamePrevious,
 .SectionDisplay .RecommenderFirstName,
 .SectionDisplay .RecMidName,
-.SectionDisplay .RecommenderLastName {
+.SectionDisplay .RecommenderLastName,
+.SectionDisplay .LegalFirstName,
+.SectionDisplay .LegalMiddleName,
+.SectionDisplay .LegalLastName,
+.SectionDisplay .PreviousLegalFirstName,
+.SectionDisplay .PreviousLegalMiddleName,
+.SectionDisplay .PreviousLegalLastName,
+.SectionDisplay .ProfessionalFellowFirstName,
+.SectionDisplay .ProfessionalFellowLastName,
+.SectionDisplay .ProfessionalFellowMiddleName,
+.SectionDisplay .AlumnusLastName,
+.SectionDisplay .AlumnusFirstName,
+.SectionDisplay .AlumnusMiddleName {
   float: left;
   clear: none;
 }
