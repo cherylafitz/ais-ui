@@ -57,9 +57,9 @@ div.Content div.ArabicInput input {
 
 /* Adjust English Question Number Level Because of Increased Arabic Font Size */
 
-div.Content div.QuestionNumber { 
+/*div.Content div.QuestionNumber { 
     margin-top: 0.4rem;
-}
+}*/
 
 /*
 div.Content div.EssayNonEnglish {
@@ -110,4 +110,33 @@ div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after 
     content: ".لا يمكنم التعديل في هذه الاستمارة بسبب تجاوز الأجل الأقصى";
     display: block;
     font: 150% 'Traditional Arabic',serif;
+}
+div.Content div.required:not(.Group) div.QuestionText .Title:after, 
+div.Content table.required:not(.Group) div.QuestionText .Title:after {
+    content: none;
+}
+div.Content div.required:not(.Group) div.QuestionNumber::after, 
+div.Content table.required:not(.Group) div.QuestionNumber::after {
+    color: #CD0000;
+    content: '*';
+    font-size: 1.4em;
+    font-weight: normal;
+    left: 3px;
+    line-height: 0.4;
+    opacity: 1;
+    position: relative;
+    top: 0.1em;
+}
+.QuestionItem {
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+.QuestionItem .Title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.Title .Arabic {
+    margin-left: 1rem;
 }
