@@ -81,6 +81,7 @@ div.Content .EnglishMixed {
      float:left;
 }
 
+/*
  .BackToTopBookmark::after {
     content: " العودة الى الأعلى";
 }
@@ -94,7 +95,7 @@ body.IsLoggedIn .ValidationError .NoDataSaved::after {
     display: block;
     font: 150% 'Traditional Arabic',serif;
 }
-
+*/
 div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after {
     content: " * INCOMPLETE / غير مكتمل" !important;
     font: bold 130% 'Traditional Arabic',serif;
