@@ -57,9 +57,9 @@ div.Content div.ArabicInput input {
 
 /* Adjust English Question Number Level Because of Increased Arabic Font Size */
 
-div.Content div.QuestionNumber { 
+/*div.Content div.QuestionNumber { 
     margin-top: 0.4rem;
-}
+}*/
 
 /*
 div.Content div.EssayNonEnglish {
@@ -80,7 +80,10 @@ div.Content .EnglishMixed {
 .EnglishMixedSectionName {
      float:left;
 }
-
+.FileUpload .Instruction {
+    margin-top: 1rem;
+}
+/*
  .BackToTopBookmark::after {
     content: " العودة الى الأعلى";
 }
@@ -94,7 +97,7 @@ body.IsLoggedIn .ValidationError .NoDataSaved::after {
     display: block;
     font: 150% 'Traditional Arabic',serif;
 }
-
+*/
 div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after {
     content: " * INCOMPLETE / غير مكتمل" !important;
     font: bold 130% 'Traditional Arabic',serif;
@@ -109,4 +112,47 @@ div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after 
     content: ".لا يمكنم التعديل في هذه الاستمارة بسبب تجاوز الأجل الأقصى";
     display: block;
     font: 150% 'Traditional Arabic',serif;
+}
+div.Content div.required:not(.Group) div.QuestionText .Title:after, 
+div.Content table.required:not(.Group) div.QuestionText .Title:after {
+    content: none;
+}
+div.Content div.required:not(.Group) div.QuestionNumber::after, 
+div.Content table.required:not(.Group) div.QuestionNumber::after {
+    color: #CD0000;
+    content: '*';
+    font-size: 1.4em;
+    font-weight: normal;
+    left: 3px;
+    line-height: 0.4;
+    opacity: 1;
+    position: relative;
+    top: 0.1em;
+}
+.QuestionItem .Title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.Title .Arabic {
+    margin-left: auto;
+}
+.arabic-answer input {
+    text-align: right;
+    direction: rtl; 
+    font: 150% 'Traditional Arabic' !important;
+}
+.arabic-answer {
+    float: right !important;
+}
+.arabic-answer .QuestionNumber {
+    float: right;
+    margin: 0 0 0 0.5rem;
+}
+.QuestionItem.Choice {
+    max-width: 38rem;
+}
+/* overrides --> */
+.QuestionItem.Choice.RecommendationLanguageChoice {
+    max-width: 100%;
 }
