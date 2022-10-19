@@ -80,7 +80,9 @@ div.Content .EnglishMixed {
 .EnglishMixedSectionName {
      float:left;
 }
-
+.FileUpload .Instruction {
+    margin-top: 1rem;
+}
 /*
  .BackToTopBookmark::after {
     content: " العودة الى الأعلى";
@@ -127,16 +129,30 @@ div.Content table.required:not(.Group) div.QuestionNumber::after {
     position: relative;
     top: 0.1em;
 }
-.QuestionItem {
-    width: -moz-fit-content;
-    width: -webkit-fit-content;
-    width: fit-content;
-}
 .QuestionItem .Title {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 .Title .Arabic {
-    margin-left: 1rem;
+    margin-left: auto;
+}
+.arabic-answer input {
+    text-align: right;
+    direction: rtl; 
+    font: 150% 'Traditional Arabic' !important;
+}
+.arabic-answer {
+    float: right !important;
+}
+.arabic-answer .QuestionNumber {
+    float: right;
+    margin: 0 0 0 0.5rem;
+}
+.QuestionItem.Choice {
+    max-width: 38rem;
+}
+/* overrides --> */
+.QuestionItem.Choice.RecommendationLanguageChoice {
+    max-width: 100%;
 }
