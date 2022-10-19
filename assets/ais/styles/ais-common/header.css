@@ -41,6 +41,9 @@
   padding-left: .5rem;
 }
 
+details.multi-search-help {
+  color: #000;
+}
 /* not cleaned up yet --> */
 
 .topNavInTable td.infoBlock {
