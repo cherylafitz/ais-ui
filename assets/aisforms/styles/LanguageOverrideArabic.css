@@ -129,6 +129,9 @@ div.Content table.required:not(.Group) div.QuestionNumber::after {
     position: relative;
     top: 0.1em;
 }
+.QuestionItem {
+    max-width: 100%;
+}
 .QuestionItem .Title {
     display: flex;
     flex-flow: row wrap;
@@ -137,7 +140,17 @@ div.Content table.required:not(.Group) div.QuestionNumber::after {
 .Title .Arabic {
     margin-left: auto;
 }
-.arabic-answer input {
+.QuestionItem.Text {
+    max-width: 24rem;
+}
+.arabic-answer .Title .english {
+    order: 2;
+}
+.arabic-answer .Title .Arabic {
+    order: 1;
+}
+.arabic-answer input,
+.arabic-answer textarea {
     text-align: right;
     direction: rtl; 
     font: 150% 'Traditional Arabic' !important;
