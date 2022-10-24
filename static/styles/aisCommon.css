@@ -5622,7 +5622,23 @@ th.mailing-address-state .filter {
   font-size: .875rem;
   padding-left: .5rem;
 }
-
+.name-block details.multi-search-help {
+  color: #000;
+}
+.name-block details.multi-search-help {
+  position: relative;
+  margin: 0;
+}
+.name-block details.multi-search-help .details-content {
+  position: absolute;
+  width: 20rem;
+  z-index: 100;
+  box-shadow: 1px 1px 4px #888;
+}
+.name-block details.multi-search-help summary {
+  z-index: 101;
+  background-color: #aebdc9;
+}
 /* not cleaned up yet --> */
 
 .topNavInTable td.infoBlock {
