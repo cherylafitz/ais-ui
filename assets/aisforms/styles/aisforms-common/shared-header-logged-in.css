@@ -49,6 +49,7 @@ div#build-and-instance {
 #Header #build-and-instance {
   font-size: 0.75rem;
   display: inline-block;
+  vertical-align: top;
 }
 #Header #serverInfo,
 #Header #build-and-instance .build,
@@ -56,6 +57,10 @@ div#build-and-instance {
 #Header #build-and-instance .instance {
   color: #e6e6e6;
   font-style: normal;
+}
+#Header #build-and-instance .page-name {
+  display: block;
+  text-align: right;
 }
 .brand .name:after {
   content: " |";
