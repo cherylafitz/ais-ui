@@ -5653,7 +5653,8 @@ color: #c4dcee;
 }
 .topNavInTable .infoBlock .serverInfo,
 .topNavInTable .infoBlock .instanceID,
-.topNavInTable .infoBlock .instanceID a {
+.topNavInTable .infoBlock .instanceID a,
+.topNavInTable .infoBlock .page-name {
     font-size: .875rem;
     font-weight: normal;
 }
