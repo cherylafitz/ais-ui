@@ -20,7 +20,9 @@ a {
   widows: 5;
   orphans: 5;
 }
-.QuestionAnswer {
+ /* delete after conversion is complete! */
+.QuestionAnswer,
+.question-answer {
   page-break-before: avoid;
 }
 .nodisplayprint {
@@ -35,7 +37,9 @@ ul {
   margin-bottom: .5em;
 }
 /* COLORS */
-.SectionDisplay .section-name  {
+/* delete after conversion is complete! */
+.SectionDisplay .section-name,
+.section-display .section-name  {
   border-bottom: 2px solid #025689;
   font-size: 1.75em;
   padding-top: .75em;
@@ -44,10 +48,12 @@ ul {
   clear: both;
   page-break-after: avoid;
 }
-
+/* delete after conversion is complete! */
 .Content .Divider,
 .Content .SectionDisplay h1,
 .Content .SectionDisplay h2,
+.Content .section-display h1,
+.Content .section-display h2,
 .Content .RecommendationFor {
   color: #025689;
   clear: both;
@@ -64,6 +70,7 @@ ul {
 }
 
 /* FLOAT LEFT FIELDS OVERRIDES DUE TO LAYOUT ISSUE DURING PDF GENERATION */
+/* delete after conversion is complete! */
 .SectionDisplay .PrimaryPhone,
 .SectionDisplay .PrimaryPhoneType,
 .SectionDisplay .AlternatePhoneType,
@@ -81,7 +88,25 @@ ul {
 .SectionDisplay .EmergencyContactAlternateTelephone,
 .SectionDisplay .EmergencyContactAlternateTelephoneType,
 .SectionDisplay .EmergencyContactOtherTelephone,
-.SectionDisplay .EmergencyContactOtherTelephoneType {
+.SectionDisplay .EmergencyContactOtherTelephoneType,
+.section-display .PrimaryPhone,
+.section-display .PrimaryPhoneType,
+.section-display .AlternatePhoneType,
+.section-display .TelephoneAlternate,
+.section-display .OthPhone,
+.section-display .OthPhoneWhose,
+.section-display .ParentPrimaryTelephone,
+.section-display .ParentPrimaryTelephoneType,
+.section-display .ParentAlternateTelephone,
+.section-display .ParentAlternateTelephoneType,
+.section-display .ParentOtherTelephone,
+.section-display .ParentOtherTelephoneType,
+.section-display .EmergencyContactPrimaryTelephone,
+.section-display .EmergencyContactPrimaryTelephoneType,
+.section-display .EmergencyContactAlternateTelephone,
+.section-display .EmergencyContactAlternateTelephoneType,
+.section-display .EmergencyContactOtherTelephone,
+.section-display .EmergencyContactOtherTelephoneType {
   float: none;
 }
 
@@ -107,7 +132,9 @@ input[type=email] {
   text-decoration: underline;
 }
 /* ANSWERS IN TABLES */
-div.Formula div.QuestionAnswer {
+ /* delete after conversion is complete! */
+div.Formula div.QuestionAnswer,
+div.Formula div.question-answer  {
   border-bottom: thin solid #999;
   margin-bottom: 1pt;
   vertical-align: top;
@@ -122,7 +149,9 @@ td .TextQuestion {
 }
 
 /* QUESTION AND ANSWER DISPLAY */
-.QuestionItem .QuestionText .Title {
+/* delete after conversion is complete! */
+.QuestionItem .QuestionText .Title,
+.QuestionItem .question-text .Title {
   font-weight: bold;
   margin-top: .25em;
   padding-top: .25em;
@@ -156,26 +185,35 @@ input[type=email] {
   width: 12em;
   min-width: 12em;
 }
-.QuestionText {
+/* delete after conversion is complete! */
+.QuestionText,
+.question-text {
   display: block;
   margin-right: .5em;
 }
-.QuestionItem.LongText .QuestionText {
+/* delete after conversion is complete! */
+.QuestionItem.LongText .QuestionText,
+.QuestionItem.LongText .question-text {
   max-width: 85%;
   margin-right: 1.5em;
   font-size: .875em;
 }
-.QuestionAnswer {
+ /* delete after conversion is complete! */
+.QuestionAnswer,
+.question-answer {
   margin-top: .125em;
   color: #222;
   margin-right: .5em;
   margin-bottom: .25em;
 }
-.QuestionAnswer .GroupedItem:not(.nodisplayprint) {
+ /* delete after conversion is complete! */
+.QuestionAnswer .GroupedItem:not(.nodisplayprint),
+.question-answer .GroupedItem:not(.nodisplayprint) {  
   display: block;
 }
-
-div[class*="Group"] .QuestionAnswer .QuestionAnswer {
+ /* delete after conversion is complete! */
+div[class*="Group"] .QuestionAnswer .QuestionAnswer,
+div[class*="Group"] .question-answer .question-answer {
   margin: .125em 0 .25em;
 }
 span.leftmargin-fix {
@@ -437,7 +475,11 @@ select
 .AnswerTable .QuestionItem {
   padding: 0;
 }
-.QuestionText ul li {text-decoration: none;}
+/* delete after conversion is complete! */
+.QuestionText ul li,
+.question-text ul li  {
+  text-decoration: none;
+}
 
 ul,
 ol {
@@ -451,29 +493,20 @@ ol ol li {
 ul {
   list-style-type: square;
 }
-div.SectionIntroductionText
-  {
-    /*font-size: 0.875em;*/
+div.SectionIntroductionText {
     padding-bottom: .2em;
-  }
-
-/*.QuestionItem .QuestionText .Title,
-.QuestionItem .QuestionNumber,
-.DisplayItemOnly .QuestionText .Title,
-.DisplayItemOnly .QuestionNumber,
-.BeforeQuestion .QuestionText,
-.BeforeQuestion .QuestionNumber
-  {
-    padding-top: 0.15em;
-    color: #000;
-  }*/
+ }
 .SectionItemsList {
     border-radius: 5px;
 }
+/* delete after conversion is complete! */
 .QuestionItem .QuestionText .Instruction,
+.QuestionItem .question-text .Instruction,
 .BeforeQuestion .QuestionItem .QuestionInstructions,
 .QuestionText span.Instruction,
+.question-text span.Instruction,
 .SectionDisplay .SectionItemsList .Instruction,
+.section-display .SectionItemsList .Instruction,
 .Instruction,
 a.SectionDataFill,
 a.FormDataFill,
@@ -481,35 +514,44 @@ a.FormDataFill,
 .login-duration {
   display: none;
 }
+/* delete after conversion is complete! */
 .BeforeQuestion .QuestionItem .QuestionInstructions,
-.QuestionText span.Instruction {
+.QuestionText span.Instruction,
+.question-text span.Instruction {
   margin: 0;
 }
 
 .EssayNonEnglish {
   font-family: MingLiU;
 }
-.QuestionNumber
-  {
+/* delete after conversion is complete! */
+.QuestionNumber,
+.question-number {
     display: inline-block;
     vertical-align: top;
     width: 25px;
     clear: both;
     font-size: .9em;
   }
-
-.Group .QuestionNumber
+/* delete after conversion is complete! */
+.Group .QuestionNumber,
+.Group .question-number
     {
        float:left;
     }
-
+/* delete after conversion is complete! */
 .QuestionItem .QuestionNumber,
 .DisplayItemOnly .QuestionNumber,
-.BeforeQuestion .QuestionNumber {
+.BeforeQuestion .QuestionNumber,
+.QuestionItem .question-number,
+.DisplayItemOnly .question-number,
+.BeforeQuestion .question-number  {
   float: left;
   width: 30px;
 }
-.QuestionItem .GroupedItem .QuestionNumber {
+/* delete after conversion is complete! */
+.QuestionItem .GroupedItem .QuestionNumber,
+.QuestionItem .GroupedItem .question-number {
   width: initial;
 }
 option[selected] {display: table-row;}
@@ -569,13 +611,6 @@ fieldset fieldset {
 fieldset fieldset:before {
   border-color: #cecece;
 }
-/*.Content div.SectionDisplay table th,
-div.Content table.AnswerTable tr.headerRow th {
-  background-color: #5D5E57;
-  color: #ffffff;
-  border: thin solid #999;
-  word-break: keep-all;
-}*/
 table.QuestionItem,
 table.QuestionItem tr.QuestionItemRow,
 table.QuestionItem tr.QuestionItemRow td
@@ -587,10 +622,11 @@ table.QuestionItem tr.QuestionItemRow td
 .VAlign table.QuestionItem tr {vertical-align: top;}
 
 .VAlignBottom table.QuestionItem tr {vertical-align: bottom;}
-
-div.SectionDisplay h1,
-.SectionDisplay .Divider
-  {
+/* delete after conversion is complete! */
+.SectionDisplay h1,
+.SectionDisplay .Divider,
+.section-display h1,
+.section-display .Divider {
     margin: .75em 0 .25em 0;
     padding: 0;
     color: #000000;
@@ -603,7 +639,9 @@ div.SectionDisplay h1,
 h1 + p {
     margin-top: 0px;
 }
-div.SectionDisplay h2 {
+/* delete after conversion is complete! */
+.SectionDisplay h2,
+.section-display h2 {
   margin: 1em 0 .5em 0;
   padding: 0;
   color: #000000;
@@ -619,6 +657,7 @@ img {border:none;}
 
 input#SubmitForEvaluation {margin-bottom: 1em;}
 
+/* delete after conversion is complete! */
 .SideNote,
 .helpBox,
 .help-box, /* ADDED by GGD 2020-0618 */
@@ -633,13 +672,16 @@ input#SubmitForEvaluation {margin-bottom: 1em;}
 .noticeBox,
 .notice-box,  /* ADDED by GGD 2020-0618 */
 .Noteworthy, /* ADDED by GGD 2020-0618 */
-.Content .SectionDisplay .program-logo {
+.Content .SectionDisplay .program-logo,
+.Content .section-display .program-logo {
     display: none;
   }
 .SideNote:before {
   content: '\2192 \0000a0';
 }
-div.SectionDisplay div.QuestionItem.subQuestion {
+/* delete after conversion is complete! */
+div.SectionDisplay div.QuestionItem.subQuestion,
+.section-display .QuestionItem.subQuestion {
   margin-left: 1.375em;
   border-left: thin solid #cecece;
 }
@@ -652,7 +694,9 @@ div.SectionDisplay div.QuestionItem.subQuestion {
   margin-left: -.75em;
   margin-bottom: -2pt;
 }*/
-div.SectionDisplay div.QuestionItem.subConditional {
+/* delete after conversion is complete! */
+div.SectionDisplay div.QuestionItem.subConditional,
+.section-display .QuestionItem.subConditional {
   margin-left: 48pt;
 }
 
@@ -687,10 +731,13 @@ span.labelTitle {
 
 
 /* SYSTEMS ITEMS NOT TO PRINT */
-
+/* delete after conversion is complete! */
 div.QuestionItem div.QuestionNumber,
 div.QuestionNumber,
+div.QuestionItem div.question-number,
+div.question-number,
 .SectionDisplay[class*="staff-only"],
+.section-display[class*="staff-only"],
 .developerEyesOnly,
 .RecommendationTemplateIsExpiredRow {
     display:none !important;
@@ -743,7 +790,6 @@ input.SaveChanges,
   display: none;
 }
 
-/* .QuestionAnswer a {display:none;} */
 
 .NumberOfWords {display:none;}
 
@@ -761,8 +807,10 @@ div.TotalScoreFormula {
     padding: 0.5em;
     width: 21em;
 }
-
-.TotalScoreFormulaDuplicate .QuestionText {
+/* delete after conversion is complete! */
+.TotalScoreFormulaDuplicate .QuestionText,
+.TotalScoreFormulaDuplicate .question-text
+ {
   font-size: 1em;
 }
 
@@ -770,10 +818,15 @@ div.TotalScoreFormula {
 
 
 /* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
+/* delete after conversion is complete! */
 div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
 div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
 div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
 div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.fromApplicant.required:not(.Group) div.question-text .Title:after,
+div.Content div.fromRecommender.required:not(.Group) div.question-text .Title:after,
+div.Content table.fromApplicant.required:not(.Group) div.question-text .Title:after,
+div.Content table.fromRecommender.required:not(.Group) div.question-text .Title:after,
 table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
 table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after {
   content: none;

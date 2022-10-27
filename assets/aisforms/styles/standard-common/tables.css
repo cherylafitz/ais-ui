@@ -32,9 +32,12 @@ td ul, td ol {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
+ /* delete after conversion is complete! */
 .SectionDisplay .AnswerTable tr.headerRow th,
 .SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
-.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
+.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th,
+.SectionDisplay .question-answer table.RowDisplay tr.headerRow th,
+.SectionDisplay .question-answer table.RowDisplay thead tr th {
   font-style:normal;
   font-weight: normal;
   background-color: #2E6B9B;
@@ -71,9 +74,12 @@ td ul, td ol {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
+ /* delete after conversion is complete! */
 .SectionDisplay .AnswerTable tr.headerRow th,
 .SectionDisplay .QuestionAnswer table.row-display tr.headerRow th,
-.SectionDisplay .QuestionAnswer table.row-display thead tr th {
+.SectionDisplay .QuestionAnswer table.row-display thead tr th,
+.SectionDisplay .question-answer table.row-display tr.headerRow th,
+.SectionDisplay .question-answer table.row-display thead tr th {
   background-color: #2E6B9B;
   color: #FFFFFF;
   border-color: #fff;
@@ -258,5 +264,276 @@ div.BeforeQuestion table.TBorderNone tr td {
 .AnswerTable .wide select {
   width: initial;
 }
+
+
+/* delete after conversion is complete ^^^^^ */
+/* TABLES --> */
+.section-display th {
+  white-space: normal;
+}
+table {
+  border-collapse: collapse;
+}
+td ul, td ol {
+  padding-right: .5rem;
+}
+.section-display td p {
+  margin: 0.6rem;
+}
+/* legacy RowDisplay-->  */
+.Content .AnswerTable tr.odd,
+.section-display table.RowDisplay tr:nth-child(2n+1),
+.section-display table.RowDisplay tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
+}
+.Content .AnswerTable tr.even,
+.section-display table.RowDisplay tr:nth-child(2n+2),
+.section-display table.RowDisplay tbody tr:nth-child(2n+2)  {
+  background-color: #c4dced;
+}
+.section-display table.RowDisplay td  {
+  border: 1px solid #fff;
+  vertical-align: top;
+  padding: .125rem .25rem;
+}
+.section-display table.RowDisplay tr.headerRow,
+.section-display table.RowDisplay thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+ /* delete after conversion is complete! */
+.section-display .AnswerTable tr.headerRow th,
+.section-display .QuestionAnswer table.RowDisplay tr.headerRow th,
+.section-display .QuestionAnswer table.RowDisplay thead tr th,
+.section-display .question-answer table.RowDisplay tr.headerRow th,
+.section-display .question-answer table.RowDisplay thead tr th {
+  font-style:normal;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  border-color: #fff;
+}
+.section-display .ReferenceNotified form table.RowDisplay,
+.section-display .ReferenceNotified table.RowDisplay {
+  margin: 1em;
+}
+/* <-- legacy RowDisplay */
+
+/* NEW TABLES --> */
+/* new row-display --> */
+.Content .AnswerTable tr.odd,
+.section-display table.row-display tr:nth-child(2n+1),
+.section-display table.row-display tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
+}
+.Content .AnswerTable tr.even,
+.section-display table.row-display tr:nth-child(2n+2),
+.section-display table.row-display tbody tr:nth-child(2n+2)  {
+  background-color: #c4dced;
+}
+.section-display .AnswerTable td,
+.section-display table th,
+.section-display table.row-display td  {
+  border: 1px solid #fff;
+  vertical-align: top;
+  padding: .125rem .25rem;
+}
+.section-display table.row-display tr.headerRow,
+.section-display table.row-display thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+ /* delete after conversion is complete! */
+.section-display .AnswerTable tr.headerRow th,
+.section-display .QuestionAnswer table.row-display tr.headerRow th,
+.section-display .QuestionAnswer table.row-display thead tr th,
+.section-display .question-answer table.row-display tr.headerRow th,
+.section-display .question-answer table.row-display thead tr th {
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  border-color: #fff;
+}
+.section-display .ReferenceNotified form table.row-display,
+.section-display .ReferenceNotified table.row-display {
+  margin: 1em;
+}
+/* <-- new row-display */
+
+/* Tables -->*/
+div.ChoiceQuestion table,
+.Content div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
+  background-color: transparent;
+}
+table.TemplateTable,
+.section-display .SectionIntroductionText table,
+.section-display .BeforeQuestion table {
+  margin: 1em 1em 1em 0;
+}
+table.TemplateTable td.sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+table.TemplateTable td ul {
+   list-style-type:circle;
+   padding-left:1.1em;
+}
+table.Attachments {
+  margin-left:0 !important;
+}
+.Content td,
+.Content th {
+  vertical-align: top;
+}
+.Content div.MenuOfSections td {
+  vertical-align: bottom;
+}
+.Content table.QuestionItem,
+.Content table.QuestionItem tr.QuestionItemRow,
+.Content table.QuestionItem tr.QuestionItemRow td {
+  border: 0;
+}
+.Content table.InfoBox {
+  background-color: #E1F0FF;
+}
+.Content table.ContrastBox {
+  background-color: #2E6B9B;
+}
+.section-display table th {
+  background-color: #444;
+  font-size: .875rem;
+  font-weight: bold;
+}
+.section-display table th,
+.Content .AnswerTable tr.headerRow th,
+.Content .AnswerTable thead tr th {
+  color: #FFFFFF;
+  padding: 0.25rem;
+}
+.section-display .AnswerTable {
+  font-size: .875rem;
+}
+.section-display .ERXMatrixTable {
+  margin: 0 1rem 0 .25rem;
+}
+.section-display .ERXMatrixTable td {
+  padding: 0;
+}
+.section-display .ERXMatrixTable td.ERXMatrixTableCell {
+  padding-left: 4px; /* TEMP */
+}
+.section-display table.ERXMatrixTable tr td,
+.section-display  .AnswerTable div.RadioButtonMatrix tr td,
+.section-display  .AnswerTable div.CheckboxMatrix tr td  {
+  border: none;
+}
+
+.section-display table td.DL,
+.section-display table td.Document {
+  background-color: #99ccff;
+  vertical-align: top;
+  text-align: center;
+  border: thin solid #777;
+  padding: 0.3em;
+}
+.section-display table td.Detail,
+.section-display table td.Instructions,
+.section-display table td.Link {
+  vertical-align: top;
+  padding: 0.3em;
+  border: 1px solid #777;
+}
+.AnswerTable {
+  margin: .5rem 0;
+}
+.AnswerTable textarea {
+  width: 100%;
+}
+.AnswerTable th {
+  max-width: 11rem;
+  white-space: normal;
+}
+.Content .AnswerTable tr td div{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+table.TemplateTable {
+  margin: 1em 1em 1em 0;
+}
+table.TemplateTable td.sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+table.TemplateTable td ul {
+  list-style-type:circle;
+  padding-left: 1.25rem;
+}
+table.TemplateTable tr td,
+table.TemplateTable tr th {
+  border: 1px solid #999;
+  padding: .25rem .5rem;
+}
+table.TemplateTable tr th {
+  background-color: #3a3d40;
+  color: #FFFFFF;
+  font-size: 1em;
+  text-align: center;
+  border-color: #222;
+}
+table.TemplateTable tr td {
+  font-size: 0.875rem;
+  text-align: left;
+}
+div.SectionIntroductionText table tr td,
+div.BeforeQuestion table tr td,
+table.TemplateTable tr td,
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th,
+table.TemplateTable tr th {
+  border: 1px solid #cecece;
+  padding: .25rem .5rem;
+}
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th,
+table.TemplateTable tr th {
+  border-color: #222;
+}
+div.SectionIntroductionText table tr td,
+div.BeforeQuestion table tr td,
+table.TemplateTable tr td {
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.section-display table.TemplateTable tr th {
+  vertical-align: middle;
+}
+.section-display table.TemplateTable tr th {
+  font-weight: normal;
+}
+
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th {
+  font-weight: bold;
+  font-style: normal;
+}
+
+div.SectionIntroductionText table.TBorderNone tr td,
+div.BeforeQuestion table.TBorderNone tr td {
+  border: none;
+}
+
+/* one-off's --> */
+
+.section-display td .ProgramPrefChoice select {
+  width: initial;
+}
+
+/* <--  one-off's */
+/* overrides set width for selects in tables */
+.AnswerTable .wide select {
+  width: initial;
+}
+
+/* <-- TABLES 
 
 /* <-- TABLES 

@@ -41,7 +41,9 @@ a {
 .section-form-fields-view {
   background-color: #fff;
 }
+/* delete after conversion is complete! */
 div.QuestionText .QuestionInstructions,
+div.question-text .QuestionInstructions,
 .Instruction {
   color: #2E6B9B;
   font-style: italic;
@@ -61,27 +63,33 @@ div.QuestionText .QuestionInstructions,
   text-align: left;
   max-width: 950px;
 }
-
+/* delete after conversion is complete! */
 .PlacedQuestion .required.questionNumber:before,
-.PlacedQuestion .required.preFormQuestionNumber:before {
+.PlacedQuestion .required.preFormQuestionNumber:before,
+.PlacedQuestion .required.question-number:before {
   content: '';
 }
 
 .PlacedQuestion .required.questionNumber ~ .questionText:after,
-.PlacedQuestion .required.preFormQuestionNumber ~ .questionText:after {
+.PlacedQuestion .required.preFormQuestionNumber ~ .questionText:after,
+.PlacedQuestion .required.question-number ~ .question-text:after,
+.PlacedQuestion .required.preFormQuestionNumber ~ .question-text:after  {
   color: #CD0000;
   content: ' *';
 }
-
+/* delete after conversion is complete! */
 .PlacedQuestion div.preFormQuestionNumber,
-.QuestionNumber {
+.QuestionNumber,
+.question-number {
   display: inline-block;
   padding-right: 0;
   vertical-align: top;
   width: 1.75rem;
 }
+/* delete after conversion is complete! */
 .QuestionText,
-.questionText {
+.questionText,
+.question-text {
   display: inline-block;
   vertical-align: top;
 }
@@ -113,7 +121,9 @@ ul {
   font-size: .875rem;
   border-radius: 2px;
 }
-div[id$="_textBefore"] .QuestionNumber {
+/* delete after conversion is complete! */
+div[id$="_textBefore"] .QuestionNumber,
+div[id$="_textBefore"] .question-number {
   display: none;
 }
 .datePicker {

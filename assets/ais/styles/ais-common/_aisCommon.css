@@ -1676,6 +1676,7 @@ div.CheckboxMatrix tr td {
 .TechHint:hover {
   color: #444444;
 }
+
 div.NoPermissions,
 div.NoObjects,
 div.NoRoles,
@@ -1683,7 +1684,9 @@ div.NoSections,
 div.NoSiteContentItems,
 div.NoUsers,
 .DeveloperCaution,
+/* delete after conversion is complete! */
 .ValidationError,
+.validation-error,
 .DoNotUseBrowserBackButton,
 .NoItems  {
   color: #C75D48;
@@ -1978,7 +1981,9 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Note td {
     font-weight: bold;
     font-size: .875rem;
 }
-div.HealthDataForm table.HealthQuestions td.QuestionNumber {
+/* delete after conversion is complete! */
+div.HealthDataForm table.HealthQuestions td.QuestionNumber,
+div.HealthDataForm table.HealthQuestions td.question-number {
   width: 4rem;
 }
 .HealthQuestionStamp {
@@ -2883,15 +2888,19 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   border: none;
   border-bottom: 1px solid #B4B4B4;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS .Question,
 .AIRAppSummaryDisplayInAIS .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .question-number,
 .AIRAppSummaryDisplayInAIS .RowNumber {
   background: #e0e6eb;
   border: none;
   border-bottom: 1px solid #B4B4B4;
   padding: .25rem .5rem;
 }
-.AIRAppSummaryDisplayInAIS .QuestionNumber {
+/* delete after conversion is complete! */
+.AIRAppSummaryDisplayInAIS .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .question-number {
   background-color: #cbd2d6;
 }
 .AIRAppSummaryDisplayInAIS th,
@@ -2907,7 +2916,9 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
     right: 5px;
     top: -1rem;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS .HasFlaggedValue .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .question-number,
 .AIRAppSummaryDisplayInAIS .HasFlaggedValue .Value {
   background-color: #ffb699;
   border-bottom: 1px solid #ffb699;

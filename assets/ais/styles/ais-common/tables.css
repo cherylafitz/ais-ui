@@ -291,7 +291,9 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Rec
   padding-right: 1rem;
   border: none;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.QuestionNumber,
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.question-number,
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.RowNumber,
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Question,
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Value {
@@ -551,7 +553,9 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.row-display.Re
   padding-right: 1rem;
   border: none;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.QuestionNumber,
+.AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.question-number,
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.RowNumber,
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.Question,
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.Value {

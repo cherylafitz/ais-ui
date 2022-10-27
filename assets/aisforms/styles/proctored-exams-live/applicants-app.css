@@ -1742,28 +1742,33 @@ body .onyx-toggle-button {
   border-left: .2em solid black;  
   background-color: #F9F9F9;
 }
-
-.section-navigation-item .sectionNumber {
+/* delete after conversion is complete! */
+.section-navigation-item .sectionNumber,
+.section-navigation-item .section-number  {
   width: 1.5em;
   float: left;
   text-align: right;  
 }
-
-.section-navigation-item.onyx-selected .sectionNumber {
+/* delete after conversion is complete! */
+.section-navigation-item.onyx-selected .sectionNumber,
+.section-navigation-item.onyx-selected .section-number {
   width: 1.3em;
 }
-
-.section-navigation-item .sectionNumber {
+/* delete after conversion is complete! */
+.section-navigation-item .sectionNumber,
+.section-navigation-item .section-number {
   width: 1.5em;
   float: left;
   text-align: right;  
 }
-
-.section-navigation-item .sectionName {
+/* delete after conversion is complete! */
+.section-navigation-item .sectionName,
+.section-navigation-item .section-name {
   padding-left: 2.5em;
 }
-
-.section-navigation-item.onyx-selected .sectionName {
+/* delete after conversion is complete! */
+.section-navigation-item.onyx-selected .sectionName,
+.section-navigation-item.onyx-selected .section-name {
   padding-left: 2.3em;
 }
 
@@ -2152,8 +2157,9 @@ span.time {
 .PlacedQuestion {
   margin-bottom: 1.5em;
 }
-
-.PlacedQuestion div.questionNumber{
+/* delete after conversion is complete! */
+.PlacedQuestion div.questionNumber,
+.PlacedQuestion div.question-number {
   /*display: inline;*/
   display: none;
   padding-right: 0.5em;
@@ -2163,8 +2169,9 @@ span.time {
   display: inline;
   padding-right: 0.5em;
 }
-
-.PlacedQuestion div.questionText {
+/* delete after conversion is complete! */
+.PlacedQuestion div.questionText,
+.PlacedQuestion div.question-text  {
   display: inline-block;
   max-width: 90%;
 }
@@ -2224,16 +2231,20 @@ span.time {
     display: inline;
 }
 */
-
+/* delete after conversion is complete! */
 body .PlacedQuestion .required.questionNumber ~ .questionText::after, 
-body .PlacedQuestion .required.preFormQuestionNumber ~ .questionText::after
+body .PlacedQuestion .required.question-number ~ .question-text::after, 
+body .PlacedQuestion .required.preFormQuestionNumber ~ .questionText::after,
+body .PlacedQuestion .required.preFormQuestionNumber ~ .question-text::after
 {
   content: none;
   color: initial;
 }
-
+/* delete after conversion is complete! */
 .PlacedQuestion .required.questionNumber ~ .questionText .Title::after, 
-.PlacedQuestion .required.preFormQuestionNumber ~ .questionText .Title::after
+.PlacedQuestion .required.question-number ~ .question-text .Title::after, 
+.PlacedQuestion .required.preFormQuestionNumber ~ .questionText .Title::after,
+.PlacedQuestion .required.preFormQuestionNumber ~ .question-text .Title::after
 {
     content: ' *';
     color: #CD0000;

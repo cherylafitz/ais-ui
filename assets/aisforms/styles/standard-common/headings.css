@@ -28,7 +28,10 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
 }
 
 /* Section Name and Headers--> */
+
+/* delete after conversion is complete! */
 .SectionDisplay div.SectionName,
+.SectionDisplay div.section-name,
 #ApplicationTemplateDisplayAUC .SectionDisplay h1.section-name,
 .SectionDisplay h1.section-name {
   font-size: 2.125rem;
@@ -64,4 +67,74 @@ h1.section-name {
   font-size: 1rem;
   font-style: italic;
 }
+
+/* delete after conversion is complete! ^^^^^^*/
+.section-display h1,
+.section-display h2,
+.section-display h3,
+.section-display h4,
+.section-display h5,
+.section-display h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+div.Content div.Divider,
+div#ApplicationTemplateDisplayAUC .section-display h1,
+.section-display h1,
+.section-display h2,
+.section-display h3,
+.section-display h4,
+.section-display h5,
+.section-display h6 {
+  font-size: 1.5rem;
+  color: #025689;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  clear: both;
+  font-variant: normal;
+  text-align: left;
+}
+
+/* Section Name and Headers--> */
+
+/* delete after conversion is complete! */
+.section-display div.SectionName,
+.section-display div.section-name,
+#ApplicationTemplateDisplayAUC .section-display h1.section-name,
+.section-display h1.section-name {
+  font-size: 2.125rem;
+  border-bottom: 2px solid #2E6B9B;
+  margin-bottom: 1rem;
+  padding-bottom: 0.125rem;
+  font-weight: normal;
+  margin-top: 0;
+  background: #2e6b9b;
+  color: #fff;
+  padding-left: 0.75rem;
+}
+h1.section-name {
+  padding-right: .75rem;
+}
+.section-display h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid #357bb1;
+  padding-bottom: 0.25rem;
+  margin-bottom: .625rem;
+}
+.section-display h3 {
+  font-size: 1.625rem;
+}
+.section-display h4 {
+  font-size: 1.25rem;
+}
+.section-display h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.section-display h6 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
 /* <-- HEADINGS */

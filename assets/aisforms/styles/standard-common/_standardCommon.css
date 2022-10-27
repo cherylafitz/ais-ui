@@ -47,10 +47,15 @@
 
 
 /* forms --> */
+ /* delete after conversion is complete! */
 .QuestionAnswer .social-media input[type="text"],
 .QuestionAnswer .social-media select,
 .QuestionAnswer .UpSupplemenItemsDescripti input[type="text"],
-.QuestionAnswer .EmployerWebsite input[type="text"] {
+.QuestionAnswer .EmployerWebsite input[type="text"],
+.question-answer .social-media input[type="text"],
+.question-answer .social-media select,
+.question-answer .UpSupplemenItemsDescripti input[type="text"],
+.question-answer .EmployerWebsite input[type="text"] {
   width: 20rem;
   max-width: 100%;
 }
@@ -62,36 +67,45 @@ div.Content {
   color: #000000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-
+/* delete after conversion is complete! */
 div.SectionNavigator,
+div.section-navigator,
 div#menu3 ul {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-
-.SectionDisplay p {
+/* delete after conversion is complete! */
+.SectionDisplay p,
+.section-display p {
   margin-top: .6em
 }
 blockquote {
   font-style: italic;
 }
+/* delete after conversion is complete! */
+.section-display textarea,
 .SectionDisplay textarea {
   margin: .5em 0;
 }
+/* delete after conversion is complete! */
+.section-display td textarea,
 .SectionDisplay td textarea {
   margin: 0;
 }
 div.Content .noWrap {
   white-space:nowrap;
 }
+/* delete after conversion is complete! */
 div.QuestionText .QuestionInstructions,
+div.question-text .QuestionInstructions,
 .Instruction {
   color:#2E6B9B;
   font-style: italic;
   font-size: .875rem;
 }
-
+/* delete after conversion is complete! */
 div.QuestionItem div.Instruction ul,
-div.QuestionText div.Instruction ul {
+div.QuestionText div.Instruction ul,
+div.question-text div.Instruction ul {
   margin-top:0;
   margin-left:-1.5em;
 }
@@ -156,53 +170,72 @@ div.QuestionText div.Instruction ul {
   font-size: 1.5em;
   top: 1.5em;
 }
-
-body.IsLoggedIn .ValidationError {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError,
+body.IsLoggedIn .validation-error {
   margin: 0;
 }
 /* hides error-list and error-question whe error appears at the top of page */
-.sectionBodyBelowTopNavBar > .ValidationError .error {
+/* delete after conversion is complete! */
+.sectionBodyBelowTopNavBar > .ValidationError .error,
+.section-body-below-top-nav > .validation-error .error  {
   padding-bottom: 0;
 }
+/* delete after conversion is complete! */
 .sectionBodyBelowTopNavBar > .ValidationError .error-list,
-.sectionBodyBelowTopNavBar > .ValidationError .error-question {
+.sectionBodyBelowTopNavBar > .ValidationError .error-question,
+.section-body-below-top-nav > .validation-error .error-list,
+.section-body-below-top-nav > .validation-error .error-question  {
   display: none;
 }
-
-.ValidationError .header {
+/* delete after conversion is complete! */
+.ValidationError .header,
+.validation-error .header {
   font-weight: bold;
   margin-top: 1em;
   color: #000;
   margin-bottom: .5em;
 }
-
-body.IsLoggedIn .ValidationError .header:after {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError .header:after,
+body.IsLoggedIn .validation-error .header:after {
   content: ' You have either [1] not answered all required questions, or [2] attempted to submit your form after the deadline. If you have not answered all required questions, you will see section(s) marked "INCOMPLETE" in the navigation. If you attempted to submit your form after the deadline, you will see the past-deadline message below.';
   color: #C75D48;
 }
-body.IsLoggedIn .ValidationError .header ~ ul {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError .header ~ ul,
+body.IsLoggedIn .validation-error .header ~ ul {
   list-style-type: none;
 }
-body.IsLoggedIn .ValidationError ul {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError ul,
+body.IsLoggedIn .validation-error ul {
   font-weight: normal;
 }
-body.IsLoggedIn .inlineError .ValidationError {
+/* delete after conversion is complete! */
+body.IsLoggedIn .inlineError .ValidationError,
+body.IsLoggedIn .inlineError .validation-error {
   display: inline-block;
 }
-body.IsLoggedIn .inlineError .ValidationError ul {
+/* delete after conversion is complete! */
+body.IsLoggedIn .inlineError .ValidationError ul,
+body.IsLoggedIn .inlineError .validation-error ul {
   display: inherit;
   padding: 0;
   margin: 0;
 }
-
+ /* delete after conversion is complete! */
 body.IsLoggedIn .ValidationError ul
-body.IsLoggedIn .QuestionAnswer .ValidationError  {
+body.IsLoggedIn .QuestionAnswer .ValidationError,
+body.IsLoggedIn .validation-error ul
+body.IsLoggedIn .question-answer .validation-error   {
   clear: both;
   margin: 0;
   color: #C91C00;
 }
-
-.QuestionAnswer .ValidationError ul {
+/* delete after conversion is complete! */
+.QuestionAnswer .ValidationError ul,
+.question-answer .validation-error ul {
   list-style-type: none;
 }
 
@@ -224,8 +257,10 @@ body.IsLoggedIn .QuestionAnswer .ValidationError  {
   padding: 0.3em;
   border: none;
 }
+ /* delete after conversion is complete! */
+body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError,
+body.IsLoggedIn .question-answer .inlineError  .validation-error {
 
-body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
   clear: none;
   color: #C91C00;
 }
@@ -250,21 +285,30 @@ body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
 
 
 /* Forms--> */
-.SectionDisplay td select {
+/* delete after conversion is complete! */
+.SectionDisplay td select,
+.section-display td select {
   width: 10em;
 }
-.SectionDisplay td .Program select {
+/* delete after conversion is complete! */
+.SectionDisplay td .Program select,
+.section-display td .Program select {
   width: initial;
 }
-.SectionDisplay td select[disabled="disabled"] {
+/* delete after conversion is complete! */
+.SectionDisplay td select[disabled="disabled"],
+.section-display td select[disabled="disabled"] {
   width: 100%;
   max-width: 100%;
 }
-.SectionDisplay textarea, select {
+/* delete after conversion is complete! */
+.SectionDisplay textarea, select,
+.section-display textarea, select {
   max-width: 100%;
 }
-
-.SectionDisplay {
+/* delete after conversion is complete! */
+.SectionDisplay,
+.section-display {
   min-width: 280px;
 }
 
@@ -281,25 +325,36 @@ div.itemDisplayOuterContainer {
 }
 
 /* Alignment/Spacing */
-
-.Content .QuestionNumber {
+ /* delete after conversion is complete! */
+.Content .QuestionNumber,
+.Content .question-number {
   float:left;
   margin-right: .5rem;
 }
+/* delete after conversion is complete! */
 .subQuestion,
 .Content .QuestionText,
-.Content .QuestionAnswer  {
+.Content .question-text,
+.Content .QuestionAnswer,
+.Content .question-answer {
   margin-left: 1.75rem;
 }
-.Content .QuestionAnswer {
+/* delete after conversion is complete! */
+.Content .QuestionAnswer,
+.Content .question-answer {
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
 }
+/* delete after conversion is complete! */
 .Content .subQuestion .QuestionText,
-.Content .subQuestion .QuestionAnswer {
+.Content .subQuestion .QuestionAnswer,
+.Content .subQuestion .question-text,
+.Content .subQuestion .question-answer {
   margin-left: 2.5rem;
 }
-.Content .QuestionAnswer a {
+/* delete after conversion is complete! */
+.Content .QuestionAnswer a,
+.Content .question-answer a {
   border: none;
   text-decoration: underline;
 }
@@ -406,7 +461,7 @@ div.Group {
 
 
 /* Hide QuestionAnswer divs for "Generic Text" QuestionItems (so that they can be used as question 'headers' for multi-part questions) */
-
+ /* delete after conversion is complete! */
 div.Content div.TextGen1 div.QuestionAnswer,
 div.Content div.TextGen2 div.QuestionAnswer,
 div.Content div.TextGen3 div.QuestionAnswer,
@@ -416,7 +471,17 @@ div.Content div.TextGen6 div.QuestionAnswer,
 div.Content div.TextGen7 div.QuestionAnswer,
 div.Content div.TextGen8 div.QuestionAnswer,
 div.Content div.TextGen9 div.QuestionAnswer,
-div.Content div.TextGeneric10 div.QuestionAnswer {
+div.Content div.TextGeneric10 div.QuestionAnswer,
+div.Content div.TextGen1 div.question-answer,
+div.Content div.TextGen2 div.question-answer,
+div.Content div.TextGen3 div.question-answer,
+div.Content div.TextGen4 div.question-answer,
+div.Content div.TextGen5 div.question-answer,
+div.Content div.TextGen6 div.question-answer,
+div.Content div.TextGen7 div.question-answer,
+div.Content div.TextGen8 div.question-answer,
+div.Content div.TextGen9 div.question-answer,
+div.Content div.TextGeneric10 div.question-answer {
   display:none;
 }
 
@@ -467,21 +532,28 @@ div.Content div.GroupedItem div.RadioButtonMatrix table{
 .subConditional {
   margin-left: 4em;
 }
-div.Content div.subConditional div.QuestionText {
+/* delete after conversion is complete! */
+div.Content div.subConditional div.QuestionText,
+div.Content div.subConditional div.question-text  {
   margin-left: 1.5em;
 }
-
-div.QuestionText p {
+/* delete after conversion is complete! */
+div.QuestionText p,
+div.question-text p  {
   display:inline;
 }
-
+/* delete after conversion is complete! */
 div.Content div.QuestionItem div.GroupedItem div.QuestionText .Title:before,
-div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before {
+div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before,
+div.Content div.QuestionItem div.GroupedItem div.question-text .Title:before,
+div.Content div.DisplayItemOnly div.GroupedItem div.question-text .Title:before  {
   content: '';
 }
-
+/* delete after conversion is complete! */
 div.Content div.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.required:not(.Group) div.QuestionText .Title:after {
+div.Content table.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.required:not(.Group) div.question-text .Title:after,
+div.Content table.required:not(.Group) div.question-text .Title:after  {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
@@ -520,8 +592,9 @@ table.AnswerTable div.required div.itemDisplayOuterContainer:after {
   position:relative;
   top:0.1em;
 }
-
-div.QuestionText ol {
+/* delete after conversion is complete! */
+div.QuestionText ol,
+div.question-text ol {
   list-style-type: upper-alpha;
 }
 
@@ -542,17 +615,24 @@ div.Content div.SchoolZIP input[type='text'] {
 /* div.Content div.2digitInteger input[type='text'] {
   width: 2em;
 } */
-
-.SectionDisplay table div.caption input[type="text"] {
+/* delete after conversion is complete! */
+.SectionDisplay table div.caption input[type="text"],
+.section-display table div.caption input[type="text"] {
   width: 15em;
 }
-.SectionDisplay table .LargeInputTable input[type="text"] {
+/* delete after conversion is complete! */
+.SectionDisplay table .LargeInputTable input[type="text"],
+.section-display table .LargeInputTable input[type="text"] {
   width: 15rem;
 }
-.SectionDisplay table input[type="text"] {
+/* delete after conversion is complete! */
+.SectionDisplay table input[type="text"],
+.section-display table input[type="text"] {
   width: 8em;
 }
-.SectionDisplay table input[type="text"].IntegerQuestion {
+/* delete after conversion is complete! */
+.SectionDisplay table input[type="text"].IntegerQuestion,
+.section-display table input[type="text"].IntegerQuestion  {
   width: 6em;
 }
 
@@ -589,8 +669,9 @@ div.Content table .AjaxFlexibleFileUpload .Button span,
   background-color: transparent;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-
-.SectionDisplay li {
+/* delete after conversion is complete! */
+.SectionDisplay li,
+.section-display li {
   margin-bottom: 3px;
 }
 
@@ -671,9 +752,11 @@ ul.fourcolumn {
   float: left;
   margin: 0 0.5em 1em 0;
 }
-
+ /* delete after conversion is complete! */
 .RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer textarea,
-.RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer input {
+.RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer input,
+.RightToLeftLanguageInput div.question-answer div.itemDisplayOuterContainer textarea,
+.RightToLeftLanguageInput div.question-answer div.itemDisplayOuterContainer input {
   direction:rtl;
 }
 
@@ -751,14 +834,6 @@ div.templateContent  img.ProgramLogo600w {
   display: block;
 }
 
-/* 2 Aug - Float New Name fields added to AIR */
-.SectionDisplay div.PartnerOrgFirstName,
-.SectionDisplay div.PartnerOrgMiddleName,
-.SectionDisplay div.PartnerOrgLastName {
-  float: left;
-  clear: none;
-}
-
 /* 6 Aug - Override air.css for "disabled" conditional questions */
 div.QuestionItem.DisabledBecauseOfSkipPattern {
   display: block;
@@ -792,7 +867,9 @@ table.ExcelDataTabulated td {
   background-color: #ffe0b3;
 }
 @media only screen and (min-width: 20em) {
-  .inlineError .ValidationError {
+  /* delete after conversion is complete! */
+  .inlineError .ValidationError,
+  .inlineError .validation-error {
     max-width: calc(100% - 120px);
   }
 }

@@ -246,6 +246,7 @@ div.Content {
 }
 
 div.SectionNavigator,
+.section-navigator,
 div#menu3 ul {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
@@ -266,22 +267,28 @@ div.SectionDisplay td textarea {
 div.Content .noWrap {
   white-space:nowrap;
 }
+/* delete after conversion is complete! */
 div.QuestionText .QuestionInstructions,
+div.question-text .QuestionInstructions,
 .Instruction {
   color:#2E6B9B;
   font-style: italic;
   font-size: .875rem;
 }
-
+/* delete after conversion is complete! */
 div.QuestionItem div.Instruction ul,
-div.QuestionText div.Instruction ul {
+div.QuestionText div.Instruction ul,
+div.question-text div.Instruction ul {
   margin-top:0;
   margin-left:-1.5em;
 }
 
 
 /* Section Name and Headers--> */
-div.SectionDisplay div.SectionName {
+
+/* delete after conversion is complete! */
+div.SectionDisplay div.SectionName,
+div.SectionDisplay div.section-name {
   font-size: 1.875rem;
   color: #2E6B9B;
   border-bottom: 2px solid #2E6B9B;
@@ -371,15 +378,18 @@ body.IsLoggedIn .ValidationError ul {
 body.IsLoggedIn .inlineError .ValidationError ul {
   display: inherit;
 }
-
+/* delete after conversion is complete! */
 body.IsLoggedIn .ValidationError ul
-body.IsLoggedIn .QuestionAnswer .ValidationError  {
+body.IsLoggedIn .QuestionAnswer .ValidationError,
+body.IsLoggedIn .validation-error ul
+body.IsLoggedIn .question-answer .validation-error  {
   clear: both;
   margin: 0;
   color: #C91C00;
 }
-
-.QuestionAnswer .ValidationError ul {
+/* delete after conversion is complete! */
+.QuestionAnswer .ValidationError ul,
+.question-answer .validation-error ul  {
   list-style-type: none;
 }
 
@@ -401,8 +411,9 @@ body.IsLoggedIn .QuestionAnswer .ValidationError  {
   padding: 0.3em;
   border: none;
 }
-
-body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
+ /* delete after conversion is complete! */
+body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError,
+body.IsLoggedIn .question-answer .inlineError  .validation-error {
   clear: none;
   color: #C91C00;
 }
@@ -556,10 +567,12 @@ div.SectionDisplay table td.Link {
 table.AnswerTable {
   margin: .5em 0em;
 }
-
+ /* delete after conversion is complete! */
 div.SectionDisplay table.AnswerTable tr.headerRow th,
 div.SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
-div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
+div.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th,
+div.SectionDisplay .question-answer table.RowDisplay tr.headerRow th,
+div.SectionDisplay .question-answer table.RowDisplay thead tr th  {
   font-style:normal;
   font-weight: normal;
   background-color: #2E6B9B;
@@ -632,30 +645,37 @@ td ul, td ol {
 }
 
 /* Alignment/Spacing */
-
-div.Content div.QuestionNumber {
+/* delete after conversion is complete! */
+div.Content div.QuestionNumber,
+div.Content div.question-number, {
   float:left;
 }
 
 .subQuestion {
   margin-left: 1.7em;
 }
-
-div.Content div.QuestionText {
+/* delete after conversion is complete! */
+div.Content div.QuestionText,
+div.Content div.question-text {
   margin-left: 1.7em;
 }
-
+/* delete after conversion is complete! */
 div.QuestionItem.subQuestion div.QuestionText,
-div.QuestionItem.subQuestion div.QuestionAnswer {
+div.QuestionItem.subQuestion div.QuestionAnswer,
+div.QuestionItem.subQuestion div.question-text,
+div.QuestionItem.subQuestion div.question-answer {
   margin-left: 2.5em;
 }
-
-div.Content div.QuestionAnswer {
+/* delete after conversion is complete! */
+div.Content div.QuestionAnswer,
+div.Content div.question-answer  {
   margin-left: 1.7em;
   margin-bottom: 0.2em;
   margin-top: 0.2em;
 }
-.Content div.QuestionAnswer a {
+/* delete after conversion is complete! */
+.Content div.QuestionAnswer a,
+.Content div.question-answer a {
   border: none;
   text-decoration: underline;
 }
@@ -786,7 +806,17 @@ div.Content div.TextGen6 div.QuestionAnswer,
 div.Content div.TextGen7 div.QuestionAnswer,
 div.Content div.TextGen8 div.QuestionAnswer,
 div.Content div.TextGen9 div.QuestionAnswer,
-div.Content div.TextGeneric10 div.QuestionAnswer {
+div.Content div.TextGeneric10 div.QuestionAnswer,
+div.Content div.TextGen1 div.question-answer,
+div.Content div.TextGen2 div.question-answer,
+div.Content div.TextGen3 div.question-answer,
+div.Content div.TextGen4 div.question-answer,
+div.Content div.TextGen5 div.question-answer,
+div.Content div.TextGen6 div.question-answer,
+div.Content div.TextGen7 div.question-answer,
+div.Content div.TextGen8 div.question-answer,
+div.Content div.TextGen9 div.question-answer,
+div.Content div.TextGeneric10 div.question-answer  {
   display:none;
 }
 
@@ -858,21 +888,28 @@ div.Content div.GroupedItem div.RadioButtonMatrix table{
 .subConditional {
   margin-left: 4em;
 }
-div.Content div.subConditional div.QuestionText {
+/* delete after conversion is complete! */
+div.Content div.subConditional div.QuestionText,
+div.Content div.subConditional div.question-text {
   margin-left: 1.5em;
 }
-
-div.QuestionText p {
+/* delete after conversion is complete! */
+div.QuestionText p,
+div.question-text p {
   display:inline;
 }
-
+/* delete after conversion is complete! */
 div.Content div.QuestionItem div.GroupedItem div.QuestionText .Title:before,
-div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before {
+div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before,
+div.Content div.QuestionItem div.GroupedItem div.question-text .Title:before,
+div.Content div.DisplayItemOnly div.GroupedItem div.question-text .Title:before {
   content: '';
 }
-
+/* delete after conversion is complete! */
 div.Content div.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.required:not(.Group) div.QuestionText .Title:after {
+div.Content table.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.required:not(.Group) div.question-text .Title:after,
+div.Content table.required:not(.Group) div.question-text .Title:after {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
@@ -911,8 +948,9 @@ table.AnswerTable div.required div.itemDisplayOuterContainer:after {
   position:relative;
   top:0.1em;
 }
-
-div.QuestionText ol {
+/* delete after conversion is complete! */
+div.QuestionText ol,
+div.question-text ol {
   list-style-type: upper-alpha;
 }
 
@@ -1065,9 +1103,11 @@ ul.fourcolumn {
   float: left;
   margin: 0 0.5em 1em 0;
 }
-
+ /* delete after conversion is complete! */
 .RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer textarea,
-.RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer input {
+.RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer input,
+.RightToLeftLanguageInput div.question-answer div.itemDisplayOuterContainer textarea,
+.RightToLeftLanguageInput div.question-answer div.itemDisplayOuterContainer input {
   direction:rtl;
 }
 

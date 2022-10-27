@@ -21,5 +21,26 @@
   width: 15rem;
   max-width: 100%;
 }
+/* delete after conversion is complete! ^^^^^^^^^*/
+.section-display .ItemAddress th {
+  text-align: left;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  border-color: #fff;
+}
+.section-display .ItemAddress tr:first-of-type th {
+  border-top-color: #2E6B9B;
+}
+.section-display .ItemAddress tr:last-of-type th {
+  border-bottom-color: #2E6B9B;
+}
+.section-display .ItemAddress .RowDisplay td {
+  border-color: #c5dced;
+}
 
+.Content .section-display .ItemAddress table tr td input[type="text"],
+.section-display .ItemAddress td select {
+  width: 15rem;
+  max-width: 100%;
+}
 /* <-- ADDRESS TABLE */

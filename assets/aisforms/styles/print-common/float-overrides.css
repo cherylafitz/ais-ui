@@ -6,5 +6,12 @@
 .SectionDisplay .TelephoneAlternate {
   float: none;
 }
+/* delete after conversion is complete! */
+.section-display .TelephonePrimaryType,
+.section-display .TelephonePrimary,
+.section-display .TelephoneAlternateType,
+.section-display .TelephoneAlternate {
+  float: none;
+}
 
 /* <-- float overrides */

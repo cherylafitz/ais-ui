@@ -117,7 +117,9 @@ div.AvailableForms div,
 .DeveloperCaution,
 div.OtherBrands
 div.HasFormsInOtherBrandsWarning,
+/* delete after conversion is complete! */
 .ValidationError,
+.validation-error,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
 .NoExtendedDeadlines  {
@@ -1434,8 +1436,11 @@ h4{
   margin-bottom: .375rem;
 }
 .mixed-languages .deadlineBox [lang],
+/* delete after conversion is complete! */
 div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1[lang], /*forms only*/
 div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*forms only*/
+div#ApplicationTemplateDisplayAUC .section-display.mixed-languages h1[lang], /*forms only*/
+div#ApplicationTemplateDisplayAUC .section-display.mixed-languages h1 [lang], /*forms only*/
 .mixed-languages [lang] h1, 
 .mixed-languages [lang] h2,
 .mixed-languages [lang] h3,
@@ -2139,7 +2144,9 @@ div.SecureDocumentEditorRowDisplay h1 {
 }
 /* <--To Overwrite Amagavi CSS */
 /* LIST OF SECTIONS--> */
-.SectionDisplay {
+/* delete after conversion is complete! */
+.SectionDisplay,
+.section-display {
   padding: 0;
   margin: 0;
   border: 0;
@@ -2253,8 +2260,11 @@ div.BrandEditor h1,
 div.BrandRowDisplay h1 {
   margin-top: .5rem;
 }
-.Content .SectionDisplay h1 {
+/* delete after conversion is complete! */
+.Content .SectionDisplay h1,
+.Content .section-display h1 {
   text-align: left;
+  margin: .5em 0;
 }
 
 a.LinkToPreviousPage {
@@ -3039,10 +3049,6 @@ div#ApplicationTemplateDisplayAUC h1.editing:not(.form-view-header) {
 .ApplicationTemplateDisplay form[name="sectionNavigationForm"] {
   margin-top: 1rem;
 }
-
-.SectionDisplay h1 {
-  margin: .5em 0;
-}
 h1.form-view-header .TemplateName {
   font-weight: bold;
 }
@@ -3059,7 +3065,9 @@ h1.form-view-header .ProgramName {
 }
 /* <--TEMPLATES */
 /* TEMPLATE EDITOR--> */
-.SectionItemCustomization .QuestionText textarea {
+/* delete after conversion is complete! */
+.SectionItemCustomization .QuestionText textarea,
+.SectionItemCustomization .question-text textarea {
   max-width: 350px;
 }
 .QuestionCustomizer  input[type="submit"], 
@@ -3473,7 +3481,9 @@ div.AvailableForms div,
 .DeveloperCaution,
 div.OtherBrands
 div.HasFormsInOtherBrandsWarning,
+/* delete after conversion is complete! */
 .ValidationError,
+.validation-error,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms  {
   font-style: normal;
@@ -3508,7 +3518,9 @@ body.IsNotLoggedIn ul.ErrorOnLoginPage {
 div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div {
   color: #CD0000;
 }
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after {
+ /* delete after conversion complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after,
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.section-name:after {
   content: " * INCOMPLETE";
   font-size: 0.9em;
   font-weight: bold;
@@ -3639,7 +3651,9 @@ body#body--environment-staging:after {
   a.LinkToPreviousPage {
     float: none;
   }
-  div.SectionDisplay {
+  /* delete after conversion is complete! */
+  div.SectionDisplay,
+  .section-display {
     padding: 1em;
   }
   input[value="Show All Sections at Once"], input[value="Show Each Section Individually"] {
@@ -3665,7 +3679,9 @@ body#body--environment-staging:after {
   .MenuOfSections select, div.Content .MenuOfSections input  {
     font-size: .8em;
   }
-  div.SectionNavigator .MenuOfSections .label {
+  /* delete after conversion complete! */
+  div.SectionNavigator .MenuOfSections .label,
+  div.section-navigator .MenuOfSections .label {
     display: none;
   }
   div#AClogoFooter img, div#footer {
@@ -3727,7 +3743,9 @@ body#body--environment-staging:after {
   .MenuOfSections select {
     font-size: .8em;
   }
-  div.SectionNavigator .MenuOfSections .label {
+  /* delete after conversion complete! */
+  div.SectionNavigator .MenuOfSections .label,
+  div.section-navigator .MenuOfSections .label {
     font-size: .9em;
   }
   div.Content .MenuOfSections input {
@@ -4620,12 +4638,15 @@ h5 {
  #ApplicationTemplateDisplayAUC .reference-code-wrapper .reference-code:not(:last-child) {
     margin-right: 1.25rem;
  }
-
-div.SectionNavigator .MenuOfSections {
+/* delete after conversion is complete! */
+div.SectionNavigator .MenuOfSections,
+div.section-navigator .MenuOfSections {
   vertical-align: middle;
   max-width: 1050px;
 }
-div.SectionNavigator.vertical .MenuOfSections {
+/* delete after conversion is complete! */
+div.SectionNavigator.vertical .MenuOfSections,
+div.section-navigator.vertical .MenuOfSections {
   background-color: #d8e8f3;
   border-radius: 2px;
 }
@@ -4637,31 +4658,54 @@ div.SectionNavigator.vertical .MenuOfSections {
 div.bottomButtons {
   display: none;
 }
-div.SectionNavigator.vertical #menu3 a {
+/* delete after conversion is complete! */
+div.SectionNavigator.vertical #menu3 a,
+div.section-navigator.vertical #menu3 a {
   font-size: 0.84em;
   display: block;
   padding: 3px 8px;
   border-bottom: 1px solid #FFF;
   border-radius: 2px 4px 4px 2px;
+  display: flex;
 }
-.SectionNavigator.vertical #menu3 li:first-of-type a {
+div.SectionNavigator.vertical #menu3 a div.sectionName,
+.section-navigator.vertical .section-name {
+  padding-left: 1.5rem;
+}
+div.SectionNavigator.vertical #menu3 a .sectionNumber,
+.section-navigator.vertical .section-number {
+  min-width: 1.25rem;
+  text-align: right;
+}
+/* delete after conversion is complete! */
+.SectionNavigator.vertical #menu3 li:first-of-type a,
+.section-navigator.vertical #menu3 li:first-of-type a {
   padding-top: .25rem;
 }
+/* delete after conversion is complete! */
 .SectionNavigator.vertical #menu3 li:last-of-type a,
 .SectionNavigator.vertical #menu3 li:last-of-type a:hover,
-div.SectionNavigator.vertical #menu3 li:last-of-type a.current {
+div.SectionNavigator.vertical #menu3 li:last-of-type a.current,
+.section-navigator.vertical #menu3 li:last-of-type a,
+.section-navigator.vertical #menu3 li:last-of-type a:hover,
+div.section-navigator.vertical #menu3 li:last-of-type a.current {
   padding-bottom: .5rem;
   border-bottom-width: 2px;
 }
+/* delete after conversion is complete! */
 div.SectionNavigator.vertical #menu3 a:hover,
-div.SectionNavigator.vertical #menu3 li a.current {
+div.SectionNavigator.vertical #menu3 li a.current,
+div.section-navigator.vertical #menu3 a:hover,
+div.section-navigator.vertical #menu3 li a.current {
   padding-left: 4px;
   border-right: 1px solid #d9d9d9;
   border-bottom: 1px solid #cecece;
   border-left: 4px solid #3b6d99;
   background: #f1f5f9;
 }
-div.SectionNavigator.vertical {
+/* delete after conversion is complete! */
+div.SectionNavigator.vertical,
+div.section-navigator.vertical  {
   margin: 1rem 0;
   flex-basis: 14rem;
   background-color: #d8e8f3;
@@ -4670,15 +4714,22 @@ div.SectionNavigator.vertical {
   border: none;
   flex-grow: 1;
 }
-.SectionNavigator.horizontal {
+/* delete after conversion is complete! */
+.SectionNavigator.horizontal,
+.section-navigator.horizontal {
   flex-basis: 100%;
   margin-bottom: 1rem;
 }
+/* delete after conversion is complete! */
 .SectionNavigator.horizontal .previous,
-.SectionNavigator.horizontal .next {
+.SectionNavigator.horizontal .next,
+.section-navigator.horizontal .previous,
+.section-navigator.horizontal .next {
   display: none;
 }
-.SectionNavigator.horizontal .label {
+/* delete after conversion is complete! */
+.SectionNavigator.horizontal .label,
+.section-navigator.horizontal .label {
   font-size: 1.5rem;
 }
 .AdminFormNav {
@@ -4694,7 +4745,9 @@ div.SectionNavigator.vertical {
 .AdminFormNav .FormActions {
   margin-right: 1rem;
 }
-.sectionBodyBelowTopNavBar {
+/* delete after conversion is complete! */
+.sectionBodyBelowTopNavBar,
+.section-body-below-top-nav {
   margin-left: 0 !important;
   flex-grow: 1;
   flex-basis: 20%;
@@ -4736,8 +4789,9 @@ div.SectionTitleText {
   background-color: transparent;
   color: #fff;
 }
-
+/* delete after conversion is complete! */
 .SectionNavigator input[type="button"],
+.section-navigator input[type="button"],
 .PreviousSectionNearSaveChanges input[type="button"],
 .NextSectionNearSaveChanges input[type="button"] {
   border: none;
@@ -4759,39 +4813,54 @@ div.NextSection,
 div.PreviousSection {
   position: static;
 }
+/* delete after conversion is complete! */
 .SectionNavigator .next input[type="button"],
 .SectionNavigator input[value="next >"],
+.section-navigator .next input[type="button"],
+.section-navigator input[value="next >"],
 .NextSectionNearSaveChanges .next input[type="button"] {
   border-width: 5px 5px 0 0;
 }
+/* delete after conversion is complete! */
 .SectionNavigator .previous input[type="button"],
 .SectionNavigator input[value="< previous"],
+.section-navigator .previous input[type="button"],
+.section-navigator input[value="< previous"],
 .PreviousSectionNearSaveChanges .previous input[type="button"] {
   border-width: 0 0 5px 5px;
 }
-
+/* delete after conversion is complete! */
 .SectionNavigator input[type="button"]:hover,
+.section-navigator input[type="button"]:hover,
 .PreviousSectionNearSaveChanges input[type="button"]:hover,
 .NextSectionNearSaveChanges input[type="button"]:hover {
   opacity: .7;
 }
+/* delete after conversion is complete! */
 .SectionNavigator input[type="button"]:active,
+.section-navigator input[type="button"]:active,
 .PreviousSectionNearSaveChanges input[type="button"]:active,
 .NextSectionNearSaveChanges input[type="button"]:active {
   border-color: #000;
 }
+/* delete after conversion is complete! */
 .SectionNavigator input[type="button"]:active,
+.section-navigator input[type="button"]:active,
 .PreviousSectionNearSaveChanges input[type="button"]:active,
 .NextSectionNearSaveChanges input[type="button"]:active,
 .SectionNavigator input[type="button"]:focus,
+.section-navigator input[type="button"]:focus,
 .PreviousSectionNearSaveChanges input[type="button"]:focus,
 .NextSectionNearSaveChanges input[type="button"]:focus {
   outline: none;
 }
+/* delete after conversion is complete! */
 .SectionNavigator input[type="button"]:disabled,
+.section-navigator input[type="button"]:disabled,
 .PreviousSectionNearSaveChanges input[type="button"]:disabled,
 .NextSectionNearSaveChanges input[type="button"]:disabled,
-.SectionNavigator input[type="button"]:disabled {
+.SectionNavigator input[type="button"]:disabled,
+.section-navigator input[type="button"]:disabled  {
   opacity: .5;
 }
 .PreviousSectionNearSaveChanges .previous:after {
@@ -4805,7 +4874,9 @@ div.ApplicationTemplateDisplay div.templateContent {
   margin-top: 1rem;
 }
 @media only screen and (min-width: 38em) { 
-  div.SectionNavigator.vertical {
+/* delete after conversion is complete! */
+  div.SectionNavigator.vertical,
+  div.section-navigator.vertical {
     margin: 0 1.5rem 0 0;
     flex-grow: 0;
   }
@@ -5055,6 +5126,7 @@ div#build-and-instance {
   font-size: 0.75rem;
   display: inline-block;
   vertical-align: top;
+  text-align: right;
 }
 #Header #serverInfo,
 #Header #build-and-instance .build,

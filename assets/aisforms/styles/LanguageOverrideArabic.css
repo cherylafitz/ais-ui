@@ -1,11 +1,15 @@
 /* Adjustments for Arabic Script Display */
+
+/* delete after conversion is complete! */
 .sectionName,
 .section-name {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
-.MenuOfSections .sectionName {
+/* delete after conversion is complete! */
+.MenuOfSections .sectionName,
+.MenuOfSections .section-name {
     padding-left: 1rem;
 }
 .Arabic {
@@ -67,9 +71,10 @@ div.Content div.EssayNonEnglish {
     display:inline;
 }
 */
-div.SectionDisplay table.ERXMatrixTable tr td,
-div.SectionDisplay table.AnswerTable div.RadioButtonMatrix tr td,
-div.SectionDisplay table.AnswerTable div.CheckboxMatrix tr td {
+/* delete after conversion is complete! */
+table.ERXMatrixTable tr td,
+table.AnswerTable div.RadioButtonMatrix tr td,
+table.AnswerTable div.CheckboxMatrix tr td {
      font: 130% 'Traditional Arabic';
 }
 
@@ -98,7 +103,9 @@ body.IsLoggedIn .ValidationError .NoDataSaved::after {
     font: 150% 'Traditional Arabic',serif;
 }
 */
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after {
+/* delete after conversion is complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after,
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.section-name::after {
     content: " * INCOMPLETE / غير مكتمل" !important;
     font: bold 130% 'Traditional Arabic',serif;
 }
@@ -113,12 +120,18 @@ div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after 
     display: block;
     font: 150% 'Traditional Arabic',serif;
 }
+/* delete after conversion is complete! */
 div.Content div.required:not(.Group) div.QuestionText .Title:after, 
-div.Content table.required:not(.Group) div.QuestionText .Title:after {
+div.Content table.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.required:not(.Group) div.question-text .Title:after, 
+div.Content table.required:not(.Group) div.question-text .Title:after {
     content: none;
 }
+/* delete after conversion is complete! */
 div.Content div.required:not(.Group) div.QuestionNumber::after, 
-div.Content table.required:not(.Group) div.QuestionNumber::after {
+div.Content table.required:not(.Group) div.QuestionNumber::after,
+div.Content div.required:not(.Group) div.question-number::after, 
+div.Content table.required:not(.Group) div.question-number::after {
     color: #CD0000;
     content: '*';
     font-size: 1.4em;
@@ -158,7 +171,9 @@ div.Content table.required:not(.Group) div.QuestionNumber::after {
 .arabic-answer {
     float: right !important;
 }
-.arabic-answer .QuestionNumber {
+/* delete after conversion is complete! */
+.arabic-answer .QuestionNumber,
+.arabic-answer .question-number {
     float: right;
     margin: 0 0 0 0.5rem;
 }

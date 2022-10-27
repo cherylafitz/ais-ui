@@ -31,4 +31,38 @@
   font-size: 2.5em;
   margin-bottom: 4em;
 }
+
+/* updated section-display */
+.Content .section-display.cover-page-section {
+  page-break-after: always;
+}
+.Content .section-display.cover-page-section,
+.Content .section-display.cover-page-section h1,
+.Content .section-display.cover-page-section h2 {
+  text-align: center;
+}
+.Content .section-display.cover-page-section h1 {
+  font-size: 3em;
+  border-bottom: none;
+  margin-bottom: 3em;
+}
+.Content .section-display.cover-page-section h2 {
+  font-size: 2em;
+}
+.Content .section-display.cover-page-section h2 .template-name,
+.Content .section-display.cover-page-section h2 .template-year {
+  display: block;
+  margin-bottom: 2em;
+}
+.Content .section-display.cover-page-section h2 .template-year {
+  margin-bottom: 10em;
+}
+.Content .section-display.cover-page-section .label {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.Content .section-display.cover-page-section .value {
+  font-size: 2.5em;
+  margin-bottom: 4em;
+}
 /* <-- COVER page */
