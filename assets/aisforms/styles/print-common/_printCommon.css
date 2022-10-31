@@ -786,6 +786,7 @@ div.Content div.GeneratePDF {
 #SubmitForEvaluation,
 .UnsubmitLink,
 input.SaveChanges,
+input.save-button,
 #brandFromServerID {
   display: none;
 }

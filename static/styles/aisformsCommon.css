@@ -333,27 +333,27 @@ table.row-display a:active {
 .bg-blue03 a {
   color: #c4dcee;
 }
-.controls-wrapper {
+[class*="controls-wrapper"] {
   margin-top: .5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-.controls-wrapper:not(:last-child) {
+[class*="controls-wrapper"]:not(:last-child) {
   margin-bottom: .5rem;
 }
-.form-section-content ~ .controls-wrapper {
+.form-section-content ~ [class*="controls-wrapper"] {
   margin-top: 1rem;
 }
-.controls-wrapper > :not(:last-child),
+[class*="controls-wrapper"] > :not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .75rem;
 }
 /* remove override of input[type="submit"] after css migration */
-.controls-wrapper input[type="submit"][class*="-link"],
-.controls-wrapper input[type="submit"][class*="-button"],
-.controls-wrapper input[type="button"][class*="-button"],
+[class*="controls-wrapper"] input[type="submit"][class*="-link"],
+[class*="controls-wrapper"] input[type="submit"][class*="-button"],
+[class*="controls-wrapper"] input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
 	padding: .4rem .75rem;
@@ -394,10 +394,15 @@ table.row-display a:active {
   margin: 1.5rem 0;
 }
 /* AIR app save button */
+/* delete after conversion is complete! */
 #ApplicationTemplateDisplayAUC input.SaveChanges {
   float: left;
   margin-right: 3rem;
 }
+#ApplicationTemplateDisplayAUC input.save-button {
+  margin-right: 3rem;
+}
+
 input[type="submit"]:hover,
 input[type="button"]:hover,
 .controls-wrapper input[class*="-button"]:hover,
@@ -440,7 +445,7 @@ button.selected {
 .form-input input[type="button"] {
   padding: .125rem .75rem;
 }
-.controls-wrapper a[class*="-button"] {
+[class*="controls-wrapper"] a[class*="-button"] {
   text-decoration: none;
 }
 input[type="submit"][value="Clear Filters"] {
@@ -1592,7 +1597,7 @@ div#ApplicationTemplateDisplayAUC .section-display.mixed-languages h1 [lang], /*
 
 /* SECTIONS --> */
 
-[class*="-section"] {
+[class*="-section"]:not(.menu-of-sections) {
   margin: 1rem 0;
 }
 [class*="-section-"] {
@@ -2155,7 +2160,9 @@ div.SecureDocumentEditorRowDisplay h1 {
   height: 100%;
   position: relative;
 }
-.SectionItemsList {
+/* delete after conversion is complete! */
+.SectionItemsList,
+.section-items-list {
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #94a4b3;
@@ -3197,12 +3204,6 @@ input#CannedSearch {
   margin-bottom: .5rem;
   font-size: 1rem;
 }
-
-.previous input[type="button"]:disabled,
-.NextSection input[type="button"]:disabled {
-  background-color: transparent;
-  /*border: 0*/
-}
 .ReferenceNotified input[type="submit"]:disabled {
   cursor: not-allowed;
 }
@@ -3214,7 +3215,9 @@ div .Button {
 }
 
 /* TEMPORARILY HIDDEN FOR ALL FORMS UNTIL BUGS RESOLVED */
-.ShowAllSectionsAtOnce {
+ /* delete after conversion is complete! */
+.ShowAllSectionsAtOnce,
+.show-all-sections-at-once {
   height: 35px;
   display:none !important;
 }
@@ -3514,13 +3517,14 @@ div.MyForms div.OtherBrands {
 body.IsNotLoggedIn ul.ErrorOnLoginPage {
   list-style-type:none;
 }
-
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div {
+/* delete after conversion is complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div,
+div.MenuOfSections li.section-with-missing-items-after-submit div {
   color: #CD0000;
 }
  /* delete after conversion complete! */
 div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after,
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.section-name:after {
+div.MenuOfSections li.section-with-missing-items-after-submit div.section-name:after {
   content: " * INCOMPLETE";
   font-size: 0.9em;
   font-weight: bold;
@@ -4667,6 +4671,8 @@ div.section-navigator.vertical #menu3 a {
   border-bottom: 1px solid #FFF;
   border-radius: 2px 4px 4px 2px;
   display: flex;
+  color: black;
+  text-decoration: none;
 }
 div.SectionNavigator.vertical #menu3 a div.sectionName,
 .section-navigator.vertical .section-name {
@@ -4758,6 +4764,7 @@ div#menu3 ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  list-style-type: none;
 }
 div#menu3 li, div#menu3 a {
   background-color: transparent;
@@ -4774,7 +4781,9 @@ div.NextSectionNearSaveChanges input[type="button"]:hover,
 div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   border-color: #777;
 }
-div.SectionTitle {
+ /* delete after conversion is complete! */
+.SectionTitle,
+.section-title {
   display: flex;
   background: #2E6B9B;
   align-items: center;
@@ -4784,10 +4793,33 @@ div.SectionTitle {
   border-radius: 2px 2px 0px 0px;
   line-height: 2.25;
 }
-div.SectionTitleText {
+ /* delete after conversion is complete! */
+div.SectionTitleText,
+.section-title-text {
   font-size: 1.5rem;
   background-color: transparent;
   color: #fff;
+}
+.section-title-text {  
+  line-height: 1.5;
+}
+ /* delete after conversion is complete! */
+.previous input[type="button"]:disabled,
+.NextSection input[type="button"]:disabled,
+.next-section input[type="button"]:disabled {
+  background-color: transparent;
+}
+/* delete after conversion is complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div,
+div.menu-of-sections li.section-with-missing-items-after-submit div {
+  color: #CD0000;
+}
+ /* delete after conversion complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after,
+div.menu-of-sections li.section-with-missing-items-after-submit div.section-name:after {
+  content: " * INCOMPLETE";
+  font-size: 0.9em;
+  font-weight: bold;
 }
 /* delete after conversion is complete! */
 .SectionNavigator input[type="button"],
@@ -4809,6 +4841,7 @@ div.SectionTitleText {
   background: transparent;
   padding: 0;
 }
+ /* delete after conversion is complete! */
 div.NextSection,
 div.PreviousSection {
   position: static;

@@ -89,6 +89,8 @@ div.section-navigator.vertical #menu3 a {
   border-bottom: 1px solid #FFF;
   border-radius: 2px 4px 4px 2px;
   display: flex;
+  color: black;
+  text-decoration: none;
 }
 div.SectionNavigator.vertical #menu3 a div.sectionName,
 .section-navigator.vertical .section-name {
@@ -180,6 +182,7 @@ div#menu3 ul {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  list-style-type: none;
 }
 div#menu3 li, div#menu3 a {
   background-color: transparent;
@@ -196,7 +199,9 @@ div.NextSectionNearSaveChanges input[type="button"]:hover,
 div.PreviousSectionNearSaveChanges input[type="button"]:hover {
   border-color: #777;
 }
-div.SectionTitle {
+ /* delete after conversion is complete! */
+.SectionTitle,
+.section-title {
   display: flex;
   background: #2E6B9B;
   align-items: center;
@@ -206,10 +211,33 @@ div.SectionTitle {
   border-radius: 2px 2px 0px 0px;
   line-height: 2.25;
 }
-div.SectionTitleText {
+ /* delete after conversion is complete! */
+div.SectionTitleText,
+.section-title-text {
   font-size: 1.5rem;
   background-color: transparent;
   color: #fff;
+}
+.section-title-text {  
+  line-height: 1.5;
+}
+ /* delete after conversion is complete! */
+.previous input[type="button"]:disabled,
+.NextSection input[type="button"]:disabled,
+.next-section input[type="button"]:disabled {
+  background-color: transparent;
+}
+/* delete after conversion is complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div,
+div.menu-of-sections li.section-with-missing-items-after-submit div {
+  color: #CD0000;
+}
+ /* delete after conversion complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after,
+div.menu-of-sections li.section-with-missing-items-after-submit div.section-name:after {
+  content: " * INCOMPLETE";
+  font-size: 0.9em;
+  font-weight: bold;
 }
 /* delete after conversion is complete! */
 .SectionNavigator input[type="button"],
@@ -231,6 +259,7 @@ div.SectionTitleText {
   background: transparent;
   padding: 0;
 }
+ /* delete after conversion is complete! */
 div.NextSection,
 div.PreviousSection {
   position: static;

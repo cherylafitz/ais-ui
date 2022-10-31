@@ -105,7 +105,7 @@ body.IsLoggedIn .ValidationError .NoDataSaved::after {
 */
 /* delete after conversion is complete! */
 div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName::after,
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.section-name::after {
+div.MenuOfSections li.section-with-missing-items-after-submit div.section-name::after {
     content: " * INCOMPLETE / غير مكتمل" !important;
     font: bold 130% 'Traditional Arabic',serif;
 }

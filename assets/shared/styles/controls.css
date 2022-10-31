@@ -36,27 +36,27 @@ table.row-display a:active {
 .bg-blue03 a {
   color: #c4dcee;
 }
-.controls-wrapper {
+[class*="controls-wrapper"] {
   margin-top: .5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-.controls-wrapper:not(:last-child) {
+[class*="controls-wrapper"]:not(:last-child) {
   margin-bottom: .5rem;
 }
-.form-section-content ~ .controls-wrapper {
+.form-section-content ~ [class*="controls-wrapper"] {
   margin-top: 1rem;
 }
-.controls-wrapper > :not(:last-child),
+[class*="controls-wrapper"] > :not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .75rem;
 }
 /* remove override of input[type="submit"] after css migration */
-.controls-wrapper input[type="submit"][class*="-link"],
-.controls-wrapper input[type="submit"][class*="-button"],
-.controls-wrapper input[type="button"][class*="-button"],
+[class*="controls-wrapper"] input[type="submit"][class*="-link"],
+[class*="controls-wrapper"] input[type="submit"][class*="-button"],
+[class*="controls-wrapper"] input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
 	padding: .4rem .75rem;
@@ -97,10 +97,15 @@ table.row-display a:active {
   margin: 1.5rem 0;
 }
 /* AIR app save button */
+/* delete after conversion is complete! */
 #ApplicationTemplateDisplayAUC input.SaveChanges {
   float: left;
   margin-right: 3rem;
 }
+#ApplicationTemplateDisplayAUC input.save-button {
+  margin-right: 3rem;
+}
+
 input[type="submit"]:hover,
 input[type="button"]:hover,
 .controls-wrapper input[class*="-button"]:hover,
@@ -143,7 +148,7 @@ button.selected {
 .form-input input[type="button"] {
   padding: .125rem .75rem;
 }
-.controls-wrapper a[class*="-button"] {
+[class*="controls-wrapper"] a[class*="-button"] {
   text-decoration: none;
 }
 input[type="submit"][value="Clear Filters"] {

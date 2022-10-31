@@ -134,7 +134,9 @@ div.SecureDocumentEditorRowDisplay h1 {
   height: 100%;
   position: relative;
 }
-.SectionItemsList {
+/* delete after conversion is complete! */
+.SectionItemsList,
+.section-items-list {
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #94a4b3;
@@ -1176,12 +1178,6 @@ input#CannedSearch {
   margin-bottom: .5rem;
   font-size: 1rem;
 }
-
-.previous input[type="button"]:disabled,
-.NextSection input[type="button"]:disabled {
-  background-color: transparent;
-  /*border: 0*/
-}
 .ReferenceNotified input[type="submit"]:disabled {
   cursor: not-allowed;
 }
@@ -1193,7 +1189,9 @@ div .Button {
 }
 
 /* TEMPORARILY HIDDEN FOR ALL FORMS UNTIL BUGS RESOLVED */
-.ShowAllSectionsAtOnce {
+ /* delete after conversion is complete! */
+.ShowAllSectionsAtOnce,
+.show-all-sections-at-once {
   height: 35px;
   display:none !important;
 }
@@ -1493,13 +1491,14 @@ div.MyForms div.OtherBrands {
 body.IsNotLoggedIn ul.ErrorOnLoginPage {
   list-style-type:none;
 }
-
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div {
+/* delete after conversion is complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div,
+div.MenuOfSections li.section-with-missing-items-after-submit div {
   color: #CD0000;
 }
  /* delete after conversion complete! */
 div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after,
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.section-name:after {
+div.MenuOfSections li.section-with-missing-items-after-submit div.section-name:after {
   content: " * INCOMPLETE";
   font-size: 0.9em;
   font-weight: bold;
