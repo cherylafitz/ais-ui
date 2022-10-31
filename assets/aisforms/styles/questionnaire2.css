@@ -1,17 +1,22 @@
 /* QUESTIONNAIRE --> */
 
 /* overrides --> */
-
-div.Content div.QuestionText {
+/* delete after conversion is complete! */
+div.Content div.QuestionText,
+div.Content div.question-text {
   margin-left: 0;
 }
-
-div.Content div.QuestionAnswer {
+/* delete after conversion is complete! */
+div.Content div.QuestionAnswer,
+div.Content div.question-answer {
   margin-left: 0;
   margin-top: .5em;
 }
+/* delete after conversion is complete! */
 div.Content div.required:not(.Group) div.QuestionText .Title::after, 
-div.Content table.required:not(.Group) div.QuestionText .Title::after {
+div.Content table.required:not(.Group) div.QuestionText .Title::after,
+div.Content div.required:not(.Group) div.question-text .Title::after, 
+div.Content table.required:not(.Group) div.question-text .Title::after  {
   content: '';
 }
 /* <-- overrides */

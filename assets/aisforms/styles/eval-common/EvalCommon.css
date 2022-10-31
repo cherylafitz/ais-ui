@@ -86,8 +86,9 @@ div.Content div.MailAddrZIP {
 }
 
 /* Typography */
-
-.Content .SectionDisplay .LongTextNoEditing {
+/* delete after conversion is complete! */
+.Content .SectionDisplay .LongTextNoEditing,
+.Content .section-display .LongTextNoEditing {
   text-align: justify;
   padding: .5rem .75rem;
   background: rgba(255, 255, 255, .8);
@@ -145,9 +146,11 @@ div.Content .fromApplicant div.GroupedItem,
 .subQuestion {
   margin-left: 0;
 }
-
+/* delete after conversion is complete! */
 div.Content .fromApplicant div.QuestionNumber,
-div.Content .fromRecommender div.QuestionNumber  {
+div.Content .fromRecommender div.QuestionNumber,
+div.Content .fromApplicant div.question-number,
+div.Content .fromRecommender div.question-number   {
   float:left;
   font-weight: bold;
   padding-right: .5rem;
@@ -173,10 +176,6 @@ div.Content div.BeforeQuestion.fromApplicant {
 }
 
 /* ISSUES --> */
-div.Content .fromRecommender .fromRecommender div.QuestionText,
-div.Content .fromRecommender .fromRecommender div.QuestionAnswer {
-  /*margin-left: 1.7em;*/
-}
 div.Content .fromApplicant div.Title,
 div.Content .fromRecommender div.Title {
   color: #333333;
@@ -192,13 +191,19 @@ div.Content .fromRecommender div.NumberOfWords {
 
 
 /* New Additions */
+/* delete after conversion is complete! */
 div.fromApplicant div.QuestionText div.Title,
 div.fromRecommender div.QuestionText div.Title,
 div.Content .fromApplicant div.QuestionText,
-div.Content div.BeforeQuestion.fromApplicant {
+div.Content div.BeforeQuestion.fromApplicant,
+div.fromApplicant div.question-text div.Title,
+div.fromRecommender div.question-text div.Title,
+div.Content .fromApplicant div.question-text {
   font-weight: bold;
 }
-div.Content .fromApplicant div.QuestionText .Instruction {
+/* delete after conversion is complete! */
+div.Content .fromApplicant div.QuestionText .Instruction,
+div.Content .fromApplicant div.question-text .Instruction  {
   font-weight: normal;
 }
 
@@ -245,15 +250,15 @@ div.Content .fromRecommender .RecOverallComments {
   margin-bottom: 2.5rem;
   border-bottom: 3px solid #cecece;
 }
+/* delete after conversion is complete! */
 div.Content div.Divider,
 div#ApplicationTemplateDisplayAUC div.SectionDisplay h1,
-.Content div.SectionDisplay h2 {
+.Content div.SectionDisplay h2,
+div#ApplicationTemplateDisplayAUC div.section-display h1,
+.Content div.section-display h2 {
   margin: 0;
   padding-top: 1rem;
   padding-bottom: .5rem;
-}
-.Content .SectionDisplay h1 {
-  font-size:
 }
 select:disabled,
 td input[type="radio"]:disabled,
@@ -273,12 +278,17 @@ div.Content table.AnswerTable tr td:first-child {
 }
 
 /* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
+/* delete after conversion is complete! */
 div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
 div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
 div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
 div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
 table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
-table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after {
+table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after,
+div.Content div.fromApplicant.required:not(.Group) div.question-text .Title:after,
+div.Content div.fromRecommender.required:not(.Group) div.question-text .Title:after,
+div.Content table.fromApplicant.required:not(.Group) div.question-text .Title:after,
+div.Content table.fromRecommender.required:not(.Group) div.question-text .Title:after, {
   content: none;
 }
 
@@ -334,20 +344,31 @@ div.QuestionItem.fromEvaluator {
 .fromEvaluator .Instruction {
   margin-top: .5rem;
 }
+/* delete after conversion is complete! */
 div.fromApplicant div.QuestionText div.Title,
-div.fromRecommender div.QuestionText div.Title {
+div.fromRecommender div.QuestionText div.Title,
+div.fromApplicant div.question-text div.Title,
+div.fromRecommender div.question-text div.Title  {
   margin-bottom:0.5em;
 }
-
+/* delete after conversion is complete! */
 div.Content div.fromApplicant div.QuestionNumber,
-div.Content div.fromRecommender div.QuestionNumber {
+div.Content div.fromRecommender div.QuestionNumber,
+div.Content div.fromApplicant div.question-number,
+div.Content div.fromRecommender div.question-number {
   display: none;
 }
+/* delete after conversion is complete! */
 div.Content .fromApplicant div.QuestionText,
 div.Content div.subConditional div.QuestionText,
 div.Content .fromApplicant div.QuestionAnswer,
 div.Content .fromRecommender div.QuestionText,
-div.Content .fromRecommender div.QuestionAnswer {
+div.Content .fromRecommender div.QuestionAnswer,
+div.Content .fromApplicant div.question-text,
+div.Content div.subConditional div.question-text,
+div.Content .fromApplicant div.question-answer,
+div.Content .fromRecommender div.question-text,
+div.Content .fromRecommender div.question-answer {
   margin-left: 0;
 }
 .TextQuestion {

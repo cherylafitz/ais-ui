@@ -1,6 +1,6 @@
 /* SECTIONS --> */
 
-[class*="-section"] {
+[class*="-section"]:not(.menu-of-sections) {
   margin: 1rem 0;
 }
 [class*="-section-"] {

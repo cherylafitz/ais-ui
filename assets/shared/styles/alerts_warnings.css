@@ -43,7 +43,9 @@ div.AvailableForms div,
 .DeveloperCaution,
 div.OtherBrands
 div.HasFormsInOtherBrandsWarning,
+/* delete after conversion is complete! */
 .ValidationError,
+.validation-error,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
 .NoExtendedDeadlines  {

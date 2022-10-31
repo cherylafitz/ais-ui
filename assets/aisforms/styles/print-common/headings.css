@@ -22,4 +22,28 @@
   font-size: 1.125em;
 }
 
+/* delete after conversion is complete! ^^^^^ */
+.Content .section-display h1,
+.Content .section-display h2,
+.Content .section-display h3,
+.Content .section-display h4 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  clear: both;
+  font-variant: normal;
+  text-align: left;
+  color: #025689;
+}
+.Content .section-display h2 {
+  font-size: 1.375em;
+}
+.Content .section-display h3 {
+  font-size: 1.25em;
+}
+.Content .section-display h4 {
+  font-size: 1.125em;
+}
+
 /* <-- HEADINGS */

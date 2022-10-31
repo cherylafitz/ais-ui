@@ -117,7 +117,9 @@ div.AvailableForms div,
 .DeveloperCaution,
 div.OtherBrands
 div.HasFormsInOtherBrandsWarning,
+/* delete after conversion is complete! */
 .ValidationError,
+.validation-error,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
 .NoExtendedDeadlines  {
@@ -331,27 +333,27 @@ table.row-display a:active {
 .bg-blue03 a {
   color: #c4dcee;
 }
-.controls-wrapper {
+[class*="controls-wrapper"] {
   margin-top: .5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-.controls-wrapper:not(:last-child) {
+[class*="controls-wrapper"]:not(:last-child) {
   margin-bottom: .5rem;
 }
-.form-section-content ~ .controls-wrapper {
+.form-section-content ~ [class*="controls-wrapper"] {
   margin-top: 1rem;
 }
-.controls-wrapper > :not(:last-child),
+[class*="controls-wrapper"] > :not(:last-child),
 .page-commands [class*="-link"]:not(:last-child),
 .page-commands [class*="-button"]:not(:last-child)  {
   margin-right: .75rem;
 }
 /* remove override of input[type="submit"] after css migration */
-.controls-wrapper input[type="submit"][class*="-link"],
-.controls-wrapper input[type="submit"][class*="-button"],
-.controls-wrapper input[type="button"][class*="-button"],
+[class*="controls-wrapper"] input[type="submit"][class*="-link"],
+[class*="controls-wrapper"] input[type="submit"][class*="-button"],
+[class*="controls-wrapper"] input[type="button"][class*="-button"],
 .page-commands input[type="submit"][class*="-link"],
 .page-commands input[type="submit"][class*="-button"] {
 	padding: .4rem .75rem;
@@ -392,10 +394,15 @@ table.row-display a:active {
   margin: 1.5rem 0;
 }
 /* AIR app save button */
+/* delete after conversion is complete! */
 #ApplicationTemplateDisplayAUC input.SaveChanges {
   float: left;
   margin-right: 3rem;
 }
+#ApplicationTemplateDisplayAUC input.save-button {
+  margin-right: 3rem;
+}
+
 input[type="submit"]:hover,
 input[type="button"]:hover,
 .controls-wrapper input[class*="-button"]:hover,
@@ -438,7 +445,7 @@ button.selected {
 .form-input input[type="button"] {
   padding: .125rem .75rem;
 }
-.controls-wrapper a[class*="-button"] {
+[class*="controls-wrapper"] a[class*="-button"] {
   text-decoration: none;
 }
 input[type="submit"][value="Clear Filters"] {
@@ -1434,8 +1441,11 @@ h4{
   margin-bottom: .375rem;
 }
 .mixed-languages .deadlineBox [lang],
+/* delete after conversion is complete! */
 div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1[lang], /*forms only*/
 div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*forms only*/
+div#ApplicationTemplateDisplayAUC .section-display.mixed-languages h1[lang], /*forms only*/
+div#ApplicationTemplateDisplayAUC .section-display.mixed-languages h1 [lang], /*forms only*/
 .mixed-languages [lang] h1, 
 .mixed-languages [lang] h2,
 .mixed-languages [lang] h3,
@@ -1587,7 +1597,7 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay.mixed-languages h1 [lang], /*f
 
 /* SECTIONS --> */
 
-[class*="-section"] {
+[class*="-section"]:not(.menu-of-sections) {
   margin: 1rem 0;
 }
 [class*="-section-"] {
@@ -3692,6 +3702,7 @@ div.CheckboxMatrix tr td {
 .TechHint:hover {
   color: #444444;
 }
+
 div.NoPermissions,
 div.NoObjects,
 div.NoRoles,
@@ -3699,7 +3710,9 @@ div.NoSections,
 div.NoSiteContentItems,
 div.NoUsers,
 .DeveloperCaution,
+/* delete after conversion is complete! */
 .ValidationError,
+.validation-error,
 .DoNotUseBrowserBackButton,
 .NoItems  {
   color: #C75D48;
@@ -3994,7 +4007,9 @@ div.HealthQuestionnaireEditor table.HealthQuestions tr.Note td {
     font-weight: bold;
     font-size: .875rem;
 }
-div.HealthDataForm table.HealthQuestions td.QuestionNumber {
+/* delete after conversion is complete! */
+div.HealthDataForm table.HealthQuestions td.QuestionNumber,
+div.HealthDataForm table.HealthQuestions td.question-number {
   width: 4rem;
 }
 .HealthQuestionStamp {
@@ -4899,15 +4914,19 @@ div.FormTrackerReport table tr td.isActive.isNotOverdue {
   border: none;
   border-bottom: 1px solid #B4B4B4;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS .Question,
 .AIRAppSummaryDisplayInAIS .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .question-number,
 .AIRAppSummaryDisplayInAIS .RowNumber {
   background: #e0e6eb;
   border: none;
   border-bottom: 1px solid #B4B4B4;
   padding: .25rem .5rem;
 }
-.AIRAppSummaryDisplayInAIS .QuestionNumber {
+/* delete after conversion is complete! */
+.AIRAppSummaryDisplayInAIS .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .question-number {
   background-color: #cbd2d6;
 }
 .AIRAppSummaryDisplayInAIS th,
@@ -4923,7 +4942,9 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
     right: 5px;
     top: -1rem;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS .HasFlaggedValue .QuestionNumber,
+.AIRAppSummaryDisplayInAIS .HasFlaggedValue .question-number,
 .AIRAppSummaryDisplayInAIS .HasFlaggedValue .Value {
   background-color: #ffb699;
   border-bottom: 1px solid #ffb699;
@@ -6199,11 +6220,13 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 .AISDataEntryForm .FormHeaderImage {
   margin-right: 1rem;
 }
-.AISDataEntryForm .SectionTitle {
+.AISDataEntryForm .SectionTitle,
+.AISDataEntryForm .section-title {
   font-size: 1.25rem;
   margin: 1rem 0 .5rem;
 }
-.AISDataEntryForm .SectionTitle .sectionHeadLine2 {
+.AISDataEntryForm .SectionTitle .sectionHeadLine2,
+.AISDataEntryForm .section-title .sectionHeadLine2 {
   font-size: 1rem;
 }
 .AISDataEntryForm .dynamic {
@@ -7424,7 +7447,9 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.RowDisplay.Rec
   padding-right: 1rem;
   border: none;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.QuestionNumber,
+.AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.question-number,
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.RowNumber,
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Question,
 .AIRAppSummaryDisplayInAIS table.RowDisplay tr.headerRow th.Value {
@@ -7684,7 +7709,9 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.row-display.Re
   padding-right: 1rem;
   border: none;
 }
+/* delete after conversion is complete! */
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.QuestionNumber,
+.AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.question-number,
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.RowNumber,
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.Question,
 .AIRAppSummaryDisplayInAIS table.row-display tr.headerRow th.Value {

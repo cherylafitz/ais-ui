@@ -1,14 +1,20 @@
 /* TABLES --> */
-
+ /* delete after conversion is complete! */
 .QuestionAnswer .RowDisplay td,
-.QuestionAnswer .RowDisplay th {
+.QuestionAnswer .RowDisplay th,
+.question-answer .RowDisplay td,
+.question-answer .RowDisplay th  {
   border: 0;
 }
-.QuestionAnswer .RowDisplay td {
+ /* delete after conversion is complete! */
+.QuestionAnswer .RowDisplay td,
+.question-answer .RowDisplay td {
   padding-top: .25em;
   text-decoration: underline;
 }
-.QuestionAnswer .RowDisplay {
+ /* delete after conversion is complete! */
+.QuestionAnswer .RowDisplay,
+.question-answer .RowDisplay {
   margin-left: .75em;
 }
 table.RowDisplay {
@@ -21,16 +27,22 @@ table.RowDisplay {
 }
 
 /* NEW TABLES --> */
-
+ /* delete after conversion is complete! */
 .QuestionAnswer .row-display td,
-.QuestionAnswer .row-display th {
+.QuestionAnswer .row-display th,
+.question-answer .row-display td,
+.question-answer .row-display th {
   border: 0;
 }
-.QuestionAnswer .row-display td {
+ /* delete after conversion is complete! */
+.QuestionAnswer .row-display td,
+.question-answer .row-display td {
   padding-top: .25em;
   text-decoration: underline;
 }
-.QuestionAnswer .row-display {
+ /* delete after conversion is complete! */
+.QuestionAnswer .row-display,
+.question-answer .row-display {
   margin-left: .75em;
 }
 table.row-display {

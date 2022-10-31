@@ -123,7 +123,9 @@ div.SecureDocumentEditorRowDisplay h1 {
 }
 /* <--To Overwrite Amagavi CSS */
 /* LIST OF SECTIONS--> */
-.SectionDisplay {
+/* delete after conversion is complete! */
+.SectionDisplay,
+.section-display {
   padding: 0;
   margin: 0;
   border: 0;
@@ -132,7 +134,9 @@ div.SecureDocumentEditorRowDisplay h1 {
   height: 100%;
   position: relative;
 }
-.SectionItemsList {
+/* delete after conversion is complete! */
+.SectionItemsList,
+.section-items-list {
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #94a4b3;
@@ -237,8 +241,11 @@ div.BrandEditor h1,
 div.BrandRowDisplay h1 {
   margin-top: .5rem;
 }
-.Content .SectionDisplay h1 {
+/* delete after conversion is complete! */
+.Content .SectionDisplay h1,
+.Content .section-display h1 {
   text-align: left;
+  margin: .5em 0;
 }
 
 a.LinkToPreviousPage {
@@ -1023,10 +1030,6 @@ div#ApplicationTemplateDisplayAUC h1.editing:not(.form-view-header) {
 .ApplicationTemplateDisplay form[name="sectionNavigationForm"] {
   margin-top: 1rem;
 }
-
-.SectionDisplay h1 {
-  margin: .5em 0;
-}
 h1.form-view-header .TemplateName {
   font-weight: bold;
 }
@@ -1043,7 +1046,9 @@ h1.form-view-header .ProgramName {
 }
 /* <--TEMPLATES */
 /* TEMPLATE EDITOR--> */
-.SectionItemCustomization .QuestionText textarea {
+/* delete after conversion is complete! */
+.SectionItemCustomization .QuestionText textarea,
+.SectionItemCustomization .question-text textarea {
   max-width: 350px;
 }
 .QuestionCustomizer  input[type="submit"], 
@@ -1173,12 +1178,6 @@ input#CannedSearch {
   margin-bottom: .5rem;
   font-size: 1rem;
 }
-
-.previous input[type="button"]:disabled,
-.NextSection input[type="button"]:disabled {
-  background-color: transparent;
-  /*border: 0*/
-}
 .ReferenceNotified input[type="submit"]:disabled {
   cursor: not-allowed;
 }
@@ -1190,7 +1189,9 @@ div .Button {
 }
 
 /* TEMPORARILY HIDDEN FOR ALL FORMS UNTIL BUGS RESOLVED */
-.ShowAllSectionsAtOnce {
+ /* delete after conversion is complete! */
+.ShowAllSectionsAtOnce,
+.show-all-sections-at-once {
   height: 35px;
   display:none !important;
 }
@@ -1457,7 +1458,9 @@ div.AvailableForms div,
 .DeveloperCaution,
 div.OtherBrands
 div.HasFormsInOtherBrandsWarning,
+/* delete after conversion is complete! */
 .ValidationError,
+.validation-error,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms  {
   font-style: normal;
@@ -1488,11 +1491,14 @@ div.MyForms div.OtherBrands {
 body.IsNotLoggedIn ul.ErrorOnLoginPage {
   list-style-type:none;
 }
-
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div {
+/* delete after conversion is complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div,
+div.MenuOfSections li.section-with-missing-items-after-submit div {
   color: #CD0000;
 }
-div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after {
+ /* delete after conversion complete! */
+div.MenuOfSections li.SectionWithMissingItemsAfterSubmit div.sectionName:after,
+div.MenuOfSections li.section-with-missing-items-after-submit div.section-name:after {
   content: " * INCOMPLETE";
   font-size: 0.9em;
   font-weight: bold;
@@ -1623,7 +1629,9 @@ body#body--environment-staging:after {
   a.LinkToPreviousPage {
     float: none;
   }
-  div.SectionDisplay {
+  /* delete after conversion is complete! */
+  div.SectionDisplay,
+  .section-display {
     padding: 1em;
   }
   input[value="Show All Sections at Once"], input[value="Show Each Section Individually"] {
@@ -1649,7 +1657,9 @@ body#body--environment-staging:after {
   .MenuOfSections select, div.Content .MenuOfSections input  {
     font-size: .8em;
   }
-  div.SectionNavigator .MenuOfSections .label {
+  /* delete after conversion complete! */
+  div.SectionNavigator .MenuOfSections .label,
+  div.section-navigator .MenuOfSections .label {
     display: none;
   }
   div#AClogoFooter img, div#footer {
@@ -1711,7 +1721,9 @@ body#body--environment-staging:after {
   .MenuOfSections select {
     font-size: .8em;
   }
-  div.SectionNavigator .MenuOfSections .label {
+  /* delete after conversion complete! */
+  div.SectionNavigator .MenuOfSections .label,
+  div.section-navigator .MenuOfSections .label {
     font-size: .9em;
   }
   div.Content .MenuOfSections input {

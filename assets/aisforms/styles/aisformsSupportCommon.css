@@ -27,7 +27,9 @@ div.alertBox {
   margin: 1em 0;
   clear: right;
 }
-.SectionDisplay {
+/* delete after conversion is complete! */
+.SectionDisplay,
+.section-display {
  margin: 0 auto;
  padding: 1em 2em 2em;
 }
@@ -45,8 +47,11 @@ div.alertBox {
  background-color: #F6FDFF;
  border: 1px solid #cecece;
 }
+/* delete after conversion is complete! */
 .SectionDisplay h1,
-.SectionDisplay h2 {
+.SectionDisplay h2,
+.section-display h1,
+.section-display h2 {
 text-align: left;
 }
 .Content h2 a {

@@ -47,10 +47,15 @@
 
 
 /* forms --> */
+ /* delete after conversion is complete! */
 .QuestionAnswer .social-media input[type="text"],
 .QuestionAnswer .social-media select,
 .QuestionAnswer .UpSupplemenItemsDescripti input[type="text"],
-.QuestionAnswer .EmployerWebsite input[type="text"] {
+.QuestionAnswer .EmployerWebsite input[type="text"],
+.question-answer .social-media input[type="text"],
+.question-answer .social-media select,
+.question-answer .UpSupplemenItemsDescripti input[type="text"],
+.question-answer .EmployerWebsite input[type="text"] {
   width: 20rem;
   max-width: 100%;
 }
@@ -62,36 +67,45 @@ div.Content {
   color: #000000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-
+/* delete after conversion is complete! */
 div.SectionNavigator,
+div.section-navigator,
 div#menu3 ul {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-
-.SectionDisplay p {
+/* delete after conversion is complete! */
+.SectionDisplay p,
+.section-display p {
   margin-top: .6em
 }
 blockquote {
   font-style: italic;
 }
+/* delete after conversion is complete! */
+.section-display textarea,
 .SectionDisplay textarea {
   margin: .5em 0;
 }
+/* delete after conversion is complete! */
+.section-display td textarea,
 .SectionDisplay td textarea {
   margin: 0;
 }
 div.Content .noWrap {
   white-space:nowrap;
 }
+/* delete after conversion is complete! */
 div.QuestionText .QuestionInstructions,
+div.question-text .QuestionInstructions,
 .Instruction {
   color:#2E6B9B;
   font-style: italic;
   font-size: .875rem;
 }
-
+/* delete after conversion is complete! */
 div.QuestionItem div.Instruction ul,
-div.QuestionText div.Instruction ul {
+div.QuestionText div.Instruction ul,
+div.question-text div.Instruction ul {
   margin-top:0;
   margin-left:-1.5em;
 }
@@ -156,53 +170,72 @@ div.QuestionText div.Instruction ul {
   font-size: 1.5em;
   top: 1.5em;
 }
-
-body.IsLoggedIn .ValidationError {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError,
+body.IsLoggedIn .validation-error {
   margin: 0;
 }
 /* hides error-list and error-question whe error appears at the top of page */
-.sectionBodyBelowTopNavBar > .ValidationError .error {
+/* delete after conversion is complete! */
+.sectionBodyBelowTopNavBar > .ValidationError .error,
+.section-body-below-top-nav > .validation-error .error  {
   padding-bottom: 0;
 }
+/* delete after conversion is complete! */
 .sectionBodyBelowTopNavBar > .ValidationError .error-list,
-.sectionBodyBelowTopNavBar > .ValidationError .error-question {
+.sectionBodyBelowTopNavBar > .ValidationError .error-question,
+.section-body-below-top-nav > .validation-error .error-list,
+.section-body-below-top-nav > .validation-error .error-question  {
   display: none;
 }
-
-.ValidationError .header {
+/* delete after conversion is complete! */
+.ValidationError .header,
+.validation-error .header {
   font-weight: bold;
   margin-top: 1em;
   color: #000;
   margin-bottom: .5em;
 }
-
-body.IsLoggedIn .ValidationError .header:after {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError .header:after,
+body.IsLoggedIn .validation-error .header:after {
   content: ' You have either [1] not answered all required questions, or [2] attempted to submit your form after the deadline. If you have not answered all required questions, you will see section(s) marked "INCOMPLETE" in the navigation. If you attempted to submit your form after the deadline, you will see the past-deadline message below.';
   color: #C75D48;
 }
-body.IsLoggedIn .ValidationError .header ~ ul {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError .header ~ ul,
+body.IsLoggedIn .validation-error .header ~ ul {
   list-style-type: none;
 }
-body.IsLoggedIn .ValidationError ul {
+/* delete after conversion is complete! */
+body.IsLoggedIn .ValidationError ul,
+body.IsLoggedIn .validation-error ul {
   font-weight: normal;
 }
-body.IsLoggedIn .inlineError .ValidationError {
+/* delete after conversion is complete! */
+body.IsLoggedIn .inlineError .ValidationError,
+body.IsLoggedIn .inlineError .validation-error {
   display: inline-block;
 }
-body.IsLoggedIn .inlineError .ValidationError ul {
+/* delete after conversion is complete! */
+body.IsLoggedIn .inlineError .ValidationError ul,
+body.IsLoggedIn .inlineError .validation-error ul {
   display: inherit;
   padding: 0;
   margin: 0;
 }
-
+ /* delete after conversion is complete! */
 body.IsLoggedIn .ValidationError ul
-body.IsLoggedIn .QuestionAnswer .ValidationError  {
+body.IsLoggedIn .QuestionAnswer .ValidationError,
+body.IsLoggedIn .validation-error ul
+body.IsLoggedIn .question-answer .validation-error   {
   clear: both;
   margin: 0;
   color: #C91C00;
 }
-
-.QuestionAnswer .ValidationError ul {
+/* delete after conversion is complete! */
+.QuestionAnswer .ValidationError ul,
+.question-answer .validation-error ul {
   list-style-type: none;
 }
 
@@ -224,8 +257,10 @@ body.IsLoggedIn .QuestionAnswer .ValidationError  {
   padding: 0.3em;
   border: none;
 }
+ /* delete after conversion is complete! */
+body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError,
+body.IsLoggedIn .question-answer .inlineError  .validation-error {
 
-body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
   clear: none;
   color: #C91C00;
 }
@@ -250,21 +285,30 @@ body.IsLoggedIn .QuestionAnswer .inlineError  .ValidationError {
 
 
 /* Forms--> */
-.SectionDisplay td select {
+/* delete after conversion is complete! */
+.SectionDisplay td select,
+.section-display td select {
   width: 10em;
 }
-.SectionDisplay td .Program select {
+/* delete after conversion is complete! */
+.SectionDisplay td .Program select,
+.section-display td .Program select {
   width: initial;
 }
-.SectionDisplay td select[disabled="disabled"] {
+/* delete after conversion is complete! */
+.SectionDisplay td select[disabled="disabled"],
+.section-display td select[disabled="disabled"] {
   width: 100%;
   max-width: 100%;
 }
-.SectionDisplay textarea, select {
+/* delete after conversion is complete! */
+.SectionDisplay textarea, select,
+.section-display textarea, select {
   max-width: 100%;
 }
-
-.SectionDisplay {
+/* delete after conversion is complete! */
+.SectionDisplay,
+.section-display {
   min-width: 280px;
 }
 
@@ -281,25 +325,36 @@ div.itemDisplayOuterContainer {
 }
 
 /* Alignment/Spacing */
-
-.Content .QuestionNumber {
+ /* delete after conversion is complete! */
+.Content .QuestionNumber,
+.Content .question-number {
   float:left;
   margin-right: .5rem;
 }
+/* delete after conversion is complete! */
 .subQuestion,
 .Content .QuestionText,
-.Content .QuestionAnswer  {
+.Content .question-text,
+.Content .QuestionAnswer,
+.Content .question-answer {
   margin-left: 1.75rem;
 }
-.Content .QuestionAnswer {
+/* delete after conversion is complete! */
+.Content .QuestionAnswer,
+.Content .question-answer {
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
 }
+/* delete after conversion is complete! */
 .Content .subQuestion .QuestionText,
-.Content .subQuestion .QuestionAnswer {
+.Content .subQuestion .QuestionAnswer,
+.Content .subQuestion .question-text,
+.Content .subQuestion .question-answer {
   margin-left: 2.5rem;
 }
-.Content .QuestionAnswer a {
+/* delete after conversion is complete! */
+.Content .QuestionAnswer a,
+.Content .question-answer a {
   border: none;
   text-decoration: underline;
 }
@@ -406,7 +461,7 @@ div.Group {
 
 
 /* Hide QuestionAnswer divs for "Generic Text" QuestionItems (so that they can be used as question 'headers' for multi-part questions) */
-
+ /* delete after conversion is complete! */
 div.Content div.TextGen1 div.QuestionAnswer,
 div.Content div.TextGen2 div.QuestionAnswer,
 div.Content div.TextGen3 div.QuestionAnswer,
@@ -416,7 +471,17 @@ div.Content div.TextGen6 div.QuestionAnswer,
 div.Content div.TextGen7 div.QuestionAnswer,
 div.Content div.TextGen8 div.QuestionAnswer,
 div.Content div.TextGen9 div.QuestionAnswer,
-div.Content div.TextGeneric10 div.QuestionAnswer {
+div.Content div.TextGeneric10 div.QuestionAnswer,
+div.Content div.TextGen1 div.question-answer,
+div.Content div.TextGen2 div.question-answer,
+div.Content div.TextGen3 div.question-answer,
+div.Content div.TextGen4 div.question-answer,
+div.Content div.TextGen5 div.question-answer,
+div.Content div.TextGen6 div.question-answer,
+div.Content div.TextGen7 div.question-answer,
+div.Content div.TextGen8 div.question-answer,
+div.Content div.TextGen9 div.question-answer,
+div.Content div.TextGeneric10 div.question-answer {
   display:none;
 }
 
@@ -467,21 +532,28 @@ div.Content div.GroupedItem div.RadioButtonMatrix table{
 .subConditional {
   margin-left: 4em;
 }
-div.Content div.subConditional div.QuestionText {
+/* delete after conversion is complete! */
+div.Content div.subConditional div.QuestionText,
+div.Content div.subConditional div.question-text  {
   margin-left: 1.5em;
 }
-
-div.QuestionText p {
+/* delete after conversion is complete! */
+div.QuestionText p,
+div.question-text p  {
   display:inline;
 }
-
+/* delete after conversion is complete! */
 div.Content div.QuestionItem div.GroupedItem div.QuestionText .Title:before,
-div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before {
+div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before,
+div.Content div.QuestionItem div.GroupedItem div.question-text .Title:before,
+div.Content div.DisplayItemOnly div.GroupedItem div.question-text .Title:before  {
   content: '';
 }
-
+/* delete after conversion is complete! */
 div.Content div.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.required:not(.Group) div.QuestionText .Title:after {
+div.Content table.required:not(.Group) div.QuestionText .Title:after,
+div.Content div.required:not(.Group) div.question-text .Title:after,
+div.Content table.required:not(.Group) div.question-text .Title:after  {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
@@ -520,8 +592,9 @@ table.AnswerTable div.required div.itemDisplayOuterContainer:after {
   position:relative;
   top:0.1em;
 }
-
-div.QuestionText ol {
+/* delete after conversion is complete! */
+div.QuestionText ol,
+div.question-text ol {
   list-style-type: upper-alpha;
 }
 
@@ -542,17 +615,24 @@ div.Content div.SchoolZIP input[type='text'] {
 /* div.Content div.2digitInteger input[type='text'] {
   width: 2em;
 } */
-
-.SectionDisplay table div.caption input[type="text"] {
+/* delete after conversion is complete! */
+.SectionDisplay table div.caption input[type="text"],
+.section-display table div.caption input[type="text"] {
   width: 15em;
 }
-.SectionDisplay table .LargeInputTable input[type="text"] {
+/* delete after conversion is complete! */
+.SectionDisplay table .LargeInputTable input[type="text"],
+.section-display table .LargeInputTable input[type="text"] {
   width: 15rem;
 }
-.SectionDisplay table input[type="text"] {
+/* delete after conversion is complete! */
+.SectionDisplay table input[type="text"],
+.section-display table input[type="text"] {
   width: 8em;
 }
-.SectionDisplay table input[type="text"].IntegerQuestion {
+/* delete after conversion is complete! */
+.SectionDisplay table input[type="text"].IntegerQuestion,
+.section-display table input[type="text"].IntegerQuestion  {
   width: 6em;
 }
 
@@ -589,8 +669,9 @@ div.Content table .AjaxFlexibleFileUpload .Button span,
   background-color: transparent;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-
-.SectionDisplay li {
+/* delete after conversion is complete! */
+.SectionDisplay li,
+.section-display li {
   margin-bottom: 3px;
 }
 
@@ -671,9 +752,11 @@ ul.fourcolumn {
   float: left;
   margin: 0 0.5em 1em 0;
 }
-
+ /* delete after conversion is complete! */
 .RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer textarea,
-.RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer input {
+.RightToLeftLanguageInput div.QuestionAnswer div.itemDisplayOuterContainer input,
+.RightToLeftLanguageInput div.question-answer div.itemDisplayOuterContainer textarea,
+.RightToLeftLanguageInput div.question-answer div.itemDisplayOuterContainer input {
   direction:rtl;
 }
 
@@ -751,14 +834,6 @@ div.templateContent  img.ProgramLogo600w {
   display: block;
 }
 
-/* 2 Aug - Float New Name fields added to AIR */
-.SectionDisplay div.PartnerOrgFirstName,
-.SectionDisplay div.PartnerOrgMiddleName,
-.SectionDisplay div.PartnerOrgLastName {
-  float: left;
-  clear: none;
-}
-
 /* 6 Aug - Override air.css for "disabled" conditional questions */
 div.QuestionItem.DisabledBecauseOfSkipPattern {
   display: block;
@@ -792,7 +867,9 @@ table.ExcelDataTabulated td {
   background-color: #ffe0b3;
 }
 @media only screen and (min-width: 20em) {
-  .inlineError .ValidationError {
+  /* delete after conversion is complete! */
+  .inlineError .ValidationError,
+  .inlineError .validation-error {
     max-width: calc(100% - 120px);
   }
 }
@@ -820,7 +897,28 @@ table.ExcelDataTabulated td {
   width: 15rem;
   max-width: 100%;
 }
+/* delete after conversion is complete! ^^^^^^^^^*/
+.section-display .ItemAddress th {
+  text-align: left;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  border-color: #fff;
+}
+.section-display .ItemAddress tr:first-of-type th {
+  border-top-color: #2E6B9B;
+}
+.section-display .ItemAddress tr:last-of-type th {
+  border-bottom-color: #2E6B9B;
+}
+.section-display .ItemAddress .RowDisplay td {
+  border-color: #c5dced;
+}
 
+.Content .section-display .ItemAddress table tr td input[type="text"],
+.section-display .ItemAddress td select {
+  width: 15rem;
+  max-width: 100%;
+}
 /* <-- ADDRESS TABLE */
 
 /* HEADINGS --> */
@@ -853,7 +951,10 @@ div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
 }
 
 /* Section Name and Headers--> */
+
+/* delete after conversion is complete! */
 .SectionDisplay div.SectionName,
+.SectionDisplay div.section-name,
 #ApplicationTemplateDisplayAUC .SectionDisplay h1.section-name,
 .SectionDisplay h1.section-name {
   font-size: 2.125rem;
@@ -889,6 +990,76 @@ h1.section-name {
   font-size: 1rem;
   font-style: italic;
 }
+
+/* delete after conversion is complete! ^^^^^^*/
+.section-display h1,
+.section-display h2,
+.section-display h3,
+.section-display h4,
+.section-display h5,
+.section-display h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+div.Content div.Divider,
+div#ApplicationTemplateDisplayAUC .section-display h1,
+.section-display h1,
+.section-display h2,
+.section-display h3,
+.section-display h4,
+.section-display h5,
+.section-display h6 {
+  font-size: 1.5rem;
+  color: #025689;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  clear: both;
+  font-variant: normal;
+  text-align: left;
+}
+
+/* Section Name and Headers--> */
+
+/* delete after conversion is complete! */
+.section-display div.SectionName,
+.section-display div.section-name,
+#ApplicationTemplateDisplayAUC .section-display h1.section-name,
+.section-display h1.section-name {
+  font-size: 2.125rem;
+  border-bottom: 2px solid #2E6B9B;
+  margin-bottom: 1rem;
+  padding-bottom: 0.125rem;
+  font-weight: normal;
+  margin-top: 0;
+  background: #2e6b9b;
+  color: #fff;
+  padding-left: 0.75rem;
+}
+h1.section-name {
+  padding-right: .75rem;
+}
+.section-display h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid #357bb1;
+  padding-bottom: 0.25rem;
+  margin-bottom: .625rem;
+}
+.section-display h3 {
+  font-size: 1.625rem;
+}
+.section-display h4 {
+  font-size: 1.25rem;
+}
+.section-display h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.section-display h6 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
 /* <-- HEADINGS */
 
 /* One off styles -->  */
@@ -988,9 +1159,12 @@ td ul, td ol {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
+ /* delete after conversion is complete! */
 .SectionDisplay .AnswerTable tr.headerRow th,
 .SectionDisplay .QuestionAnswer table.RowDisplay tr.headerRow th,
-.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th {
+.SectionDisplay .QuestionAnswer table.RowDisplay thead tr th,
+.SectionDisplay .question-answer table.RowDisplay tr.headerRow th,
+.SectionDisplay .question-answer table.RowDisplay thead tr th {
   font-style:normal;
   font-weight: normal;
   background-color: #2E6B9B;
@@ -1027,9 +1201,12 @@ td ul, td ol {
   border-top-color: #fff;
   border-bottom-color: #fff;
 }
+ /* delete after conversion is complete! */
 .SectionDisplay .AnswerTable tr.headerRow th,
 .SectionDisplay .QuestionAnswer table.row-display tr.headerRow th,
-.SectionDisplay .QuestionAnswer table.row-display thead tr th {
+.SectionDisplay .QuestionAnswer table.row-display thead tr th,
+.SectionDisplay .question-answer table.row-display tr.headerRow th,
+.SectionDisplay .question-answer table.row-display thead tr th {
   background-color: #2E6B9B;
   color: #FFFFFF;
   border-color: #fff;
@@ -1215,6 +1392,277 @@ div.BeforeQuestion table.TBorderNone tr td {
   width: initial;
 }
 
+
+/* delete after conversion is complete ^^^^^ */
+/* TABLES --> */
+.section-display th {
+  white-space: normal;
+}
+table {
+  border-collapse: collapse;
+}
+td ul, td ol {
+  padding-right: .5rem;
+}
+.section-display td p {
+  margin: 0.6rem;
+}
+/* legacy RowDisplay-->  */
+.Content .AnswerTable tr.odd,
+.section-display table.RowDisplay tr:nth-child(2n+1),
+.section-display table.RowDisplay tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
+}
+.Content .AnswerTable tr.even,
+.section-display table.RowDisplay tr:nth-child(2n+2),
+.section-display table.RowDisplay tbody tr:nth-child(2n+2)  {
+  background-color: #c4dced;
+}
+.section-display table.RowDisplay td  {
+  border: 1px solid #fff;
+  vertical-align: top;
+  padding: .125rem .25rem;
+}
+.section-display table.RowDisplay tr.headerRow,
+.section-display table.RowDisplay thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+ /* delete after conversion is complete! */
+.section-display .AnswerTable tr.headerRow th,
+.section-display .QuestionAnswer table.RowDisplay tr.headerRow th,
+.section-display .QuestionAnswer table.RowDisplay thead tr th,
+.section-display .question-answer table.RowDisplay tr.headerRow th,
+.section-display .question-answer table.RowDisplay thead tr th {
+  font-style:normal;
+  font-weight: normal;
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  border-color: #fff;
+}
+.section-display .ReferenceNotified form table.RowDisplay,
+.section-display .ReferenceNotified table.RowDisplay {
+  margin: 1em;
+}
+/* <-- legacy RowDisplay */
+
+/* NEW TABLES --> */
+/* new row-display --> */
+.Content .AnswerTable tr.odd,
+.section-display table.row-display tr:nth-child(2n+1),
+.section-display table.row-display tbody tr:nth-child(2n+1) {
+  background-color: #ebf3f9;
+}
+.Content .AnswerTable tr.even,
+.section-display table.row-display tr:nth-child(2n+2),
+.section-display table.row-display tbody tr:nth-child(2n+2)  {
+  background-color: #c4dced;
+}
+.section-display .AnswerTable td,
+.section-display table th,
+.section-display table.row-display td  {
+  border: 1px solid #fff;
+  vertical-align: top;
+  padding: .125rem .25rem;
+}
+.section-display table.row-display tr.headerRow,
+.section-display table.row-display thead tr {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+ /* delete after conversion is complete! */
+.section-display .AnswerTable tr.headerRow th,
+.section-display .QuestionAnswer table.row-display tr.headerRow th,
+.section-display .QuestionAnswer table.row-display thead tr th,
+.section-display .question-answer table.row-display tr.headerRow th,
+.section-display .question-answer table.row-display thead tr th {
+  background-color: #2E6B9B;
+  color: #FFFFFF;
+  border-color: #fff;
+}
+.section-display .ReferenceNotified form table.row-display,
+.section-display .ReferenceNotified table.row-display {
+  margin: 1em;
+}
+/* <-- new row-display */
+
+/* Tables -->*/
+div.ChoiceQuestion table,
+.Content div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
+  background-color: transparent;
+}
+table.TemplateTable,
+.section-display .SectionIntroductionText table,
+.section-display .BeforeQuestion table {
+  margin: 1em 1em 1em 0;
+}
+table.TemplateTable td.sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+table.TemplateTable td ul {
+   list-style-type:circle;
+   padding-left:1.1em;
+}
+table.Attachments {
+  margin-left:0 !important;
+}
+.Content td,
+.Content th {
+  vertical-align: top;
+}
+.Content div.MenuOfSections td {
+  vertical-align: bottom;
+}
+.Content table.QuestionItem,
+.Content table.QuestionItem tr.QuestionItemRow,
+.Content table.QuestionItem tr.QuestionItemRow td {
+  border: 0;
+}
+.Content table.InfoBox {
+  background-color: #E1F0FF;
+}
+.Content table.ContrastBox {
+  background-color: #2E6B9B;
+}
+.section-display table th {
+  background-color: #444;
+  font-size: .875rem;
+  font-weight: bold;
+}
+.section-display table th,
+.Content .AnswerTable tr.headerRow th,
+.Content .AnswerTable thead tr th {
+  color: #FFFFFF;
+  padding: 0.25rem;
+}
+.section-display .AnswerTable {
+  font-size: .875rem;
+}
+.section-display .ERXMatrixTable {
+  margin: 0 1rem 0 .25rem;
+}
+.section-display .ERXMatrixTable td {
+  padding: 0;
+}
+.section-display .ERXMatrixTable td.ERXMatrixTableCell {
+  padding-left: 4px; /* TEMP */
+}
+.section-display table.ERXMatrixTable tr td,
+.section-display  .AnswerTable div.RadioButtonMatrix tr td,
+.section-display  .AnswerTable div.CheckboxMatrix tr td  {
+  border: none;
+}
+
+.section-display table td.DL,
+.section-display table td.Document {
+  background-color: #99ccff;
+  vertical-align: top;
+  text-align: center;
+  border: thin solid #777;
+  padding: 0.3em;
+}
+.section-display table td.Detail,
+.section-display table td.Instructions,
+.section-display table td.Link {
+  vertical-align: top;
+  padding: 0.3em;
+  border: 1px solid #777;
+}
+.AnswerTable {
+  margin: .5rem 0;
+}
+.AnswerTable textarea {
+  width: 100%;
+}
+.AnswerTable th {
+  max-width: 11rem;
+  white-space: normal;
+}
+.Content .AnswerTable tr td div{
+  margin-top:5px;
+  margin-bottom:5px;
+}
+table.TemplateTable {
+  margin: 1em 1em 1em 0;
+}
+table.TemplateTable td.sideTH {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+table.TemplateTable td ul {
+  list-style-type:circle;
+  padding-left: 1.25rem;
+}
+table.TemplateTable tr td,
+table.TemplateTable tr th {
+  border: 1px solid #999;
+  padding: .25rem .5rem;
+}
+table.TemplateTable tr th {
+  background-color: #3a3d40;
+  color: #FFFFFF;
+  font-size: 1em;
+  text-align: center;
+  border-color: #222;
+}
+table.TemplateTable tr td {
+  font-size: 0.875rem;
+  text-align: left;
+}
+div.SectionIntroductionText table tr td,
+div.BeforeQuestion table tr td,
+table.TemplateTable tr td,
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th,
+table.TemplateTable tr th {
+  border: 1px solid #cecece;
+  padding: .25rem .5rem;
+}
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th,
+table.TemplateTable tr th {
+  border-color: #222;
+}
+div.SectionIntroductionText table tr td,
+div.BeforeQuestion table tr td,
+table.TemplateTable tr td {
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.section-display table.TemplateTable tr th {
+  vertical-align: middle;
+}
+.section-display table.TemplateTable tr th {
+  font-weight: normal;
+}
+
+div.SectionIntroductionText table tr th,
+div.BeforeQuestion table tr th {
+  font-weight: bold;
+  font-style: normal;
+}
+
+div.SectionIntroductionText table.TBorderNone tr td,
+div.BeforeQuestion table.TBorderNone tr td {
+  border: none;
+}
+
+/* one-off's --> */
+
+.section-display td .ProgramPrefChoice select {
+  width: initial;
+}
+
+/* <--  one-off's */
+/* overrides set width for selects in tables */
+.AnswerTable .wide select {
+  width: initial;
+}
+
+/* <-- TABLES 
+
 /* <-- TABLES 
 
 /* Form questions to appear horizontally instead of vertically */
@@ -1373,6 +1821,163 @@ div.BeforeQuestion table.TBorderNone tr td {
 .Content .BeforeQuestion {
   clear: both;
 }
+
+/* delete after conversion is complete! ^^^^^^^^^^^ */
+.section-display .AdministratorFirstName,
+.section-display .AdministratorHonorific,
+.section-display .AdministratorLastName,
+.section-display .AdministratorNameSuffix,
+.section-display .AdvisorFirstName,
+.section-display .AdvisorLastName,
+.section-display .AlternatePhoneType,
+.section-display .BankAccountOwnerFirstName,
+.section-display .BankAccountOwnerMiddleName,
+.section-display .BankAccountOwnerLastName,
+.section-display .CommunityLiaisonFirstName,
+.section-display .CommunityLiaisonHonorific,
+.section-display .CommunityLiaisonLastName,
+.section-display .CommunityLiaisonNameSuffix,
+.section-display .CongressionaVotingDistNum,
+.section-display .CongressioVotingDistState,
+.section-display .CurrentMobileTelephone,
+.section-display .CurrentMobileTelephoneCountryCode,
+.section-display .EmergCont1stName,
+.section-display .EmergContLastName,
+.section-display .EmergencyContact2FirstName,
+.section-display .EmergencyContact2LastName,
+.section-display .EmergencyContactAlternateTelephone,
+.section-display .EmergencyContactAlternateTelephoneType,
+.section-display .EmergencyContactHonorific,
+.section-display .EmergencyContactOtherTelephone,
+.section-display .EmergencyContactOtherTelephoneType,
+.section-display .EmergencyContactPrimaryTelephone,
+.section-display .EmergencyContactPrimaryTelephoneType,
+.section-display .Father1stName,
+.section-display .FatherLastName,
+.section-display .FirstName,
+.section-display .FirstNameNativeLanguage,
+.section-display .GroupedItem .USParticipantGivenName,
+.section-display .GroupedItem .USParticipantLastName,
+.section-display .Honorific,
+.section-display .LastName,
+.section-display .LastNameNativeLanguage,
+.section-display .MedProxyFirstName,
+.section-display .MedProxyLastName,
+.section-display .MentorTeacherFirstName,
+.section-display .MentorTeacherHonorific,
+.section-display .MentorTeacherLastName,
+.section-display .MentorTeacherNameSuffix,
+.section-display .MiddleName,
+.section-display .TelephoneMobile,
+.section-display .TelephoneMobileMessageConsent,
+.section-display .Mother1stName,
+.section-display .MotherLastName,
+.section-display .NameSuffix,
+.section-display .OthPhone,
+.section-display .OthPhoneWhose,
+.section-display .Parent1stName,
+.section-display .ParentAlternateTelephone,
+.section-display .ParentAlternateTelephoneType,
+.section-display .ParentCust1stName1,
+.section-display .ParentCust1stName2,
+.section-display .ParentCustLastName1,
+.section-display .ParentCustLastName2,
+.section-display .ParentLastName,
+.section-display .ParentMidName,
+.section-display .ParentMidName,
+.section-display .ParentOtherTelephone,
+.section-display .ParentOtherTelephoneType,
+.section-display .ParentPrimaryTelephone,
+.section-display .ParentPrimaryTelephoneType,
+.section-display .ParentRecommender1FirstName,
+.section-display .ParentRecommender1LastName,
+.section-display .ParentRecommender2FirstName,
+.section-display .ParentRecommender2LastName,
+.section-display .Passport2ndFirstName,
+.section-display .Passport2ndGivenName,
+.section-display .Passport2ndLastName,
+.section-display .Passport2ndMiddleName,
+.section-display .PassportFirstName,
+.section-display .PassportGivenName,
+.section-display .PassportLastName,
+.section-display .PassportLastName,
+.section-display .PassportMiddleName,
+.section-display .PassportMiddleName,
+.section-display .PassportPrimaryName,
+.section-display .RecommenderFirstName,
+.section-display .RecommenderFirstName2,
+.section-display .RecommenderLastName,
+.section-display .RecommenderLastName2,
+.section-display .SchoolDirLastName,
+.section-display .SchoolDirName,
+.section-display .SchoolSuperintendentFirstName,
+.section-display .SchoolSuperintendentHonorific,
+.section-display .SchoolSuperintendentLastName,
+.section-display .SchoolSuperintendentNameSuffix,
+.section-display .Sib1stName,
+.section-display .SibLastName,
+.section-display .SupervisorFirstName,
+.section-display .SupervisorLastName,
+.section-display .TeacherFirstName,
+.section-display .TeacherLastName,
+.section-display .TeachRef1stName,
+.section-display .TeachRefLastName,
+.section-display .TelephonePrimary,
+.section-display .TelephonePrimaryType,
+.section-display .TelephonePrimarySMSPermission,
+.section-display .TelephoneAlternate,
+.section-display .TelephoneAlternateType,
+.section-display .USParticipantGivenName,
+.section-display .USParticipantLastName,
+.section-display .USParticipantMiddleName,
+.section-display .FirstNamePrevious,
+.section-display .MiddleNamePrevious,
+.section-display .LastNamePrevious,
+.section-display .RecommenderFirstName,
+.section-display .RecMidName,
+.section-display .RecommenderLastName,
+.section-display .LegalFirstName,
+.section-display .LegalMiddleName,
+.section-display .LegalLastName,
+.section-display .PreviousLegalFirstName,
+.section-display .PreviousLegalMiddleName,
+.section-display .PreviousLegalLastName,
+.section-display .ProfessionalFellowFirstName,
+.section-display .ProfessionalFellowLastName,
+.section-display .ProfessionalFellowMiddleName,
+.section-display .AlumnusLastName,
+.section-display .AlumnusFirstName,
+.section-display .AlumnusMiddleName,
+.section-display .PartnerOrgFirstName,
+.section-display .PartnerOrgMiddleName,
+.section-display .PartnerOrgLastName,
+.section-display .MiddleNameNativeLanguage  {
+  float: left;
+  clear: none;
+}
+.section-display td div.QuestionItem {
+  float: none;
+}
+.section-display .EmergencyContactAlternateTelephone,
+.section-display .EmergencyContactAlternateTelephone,
+.section-display .EmergencyContactOtherTelephone,
+.section-display .EmergencyContactPrimaryTelephone,
+.section-display .MailAddrZIP,
+.section-display .OthPhone,
+.section-display .ParentAlternateTelephone,
+.section-display .ParentOtherTelephone,
+.section-display .RecSchoolZIPCode,
+.section-display .TelephoneAlternate {
+  clear: left;
+}
+.section-display .AlternatePhoneType,
+.section-display .OthPhoneWhose,
+.section-display .TelephonePrimaryType,
+.section-display .TelephonePrimarySMSPermission,
+.section-display .TelephoneAlternateType {
+  clear: right;
+}
+
 
 /* LONG QUESTIONS --> */
 .has-long-questions .form-input.has-legal-custody label:first-child,

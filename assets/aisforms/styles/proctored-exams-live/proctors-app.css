@@ -1758,12 +1758,14 @@ body .onyx-toggle-button {
   float: left;
   text-align: right;  
 }
-
-.section-navigation-item .sectionName {
+/* delete after conversion is complete! */
+.section-navigation-item .sectionName,
+.section-navigation-item .section-name {
   padding-left: 2.5em;
 }
-
-.section-navigation-item.onyx-selected .sectionName {
+/* delete after conversion is complete! */
+.section-navigation-item.onyx-selected .sectionName,
+.section-navigation-item.onyx-selected .section-name {
   padding-left: 2.3em;
 }
 

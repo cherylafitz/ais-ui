@@ -50,6 +50,7 @@ div#build-and-instance {
   font-size: 0.75rem;
   display: inline-block;
   vertical-align: top;
+  text-align: right;
 }
 #Header #serverInfo,
 #Header #build-and-instance .build,

@@ -8,11 +8,13 @@
 .AISDataEntryForm .FormHeaderImage {
   margin-right: 1rem;
 }
-.AISDataEntryForm .SectionTitle {
+.AISDataEntryForm .SectionTitle,
+.AISDataEntryForm .section-title {
   font-size: 1.25rem;
   margin: 1rem 0 .5rem;
 }
-.AISDataEntryForm .SectionTitle .sectionHeadLine2 {
+.AISDataEntryForm .SectionTitle .sectionHeadLine2,
+.AISDataEntryForm .section-title .sectionHeadLine2 {
   font-size: 1rem;
 }
 .AISDataEntryForm .dynamic {
