@@ -1597,10 +1597,12 @@ div#ApplicationTemplateDisplayAUC .section-display.mixed-languages h1 [lang], /*
 
 /* SECTIONS --> */
 
-[class*="-section"]:not(.menu-of-sections) {
+[class*="-section"] {
   margin: 1rem 0;
 }
-[class*="-section-"] {
+[class*="-section-"],
+/* override for section navigator in air */
+.menu-of-sections  {
   margin: 0;
 }
 [class*="-section-content"] {

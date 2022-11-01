@@ -52,10 +52,17 @@
   width: 20rem;
   z-index: 100;
   box-shadow: 1px 1px 4px #888;
+  display: none;
+}
+.name-block details.multi-search-help[open] .details-content {
+  display: block;
 }
 .name-block details.multi-search-help summary {
   z-index: 101;
   background-color: #aebdc9;
+}
+.name-block details.multi-search-help .help-list {
+  padding: 0 1rem 0 1.5rem;
 }
 /* not cleaned up yet --> */
 
