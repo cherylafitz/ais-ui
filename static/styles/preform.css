@@ -2693,6 +2693,7 @@ table.Attachments {
 }
 .SectionDisplay .ERXMatrixTable td.ERXMatrixTableCell {
   padding-left: 4px; /* TEMP */
+  padding-right: 1.5rem;
 }
 .SectionDisplay table.ERXMatrixTable tr td,
 .SectionDisplay  .AnswerTable div.RadioButtonMatrix tr td,
@@ -2907,8 +2908,8 @@ div.ChoiceQuestion table,
   background-color: transparent;
 }
 table.TemplateTable,
-.section-display .SectionIntroductionText table,
-.section-display .BeforeQuestion table {
+.section-display .section-introduction-text table,
+.section-display .before-question table {
   margin: 1em 1em 1em 0;
 }
 table.TemplateTable td.sideTH {
@@ -2962,6 +2963,7 @@ table.Attachments {
 }
 .section-display .ERXMatrixTable td.ERXMatrixTableCell {
   padding-left: 4px; /* TEMP */
+  padding-right: 1.5rem;
 }
 .section-display table.ERXMatrixTable tr td,
 .section-display  .AnswerTable div.RadioButtonMatrix tr td,
@@ -3025,22 +3027,22 @@ table.TemplateTable tr td {
   font-size: 0.875rem;
   text-align: left;
 }
-div.SectionIntroductionText table tr td,
-div.BeforeQuestion table tr td,
+div.section-introduction-text table tr td,
+div.before-question table tr td,
 table.TemplateTable tr td,
-div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th,
+div.section-introduction-text table tr th,
+div.before-question table tr th,
 table.TemplateTable tr th {
   border: 1px solid #cecece;
   padding: .25rem .5rem;
 }
-div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th,
+div.section-introduction-text table tr th,
+div.before-question table tr th,
 table.TemplateTable tr th {
   border-color: #222;
 }
-div.SectionIntroductionText table tr td,
-div.BeforeQuestion table tr td,
+div.section-introduction-text table tr td,
+div.before-question table tr td,
 table.TemplateTable tr td {
   font-size: 0.875rem;
   text-align: left;
@@ -3053,14 +3055,14 @@ table.TemplateTable tr td {
   font-weight: normal;
 }
 
-div.SectionIntroductionText table tr th,
-div.BeforeQuestion table tr th {
+div.section-introduction-text table tr th,
+div.before-question table tr th {
   font-weight: bold;
   font-style: normal;
 }
 
-div.SectionIntroductionText table.TBorderNone tr td,
-div.BeforeQuestion table.TBorderNone tr td {
+div.section-introduction-text table.TBorderNone tr td,
+div.before-question table.TBorderNone tr td {
   border: none;
 }
 
