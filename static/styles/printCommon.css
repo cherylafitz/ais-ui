@@ -894,7 +894,8 @@ ol ol li {
 ul {
   list-style-type: square;
 }
-div.SectionIntroductionText {
+div.SectionIntroductionText,
+.section-introduction-text {
     padding-bottom: .2em;
  }
 .SectionItemsList {
@@ -903,7 +904,7 @@ div.SectionIntroductionText {
 /* delete after conversion is complete! */
 .QuestionItem .QuestionText .Instruction,
 .QuestionItem .question-text .Instruction,
-.BeforeQuestion .QuestionItem .QuestionInstructions,
+.before-question .QuestionItem .QuestionInstructions,
 .QuestionText span.Instruction,
 .question-text span.Instruction,
 .SectionDisplay .SectionItemsList .Instruction,
@@ -916,7 +917,7 @@ a.FormDataFill,
   display: none;
 }
 /* delete after conversion is complete! */
-.BeforeQuestion .QuestionItem .QuestionInstructions,
+.before-question .QuestionItem .QuestionInstructions,
 .QuestionText span.Instruction,
 .question-text span.Instruction {
   margin: 0;
@@ -943,10 +944,10 @@ a.FormDataFill,
 /* delete after conversion is complete! */
 .QuestionItem .QuestionNumber,
 .DisplayItemOnly .QuestionNumber,
-.BeforeQuestion .QuestionNumber,
+.before-question .QuestionNumber,
 .QuestionItem .question-number,
 .DisplayItemOnly .question-number,
-.BeforeQuestion .question-number  {
+.before-question .question-number  {
   float: left;
   width: 30px;
 }

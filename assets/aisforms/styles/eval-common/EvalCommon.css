@@ -157,7 +157,7 @@ div.Content .fromRecommender div.question-number   {
   color: #333333;
 }
 
-div.Content div.BeforeQuestion.fromApplicant {
+div.Content div.before-question.fromApplicant {
   color: #333333;
   background-color: transparent;
   padding: 0;
@@ -195,7 +195,7 @@ div.Content .fromRecommender div.NumberOfWords {
 div.fromApplicant div.QuestionText div.Title,
 div.fromRecommender div.QuestionText div.Title,
 div.Content .fromApplicant div.QuestionText,
-div.Content div.BeforeQuestion.fromApplicant,
+div.Content div.before-question.fromApplicant,
 div.fromApplicant div.question-text div.Title,
 div.fromRecommender div.question-text div.Title,
 div.Content .fromApplicant div.question-text {
@@ -213,12 +213,15 @@ div.fromApplicant .helpBox,
 div.fromRecommender .filespecs,
 div.fromRecommender .nodisplayeval,
 div.fromRecommender .helpBox,
-div.BeforeQuestion .filespecs,
-div.BeforeQuestion .nodisplayeval,
-div.BeforeQuestion .helpBox,
+div.before-question .filespecs,
+div.before-question .nodisplayeval,
+div.before-question .helpBox,
 div.SectionIntroductionText .filespecs,
 div.SectionIntroductionText .nodisplayeval,
-div.SectionIntroductionText .helpBox {
+div.SectionIntroductionText .helpBox,
+div.section-introduction-text .filespecs,
+div.section-introduction-text .nodisplayeval,
+div.section-introduction-text .helpBox {
     display: none;
 }
 .LongTextNoEditing br {
@@ -234,7 +237,8 @@ div.SectionIntroductionText .helpBox {
 .AppIDBlock table.TemplateTable {
   margin: 0 0 1rem;
 }
-div.SectionIntroductionText table.AppRefCode tr td {
+div.SectionIntroductionText table.AppRefCode tr td,
+div.section-introduction-text table.AppRefCode tr td {
   text-align: right;
   border: thin solid #2E6B9B;
 }
@@ -252,9 +256,7 @@ div.Content .fromRecommender .RecOverallComments {
 }
 /* delete after conversion is complete! */
 div.Content div.Divider,
-div#ApplicationTemplateDisplayAUC div.SectionDisplay h1,
 .Content div.SectionDisplay h2,
-div#ApplicationTemplateDisplayAUC div.section-display h1,
 .Content div.section-display h2 {
   margin: 0;
   padding-top: 1rem;
@@ -315,8 +317,8 @@ td div.QuestionItem.fromRecommender {
   border: none;
 }
 
-div.BeforeQuestion.fromApplicant,
-div.BeforeQuestion.fromRecommender {
+div.before-question.fromApplicant,
+div.before-question.fromRecommender {
   margin: 0em;
   font-weight: bold;
 }
@@ -328,11 +330,11 @@ div.QuestionItem.fromEvaluator {
   background: #eff2f3;
   margin: 0;
 }
-.Content .BeforeQuestion + div .QuestionItem.fromEvaluator {
+.Content .before-question + div .QuestionItem.fromEvaluator {
   margin-top: .5rem;
   padding-top: 1rem;
 }
-.Content .BeforeQuestion div:last-child .QuestionItem.fromEvaluator {
+.Content .before-question div:last-child .QuestionItem.fromEvaluator {
   padding-bottom: 1rem;
 }
 .Content .QuestionItem.fromEvaluator.AISDocumentDownload {
