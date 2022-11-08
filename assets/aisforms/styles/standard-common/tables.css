@@ -100,7 +100,8 @@ table.TemplateTable,
 .SectionDisplay .BeforeQuestion table {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }
@@ -191,7 +192,8 @@ table.Attachments {
 table.TemplateTable {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }
@@ -370,7 +372,8 @@ table.TemplateTable,
 .section-display .before-question table {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }
@@ -461,7 +464,8 @@ table.Attachments {
 table.TemplateTable {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }

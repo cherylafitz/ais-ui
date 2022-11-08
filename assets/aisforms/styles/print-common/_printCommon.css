@@ -366,7 +366,8 @@ table.TemplateTable tr th {
   padding-top: .75em;
 }
 
-table.TemplateTable .sideTH {
+table.TemplateTable .sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }

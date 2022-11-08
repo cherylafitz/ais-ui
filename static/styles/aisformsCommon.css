@@ -151,7 +151,7 @@ div.NoEvaluationQueuesAvailable {
 
 /* Notice etc boxes--> */
 
-div.alertBox,
+.alertBox,
 [class*="-box"] {
   color: #000;
   font-size: 0.9375rem; /* 15px when 100% */
@@ -162,7 +162,10 @@ div.alertBox,
   margin: 1rem 0;
   clear: right; /* clears help-box */
 }
-div.alertBox,
+p.alertBox {
+  font-size: 1rem;
+}
+.alertBox,
 [class*="alert-box"] {
   background-color: #ffdacc;
   border-color: #ffc8b3;
@@ -2749,7 +2752,8 @@ table.BrandTable th {
 table.TemplateTable {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }
