@@ -6,4 +6,15 @@
   white-space: nowrap;
 }
 
+/* EDITOR --> */
+
+#alumnus-summary-editor .residencies ul {
+  list-style-type: none;
+  padding: 0;
+}
+#alumnus-summary-editor .residencies .Residency,
+#alumnus-summary-editor .residencies .residency {
+  margin-bottom: 1rem;
+}
+
 /* <-- PAGE: Alumnus Summary */
