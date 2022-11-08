@@ -6033,7 +6033,7 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
   padding: 0;
 }
 #alumnus-summary-editor .residencies .Residency,
-#alumnus-summary-editor .residencies .residency {
+#alumnus-summary-editor .residencies .residency-wrapper {
   margin-bottom: 1rem;
 }
 
