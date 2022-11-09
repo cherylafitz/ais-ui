@@ -1236,7 +1236,8 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
   content: none;
 }
 
-.requiredIndicator {
+.requiredIndicator,
+.required-indicator {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
