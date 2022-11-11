@@ -332,7 +332,8 @@ div.alertBox img {
 }
 
 /* 15 Aug - Add CSS for required "*" styling in text area */
-.requiredIndicator {
+.requiredIndicator,
+.required-indicator {
   color: #CD0000;
   content: '*';
   font-size:1.4em;

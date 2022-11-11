@@ -721,7 +721,8 @@ table.BrandTable th {
 table.TemplateTable {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }

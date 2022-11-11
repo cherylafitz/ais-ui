@@ -580,7 +580,8 @@ table.AnswerTable div.required div.itemDisplayOuterContainer:after {
 }
 
 #required,
-.requiredIndicator {
+.requiredIndicator,
+.required-indicator {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
@@ -652,7 +653,8 @@ div.Content .SideNote {
 }
 
 /* SPECIFICATION CLASSES */
-.ExtraStrong {
+.ExtraStrong, /* legacy */
+.extra-strong {
   color: #CD0000;
   font-weight: bold;
 }

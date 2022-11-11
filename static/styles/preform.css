@@ -151,7 +151,7 @@ div.NoEvaluationQueuesAvailable {
 
 /* Notice etc boxes--> */
 
-div.alertBox,
+.alertBox,
 [class*="-box"] {
   color: #000;
   font-size: 0.9375rem; /* 15px when 100% */
@@ -162,7 +162,10 @@ div.alertBox,
   margin: 1rem 0;
   clear: right; /* clears help-box */
 }
-div.alertBox,
+p.alertBox {
+  font-size: 1rem;
+}
+.alertBox,
 [class*="alert-box"] {
   background-color: #ffdacc;
   border-color: #ffc8b3;
@@ -2360,7 +2363,8 @@ div.alertBox img {
 }
 
 /* 15 Aug - Add CSS for required "*" styling in text area */
-.requiredIndicator {
+.requiredIndicator,
+.required-indicator {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
@@ -2642,7 +2646,8 @@ table.TemplateTable,
 .SectionDisplay .BeforeQuestion table {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }
@@ -2733,7 +2738,8 @@ table.Attachments {
 table.TemplateTable {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }
@@ -2912,7 +2918,8 @@ table.TemplateTable,
 .section-display .before-question table {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
 }
@@ -3003,9 +3010,12 @@ table.Attachments {
 table.TemplateTable {
   margin: 1em 1em 1em 0;
 }
-table.TemplateTable td.sideTH {
+table.TemplateTable td.sideTH,
+.template-table th[scope="row"] {
   font-weight: bold;
   background-color: #e6e6e6;
+  color: black;
+  border: 1px solid #cecece;
 }
 table.TemplateTable td ul {
   list-style-type:circle;
@@ -3032,7 +3042,9 @@ div.before-question table tr td,
 table.TemplateTable tr td,
 div.section-introduction-text table tr th,
 div.before-question table tr th,
-table.TemplateTable tr th {
+table.TemplateTable tr th, /* legacy */
+table.tempolate-table tr td, 
+table.template-table tr th {
   border: 1px solid #cecece;
   padding: .25rem .5rem;
 }
