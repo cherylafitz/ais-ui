@@ -188,6 +188,12 @@ div.alertBox,
   font-weight: bold;
   padding: 1rem 1.25rem;
 }
+.extra-info-box {
+  max-width: 20rem;
+  float: right;
+  text-align: justify;
+  margin: 1rem;
+}
 .noticeBox,
 [class*="notice-box"] {
   border: 2px solid #de6846;
