@@ -1953,7 +1953,9 @@ div.before-question table.TBorderNone tr td {
 .section-display .PartnerOrgFirstName,
 .section-display .PartnerOrgMiddleName,
 .section-display .PartnerOrgLastName,
-.section-display .MiddleNameNativeLanguage  {
+.section-display .MiddleNameNativeLanguage,
+.section-display .PrimaryPhysicianFirstName,
+.section-display .PrimaryPhysicianLastName  {
   float: left;
   clear: none;
 }
