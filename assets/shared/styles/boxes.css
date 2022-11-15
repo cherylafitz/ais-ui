@@ -9,6 +9,10 @@ div.alertBox,
   border-radius: 2px;
   padding: .5rem .75rem;
   margin: 1rem 0;
+  overflow: hidden;
+}
+[class*="help-box"] ~ div.alertBox,
+[class*="help-box"] ~ [class*="-box"]
   clear: right; /* clears help-box */
 }
 div.alertBox,
@@ -41,7 +45,7 @@ div.alertBox,
   max-width: 20rem;
   float: right;
   text-align: justify;
-  margin: 1rem;
+  margin: 0 1rem 1rem;
 }
 .noticeBox,
 [class*="notice-box"] {
