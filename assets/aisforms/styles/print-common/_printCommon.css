@@ -576,6 +576,10 @@ option:not([selected]) {display: none;}
   -webkit-border-radius: 0;
   -webkit-appearance: none;
 }
+input[type="submit"],
+button {
+  display: none;
+}
 fieldset {
   border: none;
 }
