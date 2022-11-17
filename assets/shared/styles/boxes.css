@@ -12,7 +12,7 @@ div.alertBox,
   overflow: hidden;
 }
 [class*="help-box"] ~ div.alertBox,
-[class*="help-box"] ~ [class*="-box"]
+[class*="help-box"] ~ [class*="-box"] {
   clear: right; /* clears help-box */
 }
 div.alertBox,
