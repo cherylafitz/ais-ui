@@ -502,6 +502,12 @@ tr:first-of-type .reorder-controls-wrapper select {
 }
 /* <-- SEQUENCE-ITEM */
 
+/* delete links/buttons --> */
+
+.controls-wrapper [class^="delete"] {
+  margin-left: auto;
+}
+
 /* <-- CONTROLS */
 
 /* COPY TO CLIPBOARD --> */
