@@ -124,7 +124,9 @@
 .SectionDisplay .ProfessionalFellowMiddleName,
 .SectionDisplay .AlumnusLastName,
 .SectionDisplay .AlumnusFirstName,
-.SectionDisplay .AlumnusMiddleName {
+.SectionDisplay .AlumnusMiddleName,
+.SectionDisplay .ProjectLeaderFirstName,
+.SectionDisplay .ProjectLeaderLastName {
   float: left;
   clear: none;
 }
