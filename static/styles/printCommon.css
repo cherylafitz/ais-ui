@@ -124,9 +124,7 @@
 .SectionDisplay .ProfessionalFellowMiddleName,
 .SectionDisplay .AlumnusLastName,
 .SectionDisplay .AlumnusFirstName,
-.SectionDisplay .AlumnusMiddleName,
-.SectionDisplay .ProjectLeaderFirstName,
-.SectionDisplay .ProjectLeaderLastName {
+.SectionDisplay .AlumnusMiddleName {
   float: left;
   clear: none;
 }
@@ -288,7 +286,9 @@
 .section-display .PartnerOrgLastName,
 .section-display .MiddleNameNativeLanguage,
 .section-display .PrimaryPhysicianFirstName,
-.section-display .PrimaryPhysicianLastName  {
+.section-display .PrimaryPhysicianLastName,
+.section-display .ProjectLeaderFirstName,
+.section-display .ProjectLeaderLastName  {
   float: left;
   clear: none;
 }
