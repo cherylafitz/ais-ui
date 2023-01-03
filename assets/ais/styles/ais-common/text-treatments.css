@@ -1,0 +1,12 @@
+/* TEXT TREATMENTS --> */
+
+.appliant-name.last-name,
+.native-language.last-name {
+  font-weight: bold;
+}
+.appliant-name.last-name,
+.native-language.last-name::after {
+  content: ",";
+}
+
+/* <-- TEXT TREATMENTS */
