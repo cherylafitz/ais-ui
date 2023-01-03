@@ -7778,3 +7778,16 @@ div.HubFullDisplay fieldset.ApplicationsAndPlacementReports table.row-display.Re
 
 /* <-- SIMPLE TABLE */
 /* <--NEW TABLES WITH ROW-DISPLAY */
+
+/* TEXT TREATMENTS --> */
+
+.appliant-name.last-name,
+.native-language.last-name {
+  font-weight: bold;
+}
+.appliant-name.last-name,
+.native-language.last-name::after {
+  content: ",";
+}
+
+/* <-- TEXT TREATMENTS */
