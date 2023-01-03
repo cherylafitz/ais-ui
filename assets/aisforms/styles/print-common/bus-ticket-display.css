@@ -1,0 +1,78 @@
+/* bus ticket display --> */
+.BusTicketDisplay {
+  font-size: 14px;
+}
+.BusTicketDisplay .passenger-info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.BusTicketDisplay .passenger-info-row .label {
+  font-weight: bold;
+}
+.BusTicketDisplay .greeting {
+  font-size: 1.5em;
+  margin-bottom: .25em;
+}
+.BusTicketDisplay .message {
+  font-size: 1.125em;
+}
+.BusTicketDisplay .greeting,
+.BusTicketDisplay .message {
+  text-align: center;
+}
+.BusTicketDisplay .greeting::after {
+  content: ",";
+}
+.BusTicketDisplay .message::after {
+  content: ":"
+}
+.BusTicketDisplay .bus-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 1.5em;
+}
+.BusTicketDisplay .bus-label-number-wrapper {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.BusTicketDisplay .bus-info .bus-label, 
+.BusTicketDisplay .bus-info .bus-number {
+  display: inline-block;
+}
+.BusTicketDisplay .bus-info .bus-number {
+  padding-left: .25em;
+}
+.BusTicketDisplay [class*="-time"] .label {
+  font-size: 1.25em;
+}
+.BusTicketDisplay [class*="-time"] .label::after {
+  content: "";
+  height: 1.5em;
+  width: 1px;
+  background-color: #000;
+  display: block;
+  margin: .25em auto;
+}
+.BusTicketDisplay [class*="-time"] .value {
+  border: 1px solid #cecece;
+  text-align: center;
+  padding: .75em;
+  font-weight: bold;
+  margin: .5em auto;
+  font-size: 1.5em;
+}
+.BusTicketDisplay .bus-info .e-ticket {
+  margin-top: 3em;
+}
+.BusTicketDisplay .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* <-- bus ticket display */
