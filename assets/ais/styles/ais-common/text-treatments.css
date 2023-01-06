@@ -1,11 +1,9 @@
 /* TEXT TREATMENTS --> */
 
-.appliant-name.last-name,
-.native-language.last-name {
+.applicant-name .last-name {
   font-weight: bold;
 }
-.appliant-name.last-name,
-.native-language.last-name::after {
+.applicant-name .last-name::after {
   content: ",";
 }
 
