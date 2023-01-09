@@ -1,0 +1,11 @@
+/* BOXES --> */
+
+.DocumentReviewInbox .program-year {
+  padding: .75rem;
+  background-color: #e0e6ea;
+  border: 1px solid #d1dae0;
+  padding: 0.5rem 0.75rem;
+  width: fit-content;
+}
+
+/* <-- BOXES */
