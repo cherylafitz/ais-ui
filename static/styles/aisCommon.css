@@ -305,6 +305,17 @@ div.deadlineBox span.timeZone,
 
 /* <-- <code> STYLES */
 
+/* colors --> */
+
+/* light blue-gray: #e0e6ea
+      example: inbox section content, AIS
+
+
+
+ */
+
+/* <-- colors */
+
 /* CONTROLS --> */
 
 a,
@@ -5361,6 +5372,18 @@ div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
 
 /* <-- alumni */
 
+/* BOXES --> */
+
+.DocumentReviewInbox .program-year {
+  padding: .75rem;
+  background-color: #e0e6ea;
+  border: 1px solid #d1dae0;
+  padding: 0.5rem 0.75rem;
+  width: fit-content;
+}
+
+/* <-- BOXES */
+
 /* details --> */
 
 /* darken summary when on colored bg -- expensive CSS, clean up after HTML is updated!! */
@@ -6284,6 +6307,28 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 }
 
 /* <-- PAGE: Data Entry Form */
+
+/* PAGE: DOCUMENT APPROVAL INBOX --> */
+
+.DocumentReviewInbox .form-input.program-year {
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+}
+.DocumentReviewInbox .form-input.program-year label, 
+.DocumentReviewInbox select#program-year-id {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.DocumentReviewInbox .form-input.program-year input[type="submit"] {
+  font-size: 1.25rem;
+  /* experimental */
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+
+
+/* <-- PAGE: DOCUMENT APPROVAL INBOX */
 
 /* PAGE: Document review approval editor --> */
 

@@ -1,0 +1,21 @@
+/* PAGE: DOCUMENT APPROVAL INBOX --> */
+
+.DocumentReviewInbox .form-input.program-year {
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+}
+.DocumentReviewInbox .form-input.program-year label, 
+.DocumentReviewInbox select#program-year-id {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.DocumentReviewInbox .form-input.program-year input[type="submit"] {
+  font-size: 1.25rem;
+  /* experimental */
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+
+
+/* <-- PAGE: DOCUMENT APPROVAL INBOX */
