@@ -297,12 +297,7 @@ body #PageWrapperNavUpdate {
   border-radius: 2px;
 }
 
-.card {
-  background-color: #e0e6eb;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 2px;
-}
+
 /* <-- TILES AND CARDS */
 
 /* TYPOGRAPHY --> */
@@ -2971,16 +2966,6 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 }
 
 /* <- BANNERS */
-.info-page .content {
-  max-width: 800px;
-  padding: 1.5rem;
-}
-.info-page .card {
-  font-size: .875rem;
-}
-.info-section {
-  max-width: 700px;
-}
 
 .list-multi {
   column-count: 2;
@@ -3056,33 +3041,7 @@ body > #priorPage a {
 
 /* <- tables */
 
-/* bg color classes -> */
 
-/* darkest blue = 1 */
-.bg-blue01 {
-  background-color: #29353d;
-  color: #fff;
-}
-.transparent {
-  background-color: transparent;
-}
-.bg-blue02 {
-  background-color: #33424d;
-  color: #fff;
-}
-
-
-/* <- bg color classes */
-
-/* typography classes -> */
-
-/* light green (for dark bg) */
-.text-highlight01 {
-  color: #c8d295;
-}
-.text-highlight02 {
-
-}
 /* <- text-size classes */
 
 /* LISTS -> */

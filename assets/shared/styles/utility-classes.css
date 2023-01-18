@@ -1,0 +1,34 @@
+/* utility classes --> */
+
+/* bg color classes -> */
+/* darkest blue = 1 */
+.transparent {
+  background-color: transparent;
+}
+.bg-blue01 {
+  background-color: #29353d;
+  color: #fff;
+}
+.bg-blue01 a {
+  color: #c4dcee;
+}
+.bg-blue02 {
+  background-color: #33424d;
+  color: #fff;
+}
+.bg-blue02 a {
+  color: #c4dcee;
+}
+/* <- bg color classes */
+
+/* text --> */
+/* light green (for dark bg) */
+.text-highlight01 {
+  color: #c8d295;
+}
+.text-highlight02 {
+
+}
+/* <-- text */
+
+/* <-- utility classes */
