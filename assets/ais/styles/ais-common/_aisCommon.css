@@ -498,7 +498,8 @@ table .leftNav a {
   color: #fff;
   min-width: 200px;
 }
-.leftNav h1 {
+.leftNav h1,
+#navMenu h1 {
   color: #f5d295;
   padding-top: 0;
   text-transform: none;
@@ -549,10 +550,12 @@ table.pageStructure tr.contentArea td.leftNav .Body dd a:focus,
 table.pageStructure .leftNav a:hover,
 table.pageStructure .leftNav a:active,
 table.pageStructure .leftNav a:focus {
-  background-color: rgba(255, 255, 255, 0.1);
+/*  background-color: rgba(255, 255, 255, 0.1);
   color: #c8d295;
   border-radius: 2px;
-  padding: .0625rem .125rem .0625rem 0;
+  padding: .0625rem .125rem .0625rem 0;*/
+  color: #fff;
+  text-decoration: underline;
 }
 /* <-- dark leftnav */
 
@@ -1205,12 +1208,14 @@ div.PIPYDisplay h3 {
 
   /* nav --> */
 .NextStudent,
-.PreviousStudent  {
+.PreviousStudent,
+.previous-alumnus,
+.next-alumnus  {
   border-color: #c8d295;
   border-style: solid;
   border-width: 2px 2px 0 0;
-  height: 10px;
-  width: 10px;
+  height: 1rem;
+  width: 1rem;
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -1218,17 +1223,22 @@ div.PIPYDisplay h3 {
   display: inline-block;
   margin: 0 0 1px 1px;
 }
-.PreviousStudent {
+.PreviousStudent,
+.previous-alumnus {
   border-width: 0 0 2px 2px;
 }
-table.pageStructure .leftNav .NextStudent:hover,
-table.pageStructure .leftNav .PreviousStudent:hover  {
-  border-color: #818f3d;
-  background-color: transparent;
-  border-radius: 0;
+.NextStudent:hover,
+.next-alumnus:hover {  
+  border-width: 4px 4px 0 0;
+}
+.PreviousStudent:hover,
+.previous-alumnus:hover {
+  border-width: 0 0 4px 4px;
 }
 .NextStudent img,
-.PreviousStudent img {
+.PreviousStudent img,
+.previous-alumnus img,
+.next-alumnus img {
   display: none;
 }
 table.pageStructure .leftNav .StudentSummary {
