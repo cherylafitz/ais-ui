@@ -7176,8 +7176,8 @@ form[name="loginForm"] {
 /* <-- PAGE: SKYLINK TRAVELERS REPORT */
 
 /* PAGE: bus group edit --> */
-.BusGroupEdit .form-input.display-name label,
-.BusGroupEdit .form-input.departure label {
+.BusGroupEdit .row-display.container.bus .form-input.display-name label,
+.BusGroupEdit .row-display.container.bus .form-input.departure label {
   font-weight: bold;
 }
 .BusGroupEdit .row-display.container.bus .form-input.display-name label,
