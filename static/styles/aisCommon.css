@@ -7092,6 +7092,7 @@ form[name="loginForm"] {
 .skylink-report .row-display .generated-field > .label:first-child {
   width: initial;
   padding-right: .25rem;
+  font-weight: bold;
 }
 .skylink-report .row-display .generated-field > .label:after {
   content: ":";
@@ -7146,6 +7147,12 @@ form[name="loginForm"] {
 .skylink-report .row-display .gender {
   width: 2.75rem;
 }
+.skylink-report .row-display .first-name {
+  text-transform: capitalize;
+}
+.skylink-report .row-display .last-name {
+  text-transform: uppercase;
+}
 .skylink-report .row-display .first-name,
 .skylink-report .row-display .last-name {
   width: 8rem;
@@ -7169,7 +7176,19 @@ form[name="loginForm"] {
 /* <-- PAGE: SKYLINK TRAVELERS REPORT */
 
 /* PAGE: bus group edit --> */
-
+.BusGroupEdit .form-input.display-name label,
+.BusGroupEdit .form-input.departure label {
+  font-weight: bold;
+}
+.BusGroupEdit .row-display.container.bus .form-input.display-name label,
+.BusGroupEdit .row-display.container.bus .form-input.display-name input[type="text"],
+.BusGroupEdit .row-display.container.bus .form-input.departure label,
+.BusGroupEdit .row-display.container.bus .form-input.departure input[type="text"] {
+  font-size: 1.25rem !important;
+}
+.BusGroupEdit .form-input.departure input[type="submit"] {
+  font-size: 1.125rem;
+}
 .BusGroupEdit .skylink-report .row-display caption {
   text-align: left;
   margin-top: 2rem;
@@ -7179,6 +7198,7 @@ form[name="loginForm"] {
   border: 1px solid #b0b2b9;
   border-top: 2px solid;
 }
+
 
 /* <-- PAGE: bus group edit  */
 
