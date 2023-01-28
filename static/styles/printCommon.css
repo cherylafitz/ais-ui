@@ -1432,6 +1432,10 @@ section img.ProgramLogo600w {
   justify-content: space-between;
   margin-bottom: 1.5em;
 }
+.BusTicketDisplay .passenger-name,
+.BusTicketDisplay .greeting .name  {
+  text-transform: capitalize;
+}
 .BusTicketDisplay .passenger-info-row .label {
   font-weight: bold;
 }
@@ -1457,6 +1461,16 @@ section img.ProgramLogo600w {
   flex-flow: row wrap;
   justify-content: space-around;
   margin-top: 1.5em;
+}
+.BusTicketDisplay .bus-info,
+.BusTicketDisplay .message,
+.BusTicketDisplay .greeting,
+.BusTicketDisplay .passenger-info-row {
+  break-before: avoid;
+}
+.SkylinkSingleETicketDisplay .eticket pre,
+.BusTicketDisplay .bus-info {
+  break-inside: auto;
 }
 .BusTicketDisplay .bus-label-number-wrapper {
   flex-basis: 100%;
@@ -1804,6 +1818,10 @@ section img.ProgramLogo600w {
 }
 .skylink-report .row-display .first-name {
   width: 8em;
+  text-transform: capitalize;
+}
+.skylink-report .row-display .last-name {
+  text-transform: uppercase;
 }
 .skylink-report .row-display .departure-date,
 .skylink-report .row-display .departure-time {
@@ -1881,6 +1899,14 @@ section img.ProgramLogo600w {
   border-top-width: 2px;
   border-bottom-width: 2px;
 }
+/* bus chaperone report --> */
+.BusChaperoneReport .row-display .first-name {
+  text-transform: capitalize;
+}
+.BusChaperoneReport .row-display .last-name {
+  text-transform: uppercase;
+}
+/* <-- bus chaperone report */
 /* <-- SKYLINK */
 
 /* TABLES --> */
