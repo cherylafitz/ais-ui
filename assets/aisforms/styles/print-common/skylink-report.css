@@ -108,6 +108,10 @@
 }
 .skylink-report .row-display .first-name {
   width: 8em;
+  text-transform: capitalize;
+}
+.skylink-report .row-display .last-name {
+  text-transform: uppercase;
 }
 .skylink-report .row-display .departure-date,
 .skylink-report .row-display .departure-time {
@@ -185,4 +189,12 @@
   border-top-width: 2px;
   border-bottom-width: 2px;
 }
+/* bus chaperone report --> */
+.BusChaperoneReport .row-display .first-name {
+  text-transform: capitalize;
+}
+.BusChaperoneReport .row-display .last-name {
+  text-transform: uppercase;
+}
+/* <-- bus chaperone report */
 /* <-- SKYLINK */
