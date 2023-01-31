@@ -4,4 +4,7 @@
   column-width: 15rem;
   column-gap: .5rem;
 }
+dl dl {
+  margin-left: 2rem;
+}
 /* <-- LISTS */

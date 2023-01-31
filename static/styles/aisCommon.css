@@ -1467,6 +1467,8 @@ h4{
 
 /* info-page --> */
 
+/* example: cookies declariation */
+
 .info-page .content {
   max-width: 800px;
   padding: 1.5rem;
@@ -1475,6 +1477,25 @@ h4{
   font-size: .875rem;
 }
 
+.info-page .info-section {
+  background-color: #e0e6eb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+.info-page dt {
+  font-weight: bold;
+}
+.info-page dt:after {
+  content: ":";
+}
+.info-page dt,
+.info-page dd {
+  display: inline-block;
+}
+.info-page dt dt:after {
+  content: none;
+}
 /* <-- info-page */
 
 /* LISTS --> */
@@ -1483,7 +1504,11 @@ h4{
   column-width: 15rem;
   column-gap: .5rem;
 }
+dl dl {
+  margin-left: 2rem;
+}
 /* <-- LISTS */
+
 /* mixed languages --> */
 
 .mixed-languages [lang] {
