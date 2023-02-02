@@ -1,0 +1,80 @@
+/* __base --> */
+
+/*temp! for testing*/
+body#body--environment-staging {
+  border-left: none;
+  border-right: none;
+  margin-top: 0px;
+  height: unset;
+  width: unset;
+}
+body#body--environment-staging:before, body#body--environment-staging:after {
+  content: "";
+  position: static;
+  background: transparent;
+  left: 0 !important;
+  right: 0 !important;
+  height: 0 !important;
+  z-index: 5001;
+}
+/*end temp */
+
+/* header --> */
+#header-id {
+  background: #29353d;
+  padding: 0.5rem;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+}
+.IsNotLoggedIn #header-id {
+  flex-shrink: 0;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+#header-id .user-name-block .form-input label {
+  color: #FFD590;
+  width: initial;
+}
+#header-id #header-customization-id,
+#header-id .user-name-block {
+  display: flex;
+  flex-grow: 1;
+}
+/* <-- header  */
+
+/* footer --> */
+#footer-id {
+  background-color: #29353d;
+  padding: 2rem 1.5rem 2rem;
+  border-top: 1px solid #3d4f5c;
+  flex-flow: row wrap;
+  color: #fff;
+}
+.IsNotLoggedIn #footer-id {
+  padding: 2rem 1.5rem;
+}
+/* <--footer */
+
+@media only screen and (min-width: 56em) {
+  .IsNotLoggedIn #header-id {
+    padding: 1.5rem 6rem;
+  }
+}
+@media only screen and (min-width: 50em) {
+  #footer-id {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 43.5em) {
+  .IsNotLoggedIn #header-id {
+    background-color: #33424d;
+    min-height: 96px;
+  }
+  .IsNotLoggedIn #footer-id {
+    padding: 2rem 6rem;
+  }
+}
+/* <-- __base */
