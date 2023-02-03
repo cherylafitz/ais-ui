@@ -43,7 +43,7 @@
   color: #474747;
   padding-top: 0.5em;
 }
-body .Content .RecommendationFor {
+body .RecommendationFor {
   flow: static(header2);
   background-color: transparent;
   /*** check if necessary --> */
@@ -51,12 +51,12 @@ body .Content .RecommendationFor {
   text-align:right;
   padding-top: 0.5em;
 }
-#pageHeader .LastName,
+/*#pageHeader .LastName,
 #pageHeader .FirstName,
-#pageHeader .MiddleName,
-.Content .LastName,
-.Content .FirstName,
-.Content .MiddleName {
+#pageHeader .MiddleName,*/
+.LastName,
+.FirstName,
+.MiddleName {
   text-transform: capitalize;
 }
 #pageHeader .LastName:not(:empty):after {

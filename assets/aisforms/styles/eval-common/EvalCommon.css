@@ -13,7 +13,7 @@
 
 
 
-Specify QuestionItems to position in line (select by xml tag using selector div.Content div.<xmlTag>)*/
+/*pecify QuestionItems to position in line (select by xml tag using selector div.<xmlTag>)*/
 /* REMOVE?? --> */
 table td div.PDFDownload {
   margin-top: 1em;
@@ -21,74 +21,74 @@ table td div.PDFDownload {
 }
 /* <-- REMOVE?? */
 
-body div.Content div.FirstName,
-body div.Content div.MiddleName,
-body div.Content div.LastName,
-body div.Content div.MailAddrCity,
-body div.Content div.MailAddrState,
-body div.Content div.MailAddrZIP,
-body div.Content div.MailingAddressCountryFillIn,
-body div.Content div.CityOfBirth,
-body div.Content div.StateOfBirth,
-body div.Content div.CurrentAddressCity,
-body div.Content div.CurrentAddressState,
-body div.Content div.CurrentAddressPostalCode,
-body div.Content div.PermAddrCity,
-body div.Content div.PermAddrState,
-body div.Content div.PermAddrPostCode,
-body div.Content div.CongressioVotingDistState,
-body div.Content div.CongressionaVotingDistNum,
-body div.Content div.PassportFirstName,
-body div.Content div.PassportMiddleName,
-body div.Content div.PassportLastName,
-body div.Content div.SchoolCity,
-body div.Content div.SchoolUSState,
-body div.Content div.ProgramLanguage1,
-body div.Content div.ProgramDuration1,
-body div.Content div.ProgramLanguage2,
-body div.Content div.ProgramDuration2,
-/*body div.Content div.RecommenderFirstName,
-body div.Content div.RecommenderLastName,*/
-body div.Content div.RecommenderCity,
-body div.Content div.RecommenderStateProvince,
-body div.Content div.RecommenderZIPPostalCode,
-body div.Content div.RecSchoolCity,
-body div.Content div.RecSchoolState,
-body div.Content div.RecSchoolCountry,
-body div.Content div.ParentRecommender1FirstName,
-body div.Content div.ParentRecommender1LastName {
+div.FirstName,
+div.MiddleName,
+div.LastName,
+div.MailAddrCity,
+div.MailAddrState,
+div.MailAddrZIP,
+div.MailingAddressCountryFillIn,
+div.CityOfBirth,
+div.StateOfBirth,
+div.CurrentAddressCity,
+div.CurrentAddressState,
+div.CurrentAddressPostalCode,
+div.PermAddrCity,
+div.PermAddrState,
+div.PermAddrPostCode,
+div.CongressioVotingDistState,
+div.CongressionaVotingDistNum,
+div.PassportFirstName,
+div.PassportMiddleName,
+div.PassportLastName,
+div.SchoolCity,
+div.SchoolUSState,
+div.ProgramLanguage1,
+div.ProgramDuration1,
+div.ProgramLanguage2,
+div.ProgramDuration2,
+/*div.RecommenderFirstName,
+div.RecommenderLastName,*/
+div.RecommenderCity,
+div.RecommenderStateProvince,
+div.RecommenderZIPPostalCode,
+div.RecSchoolCity,
+div.RecSchoolState,
+div.RecSchoolCountry,
+div.ParentRecommender1FirstName,
+div.ParentRecommender1LastName {
   float: left;
   clear: none;
 }
-body div.Content div.RecommenderFirstName,
-body div.Content div.RecommenderLastName {
+div.RecommenderFirstName,
+div.RecommenderLastName {
   float: none;
 }
 body {
   counter-reset: recommendation-increment;
 }
-body div.Content div.RecommenderFirstName {
+div.RecommenderFirstName {
   counter-increment: recommendation-increment;
 }
-body div.Content div.RecommenderFirstName:before {
+div.RecommenderFirstName:before {
   content: "Recommendation " counter(recommendation-increment);
   font-size: 1.5rem;
   margin: .25rem 0 1rem;
   display: block;
 }
-body div.Content div.RecommenderFirstName:not(:first-child) {
+div.RecommenderFirstName:not(:first-child) {
   border-top: 3px solid #cecece;
   margin-top: 3rem;
 }
 
-div.Content div.MailAddrZIP {
+div.MailAddrZIP {
   clear: left;
 }
 
 /* Typography */
 /* delete after conversion is complete! */
-.Content .SectionDisplay .LongTextNoEditing,
-.Content .section-display .LongTextNoEditing {
+.SectionDisplay .LongTextNoEditing,
+.section-display .LongTextNoEditing {
   text-align: justify;
   padding: .5rem .75rem;
   background: rgba(255, 255, 255, .8);
@@ -100,9 +100,9 @@ div.Content div.MailAddrZIP {
 
 /* Tables */
 
-div.Content .fromApplicant table.AnswerTable tr td div,
+.fromApplicant table.AnswerTable tr td div,
 .fromApplicant table div.itemDisplayOuterContainer,
-div.Content .fromApplicant table.AnswerTable tr td:first-child {
+.fromApplicant table.AnswerTable tr td:first-child {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -126,7 +126,7 @@ div.Content .fromApplicant table.AnswerTable tr td:first-child {
 .QuestionItem.fromApplicant,
 .subQuestion.fromApplicant,
 .Group.fromApplicant,
-div.Content .fromApplicant div.GroupedItem,
+.fromApplicant div.GroupedItem,
 .QuestionItem.fromRecommender {
   background-color: #ddeaee;
   padding: .375rem 1rem .25rem;
@@ -147,17 +147,17 @@ div.Content .fromApplicant div.GroupedItem,
   margin-left: 0;
 }
 /* delete after conversion is complete! */
-div.Content .fromApplicant div.QuestionNumber,
-div.Content .fromRecommender div.QuestionNumber,
-div.Content .fromApplicant div.question-number,
-div.Content .fromRecommender div.question-number   {
+.fromApplicant div.QuestionNumber,
+.fromRecommender div.QuestionNumber,
+.fromApplicant div.question-number,
+.fromRecommender div.question-number   {
   float:left;
   font-weight: bold;
   padding-right: .5rem;
   color: #333333;
 }
 
-div.Content div.before-question.fromApplicant {
+div.before-question.fromApplicant {
   color: #333333;
   background-color: transparent;
   padding: 0;
@@ -176,16 +176,16 @@ div.Content div.before-question.fromApplicant {
 }
 
 /* ISSUES --> */
-div.Content .fromApplicant div.Title,
-div.Content .fromRecommender div.Title {
+.fromApplicant div.Title,
+.fromRecommender div.Title {
   color: #333333;
   margin-top: 0.25rem;
   font-weight: bold;
   font-size: .95rem;
 }
 
-div.Content .fromApplicant div.NumberOfWords,
-div.Content .fromRecommender div.NumberOfWords {
+.fromApplicant div.NumberOfWords,
+.fromRecommender div.NumberOfWords {
   text-align: right;
 }
 
@@ -194,16 +194,16 @@ div.Content .fromRecommender div.NumberOfWords {
 /* delete after conversion is complete! */
 div.fromApplicant div.QuestionText div.Title,
 div.fromRecommender div.QuestionText div.Title,
-div.Content .fromApplicant div.QuestionText,
-div.Content div.before-question.fromApplicant,
+.fromApplicant div.QuestionText,
+div.before-question.fromApplicant,
 div.fromApplicant div.question-text div.Title,
 div.fromRecommender div.question-text div.Title,
-div.Content .fromApplicant div.question-text {
+.fromApplicant div.question-text {
   font-weight: bold;
 }
 /* delete after conversion is complete! */
-div.Content .fromApplicant div.QuestionText .Instruction,
-div.Content .fromApplicant div.question-text .Instruction  {
+.fromApplicant div.QuestionText .Instruction,
+.fromApplicant div.question-text .Instruction  {
   font-weight: normal;
 }
 
@@ -249,15 +249,15 @@ div.section-introduction-text table.AppRefCode tr td {
   margin-right:10px;
 }
 
-div.Content .fromRecommender .RecOverallComments {
+.fromRecommender .RecOverallComments {
   padding-bottom: 2.5rem;
   margin-bottom: 2.5rem;
   border-bottom: 3px solid #cecece;
 }
 /* delete after conversion is complete! */
-div.Content div.Divider,
-.Content div.SectionDisplay h2,
-.Content div.section-display h2 {
+div.Divider,
+div.SectionDisplay h2,
+div.section-display h2 {
   margin: 0;
   padding-top: 1rem;
   padding-bottom: .5rem;
@@ -275,22 +275,22 @@ input[type="checkbox"]:disabled:hover,
 input[type="checkbox"]:disabled:hover:active {
   color: #333333 ! important;
 }
-div.Content table.AnswerTable tr td:first-child {
+table.AnswerTable tr td:first-child {
     padding: 6px 2px;
 }
 
 /* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
 /* delete after conversion is complete! */
-div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
-div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
 table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
 table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after,
-div.Content div.fromApplicant.required:not(.Group) div.question-text .Title:after,
-div.Content div.fromRecommender.required:not(.Group) div.question-text .Title:after,
-div.Content table.fromApplicant.required:not(.Group) div.question-text .Title:after,
-div.Content table.fromRecommender.required:not(.Group) div.question-text .Title:after, {
+div.fromApplicant.required:not(.Group) div.question-text .Title:after,
+div.fromRecommender.required:not(.Group) div.question-text .Title:after,
+table.fromApplicant.required:not(.Group) div.question-text .Title:after,
+table.fromRecommender.required:not(.Group) div.question-text .Title:after, {
   content: none;
 }
 
@@ -325,22 +325,22 @@ div.before-question.fromRecommender {
 div.QuestionItem.fromEvaluator {
   margin-top: .5em;
 }
-.Content .QuestionItem.fromEvaluator {
+.QuestionItem.fromEvaluator {
   padding: .5rem 1rem;
   background: #eff2f3;
   margin: 0;
 }
-.Content .before-question + div .QuestionItem.fromEvaluator {
+.before-question + div .QuestionItem.fromEvaluator {
   margin-top: .5rem;
   padding-top: 1rem;
 }
-.Content .before-question div:last-child .QuestionItem.fromEvaluator {
+.before-question div:last-child .QuestionItem.fromEvaluator {
   padding-bottom: 1rem;
 }
-.Content .QuestionItem.fromEvaluator.AISDocumentDownload {
+.QuestionItem.fromEvaluator.AISDocumentDownload {
   background-color: transparent;
 }
-.Content .QuestionItem.fromEvaluator.evaluatorNotes {
+.QuestionItem.fromEvaluator.evaluatorNotes {
   border: 0;
 }
 .fromEvaluator .Instruction {
@@ -354,23 +354,23 @@ div.fromRecommender div.question-text div.Title  {
   margin-bottom:0.5em;
 }
 /* delete after conversion is complete! */
-div.Content div.fromApplicant div.QuestionNumber,
-div.Content div.fromRecommender div.QuestionNumber,
-div.Content div.fromApplicant div.question-number,
-div.Content div.fromRecommender div.question-number {
+div.fromApplicant div.QuestionNumber,
+div.fromRecommender div.QuestionNumber,
+div.fromApplicant div.question-number,
+div.fromRecommender div.question-number {
   display: none;
 }
 /* delete after conversion is complete! */
-div.Content .fromApplicant div.QuestionText,
-div.Content div.subConditional div.QuestionText,
-div.Content .fromApplicant div.QuestionAnswer,
-div.Content .fromRecommender div.QuestionText,
-div.Content .fromRecommender div.QuestionAnswer,
-div.Content .fromApplicant div.question-text,
-div.Content div.subConditional div.question-text,
-div.Content .fromApplicant div.question-answer,
-div.Content .fromRecommender div.question-text,
-div.Content .fromRecommender div.question-answer {
+.fromApplicant div.QuestionText,
+div.subConditional div.QuestionText,
+.fromApplicant div.QuestionAnswer,
+.fromRecommender div.QuestionText,
+.fromRecommender div.QuestionAnswer,
+.fromApplicant div.question-text,
+div.subConditional div.question-text,
+.fromApplicant div.question-answer,
+.fromRecommender div.question-text,
+.fromRecommender div.question-answer {
   margin-left: 0;
 }
 .TextQuestion {

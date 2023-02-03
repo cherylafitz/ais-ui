@@ -134,7 +134,7 @@ div.SectionDisplay div.EmergencyContactOtherTelephone {
   clear: left;
 }
 
-div.Content div.BeforeQuestion {
+div.BeforeQuestion {
   clear: both;
 }
 
@@ -240,7 +240,7 @@ div.deadlineBox span.dayMonthYear:after {
 
 /* Typography--> */
 
-div.Content {
+{
   color: #000000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
@@ -264,7 +264,7 @@ div.SectionDisplay textarea {
 div.SectionDisplay td textarea {
   margin: 0;
 }
-div.Content .noWrap {
+.noWrap {
   white-space:nowrap;
 }
 /* delete after conversion is complete! */
@@ -332,14 +332,14 @@ div.SectionDisplay div.section-name {
   margin-top: -.5rem;
   font-size: .875rem;
 }
-.Content .UnsubmitLink a {
+.UnsubmitLink a {
   padding: 0 .5rem;
   background-color: #ffa480;
   color: #000;
   border-radius: 2px;
   border: 1px solid #ff9166;
 }
-.Content .UnsubmitLink a:hover {
+.UnsubmitLink a:hover {
   background-color: #c75d48;
   color: #fff;
   border-bottom-width: 1px;
@@ -463,7 +463,7 @@ table td div.ExcelDownloadDescription {
   margin-right: 1em;
 }
 div.ChoiceQuestion table,
-div.Content div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
+div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
   background-color: transparent;
 }
 table.TemplateTable,
@@ -479,12 +479,12 @@ table.TemplateTable td ul {
    list-style-type:circle;
    padding-left:1.1em;
 }
-div.Content table.AnswerTable tr.odd,
+table.AnswerTable tr.odd,
 div.SectionDisplay table.RowDisplay tr:nth-child(2n+1),
 div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+1) {
   background-color: #ebf3f9;
 }
-div.Content table.AnswerTable tr.even,
+table.AnswerTable tr.even,
 div.SectionDisplay table.RowDisplay tr:nth-child(2n+2),
 div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
   background-color: #c4dced;
@@ -492,27 +492,27 @@ div.SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
 table.Attachments {
   margin-left:0 !important;
 }
-div.Content td,
-div.Content th {
+td,
+th {
   vertical-align: top;
 }
-div.Content div.MenuOfSections td {
+div.MenuOfSections td {
   vertical-align: bottom;
 }
-div.Content table.QuestionItem,
-div.Content table.QuestionItem tr.QuestionItemRow,
-div.Content table.QuestionItem tr.QuestionItemRow td {
+table.QuestionItem,
+table.QuestionItem tr.QuestionItemRow,
+table.QuestionItem tr.QuestionItemRow td {
   border: 0;
 }
-div.Content table.InfoBox {
+table.InfoBox {
   background-color: #E1F0FF;
 }
-div.Content table.ContrastBox {
+table.ContrastBox {
   background-color: #2E6B9B;
 }
 div.SectionDisplay table th,
-div.Content table.AnswerTable tr.headerRow th,
-div.Content table.AnswerTable thead tr th {
+table.AnswerTable tr.headerRow th,
+table.AnswerTable thead tr th {
   background-color: #444;
   font-style: normal;
   color: #FFFFFF;
@@ -545,7 +545,7 @@ div.SectionDisplay  table.AnswerTable div.CheckboxMatrix tr td  {
 td.ERXMatrixTableCell {
   padding-right: 2em;
 }
-div.Content div.SectionDisplay table tr td input[type="text"] {
+div.SectionDisplay table tr td input[type="text"] {
   max-width: 95%;
 }
 
@@ -581,7 +581,7 @@ div.SectionDisplay .question-answer table.RowDisplay thead tr th  {
   border-color: #fff;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-div.Content table.AnswerTable tr td div{
+table.AnswerTable tr td div{
   margin-top:5px;
   margin-bottom:5px;
 }
@@ -646,8 +646,8 @@ td ul, td ol {
 
 /* Alignment/Spacing */
 /* delete after conversion is complete! */
-div.Content div.QuestionNumber,
-div.Content div.question-number, {
+div.QuestionNumber,
+div.question-number, {
   float:left;
 }
 
@@ -655,8 +655,8 @@ div.Content div.question-number, {
   margin-left: 1.7em;
 }
 /* delete after conversion is complete! */
-div.Content div.QuestionText,
-div.Content div.question-text {
+div.QuestionText,
+div.question-text {
   margin-left: 1.7em;
 }
 /* delete after conversion is complete! */
@@ -667,15 +667,15 @@ div.QuestionItem.subQuestion div.question-answer {
   margin-left: 2.5em;
 }
 /* delete after conversion is complete! */
-div.Content div.QuestionAnswer,
-div.Content div.question-answer  {
+div.QuestionAnswer,
+div.question-answer  {
   margin-left: 1.7em;
   margin-bottom: 0.2em;
   margin-top: 0.2em;
 }
 /* delete after conversion is complete! */
-.Content div.QuestionAnswer a,
-.Content div.question-answer a {
+div.QuestionAnswer a,
+div.question-answer a {
   border: none;
   text-decoration: underline;
 }
@@ -736,7 +736,7 @@ input[value="Add More"]:hover {
 
 /* PDF download div styling */
 
-div.Content div.PDFDownload {
+div.PDFDownload {
   display:block;
   background-image: url(../../../../ais/common/pdficon_small.gif);
   background-repeat: no-repeat;
@@ -746,7 +746,7 @@ div.Content div.PDFDownload {
   background-position: left;
 }
 
-div.Content div.ExcelDownload {
+div.ExcelDownload {
   display:block;
   background-image: url(../../../../ais/common/Excelicon_small.png);
   background-repeat: no-repeat;
@@ -762,14 +762,14 @@ div.Content div.ExcelDownload {
   border: 1px solid #FFAC33;
 }
 
-div.Content div.DeadlineNotice {
+div.DeadlineNotice {
   font-size: 1.2em;
   font-weight: bold;
   padding: .4em inherit;
 }
 
-div.Content div.ApplicantName,
-div.Content div.RecommendationFor {
+div.ApplicantName,
+div.RecommendationFor {
   font-size: 1.2em;
   color: #025689;
   margin-bottom: .5em;
@@ -779,8 +779,8 @@ div.Content div.RecommendationFor {
   margin-top: .5rem;
 }
 
-div.Content div.Notice,
-div.Content div.notice {
+div.Notice,
+div.notice {
   font-size: 1.5rem;
   text-align:center;
 }
@@ -797,39 +797,39 @@ div.Group {
 
 /* Hide QuestionAnswer divs for "Generic Text" QuestionItems (so that they can be used as question 'headers' for multi-part questions) */
 
-div.Content div.TextGen1 div.QuestionAnswer,
-div.Content div.TextGen2 div.QuestionAnswer,
-div.Content div.TextGen3 div.QuestionAnswer,
-div.Content div.TextGen4 div.QuestionAnswer,
-div.Content div.TextGen5 div.QuestionAnswer,
-div.Content div.TextGen6 div.QuestionAnswer,
-div.Content div.TextGen7 div.QuestionAnswer,
-div.Content div.TextGen8 div.QuestionAnswer,
-div.Content div.TextGen9 div.QuestionAnswer,
-div.Content div.TextGeneric10 div.QuestionAnswer,
-div.Content div.TextGen1 div.question-answer,
-div.Content div.TextGen2 div.question-answer,
-div.Content div.TextGen3 div.question-answer,
-div.Content div.TextGen4 div.question-answer,
-div.Content div.TextGen5 div.question-answer,
-div.Content div.TextGen6 div.question-answer,
-div.Content div.TextGen7 div.question-answer,
-div.Content div.TextGen8 div.question-answer,
-div.Content div.TextGen9 div.question-answer,
-div.Content div.TextGeneric10 div.question-answer  {
+div.TextGen1 div.QuestionAnswer,
+div.TextGen2 div.QuestionAnswer,
+div.TextGen3 div.QuestionAnswer,
+div.TextGen4 div.QuestionAnswer,
+div.TextGen5 div.QuestionAnswer,
+div.TextGen6 div.QuestionAnswer,
+div.TextGen7 div.QuestionAnswer,
+div.TextGen8 div.QuestionAnswer,
+div.TextGen9 div.QuestionAnswer,
+div.TextGeneric10 div.QuestionAnswer,
+div.TextGen1 div.question-answer,
+div.TextGen2 div.question-answer,
+div.TextGen3 div.question-answer,
+div.TextGen4 div.question-answer,
+div.TextGen5 div.question-answer,
+div.TextGen6 div.question-answer,
+div.TextGen7 div.question-answer,
+div.TextGen8 div.question-answer,
+div.TextGen9 div.question-answer,
+div.TextGeneric10 div.question-answer  {
   display:none;
 }
 
-div.Content div.TextGen1,
-div.Content div.TextGen2,
-div.Content div.TextGen3,
-div.Content div.TextGen4,
-div.Content div.TextGen5,
-div.Content div.TextGen6,
-div.Content div.TextGen7,
-div.Content div.TextGen8,
-div.Content div.TextGen9,
-div.Content div.TextGeneric10 {
+div.TextGen1,
+div.TextGen2,
+div.TextGen3,
+div.TextGen4,
+div.TextGen5,
+div.TextGen6,
+div.TextGen7,
+div.TextGen8,
+div.TextGen9,
+div.TextGeneric10 {
   clear:both;
 }
 
@@ -842,7 +842,7 @@ div.SectionDisplay h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-div.Content div.Divider,
+div.Divider,
 div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
   font-size: 1.5rem;
   color: #025689;
@@ -853,7 +853,7 @@ div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
   text-align: left;
 }
 
-.Content div.SectionDisplay h2 {
+div.SectionDisplay h2 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0;
@@ -868,12 +868,12 @@ div#ApplicationTemplateDisplayAUC div.SectionDisplay h1 {
 by giving the '2' element an empty AfterQuestion div
 */
 
-div.Content div.AfterQuestion {
+div.AfterQuestion {
   clear:both;
 }
 
 
-.Content .GroupedItem {
+.GroupedItem {
   padding: .75rem;
   margin: .5em 0 1em 0;
   background-color: #F3F3F3;
@@ -882,15 +882,15 @@ div.Content div.AfterQuestion {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-div.Content div.GroupedItem div.RadioButtonMatrix table{
+div.GroupedItem div.RadioButtonMatrix table{
   background-color: #F3F3F3;
 }
 .subConditional {
   margin-left: 4em;
 }
 /* delete after conversion is complete! */
-div.Content div.subConditional div.QuestionText,
-div.Content div.subConditional div.question-text {
+div.subConditional div.QuestionText,
+div.subConditional div.question-text {
   margin-left: 1.5em;
 }
 /* delete after conversion is complete! */
@@ -899,17 +899,17 @@ div.question-text p {
   display:inline;
 }
 /* delete after conversion is complete! */
-div.Content div.QuestionItem div.GroupedItem div.QuestionText .Title:before,
-div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before,
-div.Content div.QuestionItem div.GroupedItem div.question-text .Title:before,
-div.Content div.DisplayItemOnly div.GroupedItem div.question-text .Title:before {
+div.QuestionItem div.GroupedItem div.QuestionText .Title:before,
+div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before,
+div.QuestionItem div.GroupedItem div.question-text .Title:before,
+div.DisplayItemOnly div.GroupedItem div.question-text .Title:before {
   content: '';
 }
 /* delete after conversion is complete! */
-div.Content div.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.required:not(.Group) div.QuestionText .Title:after,
-div.Content div.required:not(.Group) div.question-text .Title:after,
-div.Content table.required:not(.Group) div.question-text .Title:after {
+div.required:not(.Group) div.QuestionText .Title:after,
+table.required:not(.Group) div.QuestionText .Title:after,
+div.required:not(.Group) div.question-text .Title:after,
+table.required:not(.Group) div.question-text .Title:after {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
@@ -954,49 +954,49 @@ div.question-text ol {
   list-style-type: upper-alpha;
 }
 
-div.Content input[type='text'] {
+input[type='text'] {
   width: 15em;
 }
 
-div.Content div.integer input[type='text'],
-div.Content div.date input[type='text'],
-div.Content div.RecSchoolCity input[type='text'],
-div.Content div.RecSchoolZIPCode input[type='text'],
-div.Content div.ParentZIPCode input[type='text']
-div.Content div.MailAddrZIP input[type='text']
-div.Content div.PhysAddrZIPCode input[type='text']
-div.Content div.SchoolZIP input[type='text'] {
+div.integer input[type='text'],
+div.date input[type='text'],
+div.RecSchoolCity input[type='text'],
+div.RecSchoolZIPCode input[type='text'],
+div.ParentZIPCode input[type='text']
+div.MailAddrZIP input[type='text']
+div.PhysAddrZIPCode input[type='text']
+div.SchoolZIP input[type='text'] {
   width: 7em;
 }
-/* div.Content div.2digitInteger input[type='text'] {
+/* div.2digitInteger input[type='text'] {
   width: 2em;
 } */
 
-div.Content div.SectionDisplay table tr td div.caption input[type="text"] {
+div.SectionDisplay table tr td div.caption input[type="text"] {
   width: 15em;
 }
-div.Content div.SectionDisplay table tr td .LargeInputTable input[type="text"],
-div.Content div.SectionDisplay .ItemAddress table tr td input[type="text"],
+div.SectionDisplay table tr td .LargeInputTable input[type="text"],
+div.SectionDisplay .ItemAddress table tr td input[type="text"],
 div.SectionDisplay .ItemAddress td select
  {
   width: 15rem;
 }
-div.Content div.SectionDisplay table tr td input[type="text"] {
+div.SectionDisplay table tr td input[type="text"] {
   width: 8em;
 }
-div.Content div.SectionDisplay table tr td input[type="text"].IntegerQuestion {
+div.SectionDisplay table tr td input[type="text"].IntegerQuestion {
   width: 6em;
 }
 
-div.Content div.NumberOfWords,
-div.Content div.NumberOfCharacters {
+div.NumberOfWords,
+div.NumberOfCharacters {
   font-style: italic;
   font-size: 0.8em;
   color: #777;
   font-weight: normal;
 }
 
-div.Content .SideNote {
+.SideNote {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-style: italic;
@@ -1015,8 +1015,8 @@ div.Content .SideNote {
   max-width: 10em;
 }
 
-div.Content table .AjaxFlexibleFileUpload .Button span,
-.Content .AjaxFlexibleFileUpload .Button span,
+table .AjaxFlexibleFileUpload .Button span,
+.AjaxFlexibleFileUpload .Button span,
 .ERAttachmentFlexibleEditor .Button span {
   background-color: transparent;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1142,7 +1142,7 @@ span.filterTextBox {
 }
 
 /* Form: Health Questionnaire --> */
-div.Content .fromQuestionnaire .File ~ .Text input[type='text'] {
+.fromQuestionnaire .File ~ .Text input[type='text'] {
   display: block;
   margin: .25rem 0;
 }

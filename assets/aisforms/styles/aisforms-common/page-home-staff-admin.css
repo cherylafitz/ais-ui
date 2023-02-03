@@ -1,0 +1,63 @@
+/* PAGE: HOME STAFF and admin--> */
+
+#main-id[data-page-name="Main"].Administrator, 
+#main-id[data-page-name="Main"][class*="Staff"], 
+#main-id[data-page-name="Main"].Developer {
+    display: flex;
+    flex-flow: row wrap;
+}
+#main-id .admin-home-links {
+  padding: 1rem;
+  background-color: #33424d;
+  flex-grow: 1;
+}
+#main-id .admin-home-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+#main-id .admin-home-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: .125rem;
+  display: block;
+  padding: 0 0.25rem 0 0.5rem;
+  text-align: left;
+  margin: 0.5rem 0;
+  border-left: 1px solid #FFD590;
+}
+#main-id .admin-home-links a:hover {
+  background-color: rgba(76,140,158, 0.5);
+}
+#main-id .staffHome {
+  flex-basis: 600px;
+  flex-grow: 1;
+  padding: 1.75rem;
+  overflow: auto;
+}
+
+.staffHome .TransferInboxLink {
+  margin-bottom: .5rem;
+}
+.staffHome .toggle-buttons-wrapper {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+/*temp!!*/
+.staffHome label.switch {
+  width: initial;
+  height: initial;
+}
+
+@media only screen and (min-width: 860px) {
+  #main-id .admin-home-links {
+      flex-grow: 0;
+  }
+  #main-id .admin-home-links ul {
+    display: block;
+  }
+}
+
+/* <-- PAGE: HOME STAFF and admin */

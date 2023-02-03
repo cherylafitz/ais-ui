@@ -2053,6 +2053,209 @@ tr.has-pii td.pii {
 }
 /* <-- TOGGLE */
 
+/* __base --> */
+
+/*temp! for testing*/
+body#body--environment-staging {
+  border-left: none;
+  border-right: none;
+  margin-top: 0px;
+  height: unset;
+  width: unset;
+}
+body#body--environment-staging:before, body#body--environment-staging:after {
+  content: "";
+  position: static;
+  background: transparent;
+  left: 0 !important;
+  right: 0 !important;
+  height: 0 !important;
+  z-index: 5001;
+}
+/*end temp */
+
+/* header --> */
+#header-id {
+  background: #29353d;
+  padding: 0.5rem;
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+}
+.IsNotLoggedIn #header-id {
+  flex-shrink: 0;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+#header-id .user-name-block {
+  justify-content: flex-end;
+  text-align: right;
+}
+#header-id .form-input label {
+  color: #FFD590;
+  width: initial;
+  font-size: 1.125rem;
+}
+#header-id .form-input select {
+  padding: 0;
+  font-size: 1.125rem;
+  max-width: initial;
+}
+#header-id #header-customization-id,
+#header-id .user-name-block {
+  display: flex;
+  flex-grow: 1;
+}
+#header-id .site-info-wrapper {
+  text-align: right;
+}
+#header-id .site-info-wrapper #serverInfo {
+    margin-right: 2rem;
+}
+#header-id #serverInfo .serverDate,
+#header-id .site-info-wrapper .instanceNumber,
+#header-id .brand .name {
+  font-weight: bold;
+}
+#header-id #serverInfo #serverTimeFieldID {
+  font-weight: normal;
+}
+
+#header-id .site-info-wrapper #serverInfo,
+#header-id .site-info-wrapper #build-and-instance {
+  display: inline-block;
+  vertical-align: top;
+  font-size: .875rem;
+  color: #e6e6e6;
+  text-align:  right;
+}
+#header-id .site-info-wrapper .page-name {
+  display: block;
+}
+/* <-- header  */
+
+/* main nav --> */
+#main-menu-id {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-shrink: 0;
+  flex-grow: 1;
+  background-color: #b3c1cc;
+  border-bottom: 1px solid rgb(137, 148, 158);
+  background: #1e5799;
+  background: -moz-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%);
+  background: -webkit-linear-gradient(bottom, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%);
+  background: linear-gradient(to top, #94a8b8 0%, #b3c1cc 40%, #b3c1cc 100%);
+/*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94a8b8', endColorstr='#b3c1cc',GradientType=0 );*/
+}
+#main-menu-id .menu-items-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#main-menu-id .menuItem,
+#main-menu-id .logout-link-wrapper {
+  padding: 0.125rem 1rem 0.1875rem;
+}
+#main-menu-id .menuItem:hover,
+#main-menu-id .menuItem:hover a {
+  background-color: #34677f;
+  color: #fff;
+}
+#main-menu-id a {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+#main-menu-id .Logout {
+  font-weight: bold;
+}
+#main-menu-id .Logout:hover {
+  text-decoration: underline;
+}
+/* <-- main nav  */
+/* main content --> */
+#main-id {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100%;
+  flex-shrink: 0;
+}
+#main-id div.PageName {
+  flex-basis: 100%;
+  background-color: #29353d;
+  color: #fff;
+  padding: .5rem 1rem;
+  text-align: right;
+  font-size: .875rem;
+}
+#main-id > h1:first-child {
+  padding: 1.5rem 1.5rem 0;
+  margin: 0;
+}
+h1 ~ .main-content {
+  padding: 1rem 1.5rem 1.5rem;
+}
+#main-id > .main-content:first-child {
+/*  padding: 1.5rem;*/
+}
+/* pages requiring no outer padding--> */
+#main-id[data-page-name="AirAutoLogoutPage"] > h1:first-child {
+  padding: 0;
+}
+/* <-- pages requiring no outer padding */
+
+/* <-- main content */
+/* footer --> */
+#footer-id {
+  background-color: #29353d;
+  padding: 2rem 1.5rem 2rem;
+  border-top: 1px solid #3d4f5c;
+  flex-flow: row wrap;
+  color: #fff;
+}
+.IsNotLoggedIn #footer-id {
+  padding: 2rem 1.5rem;
+}
+
+/* temp --> */
+.IsNotLoggedIn #footer-id #HomePage,
+.IsLoggedIn #footer-id #LoginPage {
+  display: none;
+}
+#ac-wrapper-id {
+  display: contents;
+}
+/* <--temp */
+/* <--footer */
+
+
+@media only screen and (min-width: 56em) {
+  .IsNotLoggedIn #header-id {
+    padding: 1.5rem 6rem;
+  }
+}
+@media only screen and (min-width: 50em) {
+  #footer-id {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 43.5em) {
+  .IsNotLoggedIn #header-id {
+    background-color: #33424d;
+    min-height: 96px;
+  }
+  .IsNotLoggedIn #footer-id {
+    padding: 2rem 6rem;
+  }
+}
+/* <-- __base */
+
 /* NOTE TO CHERYL FROM GREGG FOR EDITS MADE AFTER 4 Jun 2019 */
 /*                                                           */
 /* COLOUR PALETTE ADDITIONS: Any new colours I used are      */
@@ -2081,7 +2284,7 @@ input::-moz-focus-inner {
 }
 body {
   background-repeat: repeat-x;
-  color: #222222;
+  color: #000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
   min-height: 100%;
@@ -2106,7 +2309,7 @@ body {
   content: " ";
   display: block;
 }
-/*.Content */p {
+p {
   margin: 0 0 1rem 0;
   line-height: 1.5;
 }
@@ -2288,7 +2491,7 @@ address {
 
 /* <--HEADER */
 /* TITLES-->*/
-.Content h1 {
+h1 {
   clear: both;
 }
 div.SectionsRowDisplay h1,
@@ -2297,8 +2500,8 @@ div.BrandRowDisplay h1 {
   margin-top: .5rem;
 }
 /* delete after conversion is complete! */
-.Content .SectionDisplay h1,
-.Content .section-display h1 {
+.SectionDisplay h1,
+.section-display h1 {
   text-align: left;
   margin: .5em 0;
 }
@@ -2427,11 +2630,11 @@ table.rolodex th {
 #UserSearch table.Search th {
   text-align: left;
 }
-div.Content div.ListOfUsers td.IsLoggedIn {
+div.ListOfUsers td.IsLoggedIn {
   color: #fff;
   background-color: #5A752D;
 }
-div.Content div.AIRAdminSearchForApplications div.instructions {
+div.AIRAdminSearchForApplications div.instructions {
   font-size: .8em;
   margin: 0 auto;
 }
@@ -2540,7 +2743,7 @@ div.Main div.staffHome div.Deadlines {
   padding: 1rem 0 0;
   margin-bottom: 1.5rem;
 }
-.Content table.Deadlines table.templates tr td.time {
+table.Deadlines table.templates tr td.time {
   width: 12em;
 }
 .staffHome h1 {
@@ -2642,7 +2845,7 @@ div.Main div.staffHome div.Deadlines {
 }
 /* <--CREATE USERS */
 /* LIST OF QUESTIONS--> */
-.Content a.addQuestion {
+a.addQuestion {
     padding-right: 0;
     margin-right: 2.5em;
 }
@@ -2714,6 +2917,9 @@ div.MyTrackedForms div  {
   margin: -1rem 0 0;
   padding: 2rem 1.5rem 2.5rem;
   border: 1px solid #d5d5da;
+}
+main#main-id #FormsWrapper {
+  margin: 0;
 }
 #FormsWrapper fieldset {
   margin-bottom: 1rem;
@@ -2803,9 +3009,13 @@ table.TemplateTable tr td {
 #UserHomePage {
   display: flex;
   flex-flow: row wrap;
+/* DELETE AFTER 2/6 */
   margin: -1.5rem -1.25rem;
   flex-grow: 1;
   flex-shrink: 0;
+}
+main#main-id #UserHomePage {
+  margin: 0;
 }
 /*TEMP*/
 .IsLoggedIn #CookieDeclaration {
@@ -2942,10 +3152,10 @@ table.TemplateTable tr td {
   margin-top: 0;
   font-weight: normal;
 }
-/*.Content*/ .Tips a {
+.Tips a {
   color: #c4dcee;
 }
-/*.Content*/ .Tips a:hover {
+.Tips a:hover {
   color: #FFA391;
 }
 span.aisEmail {
@@ -3036,7 +3246,7 @@ div.EvaluationQueueDisplay table.rolodex th {
 }
 /* <--HOMEPAGE */
 /* UserDisplay--> */
-div.Content div.UserDisplay table.rolodex .menu a {
+div.UserDisplay table.rolodex .menu a {
   width: 25%;
 }
 body div.UserDisplay table tr.MenuPreview td {
@@ -3125,13 +3335,6 @@ table.rolodex tr.ItemXMLTag th {
 
 /* <-- PAGE: ApplicationEmailWorkflow */
 
-/* PAGE: #list-of-forms-page -->  */
-
-#list-of-forms-page .related-form {
-  display: block;
-}
-
-/* <-- PAGE: #list-of-forms-page  */
 
 /* PAGE: FORM TRANSFER INBOX --> */
 .transfer-errors-inbox .Problem,
@@ -3177,7 +3380,7 @@ table.rolodex tr.ItemXMLTag th {
 }
 
 /* PAGE: APPLIATION SUBMITTED SUCCESSFULY EMAIL --> */
-  div.Content div.ApplicationSubmittedSuccessfullyPage table {
+  div.ApplicationSubmittedSuccessfullyPage table {
     background-color: transparent;
   }
   div.SecurityStamp {
@@ -3308,7 +3511,8 @@ span.fax {
 .legal span {
   display: block;
 }
-#footer .legal {
+#footer .legal,
+#footer-id .legal {
   order:4;
   margin: 0 1rem .75rem 0;
   flex-grow: 1;
@@ -3316,11 +3520,13 @@ span.fax {
   font-size: .875rem;
   line-height: 24px;
 }
-#footer #codivus {
+#footer #codivus,
+#footer-id #codivus-id {
   order: 5;
   margin-top: 0;
 }
-#footer #buildAndInstance {
+#footer #buildAndInstance,
+#footer-id #buildAndInstance {
   order: 6;
   flex-basis: 100%;
   align-self: flex-end;
@@ -3328,7 +3534,7 @@ span.fax {
 .ACaddressBlock > span {
   margin-bottom: .5rem;
 }
-div#footer2 .ACaddressBlock {
+.ACaddressBlock {
   margin: .5em 0 0 0;
   display: contents;
 }
@@ -3343,32 +3549,43 @@ div#footer2 .ACaddressBlock {
   display: none;
 }
 div#footer div#codivus,
-div#footer div#CodivusAttribution {
+div#footer div#CodivusAttribution,
+#footer-id #codivus-id,
+#footer-id #CodivusAttribution {
+  display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: .5rem;
 }
-#footer .logo {
+#footer .logo,
+#footer-id .logo {
   display: none;
 }
-#footer #Policies {
+#footer #Policies,
+#footer-id #Policies {
   margin: 0 1rem 1rem 0;
 }
 #footer #amagavi table,
-#footer #codivus table {
+#footer #codivus table
+#footer-id #amagavi-id table,
+#footer-id #codivus-id table {
   font-size: .875rem;
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline,
-#footer.IsLoggedIn #codivus .byline {
+#footer.IsLoggedIn #codivus .byline, 
+#footer-id.IsLoggedIn #amagavi-id .byline,
+#footer-id.IsLoggedIn #codivus-id .byline {
   color: #fff;
 }
 #footer2 a,
+#footer-id a,
 .IsLoggedIn #amagavi a,
 .IsLoggedIn #codivus a {
   color: #c4dcee;
 }
-#footer2 a:hover {
+#footer2 a:hover,
+#footer-id a:hover {
   color: #FFC8BD;
 }
 #amagavi a,
@@ -3381,7 +3598,8 @@ td.logoCell a {
 }
 #amagavi a:hover,
 #codivus a:hover,
-#footer a:active {
+#footer a:active,
+#footer-id a:active {
   color: #FF7F67;
 }
 table#login tr.header th,
@@ -3425,7 +3643,8 @@ div.CheckboxMatrix tr td {
 .byline {
   color: #323232;
 }
-#footer .byline {
+#footer .byline,
+#footer-id .byline {
   color: #fff;
   margin-left: .25rem;
 }
@@ -3636,7 +3855,7 @@ body#body--environment-staging:after {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  .Content .admin-home-links {
+  .admin-home-links {
     width: 100%;
   }
   .ACaddressBlock {
@@ -3648,7 +3867,7 @@ body#body--environment-staging:after {
   }
   /* UPDATE validation and errors on login  -->>>> */
 
-  .Content .mainInstructions  {
+  .mainInstructions  {
     float: none;
     margin: 1em auto;
   }
@@ -3677,7 +3896,7 @@ body#body--environment-staging:after {
     display: none;
   }
 
-  div.ApplicationTemplateDisplay h2 {
+  .ApplicationTemplateDisplay h2 {
     padding: 0 0 1em;
     font-size: 1em;
   }
@@ -3709,7 +3928,8 @@ body#body--environment-staging:after {
     margin-left: 0 !important;
     margin-right: 24px !important;
   }
-  .MenuOfSections select, div.Content .MenuOfSections input  {
+  .MenuOfSections select, 
+  .MenuOfSections input  {
     font-size: .8em;
   }
   /* delete after conversion complete! */
@@ -3717,10 +3937,11 @@ body#body--environment-staging:after {
   div.section-navigator .MenuOfSections .label {
     display: none;
   }
-  div#AClogoFooter img, div#footer {
+  div#AClogoFooter img, 
+  div#footer {
     width: 100%;
   }
-  .Content .mainInstructions  {
+  .mainInstructions  {
     float: none;
     margin: 1em auto;
     height: inherit;
@@ -3755,7 +3976,7 @@ body#body--environment-staging:after {
   }
 }
 @media only screen and (min-width : 568px) and (max-width : 767px) {
-  .Content .mainInstructions  {
+  .mainInstructions  {
     float: none;
     margin: 1em auto;
   }
@@ -3781,7 +4002,7 @@ body#body--environment-staging:after {
   div.section-navigator .MenuOfSections .label {
     font-size: .9em;
   }
-  div.Content .MenuOfSections input {
+  .MenuOfSections input {
     font-size: .9em;
   }
   .HomeProgramContent,
@@ -3809,7 +4030,7 @@ body#body--environment-staging:after {
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-  .Content .mainInstructions {
+  .mainInstructions {
     height: inherit;
     width: inherit;
   }
@@ -4012,7 +4233,9 @@ button:hover {
     margin-left: 1.75rem;
   }
   div#footer div#codivus,
-  div#footer div#CodivusAttribution {
+  div#footer div#CodivusAttribution
+  #footer-id div#codivus,
+  #footer-id div#CodivusAttribution {
     font-size: .875rem;
     line-height: 24px;
   }
@@ -4617,6 +4840,9 @@ h5 {
   flex: 0 1 auto;
   font-weight: bold;
 }
+#ApplicationTemplateDisplayAUC {
+  padding: 1.5rem 1.25rem;
+}
   div#ApplicationTemplateDisplayAUC .info-bar ~ .page-heading {
     padding: 1rem;
     font-size: 1.5rem;
@@ -4930,7 +5156,7 @@ div.PreviousSection {
   padding: 0 .125rem 0 .5rem;
   vertical-align: middle;
 }
-div.ApplicationTemplateDisplay div.templateContent {
+.ApplicationTemplateDisplay div.templateContent {
   display: flex;
   flex-flow: row wrap;
   margin-top: 1rem;
@@ -4963,7 +5189,45 @@ div.ApplicationTemplateDisplay div.templateContent {
 }
 /* <-- PAGE: APPLICATION TEMPLATE EDITOR */
 
-/* PAGE: HOME STAFF --> */
+/* PAGE: HOME STAFF and admin--> */
+
+#main-id[data-page-name="Main"].Administrator, 
+#main-id[data-page-name="Main"][class*="Staff"], 
+#main-id[data-page-name="Main"].Developer {
+    display: flex;
+    flex-flow: row wrap;
+}
+#main-id .admin-home-links {
+  padding: 1rem;
+  background-color: #33424d;
+  flex-grow: 1;
+}
+#main-id .admin-home-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+#main-id .admin-home-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: .125rem;
+  display: block;
+  padding: 0 0.25rem 0 0.5rem;
+  text-align: left;
+  margin: 0.5rem 0;
+  border-left: 1px solid #FFD590;
+}
+#main-id .admin-home-links a:hover {
+  background-color: rgba(76,140,158, 0.5);
+}
+#main-id .staffHome {
+  flex-basis: 600px;
+  flex-grow: 1;
+  padding: 1.75rem;
+  overflow: auto;
+}
 
 .staffHome .TransferInboxLink {
   margin-bottom: .5rem;
@@ -4978,7 +5242,29 @@ div.ApplicationTemplateDisplay div.templateContent {
   height: initial;
 }
 
-/* <-- PAGE: HOME STAFF */
+@media only screen and (min-width: 860px) {
+  #main-id .admin-home-links {
+      flex-grow: 0;
+  }
+  #main-id .admin-home-links ul {
+    display: block;
+  }
+}
+
+/* <-- PAGE: HOME STAFF and admin */
+
+/* PAGE: #list-of-forms-page -->  */
+
+#list-of-forms-page-id .related-form {
+  display: block;
+}
+th.related-forms div.button-wrapper { 
+  display:none; 
+}
+th.related-forms div.button-wrapper[data-rows-with-content] {
+  display:block; 
+}
+/* <-- PAGE: #list-of-forms-page  */
 
 /* PAGE: RAW ANSWERS */
 
@@ -5069,6 +5355,14 @@ div.ApplicationTemplateDisplay div.templateContent {
 }
 /* <-- PAGE: USER HOME */
 
+/* pages: create users --> */
+
+  div.Roles td.does-not-match-filter { 
+    display: none; 
+  }
+
+/* <-- pages: create users */
+
 /* PAGES: PROCTORED EXAM --> */
 form.has-unsaved-edits {
   border-left: 3px solid #de463d;
@@ -5115,9 +5409,9 @@ table.row-display td.change {
 /* SHARED FORMS --> */
 div.Main .JoinSharedForm,
 div.Main .SharedWithExplanation,
-div.Content span.TrackChanges,
-div.Content span.TrackRecentChanges,
-div.Content span.SharedTeamManagement {
+span.TrackChanges,
+span.TrackRecentChanges,
+span.SharedTeamManagement {
   background-color:#FFFFFF;
   border: medium solid #de6846;
   border-radius: 1em;
@@ -5125,9 +5419,9 @@ div.Content span.SharedTeamManagement {
   margin: .75em 0;
   display: inline-block;
 }
-div.Content .AdminFormNav span.TrackChanges,
-div.Content .AdminFormNav span.TrackRecentChanges,
-div.Content span.SharedTeamManagement {
+.AdminFormNav span.TrackChanges,
+.AdminFormNav span.TrackRecentChanges,
+span.SharedTeamManagement {
   margin: 0 .25rem;
 }
 div.Main .SharedLegend {
@@ -5201,11 +5495,14 @@ div#build-and-instance {
   display: block;
   text-align: right;
 }
-.brand .name:after {
+.brand .name {
+  margin-right: 1rem;
+}
+/*.brand .name:after {
   content: " |";
   color: #FFD590;
   font-size: 1.1em;
-}
+}*/
 #Header #serverInfo {
   margin-right: 2rem;
 }
@@ -5323,7 +5620,7 @@ div#build-and-instance {
 table {
   border-collapse: collapse;
 }
-div.Content div.Rowdisplay {
+div.Rowdisplay {
   margin: 0 auto;
 }
 table.RowDisplay,
@@ -5626,11 +5923,11 @@ td.even.submitted {
   background-color: #8fb7d6;
   color: #000;
 }
-.Content .ApplicantApplicationRowDisplay  table.RowDisplay td,
-.Content .ApplicantApplicationRowDisplay  table.RowDisplay th {
+.ApplicantApplicationRowDisplay  table.RowDisplay td,
+.ApplicantApplicationRowDisplay  table.RowDisplay th {
   border: 1px solid #e6e6e6;
 }
-.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
+.ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
   background-color: #e0e6ec;
 }
 form table.RowDisplay.Evaluators,
@@ -5680,7 +5977,7 @@ margin: 0.25em 0 0.25em 0;
 /* NEW TABLES CSS FOR AFTER MARCO REPLACES ROWDISPLAY WITH ROW-DISPLAY -->> */
 
 /* LIST OF SECTIONS--> */
-div.Content div.row-display {
+div.row-display {
   margin: 0 auto;
 }
 table.row-display {
@@ -5784,11 +6081,11 @@ td.even.submitted {
   background-color: #8fb7d6;
   color: #000;
 }
-.Content .ApplicantApplicationRowDisplay  table.row-display td,
-.Content .ApplicantApplicationRowDisplay  table.row-display th {
+.ApplicantApplicationRowDisplay  table.row-display td,
+.ApplicantApplicationRowDisplay  table.row-display th {
   border: 1px solid #e6e6e6;
 }
-.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.row-display td {
+.ApplicantApplicationRowDisplay .primaryActionLinksDivider table.row-display td {
   background-color: #e0e6ec;
 }
 .LiveTemplates table.row-display tr.headerRow th.Available,

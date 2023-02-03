@@ -3,7 +3,7 @@
 table {
   border-collapse: collapse;
 }
-div.Content div.Rowdisplay {
+div.Rowdisplay {
   margin: 0 auto;
 }
 table.RowDisplay,
@@ -306,11 +306,11 @@ td.even.submitted {
   background-color: #8fb7d6;
   color: #000;
 }
-.Content .ApplicantApplicationRowDisplay  table.RowDisplay td,
-.Content .ApplicantApplicationRowDisplay  table.RowDisplay th {
+.ApplicantApplicationRowDisplay  table.RowDisplay td,
+.ApplicantApplicationRowDisplay  table.RowDisplay th {
   border: 1px solid #e6e6e6;
 }
-.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
+.ApplicantApplicationRowDisplay .primaryActionLinksDivider table.RowDisplay td {
   background-color: #e0e6ec;
 }
 form table.RowDisplay.Evaluators,
@@ -360,7 +360,7 @@ margin: 0.25em 0 0.25em 0;
 /* NEW TABLES CSS FOR AFTER MARCO REPLACES ROWDISPLAY WITH ROW-DISPLAY -->> */
 
 /* LIST OF SECTIONS--> */
-div.Content div.row-display {
+div.row-display {
   margin: 0 auto;
 }
 table.row-display {
@@ -464,11 +464,11 @@ td.even.submitted {
   background-color: #8fb7d6;
   color: #000;
 }
-.Content .ApplicantApplicationRowDisplay  table.row-display td,
-.Content .ApplicantApplicationRowDisplay  table.row-display th {
+.ApplicantApplicationRowDisplay  table.row-display td,
+.ApplicantApplicationRowDisplay  table.row-display th {
   border: 1px solid #e6e6e6;
 }
-.Content .ApplicantApplicationRowDisplay .primaryActionLinksDivider table.row-display td {
+.ApplicantApplicationRowDisplay .primaryActionLinksDivider table.row-display td {
   background-color: #e0e6ec;
 }
 .LiveTemplates table.row-display tr.headerRow th.Available,

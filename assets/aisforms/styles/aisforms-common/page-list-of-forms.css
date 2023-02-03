@@ -1,0 +1,12 @@
+/* PAGE: #list-of-forms-page -->  */
+
+#list-of-forms-page-id .related-form {
+  display: block;
+}
+th.related-forms div.button-wrapper { 
+  display:none; 
+}
+th.related-forms div.button-wrapper[data-rows-with-content] {
+  display:block; 
+}
+/* <-- PAGE: #list-of-forms-page  */

@@ -9,7 +9,7 @@
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-div.Content div.Divider,
+div.Divider,
 div#ApplicationTemplateDisplayAUC .SectionDisplay h1,
 .SectionDisplay h1,
 .SectionDisplay h2,
@@ -78,7 +78,7 @@ h1.section-name {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-div.Content div.Divider,
+div.Divider,
 div#ApplicationTemplateDisplayAUC .section-display h1,
 .section-display h1,
 .section-display h2,

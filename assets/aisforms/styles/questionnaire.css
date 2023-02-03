@@ -1,12 +1,12 @@
 /* overrides --> */
 /* delete after conversion is complete! */
-div.Content div.QuestionText,
-div.Content div.question-text {
+div.QuestionText,
+div.question-text {
   margin-left: 0;
 }
  /* delete after conversion is complete! */
-div.Content div.QuestionAnswer,
-div.Content div.question-answer {
+div.QuestionAnswer,
+div.question-answer {
   margin-left: 0;
   margin-top: .5em;
 }
@@ -45,7 +45,7 @@ div.Content div.question-answer {
   padding: .5em;
   background-color: #d7dcbc;
 }
-div.Content input[type='text'] {
+input[type='text'] {
     width: 80em;
     height: 4em;
     max-width: 100%;

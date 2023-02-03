@@ -6,6 +6,9 @@
   flex: 0 1 auto;
   font-weight: bold;
 }
+#ApplicationTemplateDisplayAUC {
+  padding: 1.5rem 1.25rem;
+}
   div#ApplicationTemplateDisplayAUC .info-bar ~ .page-heading {
     padding: 1rem;
     font-size: 1.5rem;
@@ -319,7 +322,7 @@ div.PreviousSection {
   padding: 0 .125rem 0 .5rem;
   vertical-align: middle;
 }
-div.ApplicationTemplateDisplay div.templateContent {
+.ApplicationTemplateDisplay div.templateContent {
   display: flex;
   flex-flow: row wrap;
   margin-top: 1rem;

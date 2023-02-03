@@ -33,7 +33,9 @@ div.alertBox {
  margin: 0 auto;
  padding: 1em 2em 2em;
 }
-.Content h1, h2 {
+.Content h1, 
+#main-id h1,
+h2 {
  clear: both;
  color: #2E555F;
  font-weight: normal;
@@ -54,13 +56,16 @@ div.alertBox {
 .section-display h2 {
 text-align: left;
 }
-.Content h2 a {
+.Content h2 a,
+#main-id h2 a {
 border-bottom: none;
 text-decoration: none;
 font-weight: normal;
 }
 .Content p,
-.Content li {
+#main-id p,
+.Content li,
+#main-id li {
 line-height: 1.5em;
 font-size: .95em;
 margin-left: 1.5em;

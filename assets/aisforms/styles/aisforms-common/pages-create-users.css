@@ -1,0 +1,7 @@
+/* pages: create users --> */
+
+  div.Roles td.does-not-match-filter { 
+    display: none; 
+  }
+
+/* <-- pages: create users */

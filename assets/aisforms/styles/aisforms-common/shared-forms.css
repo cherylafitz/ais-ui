@@ -1,9 +1,9 @@
 /* SHARED FORMS --> */
 div.Main .JoinSharedForm,
 div.Main .SharedWithExplanation,
-div.Content span.TrackChanges,
-div.Content span.TrackRecentChanges,
-div.Content span.SharedTeamManagement {
+span.TrackChanges,
+span.TrackRecentChanges,
+span.SharedTeamManagement {
   background-color:#FFFFFF;
   border: medium solid #de6846;
   border-radius: 1em;
@@ -11,9 +11,9 @@ div.Content span.SharedTeamManagement {
   margin: .75em 0;
   display: inline-block;
 }
-div.Content .AdminFormNav span.TrackChanges,
-div.Content .AdminFormNav span.TrackRecentChanges,
-div.Content span.SharedTeamManagement {
+.AdminFormNav span.TrackChanges,
+.AdminFormNav span.TrackRecentChanges,
+span.SharedTeamManagement {
   margin: 0 .25rem;
 }
 div.Main .SharedLegend {

@@ -38,7 +38,8 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
 div.SystemAnnouncementsWrapper div.SystemAnnouncement .AnnouncementLabel,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement .AnnouncementLabel,
 div.LoginPageOuter div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList,
-div.Content div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList,
+#main-id div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList,
+#main-id div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList {
   color: #666;
   text-align: left;

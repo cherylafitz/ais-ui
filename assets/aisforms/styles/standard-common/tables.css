@@ -12,12 +12,12 @@ td ul, td ol {
   margin: 0.6rem;
 }
 /* legacy RowDisplay-->  */
-.Content .AnswerTable tr.odd,
+.AnswerTable tr.odd,
 .SectionDisplay table.RowDisplay tr:nth-child(2n+1),
 .SectionDisplay table.RowDisplay tbody tr:nth-child(2n+1) {
   background-color: #ebf3f9;
 }
-.Content .AnswerTable tr.even,
+.AnswerTable tr.even,
 .SectionDisplay table.RowDisplay tr:nth-child(2n+2),
 .SectionDisplay table.RowDisplay tbody tr:nth-child(2n+2)  {
   background-color: #c4dced;
@@ -52,12 +52,12 @@ td ul, td ol {
 
 /* NEW TABLES --> */
 /* new row-display --> */
-.Content .AnswerTable tr.odd,
+.AnswerTable tr.odd,
 .SectionDisplay table.row-display tr:nth-child(2n+1),
 .SectionDisplay table.row-display tbody tr:nth-child(2n+1) {
   background-color: #ebf3f9;
 }
-.Content .AnswerTable tr.even,
+.AnswerTable tr.even,
 .SectionDisplay table.row-display tr:nth-child(2n+2),
 .SectionDisplay table.row-display tbody tr:nth-child(2n+2)  {
   background-color: #c4dced;
@@ -92,7 +92,7 @@ td ul, td ol {
 
 /* Tables -->*/
 div.ChoiceQuestion table,
-.Content div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
+div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
   background-color: transparent;
 }
 table.TemplateTable,
@@ -111,22 +111,22 @@ table.TemplateTable td ul {
 table.Attachments {
   margin-left:0 !important;
 }
-.Content td,
-.Content th {
+td,
+th {
   vertical-align: top;
 }
-.Content div.MenuOfSections td {
+div.MenuOfSections td {
   vertical-align: bottom;
 }
-.Content table.QuestionItem,
-.Content table.QuestionItem tr.QuestionItemRow,
-.Content table.QuestionItem tr.QuestionItemRow td {
+table.QuestionItem,
+table.QuestionItem tr.QuestionItemRow,
+table.QuestionItem tr.QuestionItemRow td {
   border: 0;
 }
-.Content table.InfoBox {
+table.InfoBox {
   background-color: #E1F0FF;
 }
-.Content table.ContrastBox {
+table.ContrastBox {
   background-color: #2E6B9B;
 }
 .SectionDisplay table th {
@@ -135,8 +135,8 @@ table.Attachments {
   font-weight: bold;
 }
 .SectionDisplay table th,
-.Content .AnswerTable tr.headerRow th,
-.Content .AnswerTable thead tr th {
+.AnswerTable tr.headerRow th,
+.AnswerTable thead tr th {
   color: #FFFFFF;
   padding: 0.25rem;
 }
@@ -184,7 +184,7 @@ table.Attachments {
   max-width: 11rem;
   white-space: normal;
 }
-.Content .AnswerTable tr td div{
+.AnswerTable tr td div{
   margin-top:5px;
   margin-bottom:5px;
 }
@@ -282,12 +282,12 @@ td ul, td ol {
   margin: 0.6rem;
 }
 /* legacy RowDisplay-->  */
-.Content .AnswerTable tr.odd,
+.AnswerTable tr.odd,
 .section-display table.RowDisplay tr:nth-child(2n+1),
 .section-display table.RowDisplay tbody tr:nth-child(2n+1) {
   background-color: #ebf3f9;
 }
-.Content .AnswerTable tr.even,
+.AnswerTable tr.even,
 .section-display table.RowDisplay tr:nth-child(2n+2),
 .section-display table.RowDisplay tbody tr:nth-child(2n+2)  {
   background-color: #c4dced;
@@ -322,12 +322,12 @@ td ul, td ol {
 
 /* NEW TABLES --> */
 /* new row-display --> */
-.Content .AnswerTable tr.odd,
+.AnswerTable tr.odd,
 .section-display table.row-display tr:nth-child(2n+1),
 .section-display table.row-display tbody tr:nth-child(2n+1) {
   background-color: #ebf3f9;
 }
-.Content .AnswerTable tr.even,
+.AnswerTable tr.even,
 .section-display table.row-display tr:nth-child(2n+2),
 .section-display table.row-display tbody tr:nth-child(2n+2)  {
   background-color: #c4dced;
@@ -362,7 +362,7 @@ td ul, td ol {
 
 /* Tables -->*/
 div.ChoiceQuestion table,
-.Content div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
+div.GroupedItem div.RadioButtonMatrix.ChoiceQuestion table  {
   background-color: transparent;
 }
 table.TemplateTable,
@@ -381,22 +381,22 @@ table.TemplateTable td ul {
 table.Attachments {
   margin-left:0 !important;
 }
-.Content td,
-.Content th {
+td,
+th {
   vertical-align: top;
 }
-.Content div.MenuOfSections td {
+div.MenuOfSections td {
   vertical-align: bottom;
 }
-.Content table.QuestionItem,
-.Content table.QuestionItem tr.QuestionItemRow,
-.Content table.QuestionItem tr.QuestionItemRow td {
+table.QuestionItem,
+table.QuestionItem tr.QuestionItemRow,
+table.QuestionItem tr.QuestionItemRow td {
   border: 0;
 }
-.Content table.InfoBox {
+table.InfoBox {
   background-color: #E1F0FF;
 }
-.Content table.ContrastBox {
+table.ContrastBox {
   background-color: #2E6B9B;
 }
 .section-display table th {
@@ -405,8 +405,8 @@ table.Attachments {
   font-weight: bold;
 }
 .section-display table th,
-.Content .AnswerTable tr.headerRow th,
-.Content .AnswerTable thead tr th {
+.AnswerTable tr.headerRow th,
+.AnswerTable thead tr th {
   color: #FFFFFF;
   padding: 0.25rem;
 }
@@ -454,7 +454,7 @@ table.Attachments {
   max-width: 11rem;
   white-space: normal;
 }
-.Content .AnswerTable tr td div{
+.AnswerTable tr td div{
   margin-top:5px;
   margin-bottom:5px;
 }
