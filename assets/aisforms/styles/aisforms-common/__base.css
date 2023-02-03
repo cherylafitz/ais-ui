@@ -22,10 +22,15 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 /* header --> */
 #header-id {
   background: #29353d;
-  padding: 0.5rem;
+  padding: 0.75rem;
   color: #fff;
   display: flex;
   flex-flow: row wrap;
+}
+#header-id .header-logo img {
+  height: 52px;
+  max-width: 100%;
+  margin-right: 1rem;
 }
 .IsNotLoggedIn #header-id {
   flex-shrink: 0;
@@ -53,6 +58,9 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 }
 #header-id .site-info-wrapper {
   text-align: right;
+}
+#header-id .user-name-block .first-name {
+  color: #FFD590;
 }
 #header-id .site-info-wrapper #serverInfo {
     margin-right: 2rem;

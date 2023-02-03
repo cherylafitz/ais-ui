@@ -2077,10 +2077,15 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 /* header --> */
 #header-id {
   background: #29353d;
-  padding: 0.5rem;
+  padding: 0.75rem;
   color: #fff;
   display: flex;
   flex-flow: row wrap;
+}
+#header-id .header-logo img {
+  height: 52px;
+  max-width: 100%;
+  margin-right: 1rem;
 }
 .IsNotLoggedIn #header-id {
   flex-shrink: 0;
@@ -2108,6 +2113,9 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 }
 #header-id .site-info-wrapper {
   text-align: right;
+}
+#header-id .user-name-block .first-name {
+  color: #FFD590;
 }
 #header-id .site-info-wrapper #serverInfo {
     margin-right: 2rem;
@@ -2512,7 +2520,8 @@ a.LinkToPreviousPage {
 }
 /*<--TITLES*/
 
-#footer #AClogoFooter img {
+#footer #AClogoFooter img,
+#footer-id #AClogoFooter img {
   max-width: 250px;
   padding: 0 1rem 1rem 0;
 }
@@ -3545,7 +3554,8 @@ span.fax {
   border-top: 1px solid #3d4f5c;
   flex-flow: row wrap;
 }
-#footer .fax {
+#footer .fax,
+#footer-id .fax {
   display: none;
 }
 div#footer div#codivus,
@@ -4232,10 +4242,10 @@ button:hover {
   .Content .staffHome {
     margin-left: 1.75rem;
   }
-  div#footer div#codivus,
-  div#footer div#CodivusAttribution
-  #footer-id div#codivus,
-  #footer-id div#CodivusAttribution {
+  div#footer div#codivus-id,
+  div#footer div#CodivusAttribution,
+  footer#footer-id div#codivus-id,
+  footer#footer-id div#CodivusAttribution {
     font-size: .875rem;
     line-height: 24px;
   }

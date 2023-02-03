@@ -254,7 +254,8 @@ a.LinkToPreviousPage {
 }
 /*<--TITLES*/
 
-#footer #AClogoFooter img {
+#footer #AClogoFooter img,
+#footer-id #AClogoFooter img {
   max-width: 250px;
   padding: 0 1rem 1rem 0;
 }
@@ -1287,7 +1288,8 @@ span.fax {
   border-top: 1px solid #3d4f5c;
   flex-flow: row wrap;
 }
-#footer .fax {
+#footer .fax,
+#footer-id .fax {
   display: none;
 }
 div#footer div#codivus,
@@ -1974,10 +1976,10 @@ button:hover {
   .Content .staffHome {
     margin-left: 1.75rem;
   }
-  div#footer div#codivus,
-  div#footer div#CodivusAttribution
-  #footer-id div#codivus,
-  #footer-id div#CodivusAttribution {
+  div#footer div#codivus-id,
+  div#footer div#CodivusAttribution,
+  footer#footer-id div#codivus-id,
+  footer#footer-id div#CodivusAttribution {
     font-size: .875rem;
     line-height: 24px;
   }
