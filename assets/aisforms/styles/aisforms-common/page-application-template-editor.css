@@ -1,16 +1,50 @@
 /* PAGE: APPLICATION TEMPLATE EDITOR --> */
-.ApplicantApplicationTemplateEditor .form-template-owner {
+[data-page-name="ApplicantApplicationTemplateEditor"] .form-template-owner {
   display: flex;
   flex-flow: row wrap;
   font-size: 1rem;
 }
-.ApplicantApplicationTemplateEditor .form-template-owner.no-owner {
+[data-page-name="ApplicantApplicationTemplateEditor"] .form-template-owner.no-owner {
   align-items: center;
 }
-.ApplicantApplicationTemplateEditor .template-owner-history {
+[data-page-name="ApplicantApplicationTemplateEditor"] .template-owner-history {
   margin: 0;
 }
-.ApplicantApplicationTemplateEditor .form-template-owner select {
+[data-page-name="ApplicantApplicationTemplateEditor"] .form-template-owner select {
   margin-right: 1rem;
 }
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort img.descending,
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort img.ascending
+{
+  display: none;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.asc img.unsorted,
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.asc img.descending
+{
+  display: none;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.asc img.ascending
+{
+  display: inline;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.desc img.unsorted,
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.desc img.ascending
+{
+  display: none;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.desc img.descending
+{
+  display: inline;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] td span.SortData
+{
+  /* Used for JS sorting without any formatting so purposely hiding from user */
+  display:none;
+}
+
 /* <-- PAGE: APPLICATION TEMPLATE EDITOR */

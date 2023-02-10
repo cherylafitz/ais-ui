@@ -1,67 +1,67 @@
 /* COVER page --> */
-.Content .SectionDisplay.cover-page-section {
+.SectionDisplay.cover-page-section {
   page-break-after: always;
 }
-.Content .SectionDisplay.cover-page-section,
-.Content .SectionDisplay.cover-page-section h1,
-.Content .SectionDisplay.cover-page-section h2 {
+.SectionDisplay.cover-page-section,
+.SectionDisplay.cover-page-section h1,
+.SectionDisplay.cover-page-section h2 {
   text-align: center;
 }
-.Content .SectionDisplay.cover-page-section h1 {
+.SectionDisplay.cover-page-section h1 {
   font-size: 3em;
   border-bottom: none;
   margin-bottom: 3em;
 }
-.Content .SectionDisplay.cover-page-section h2 {
+.SectionDisplay.cover-page-section h2 {
   font-size: 2em;
 }
-.Content .SectionDisplay.cover-page-section h2 .template-name,
-.Content .SectionDisplay.cover-page-section h2 .template-year {
+.SectionDisplay.cover-page-section h2 .template-name,
+.SectionDisplay.cover-page-section h2 .template-year {
   display: block;
   margin-bottom: 2em;
 }
-.Content .SectionDisplay.cover-page-section h2 .template-year {
+.SectionDisplay.cover-page-section h2 .template-year {
   margin-bottom: 10em;
 }
-.Content .SectionDisplay.cover-page-section .label {
+.SectionDisplay.cover-page-section .label {
   font-size: 2em;
   margin-bottom: 1em;
 }
-.Content .SectionDisplay.cover-page-section .value {
+.SectionDisplay.cover-page-section .value {
   font-size: 2.5em;
   margin-bottom: 4em;
 }
 
 /* updated section-display */
-.Content .section-display.cover-page-section {
+.section-display.cover-page-section {
   page-break-after: always;
 }
-.Content .section-display.cover-page-section,
-.Content .section-display.cover-page-section h1,
-.Content .section-display.cover-page-section h2 {
+.section-display.cover-page-section,
+.section-display.cover-page-section h1,
+.section-display.cover-page-section h2 {
   text-align: center;
 }
-.Content .section-display.cover-page-section h1 {
+.section-display.cover-page-section h1 {
   font-size: 3em;
   border-bottom: none;
   margin-bottom: 3em;
 }
-.Content .section-display.cover-page-section h2 {
+.section-display.cover-page-section h2 {
   font-size: 2em;
 }
-.Content .section-display.cover-page-section h2 .template-name,
-.Content .section-display.cover-page-section h2 .template-year {
+.section-display.cover-page-section h2 .template-name,
+.section-display.cover-page-section h2 .template-year {
   display: block;
   margin-bottom: 2em;
 }
-.Content .section-display.cover-page-section h2 .template-year {
+.section-display.cover-page-section h2 .template-year {
   margin-bottom: 10em;
 }
-.Content .section-display.cover-page-section .label {
+.section-display.cover-page-section .label {
   font-size: 2em;
   margin-bottom: 1em;
 }
-.Content .section-display.cover-page-section .value {
+.section-display.cover-page-section .value {
   font-size: 2.5em;
   margin-bottom: 4em;
 }

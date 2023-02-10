@@ -1,8 +1,8 @@
 /* HEADINGS -->  */
-.Content .SectionDisplay h1,
-.Content .SectionDisplay h2,
-.Content .SectionDisplay h3,
-.Content .SectionDisplay h4 {
+.SectionDisplay h1,
+.SectionDisplay h2,
+.SectionDisplay h3,
+.SectionDisplay h4 {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -12,21 +12,21 @@
   text-align: left;
   color: #025689;
 }
-.Content .SectionDisplay h2 {
+.SectionDisplay h2 {
   font-size: 1.375em;
 }
-.Content .SectionDisplay h3 {
+.SectionDisplay h3 {
   font-size: 1.25em;
 }
-.Content .SectionDisplay h4 {
+.SectionDisplay h4 {
   font-size: 1.125em;
 }
 
 /* delete after conversion is complete! ^^^^^ */
-.Content .section-display h1,
-.Content .section-display h2,
-.Content .section-display h3,
-.Content .section-display h4 {
+.section-display h1,
+.section-display h2,
+.section-display h3,
+.section-display h4 {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -36,13 +36,13 @@
   text-align: left;
   color: #025689;
 }
-.Content .section-display h2 {
+.section-display h2 {
   font-size: 1.375em;
 }
-.Content .section-display h3 {
+.section-display h3 {
   font-size: 1.25em;
 }
-.Content .section-display h4 {
+.section-display h4 {
   font-size: 1.125em;
 }
 

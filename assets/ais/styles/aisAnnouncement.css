@@ -5,7 +5,8 @@ div.SystemAnnouncementsWrapper {
   width: 100%;
 }
 
-div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+div.SystemAnnouncementsWrapper div.SystemAnnouncement,
+.announcement-wrapper div.SystemAnnouncement {
   background-color: #FFF;
   padding: .5rem .25rem;
   z-index: 1;
@@ -18,27 +19,37 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement {
   box-shadow: 0 0 0px 0.625rem #2b353c;
   margin: -1rem -1rem 2rem;
 }
-
+.announcement-wrapper div.SystemAnnouncement {
+  margin: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 /* AIR */
-.IsNotLoggedIn div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+.IsNotLoggedIn div.SystemAnnouncementsWrapper div.SystemAnnouncement,
+.IsNotLoggedIn .announcement-wrapper div.SystemAnnouncement {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   margin: 0;
   border: 1px solid #f4c0be;
   border-left: .625rem solid #de463d;
+  background: #ffece6;
+  padding: 0.75rem 0.5rem 0.5rem;
 }
 .SystemAnnouncement p {
   margin: .25rem 0;
   font-size: .875rem;
 }
-body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement,
+body div#PageWrapperNavUpdate .announcement-wrapper div.SystemAnnouncement {
   margin: .5rem;
 }
 div.SystemAnnouncementsWrapper div.SystemAnnouncement .AnnouncementLabel,
+div.SystemAnnouncementsWrapper .announcement-wrapper .AnnouncementLabel,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement .AnnouncementLabel,
 div.LoginPageOuter div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList,
-div.Content div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList,
+#main-id .announcement-wrapper div.SystemAnnouncement .FundingSourceList,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement .FundingSourceList {
   color: #666;
   text-align: left;
@@ -46,6 +57,7 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   margin-right: 1rem;
 }
 div.SystemAnnouncementsWrapper div.SystemAnnouncement div.title,
+.announcement-wrapper div.SystemAnnouncement div.title,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement div.title {
   color: #c93028;
   font-size: 1.25rem;
@@ -53,6 +65,7 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   font-weight: normal;
 }
 div.SystemAnnouncementsWrapper div.SystemAnnouncement div.message,
+.announcement-wrapper div.SystemAnnouncement div.message,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement div.message {
   color: #000000;
   font-size: 0.875rem;
@@ -61,6 +74,7 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
 }
 
 div.SystemAnnouncementsWrapper div.SystemAnnouncement div.byline,
+.announcement-wrapper div.SystemAnnouncement div.byline,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement div.byline {
   color: #000;
   text-align: right;
@@ -69,6 +83,7 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   font-style: italic;
 }
 div.SystemAnnouncementsWrapper div.SystemAnnouncement div.byline:before,
+.announcement-wrapper div.SystemAnnouncement div.byline:before,
 body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncement div.byline:before {
   content:"-- ";
 }
@@ -90,6 +105,7 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   font-size: 1.125rem;
   padding: 0.25em 0.5em 0.25em 1.5em;
   border-radius: 0 2px 2px 0;
+  width: 100%;
 }
 .SystemAnnouncement details[open] > summary {
   border-radius: 0 2px 0 0;
@@ -99,10 +115,12 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
   border-top: 1px solid #d9e0e3;
   border-radius: 0 2px 2px 0;
 }
-div.SystemAnnouncementsWrapper div.SystemAnnouncement {
+div.SystemAnnouncementsWrapper div.SystemAnnouncement,
+.announcement-wrapper div.SystemAnnouncement {
   border: 0;
   padding: 0;
   background: #2b353c;
+  padding: 0.125rem;
 }
 .SystemAnnouncement summary span {
   color: #c93028;

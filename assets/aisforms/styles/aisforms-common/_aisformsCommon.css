@@ -26,7 +26,7 @@ input::-moz-focus-inner {
 }
 body {
   background-repeat: repeat-x;
-  color: #222222;
+  color: #000;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   width: 100%;
   min-height: 100%;
@@ -51,7 +51,7 @@ body {
   content: " ";
   display: block;
 }
-/*.Content */p {
+p {
   margin: 0 0 1rem 0;
   line-height: 1.5;
 }
@@ -233,17 +233,17 @@ address {
 
 /* <--HEADER */
 /* TITLES-->*/
-.Content h1 {
+h1 {
   clear: both;
 }
-div.SectionsRowDisplay h1,
-div.BrandEditor h1,
-div.BrandRowDisplay h1 {
+.SectionsRowDisplay h1,
+.BrandEditor h1,
+.BrandRowDisplay h1 {
   margin-top: .5rem;
 }
 /* delete after conversion is complete! */
-.Content .SectionDisplay h1,
-.Content .section-display h1 {
+.SectionDisplay h1,
+.section-display h1 {
   text-align: left;
   margin: .5em 0;
 }
@@ -254,7 +254,8 @@ a.LinkToPreviousPage {
 }
 /*<--TITLES*/
 
-#footer #AClogoFooter img {
+#footer #AClogoFooter img,
+#footer-id #AClogoFooter img {
   max-width: 250px;
   padding: 0 1rem 1rem 0;
 }
@@ -372,11 +373,11 @@ table.rolodex th {
 #UserSearch table.Search th {
   text-align: left;
 }
-div.Content div.ListOfUsers td.IsLoggedIn {
+div.ListOfUsers td.IsLoggedIn {
   color: #fff;
   background-color: #5A752D;
 }
-div.Content div.AIRAdminSearchForApplications div.instructions {
+div.AIRAdminSearchForApplications div.instructions {
   font-size: .8em;
   margin: 0 auto;
 }
@@ -485,7 +486,7 @@ div.Main div.staffHome div.Deadlines {
   padding: 1rem 0 0;
   margin-bottom: 1.5rem;
 }
-.Content table.Deadlines table.templates tr td.time {
+table.Deadlines table.templates tr td.time {
   width: 12em;
 }
 .staffHome h1 {
@@ -587,7 +588,7 @@ div.Main div.staffHome div.Deadlines {
 }
 /* <--CREATE USERS */
 /* LIST OF QUESTIONS--> */
-.Content a.addQuestion {
+a.addQuestion {
     padding-right: 0;
     margin-right: 2.5em;
 }
@@ -659,6 +660,9 @@ div.MyTrackedForms div  {
   margin: -1rem 0 0;
   padding: 2rem 1.5rem 2.5rem;
   border: 1px solid #d5d5da;
+}
+main#main-id #FormsWrapper {
+  margin: 0;
 }
 #FormsWrapper fieldset {
   margin-bottom: 1rem;
@@ -748,9 +752,13 @@ table.TemplateTable tr td {
 #UserHomePage {
   display: flex;
   flex-flow: row wrap;
+/* DELETE AFTER 2/6 */
   margin: -1.5rem -1.25rem;
   flex-grow: 1;
   flex-shrink: 0;
+}
+main#main-id #UserHomePage {
+  margin: 0;
 }
 /*TEMP*/
 .IsLoggedIn #CookieDeclaration {
@@ -887,10 +895,10 @@ table.TemplateTable tr td {
   margin-top: 0;
   font-weight: normal;
 }
-/*.Content*/ .Tips a {
+.Tips a {
   color: #c4dcee;
 }
-/*.Content*/ .Tips a:hover {
+.Tips a:hover {
   color: #FFA391;
 }
 span.aisEmail {
@@ -981,7 +989,7 @@ div.EvaluationQueueDisplay table.rolodex th {
 }
 /* <--HOMEPAGE */
 /* UserDisplay--> */
-div.Content div.UserDisplay table.rolodex .menu a {
+div.UserDisplay table.rolodex .menu a {
   width: 25%;
 }
 body div.UserDisplay table tr.MenuPreview td {
@@ -1070,13 +1078,6 @@ table.rolodex tr.ItemXMLTag th {
 
 /* <-- PAGE: ApplicationEmailWorkflow */
 
-/* PAGE: #list-of-forms-page -->  */
-
-#list-of-forms-page .related-form {
-  display: block;
-}
-
-/* <-- PAGE: #list-of-forms-page  */
 
 /* PAGE: FORM TRANSFER INBOX --> */
 .transfer-errors-inbox .Problem,
@@ -1122,7 +1123,7 @@ table.rolodex tr.ItemXMLTag th {
 }
 
 /* PAGE: APPLIATION SUBMITTED SUCCESSFULY EMAIL --> */
-  div.Content div.ApplicationSubmittedSuccessfullyPage table {
+  div.ApplicationSubmittedSuccessfullyPage table {
     background-color: transparent;
   }
   div.SecurityStamp {
@@ -1194,34 +1195,33 @@ div .Button {
 .show-all-sections-at-once {
   height: 35px;
   display:none !important;
+  margin: .5rem;
+}
+.show-all-sections-at-once-button {
+  margin: 0 !important;
 }
 div.templateContent div.ShowAllSectionsAtOnce > input,
 input.ShowAllSectionsAtOnce[type="submit"],
 input[type="submit"][value="Show All Sections at Once"]:hover,
 input[type="submit"][value="Show Each Section Individually"],
 input[type="submit"][value="Show Each Section Individually"]:hover {
-  margin: 0.6em auto;
+/*  margin: 0.6em auto;
   background: #fff;
   border-color: #777;
   color: #444444;
   text-shadow: none;
   height: 25px;
   display: block;
-  font-size: .9em;
+  font-size: .9em;*/
 }
 input[type="submit"][value="Show All Sections at Once"]:hover,
 input[type="submit"][value="Show Each Section Individually"]:hover {
-  background: #FAFBF7;
-  color: #000;
+/*  background: #FAFBF7;
+  color: #000;*/
 }
 input[type="submit"][value="Show Each Section Individually"] {
-  background: #FAFCFD;
+/*  background: #FAFCFD;*/
   }
-
-input[value="Show All Sections at Once"] {
-  background: transparent;
-}
-
 
 input#CannedSearch {
   margin-left: .5em;
@@ -1253,7 +1253,8 @@ span.fax {
 .legal span {
   display: block;
 }
-#footer .legal {
+#footer .legal,
+#footer-id .legal {
   order:4;
   margin: 0 1rem .75rem 0;
   flex-grow: 1;
@@ -1261,11 +1262,13 @@ span.fax {
   font-size: .875rem;
   line-height: 24px;
 }
-#footer #codivus {
+#footer #codivus,
+#footer-id #codivus-id {
   order: 5;
   margin-top: 0;
 }
-#footer #buildAndInstance {
+#footer #buildAndInstance,
+#footer-id #buildAndInstance {
   order: 6;
   flex-basis: 100%;
   align-self: flex-end;
@@ -1273,7 +1276,7 @@ span.fax {
 .ACaddressBlock > span {
   margin-bottom: .5rem;
 }
-div#footer2 .ACaddressBlock {
+.ACaddressBlock {
   margin: .5em 0 0 0;
   display: contents;
 }
@@ -1284,36 +1287,48 @@ div#footer2 .ACaddressBlock {
   border-top: 1px solid #3d4f5c;
   flex-flow: row wrap;
 }
-#footer .fax {
+#footer .fax,
+#footer-id .fax {
   display: none;
 }
 div#footer div#codivus,
-div#footer div#CodivusAttribution {
+div#footer div#CodivusAttribution,
+#footer-id #codivus-id,
+#footer-id #CodivusAttribution {
+  display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: .5rem;
 }
-#footer .logo {
+#footer .logo,
+#footer-id .logo {
   display: none;
 }
-#footer #Policies {
+#footer #Policies,
+#footer-id #Policies {
   margin: 0 1rem 1rem 0;
 }
 #footer #amagavi table,
-#footer #codivus table {
+#footer #codivus table
+#footer-id #amagavi-id table,
+#footer-id #codivus-id table {
   font-size: .875rem;
   background: transparent;
 }
 #footer.IsLoggedIn #amagavi .byline,
-#footer.IsLoggedIn #codivus .byline {
+#footer.IsLoggedIn #codivus .byline, 
+#footer-id.IsLoggedIn #amagavi-id .byline,
+#footer-id.IsLoggedIn #codivus-id .byline {
   color: #fff;
 }
 #footer2 a,
+#footer-id a,
 .IsLoggedIn #amagavi a,
 .IsLoggedIn #codivus a {
   color: #c4dcee;
 }
-#footer2 a:hover {
+#footer2 a:hover,
+#footer-id a:hover {
   color: #FFC8BD;
 }
 #amagavi a,
@@ -1326,7 +1341,8 @@ td.logoCell a {
 }
 #amagavi a:hover,
 #codivus a:hover,
-#footer a:active {
+#footer a:active,
+#footer-id a:active {
   color: #FF7F67;
 }
 table#login tr.header th,
@@ -1370,7 +1386,8 @@ div.CheckboxMatrix tr td {
 .byline {
   color: #323232;
 }
-#footer .byline {
+#footer .byline,
+#footer-id .byline {
   color: #fff;
   margin-left: .25rem;
 }
@@ -1435,7 +1452,7 @@ div.NoEvaluationQueuesAvailable,
 div.NoAvailableForms,
 div.NoApplicationsAvailable,
 div.NoTemplatesAvailable,
-div.ListOfBrands .NoBrands,
+.NoBrands,
 div.NoDateItemsToCustomize,
 div.NoDeadlines,
 div.NoDomains,
@@ -1456,8 +1473,7 @@ div.NoFormsAvailable,
 div.NoEvaluationForms,
 div.AvailableForms div,
 .DeveloperCaution,
-div.OtherBrands
-div.HasFormsInOtherBrandsWarning,
+div.other-brands
 /* delete after conversion is complete! */
 .ValidationError,
 .validation-error,
@@ -1477,7 +1493,6 @@ div.AvailableForms div,
 div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
-div.OtherBrands div.HasFormsInOtherBrandsWarning,
 div.NoEvaluationForms,
 div.NoForms,
 div.NoAvailableForms,
@@ -1581,7 +1596,7 @@ body#body--environment-staging:after {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  .Content .admin-home-links {
+  .admin-home-links {
     width: 100%;
   }
   .ACaddressBlock {
@@ -1593,7 +1608,7 @@ body#body--environment-staging:after {
   }
   /* UPDATE validation and errors on login  -->>>> */
 
-  .Content .mainInstructions  {
+  .mainInstructions  {
     float: none;
     margin: 1em auto;
   }
@@ -1622,7 +1637,7 @@ body#body--environment-staging:after {
     display: none;
   }
 
-  div.ApplicationTemplateDisplay h2 {
+  .ApplicationTemplateDisplay h2 {
     padding: 0 0 1em;
     font-size: 1em;
   }
@@ -1635,7 +1650,7 @@ body#body--environment-staging:after {
     padding: 1em;
   }
   input[value="Show All Sections at Once"], input[value="Show Each Section Individually"] {
-    margin-top: 1em;
+/*    margin-top: 1em;*/
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 568px) {
@@ -1654,7 +1669,8 @@ body#body--environment-staging:after {
     margin-left: 0 !important;
     margin-right: 24px !important;
   }
-  .MenuOfSections select, div.Content .MenuOfSections input  {
+  .MenuOfSections select, 
+  .MenuOfSections input  {
     font-size: .8em;
   }
   /* delete after conversion complete! */
@@ -1662,10 +1678,11 @@ body#body--environment-staging:after {
   div.section-navigator .MenuOfSections .label {
     display: none;
   }
-  div#AClogoFooter img, div#footer {
+  div#AClogoFooter img, 
+  div#footer {
     width: 100%;
   }
-  .Content .mainInstructions  {
+  .mainInstructions  {
     float: none;
     margin: 1em auto;
     height: inherit;
@@ -1700,7 +1717,7 @@ body#body--environment-staging:after {
   }
 }
 @media only screen and (min-width : 568px) and (max-width : 767px) {
-  .Content .mainInstructions  {
+  .mainInstructions  {
     float: none;
     margin: 1em auto;
   }
@@ -1726,7 +1743,7 @@ body#body--environment-staging:after {
   div.section-navigator .MenuOfSections .label {
     font-size: .9em;
   }
-  div.Content .MenuOfSections input {
+  .MenuOfSections input {
     font-size: .9em;
   }
   .HomeProgramContent,
@@ -1754,7 +1771,7 @@ body#body--environment-staging:after {
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-  .Content .mainInstructions {
+  .mainInstructions {
     height: inherit;
     width: inherit;
   }
@@ -1773,28 +1790,28 @@ body#body--environment-staging:after {
   }
   /* ADMIN LIST OF SECTIONS --> */
 
-  div.SectionsRowDisplay div.AdminEditTemplate,
-  div.SectionsRowDisplay div.AdminListSectionQuestions,
-  div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
-  div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
-  div.SectionsRowDisplay div.SectionOperations a.AddSection,
-  div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
-  div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
-  div.SectionsRowDisplay div.SectionOperations a {
+  .SectionsRowDisplay div.AdminEditTemplate,
+  .SectionsRowDisplay div.AdminListSectionQuestions,
+  .SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+  .SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+  .SectionsRowDisplay div.SectionOperations a.AddSection,
+  .SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+  .SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
+  .SectionsRowDisplay div.SectionOperations a {
     display: block;
     line-height: 1.5;
     padding-left: 1em;
   }
-  div.SectionsRowDisplay div.TemplateOperations,
-  div.SectionsRowDisplay div.SectionOperations {
+  .SectionsRowDisplay div.TemplateOperations,
+  .SectionsRowDisplay div.SectionOperations {
     width: 28%;
     float: right;
     clear: right;
     margin-left: 1.5em;
   }
 
-  div.SectionsRowDisplay div.SectionOperations span.label,
-  div.SectionsRowDisplay div.TemplateOperations span.label {
+  .SectionsRowDisplay div.SectionOperations span.label,
+  .SectionsRowDisplay div.TemplateOperations span.label {
     padding-bottom: .25em;
     display: block;
     font-weight: bold;
@@ -1817,28 +1834,28 @@ body#body--environment-staging:after {
   }
   /* ADMIN LIST OF SECTIONS --> */
 
-  div.SectionsRowDisplay div.AdminEditTemplate,
-  div.SectionsRowDisplay div.AdminListSectionQuestions,
-  div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
-  div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
-  div.SectionsRowDisplay div.SectionOperations a,
-  div.SectionsRowDisplay div.SectionOperations a.AddSection,
-  div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
-  div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
+  .SectionsRowDisplay div.AdminEditTemplate,
+  .SectionsRowDisplay div.AdminListSectionQuestions,
+  .SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+  .SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+  .SectionsRowDisplay div.SectionOperations a,
+  .SectionsRowDisplay div.SectionOperations a.AddSection,
+  .SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+  .SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
     display: block;
     line-height: 1.5;
     padding-left: 1em;
   }
-  div.SectionsRowDisplay div.TemplateOperations,
-  div.SectionsRowDisplay div.SectionOperations {
+  .SectionsRowDisplay div.TemplateOperations,
+  .SectionsRowDisplay div.SectionOperations {
     width: 28%;
     float: right;
     clear: right;
     margin-left: 1.5em;
   }
 
-  div.SectionsRowDisplay div.SectionOperations span.label,
-  div.SectionsRowDisplay div.TemplateOperations span.label {
+  .SectionsRowDisplay div.SectionOperations span.label,
+  .SectionsRowDisplay div.TemplateOperations span.label {
     padding-bottom: .25em;
     display: block;
     font-weight: bold;
@@ -1956,8 +1973,10 @@ button:hover {
   .Content .staffHome {
     margin-left: 1.75rem;
   }
-  div#footer div#codivus,
-  div#footer div#CodivusAttribution {
+  div#footer div#codivus-id,
+  div#footer div#CodivusAttribution,
+  footer#footer-id div#codivus-id,
+  footer#footer-id div#CodivusAttribution {
     font-size: .875rem;
     line-height: 24px;
   }
@@ -2019,7 +2038,7 @@ button:hover {
   flex-direction: column;
   max-width: 100%;
 }
-.IsNotLoggedIn .Content .LoginOrNewAccount {
+.IsNotLoggedIn .LoginOrNewAccount {
   flex-grow: 1;
   flex-shrink: 0;
   display: flex;
@@ -2374,7 +2393,8 @@ url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /* <- bg color classes */
 
 /* Announcement styles for AIS Forms only --> */
-.IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms {
+.IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms,
+.announcement-wrapper.hasAtLeastOneAnnouncement ~ #main-id .LoginOrNewAccount .LoginForms {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -2437,12 +2457,6 @@ img.ProgramLogo600w {
 div#UserHomePage div.Tips  {
   padding: 1.5rem;
 }
-div#UserHomePage div.OtherBrands div.HasFormsInOtherBrandsWarning {
-  font-weight: bold;
-  font-size: 1.12rem;
-  padding-top: 0.75rem;
-}
-
 
 
 /* 22 Jul - CSS from pre-New Login aisformsCommon */

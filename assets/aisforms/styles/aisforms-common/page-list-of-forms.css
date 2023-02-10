@@ -1,0 +1,15 @@
+/* PAGE: #list-of-forms-page -->  */
+[data-page-name="ApplicantApplicationRowDisplay"] #configure-report {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+[data-page-name="ApplicantApplicationRowDisplay"] .related-form {
+  display: block;
+}
+th.related-forms div.button-wrapper { 
+  display:none; 
+}
+th.related-forms div.button-wrapper[data-rows-with-content] {
+  display:block; 
+}
+/* <-- PAGE: #list-of-forms-page  */

@@ -16,7 +16,7 @@
   border-color: #c5dced;
 }
 
-.Content .SectionDisplay .ItemAddress table tr td input[type="text"],
+.SectionDisplay .ItemAddress table tr td input[type="text"],
 .SectionDisplay .ItemAddress td select {
   width: 15rem;
   max-width: 100%;
@@ -38,7 +38,7 @@
   border-color: #c5dced;
 }
 
-.Content .section-display .ItemAddress table tr td input[type="text"],
+.section-display .ItemAddress table tr td input[type="text"],
 .section-display .ItemAddress td select {
   width: 15rem;
   max-width: 100%;

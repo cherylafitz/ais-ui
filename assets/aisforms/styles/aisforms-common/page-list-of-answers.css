@@ -1,0 +1,19 @@
+/* PAGE: LIST OF ANSWERS --> */
+
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.PlacedQuestion,
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.BelongsToQuestion,
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.AnswerAsText,
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.Section{
+  white-space: normal;
+  max-width: 20em;
+}
+#main-id[data-page-name="RawAnswersRowDisplay"] .AnswerDisplaySettings {
+  margin-bottom: 1rem;
+}
+#main-id[data-page-name="RawAnswersRowDisplay"] .AnswerDisplaySettings td, 
+#main-id[data-page-name="RawAnswersRowDisplay"] .AnswerDisplaySettings th {
+  border: 1px solid #cecece;
+  padding: 0.25rem;
+}
+
+/* <-- PAGE: LIST OF ANSWERS */

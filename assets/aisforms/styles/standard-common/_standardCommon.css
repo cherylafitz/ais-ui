@@ -62,11 +62,6 @@
 /* <-- forms */
 
 /* Typography--> */
-
-div.Content {
-  color: #000000;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
 /* delete after conversion is complete! */
 div.SectionNavigator,
 div.section-navigator,
@@ -91,7 +86,7 @@ blockquote {
 .SectionDisplay td textarea {
   margin: 0;
 }
-div.Content .noWrap {
+.noWrap {
   white-space:nowrap;
 }
 /* delete after conversion is complete! */
@@ -148,14 +143,14 @@ div.question-text div.Instruction ul {
   margin-top: -.5rem;
   font-size: .875rem;
 }
-.Content .UnsubmitLink a {
+.UnsubmitLink a {
   padding: 0 .5rem;
   background-color: #ffa480;
   color: #000;
   border-radius: 2px;
   border: 1px solid #ff9166;
 }
-.Content .UnsubmitLink a:hover {
+.UnsubmitLink a:hover {
   background-color: #c75d48;
   color: #fff;
   border-bottom-width: 1px;
@@ -326,35 +321,35 @@ div.itemDisplayOuterContainer {
 
 /* Alignment/Spacing */
  /* delete after conversion is complete! */
-.Content .QuestionNumber,
-.Content .question-number {
+.QuestionNumber,
+.question-number {
   float:left;
   margin-right: .5rem;
 }
 /* delete after conversion is complete! */
 .subQuestion,
-.Content .QuestionText,
-.Content .question-text,
-.Content .QuestionAnswer,
-.Content .question-answer {
+.QuestionText,
+.question-text,
+.QuestionAnswer,
+.question-answer {
   margin-left: 1.75rem;
 }
 /* delete after conversion is complete! */
-.Content .QuestionAnswer,
-.Content .question-answer {
+.QuestionAnswer,
+.question-answer {
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
 }
 /* delete after conversion is complete! */
-.Content .subQuestion .QuestionText,
-.Content .subQuestion .QuestionAnswer,
-.Content .subQuestion .question-text,
-.Content .subQuestion .question-answer {
+.subQuestion .QuestionText,
+.subQuestion .QuestionAnswer,
+.subQuestion .question-text,
+.subQuestion .question-answer {
   margin-left: 2.5rem;
 }
 /* delete after conversion is complete! */
-.Content .QuestionAnswer a,
-.Content .question-answer a {
+.QuestionAnswer a,
+.question-answer a {
   border: none;
   text-decoration: underline;
 }
@@ -427,14 +422,14 @@ input[value="Add More"]:hover {
   border: 1px solid #FFAC33;
 }
 
-div.Content div.DeadlineNotice {
+div.DeadlineNotice {
   font-size: 1.2em;
   font-weight: bold;
   padding: .4em inherit;
 }
 
-div.Content div.ApplicantName,
-div.Content div.RecommendationFor {
+div.ApplicantName,
+div.RecommendationFor {
   font-size: 1.2em;
   color: #025689;
   margin-bottom: .5em;
@@ -444,8 +439,8 @@ div.Content div.RecommendationFor {
   margin-top: .5rem;
 }
 
-div.Content div.Notice,
-div.Content div.notice {
+div.Notice,
+div.notice {
   font-size: 1.5rem;
   text-align:center;
 }
@@ -462,39 +457,39 @@ div.Group {
 
 /* Hide QuestionAnswer divs for "Generic Text" QuestionItems (so that they can be used as question 'headers' for multi-part questions) */
  /* delete after conversion is complete! */
-div.Content div.TextGen1 div.QuestionAnswer,
-div.Content div.TextGen2 div.QuestionAnswer,
-div.Content div.TextGen3 div.QuestionAnswer,
-div.Content div.TextGen4 div.QuestionAnswer,
-div.Content div.TextGen5 div.QuestionAnswer,
-div.Content div.TextGen6 div.QuestionAnswer,
-div.Content div.TextGen7 div.QuestionAnswer,
-div.Content div.TextGen8 div.QuestionAnswer,
-div.Content div.TextGen9 div.QuestionAnswer,
-div.Content div.TextGeneric10 div.QuestionAnswer,
-div.Content div.TextGen1 div.question-answer,
-div.Content div.TextGen2 div.question-answer,
-div.Content div.TextGen3 div.question-answer,
-div.Content div.TextGen4 div.question-answer,
-div.Content div.TextGen5 div.question-answer,
-div.Content div.TextGen6 div.question-answer,
-div.Content div.TextGen7 div.question-answer,
-div.Content div.TextGen8 div.question-answer,
-div.Content div.TextGen9 div.question-answer,
-div.Content div.TextGeneric10 div.question-answer {
+div.TextGen1 div.QuestionAnswer,
+div.TextGen2 div.QuestionAnswer,
+div.TextGen3 div.QuestionAnswer,
+div.TextGen4 div.QuestionAnswer,
+div.TextGen5 div.QuestionAnswer,
+div.TextGen6 div.QuestionAnswer,
+div.TextGen7 div.QuestionAnswer,
+div.TextGen8 div.QuestionAnswer,
+div.TextGen9 div.QuestionAnswer,
+div.TextGeneric10 div.QuestionAnswer,
+div.TextGen1 div.question-answer,
+div.TextGen2 div.question-answer,
+div.TextGen3 div.question-answer,
+div.TextGen4 div.question-answer,
+div.TextGen5 div.question-answer,
+div.TextGen6 div.question-answer,
+div.TextGen7 div.question-answer,
+div.TextGen8 div.question-answer,
+div.TextGen9 div.question-answer,
+div.TextGeneric10 div.question-answer {
   display:none;
 }
 
-div.Content div.TextGen1,
-div.Content div.TextGen2,
-div.Content div.TextGen3,
-div.Content div.TextGen4,
-div.Content div.TextGen5,
-div.Content div.TextGen6,
-div.Content div.TextGen7,
-div.Content div.TextGen8,
-div.Content div.TextGen9,
-div.Content div.TextGeneric10 {
+div.TextGen1,
+div.TextGen2,
+div.TextGen3,
+div.TextGen4,
+div.TextGen5,
+div.TextGen6,
+div.TextGen7,
+div.TextGen8,
+div.TextGen9,
+div.TextGeneric10 {
   clear:both;
 }
 
@@ -506,12 +501,12 @@ div.Content div.TextGeneric10 {
 by giving the '2' element an empty AfterQuestion div
 */
 
-div.Content div.AfterQuestion {
+div.AfterQuestion {
   clear:both;
 }
 
 
-.Content .GroupedItem {
+.GroupedItem {
   padding: .75rem;
   margin: .5em 0 1em 0;
   background-color: #F3F3F3;
@@ -520,7 +515,7 @@ div.Content div.AfterQuestion {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
-div.Content div.GroupedItem div.RadioButtonMatrix table{
+div.GroupedItem div.RadioButtonMatrix table{
   background-color: #F3F3F3;
 }
 .RecommendationTemplateIsExpired {
@@ -533,8 +528,8 @@ div.Content div.GroupedItem div.RadioButtonMatrix table{
   margin-left: 4em;
 }
 /* delete after conversion is complete! */
-div.Content div.subConditional div.QuestionText,
-div.Content div.subConditional div.question-text  {
+div.subConditional div.QuestionText,
+div.subConditional div.question-text  {
   margin-left: 1.5em;
 }
 /* delete after conversion is complete! */
@@ -543,17 +538,17 @@ div.question-text p  {
   display:inline;
 }
 /* delete after conversion is complete! */
-div.Content div.QuestionItem div.GroupedItem div.QuestionText .Title:before,
-div.Content div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before,
-div.Content div.QuestionItem div.GroupedItem div.question-text .Title:before,
-div.Content div.DisplayItemOnly div.GroupedItem div.question-text .Title:before  {
+div.QuestionItem div.GroupedItem div.QuestionText .Title:before,
+div.DisplayItemOnly div.GroupedItem div.QuestionText .Title:before,
+div.QuestionItem div.GroupedItem div.question-text .Title:before,
+div.DisplayItemOnly div.GroupedItem div.question-text .Title:before  {
   content: '';
 }
 /* delete after conversion is complete! */
-div.Content div.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.required:not(.Group) div.QuestionText .Title:after,
-div.Content div.required:not(.Group) div.question-text .Title:after,
-div.Content table.required:not(.Group) div.question-text .Title:after  {
+div.required:not(.Group) div.QuestionText .Title:after,
+table.required:not(.Group) div.QuestionText .Title:after,
+div.required:not(.Group) div.question-text .Title:after,
+table.required:not(.Group) div.question-text .Title:after  {
   color: #CD0000;
   content: '*';
   font-size:1.4em;
@@ -598,21 +593,21 @@ div.question-text ol {
   list-style-type: upper-alpha;
 }
 
-div.Content input[type='text'] {
+input[type='text'] {
   width: 15em;
 }
 
-div.Content div.integer input[type='text'],
-div.Content div.date input[type='text'],
-div.Content div.RecSchoolCity input[type='text'],
-div.Content div.RecSchoolZIPCode input[type='text'],
-div.Content div.ParentZIPCode input[type='text']
-div.Content div.MailAddrZIP input[type='text']
-div.Content div.PhysAddrZIPCode input[type='text']
-div.Content div.SchoolZIP input[type='text'] {
+div.integer input[type='text'],
+div.date input[type='text'],
+div.RecSchoolCity input[type='text'],
+div.RecSchoolZIPCode input[type='text'],
+div.ParentZIPCode input[type='text']
+div.MailAddrZIP input[type='text']
+div.PhysAddrZIPCode input[type='text']
+div.SchoolZIP input[type='text'] {
   width: 7em;
 }
-/* div.Content div.2digitInteger input[type='text'] {
+/* div.2digitInteger input[type='text'] {
   width: 2em;
 } */
 /* delete after conversion is complete! */
@@ -636,15 +631,15 @@ div.Content div.SchoolZIP input[type='text'] {
   width: 6em;
 }
 
-div.Content div.NumberOfWords,
-div.Content div.NumberOfCharacters {
+div.NumberOfWords,
+div.NumberOfCharacters {
   font-style: italic;
   font-size: 0.8em;
   color: #444;
   font-weight: normal;
 }
 
-div.Content .SideNote {
+.SideNote {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-style: italic;
@@ -663,8 +658,8 @@ div.Content .SideNote {
   max-width: 10em;
 }
 
-div.Content table .AjaxFlexibleFileUpload .Button span,
-.Content .AjaxFlexibleFileUpload .Button span,
+table .AjaxFlexibleFileUpload .Button span,
+.AjaxFlexibleFileUpload .Button span,
 .ERAttachmentFlexibleEditor .Button span {
   background-color: transparent;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -791,7 +786,7 @@ span.filterTextBox {
 }
 
 /* Form: Health Questionnaire --> */
-div.Content .fromQuestionnaire .File ~ .Text input[type='text'] {
+.fromQuestionnaire .File ~ .Text input[type='text'] {
   display: block;
   margin: .25rem 0;
 }

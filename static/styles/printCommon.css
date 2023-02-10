@@ -151,7 +151,7 @@
   clear: right;
 }
 
-.Content .BeforeQuestion {
+.BeforeQuestion {
   clear: both;
 }
 
@@ -369,7 +369,7 @@
   color: #474747;
   padding-top: 0.5em;
 }
-body .Content .RecommendationFor {
+body .RecommendationFor {
   flow: static(header2);
   background-color: transparent;
   /*** check if necessary --> */
@@ -377,12 +377,12 @@ body .Content .RecommendationFor {
   text-align:right;
   padding-top: 0.5em;
 }
-#pageHeader .LastName,
+/*#pageHeader .LastName,
 #pageHeader .FirstName,
-#pageHeader .MiddleName,
-.Content .LastName,
-.Content .FirstName,
-.Content .MiddleName {
+#pageHeader .MiddleName,*/
+.LastName,
+.FirstName,
+.MiddleName {
   text-transform: capitalize;
 }
 #pageHeader .LastName:not(:empty):after {
@@ -454,12 +454,12 @@ ul {
   page-break-after: avoid;
 }
 /* delete after conversion is complete! */
-.Content .Divider,
-.Content .SectionDisplay h1,
-.Content .SectionDisplay h2,
-.Content .section-display h1,
-.Content .section-display h2,
-.Content .RecommendationFor {
+.Divider,
+.SectionDisplay h1,
+.SectionDisplay h2,
+.section-display h1,
+.section-display h2,
+.RecommendationFor {
   color: #025689;
   clear: both;
 }
@@ -826,7 +826,7 @@ input {
   margin-right: 1em;
 }
 
-div.Content div.LongTextNoEditing {
+div.LongTextNoEditing {
     padding: .5em;
     margin: .5em 0;
     border: 1pt dashed #4A4A4A;
@@ -837,17 +837,17 @@ div.Content div.LongTextNoEditing {
     border-radius: 3px;
     background-color: #dedede;
   }
-div.Content td div.LongTextNoEditing {
+td div.LongTextNoEditing {
   background-color: transparent;
 }
-div.Content table tr td div.LongTextNoEditing
+table tr td div.LongTextNoEditing
   {
     border: 0;
     border-style: none;
     margin: 0;
     padding: 0;
   }
-div.Content p:not([class^="nodisplay"])
+p:not([class^="nodisplay"])
   {
     display: block;
     margin-top: 0.2em;
@@ -988,14 +988,14 @@ button {
 fieldset {
   border: none;
 }
-div.Content div.GroupedItem,
+div.GroupedItem,
 fieldset
   {
     padding: 0 10pt 6pt;
     margin: 1em 0 1em .75em;
     border-left: 2px solid #cecece;
   }
-div.Content div.GroupedItem:before,
+div.GroupedItem:before,
 fieldset:before {
     content: "";
     width: 48pt;
@@ -1005,7 +1005,7 @@ fieldset:before {
     margin-left: -11pt;
     margin-top: -.5rem;
 }
-div.Content div.GroupedItem:after,
+div.GroupedItem:after,
 fieldset:after {
   content: "";
   width: 48pt;
@@ -1082,8 +1082,8 @@ input#SubmitForEvaluation {margin-bottom: 1em;}
 .noticeBox,
 .notice-box,  /* ADDED by GGD 2020-0618 */
 .Noteworthy, /* ADDED by GGD 2020-0618 */
-.Content .SectionDisplay .program-logo,
-.Content .section-display .program-logo {
+.SectionDisplay .program-logo,
+.section-display .program-logo {
     display: none;
   }
 .SideNote:before {
@@ -1118,9 +1118,10 @@ div.SectionDisplay div.QuestionItem.subConditional,
   font-size:0.9em;
   border:solid 2px #444444;
   border-radius:0.5em;
-  margin:0 10px 10px 0;
+  margin: 0 0 .5rem 0;
   padding:0.25em;
   width:450px;
+  display: inline-block;
 }
 
 div.docLabel div {
@@ -1154,11 +1155,13 @@ div.question-number,
 }
 
 div.Content > div[style^="color"],
+#main-id > div[style^="color"]
 #AnnouncementBlock,
 .systemMessage,
 .star,
 .SubmittedOn,
 #footer,
+#footer-id,
 .policies,
 #PrivacyPolicy,
 #CookieDeclaration,
@@ -1169,19 +1172,24 @@ div.Content > div[style^="color"],
 #amagavi,
 .BottomCommandLink,
 #Header,
+#header-id,
+#main-menu-id,
 #TopMenu,
 h1.pageTitle,
 .TopCommandLink,
 #SubmitForEvaluation,
 .SystemAnnouncement,
 .filterWrapper,
-h1.editing ~ h2
+h1.editing ~ h2,
+.previous-page-link,
+h1.page-heading,
+[data-page-name="ApplicantApplicationFullDisplay"] > h1:first-child
   {
     display:none;
   }
 
 /* HIDE PDF Generator Button */
-div.Content div.GeneratePDF {
+div.GeneratePDF {
     display:none;
 }
 
@@ -1204,7 +1212,7 @@ input.save-button,
 
 .NumberOfWords {display:none;}
 
-div.Content div.NumberOfCharacters {display: none;}
+div.NumberOfCharacters {display: none;}
 
 .EvalLastName {
   padding-right: 1em;
@@ -1214,9 +1222,11 @@ div.Content div.NumberOfCharacters {display: none;}
 div.TotalScoreFormula {
     border: medium solid #2E6B9B;
     border-radius: 0.5em;
-    margin: 0.5em 1em 1em 0;
+    margin: 0 1rem .5rem 0;
     padding: 0.5em;
     width: 21em;
+    display: inline-block;
+    vertical-align: top;
 }
 /* delete after conversion is complete! */
 .TotalScoreFormulaDuplicate .QuestionText,
@@ -1230,14 +1240,14 @@ div.TotalScoreFormula {
 
 /* HIDE required question asterisks on question imported from Applicant and Recommender namespaces, by Gregg */
 /* delete after conversion is complete! */
-div.Content div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
-div.Content div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
-div.Content table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
-div.Content div.fromApplicant.required:not(.Group) div.question-text .Title:after,
-div.Content div.fromRecommender.required:not(.Group) div.question-text .Title:after,
-div.Content table.fromApplicant.required:not(.Group) div.question-text .Title:after,
-div.Content table.fromRecommender.required:not(.Group) div.question-text .Title:after,
+div.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+div.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+table.fromApplicant.required:not(.Group) div.QuestionText .Title:after,
+table.fromRecommender.required:not(.Group) div.QuestionText .Title:after,
+div.fromApplicant.required:not(.Group) div.question-text .Title:after,
+div.fromRecommender.required:not(.Group) div.question-text .Title:after,
+table.fromApplicant.required:not(.Group) div.question-text .Title:after,
+table.fromRecommender.required:not(.Group) div.question-text .Title:after,
 table.AnswerTable div.fromApplicant.required div.itemDisplayOuterContainer:after,
 table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:after {
   content: none;
@@ -1386,7 +1396,7 @@ table.AnswerTable div.fromRecommender.required div.itemDisplayOuterContainer:aft
 /* 12 Jul - For new Logo "Bundles" with 1-6 narrow and wide logos. Single, non-bundle Logos are "200px",
 "Narrow" logos in bundles count as "100px", "Wide" logos in bundles count as "200px" */
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo200w,
-div.Content img.ProgramLogo200w,
+img.ProgramLogo200w,
 section img.ProgramLogo200w,
 div#UserHomeIntro header img.ProgramLogo200w,
 img.ProgramLogo200w {
@@ -1395,28 +1405,28 @@ img.ProgramLogo200w {
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo300w,
-div.Content img.ProgramLogo300w,
+img.ProgramLogo300w,
 section img.ProgramLogo300w {
   max-width: 300px;
   margin-bottom: 1rem;
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo400w,
-div.Content img.ProgramLogo400w,
+img.ProgramLogo400w,
 section img.ProgramLogo400w {
   max-width: 400px;
   margin-bottom: 1rem;
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo500w,
-div.Content img.ProgramLogo500w,
+img.ProgramLogo500w,
 section img.ProgramLogo500w {
   max-width: 500px;
   margin-bottom: 1rem;
   display: block;
 }
 div.LoginOrNewAccount div.CustomContent img.ProgramLogo600w,
-div.Content img.ProgramLogo600w,
+img.ProgramLogo600w,
 section img.ProgramLogo600w {
   max-width: 600px;
   margin-bottom: 1rem;
@@ -1517,69 +1527,69 @@ section img.ProgramLogo600w {
 /* <-- bus ticket display */
 
 /* COVER page --> */
-.Content .SectionDisplay.cover-page-section {
+.SectionDisplay.cover-page-section {
   page-break-after: always;
 }
-.Content .SectionDisplay.cover-page-section,
-.Content .SectionDisplay.cover-page-section h1,
-.Content .SectionDisplay.cover-page-section h2 {
+.SectionDisplay.cover-page-section,
+.SectionDisplay.cover-page-section h1,
+.SectionDisplay.cover-page-section h2 {
   text-align: center;
 }
-.Content .SectionDisplay.cover-page-section h1 {
+.SectionDisplay.cover-page-section h1 {
   font-size: 3em;
   border-bottom: none;
   margin-bottom: 3em;
 }
-.Content .SectionDisplay.cover-page-section h2 {
+.SectionDisplay.cover-page-section h2 {
   font-size: 2em;
 }
-.Content .SectionDisplay.cover-page-section h2 .template-name,
-.Content .SectionDisplay.cover-page-section h2 .template-year {
+.SectionDisplay.cover-page-section h2 .template-name,
+.SectionDisplay.cover-page-section h2 .template-year {
   display: block;
   margin-bottom: 2em;
 }
-.Content .SectionDisplay.cover-page-section h2 .template-year {
+.SectionDisplay.cover-page-section h2 .template-year {
   margin-bottom: 10em;
 }
-.Content .SectionDisplay.cover-page-section .label {
+.SectionDisplay.cover-page-section .label {
   font-size: 2em;
   margin-bottom: 1em;
 }
-.Content .SectionDisplay.cover-page-section .value {
+.SectionDisplay.cover-page-section .value {
   font-size: 2.5em;
   margin-bottom: 4em;
 }
 
 /* updated section-display */
-.Content .section-display.cover-page-section {
+.section-display.cover-page-section {
   page-break-after: always;
 }
-.Content .section-display.cover-page-section,
-.Content .section-display.cover-page-section h1,
-.Content .section-display.cover-page-section h2 {
+.section-display.cover-page-section,
+.section-display.cover-page-section h1,
+.section-display.cover-page-section h2 {
   text-align: center;
 }
-.Content .section-display.cover-page-section h1 {
+.section-display.cover-page-section h1 {
   font-size: 3em;
   border-bottom: none;
   margin-bottom: 3em;
 }
-.Content .section-display.cover-page-section h2 {
+.section-display.cover-page-section h2 {
   font-size: 2em;
 }
-.Content .section-display.cover-page-section h2 .template-name,
-.Content .section-display.cover-page-section h2 .template-year {
+.section-display.cover-page-section h2 .template-name,
+.section-display.cover-page-section h2 .template-year {
   display: block;
   margin-bottom: 2em;
 }
-.Content .section-display.cover-page-section h2 .template-year {
+.section-display.cover-page-section h2 .template-year {
   margin-bottom: 10em;
 }
-.Content .section-display.cover-page-section .label {
+.section-display.cover-page-section .label {
   font-size: 2em;
   margin-bottom: 1em;
 }
-.Content .section-display.cover-page-section .value {
+.section-display.cover-page-section .value {
   font-size: 2.5em;
   margin-bottom: 4em;
 }
@@ -1604,10 +1614,10 @@ section img.ProgramLogo600w {
 /* <-- float overrides */
 
 /* HEADINGS -->  */
-.Content .SectionDisplay h1,
-.Content .SectionDisplay h2,
-.Content .SectionDisplay h3,
-.Content .SectionDisplay h4 {
+.SectionDisplay h1,
+.SectionDisplay h2,
+.SectionDisplay h3,
+.SectionDisplay h4 {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -1617,21 +1627,21 @@ section img.ProgramLogo600w {
   text-align: left;
   color: #025689;
 }
-.Content .SectionDisplay h2 {
+.SectionDisplay h2 {
   font-size: 1.375em;
 }
-.Content .SectionDisplay h3 {
+.SectionDisplay h3 {
   font-size: 1.25em;
 }
-.Content .SectionDisplay h4 {
+.SectionDisplay h4 {
   font-size: 1.125em;
 }
 
 /* delete after conversion is complete! ^^^^^ */
-.Content .section-display h1,
-.Content .section-display h2,
-.Content .section-display h3,
-.Content .section-display h4 {
+.section-display h1,
+.section-display h2,
+.section-display h3,
+.section-display h4 {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -1641,13 +1651,13 @@ section img.ProgramLogo600w {
   text-align: left;
   color: #025689;
 }
-.Content .section-display h2 {
+.section-display h2 {
   font-size: 1.375em;
 }
-.Content .section-display h3 {
+.section-display h3 {
   font-size: 1.25em;
 }
-.Content .section-display h4 {
+.section-display h4 {
   font-size: 1.125em;
 }
 

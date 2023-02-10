@@ -1,0 +1,13 @@
+/* erxmatrixtable --> */
+
+.ERXMatrixTable,
+.ERXMatrixTable tr td,
+.ERXMatrixTable tr th,
+.ERXMatrixTableCell {
+  border: 0;
+}
+
+#ApplicationFormsList .ERXMatrixTableCell {
+  white-space: nowrap;
+}
+/* <-- erxmatrixtable */

@@ -47,13 +47,13 @@
 }
 
 .Instruction,
-div.Content div.NumberOfWords,
-div.Content div.NumberOfCharacters {
+div.NumberOfWords,
+div.NumberOfCharacters {
      font-style: normal !important;
 }
 
-div.Content div.ArabicInput textarea,
-div.Content div.ArabicInput input {
+div.ArabicInput textarea,
+div.ArabicInput input {
     text-align: right;
     direction: rtl; 
     font: 150% 'Traditional Arabic' !important;
@@ -61,12 +61,12 @@ div.Content div.ArabicInput input {
 
 /* Adjust English Question Number Level Because of Increased Arabic Font Size */
 
-/*div.Content div.QuestionNumber { 
+/*div.QuestionNumber { 
     margin-top: 0.4rem;
 }*/
 
 /*
-div.Content div.EssayNonEnglish {
+div.EssayNonEnglish {
     text-align:right;
     display:inline;
 }
@@ -78,7 +78,7 @@ table.AnswerTable div.CheckboxMatrix tr td {
      font: 130% 'Traditional Arabic';
 }
 
-div.Content .EnglishMixed {
+.EnglishMixed {
      font: 66% 'Open Sans', Helvetica, Arial, sans-serif !important;
 }
 
@@ -121,17 +121,17 @@ div.MenuOfSections li.section-with-missing-items-after-submit div.section-name::
     font: 150% 'Traditional Arabic',serif;
 }
 /* delete after conversion is complete! */
-div.Content div.required:not(.Group) div.QuestionText .Title:after, 
-div.Content table.required:not(.Group) div.QuestionText .Title:after,
-div.Content div.required:not(.Group) div.question-text .Title:after, 
-div.Content table.required:not(.Group) div.question-text .Title:after {
+div.required:not(.Group) div.QuestionText .Title:after, 
+table.required:not(.Group) div.QuestionText .Title:after,
+div.required:not(.Group) div.question-text .Title:after, 
+table.required:not(.Group) div.question-text .Title:after {
     content: none;
 }
 /* delete after conversion is complete! */
-div.Content div.required:not(.Group) div.QuestionNumber::after, 
-div.Content table.required:not(.Group) div.QuestionNumber::after,
-div.Content div.required:not(.Group) div.question-number::after, 
-div.Content table.required:not(.Group) div.question-number::after {
+div.required:not(.Group) div.QuestionNumber::after, 
+table.required:not(.Group) div.QuestionNumber::after,
+div.required:not(.Group) div.question-number::after, 
+table.required:not(.Group) div.question-number::after {
     color: #CD0000;
     content: '*';
     font-size: 1.4em;

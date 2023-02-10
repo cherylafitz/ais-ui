@@ -63,11 +63,14 @@ div#build-and-instance {
   display: block;
   text-align: right;
 }
-.brand .name:after {
+.brand .name {
+  margin-right: 1rem;
+}
+/*.brand .name:after {
   content: " |";
   color: #FFD590;
   font-size: 1.1em;
-}
+}*/
 #Header #serverInfo {
   margin-right: 2rem;
 }
