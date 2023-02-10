@@ -713,9 +713,10 @@ div.SectionDisplay div.QuestionItem.subConditional,
   font-size:0.9em;
   border:solid 2px #444444;
   border-radius:0.5em;
-  margin:0 10px 10px 0;
+  margin: 0 0 .5rem 0;
   padding:0.25em;
   width:450px;
+  display: inline-block;
 }
 
 div.docLabel div {
@@ -755,6 +756,7 @@ div.Content > div[style^="color"],
 .star,
 .SubmittedOn,
 #footer,
+#footer-id,
 .policies,
 #PrivacyPolicy,
 #CookieDeclaration,
@@ -765,13 +767,18 @@ div.Content > div[style^="color"],
 #amagavi,
 .BottomCommandLink,
 #Header,
+#header-id,
+#main-menu-id,
 #TopMenu,
 h1.pageTitle,
 .TopCommandLink,
 #SubmitForEvaluation,
 .SystemAnnouncement,
 .filterWrapper,
-h1.editing ~ h2
+h1.editing ~ h2,
+.previous-page-link,
+h1.page-heading,
+[data-page-name="ApplicantApplicationFullDisplay"] > h1:first-child
   {
     display:none;
   }
@@ -810,9 +817,11 @@ div.NumberOfCharacters {display: none;}
 div.TotalScoreFormula {
     border: medium solid #2E6B9B;
     border-radius: 0.5em;
-    margin: 0.5em 1em 1em 0;
+    margin: 0 1rem .5rem 0;
     padding: 0.5em;
     width: 21em;
+    display: inline-block;
+    vertical-align: top;
 }
 /* delete after conversion is complete! */
 .TotalScoreFormulaDuplicate .QuestionText,

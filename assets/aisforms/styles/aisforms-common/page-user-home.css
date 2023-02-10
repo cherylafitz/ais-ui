@@ -16,6 +16,7 @@
   white-space: nowrap;
 }
 #FormsWrapper td.Program {
-  max-width: 10rem;
+  width: 10rem;
+  max-width: 15rem;
 }
 /* <-- PAGE: USER HOME */

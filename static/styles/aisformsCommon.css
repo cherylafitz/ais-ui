@@ -122,7 +122,8 @@ div.HasFormsInOtherBrandsWarning,
 .validation-error,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
-.NoExtendedDeadlines  {
+.NoExtendedDeadlines,
+.warning.deprecated  {
   font-style: normal;
   color: #c93028;
   background-color: transparent;
@@ -880,7 +881,8 @@ table td div.ExcelDownloadDescription {
 .error-on-find,
 .ExceptionMessage:not(:empty),
 .no-owner,
-.generated-field > .value.warning {
+.generated-field > .value.warning,
+.ErrorMessages {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;
@@ -2093,8 +2095,17 @@ body#body--environment-staging:before, body#body--environment-staging:after {
   padding: 1.5rem;
 }
 #header-id .user-name-block {
-  justify-content: flex-end;
-  text-align: right;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+#header-id .welcome-with-first-name-wrapper {
+  font-size: 1.125rem;
+  padding: .125rem 0;
+  margin-right: 1.5rem;
+  margin-bottom: .75rem;
+}
+#header-id .welcome-with-first-name-wrapper .welcome::after {
+  content: ",";
 }
 #header-id .form-input label {
   color: #FFD590;
@@ -2109,10 +2120,15 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 #header-id #header-customization-id,
 #header-id .user-name-block {
   display: flex;
+}
+#header-id #header-customization-id {
   flex-grow: 1;
+  margin-bottom: .75rem;
 }
 #header-id .site-info-wrapper {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 #header-id .user-name-block .first-name {
   color: #FFD590;
@@ -2146,9 +2162,8 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 #main-menu-id {
   display: flex;
   flex-flow: row wrap;
+  flex-grow: 0;
   justify-content: space-between;
-  flex-shrink: 0;
-  flex-grow: 1;
   background-color: #b3c1cc;
   border-bottom: 1px solid rgb(137, 148, 158);
   background: #1e5799;
@@ -2189,6 +2204,7 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 #main-id {
   display: flex;
   flex-flow: column nowrap;
+  flex-grow: 1;
   min-height: 100%;
   flex-shrink: 0;
 }
@@ -2206,12 +2222,17 @@ body#body--environment-staging:before, body#body--environment-staging:after {
 }
 h1 ~ .main-content {
   padding: 1rem 1.5rem 1.5rem;
+  flex-grow: 1;
 }
 #main-id > .main-content:first-child {
-/*  padding: 1.5rem;*/
+  padding: 1.5rem;
+  flex-grow: 1;
 }
 /* pages requiring no outer padding--> */
-#main-id[data-page-name="AirAutoLogoutPage"] > h1:first-child {
+#main-id[data-page-name="AirAutoLogoutPage"] > h1:first-child,
+#main-id[data-page-name="AirAutoLogoutPage"] > .main-content,
+#main-id[data-page-name="Main"] > .main-content:first-child,
+#main-id[data-page-name="ApplicationTemplateDisplay"] > .main-content:first-child  {
   padding: 0;
 }
 /* <-- pages requiring no outer padding */
@@ -2502,9 +2523,9 @@ address {
 h1 {
   clear: both;
 }
-div.SectionsRowDisplay h1,
-div.BrandEditor h1,
-div.BrandRowDisplay h1 {
+.SectionsRowDisplay h1,
+.BrandEditor h1,
+.BrandRowDisplay h1 {
   margin-top: .5rem;
 }
 /* delete after conversion is complete! */
@@ -3461,34 +3482,33 @@ div .Button {
 .show-all-sections-at-once {
   height: 35px;
   display:none !important;
+  margin: .5rem;
+}
+.show-all-sections-at-once-button {
+  margin: 0 !important;
 }
 div.templateContent div.ShowAllSectionsAtOnce > input,
 input.ShowAllSectionsAtOnce[type="submit"],
 input[type="submit"][value="Show All Sections at Once"]:hover,
 input[type="submit"][value="Show Each Section Individually"],
 input[type="submit"][value="Show Each Section Individually"]:hover {
-  margin: 0.6em auto;
+/*  margin: 0.6em auto;
   background: #fff;
   border-color: #777;
   color: #444444;
   text-shadow: none;
   height: 25px;
   display: block;
-  font-size: .9em;
+  font-size: .9em;*/
 }
 input[type="submit"][value="Show All Sections at Once"]:hover,
 input[type="submit"][value="Show Each Section Individually"]:hover {
-  background: #FAFBF7;
-  color: #000;
+/*  background: #FAFBF7;
+  color: #000;*/
 }
 input[type="submit"][value="Show Each Section Individually"] {
-  background: #FAFCFD;
+/*  background: #FAFCFD;*/
   }
-
-input[value="Show All Sections at Once"] {
-  background: transparent;
-}
-
 
 input#CannedSearch {
   margin-left: .5em;
@@ -3719,7 +3739,7 @@ div.NoEvaluationQueuesAvailable,
 div.NoAvailableForms,
 div.NoApplicationsAvailable,
 div.NoTemplatesAvailable,
-div.ListOfBrands .NoBrands,
+.NoBrands,
 div.NoDateItemsToCustomize,
 div.NoDeadlines,
 div.NoDomains,
@@ -3740,8 +3760,7 @@ div.NoFormsAvailable,
 div.NoEvaluationForms,
 div.AvailableForms div,
 .DeveloperCaution,
-div.OtherBrands
-div.HasFormsInOtherBrandsWarning,
+div.other-brands
 /* delete after conversion is complete! */
 .ValidationError,
 .validation-error,
@@ -3761,7 +3780,6 @@ div.AvailableForms div,
 div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
-div.OtherBrands div.HasFormsInOtherBrandsWarning,
 div.NoEvaluationForms,
 div.NoForms,
 div.NoAvailableForms,
@@ -3919,7 +3937,7 @@ body#body--environment-staging:after {
     padding: 1em;
   }
   input[value="Show All Sections at Once"], input[value="Show Each Section Individually"] {
-    margin-top: 1em;
+/*    margin-top: 1em;*/
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 568px) {
@@ -4059,28 +4077,28 @@ body#body--environment-staging:after {
   }
   /* ADMIN LIST OF SECTIONS --> */
 
-  div.SectionsRowDisplay div.AdminEditTemplate,
-  div.SectionsRowDisplay div.AdminListSectionQuestions,
-  div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
-  div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
-  div.SectionsRowDisplay div.SectionOperations a.AddSection,
-  div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
-  div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
-  div.SectionsRowDisplay div.SectionOperations a {
+  .SectionsRowDisplay div.AdminEditTemplate,
+  .SectionsRowDisplay div.AdminListSectionQuestions,
+  .SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+  .SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+  .SectionsRowDisplay div.SectionOperations a.AddSection,
+  .SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+  .SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
+  .SectionsRowDisplay div.SectionOperations a {
     display: block;
     line-height: 1.5;
     padding-left: 1em;
   }
-  div.SectionsRowDisplay div.TemplateOperations,
-  div.SectionsRowDisplay div.SectionOperations {
+  .SectionsRowDisplay div.TemplateOperations,
+  .SectionsRowDisplay div.SectionOperations {
     width: 28%;
     float: right;
     clear: right;
     margin-left: 1.5em;
   }
 
-  div.SectionsRowDisplay div.SectionOperations span.label,
-  div.SectionsRowDisplay div.TemplateOperations span.label {
+  .SectionsRowDisplay div.SectionOperations span.label,
+  .SectionsRowDisplay div.TemplateOperations span.label {
     padding-bottom: .25em;
     display: block;
     font-weight: bold;
@@ -4103,28 +4121,28 @@ body#body--environment-staging:after {
   }
   /* ADMIN LIST OF SECTIONS --> */
 
-  div.SectionsRowDisplay div.AdminEditTemplate,
-  div.SectionsRowDisplay div.AdminListSectionQuestions,
-  div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
-  div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
-  div.SectionsRowDisplay div.SectionOperations a,
-  div.SectionsRowDisplay div.SectionOperations a.AddSection,
-  div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
-  div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
+  .SectionsRowDisplay div.AdminEditTemplate,
+  .SectionsRowDisplay div.AdminListSectionQuestions,
+  .SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+  .SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+  .SectionsRowDisplay div.SectionOperations a,
+  .SectionsRowDisplay div.SectionOperations a.AddSection,
+  .SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+  .SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
     display: block;
     line-height: 1.5;
     padding-left: 1em;
   }
-  div.SectionsRowDisplay div.TemplateOperations,
-  div.SectionsRowDisplay div.SectionOperations {
+  .SectionsRowDisplay div.TemplateOperations,
+  .SectionsRowDisplay div.SectionOperations {
     width: 28%;
     float: right;
     clear: right;
     margin-left: 1.5em;
   }
 
-  div.SectionsRowDisplay div.SectionOperations span.label,
-  div.SectionsRowDisplay div.TemplateOperations span.label {
+  .SectionsRowDisplay div.SectionOperations span.label,
+  .SectionsRowDisplay div.TemplateOperations span.label {
     padding-bottom: .25em;
     display: block;
     font-weight: bold;
@@ -4307,7 +4325,7 @@ button:hover {
   flex-direction: column;
   max-width: 100%;
 }
-.IsNotLoggedIn .Content .LoginOrNewAccount {
+.IsNotLoggedIn .LoginOrNewAccount {
   flex-grow: 1;
   flex-shrink: 0;
   display: flex;
@@ -4662,7 +4680,8 @@ url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /* <- bg color classes */
 
 /* Announcement styles for AIS Forms only --> */
-.IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms {
+.IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms,
+.announcement-wrapper.hasAtLeastOneAnnouncement ~ #main-id .LoginOrNewAccount .LoginForms {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -4725,12 +4744,6 @@ img.ProgramLogo600w {
 div#UserHomePage div.Tips  {
   padding: 1.5rem;
 }
-div#UserHomePage div.OtherBrands div.HasFormsInOtherBrandsWarning {
-  font-weight: bold;
-  font-size: 1.12rem;
-  padding-top: 0.75rem;
-}
-
 
 
 /* 22 Jul - CSS from pre-New Login aisformsCommon */
@@ -4774,6 +4787,42 @@ section.portalMessage header {
   display: inline-block;
   vertical-align: middle;
 }
+
+/* browser-specific --> */
+
+/** START - force display of scroll bars in Mavericks **/
+/* safari, chrome */
+.forceWebkitShowScrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.forceWebkitShowScrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+.forceWebkitShowScrollbar::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+/** END - force display of scroll bars in Mavericks **/
+
+/* <-- browser-specific */
+
+/* erxmatrixtable --> */
+
+.ERXMatrixTable,
+.ERXMatrixTable tr td,
+.ERXMatrixTable tr th,
+.ERXMatrixTableCell {
+  border: 0;
+}
+
+#ApplicationFormsList .ERXMatrixTableCell {
+  white-space: nowrap;
+}
+/* <-- erxmatrixtable */
 
 /* FORMS --> */
 
@@ -4852,6 +4901,9 @@ h5 {
 }
 #ApplicationTemplateDisplayAUC {
   padding: 1.5rem 1.25rem;
+}
+div.Content #ApplicationTemplateDisplayAUC {
+  padding: 0;
 }
   div#ApplicationTemplateDisplayAUC .info-bar ~ .page-heading {
     padding: 1rem;
@@ -5183,21 +5235,65 @@ div.PreviousSection {
 /* <-- PAGE: APPILCATION TEMPLATE DISPLAY */
 
 /* PAGE: APPLICATION TEMPLATE EDITOR --> */
-.ApplicantApplicationTemplateEditor .form-template-owner {
+[data-page-name="ApplicantApplicationTemplateEditor"] .form-template-owner {
   display: flex;
   flex-flow: row wrap;
   font-size: 1rem;
 }
-.ApplicantApplicationTemplateEditor .form-template-owner.no-owner {
+[data-page-name="ApplicantApplicationTemplateEditor"] .form-template-owner.no-owner {
   align-items: center;
 }
-.ApplicantApplicationTemplateEditor .template-owner-history {
+[data-page-name="ApplicantApplicationTemplateEditor"] .template-owner-history {
   margin: 0;
 }
-.ApplicantApplicationTemplateEditor .form-template-owner select {
+[data-page-name="ApplicantApplicationTemplateEditor"] .form-template-owner select {
   margin-right: 1rem;
 }
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort img.descending,
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort img.ascending
+{
+  display: none;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.asc img.unsorted,
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.asc img.descending
+{
+  display: none;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.asc img.ascending
+{
+  display: inline;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.desc img.unsorted,
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.desc img.ascending
+{
+  display: none;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] span.sort.desc img.descending
+{
+  display: inline;
+}
+
+[data-page-name="ApplicantApplicationTemplateEditor"] td span.SortData
+{
+  /* Used for JS sorting without any formatting so purposely hiding from user */
+  display:none;
+}
+
 /* <-- PAGE: APPLICATION TEMPLATE EDITOR */
+
+/* page: edit and generate reports --> */
+[data-page-name="ReportUserEditor"] div#ConfigurationAndColumnsWrapper_id {
+    display: flex;  
+}
+[data-page-name="ReportUserEditor"] div#ConfigurationAndColumnsWrapper_id > div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* <-- page: edit and generate reports */
 
 /* PAGE: HOME STAFF and admin--> */
 
@@ -5263,9 +5359,32 @@ div.PreviousSection {
 
 /* <-- PAGE: HOME STAFF and admin */
 
-/* PAGE: #list-of-forms-page -->  */
+/* PAGE: LIST OF ANSWERS --> */
 
-#list-of-forms-page-id .related-form {
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.PlacedQuestion,
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.BelongsToQuestion,
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.AnswerAsText,
+#main-id[data-page-name="RawAnswersRowDisplay"] table.Answers td.Section{
+  white-space: normal;
+  max-width: 20em;
+}
+#main-id[data-page-name="RawAnswersRowDisplay"] .AnswerDisplaySettings {
+  margin-bottom: 1rem;
+}
+#main-id[data-page-name="RawAnswersRowDisplay"] .AnswerDisplaySettings td, 
+#main-id[data-page-name="RawAnswersRowDisplay"] .AnswerDisplaySettings th {
+  border: 1px solid #cecece;
+  padding: 0.25rem;
+}
+
+/* <-- PAGE: LIST OF ANSWERS */
+
+/* PAGE: #list-of-forms-page -->  */
+[data-page-name="ApplicantApplicationRowDisplay"] #configure-report {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+[data-page-name="ApplicantApplicationRowDisplay"] .related-form {
   display: block;
 }
 th.related-forms div.button-wrapper { 
@@ -5361,7 +5480,8 @@ th.related-forms div.button-wrapper[data-rows-with-content] {
   white-space: nowrap;
 }
 #FormsWrapper td.Program {
-  max-width: 10rem;
+  width: 10rem;
+  max-width: 15rem;
 }
 /* <-- PAGE: USER HOME */
 
@@ -5663,9 +5783,9 @@ table.row-display .row-display tr:first-of-type td {
 
 
 /* WRAPPING CELLS --> */
-#ReportUserEditorPage .default-title,
-#ReportUserEditorPage .customTitle,
-#ReportUserEditorPage .customized-text {
+[data-page-name="ReportUserEditorPage"] .default-title,
+[data-page-name="ReportUserEditorPage"] .customTitle,
+[data-page-name="ReportUserEditorPage"] .customized-text {
   white-space: normal;
   max-width: 500px;
 }
@@ -5771,6 +5891,9 @@ div.CMSBatchNavigation table {
 div.CMSBatchNavigation td {
   padding-left: .5em;
 }
+.CMSBatchNavigation td.count {
+  padding: 0.25rem
+}
 table.rolodex,
 div.CheckboxMatrix table {
   background-color: transparent;
@@ -5839,7 +5962,6 @@ div.AIRAdminSearchForApplications table.Search.rolodex,
 table.Rowdisplay.Deadlines,
 table.Rowdisplay.QueueList,
 div#SessionDisplay table.rolodex,
-div.EvaluationQueueList table.QueueList,
 table.ChoiceCategories,
 div.EvaluationQueueDisplay table.rolodex,
 table.RowDisplay,

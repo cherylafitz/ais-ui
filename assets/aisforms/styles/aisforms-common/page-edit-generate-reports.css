@@ -1,0 +1,9 @@
+/* page: edit and generate reports --> */
+[data-page-name="ReportUserEditor"] div#ConfigurationAndColumnsWrapper_id {
+    display: flex;  
+}
+[data-page-name="ReportUserEditor"] div#ConfigurationAndColumnsWrapper_id > div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* <-- page: edit and generate reports */

@@ -36,9 +36,9 @@ table.row-display .row-display tr:first-of-type td {
 
 
 /* WRAPPING CELLS --> */
-#ReportUserEditorPage .default-title,
-#ReportUserEditorPage .customTitle,
-#ReportUserEditorPage .customized-text {
+[data-page-name="ReportUserEditorPage"] .default-title,
+[data-page-name="ReportUserEditorPage"] .customTitle,
+[data-page-name="ReportUserEditorPage"] .customized-text {
   white-space: normal;
   max-width: 500px;
 }
@@ -144,6 +144,9 @@ div.CMSBatchNavigation table {
 div.CMSBatchNavigation td {
   padding-left: .5em;
 }
+.CMSBatchNavigation td.count {
+  padding: 0.25rem
+}
 table.rolodex,
 div.CheckboxMatrix table {
   background-color: transparent;
@@ -212,7 +215,6 @@ div.AIRAdminSearchForApplications table.Search.rolodex,
 table.Rowdisplay.Deadlines,
 table.Rowdisplay.QueueList,
 div#SessionDisplay table.rolodex,
-div.EvaluationQueueList table.QueueList,
 table.ChoiceCategories,
 div.EvaluationQueueDisplay table.rolodex,
 table.RowDisplay,

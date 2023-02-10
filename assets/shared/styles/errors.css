@@ -6,7 +6,8 @@
 .error-on-find,
 .ExceptionMessage:not(:empty),
 .no-owner,
-.generated-field > .value.warning {
+.generated-field > .value.warning,
+.ErrorMessages {
   background-color: #ffdacc;
   border-radius: 2px;
   border: 1px solid #ffc7b3;

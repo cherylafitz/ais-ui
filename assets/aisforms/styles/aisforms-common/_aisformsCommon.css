@@ -236,9 +236,9 @@ address {
 h1 {
   clear: both;
 }
-div.SectionsRowDisplay h1,
-div.BrandEditor h1,
-div.BrandRowDisplay h1 {
+.SectionsRowDisplay h1,
+.BrandEditor h1,
+.BrandRowDisplay h1 {
   margin-top: .5rem;
 }
 /* delete after conversion is complete! */
@@ -1195,34 +1195,33 @@ div .Button {
 .show-all-sections-at-once {
   height: 35px;
   display:none !important;
+  margin: .5rem;
+}
+.show-all-sections-at-once-button {
+  margin: 0 !important;
 }
 div.templateContent div.ShowAllSectionsAtOnce > input,
 input.ShowAllSectionsAtOnce[type="submit"],
 input[type="submit"][value="Show All Sections at Once"]:hover,
 input[type="submit"][value="Show Each Section Individually"],
 input[type="submit"][value="Show Each Section Individually"]:hover {
-  margin: 0.6em auto;
+/*  margin: 0.6em auto;
   background: #fff;
   border-color: #777;
   color: #444444;
   text-shadow: none;
   height: 25px;
   display: block;
-  font-size: .9em;
+  font-size: .9em;*/
 }
 input[type="submit"][value="Show All Sections at Once"]:hover,
 input[type="submit"][value="Show Each Section Individually"]:hover {
-  background: #FAFBF7;
-  color: #000;
+/*  background: #FAFBF7;
+  color: #000;*/
 }
 input[type="submit"][value="Show Each Section Individually"] {
-  background: #FAFCFD;
+/*  background: #FAFCFD;*/
   }
-
-input[value="Show All Sections at Once"] {
-  background: transparent;
-}
-
 
 input#CannedSearch {
   margin-left: .5em;
@@ -1453,7 +1452,7 @@ div.NoEvaluationQueuesAvailable,
 div.NoAvailableForms,
 div.NoApplicationsAvailable,
 div.NoTemplatesAvailable,
-div.ListOfBrands .NoBrands,
+.NoBrands,
 div.NoDateItemsToCustomize,
 div.NoDeadlines,
 div.NoDomains,
@@ -1474,8 +1473,7 @@ div.NoFormsAvailable,
 div.NoEvaluationForms,
 div.AvailableForms div,
 .DeveloperCaution,
-div.OtherBrands
-div.HasFormsInOtherBrandsWarning,
+div.other-brands
 /* delete after conversion is complete! */
 .ValidationError,
 .validation-error,
@@ -1495,7 +1493,6 @@ div.AvailableForms div,
 div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
-div.OtherBrands div.HasFormsInOtherBrandsWarning,
 div.NoEvaluationForms,
 div.NoForms,
 div.NoAvailableForms,
@@ -1653,7 +1650,7 @@ body#body--environment-staging:after {
     padding: 1em;
   }
   input[value="Show All Sections at Once"], input[value="Show Each Section Individually"] {
-    margin-top: 1em;
+/*    margin-top: 1em;*/
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 568px) {
@@ -1793,28 +1790,28 @@ body#body--environment-staging:after {
   }
   /* ADMIN LIST OF SECTIONS --> */
 
-  div.SectionsRowDisplay div.AdminEditTemplate,
-  div.SectionsRowDisplay div.AdminListSectionQuestions,
-  div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
-  div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
-  div.SectionsRowDisplay div.SectionOperations a.AddSection,
-  div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
-  div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
-  div.SectionsRowDisplay div.SectionOperations a {
+  .SectionsRowDisplay div.AdminEditTemplate,
+  .SectionsRowDisplay div.AdminListSectionQuestions,
+  .SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+  .SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+  .SectionsRowDisplay div.SectionOperations a.AddSection,
+  .SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+  .SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions,
+  .SectionsRowDisplay div.SectionOperations a {
     display: block;
     line-height: 1.5;
     padding-left: 1em;
   }
-  div.SectionsRowDisplay div.TemplateOperations,
-  div.SectionsRowDisplay div.SectionOperations {
+  .SectionsRowDisplay div.TemplateOperations,
+  .SectionsRowDisplay div.SectionOperations {
     width: 28%;
     float: right;
     clear: right;
     margin-left: 1.5em;
   }
 
-  div.SectionsRowDisplay div.SectionOperations span.label,
-  div.SectionsRowDisplay div.TemplateOperations span.label {
+  .SectionsRowDisplay div.SectionOperations span.label,
+  .SectionsRowDisplay div.TemplateOperations span.label {
     padding-bottom: .25em;
     display: block;
     font-weight: bold;
@@ -1837,28 +1834,28 @@ body#body--environment-staging:after {
   }
   /* ADMIN LIST OF SECTIONS --> */
 
-  div.SectionsRowDisplay div.AdminEditTemplate,
-  div.SectionsRowDisplay div.AdminListSectionQuestions,
-  div.SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
-  div.SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
-  div.SectionsRowDisplay div.SectionOperations a,
-  div.SectionsRowDisplay div.SectionOperations a.AddSection,
-  div.SectionsRowDisplay div.SectionOperations a.ResequenceSections,
-  div.SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
+  .SectionsRowDisplay div.AdminEditTemplate,
+  .SectionsRowDisplay div.AdminListSectionQuestions,
+  .SectionsRowDisplay div.AdminGenerateXMLforTemplateConfiguration,
+  .SectionsRowDisplay div.AdminGenerateXMLforEmptyForm,
+  .SectionsRowDisplay div.SectionOperations a,
+  .SectionsRowDisplay div.SectionOperations a.AddSection,
+  .SectionsRowDisplay div.SectionOperations a.ResequenceSections,
+  .SectionsRowDisplay div.SectionOperations a.CustomizeAllDateQuestions {
     display: block;
     line-height: 1.5;
     padding-left: 1em;
   }
-  div.SectionsRowDisplay div.TemplateOperations,
-  div.SectionsRowDisplay div.SectionOperations {
+  .SectionsRowDisplay div.TemplateOperations,
+  .SectionsRowDisplay div.SectionOperations {
     width: 28%;
     float: right;
     clear: right;
     margin-left: 1.5em;
   }
 
-  div.SectionsRowDisplay div.SectionOperations span.label,
-  div.SectionsRowDisplay div.TemplateOperations span.label {
+  .SectionsRowDisplay div.SectionOperations span.label,
+  .SectionsRowDisplay div.TemplateOperations span.label {
     padding-bottom: .25em;
     display: block;
     font-weight: bold;
@@ -2041,7 +2038,7 @@ button:hover {
   flex-direction: column;
   max-width: 100%;
 }
-.IsNotLoggedIn .Content .LoginOrNewAccount {
+.IsNotLoggedIn .LoginOrNewAccount {
   flex-grow: 1;
   flex-shrink: 0;
   display: flex;
@@ -2396,7 +2393,8 @@ url(https://ais.americancouncils.org/ais/common/AISformsLogo_flat.svg);
 /* <- bg color classes */
 
 /* Announcement styles for AIS Forms only --> */
-.IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms {
+.IsNotLoggedIn .hasAtLeastOneAnnouncement ~ .LoginOrNewAccount .LoginForms,
+.announcement-wrapper.hasAtLeastOneAnnouncement ~ #main-id .LoginOrNewAccount .LoginForms {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -2459,12 +2457,6 @@ img.ProgramLogo600w {
 div#UserHomePage div.Tips  {
   padding: 1.5rem;
 }
-div#UserHomePage div.OtherBrands div.HasFormsInOtherBrandsWarning {
-  font-weight: bold;
-  font-size: 1.12rem;
-  padding-top: 0.75rem;
-}
-
 
 
 /* 22 Jul - CSS from pre-New Login aisformsCommon */

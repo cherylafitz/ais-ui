@@ -1,6 +1,9 @@
 /* PAGE: #list-of-forms-page -->  */
-
-#list-of-forms-page-id .related-form {
+[data-page-name="ApplicantApplicationRowDisplay"] #configure-report {
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+[data-page-name="ApplicantApplicationRowDisplay"] .related-form {
   display: block;
 }
 th.related-forms div.button-wrapper { 

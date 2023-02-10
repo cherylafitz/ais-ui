@@ -48,7 +48,8 @@ div.HasFormsInOtherBrandsWarning,
 .validation-error,
 div.MyForms div.NoFormsStartedOrSubmitted,
 div.MyForms div.NoEvaluationForms,
-.NoExtendedDeadlines  {
+.NoExtendedDeadlines,
+.warning.deprecated  {
   font-style: normal;
   color: #c93028;
   background-color: transparent;
