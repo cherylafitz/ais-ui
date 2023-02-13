@@ -2,6 +2,18 @@
 .BusTicketDisplay {
   font-size: 14px;
 }
+.BusTicketDisplay .header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.BusTicketDisplay .header img.logo {
+    max-height: 50px;
+    margin-right: 1.5em;
+}
+.BusTicketDisplay .header h2 {
+  margin: 0;
+}
 .BusTicketDisplay .passenger-info-row {
   display: flex;
   justify-content: space-between;
@@ -73,15 +85,16 @@
   margin: .25em auto;
 }
 .BusTicketDisplay [class*="-time"] .value {
-  border: 1px solid #cecece;
+  border: 1px solid #999;
   text-align: center;
   padding: .75em;
   font-weight: bold;
   margin: .5em auto;
   font-size: 1.5em;
 }
-.BusTicketDisplay .bus-info .e-ticket {
-  margin-top: 3em;
+.BusTicketDisplay .e-ticket {
+  margin: 3em auto;
+  text-align: center;
 }
 .BusTicketDisplay .footer {
   position: absolute;
