@@ -4,17 +4,17 @@ div.Main .SharedWithExplanation,
 span.TrackChanges,
 span.TrackRecentChanges,
 span.SharedTeamManagement {
-  background-color:#FFFFFF;
+/*  background-color:#FFFFFF;
   border: medium solid #de6846;
   border-radius: 1em;
   padding: 0.5em;
-  margin: .75em 0;
+  margin: .75em 0;*/
   display: inline-block;
 }
 .AdminFormNav span.TrackChanges,
 .AdminFormNav span.TrackRecentChanges,
 span.SharedTeamManagement {
-  margin: 0 .25rem;
+  margin: 0 .5rem 0 0;
 }
 div.Main .SharedLegend {
     font-style: normal;
