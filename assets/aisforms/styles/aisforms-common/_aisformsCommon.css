@@ -2047,12 +2047,14 @@ button:hover {
 .IsNotLoggedIn .Tips,
 .IsNotLoggedIn #footer,
 .AirAutoLogoutPage,
-.IsNotLoggedIn .hasAtLeastOneAnnouncement,
 .CannotResetPasswordPage,
 .PasswordResetArea,
 .ForgottenPassword,
 .PasswordHasBeenSent {
   padding: 2rem 1.5rem;
+}
+.IsNotLoggedIn .hasAtLeastOneAnnouncement {
+  padding: 0 0 .5rem 0;
 }
 .IsNotLoggedIn #Header {
   display: flex;
@@ -2245,7 +2247,6 @@ button:hover {
   .IsNotLoggedIn .Tips,
   .IsNotLoggedIn #footer,
   .AirAutoLogoutPage,
-  .IsNotLoggedIn .hasAtLeastOneAnnouncement,
   .CannotResetPasswordPage,
   .PasswordResetArea,
   .ForgottenPassword,

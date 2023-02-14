@@ -148,11 +148,9 @@ body#body--environment-staging:before, body#body--environment-staging:after {
   display: flex;
   flex-flow: column nowrap;
   flex-grow: 1;
-  min-height: 100%;
   flex-shrink: 0;
 }
 #main-id div.PageName {
-  flex-basis: 100%;
   background-color: #29353d;
   color: #fff;
   padding: .5rem 1rem;
@@ -163,9 +161,15 @@ body#body--environment-staging:before, body#body--environment-staging:after {
   padding: 1.5rem 1.5rem 0;
   margin: 0;
 }
+.IsNotLoggedIn #main-id > h1:first-child {
+  padding: 0;
+}
 h1 ~ .main-content {
   padding: 1rem 1.5rem 1.5rem;
   flex-grow: 1;
+}
+.IsNotLoggedIn h1 ~ .main-content {
+  padding: 0;
 }
 #main-id > .main-content:first-child {
   padding: 1.5rem;
