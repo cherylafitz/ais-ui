@@ -6,6 +6,9 @@
     display: flex;
     flex-flow: row wrap;
 }
+#main-id[data-page-name="Main"] div.PageName {
+  flex-basis: 100%;
+}
 #main-id .admin-home-links {
   padding: 1rem;
   background-color: #33424d;
