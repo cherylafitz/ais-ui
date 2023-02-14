@@ -14,7 +14,7 @@ span.SharedTeamManagement {
 .AdminFormNav span.TrackChanges,
 .AdminFormNav span.TrackRecentChanges,
 span.SharedTeamManagement {
-  margin: 0 .25rem;
+  margin: 0 .5rem 0 0;
 }
 div.Main .SharedLegend {
     font-style: normal;

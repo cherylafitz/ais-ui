@@ -3317,7 +3317,7 @@ div#ApplicationTemplateDisplayAUC h1.editing:not(.form-view-header) {
   padding-right: .5rem;
 }
 .ApplicationTemplateDisplay h2.ProgramNameLabel {
-    font-size: .875rem;
+  font-size: .875rem;
 }
 .ApplicationTemplateDisplay h1.form-view-header,
 .ApplicationTemplateDisplay h1.editing,
@@ -3887,31 +3887,10 @@ body#body--environment-staging:after {
 /* MEDIA QUERIES-->*/
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-width : 480px) {
-  .admin-home-links {
-    width: 100%;
-  }
-  .ACaddressBlock {
-    clear: both;
-    padding-top: .5rem;
-  }
-  .AClogoAddressFooter {
-    text-align: left;
-  }
   /* UPDATE validation and errors on login  -->>>> */
-
-  .mainInstructions  {
-    float: none;
-    margin: 1em auto;
-  }
-
   .infoIconOnRight .showHoverable.erxHoverArea {
     margin-left: 0 !important;
     margin-right: 24px !important;
-  }
-  div.MyForms table,
-  div.AvailableForms table,
-  div.MyEvaluationQueuesAsEvaluator table {
-    margin: 1em 0;
   }
   th.Request {
     width: 15em;
@@ -3924,13 +3903,12 @@ body#body--environment-staging:after {
     width: 100%;
     overflow: scroll;
   }
-  .LoginGetStarted {
-    display: none;
+  div.primaryActionLinksDivider {
+    flex-flow: row-wrap;
   }
-
+  /*  h2 in forms */
   .ApplicationTemplateDisplay h2 {
-    padding: 0 0 1em;
-    font-size: 1em;
+    font-size: 1.75em;
   }
   a.LinkToPreviousPage {
     float: none;
@@ -5072,6 +5050,7 @@ div.section-navigator.vertical  {
 }
 .AdminFormNav .FormActions {
   margin-right: 1rem;
+  margin-bottom: .5rem;
 }
 /* delete after conversion is complete! */
 .sectionBodyBelowTopNavBar,
@@ -5576,7 +5555,7 @@ span.SharedTeamManagement {
 .AdminFormNav span.TrackChanges,
 .AdminFormNav span.TrackRecentChanges,
 span.SharedTeamManagement {
-  margin: 0 .25rem;
+  margin: 0 .5rem 0 0;
 }
 div.Main .SharedLegend {
     font-style: normal;
