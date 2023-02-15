@@ -1321,13 +1321,11 @@ div#footer div#CodivusAttribution,
 #footer-id.IsLoggedIn #codivus-id .byline {
   color: #fff;
 }
-#footer2 a,
 #footer-id a,
 .IsLoggedIn #amagavi a,
 .IsLoggedIn #codivus a {
   color: #c4dcee;
 }
-#footer2 a:hover,
 #footer-id a:hover {
   color: #FFC8BD;
 }
@@ -1341,29 +1339,8 @@ td.logoCell a {
 }
 #amagavi a:hover,
 #codivus a:hover,
-#footer a:active,
 #footer-id a:active {
   color: #FF7F67;
-}
-table#login tr.header th,
-table#CreateAccount tr.header th {
-  background-color: #D3DDAC;
-  color: #444;
-  text-align: center;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 1.2em;
-  padding: .5em 0;
-}
-table#login tr th,
-table#CreateAccount tr th {
-  padding-left: .5rem;
-}
-table#login input[type="text"],
-table#login input[type="password"],
-table#CreateAccount input[type="password"],
-table#CreateAccount input[type="text"] {
-  font-size: .875rem;
 }
 
 table.rolodex tr td {
