@@ -861,7 +861,7 @@ table tr td div.LongTextNoEditing
     margin: 0;
     padding: 0;
   }
-p:not([class^="nodisplay"])
+p:not([class*="nodisplay"])
   {
     display: block;
     margin-top: 0.2em;
