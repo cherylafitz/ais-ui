@@ -447,9 +447,10 @@ div.notice {
 
 /* By default, clear float on all question items */
 
-div.QuestionItem,
-div.DisplayItemOnly,
-div.Group {
+.QuestionItem,
+.DisplayItemOnly,
+.display-item-only,
+.Group {
   clear: both;
   margin-bottom: .5em;
 }
