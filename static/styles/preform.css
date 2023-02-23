@@ -1990,6 +1990,15 @@ tr.has-pii td.pii {
   font-size: 1rem;
   border-radius: 100px;
 }
+.info-tag:first-of-type {
+  margin-left: 0;
+}
+.info-tag ~ .info-tag {
+  margin: 0;
+}
+.info-tag:last-of-type {
+  margin-right: .75rem;
+}
 /* overrides on one-off classes --> */
 .external-system-tag {
   padding: initial;

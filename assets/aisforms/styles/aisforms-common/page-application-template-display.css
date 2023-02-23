@@ -18,11 +18,9 @@ div.Content #ApplicationTemplateDisplayAUC {
   }
   #ApplicationTemplateDisplayAUC .info-tag.in-testing {
     background-color: #62deff !important;
-    margin: 0;
   }
   #ApplicationTemplateDisplayAUC .info-tag.edit-mode {
     background-color: #d0d0fb;
-    margin: 0 .75rem 0 0;
   }
   #ApplicationTemplateDisplayAUC .page-heading .template-name {
     margin-right: .5rem;

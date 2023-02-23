@@ -112,6 +112,7 @@ ul {
 
 .QuestionItem,
 .DisplayItemOnly,
+.display-item-only,
 .Group {
   clear: both;
 }
@@ -458,7 +459,8 @@ select
   }
 
 .QuestionItem,
-.DisplayItemOnly  {
+.DisplayItemOnly,
+.display-item-only  {
 /*    margin-bottom: .5em;
     margin-top: .5em;*/
     width:auto;
@@ -469,7 +471,8 @@ select
     padding-top: .125em;
 }
 .GroupedItem .QuestionItem:not(.subQuestion),
-.GroupedItem .DisplayItemOnly {
+.GroupedItem .DisplayItemOnly,
+.GroupedItem .display-item-only {
   padding-left: 0;
 }
 .AnswerTable .QuestionItem {
@@ -545,7 +548,7 @@ a.FormDataFill,
 .DisplayItemOnly .QuestionNumber,
 .before-question .QuestionNumber,
 .QuestionItem .question-number,
-.DisplayItemOnly .question-number,
+.display-item-only .question-number,
 .before-question .question-number  {
   float: left;
   width: 30px;
