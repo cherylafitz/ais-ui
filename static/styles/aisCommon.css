@@ -7313,6 +7313,12 @@ table.row-display td.description{
 .EmailTemplateRowDisplay .row-display td {
   white-space: normal;
 }
+
+.row-display td.HealthSummary {
+  white-space: normal;
+  min-width: 25rem;
+  max-width: 30rem;
+}
 /* <-- wrap cells */
 
 
