@@ -14,9 +14,9 @@
 .BusTicketDisplay .header h2 {
   margin: 0;
 }
-/*.BusTicketDisplay .passenger-info-row  {
+.BusTicketDisplay .travel-info-bar  {
   justify-content: space-between;
-}*/
+}
 .BusTicketDisplay .greeting {
   font-size: 1.5em;
   margin-bottom: .25em;
