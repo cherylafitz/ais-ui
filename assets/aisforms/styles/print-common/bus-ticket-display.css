@@ -14,18 +14,9 @@
 .BusTicketDisplay .header h2 {
   margin: 0;
 }
-.BusTicketDisplay .passenger-info-row {
-  display: flex;
+/*.BusTicketDisplay .passenger-info-row  {
   justify-content: space-between;
-  margin-bottom: 1.5em;
-}
-.BusTicketDisplay .passenger-name,
-.BusTicketDisplay .greeting .name  {
-  text-transform: capitalize;
-}
-.BusTicketDisplay .passenger-info-row .label {
-  font-weight: bold;
-}
+}*/
 .BusTicketDisplay .greeting {
   font-size: 1.5em;
   margin-bottom: .25em;
@@ -49,10 +40,11 @@
   justify-content: space-around;
   margin-top: 1.5em;
 }
+
 .BusTicketDisplay .bus-info,
 .BusTicketDisplay .message,
 .BusTicketDisplay .greeting,
-.BusTicketDisplay .passenger-info-row {
+.BusTicketDisplay .travel-info-bar {
   break-before: avoid;
 }
 .SkylinkSingleETicketDisplay .eticket pre,
@@ -68,7 +60,7 @@
 }
 .BusTicketDisplay .bus-info .bus-label, 
 .BusTicketDisplay .bus-info .bus-number {
-  display: inline-block;
+  display: none;
 }
 .BusTicketDisplay .bus-info .bus-number {
   padding-left: .25em;
