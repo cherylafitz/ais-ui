@@ -21,6 +21,7 @@
 .skylink-report .row-display,
 [data-page-name*="com.amagavi.ac.travel"] .row-display {
   margin-bottom: 1em;  
+  font-size: 11px;
 }
 .skylink-report .row-display td,
 .skylink-report .row-display th,
@@ -89,6 +90,7 @@
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .label,
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .label {
   font-weight: bold;
+  width: initial;
 }
 /* overrides generated field value styles */
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .value {
@@ -96,6 +98,7 @@
   padding: 0;
   border: 0;
   font-style: normal;
+  min-width: initial;
 }
 /* <-- report-info */
 
