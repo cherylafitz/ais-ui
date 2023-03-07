@@ -864,6 +864,10 @@ table.PlacementReportDisplay table.rolodex tbody tr:last-child th:last-of-type {
   display: flex;
   flex-shrink: 0;
 }
+/* fixes issue with ac admin home page layout when users have restricted view */
+td.content .Main {
+  display: block;
+}
 /* fixes bug temporarily until Marco updates structure */
 .main-content.AlumnusExceptionalCategoryUnifiedEditor {
   display: initial;
