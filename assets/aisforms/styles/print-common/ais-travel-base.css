@@ -1,0 +1,102 @@
+/* AIS travel base --> */
+.skylink-report .header,
+[data-page-name*="com.amagavi.ac.travel"] .header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+.skylink-report .header img.logo,
+[data-page-name*="com.amagavi.ac.travel"] .header img.logo {
+  max-height: 50px;
+  margin-right: 1.5em;
+}
+.skylink-report .header h2,
+[data-page-name*="com.amagavi.ac.travel"] .header h2 {
+  margin: 0;
+}
+.skylink-report .summary,
+[data-page-name*="com.amagavi.ac.travel"] .summary {
+  font-size: 15px;
+}
+.skylink-report .row-display,
+[data-page-name*="com.amagavi.ac.travel"] .row-display {
+  margin-bottom: 1em;  
+}
+.skylink-report .row-display td,
+.skylink-report .row-display th,
+[data-page-name*="com.amagavi.ac.travel"] .row-display td,
+[data-page-name*="com.amagavi.ac.travel"] .row-display th {
+  page-break-inside: avoid;
+}
+.skylink-report td,
+[data-page-name*="com.amagavi.ac.travel"] td {
+  word-wrap: break-word;
+}
+.skylink-report .row-display th,
+.skylink-report .row-display td,
+[data-page-name*="com.amagavi.ac.travel"] .row-display th,
+[data-page-name*="com.amagavi.ac.travel"] .row-display td {
+  border: 1px solid #888;
+  padding: 3px 6px;
+}
+.skylink-report .row-display th,
+[data-page-name*="com.amagavi.ac.travel"] .row-display th {
+  vertical-align: bottom;
+}
+.skylink-report .row-display,
+[data-page-name*="com.amagavi.ac.travel"] .row-display {
+/*  width: 44em;*/
+  /*table-layout: fixed;*/
+  width: 100%;
+  max-width: 100%;
+}
+.skylink-report table.row-display thead ~ tbody tr:nth-child(2n+1),
+[data-page-name*="com.amagavi.ac.travel"] table.row-display thead ~ tbody tr:nth-child(2n+1) {
+  background-color: #e6e6e6;
+}
+.skylink-report table.row-display th,
+[data-page-name*="com.amagavi.ac.travel"] table.row-display th {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+[data-page-name*="com.amagavi.ac.travel"] .row-display .first-name {
+  text-transform: capitalize;
+}
+[data-page-name*="com.amagavi.ac.travel"] .row-display .last-name {
+  text-transform: uppercase;
+}
+
+/* report-info --> */
+
+/* change both to "travel-info-bar" class? */
+[data-page-name*="com.amagavi.ac.travel"] .travel-info-bar {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1.5em;
+  justify-content: flex-start;
+}
+[data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .generated-field {
+  margin: 0 1em 0.5em;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+}
+[data-page-name*="com.amagavi.ac.travel"]  .passenger-name,
+[data-page-name*="com.amagavi.ac.travel"]  .name  {
+  text-transform: capitalize;
+}
+/* change passenger-info-row structure to generated fields */
+[data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .label,
+[data-page-name*="com.amagavi.ac.travel"] .generated-field .label {
+  font-weight: bold;
+}
+/* overrides generated field value styles */
+[data-page-name*="com.amagavi.ac.travel"] .generated-field .value {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+}
+/* <-- report-info */
+
+/* <-- AIS travel base */
