@@ -1486,6 +1486,7 @@ section img.ProgramLogo600w {
 .skylink-report .row-display,
 [data-page-name*="com.amagavi.ac.travel"] .row-display {
   margin-bottom: 1em;  
+  font-size: 11px;
 }
 .skylink-report .row-display td,
 .skylink-report .row-display th,
@@ -1554,6 +1555,7 @@ section img.ProgramLogo600w {
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .label,
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .label {
   font-weight: bold;
+  width: initial;
 }
 /* overrides generated field value styles */
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .value {
@@ -1561,6 +1563,7 @@ section img.ProgramLogo600w {
   padding: 0;
   border: 0;
   font-style: normal;
+  min-width: initial;
 }
 /* <-- report-info */
 
@@ -1663,75 +1666,6 @@ section img.ProgramLogo600w {
   right: 0;
 }
 /* <-- bus ticket display */
-
-/* COVER page --> */
-.SectionDisplay.cover-page-section {
-  page-break-after: always;
-}
-.SectionDisplay.cover-page-section,
-.SectionDisplay.cover-page-section h1,
-.SectionDisplay.cover-page-section h2 {
-  text-align: center;
-}
-.SectionDisplay.cover-page-section h1 {
-  font-size: 3em;
-  border-bottom: none;
-  margin-bottom: 3em;
-}
-.SectionDisplay.cover-page-section h2 {
-  font-size: 2em;
-}
-.SectionDisplay.cover-page-section h2 .template-name,
-.SectionDisplay.cover-page-section h2 .template-year {
-  display: block;
-  margin-bottom: 2em;
-}
-.SectionDisplay.cover-page-section h2 .template-year {
-  margin-bottom: 10em;
-}
-.SectionDisplay.cover-page-section .label {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-.SectionDisplay.cover-page-section .value {
-  font-size: 2.5em;
-  margin-bottom: 4em;
-}
-
-/* updated section-display */
-.section-display.cover-page-section {
-  page-break-after: always;
-}
-.section-display.cover-page-section,
-.section-display.cover-page-section h1,
-.section-display.cover-page-section h2 {
-  text-align: center;
-}
-.section-display.cover-page-section h1 {
-  font-size: 3em;
-  border-bottom: none;
-  margin-bottom: 3em;
-}
-.section-display.cover-page-section h2 {
-  font-size: 2em;
-}
-.section-display.cover-page-section h2 .template-name,
-.section-display.cover-page-section h2 .template-year {
-  display: block;
-  margin-bottom: 2em;
-}
-.section-display.cover-page-section h2 .template-year {
-  margin-bottom: 10em;
-}
-.section-display.cover-page-section .label {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-.section-display.cover-page-section .value {
-  font-size: 2.5em;
-  margin-bottom: 4em;
-}
-/* <-- COVER page */
 
 /* float overrides --> */
 
