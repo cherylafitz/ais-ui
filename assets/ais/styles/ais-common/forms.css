@@ -30,4 +30,14 @@ th.mailing-address-state .filter {
 #zip-file-name-id {
   width: calc(100% - 13rem);
 }
+th.acceptance-period,
+th.passport-expiration,
+th.medical-evaluation-due-date {
+  white-space: normal !important;
+}
+td.acceptance-period input,
+td.passport-expiration input,
+td.medical-evaluation-due-date input {
+  width: 3rem;
+}
 /* <-- FORMS */
