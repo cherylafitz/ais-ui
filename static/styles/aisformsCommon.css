@@ -894,6 +894,9 @@ table td div.ExcelDownloadDescription {
   width: -webkit-fit-content;
   width: fit-content;
 }
+.info-bar .warning {
+  margin: 0;
+}
 .validation-error-line::before,
 .warning::before,
 .error-on-find::before,
