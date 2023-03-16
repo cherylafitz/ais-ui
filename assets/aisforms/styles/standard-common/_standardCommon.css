@@ -208,9 +208,14 @@ body.IsLoggedIn .validation-error ul {
   font-weight: normal;
 }
 /* delete after conversion is complete! */
-body.IsLoggedIn .inlineError .ValidationError,
-body.IsLoggedIn .inlineError .validation-error {
+.IsLoggedIn .inlineError .ValidationError,
+.IsLoggedIn .inlineError .validation-error {
   display: inline-block;
+}
+.IsLoggedIn .AnswerTable .inlineError .validation-error {
+  display: block;
+/* upload new stop sign graphic and remove rule below */
+  margin-top: -2rem;
 }
 /* delete after conversion is complete! */
 body.IsLoggedIn .inlineError .ValidationError ul,
