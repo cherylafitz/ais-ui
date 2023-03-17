@@ -1661,7 +1661,7 @@ p.alert-box {
 }
 .BusTicketDisplay .bus-display-name {
   border: 3px double #000;
-  width: fit-content;
+  display: inline-block;
   margin: 0 auto .25em;
   padding: 0.25em 0.5em;
   border-radius: 8px;
