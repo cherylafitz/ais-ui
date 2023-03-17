@@ -1566,10 +1566,12 @@ section img.ProgramLogo600w {
 /* overrides generated field value styles */
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .value {
   background-color: transparent;
-  padding: 0;
   border: 0;
   font-style: normal;
   min-width: initial;
+}
+[data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .value {
+  padding: 0;
 }
 /* <-- report-info */
 
@@ -1653,9 +1655,16 @@ p.alert-box {
 .BusTicketDisplay .bus-label-number-wrapper {
   flex-basis: 100%;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 1em;
   font-weight: bold;
+}
+.BusTicketDisplay .bus-display-name {
+  border: 3px double #000;
+  width: fit-content;
+  margin: 0 auto .25em;
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
 }
 .BusTicketDisplay .bus-info .bus-label, 
 .BusTicketDisplay .bus-info .bus-number {
@@ -1682,6 +1691,12 @@ p.alert-box {
   font-weight: bold;
   margin: .5em auto;
   font-size: 1.5em;
+}
+.BusTicketDisplay .downstairs-time .label {
+  font-weight: bold;
+}
+.BusTicketDisplay .downstairs-time .value {
+  font-size: 2em;
 }
 .BusTicketDisplay .e-ticket {
   margin: 3em auto;
