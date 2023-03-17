@@ -95,10 +95,12 @@
 /* overrides generated field value styles */
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .value {
   background-color: transparent;
-  padding: 0;
   border: 0;
   font-style: normal;
   min-width: initial;
+}
+[data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .value {
+  padding: 0;
 }
 /* <-- report-info */
 
