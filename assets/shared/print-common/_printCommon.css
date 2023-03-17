@@ -367,9 +367,12 @@ table.TemplateTable tr th {
   padding-top: .75em;
 }
 
-table.TemplateTable .sideTH {
+table.TemplateTable .sideTH,
+table.TemplateTable tbody th {
   font-weight: bold;
   background-color: #e6e6e6;
+  border: thin solid #cecece;
+  color: #000;
 }
 
 td,
