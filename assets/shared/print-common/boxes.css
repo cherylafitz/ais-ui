@@ -1,0 +1,21 @@
+/* boxes --> */
+
+[class*="-box"],
+p[class*="-box"] {
+  color: #000;
+  font-size: 0.9375em; /* 15px when 100% */
+  font-weight: normal;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .5rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  width: fit-content;
+}
+.alert-box,
+p.alert-box {
+  margin: 1rem 0;
+  border-color: #777;
+}
+
+/* <-- boxes */

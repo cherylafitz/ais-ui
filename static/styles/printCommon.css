@@ -800,9 +800,12 @@ table.TemplateTable tr th {
   padding-top: .75em;
 }
 
-table.TemplateTable .sideTH {
+table.TemplateTable .sideTH,
+table.TemplateTable tbody th {
   font-weight: bold;
   background-color: #e6e6e6;
+  border: thin solid #cecece;
+  color: #000;
 }
 
 td,
@@ -1570,6 +1573,28 @@ section img.ProgramLogo600w {
 
 /* <-- AIS travel base */
 
+/* boxes --> */
+
+[class*="-box"],
+p[class*="-box"] {
+  color: #000;
+  font-size: 0.9375em; /* 15px when 100% */
+  font-weight: normal;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .5rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  width: fit-content;
+}
+.alert-box,
+p.alert-box {
+  margin: 1rem 0;
+  border-color: #777;
+}
+
+/* <-- boxes */
+
 /* bus ticket display --> */
 .BusTicketDisplay {
   font-size: 14px;
@@ -1735,6 +1760,23 @@ section img.ProgramLogo600w {
 }
 
 /* <-- HEADINGS */
+
+/* printAIS --> */
+
+#pdfheader-id {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+#pdfheader-id img[class*="logo"] {
+  height: 50px;
+  margin-right: 1rem;
+}
+#pdfheader-id h1 {
+  font-weight: normal;
+  font-size: 2.25em;
+}
+/* <-- printAIS */
 
 /* SKYLINK REPORT ETICKET --> */
 .SkylinkSingleETicketDisplay .header {
