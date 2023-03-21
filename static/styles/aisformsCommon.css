@@ -1862,6 +1862,12 @@ ul.progress_bar {
 
 /* <-- NAVIGATION */
 
+/* SVGs --> */
+
+img.trashcan { height: 1.25rem; } /* controls size of trash-mag.svg */
+
+/* <-- SVGs */
+
 /* TABLE ROW NUMBERS --> */
 
 table.row-display > tbody {
