@@ -1,5 +1,8 @@
 /* SVGs --> */
 
-img.trashcan { height: 1.25rem; } /* controls size of trash-mag.svg */
+img.trashcan { 
+  height: 1.5rem;
+  padding: 0 0.125em;
+} /* controls size of trash-mag.svg */
 
 /* <-- SVGs */
