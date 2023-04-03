@@ -2078,25 +2078,6 @@ tr.has-pii td.pii {
 
 /* __base --> */
 
-/*temp! for testing*/
-body#body--environment-staging {
-  border-left: none;
-  border-right: none;
-  margin-top: 0px;
-  height: unset;
-  width: unset;
-}
-body#body--environment-staging:before, body#body--environment-staging:after {
-  content: "";
-  position: static;
-  background: transparent;
-  left: 0 !important;
-  right: 0 !important;
-  height: 0 !important;
-  z-index: 5001;
-}
-/*end temp */
-
 /* header --> */
 #header-id {
   background: #29353d;
