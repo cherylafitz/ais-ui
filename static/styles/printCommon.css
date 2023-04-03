@@ -1478,7 +1478,7 @@ section img.ProgramLogo600w {
 }
 .skylink-report .header img.logo,
 [data-page-name*="com.amagavi.ac.travel"] .header img.logo {
-  max-height: 50px;
+  height: 50px;
   margin-right: 1.5em;
 }
 .skylink-report .header h2,
