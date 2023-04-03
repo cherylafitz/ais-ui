@@ -63,7 +63,7 @@
 #ApplicationSearchForm .form-input select, 
 #ApplicationSearchForm .form-input textarea, 
 #ApplicationSearchForm .generated-field > .value,
-#ApplicationSearchForm .form-input input[typ="text"],
+#ApplicationSearchForm .form-input input[type="text"],
 #ApplicationSearchForm .input-group-content,
 #ApplicationSearchForm .hint {
     margin-top: .25rem;
