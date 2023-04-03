@@ -3,17 +3,23 @@
 .PersonSearch input[type="text"] {
   width: 25rem;
 }
-#official-name-id {
+#official-name-id,
+[data-page-class-name="com.amagavi.ac.components.OrganizationEditor"] input#name-id {
   width: 30rem;
 }
 div.AirportEdit input.CommonTextField,
 input[class*="display-name"] {
   width: 50rem;
 }
+th.applicant-status .filter,
+th.test-center .filter {
+  width: 4rem;
+}
 th.ref-code .filter {
   width: 6rem;
 }
-th.reference-code .filter {
+th.reference-code .filter,
+th.aisid .filter {
   width: 7rem;
 }
 th.firstgiven-name .filter {
