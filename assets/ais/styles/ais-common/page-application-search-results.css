@@ -8,5 +8,13 @@
 #batchNavigationContainer .count::after {
   content: '';
 }
+#batchNavigationContainer .LimitedExplanation {
+  background: #bfeaf7;
+  width: fit-content;
+  font-style: italic;
+  margin: 0.5rem 0;
+  padding: 0 0.25rem;
+  font-size: .925rem;
+}
 
 /* <-- PAGE APPLICATION SEARCH RESULTS */
