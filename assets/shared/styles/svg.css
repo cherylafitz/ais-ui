@@ -1,6 +1,7 @@
 /* SVGs --> */
 
-img.trashcan { 
+img.trashcan,
+input[type="image"].delete-button { 
   height: 1.5rem;
   padding: 0 0.125em;
 } /* controls size of trash-mag.svg */
