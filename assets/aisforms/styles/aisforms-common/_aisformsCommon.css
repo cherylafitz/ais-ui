@@ -1978,9 +1978,6 @@ button:hover {
     margin: .5rem 0;
     justify-content: flex-end;
   }
-  .AClogoAddressFooter .legal > span:not(:last-child):after    {
-    content: ". ";
-  }
    .legal span {
     display: inline-block;
   }
