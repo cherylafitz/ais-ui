@@ -563,6 +563,9 @@ li .copy-to-clipboard-button:hover {
 /* START DETAILS STYLES --> */
 details {
   margin: .75rem 0;
+  width: fit-content;
+  width: -moz-fit-content; 
+  width: -webkit-fit-content;
 }
 details > summary {
   display: inline-block;
@@ -576,9 +579,6 @@ details .details-content {
   padding: .5em .75em .75em;
   background: #eff3f5;
   /* FIX! */
-  width: fit-content;
-  width: -moz-fit-content; 
-  width: -webkit-fit-content;
   border-radius: 0 2px 2px 2px;
   margin-bottom: 1rem;
 }
