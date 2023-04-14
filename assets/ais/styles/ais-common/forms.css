@@ -11,6 +11,10 @@ div.AirportEdit input.CommonTextField,
 input[class*="display-name"] {
   width: 50rem;
 }
+th .filter input {
+  width: 100%;
+  min-width: 4rem
+}
 th.applicant-status .filter,
 th.test-center .filter {
   width: 4rem;
