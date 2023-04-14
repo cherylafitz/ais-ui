@@ -5,7 +5,7 @@
 .BusTicketDisplay .header {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .BusTicketDisplay .header img.logo {
     max-height: 50px;
@@ -98,7 +98,7 @@
   font-size: 2em;
 }
 .BusTicketDisplay .e-ticket {
-  margin: 3em auto;
+  margin: 1em auto;
   text-align: center;
 }
 .BusTicketDisplay .footer {
