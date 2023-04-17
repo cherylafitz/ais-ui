@@ -7342,6 +7342,7 @@ table.row-display th.sort-order {
 .row-display .ais-id {
   white-space: normal;
   max-width: 400px;
+  min-width: 9rem;
 }
 table.row-display td.description{
   white-space: normal;
