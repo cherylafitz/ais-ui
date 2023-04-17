@@ -73,7 +73,7 @@
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   justify-content: flex-start;
 }
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .generated-field {
@@ -86,6 +86,14 @@
 [data-page-name*="com.amagavi.ac.travel"]  .name  {
   text-transform: capitalize;
 }
+[data-page-name*="com.amagavi.ac.travel"]  .passenger-name .last-name,
+[data-page-name*="com.amagavi.ac.travel"]  .passenger-name .first-name {
+  display: inline-block;
+}
+[data-page-name*="com.amagavi.ac.travel"]  .passenger-name .last-name:after {
+  content: ",";
+}
+
 /* change passenger-info-row structure to generated fields */
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .label,
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .label {
