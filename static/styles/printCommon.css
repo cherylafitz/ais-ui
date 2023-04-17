@@ -1544,7 +1544,7 @@ section img.ProgramLogo600w {
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   justify-content: flex-start;
 }
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .generated-field {
@@ -1557,6 +1557,14 @@ section img.ProgramLogo600w {
 [data-page-name*="com.amagavi.ac.travel"]  .name  {
   text-transform: capitalize;
 }
+[data-page-name*="com.amagavi.ac.travel"]  .passenger-name .last-name,
+[data-page-name*="com.amagavi.ac.travel"]  .passenger-name .first-name {
+  display: inline-block;
+}
+[data-page-name*="com.amagavi.ac.travel"]  .passenger-name .last-name:after {
+  content: ",";
+}
+
 /* change passenger-info-row structure to generated fields */
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .label,
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .label {
@@ -1602,11 +1610,13 @@ p.alert-box {
 /* bus ticket display --> */
 .BusTicketDisplay {
   font-size: 14px;
+/*  position: relative;
+  padding-bottom: 5em;*/
 }
 .BusTicketDisplay .header {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 2rem;
+  margin-bottom: .75em;
 }
 .BusTicketDisplay .header img.logo {
     max-height: 50px;
@@ -1625,9 +1635,10 @@ p.alert-box {
 .BusTicketDisplay .message {
   font-size: 1.125em;
 }
-.BusTicketDisplay .greeting,
-.BusTicketDisplay .message {
-  text-align: center;
+.BusTicketDisplay .message-wrapper {
+  margin-right: 1em;
+  padding-bottom: .25em;
+  display: inline-block;
 }
 .BusTicketDisplay .greeting::after {
   content: ",";
@@ -1653,21 +1664,21 @@ p.alert-box {
   break-inside: auto;
 }
 .BusTicketDisplay .bus-label-number-wrapper {
-  flex-basis: 100%;
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 1em;
+  font-size: 2em;
+  margin-bottom: .25em;
+  padding-top: 0.25em;
   font-weight: bold;
+  display: inline-block;
 }
 .BusTicketDisplay .bus-display-name {
   border: 3px double #000;
   display: inline-block;
-  margin: 0 auto .25em;
-  padding: 0.25em 0.5em;
+  padding: 0.125em 0.5em;
   border-radius: 8px;
 }
-.BusTicketDisplay .bus-info .bus-label, 
-.BusTicketDisplay .bus-info .bus-number {
+.BusTicketDisplay .bus-label-number-wrapper .bus-label, 
+.BusTicketDisplay .bus-label-number-wrapper .bus-number,
+.BusTicketDisplay .message .departure-time-period {
   display: none;
 }
 .BusTicketDisplay .bus-info .bus-number {
@@ -1678,7 +1689,7 @@ p.alert-box {
 }
 .BusTicketDisplay [class*="-time"] .label::after {
   content: "";
-  height: 1.5em;
+  height: 1.25em;
   width: 1px;
   background-color: #000;
   display: block;
@@ -1687,9 +1698,9 @@ p.alert-box {
 .BusTicketDisplay [class*="-time"] .value {
   border: 1px solid #999;
   text-align: center;
-  padding: .75em;
+  padding: .5em;
   font-weight: bold;
-  margin: .5em auto;
+  margin: .25em auto;
   font-size: 1.5em;
 }
 .BusTicketDisplay .downstairs-time .label {
@@ -1699,14 +1710,14 @@ p.alert-box {
   font-size: 2em;
 }
 .BusTicketDisplay .e-ticket {
-  margin: 3em auto;
+  margin: 1em auto 2em;
   text-align: center;
 }
 .BusTicketDisplay .footer {
-  position: absolute;
+/*  position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0;*/
 }
 /* <-- bus ticket display */
 
