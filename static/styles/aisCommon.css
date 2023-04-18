@@ -5408,6 +5408,342 @@ div#alumnusSummary table.ProgramParticipation tr.LastHostFamily div.HostParents,
 
 /*<-- ALUMNI resets */
 
+/*ALUMNI only-->*/
+.AlumniHome,
+.ArticleSearch,
+.ArticleViewer,
+/*.ArticleEditor,*/
+.AlumnusNameList,
+.ArticleRowDisplay,
+.AlumnusAddressList,
+.AlumnusRowDisplay,
+.AlumnusSummary,
+.AlumnusSearch,
+.AlumnusPhoneList,
+.AlumnusEducationRowDisplay,
+.AlumnusNoteDisplay,
+.AlumnusEmploymentList,
+.AlumnusOtherProgramsList,
+.AlumnusContactList,
+.AlumnusEmailRowDisplay,
+.Main,
+.AlumnusEmailSearch,
+.AlumnusEmailList,
+.AlumnusSocialMediaList,
+/*.SystemAnnouncementsWrapper + div,*/
+.main-content[class*="Alumnus"],
+.main-content.ArticleStatistics,
+[data-subsystem="alumni"] .main-content {
+  position: relative;
+  min-height: calc(100% - 174px);
+  display: flex;
+  flex-shrink: 0;
+}
+/* fixes issue with ac admin home page layout when users have restricted view */
+td.content .Main {
+  display: block;
+}
+/* fixes bug temporarily until Marco updates structure */
+.main-content.AlumnusExceptionalCategoryUnifiedEditor {
+  display: initial;
+}
+#navMenu .list-page-and-or-previous-page-link-wrapper {
+  text-align: right;
+  padding: .5rem .75rem 0;
+  background: #2c3942;
+}
+#navMenu .previous-page-link {
+  color: #c5dcee;
+  font-size: .875rem;
+}
+/* PAGE: AlumnusOtherProgramsAdmin */
+.other-program-display-name {
+  width: 18rem;
+}
+/* PAGE: ALUMNI EDITOR PAGES TEMP 4-5-20 */
+/*#article-editor-page-id,*/
+#AlumnusSocialMediaEditor,
+.AlumnusNoteEditor #articleSummary,
+.main-content.AlumnusExceptionalEditor {
+  padding: 1rem 1rem 1rem 2rem;
+}
+/* PAGE: ALUMNI ARTICLE EDITOR TEMP 4-5-20 */
+.SystemAnnouncementsWrapper + div.ArticleViewer,
+.SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
+  position: relative;
+}
+#alumnusSearch table table {
+  width: initial;
+}
+div#alumniSearchResults span.reportLabel {
+  font-style: normal;
+}
+div#alumniSearchResults h2.ReportName {
+  border-top: none;
+  margin-top: .5rem;
+}
+table.rolodex .alumnusSection + tr th,
+table.rolodex .alumnusSection + tr td {
+  padding-top: .5rem;
+}
+.SystemAnnouncementsWrapper + div.AlumnusSearch,
+.SystemAnnouncementsWrapper + div.AlumnusSummary,
+.SystemAnnouncementsWrapper + div.AlumnusRowDisplay,
+.SystemAnnouncementsWrapper + div.ArticleViewer,
+.SystemAnnouncementsWrapper + div.ArticleSearch,
+.SystemAnnouncementsWrapper + div.AlumnusEmailSearch {
+  height: initial;
+}
+/* alumnus summary --> */
+.AddressHistory .English,
+.AddressHistory .Label {
+  background-color: #fff;
+}
+.AddressHistory .subTable {
+  background-color: #dbe8f2;
+}
+div#alumnusSummary a.PriorPage {
+  font-size: 0.75rem;
+  font-style: normal;
+  padding: 0.5rem 0;
+  display: block;
+}
+div#alumnusSummary h1 {
+  padding: initial;
+  margin: initial;
+  font-weight: normal;
+}
+div#alumnusSummary table.NoteList tr th.note, 
+div#alumnusSummary table.NoteList tr td.note {
+    width: 40em;
+    max-width: 40em;
+    white-space: normal;
+}
+/* <-- alumnus summary */
+#nav, #nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#navMenu {
+  float: none;
+  bottom: 0;
+  top: 0;
+  width: initial;
+  max-width: 14rem;
+  min-height: 100%;
+  background: #33424d;
+  -webkit-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  -moz-box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .7);
+  margin: 0;
+  flex-shrink: 0;
+}
+#nav li a {
+  display: block;
+  padding: .25rem .25rem;
+  text-decoration: none;
+  color: #c4dcee;
+  font-size: .875rem;
+  margin: 0 .75rem;
+  /* to reset --> */
+  background: transparent;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  /* end reset */
+}
+
+#nav li a:hover {
+  color: #c8d295;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+#nav {
+  background: transparent;
+}
+/* to reset --> */
+#nav:after,
+#nav:before {
+  content:none;
+}
+/* end reset */
+
+#nav li.selected {
+  /* to reset --> */
+  display: block;
+  font-size: .875rem;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  color: #c8d295;
+  /* end reset */
+  font-weight: bold;
+  background-color: transparent;
+  padding: .25rem 1rem;
+}
+
+#nav li.title {
+  /* to reset --> */
+  font-size: 1rem;
+  display: block;
+  text-align: left;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  /* end reset */
+  margin-bottom: .25rem;
+  color: #c8d295;
+  padding: 1rem .75rem .5rem .75rem;
+  background: rgba(41, 53, 61, 0.7);
+}
+#navMenu + div {
+  padding: 1.25rem;
+  display: inline-block;
+  vertical-align: top;
+  flex-basis: 100%;
+}
+.ArticleSearch .ArticleSearch a {
+  color: #000;
+}
+.ArticleSearch h1,
+.AlumniHome h1 {
+  margin-top: 0;
+}
+.ArticleSearch tbody > tr > th,
+.ArticleSearch tbody > tr > th ~ td,
+.AlumnusSearch tbody > tr > th,
+.AlumnusSearch tbody > tr > th ~ td {
+    border-bottom: 1px solid #c2c2c2;
+    background-color: #e0e6eb;
+}
+.ArticleSearch table.rolodex tr td,
+.AlumnusSearch table.rolodex tr th ~ td {
+  background-color: #cbd2d6;
+  padding-left: .5rem;
+  border-right: .75rem solid #e0e6eb;
+}
+.AlumnusSearch th {
+  border-left: .75rem solid #e0e6eb;
+}
+.ArticleSearch table.rolodex tr:first-of-type td {
+  padding-top: .25rem;
+}
+.ArticleSearch table.rolodex tr:last-of-type td {
+  padding-bottom: .25rem;
+}
+.ArticleSearch form > table {
+  width: 100%;
+  border-collapse: collapse;
+  border: .75rem solid #e0e6eb;
+}
+tr.alumnusSection {
+  border-bottom: .75rem solid #e0e6eb;
+}
+table.rolodex tr.alumnusSection td {
+    font-weight: bold;
+    margin: .5rem 0;
+    border: none;
+    padding: .5rem 0 .25rem;
+    background-color: transparent;
+}
+div.ArticleSearch div.SearchPhrasesContainer {
+    max-height: initial;
+}
+#alumnusSearch table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.SearchButtonCell {
+  text-align: left;
+  padding-top: .5rem;
+}
+div#navMenu div.PriorPage {
+  padding: .25rem;
+}
+/*table.pageStructure tr.footerArea td.leftNav,
+.footer {
+  background-color: #29353d;
+  border: none;
+  bottom: 0;
+}*/
+footer {
+  background-color: #29353d;
+  border-top: 1px solid #3d4f5c;
+  display: flex;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+  color: #fff;
+  font-style: normal;
+  font-size: .875rem;
+}
+footer a,
+footer div.classNameDisplay {
+  color: #fff;
+}
+#PageWrapperNavUpdate > .footer,
+table.pageStructure tr.footerArea td.leftNav .byline {
+  background-color: #2c3942;
+  font-size: .625rem;
+  padding: .25rem .25rem .5rem;
+  font-style: normal;
+}
+.footerArea img,
+#PageWrapperNavUpdate > .footer img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff')";
+  -webkit-filter: drop-shadow(0 0 1px #fff);
+  filter: drop-shadow(0 0 1px #fff);
+}
+#PageWrapperNavUpdate > .footer {
+  width: 10rem;
+  text-align: center;
+}
+table.pageStructure tr.footerArea td.leftNav {
+  padding: 0;
+}
+table .footerArea .leftNav a {
+  line-height: 28px;
+  font-size: .875rem;
+}
+#PageWrapperNavUpdate > .footer a {
+  color: #c4dcee;
+}
+table.rolodex tr td.NameCellHeading {
+  padding: 0 .5rem;
+}
+/*overriding Marco's css --> */
+div.AlumnusSearch .SearchButtonCell {
+  text-align: left;
+  padding-top: .5rem;
+}
+/* <-- overriding Marco's css  */
+
+.AlumniHome fieldset.Downloads {
+  clear: both;
+}
+
+div.ArticleViewer div.AlumniList {
+  margin: .5rem 2rem;
+}
+.ArticleViewer .articleImage img {
+  max-width: 100%;
+}
+.articleImage {
+  margin: 0 0 .5rem 1rem;
+  float: right;
+  padding: .25rem;
+  background-color: #fff;
+}
+.articleImage .caption {
+  font-size: .875rem;
+  text-align: center;
+}
+
+/*<--ALUMNI only*/
+
 /* <-- alumni */
 
 /* BOXES --> */
