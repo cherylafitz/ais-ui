@@ -5801,6 +5801,12 @@ table.rolodex .TemplatePicker td {
 .row-display .extended-deadline {
   white-space: nowrap;
 }
+.row-display td.section-name,
+.row-display td.reference-name {
+  white-space: normal;
+  min-width: 10rem;
+  max-width: 24rem;
+}
 /* <-- WRAPPING CELLS */
 
 /* min widths --> */
