@@ -6311,6 +6311,53 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 
 /* <-- PAGE: AUDIT TRAIL ROW DISPLAY */
 
+/* page: badges --> */
+
+/*temp during development*/
+#ProgramBadges section.programs {
+  display: none;
+}
+#body--environment-staging #ProgramBadges section.programs {
+  display: block;
+}
+/* end temp */
+
+#ProgramBadges .program-cell-ais {
+  border-radius: 2px;
+}
+#ProgramBadges .program-cell-ais:hover {
+  cursor: pointer;
+}
+#ProgramBadges .show-program-link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: .25rem;
+  border-bottom: 1px solid;
+  width: 100%;
+}
+#ProgramBadges .program-cell-ais img {
+  margin-right: 0.5rem;
+  width: auto;
+  height: auto;
+  max-width: 7rem;
+  max-height: 4rem;
+}
+
+div#ProgramBadges section.programs div.section-details li.program-cell-ais {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    color: black;
+    padding: 0.75rem 0.5rem;
+}
+/* <-- page: badges */
+
 /* PAGE: CHANGE HISTORY --> */
 
 .StudentEditHistoryDisplay [data-action="update"] td.Action {
