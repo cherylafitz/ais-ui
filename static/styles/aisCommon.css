@@ -5592,6 +5592,10 @@ div.AirportEdit input.CommonTextField,
 input[class*="display-name"] {
   width: 50rem;
 }
+.EmailTemplateEditor .subject input[type="text"],
+.EmailTemplateEditor .help-note input[type="text"] {
+  width: 100% !important;
+}
 th .filter input {
   width: 100%;
   min-width: 4rem
