@@ -1565,6 +1565,12 @@ section img.ProgramLogo600w {
   content: ",";
 }
 
+[data-page-name*="com.amagavi.ac.travel"] .pii-notice-label {
+  font-weight: bold;
+}
+[data-page-name*="com.amagavi.ac.travel"] .pii-notice-label::after {
+  content: ":";
+}
 /* change passenger-info-row structure to generated fields */
 [data-page-name*="com.amagavi.ac.travel"] .travel-info-bar .label,
 [data-page-name*="com.amagavi.ac.travel"] .generated-field .label {
