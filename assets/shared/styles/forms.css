@@ -347,7 +347,7 @@ form[class$="-search"] .form-section-content {
 /* <-- control inside form-input */
 
 /* Email forms --> */
-
+/* ais */
 [class*="EmailTemplate"] .content .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
 [class*="EmailTemplate"] .content .form-input textarea, 
 [class*="EmailTemplate"] .content .form-input select, 
@@ -357,7 +357,18 @@ form[class$="-search"] .form-section-content {
 [class*="email-template"] .content .form-input textarea, 
 [class*="email-template"] .content .form-input select, 
 [class*="email-template"] .content .generated-field > .preview, 
-[class*="email-template"] .content .generated-field > .value {
+[class*="email-template"] .content .generated-field > .value,
+/* air */
+[class*="EmailTemplate"] .main-content .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+[class*="EmailTemplate"] .main-content .form-input textarea, 
+[class*="EmailTemplate"] .main-content .form-input select, 
+[class*="EmailTemplate"] .main-content .generated-field > .preview, 
+[class*="EmailTemplate"] .main-content .generated-field > .value,
+[class*="email-template"] .main-content .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]), 
+[class*="email-template"] .main-content .form-input textarea, 
+[class*="email-template"] .main-content .form-input select, 
+[class*="email-template"] .main-content .generated-field > .preview, 
+[class*="email-template"] .main-content .generated-field > .value  {
   width: 34rem;
   max-width: 100%;
 }
