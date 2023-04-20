@@ -5573,7 +5573,8 @@ fieldset.Section table.rolodex > tbody > tr > td details > summary {
   width: 25rem;
 }
 #official-name-id,
-[data-page-class-name="com.amagavi.ac.components.OrganizationEditor"] input#name-id {
+[data-page-class-name="com.amagavi.ac.components.OrganizationEditor"] input#name-id,
+.PIPYParticipantStatisticsEditor .OverrideLabel input[type="text"] {
   width: 30rem;
 }
 div.AirportEdit input.CommonTextField,
@@ -6355,6 +6356,16 @@ div#ProgramBadges section.programs div.section-details li.program-cell-ais {
     background-color: white;
     color: black;
     padding: 0.75rem 0.5rem;
+}
+div#ProgramBadges section.programs ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 /* <-- page: badges */
 
