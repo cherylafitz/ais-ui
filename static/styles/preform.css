@@ -1097,6 +1097,9 @@ input[type="file"] {
 	vertical-align: top;
 	font-size: 1rem;
 }
+li .form-input label {
+  padding: 0;
+}
 .form-input input:not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]),
 .form-input textarea,
 .form-input select,
@@ -1144,6 +1147,7 @@ input[type="file"] {
 }
 .form-input[class*="css"] textarea {
   max-width: initial; /* textareas containing CSS need to be full width */
+  margin-left: .5rem;
 }
 [class*="css"] textarea {
   width: 100%; /* textareas containing CSS need to be full width */
@@ -1200,7 +1204,8 @@ input[type=checkbox]:checked + label {
 .input-group-content {
 	margin: 0 0 .25rem 1.25rem;
 }
-.input-group-content .form-input label:first-child {
+.input-group-content .form-input label:first-child,
+.input-group-content .generated-field > .label:first-child {
 	width: 9rem;
 }
 /* from-to-date-picker --> */
@@ -1247,12 +1252,18 @@ form fieldset {
   width: fit-content;
   margin: 0 0 .75rem;
 }
-.form-input + fieldset {
-  margin: .75rem 0;
-}
 /* temp override for AIS because of so many unnecessary fieldsets */
 .content fieldset {
   width: initial;
+}
+.form-input + fieldset {
+  margin: .75rem 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+.form-input + fieldset .form-input {
+  margin-bottom: 0;
 }
 legend {
   font-weight: normal;
