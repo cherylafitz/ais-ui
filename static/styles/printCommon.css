@@ -1478,12 +1478,13 @@ section img.ProgramLogo600w {
 }
 .skylink-report .header img.logo,
 [data-page-name*="com.amagavi.ac.travel"] .header img.logo {
-  height: 50px;
+  height: 44px;
   margin-right: 1.5em;
 }
 .skylink-report .header h2,
 [data-page-name*="com.amagavi.ac.travel"] .header h2 {
   margin: 0;
+  line-height: 1.125em;
 }
 .skylink-report .summary,
 [data-page-name*="com.amagavi.ac.travel"] .summary {
@@ -1871,7 +1872,7 @@ p.alert-box {
   display: block;
 }
 .SkylinkSingleETicketDisplay h3 {
-  color: #004e7d;
+/*  color: #004e7d;*/
   margin-bottom: .25em;
   margin-top: .25em;
   font-size: 1.5em;
