@@ -5,7 +5,7 @@
 }
 #official-name-id,
 [data-page-class-name="com.amagavi.ac.components.OrganizationEditor"] input#name-id,
-.PIPYParticipantStatisticsEditor .OverrideLabel input[type="text"] {
+.PIPYParticipantStatisticsEditor .label-override input[type="text"] {
   width: 30rem;
 }
 div.AirportEdit input.CommonTextField,
