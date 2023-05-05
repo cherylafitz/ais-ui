@@ -1,0 +1,44 @@
+/* PRINT TRAVEL REPORT */
+
+@page {
+  size: US-Letter;
+  margin: .5in;
+}
+
+@page {
+  @top-left { 
+/*    content: flow(header);*/
+    content: "test";
+    padding-top: 0.5em;
+  }
+}
+@page {
+  @top-right { 
+    content: flow(header2);
+    padding-top: 0.5em;
+  }
+}
+@page {
+  @bottom-left {
+    content: "Generated";
+  }
+}
+@page {
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+    font-size: 10px;
+    font-family: Arial;
+    color: #474747;
+  }
+}
+.header {
+  flow: static(header);
+}
+.departure.generated-field {
+  flow: static(header2);
+}
+
+#printfooter-id,
+#printheader-id {
+  display: none;
+}
