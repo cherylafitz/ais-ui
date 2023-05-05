@@ -22,6 +22,10 @@
 .SkylinkSingleETicketDisplay .eticket h3 {
   margin-right: .5em;
 }
+.SkylinkSingleETicketDisplay .passenger-info h3,
+.SkylinkSingleETicketDisplay .flight-info h3 {
+  align-self: flex-end;
+}
 .SkylinkSingleETicketDisplay section {
   margin-bottom: .5em;
 }
@@ -57,9 +61,8 @@
   display: block;
 }
 .SkylinkSingleETicketDisplay h3 {
-/*  color: #004e7d;*/
-  margin-bottom: .25em;
-  margin-top: .25em;
-  font-size: 1.5em;
+  margin-bottom: 0;
+  margin-top: 0.25em;
+  font-size: 1.25em;
 }
 /* <-- SKYLINK REPORT ETICKET */

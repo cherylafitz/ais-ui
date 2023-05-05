@@ -37,3 +37,8 @@
 .departure.generated-field {
   flow: static(header2);
 }
+
+#printfooter-id,
+#printheader-id {
+  display: none;
+}
