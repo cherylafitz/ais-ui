@@ -99,6 +99,7 @@ body div#PageWrapperNavUpdate div.SystemAnnouncementsWrapper div.SystemAnnouncem
 .SystemAnnouncement details {
   border-left: 0.5rem solid #de463d;
   margin: 0;
+  width: 100%;
 }
 .SystemAnnouncement details > summary {
   background-color: #fff;

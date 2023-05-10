@@ -6812,7 +6812,9 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
 }
 
 /* PAGE: Login --> */
-
+[data-page-name="login"] {
+  background: #33424d;
+}
 form[name="loginForm"] {
   margin-top: .75rem;
 }
@@ -6838,9 +6840,12 @@ form[name="loginForm"] {
 
 #LoginPage {
   background: #33424d;
-  height: 100%;
+  height: 67%;
   position: relative;
-  padding: .25rem;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #LoginPage #banner {
   color: white;
