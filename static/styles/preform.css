@@ -262,6 +262,23 @@ div.deadlineBox span.timeZone,
 
 /* <-- notice boxes */  
 
+/* cards and tiles --> */
+
+.card {
+  background-color: #e0e6eb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+/* CONTAINERS --> */
+.tile {
+  background: #cbd2d6;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+/* <-- cards and tiles */
+
 /* <code> STYLES--> */
 
 .code-wrapper {
@@ -311,9 +328,66 @@ div.deadlineBox span.timeZone,
 /* light blue-gray: #e0e6ea
       example: inbox section content, AIS
 
-
-
  */
+
+/* bg color classes -> */
+
+/* darkest blue = 1 */
+.bg-blue01 {
+  background-color: #29353d !important;
+  color: #fff !important;
+}
+.transparent {
+  background-color: transparent;
+}
+.bg-blue02 {
+  background-color: #33424d !important;
+  color: #fff !important;
+}
+.bg-blue01 h4,
+.bg-blue02 h4 {
+  color: #fff;
+}
+.bg-blue01 a,
+.bg-blue02 a,
+.bg-blue03 a {
+  color: #c4dcee;
+}
+.bg-blue01 h1,
+.bg-blue01 h2,
+.bg-blue01 h3,
+.bg-blue01 h4,
+.bg-blue01 h5,
+.bg-blue01 h6,
+.bg-blue02 h1,
+.bg-blue02 h2,
+.bg-blue02 h3,
+.bg-blue02 h4,
+.bg-blue02 h5,
+.bg-blue02 h6,
+.bg-blue03 h1,
+.bg-blue03 h2,
+.bg-blue03 h3,
+.bg-blue03 h4,
+.bg-blue03 h5,
+.bg-blue03 h6 {
+  color: #fff;
+  font-weight: normal;
+}
+.bg-blue01 button.bare {
+  color: #fff;
+}
+/* <- bg color classes */
+/* typography classes -> */
+
+/* light green (for dark bg) */
+.text-highlight01 {
+  color: #c8d295;
+}
+.text-highlight02 {
+
+}
+/* <- text-size classes */
 
 /* <-- colors */
 
@@ -566,6 +640,8 @@ details {
   width: fit-content;
   width: -moz-fit-content; 
   width: -webkit-fit-content;
+  color: #000;
+  font-size: 1rem;
 }
 details > summary {
   display: inline-block;
@@ -1480,6 +1556,69 @@ h4{
 }
 
 /* <-- iframes */
+
+/* info-page --> */
+
+.info-page .content {
+  max-width: 800px;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+.info-page .card {
+  font-size: .875rem;
+}
+.info-section {
+  max-width: 700px;
+}
+.info-page footer {
+  padding: 1rem;
+}
+/* for dark bg */
+.inner-grid {
+  background-color: transparent;
+  border-collapse: collapse;
+  font-size: .875rem;
+  margin: .75rem 0;
+  border: .75rem solid transparent;
+}
+.inner-grid th,
+.inner-grid td {
+  text-align: left;
+  padding: .5rem;
+  vertical-align: top;
+  border: 1px solid #59666f;
+}
+.inner-grid th {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+.inner-grid tr > td:first-child,
+.inner-grid tr th:first-child {
+  border-left: none;
+}
+.inner-grid tr > td:last-child,
+.inner-grid tr th:last-child {
+  border-right: none;
+}
+.inner-grid tr:last-child td {
+  border-bottom: none;
+}
+.inner-grid tr:first-of-type th,
+.inner-grid.vertical-header tr:first-of-type td {
+  border-top: none;
+}
+.inner-grid.vertical-header th {
+  border-bottom: none;
+  border-right: 1px solid;
+}
+.inner-grid.bg-blue01 {
+  border-color: #29353d;
+}
+.inner-grid.bg-blue02 {
+  border-color: #33424d;
+}
+
+/* <-- info-page */
 
 /* LISTS --> */
 .long-list {
