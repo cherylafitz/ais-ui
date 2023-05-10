@@ -6442,8 +6442,8 @@ div#ProgramBadges section.programs ul {
 
 /* program specific --> */
 #ProgramBadges [data-program-name="YES"] .badgeImage {
-  max-height: 110% !important;
-  max-width: 110% !important;
+  max-height: 114% !important;
+  max-width: 114% !important;
 }
 #ProgramBadges [data-program-name="FLEX"] .badgeImage {
   max-width: 82% !important;
