@@ -335,13 +335,19 @@ div.deadlineBox span.timeZone,
 /* darkest blue = 1 */
 .bg-blue01 {
   background-color: #29353d !important;
-  color: #fff !important;
 }
 .transparent {
   background-color: transparent;
 }
 .bg-blue02 {
   background-color: #33424d !important;
+}
+.bg-blue03 {
+  background-color: #3d4f5c !important;
+}
+.bg-blue01,
+.bg-blue02,
+.bg-blue03 {
   color: #fff !important;
 }
 .bg-blue01 h4,
