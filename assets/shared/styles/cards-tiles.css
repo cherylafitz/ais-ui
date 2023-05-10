@@ -1,0 +1,16 @@
+/* cards and tiles --> */
+
+.card {
+  background-color: #e0e6eb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+/* CONTAINERS --> */
+.tile {
+  background: #cbd2d6;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+/* <-- cards and tiles */
