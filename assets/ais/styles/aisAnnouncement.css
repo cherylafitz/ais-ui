@@ -4,7 +4,13 @@
 div.SystemAnnouncementsWrapper {
   width: 100%;
 }
-
+[data-system="ais"][data-page-name="login"] .SystemAnnouncement,
+[data-system="ais"][data-page-name="program-badges"] .SystemAnnouncement {
+  margin: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 div.SystemAnnouncementsWrapper div.SystemAnnouncement,
 .announcement-wrapper div.SystemAnnouncement {
   background-color: #FFF;

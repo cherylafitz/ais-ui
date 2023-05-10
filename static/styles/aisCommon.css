@@ -6812,7 +6812,10 @@ div.HomePageForAll div#FlexBoxedItems fieldset {
 }
 
 /* PAGE: Login --> */
-[data-page-name="login"] {
+body[data-system="ais"][data-page-name="login"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #33424d;
 }
 form[name="loginForm"] {
@@ -6839,32 +6842,26 @@ form[name="loginForm"] {
 /* ported (older) styles --> */
 
 #LoginPage {
-  background: #33424d;
-  height: 67%;
-  position: relative;
-  padding: 0.25rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  height: 67%;
+  padding: 0.25rem;
 }
 #LoginPage #banner {
   color: white;
   padding: .5rem;
 }
 #LoginPage #LoginBox {
-  display: block;
+  position: static;
+  margin-top: auto;
   max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
   -moz-box-shadow: 10px 10px 12px 0px rgba(170,170,170,1);
   background-color: #33424d;
   border-radius: 2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
-  margin-top: 2rem;
 }
 #LoginPage #boxBanner {
   background: #29353d;
@@ -6979,9 +6976,6 @@ form[name="loginForm"] {
 
 /* 28.75em = medium displays and bigger (like mobile phones in landscape or smaller tablets)*/
 @media screen and (min-width: 32.5em) { /* 28.75em */
-  #LoginPage #LoginBox {
-    margin-top: 0;
-  }
   #LoginPage #content,
   #LoginPage #content input {
     font-size: 1em;
