@@ -1,0 +1,35 @@
+/* policies --> */
+
+#Policies #about-your-data-id,
+#Policies #accessibility-id{
+  display: none;
+}
+#Policies {
+  margin-top: .5rem;
+}
+#Policies a {
+  font-size: .875rem;
+}
+@media screen and (min-width: 32.5em) { 
+  #PrivacyPolicy,
+  #CookieDeclaration,
+  #DataUsageGuidance {
+    display: inline-block;
+  }
+  #PrivacyPolicy {
+    margin: .5rem .5rem 0 1px;
+  }
+  #CookieDeclaration {
+    margin: .5rem .5rem 0 0;
+  }
+  #DataUsageGuidance {
+    margin: .5rem 0 0;
+  }
+  #Policies a {
+    color: #34424c;
+  }
+  #Policies {
+    text-align: center;
+  }
+}
+/* <-- policies */

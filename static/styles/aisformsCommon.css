@@ -5595,6 +5595,14 @@ table.row-display td.change {
 
 /* <-- PAGES: PROCTORED EXAM */
 
+/* policies --> */
+
+#Policies #accessibility-id {
+  display: none;
+}
+
+/* <-- policies */
+
 /* SHARED FORMS --> */
 div.Main .JoinSharedForm,
 div.Main .SharedWithExplanation,
