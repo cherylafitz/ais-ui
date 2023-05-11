@@ -60,8 +60,8 @@ div.ParentRecommender1LastName {
   float: left;
   clear: none;
 }
-div.RecommenderFirstName,
-div.RecommenderLastName {
+.section-display div.RecommenderFirstName,
+.section-display div.RecommenderLastName {
   float: none;
 }
 body {
