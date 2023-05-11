@@ -7026,14 +7026,6 @@ form[name="loginForm"] {
 #LinkToResetPassword {
   font-size: .875rem;
 }
-#Policies {
-  margin-top: .5rem;
-}
-#PrivacyPolicy,
-#CookieDeclaration,
-#DataUsageGuidance {
-  font-size: .875rem;
-}
 
 /* 28.75em = medium displays and bigger (like mobile phones in landscape or smaller tablets)*/
 @media screen and (min-width: 32.5em) { /* 28.75em */
@@ -7077,28 +7069,6 @@ form[name="loginForm"] {
   }
   #PasswordResetRequestEmailSection label {
     font-size: .875rem;
-  }
-  #PrivacyPolicy,
-  #CookieDeclaration,
-  #DataUsageGuidance {
-    display: inline-block;
-  }
-  #PrivacyPolicy {
-    margin: .5rem .5rem 0 1px;
-  }
-  #CookieDeclaration {
-    margin: .5rem .5rem 0 0;
-  }
-  #DataUsageGuidance {
-    margin: .5rem 0 0;
-  }
-  #PrivacyPolicy a,
-  #CookieDeclaration a,
-  #DataUsageGuidance a {
-    color: #34424c;
-  }
-  #Policies {
-    text-align: center;
   }
 }
 
