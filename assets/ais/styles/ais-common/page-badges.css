@@ -6,22 +6,32 @@
 }
 #body--environment-staging #ProgramBadges section.programs {
   display: block;
+  padding: 1rem;
+  background-color: #e0e6eb;
+  color: black;
+}
+#body--environment-staging #ProgramBadges section.programs h2 {
+  color: #000;
+  text-align: center;
+  margin: 1rem 0 1.5rem;
 }
 /* end temp */
 
-#ProgramBadges .program-cell-ais {
-  border-radius: 2px;
-}
-#ProgramBadges .program-cell-ais:hover {
-  cursor: pointer;
-}
 #ProgramBadges .show-program-link {
-  font-size: 1.25rem;
   text-decoration: none;
   text-align: center;
-  padding-bottom: .25rem;
-  border-bottom: 1px solid;
+  padding-bottom: 0.25rem;
+  /* border-bottom: 1px solid #b3c3cd; */
   width: 100%;
+  padding: 0.5rem 0.25rem;
+  background: #f1f5f7;
+  height: 3.5rem;
+  font-size: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  color: #29353d;
+  border-radius: 4px;
 }
 #ProgramBadges .program-cell-ais img {
   margin-right: 0.5rem;
@@ -42,6 +52,16 @@ div#ProgramBadges section.programs div.section-details li.program-cell-ais {
     background-color: white;
     color: black;
     padding: 0.75rem 0.5rem;
+    border: 1px solid #cecece;
+    box-shadow: 0 2px 5px rgba(0,0,0,.14);
+    padding: 0;
+}
+div#ProgramBadges section.programs div.section-details li.program-cell-ais:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+div#ProgramBadges section.programs div.section-details li.program-cell-ais:hover .show-program-link {
+  font-weight: bold;
 }
 div#ProgramBadges section.programs ul {
     display: flex;
