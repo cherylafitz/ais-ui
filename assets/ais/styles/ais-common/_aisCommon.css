@@ -2652,16 +2652,6 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
 }
 
 /* <- BANNERS */
-.info-page .content {
-  max-width: 800px;
-  padding: 1.5rem;
-}
-.info-page .card {
-  font-size: .875rem;
-}
-.info-section {
-  max-width: 700px;
-}
 
 .list-multi {
   column-count: 2;
@@ -2683,88 +2673,6 @@ body > #priorPage a {
   color: #c4dcee;
 }
 
-.info-page footer {
-  padding: 1rem;
-}
-
-
-
-/* tables -> */
-/* for dark bg */
-.inner-grid {
-  background-color: transparent;
-  border-collapse: collapse;
-  font-size: .875rem;
-  margin: .75rem 0;
-  border: .75rem solid transparent;
-}
-.inner-grid th,
-.inner-grid td {
-  text-align: left;
-  padding: .5rem;
-  vertical-align: top;
-  border: 1px solid #59666f;
-}
-.inner-grid th {
-  text-transform: uppercase;
-  border-bottom: 1px solid;
-}
-.inner-grid tr > td:first-child,
-.inner-grid tr th:first-child {
-  border-left: none;
-}
-.inner-grid tr > td:last-child,
-.inner-grid tr th:last-child {
-  border-right: none;
-}
-.inner-grid tr:last-child td {
-  border-bottom: none;
-}
-.inner-grid tr:first-of-type th,
-.inner-grid.vertical-header tr:first-of-type td {
-  border-top: none;
-}
-.inner-grid.vertical-header th {
-  border-bottom: none;
-  border-right: 1px solid;
-}
-.inner-grid.bg-blue01 {
-  border-color: #29353d;
-}
-.inner-grid.bg-blue02 {
-  border-color: #33424d;
-}
-
-/* <- tables */
-
-/* bg color classes -> */
-
-/* darkest blue = 1 */
-.bg-blue01 {
-  background-color: #29353d;
-  color: #fff;
-}
-.transparent {
-  background-color: transparent;
-}
-.bg-blue02 {
-  background-color: #33424d;
-  color: #fff;
-}
-
-
-/* <- bg color classes */
-
-/* typography classes -> */
-
-/* light green (for dark bg) */
-.text-highlight01 {
-  color: #c8d295;
-}
-.text-highlight02 {
-
-}
-/* <- text-size classes */
 
 /* LISTS -> */
 
