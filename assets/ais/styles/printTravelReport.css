@@ -1,44 +1,56 @@
 /* PRINT TRAVEL REPORT */
-
 @page {
   size: US-Letter;
   margin: .5in;
-}
-
-@page {
   @top-left { 
-/*    content: flow(header);*/
-    content: "test";
-    padding-top: 0.5em;
+    content: flow(header);
+    padding-top: 1em;
+    padding-bottom: .25em;
   }
-}
-@page {
-  @top-right { 
-    content: flow(header2);
-    padding-top: 0.5em;
-  }
-}
-@page {
-  @bottom-left {
-    content: "Generated";
-  }
-}
-@page {
   @bottom-right {
     content: "Page " counter(page) " of " counter(pages);
     font-size: 10px;
     font-family: Arial;
     color: #474747;
   }
+  @bottom-left {
+    content: element(footer);
+  }
 }
-.header {
+@page:first {
+  @top-left {
+    content: none;
+  }
+}
+#printheader-id {
   flow: static(header);
 }
-.departure.generated-field {
-  flow: static(header2);
+#printfooter-id {
+/*  flow: static(footer);*/
+  position: running(footer);
 }
-
-#printfooter-id,
 #printheader-id {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#printheader-id .bus-name {
+  margin-right: .5rem;
+}
+#printheader-id .bus-name::after {
+  padding-left: .5rem;
+  content: "/";
+  color: #777;
+}
+#printheader-id .bus-name .label::after {
+  content: ":"
+}
+#printheader-id .logo-title {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+}
+#printheader-id .logo {
+  max-height: 25px;
+  margin-right: 1rem;
 }

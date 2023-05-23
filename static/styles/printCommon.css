@@ -1471,18 +1471,24 @@ section img.ProgramLogo600w {
 
 /* AIS travel base --> */
 .skylink-report .header,
-[data-page-name*="com.amagavi.ac.travel"] .header {
+[data-page-name*="com.amagavi.ac.travel"] .header,
+.skylink-report header,
+[data-page-name*="com.amagavi.ac.travel"] header {
   display: flex;
   align-items: flex-end;
   margin-bottom: 1rem;
 }
 .skylink-report .header img.logo,
-[data-page-name*="com.amagavi.ac.travel"] .header img.logo {
+[data-page-name*="com.amagavi.ac.travel"] .header img.logo,
+.skylink-report header img.logo,
+[data-page-name*="com.amagavi.ac.travel"] header img.logo  {
   height: 44px;
   margin-right: 1.5em;
 }
 .skylink-report .header h2,
-[data-page-name*="com.amagavi.ac.travel"] .header h2 {
+[data-page-name*="com.amagavi.ac.travel"] .header h2,
+.skylink-report header h2,
+[data-page-name*="com.amagavi.ac.travel"] header h2 {
   margin: 0;
   line-height: 1.125em;
 }
@@ -1889,7 +1895,7 @@ p.alert-box {
 }
 .skylink-report .summary {
   width: fit-content;
-  padding: .5em .5em 0;
+  padding: .5em;
   margin: 1em 0;
   border: 1px solid #999;
 }
