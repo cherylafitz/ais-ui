@@ -2259,6 +2259,7 @@ tr.has-pii td.pii {
 /*@import url("https://ais.americancouncils.org/ais/common/stylesheets/aisAnnouncement.css");*/
 /*
 COLOR PALETTE:
+announcement red: #c93028;
 dark red : #981727;
 bright red: #c81e32;
 required red: #e62e00;
@@ -6417,7 +6418,7 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
   flex-flow: column wrap;
   justify-content: flex-end;
   color: #29353d;
-  border-radius: 4px;
+  border-radius: 2px 2px 0 0;
 }
 #ProgramBadges .program-cell-ais img {
   margin-right: 0;
@@ -6443,13 +6444,15 @@ div#ProgramBadges section.programs div.section-details li.program-cell-ais {
     border: 1px solid #cecece;
     box-shadow: 0 2px 5px rgba(0,0,0,.14);
     padding: 0;
+    border-radius: 4px;
 }
 div#ProgramBadges section.programs div.section-details li.program-cell-ais:hover {
   cursor: pointer;
   box-shadow: none;
+/*  border-color: #999;*/
 }
 div#ProgramBadges section.programs div.section-details li.program-cell-ais:hover .show-program-link {
-  font-weight: bold;
+  background-color: #cedbe2;
 }
 div#ProgramBadges section.programs ul {
     display: flex;
