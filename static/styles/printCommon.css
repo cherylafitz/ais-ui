@@ -1858,10 +1858,14 @@ p.alert-box {
   font-size: 13px;
   margin-top: .25em;
 }
+.SkylinkSingleETicketDisplay .eticket h3 {
+  display: none;
+}
 .SkylinkSingleETicketDisplay .eticket .section-content {
   font-size: 11px;
-  padding-top: .5em;
-  padding-left: .5em;
+/*  padding-top: .5em;
+  padding-left: .5em;*/
+  margin: 0 auto;
 }
 .SkylinkSingleETicketDisplay .eticket pre {
   margin-top: 0;
