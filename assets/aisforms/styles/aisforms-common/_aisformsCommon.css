@@ -373,6 +373,9 @@ div.AIRAdminSearchForApplications div.instructions {
   min-height: 100%;
   flex-shrink: 0;
 }
+header.main {
+  min-height: initial;
+}
 .Main.Administrator,
 .Main[class*="Staff"],
 .Main.Developer {
