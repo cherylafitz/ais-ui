@@ -5,4 +5,8 @@
   max-width: 16rem;
   display: inline-block;
 }
+details.explanation {
+  max-width: 43rem;
+  display: block;
+}
 /* <-- TEXT */
