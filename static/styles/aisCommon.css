@@ -4846,28 +4846,7 @@ and (min-width : 768px)
 and (max-width : 896px) {
 
 }
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-width : 768px) {
-  #ProgramBadges #Banner .instanceID {
-    /* remove after banner html updated */
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
 
-}
-
-/* desktops and laptops */
-@media only screen
-and (min-width: 897px) {
-    /* Badges page --> */
-  #ProgramBadges #Badges li {
-    width: 140px;
-    height: 140px;
-  }
-  /* < <-- Badges page */
-}
 /* Desktops and laptops ----------- probably AC size */
 @media only screen
 and (min-width : 1151px) {
@@ -5321,6 +5300,7 @@ div.ArticleViewer div.AlumniList {
 /* BANNERS -> */
 
 #BannerAC_AIS,
+#ProgramBadges #Banner,
 #ProgramBadges #banner-id {
   position: relative;
   padding: .25rem;
@@ -6322,12 +6302,10 @@ div#ProgramBadges section.programs ul {
     padding: 0;
     justify-content: center;
 }
-
 #ProgramBadges li.missing-icon .show-program-link {
   height: 100%;
   justify-content: center;
 }
-
 /* program specific --> */
 #ProgramBadges [data-program-name="YES"] .badgeImage {
   max-height: 114% !important;
@@ -6337,7 +6315,31 @@ div#ProgramBadges section.programs ul {
   max-width: 82% !important;
   max-height: 80% !important;
 }
+#ProgramBadges #banner-id {
+  text-align: right;
+}
+#ProgramBadges #banner-id:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+#ProgramBadges #banner-id a
+{
+  color: #c4dcee;
+}
+#ProgramBadges #banner-id .logo
+{
+  background-color: #29353d;
+  float: left;
+  text-align: left;
+  padding: .25rem 1rem .25rem .25rem;
+}
 
+#ProgramBadges #banner-id .instanceID
+{
+  font-size: .75rem;
+  padding: 1rem 1rem .5rem;
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-width : 768px) {
@@ -6357,10 +6359,10 @@ and (min-width : 768px) {
   height: 100%;
   background: #33424d;
 }
-#ProgramBadges #banner-id {
+#ProgramBadges #Banner {
   text-align: right;
 }
-#ProgramBadges #banner-id:after {
+#ProgramBadges #Banner:after {
   content: '';
   display: table;
   clear:both;
@@ -6368,7 +6370,7 @@ and (min-width : 768px) {
 #ProgramBadges #Badges {
   background: #33424d;
 }
-#ProgramBadges #banner-id a
+#ProgramBadges #Banner a
 {
   color: #c4dcee;
 }
@@ -6380,7 +6382,7 @@ and (min-width : 768px) {
 #ProgramBadges #Badges {
   padding: 1rem;
 }
-#ProgramBadges #banner-id .logo
+#ProgramBadges #Banner .logo
 {
   background-color: #29353d;
   float: left;
@@ -6388,7 +6390,7 @@ and (min-width : 768px) {
   padding: .25rem 1rem .25rem .25rem;
 }
 
-#ProgramBadges #banner-id .instanceID
+#ProgramBadges #Banner .instanceID
 {
   font-size: .75rem;
   padding: 1rem 1rem .5rem;
@@ -6494,6 +6496,28 @@ and (min-width : 768px) {
 #ProgramBadges #Badges li.programCellAIS img
 {
   max-width: 100%;
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px) {
+  #ProgramBadges #Banner .instanceID {
+    /* remove after banner html updated */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+}
+
+/* desktops and laptops */
+@media only screen
+and (min-width: 897px) {
+    /* Badges page --> */
+  #ProgramBadges #Badges li {
+    width: 140px;
+    height: 140px;
+  }
+  /* < <-- Badges page */
 }
 
 /* <-- PAGE: BADGES */
