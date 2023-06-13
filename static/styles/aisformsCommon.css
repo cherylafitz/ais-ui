@@ -2202,7 +2202,8 @@ tr.has-pii td.pii {
   display: inline-block;
 }
 details.explanation {
-  max-width: 48rem;
+  max-width: 43rem;
+  display: block;
 }
 /* <-- TEXT */
 
