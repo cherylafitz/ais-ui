@@ -4409,154 +4409,7 @@ div.HubFullDisplay table tr th.AdjudicationEnabled input {
 
 /* <-- PAGE: COUNTRY */
 
-/* PAGE: BADGES --> */
 
-#ProgramBadges {
-  height: 100%;
-  background: #33424d;
-}
-#ProgramBadges #Banner {
-  text-align: right;
-}
-#ProgramBadges #Banner:after {
-  content: '';
-  display: table;
-  clear:both;
-}
-#ProgramBadges #Badges {
-  background: #33424d;
-}
-#ProgramBadges #Banner a
-{
-  color: #c4dcee;
-}
-#ProgramBadges .choose
-{
-  padding: .875rem 1rem 0 1rem;
-  margin-bottom: 1rem;
-}
-#ProgramBadges #Badges {
-  padding: 1rem;
-}
-#ProgramBadges #Banner .logo
-{
-  background-color: #29353d;
-  float: left;
-  text-align: left;
-  padding: .25rem 1rem .25rem .25rem;
-}
-
-#ProgramBadges #Banner .instanceID
-{
-  font-size: .75rem;
-  padding: 1rem 1rem .5rem;
-}
-
-#ProgramBadges #Badges fieldset.CurrentProgramBadges,
-#ProgramBadges #Badges fieldset.NonCurrentProgramBadges
-{
-  border: 1px solid #33424d;
-  background-color: #33424d;/*alt blue*/
-  border-radius: 2px;
-  margin: 0 0 .75rem;
-  padding-bottom: .75rem;
-  padding: 0 0 .75rem;
-  margin: 1rem 0 1rem;
-  border-radius: 2px;
-  background-color: #33424d;
-  border-top: 2px solid #94a8b887;
-  padding-top: 1rem;
-}
-
-#ProgramBadges #Badges fieldset.CurrentProgramBadges legend,
-#ProgramBadges #Badges fieldset.NonCurrentProgramBadges legend
-{
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: #fff;
-  padding-bottom: .5rem;
-  padding: 4px 1rem;
-  color: #fff;
-  font-weight: normal;
-  position: relative;
-  font-size: 1.25rem;
-  line-height: 1.125;
-  text-align: center;
-  border-radius: 2px;
-}
-#ProgramBadges #Badges ul
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-#ProgramBadges #Badges li
-{
-  color: #000;
-  background-color: #fff;
-}
-#ProgramBadges #Badges ul#programBadgesCurrent li:hover,
-#ProgramBadges #Badges ul#programBadgesNonCurrent li:hover
-{
-  cursor: pointer;
-  transform: scale(1);
-}
-#ProgramBadges #Badges ul#programBadgesCurrent img,
-#ProgramBadges #Badges ul#programBadgesCurrent a img,
-#ProgramBadges #Badges ul#programBadgesNonCurrent img,
-#ProgramBadges #Badges ul#programBadgesNonCurrent a img
-{
-  border: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 70%;
-  height: auto;
-  max-height: 70%;
-}
-#ProgramBadges .BadgeIconDescription {
-  border: 0;
-  line-height: initial;
-}
-
-#ProgramBadges #Badges ul#gallery:after
-{
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-  clear: both;
-  visibility:hidden;
-}
-
-#ProgramBadges #Badges li
-{
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  border-radius: 50%;
-  margin: .5rem;
-  padding: .5rem;
-  line-height: 120px;
-  transition: transform .25s;
-  transform: scale(.95);
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-}
-
-#ProgramBadges #Badges li.programCellAIS img
-{
-  max-width: 100%;
-}
-
-
-
-/* <-- PAGE: BADGES */
 
 /* PAGE: USER DISPLAY --> */
 .UserFullDisplay legend a {
@@ -4879,30 +4732,6 @@ div.AIRAppSummaryDisplayInAIS fieldset.Section div.ShowHideSection {
   background-color: transparent;
   box-shadow: none;
 }
-/* BANNERS -> */
-
-#BannerAC_AIS,
-#ProgramBadges #Banner {
-  position: relative;
-  padding: .25rem;
-  background-color: #29353d;
-  color: #fff;
-}
-#BannerAC_AIS img,
-#ProgramBadges img {
-  margin-right: .5rem;
-  height: 54px;
-}
-
-#BannerAC_AIS .title,
-#ProgramBadges .title {
-  display: inline-block;
-  font-size: 1.25rem;
-  line-height: 40px;
-  vertical-align: top;
-}
-
-/* <- BANNERS */
 
 .list-multi {
   column-count: 2;
@@ -5488,6 +5317,31 @@ div.ArticleViewer div.AlumniList {
 /*<--ALUMNI only*/
 
 /* <-- alumni */
+
+/* BANNERS -> */
+
+#BannerAC_AIS,
+#ProgramBadges #banner-id {
+  position: relative;
+  padding: .25rem;
+  background-color: #29353d;
+  color: #fff;
+}
+#BannerAC_AIS img,
+#ProgramBadges img {
+  margin-right: .5rem;
+  height: 54px;
+}
+
+#BannerAC_AIS .title,
+#ProgramBadges .title {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 40px;
+  vertical-align: top;
+}
+
+/* <- BANNERS */
 
 /* BOXES --> */
 
@@ -6469,6 +6323,11 @@ div#ProgramBadges section.programs ul {
     justify-content: center;
 }
 
+#ProgramBadges li.missing-icon .show-program-link {
+  height: 100%;
+  justify-content: center;
+}
+
 /* program specific --> */
 #ProgramBadges [data-program-name="YES"] .badgeImage {
   max-height: 114% !important;
@@ -6478,6 +6337,167 @@ div#ProgramBadges section.programs ul {
   max-width: 82% !important;
   max-height: 80% !important;
 }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px) {
+  #ProgramBadges #banner-id .instanceID {
+    /* remove after banner html updated */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+}
+
+/* OLD -->  */
+/* PAGE: BADGES --> */
+
+#ProgramBadges {
+  height: 100%;
+  background: #33424d;
+}
+#ProgramBadges #banner-id {
+  text-align: right;
+}
+#ProgramBadges #banner-id:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+#ProgramBadges #Badges {
+  background: #33424d;
+}
+#ProgramBadges #banner-id a
+{
+  color: #c4dcee;
+}
+#ProgramBadges .choose
+{
+  padding: .875rem 1rem 0 1rem;
+  margin-bottom: 1rem;
+}
+#ProgramBadges #Badges {
+  padding: 1rem;
+}
+#ProgramBadges #banner-id .logo
+{
+  background-color: #29353d;
+  float: left;
+  text-align: left;
+  padding: .25rem 1rem .25rem .25rem;
+}
+
+#ProgramBadges #banner-id .instanceID
+{
+  font-size: .75rem;
+  padding: 1rem 1rem .5rem;
+}
+
+#ProgramBadges #Badges fieldset.CurrentProgramBadges,
+#ProgramBadges #Badges fieldset.NonCurrentProgramBadges
+{
+  border: 1px solid #33424d;
+  background-color: #33424d;/*alt blue*/
+  border-radius: 2px;
+  margin: 0 0 .75rem;
+  padding-bottom: .75rem;
+  padding: 0 0 .75rem;
+  margin: 1rem 0 1rem;
+  border-radius: 2px;
+  background-color: #33424d;
+  border-top: 2px solid #94a8b887;
+  padding-top: 1rem;
+}
+
+#ProgramBadges #Badges fieldset.CurrentProgramBadges legend,
+#ProgramBadges #Badges fieldset.NonCurrentProgramBadges legend
+{
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: .5rem;
+  padding: 4px 1rem;
+  color: #fff;
+  font-weight: normal;
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1.125;
+  text-align: center;
+  border-radius: 2px;
+}
+#ProgramBadges #Badges ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#ProgramBadges #Badges li
+{
+  color: #000;
+  background-color: #fff;
+}
+#ProgramBadges #Badges ul#programBadgesCurrent li:hover,
+#ProgramBadges #Badges ul#programBadgesNonCurrent li:hover
+{
+  cursor: pointer;
+  transform: scale(1);
+}
+#ProgramBadges #Badges ul#programBadgesCurrent img,
+#ProgramBadges #Badges ul#programBadgesCurrent a img,
+#ProgramBadges #Badges ul#programBadgesNonCurrent img,
+#ProgramBadges #Badges ul#programBadgesNonCurrent a img
+{
+  border: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  height: auto;
+  max-height: 70%;
+}
+#ProgramBadges .BadgeIconDescription {
+  border: 0;
+  line-height: initial;
+}
+
+#ProgramBadges #Badges ul#gallery:after
+{
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility:hidden;
+}
+
+#ProgramBadges #Badges li
+{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  margin: .5rem;
+  padding: .5rem;
+  line-height: 120px;
+  transition: transform .25s;
+  transform: scale(.95);
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+#ProgramBadges #Badges li.programCellAIS img
+{
+  max-width: 100%;
+}
+
+/* <-- PAGE: BADGES */
+/* <-- OLD  */
 /* <-- page: badges */
 
 /* PAGE: CHANGE HISTORY --> */
