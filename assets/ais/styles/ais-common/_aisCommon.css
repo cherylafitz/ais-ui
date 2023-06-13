@@ -2596,28 +2596,7 @@ and (min-width : 768px)
 and (max-width : 896px) {
 
 }
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-width : 768px) {
-  #ProgramBadges #Banner .instanceID {
-    /* remove after banner html updated */
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
 
-}
-
-/* desktops and laptops */
-@media only screen
-and (min-width: 897px) {
-    /* Badges page --> */
-  #ProgramBadges #Badges li {
-    width: 140px;
-    height: 140px;
-  }
-  /* < <-- Badges page */
-}
 /* Desktops and laptops ----------- probably AC size */
 @media only screen
 and (min-width : 1151px) {
