@@ -16,7 +16,9 @@
   margin: 1rem 0 1.5rem;
 }
 /* end temp */
-
+#Personas label {
+  color: #fff;
+}
 #ProgramBadges .show-program-link {
   text-decoration: none;
   text-align: center;
