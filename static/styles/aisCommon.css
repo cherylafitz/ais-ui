@@ -2186,7 +2186,8 @@ tr.has-pii td.pii {
   margin: initial;
   border-radius: initial;
 }
-.is-deceased-tag {
+.is-deceased-tag,
+.do-not-contact-tag {
 	background-color: #B00707;
 	color: #fff;
 }
