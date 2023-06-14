@@ -1,0 +1,24 @@
+/* widgets --> */
+
+.PassportWidget .item-passport {
+  width: fit-content;
+  padding: .5rem;
+  border: 1px solid #e6e6e6;
+  background-color: #f1f2f3;
+}
+.PassportWidget .form-input {
+  margin-bottom: 0;
+}
+.PassportWidget .form-input label:first-child,
+.PassportWidget .generated-field > .label:first-child, 
+.PassportWidget .form-input > .label:first-child {
+  border-bottom: 1px solid #fff;
+  background: #2e6b9b;
+  color: #fff;
+  padding: .35rem;
+}
+.PassportWidget .form-input select {
+  padding: .2rem;
+}
+
+/* <-- widgets */
