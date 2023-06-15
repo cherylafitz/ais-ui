@@ -1117,8 +1117,13 @@ textarea {
   font-size: 1rem;
   max-width: 100%;
 }
-input[type="email"] {
+input[type="email"],
+.long-text input[type="text"]  {
   width: 25rem;
+  max-width: 100%;
+}
+.extra-long-text input[type="text"] {
+  width: 40rem;
   max-width: 100%;
 }
 select {
@@ -4891,9 +4896,11 @@ section.portalMessage header {
 }
 
 .SingleUser input[type="text"],
-.UserEditor input[type="text"] {
+.UserEditor input[type="text"],
+.recipe-name input[type="text"] {
   width: 25rem;
 }
+
 /* <-- FORMS */
 
 /* headings --> */
