@@ -16,7 +16,9 @@
 }
 
 .SingleUser input[type="text"],
-.UserEditor input[type="text"] {
+.UserEditor input[type="text"],
+.recipe-name input[type="text"] {
   width: 25rem;
 }
+
 /* <-- FORMS */
