@@ -26,7 +26,9 @@
 .section-display h1,
 .section-display h2,
 .section-display h3,
-.section-display h4 {
+.section-display h4,
+.section-display h5, /* GREGG ADD 2023-0615 */
+.section-display h6  /* GREGG ADD 2023-0615 */  {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -45,5 +47,9 @@
 .section-display h4 {
   font-size: 1.125em;
 }
-
+.section-display h5 /* GREGG ADD 2023-0615 */ {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
 /* <-- HEADINGS */
