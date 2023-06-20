@@ -32,16 +32,13 @@ div.SystemAnnouncementsWrapper div.SystemAnnouncement,
   box-shadow: none;
 }
 /* AIR */
-.IsNotLoggedIn div.SystemAnnouncementsWrapper div.SystemAnnouncement,
 .IsNotLoggedIn .announcement-wrapper div.SystemAnnouncement {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  margin: 0;
-  border: 1px solid #f4c0be;
-  border-left: .625rem solid #de463d;
-  background: #ffece6;
-  padding: 0.75rem 0.5rem 0.5rem;
+  padding: 1rem 1.5rem;
+}
+@media only screen and (min-width: 56em) {
+  .IsNotLoggedIn .announcement-wrapper div.SystemAnnouncement {
+    padding: 1rem 6rem;
+  }
 }
 .SystemAnnouncement p {
   margin: .25rem 0;
