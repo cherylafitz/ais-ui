@@ -6270,6 +6270,7 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
   justify-content: flex-end;
   color: #29353d;
   border-radius: 2px 2px 0 0;
+  transition: all .25s ease-out;
 }
 #ProgramBadges .program-cell-ais img {
   margin-right: 0;
@@ -6296,11 +6297,15 @@ div#ProgramBadges section.programs div.section-details li.program-cell-ais {
     box-shadow: 0 2px 5px rgba(0,0,0,.14);
     padding: 0;
     border-radius: 4px;
+    transition: all .5s ease-in;
 }
 div#ProgramBadges section.programs div.section-details li.program-cell-ais:hover {
   cursor: pointer;
   box-shadow: none;
 /*  border-color: #999;*/
+}
+div#ProgramBadges section.programs div.section-details li.program-cell-ais:active {
+  transform: scale(1.1);
 }
 div#ProgramBadges section.programs div.section-details li.program-cell-ais:hover .show-program-link {
   background-color: #cedbe2;
