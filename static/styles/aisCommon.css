@@ -7562,6 +7562,9 @@ body#body--environment-staging:after {
 
 /* wrap cells --> */
 /* general--> */
+td a ~ a {
+  padding-left: .35rem;
+}
 table.row-display th.document-review,
 table.row-display th.document-review-approval,
 .AlumnusExceptionalNoteDisplay .ExceptionalNote td,
