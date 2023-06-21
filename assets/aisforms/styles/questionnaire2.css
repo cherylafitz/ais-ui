@@ -24,6 +24,7 @@ table.required:not(.Group) div.question-text .Title::after  {
   background: #f0f2f3;
   padding: .75rem 1rem;
   display: flex;
+  flex-flow: row wrap;
 }
 div.Dynamic.fromQuestionnaire.required div.Inquiry::after {
     color: #CD0000;
@@ -74,7 +75,7 @@ div.Dynamic.fromQuestionnaire div.reply-by {
   margin-top: .5em;
   margin-bottom: .5em;
   padding: .5em;
-  background-color: #d7dcbc;
+  background-color: #ddeaee;
 }
 input[type='text'] {
   width: 100%;
