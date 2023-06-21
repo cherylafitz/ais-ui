@@ -6080,6 +6080,10 @@ div#tippyTopOfPage table.TopNavTableStructure img.Logo {
 #EditAISReportsID {
   margin: .5rem 0;
 }
+#reportTableContainer {
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 0.5rem;
+}
 
 /* <-- PAGE APPLICATION SEARCH RESULTS */
 
