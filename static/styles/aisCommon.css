@@ -6239,13 +6239,13 @@ div.AttachmentDisplay .ajaxTabbedPanelPanes {
 #ProgramBadges section.programs {
   display: none;
 }
-#body--environment-staging #ProgramBadges section.programs {
+body div#ProgramBadges section.programs {
   display: block;
   padding: 1rem;
   background-color: #e0e6eb;
   color: black;
 }
-#body--environment-staging #ProgramBadges section.programs h2 {
+body div#ProgramBadges section.programs h2 {
   color: #000;
   text-align: center;
   margin: 1rem 0 1.5rem;
@@ -6399,6 +6399,7 @@ and (min-width : 768px) {
 }
 #ProgramBadges #Badges {
   padding: 1rem;
+  display: none;
 }
 #ProgramBadges #Banner .logo
 {
