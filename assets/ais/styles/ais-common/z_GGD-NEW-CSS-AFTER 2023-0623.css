@@ -1,0 +1,143 @@
+/* GGD NEW CSS AFTER 2023-0623 --> */
+
+/* AIS PAGE: FlightLeaderReport CHANGES --> */
+/* PII NOTICE LABEL bold text, add trailing colon */
+.pii-notice-label {
+  font-weight: bold;
+}
+.pii-notice-label::after {
+  content: ":";
+}
+/* <-- AIS PAGE: FlightLeaderReport CHANGES */
+
+
+/* AIS PAGE: SiteTextEditor CHANGES --> */
+/* EDIT SITE TEXT TABLE: Columns for Site Text >> Preview: Set MAX-WIDTH and WRAP contents */
+body[data-page-name="com.amagavi.ac.SiteTextEditor"] td.preview {
+  max-width: 25rem;
+  white-space: normal;
+}
+
+/* <-- AIS PAGE: SiteTextEditor CHANGES */
+
+
+/* AIS PAGE: Old Badges Page CHANGES --> */
+/* OVERRIDE OLD Badges Bubble - Temporary Until Convert to New Badges */
+
+#ProgramBadges #Badges li
+{
+  line-height: 1.5 !important; /* Line 6506 Above */
+  font-size: 93%;
+}
+
+/* <-- AIS PAGE: SiteTextEditor CHANGES */
+
+
+/* AIS PAGE: AISStudentBulkEmailTemplateWorkflow --> */
+
+div.AISStudentBulkEmailTemplateWorkflow form div:first-child {
+  color: #065649;
+  font-size: 1.375rem;
+  font-weight: normal;
+  margin-top: 0;
+  line-height: 1.4;
+  margin-bottom: .5rem;
+  padding: 0;
+}
+div.AISStudentBulkEmailTemplateWorkflow table.EmailTemplateSpecifics th,
+div.AISStudentBulkEmailTemplateWorkflow table.EmailPreview th {
+  text-align: right;
+  font-style: italic;
+}
+div.AISStudentBulkEmailTemplateWorkflow table.EmailTemplateSpecifics th::after,
+div.AISStudentBulkEmailTemplateWorkflow table.EmailPreview th::after {
+  content: ": ";
+}
+
+/* <-- AIS PAGE: AISStudentBulkEmailTemplateWorkflow */
+
+
+
+/* AIS PAGES: Participant Travel Itinerary login and download pages for participants --> */
+body[data-class-name="AISTravelDocumentsDOBViewer"],
+body[data-class-name="PDFDownloadAISCore"] {
+  margin: 7rem 1rem 1rem 1rem;
+}
+body[data-class-name="AISTravelDocumentsDOBViewer"],
+body[data-class-name="PDFDownloadAISCore"] {
+  background-image: url("https://aisforms.s3.amazonaws.com/ais/common/system/AC_Logo_2018_Color.svg");
+  background-repeat: no-repeat;
+  background-size: 260px auto;
+  background-position: 1rem 1rem;
+}
+body[data-class-name="AISTravelDocumentsDOBViewer"] form label[for="dob-id"] { /* for birth date challenge login page */
+  width: auto;
+}
+body[data-class-name="AISTravelDocumentsDOBViewer"] h1 {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body[data-class-name="AISTravelDocumentsDOBViewer"],
+  body[data-class-name="PDFDownloadAISCore"] {
+    background-image: url("https://aisforms.s3.amazonaws.com/ais/common/system/AC_Logo_2018_Color.svg");
+    background-repeat: no-repeat;
+    /* background-size: 400px auto; */
+    background-position: 1rem 1rem;
+    /* font-size: 200%; */
+  }
+}
+
+/* <-- AIS PAGES: Participant Travel Itinerary login and download pages for participants */
+
+/* <-- AIS PAGE: PIPY_Display, change color of HELP details/summary */
+
+/* details.help {
+  background-color: #ffe2b3;
+} */
+details.help summary {
+  background-color: #ffe2b3 !important;
+}
+details.help div.details-content {
+  background-color: #ffe2b3;
+  border: 1px solid #f6b844;
+  max-width: 40rem;
+}
+
+/* AIS PAGE: PIPY_Display, change color of HELP details/summary --> */
+
+/* AIS PAGE: SkylinkTravelersReport, re-align RO and PO checkboxes.  --> */
+
+/* Code Copied from Line 1283 Above */
+.form-input.recruiting-org,
+.form-input.placement-org {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 0.75rem;
+}
+
+/* Code Copied from Line 1304 Above */
+ label[for="recruiting-org-id"],
+ label[for="placement-org-id"] {
+  width: 10.25rem !important;
+}
+
+/* Code Modified from Line 5753 Above */
+#recruiting-org-id,
+#placement-org-id {
+  columns: 4;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-weight: normal;
+/*  max-width: 70rem; */
+  margin-top: 0.25rem;
+}
+
+/* <-- AIS PAGE: SkylinkTravelersReport, re-align RO and PO checkboxes. Code from Line 5753 Above */
+
+
+
+
+
+/* <!-- GGD NEW CSS AFTER 2023-0623 */
