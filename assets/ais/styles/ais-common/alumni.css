@@ -72,9 +72,11 @@ td.content .Main {
   padding: .5rem .75rem 0;
   background: #2c3942;
 }
+#navMenu .list-page-link,
 #navMenu .previous-page-link {
   color: #c5dcee;
   font-size: .875rem;
+  text-decoration: none;
 }
 /* PAGE: AlumnusOtherProgramsAdmin */
 .other-program-display-name {
