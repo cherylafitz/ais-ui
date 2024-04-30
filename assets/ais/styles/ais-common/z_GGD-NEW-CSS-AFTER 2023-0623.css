@@ -59,16 +59,25 @@ div.AISStudentBulkEmailTemplateWorkflow table.EmailPreview th::after {
 
 
 /* AIS PAGES: Participant Travel Itinerary login and download pages for participants --> */
+/* GGD: AC LOGO ADDED TO AIS SYSTEM AND PIPY SETTING 15 Apr 2024 */
 body[data-class-name="AISTravelDocumentsDOBViewer"],
 body[data-class-name="PDFDownloadAISCore"] {
-  margin: 7rem 1rem 1rem 1rem;
+  margin: /*7rem 1rem 1rem 1rem*/ 1rem;
 }
+/* GGD: AC LOGO ADDED TO AIS SYSTEM AND PIPY SETTING 15 Apr 2024 */
+/*
 body[data-class-name="AISTravelDocumentsDOBViewer"],
 body[data-class-name="PDFDownloadAISCore"] {
-  background-image: url("https://aisforms.s3.amazonaws.com/ais/common/system/AC_Logo_2018_Color.svg");
+  background-image: url("https://aisforms.s3.amazonaws.com/ais/common/system/AC_Logo_Blue_50th_Anniv.png");
   background-repeat: no-repeat;
   background-size: 260px auto;
   background-position: 1rem 1rem;
+}
+*/
+body[data-class-name="AISTravelDocumentsDOBViewer"] div.logo img,
+body[data-class-name="PDFDownloadAISCore"] div.logo img {
+  max-height: 75px;
+  margin-bottom: 1rem;
 }
 body[data-class-name="AISTravelDocumentsDOBViewer"] form label[for="dob-id"] { /* for birth date challenge login page */
   width: auto;
@@ -76,17 +85,18 @@ body[data-class-name="AISTravelDocumentsDOBViewer"] form label[for="dob-id"] { /
 body[data-class-name="AISTravelDocumentsDOBViewer"] h1 {
   display: none;
 }
-
+/* GGD: AC LOGO ADDED TO AIS SYSTEM AND PIPY SETTING 15 Apr 2024 */
+/*
 @media only screen and (max-width: 600px) {
   body[data-class-name="AISTravelDocumentsDOBViewer"],
   body[data-class-name="PDFDownloadAISCore"] {
-    background-image: url("https://aisforms.s3.amazonaws.com/ais/common/system/AC_Logo_2018_Color.svg");
+    background-image: url("https://aisforms.s3.amazonaws.com/ais/common/system/AC_Logo_Blue_50th_Anniv.svg");
     background-repeat: no-repeat;
-    /* background-size: 400px auto; */
     background-position: 1rem 1rem;
-    /* font-size: 200%; */
   }
 }
+*/
+
 
 /* <-- AIS PAGES: Participant Travel Itinerary login and download pages for participants */
 
@@ -136,8 +146,239 @@ details.help div.details-content {
 
 /* <-- AIS PAGE: SkylinkTravelersReport, re-align RO and PO checkboxes. Code from Line 5753 Above */
 
+/* AIS PAGE: FSAAppFullDisplay (Application Summary Page) Cancel/Replace Display --> */
+
+div.was-cancelled,
+div.is-replacement {
+  font-weight: bold;
+}
+div.was-cancelled::after,
+div.is-replacement::after {
+  content: ":";
+}
+
+/* <-- AIS PAGE: FSAAppFullDisplay (Application Summary Page) Cancel/Replace Display -- >*/
+
+/* AIS PAGE: CancellationReplacementStudentWizard --> */
+
+div.CancellationReplacementStudentWizard table.alternates-available-for-upgrade caption {
+  background-color: #ffdacc;
+  border-color: #ffc8b3;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* <-- AIS PAGE: CancellationReplacementStudentWizard */
 
 
+/* DIV Version of AIS Application Data Entry and Update Page */
+/* AIS PAGE: CustomDataEntryFormEditor --> */
+
+.CustomDataEntryFormEditor .formFields > div,
+.AISDataEntryForm .formFields > div {
+  margin-top: 0.75rem;
+  position: relative;
+  width: 80%;
+  padding: 6px 1% 9px 1%;
+}
+
+.CustomDataEntryFormEditor .formFields > div div,
+.AISDataEntryForm .formFields > div div {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+}
+
+.CustomDataEntryFormEditor .formFields > div input[type=text],
+.AISDataEntryForm .formFields > div input[type=text],
+.CustomDataEntryFormEditor .formFields > div select,
+.AISDataEntryForm .formFields > div select {
+  width: 100%;
+}
+
+.CustomDataEntryFormEditor .formFields label.desc,
+.AISDataEntryForm .formFields label.desc, 
+.CustomDataEntryFormEditor .formFields legend.desc,
+.AISDataEntryForm .formFields legend.desc {
+  font-size: 95%;
+  font-weight: bold;
+  color: #222222;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 0 3px 0;
+  border: none;
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+
+.CustomDataEntryFormEditor .formFields .instructions,
+.AISDataEntryForm .formFields .instructions {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  font-size: 0.8rem;
+  background-color: #ffe2b3;
+  width: 60%;
+  margin: 0 0 0 8px;
+  padding: 8px 10px 10px 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.CustomDataEntryFormEditor .formFields div.hint,
+.AISDataEntryForm .formFields div.hint {
+  padding: 3px;
+}
+.CustomDataEntryFormEditor .formFields .dynamic.required label:before,
+.AISDataEntryForm .formFields .dynamic.required label:before {
+  content: "* ";
+  color: red;
+}
+
+.CustomDataEntryFormEditor .formFields div.static.FormHeader,
+.AISDataEntryForm .formFields div.static.FormHeader /*,
+.formFields > div.static.FormHeader div*/ {
+  border: none;
+  color: #2A4A83;
+  background-color: #FFFFFF;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.CustomDataEntryFormEditor .formFields div.static.FormHeader div.Program,
+.AISDataEntryForm .formFields div.static.FormHeader div.Program {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.CustomDataEntryFormEditor .formFields div.static.FormHeader div.Program img,
+.AISDataEntryForm .formFields div.static.FormHeader div.Program img {
+  height: 60px;
+  margin: 0 10px 0 0;
+}
+
+.CustomDataEntryFormEditor .formFields div.static.FormHeader h2,
+.AISDataEntryForm .formFields div.static.FormHeader h2 {
+
+}
+
+.CustomDataEntryFormEditor .formFields div.static.FormHeader h3,
+.AISDataEntryForm .formFields div.static.FormHeader h3 {
+  font-weight: bold;
+}
+
+.CustomDataEntryFormEditor .formFields div.static.FormHeader h4,
+.AISDataEntryForm .formFields div.static.FormHeader h4 {
+  font-size: 1.25rem;
+  line-height: 0.5;
+}
+
+.CustomDataEntryFormEditor .formFields > div.static.SectionTitle,
+.AISDataEntryForm .formFields > div.static.SectionTitle {
+  border: 1px solid #C2D7EF;
+  color: #FFFFFF;
+  background-color: #2A4A83;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.CustomDataEntryFormEditor .formFields > div.displayOnly,
+.AISDataEntryForm .formFields > div.displayOnly {
+  border: 1px solid #C2D7EF;
+  background-color: #D3D3D3;
+}
+
+.CustomDataEntryFormEditor .formFields > div.dynamic,
+.AISDataEntryForm .formFields > div.dynamic {
+  border: 1px solid #C2D7EF;
+  background-color: #94aedd;
+}
+
+.CustomDataEntryFormEditor .formFields > div.dynamicOverride,
+.AISDataEntryForm .formFields > div.dynamicOverride {
+  border: 1px solid #C2D7EF;
+  background-color: #94aedd;
+}
+
+.CustomDataEntryFormEditor .formFields div.testCenter table.location,
+.AISDataEntryForm .formFields div.testCenter table.location {
+  background-color: #94aedd;
+  border-spacing: 15px 10px;
+}
+
+.CustomDataEntryFormEditor .formFields div.testCenter tr.label td,
+.AISDataEntryForm .formFields div.testCenter tr.label td {
+  background-color: #D3D3D3;
+}
+
+.CustomDataEntryFormEditor .formFields table.Phone,
+.AISDataEntryForm .formFields table.Phone {
+  width: 100%;
+}
+
+.CustomDataEntryFormEditor .formFields table.Phone tr td:nth-child(1) input[type=text],
+.AISDataEntryForm .formFields table.Phone tr td:nth-child(1) input[type=text] {
+  width: 6rem;
+} 
+
+
+/* REMOVE??? --> */
+/*
+.CustomDataEntryFormEditor .formFields form span.required {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.formFields div.static.FormHeader:after {
+  content: none;
+}
+
+.formFields div.static.FormHeader div.FormHeaderDescription {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.formFields > div.static div.sectionHeadLine1 {
+  color: #FFF;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.formFields > div.static div.sectionHeadLine2 {
+  color: #FFF;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+*/
+/* <-- REMOVE??? */
+
+/* <-- DIV Version of AIS Application Data Entry and Update Page */
+/* AIS PAGE: CustomDataEntryFormEditor */
+
+
+/* AIS PAGE: AttachmentDisplay - Video Tag --> */
+
+body.AttachmentDisplay td.document-type video {
+  display: block;
+}
+
+/* <--AIS PAGE: AttachmentDisplay - Video Tag */
+
+
+/* AIS PAGE: AlumnusAddressEditor --> */
+
+div.main-content.AlumnusAddressEditor {
+    padding: 1rem 1.25rem;
+}
+
+/* <-- AIS PAGE: AlumnusAddressEditor */
 
 
 /* <!-- GGD NEW CSS AFTER 2023-0623 */

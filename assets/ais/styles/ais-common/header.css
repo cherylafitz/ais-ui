@@ -212,9 +212,10 @@ div.MultiSearcher input[type="submit"] {
 div.MultiSearcher input[type="submit"]:last-of-type {
   margin-right: .25rem;
 }
-div#tippyTopOfPage table.TopNavTableStructure img.Logo {
+div#LoginPage div#banner img.Logo,
+div#tippyTopOfPage table.TopNavTableStructure td.logo img.Logo {
   padding-top: .75rem;
-  width: 225px;
+  width: 250px;
 }
 .topNavInTable .title {
   font-weight: normal;
