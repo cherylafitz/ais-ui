@@ -29,6 +29,17 @@ form[name="loginForm"] {
 #login-button-wrapper {
   margin-top: 1.25rem;
 }
+#ac-login-wrapper {
+  display: flex;
+  margin: 1.75rem 1rem 0.75rem;
+  align-items: center;
+}
+#ac-login-wrapper .ac-logo-inline {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.75rem;
+  background: white;
+}
 /* ported (older) styles --> */
 
 #LoginPage {
@@ -104,6 +115,8 @@ form[name="loginForm"] {
 }
 #LoginPage #content form {
   clear: both;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #bbbaba;
 }
 #LoginPage #content input {
   font-size: 1.25em;
@@ -113,7 +126,8 @@ form[name="loginForm"] {
 #LoginPage #content input[type="submit"]{
   background: #33424d;
   border-color: #29353d;
-  padding: .0625rem .5rem .125rem; 
+  padding: .4rem 3rem .4rem; 
+  border-radius: 6px;
 }
 #LoginPage #content #PasswordResetRequestEmail,
 #LoginPage #content #PasswordResetRequestButton {
