@@ -66,7 +66,6 @@ a.youtube-link,
 a[href*="youtube.com"]:not(.image-link) {
   background-image: url(../../../../ais/common/yt_logo_rgb_light.png);
   padding-left: 7rem;
-  margin-left: 2rem;
 }
 /* REMOVE?? --> */
 table td div.PDFDownload,
